@@ -128,7 +128,13 @@ ai-pulse/
 
 ## 스크린샷
 
-> *스크린샷 준비 중 — `/ai-digest morning`을 실행하여 실제 페이지를 확인하세요.*
+### 🌙 다크 모드 (기본)
+
+![AI Pulse Dark Mode](screenshots/dark-mode.png)
+
+### ☀️ 라이트 모드
+
+![AI Pulse Light Mode](screenshots/light-mode.png)
 
 ## 자주 묻는 질문 (FAQ)
 

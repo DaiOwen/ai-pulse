@@ -128,7 +128,13 @@ ai-pulse/
 
 ## スクリーンショット
 
-> *スクリーンショット準備中 — `/ai-digest morning` を実行して実際のページをご確認ください。*
+### 🌙 ダークモード（デフォルト）
+
+![AI Pulse Dark Mode](screenshots/dark-mode.png)
+
+### ☀️ ライトモード
+
+![AI Pulse Light Mode](screenshots/light-mode.png)
 
 ## よくある質問（FAQ）
 

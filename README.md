@@ -128,7 +128,13 @@ ai-pulse/
 
 ## Screenshots
 
-> *Screenshots coming soon — run `/ai-digest morning` to see the live page.*
+### 🌙 Dark Mode (default)
+
+![AI Pulse Dark Mode](screenshots/dark-mode.png)
+
+### ☀️ Light Mode
+
+![AI Pulse Light Mode](screenshots/light-mode.png)
 
 ## FAQ
 
