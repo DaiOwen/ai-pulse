@@ -13,9 +13,10 @@ Thumbs.db
 *.tmp
 *.log
 
-# 归档和生成内容（本地运行产物，不提交）
+# 归档文件（本地运行产物，不提交）
 archive/*.html
-index.html
 
 # 例外：保留目录占位
 !archive/.gitkeep
+
+# 注意：index.html 作为模板被跟踪，即使每次 /ai-digest 会更新它
