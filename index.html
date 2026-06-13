@@ -42,6 +42,19 @@
     --bg-glow-cyan: rgba(6,182,212,0.04);
   }
 
+  [data-theme="light"] .feature-card { background: rgba(0,0,0,0.02); }
+  [data-theme="light"] .sub-card { background: rgba(0,0,0,0.012); }
+  [data-theme="light"] .tool-card { background: rgba(0,0,0,0.012); }
+  [data-theme="light"] .rank-card { background: rgba(0,0,0,0.012); }
+  [data-theme="light"] .tldr { background: rgba(99,102,241,0.04); }
+  [data-theme="light"] .paper-spotlight { background: rgba(139,92,246,0.03); }
+  [data-theme="light"] .orb { opacity: 0.04 !important; }
+  [data-theme="light"] .particle { background: rgba(0,0,0,0.15); }
+  [data-theme="light"] .grid-overlay {
+    background-image: linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+  }
+
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
@@ -275,6 +288,31 @@
   .calendar-legend { display:flex; gap:16px; margin-top:12px; font-size:9px; color:var(--text-tertiary); justify-content:center; }
   .calendar-legend-item { display:flex; align-items:center; gap:4px; }
   .calendar-legend-dot { width:8px; height:8px; border-radius:2px; }
+
+  /* ── Responsive ── */
+  @media (max-width: 768px) {
+    .content { padding: 0 16px 60px; }
+    .hero { padding: 36px 0 28px; }
+    .hero-title { font-size: 32px; }
+    .hero-stats { gap: 20px; }
+    .hero-stat-num { font-size: 18px; }
+    .sub-grid { grid-template-columns: 1fr; }
+    .tool-row { grid-template-columns: 1fr; }
+    .dual-cards { grid-template-columns: 1fr; }
+    .card-row { flex-direction: column; }
+    .card-icon { width: 48px; height: 48px; font-size: 18px; }
+    .feature-card { padding: 18px; }
+  }
+
+  @media (max-width: 480px) {
+    .nav { flex-direction: column; gap: 10px; align-items: flex-start; }
+    .nav-right { gap: 12px; width: 100%; justify-content: flex-end; }
+    .hero-title { font-size: 26px; }
+    .hero-stats { gap: 12px; }
+    .hero-stat-num { font-size: 16px; }
+    .hero-stat-label { font-size: 8px; }
+    .calendar-modal { padding: 16px; }
+  }
 </style>
 </head>
 <body>
