@@ -19,4 +19,8 @@ archive/*.html
 # 例外：保留目录占位
 !archive/.gitkeep
 
+# Claude Code 运行时文件（不提交）
+.claude/scheduled_tasks.json
+.claude/scheduled_tasks.lock
+
 # 注意：index.html 作为模板被跟踪，即使每次 /ai-digest 会更新它
