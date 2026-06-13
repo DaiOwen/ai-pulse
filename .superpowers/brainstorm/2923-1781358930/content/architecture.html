@@ -1,0 +1,109 @@
+<h2>AI热点速览 — 系统架构方案</h2>
+<p class="subtitle">基于 Claude Code CLI 的纯本地运行方案，零外部依赖</p>
+
+<div class="section">
+  <h3>🏗️ 整体架构</h3>
+  <div class="mockup">
+    <div class="mockup-header">系统架构图</div>
+    <div class="mockup-body" style="font-family: monospace; font-size: 13px; line-height: 1.8; padding: 20px;">
+      <pre style="margin:0; white-space: pre-line;">
+┌─────────────────────────────────────────────────┐
+│             CronCreate 定时调度                    │
+│     早 8:00  ·  中 12:30  ·  晚 20:00             │
+└─────────────────────┬───────────────────────────┘
+                      ▼
+┌─────────────────────────────────────────────────┐
+│          Claude Code Session 启动                 │
+│   "执行 AI热点速览 采集任务"                        │
+└─────────────────────┬───────────────────────────┘
+                      ▼
+      ┌───────────────┴───────────────┐
+      ▼                               ▼
+┌──────────────┐            ┌──────────────────┐
+│  新闻采集模块  │            │  开源项目采集模块   │
+│              │            │                  │
+│ • WebSearch  │            │ • GitHub API     │
+│   多关键词搜索 │            │   trending repos │
+│ • WebFetch   │            │ • Gitee API      │
+│   深度抓取原文 │            │   热门项目        │
+│              │            │                  │
+│ 覆盖源:       │            │ 排行:             │
+│ 36氪/量子位/  │            │ Stars上升Top10    │
+│ 机器之心/     │            │ 关注度Top10       │
+│ HN/PH/Rundown│            │                  │
+└──────┬───────┘            └────────┬─────────┘
+       └───────────┬────────────────┘
+                   ▼
+┌─────────────────────────────────────────────────┐
+│          Claude 智能处理 pipeline                 │
+│                                                 │
+│  ① 去重 · 标题相似度 + URL归一化                   │
+│  ② 评分 · 热度×0.4 + 时效×0.3 + 来源×0.3          │
+│  ③ 翻译 · 海外新闻 → 中文摘要                      │
+│  ④ 分类 · 头条/工具/行业/开源/海外精选              │
+│  ⑤ 摘要 · 每条2-3句，突出关键信息                   │
+└─────────────────────┬───────────────────────────┘
+                      ▼
+┌─────────────────────────────────────────────────┐
+│            HTML 生成 & 归档                       │
+│                                                 │
+│  • 生成当日 HTML 页面                             │
+│  • 更新 index.html 首页（日历导航）                 │
+│  • 更新 archive/ 历史归档                         │
+│  • 静态文件，浏览器直接打开                         │
+└─────────────────────────────────────────────────┘
+      </pre>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>📁 文件结构</h3>
+  <div class="mockup">
+    <div class="mockup-header">项目目录</div>
+    <div class="mockup-body" style="font-family: monospace; font-size: 13px; padding: 15px;">
+<pre style="margin:0;">
+AI热点速览/
+├── index.html          ← 主页（日历导航 + 最新一期）
+├── archive/
+│   ├── 2026-06-13-morning.html
+│   ├── 2026-06-13-noon.html
+│   └── 2026-06-13-evening.html
+├── assets/
+│   ├── style.css       ← 样式
+│   └── favicon.svg     ← 图标
+├── .claude/
+│   └── scheduled_tasks.json  ← 定时任务配置
+└── README.md
+</pre>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>⚙️ 三种实现策略，怎么选？</h3>
+</div>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>全自动化 Cron + Claude</h3>
+      <p>CronCreate 定时触发 → Claude Code 自动执行全流程（搜索→处理→生成HTML）。完全无人值守，但每次运行消耗较多 token。</p>
+    </div>
+  </div>
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>半自动 Skill 模式</h3>
+      <p>写成一个 Claude Code Skill，你手动触发 "/ai-digest" 命令。灵活控制每次运行，token 消耗可控，但不自动。</p>
+    </div>
+  </div>
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C (推荐)</div>
+    <div class="content">
+      <h3>混合模式：Cron 调度 + 可手动补充</h3>
+      <p>CronCreate 承担日常3次自动采集，同时提供手动 Skill 命令用于补充采集或重新生成。兼顾自动化和灵活性。</p>
+    </div>
+  </div>
+</div>

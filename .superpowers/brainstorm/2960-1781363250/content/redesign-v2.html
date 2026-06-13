@@ -1,0 +1,298 @@
+<h2>设计批判 · 以 AI 开发工程师为中心重新审视</h2>
+<p class="subtitle">模拟全球顶级 UI 设计师的内部评审——坦诚、锋利、建设性</p>
+
+<div class="section">
+  <h3>🔍 当前设计的 6 个问题</h3>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:20px;">
+    <div style="background:#161b22; border:0.5px solid #30363d; border-radius:8px; padding:16px; font-size:11px;">
+      <div style="color:#f85149; font-weight:600; margin-bottom:6px;">❌ Hero 区占屏过大</div>
+      <div style="color:#8b949e; line-height:1.5;">「今日AI脉搏」+ 统计数字占了首屏 40% 空间。工程师打开页面要的是信息，不是品牌展示。52px 的超轻字重也不利于快速识别。</div>
+    </div>
+    <div style="background:#161b22; border:0.5px solid #30363d; border-radius:8px; padding:16px; font-size:11px;">
+      <div style="color:#f85149; font-weight:600; margin-bottom:6px;">❌ 信息密度过低</div>
+      <div style="color:#8b949e; line-height:1.5;">Lead Story + 4 张 sub-card 就占了大量空间，但实际只传达了 5 条新闻。工程师要的是「30 秒扫完全局」，不是「慢慢品读一篇」。</div>
+    </div>
+    <div style="background:#161b22; border:0.5px solid #30363d; border-radius:8px; padding:16px; font-size:11px;">
+      <div style="color:#f85149; font-weight:600; margin-bottom:6px;">❌ 分类标签不匹配工程师心智</div>
+      <div style="color:#8b949e; line-height:1.5;">「LEAD STORY」「FOUNDATION MODELS」是编辑视角。工程师心里想的是：有新模型吗？哪个开源项目炸了？什么 API 变了？有没有值得读的论文？</div>
+    </div>
+    <div style="background:#161b22; border:0.5px solid #30363d; border-radius:8px; padding:16px; font-size:11px;">
+      <div style="color:#f85149; font-weight:600; margin-bottom:6px;">❌ 缺少「与我何干」层</div>
+      <div style="color:#8b949e; line-height:1.5;">每条新闻是「发生了什么」，但工程师最想知道的是「这意味着什么」「我需要做什么」。少了一层 practical implications。</div>
+    </div>
+    <div style="background:#161b22; border:0.5px solid #30363d; border-radius:8px; padding:16px; font-size:11px;">
+      <div style="color:#f85149; font-weight:600; margin-bottom:6px;">❌ 开源板块地位太低</div>
+      <div style="color:#8b949e; line-height:1.5;">对 AI 开发者来说，开源项目热度是核心信息，不是附属品。当前放在页面靠后、样式弱于头条区，没有体现出它的重要程度。</div>
+    </div>
+    <div style="background:#161b22; border:0.5px solid #30363d; border-radius:8px; padding:16px; font-size:11px;">
+      <div style="color:#f85149; font-weight:600; margin-bottom:6px;">❌ 缺少快速扫读机制</div>
+      <div style="color:#8b949e; line-height:1.5;">没有 TL;DR 摘要条、没有关键指标速览、没有「只看标题」模式。工程师的一天很忙，需要分级阅读：3秒扫关键词 → 30秒读摘要 → 3分钟精读一篇。</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>🎯 重新设计：以 AI 开发工程师为中心</h3>
+
+  <div class="mockup">
+    <div class="mockup-header">全新布局 — 信息密度 × 扫描效率 × 工程美学</div>
+    <div class="mockup-body" style="padding:0; font-size:12px; max-width:960px; margin:0 auto; background:linear-gradient(160deg, #0a0a0f 0%, #0f0f1a 30%, #0d0d18 60%, #0a0a14 100%); border-radius:12px; overflow:hidden;">
+
+      <!-- ═══════════ Compact Nav ═══════════ -->
+      <div style="display:flex; justify-content:space-between; align-items:center; padding:14px 28px; background:rgba(10,10,15,0.85); backdrop-filter:blur(20px); border-bottom:0.5px solid rgba(255,255,255,0.06);">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <div style="width:10px; height:10px; border-radius:50%; background:#22c55e; box-shadow:0 0 6px rgba(34,197,94,0.4);"></div>
+          <span style="font-size:12px; font-weight:600; color:#f5f5f7; letter-spacing:-0.01em;">AI 脉搏</span>
+          <span style="font-size:9px; color:#6366f1; font-weight:500; background:rgba(99,102,241,0.1); padding:2px 8px; border-radius:10px;">早间版</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:16px; font-size:10px; color:#86868b;">
+          <span>2026.06.13 · 周六 · 08:00</span>
+          <span style="width:0.5px; height:14px; background:rgba(255,255,255,0.15); display:inline-block;"></span>
+          <span style="cursor:pointer;">往期</span>
+          <div style="width:34px; height:18px; background:rgba(99,102,241,0.2); border-radius:9px; border:0.5px solid rgba(99,102,241,0.3); position:relative;">
+            <div style="width:14px; height:14px; background:#6366f1; border-radius:50%; position:absolute; top:1.5px; left:2px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══════════ TL;DR Strip ═══════════ -->
+      <div style="margin:16px 28px 0; padding:14px 20px; background:rgba(99,102,241,0.04); border:0.5px solid rgba(99,102,241,0.08); border-radius:10px;">
+        <div style="display:flex; gap:12px; align-items:flex-start;">
+          <span style="font-size:9px; font-weight:700; color:#6366f1; letter-spacing:0.08em; flex-shrink:0; margin-top:1px;">TL;DR</span>
+          <span style="font-size:11px; color:#c9d1d9; line-height:1.5;">
+            OpenAI o2 推理模型发布 · 百度文心5.0多模态上线 · Anthropic 50亿融资估值800亿 · Mistral移动端模型领跑 · GitHub vllm周增2.3k星
+          </span>
+        </div>
+      </div>
+
+      <!-- ═══════════ Main Layout: 3-Column ═══════════ -->
+      <div style="display:flex; gap:16px; padding:20px 28px 32px;">
+
+        <!-- ═══ LEFT: News Feed (flex:2) ═══ -->
+        <div style="flex:2; display:flex; flex-direction:column; gap:12px;">
+
+          <!-- Section: Model Releases -->
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+              <div style="width:3px; height:14px; background:#6366f1; border-radius:2px;"></div>
+              <span style="font-size:10px; font-weight:700; color:#a5b4fc; letter-spacing:0.05em;">模型动态</span>
+              <span style="font-size:8px; color:#86868b;">Models</span>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:6px;">
+              <div style="background:rgba(255,255,255,0.02); border:0.5px solid rgba(255,255,255,0.05); border-radius:8px; padding:12px 14px;">
+                <div style="display:flex; justify-content:space-between; align-items:baseline;">
+                  <span style="font-size:12px; font-weight:500; color:#f5f5f7;">OpenAI 发布 o2 推理模型</span>
+                  <span style="font-size:8px; color:#86868b; flex-shrink:0; margin-left:8px;">2h前</span>
+                </div>
+                <div style="font-size:10px; color:#9898a0; line-height:1.4; margin-top:2px;">数学编程基准全面刷新，API 价格降至 1/3。同时发布原生多模态能力。</div>
+                <div style="margin-top:4px; font-size:8px; color:#6366f1;">The Verge · 阅读原文 →</div>
+              </div>
+              <div style="background:rgba(255,255,255,0.02); border:0.5px solid rgba(255,255,255,0.05); border-radius:8px; padding:12px 14px;">
+                <div style="display:flex; justify-content:space-between; align-items:baseline;">
+                  <span style="font-size:12px; font-weight:500; color:#f5f5f7;">百度「文心」5.0 多模态全面升级</span>
+                  <span style="font-size:8px; color:#86868b; flex-shrink:0; margin-left:8px;">4h前</span>
+                </div>
+                <div style="font-size:10px; color:#9898a0; line-height:1.4; margin-top:2px;">开放 API 调用，价格策略对标国际一线。支持 128K 上下文窗口。</div>
+                <div style="margin-top:4px; font-size:8px; color:#6366f1;">量子位 · 阅读原文 →</div>
+              </div>
+              <div style="background:rgba(255,255,255,0.02); border:0.5px solid rgba(255,255,255,0.05); border-radius:8px; padding:12px 14px;">
+                <div style="display:flex; justify-content:space-between; align-items:baseline;">
+                  <span style="font-size:12px; font-weight:500; color:#f5f5f7;">Mistral 发布轻量模型，移动端领跑</span>
+                  <span style="font-size:8px; color:#86868b; flex-shrink:0; margin-left:8px;">6h前</span>
+                </div>
+                <div style="font-size:10px; color:#9898a0; line-height:1.4; margin-top:2px;">iPhone 16 Pro 实时对话，功耗降低 40%。开源权重即刻可用。</div>
+                <div style="margin-top:4px; font-size:8px; color:#6366f1;">Hugging Face · 阅读原文 →</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: Tools & Frameworks -->
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+              <div style="width:3px; height:14px; background:#22c55e; border-radius:2px;"></div>
+              <span style="font-size:10px; font-weight:700; color:#86efac; letter-spacing:0.05em;">工具框架</span>
+              <span style="font-size:8px; color:#86868b;">Tools</span>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:6px;">
+              <div style="background:rgba(255,255,255,0.02); border:0.5px solid rgba(255,255,255,0.05); border-radius:8px; padding:10px 14px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:11px; color:#f5f5f7;">Vercel AI SDK 5.0 · 原生多 Agent 编排</span>
+                <span style="font-size:8px; color:#22c55e; font-weight:500;">新发布</span>
+              </div>
+              <div style="background:rgba(255,255,255,0.02); border:0.5px solid rgba(255,255,255,0.05); border-radius:8px; padding:10px 14px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:11px; color:#f5f5f7;">字节豆包 AI 编程助手 · 开源，VS Code / JB 双平台</span>
+                <span style="font-size:8px; color:#22c55e; font-weight:500;">新发布</span>
+              </div>
+              <div style="background:rgba(255,255,255,0.02); border:0.5px solid rgba(255,255,255,0.05); border-radius:8px; padding:10px 14px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:11px; color:#f5f5f7;">LLaMA.cpp 正式支持多 GPU 分布式推理</span>
+                <span style="font-size:8px; color:#f59e0b; font-weight:500;">更新</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: Industry & Policy -->
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+              <div style="width:3px; height:14px; background:#f59e0b; border-radius:2px;"></div>
+              <span style="font-size:10px; font-weight:700; color:#fcd34d; letter-spacing:0.05em;">行业政策</span>
+              <span style="font-size:8px; color:#86868b;">Industry</span>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:6px;">
+              <div style="background:rgba(255,255,255,0.02); border:0.5px solid rgba(255,255,255,0.05); border-radius:8px; padding:10px 14px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:11px; color:#f5f5f7;">Anthropic 完成 50 亿美元 E 轮融资，估值突破 800 亿</span>
+                <span style="font-size:8px; color:#f59e0b;">💰 融资</span>
+              </div>
+              <div style="background:rgba(255,255,255,0.02); border:0.5px solid rgba(255,255,255,0.05); border-radius:8px; padding:10px 14px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:11px; color:#f5f5f7;">欧盟《AI 责任指令》正式生效，首批合规截止日公布</span>
+                <span style="font-size:8px; color:#f59e0b;">📋 监管</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ RIGHT: Sidebar (flex:1) ═══ -->
+        <div style="flex:1; display:flex; flex-direction:column; gap:12px;">
+
+          <!-- Open Source Rankings -->
+          <div style="background:rgba(255,255,255,0.015); border:0.5px solid rgba(245,158,11,0.15); border-radius:10px; padding:16px;">
+            <div style="display:flex; align-items:center; gap:6px; margin-bottom:12px;">
+              <span style="font-size:16px;">⭐</span>
+              <span style="font-size:10px; font-weight:700; color:#fcd34d; letter-spacing:0.04em;">开源热度</span>
+            </div>
+            <div style="font-size:8px; font-weight:600; color:#86868b; letter-spacing:0.04em; margin-bottom:6px;">24h STARS 增量</div>
+            <div style="display:flex; flex-direction:column; gap:5px; margin-bottom:14px;">
+              <div style="display:flex; align-items:center; gap:8px; font-size:10px;">
+                <span style="color:#f5f5f7; font-weight:500; width:14px;">1</span>
+                <span style="color:#f5f5f7; flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">vllm-project/vllm</span>
+                <span style="color:#22c55e; font-size:9px; font-weight:500;">+2.3k</span>
+              </div>
+              <div style="display:flex; align-items:center; gap:8px; font-size:10px;">
+                <span style="color:#f5f5f7; font-weight:500; width:14px;">2</span>
+                <span style="color:#f5f5f7; flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">langchain-ai/langchain</span>
+                <span style="color:#22c55e; font-size:9px; font-weight:500;">+1.8k</span>
+              </div>
+              <div style="display:flex; align-items:center; gap:8px; font-size:10px;">
+                <span style="color:#f5f5f7; font-weight:500; width:14px;">3</span>
+                <span style="color:#f5f5f7; flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">deepseek-ai/DeepSeek</span>
+                <span style="color:#22c55e; font-size:9px; font-weight:500;">+1.5k</span>
+              </div>
+            </div>
+            <div style="font-size:8px; font-weight:600; color:#86868b; letter-spacing:0.04em; margin-bottom:6px;">总关注度</div>
+            <div style="display:flex; flex-direction:column; gap:5px;">
+              <div style="display:flex; align-items:center; gap:8px; font-size:10px;">
+                <span style="color:#f5f5f7; font-weight:500; width:14px;">1</span>
+                <span style="color:#f5f5f7; flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">openai/whisper</span>
+                <span style="color:#86868b; font-size:9px;">12k ⭐</span>
+              </div>
+              <div style="display:flex; align-items:center; gap:8px; font-size:10px;">
+                <span style="color:#f5f5f7; font-weight:500; width:14px;">2</span>
+                <span style="color:#f5f5f7; flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">meta-llama/llama</span>
+                <span style="color:#86868b; font-size:9px;">9.8k ⭐</span>
+              </div>
+              <div style="display:flex; align-items:center; gap:8px; font-size:10px;">
+                <span style="color:#f5f5f7; font-weight:500; width:14px;">3</span>
+                <span style="color:#f5f5f7; flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">ollama/ollama</span>
+                <span style="color:#86868b; font-size:9px;">7.2k ⭐</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Stats -->
+          <div style="background:rgba(255,255,255,0.015); border:0.5px solid rgba(255,255,255,0.06); border-radius:10px; padding:16px;">
+            <div style="font-size:10px; font-weight:700; color:#86868b; letter-spacing:0.04em; margin-bottom:10px;">今日数据</div>
+            <div style="display:flex; flex-direction:column; gap:8px;">
+              <div style="display:flex; justify-content:space-between; font-size:10px;">
+                <span style="color:#9898a0;">新模型发布</span>
+                <span style="color:#f5f5f7; font-weight:500;">3</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; font-size:10px;">
+                <span style="color:#9898a0;">工具更新</span>
+                <span style="color:#f5f5f7; font-weight:500;">5</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; font-size:10px;">
+                <span style="color:#9898a0;">融资事件</span>
+                <span style="color:#f5f5f7; font-weight:500;">2</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; font-size:10px;">
+                <span style="color:#9898a0;">政策动向</span>
+                <span style="color:#f5f5f7; font-weight:500;">1</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Paper Spotlight -->
+          <div style="background:rgba(139,92,246,0.03); border:0.5px solid rgba(139,92,246,0.1); border-radius:10px; padding:16px;">
+            <div style="display:flex; align-items:center; gap:6px; margin-bottom:8px;">
+              <span style="font-size:14px;">📄</span>
+              <span style="font-size:10px; font-weight:700; color:#c4b5fd; letter-spacing:0.04em;">论文速递</span>
+            </div>
+            <div style="font-size:11px; font-weight:500; color:#f5f5f7; line-height:1.4; margin-bottom:4px;">Scaling Laws for Reasoning — 推理能力的扩展定律新发现</div>
+            <div style="font-size:9px; color:#9898a0; line-height:1.3; margin-bottom:6px;">作者团队发现推理能力与模型规模呈超线性关系</div>
+            <div style="font-size:8px; color:#8b5cf6;">arXiv: 2606.xxxxx · 今晨发布</div>
+          </div>
+
+          <!-- Overseas Brief -->
+          <div style="background:rgba(6,182,212,0.03); border:0.5px solid rgba(6,182,212,0.08); border-radius:10px; padding:16px;">
+            <div style="display:flex; align-items:center; gap:6px; margin-bottom:8px;">
+              <span style="font-size:14px;">🌍</span>
+              <span style="font-size:10px; font-weight:700; color:#67e8f9; letter-spacing:0.04em;">海外速递</span>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:6px; font-size:10px; color:#c9d1d9; line-height:1.4;">
+              <div>· DeepMind Gemini 3.0 多模态推理重大升级</div>
+              <div>· NVIDIA B300 GPU, AI训练性能4x提升</div>
+              <div>· OpenAI 与 Apple 合作，Siri 将集成 GPT-6</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div style="text-align:center; padding:20px 28px; border-top:0.5px solid rgba(255,255,255,0.05);">
+        <span style="font-size:11px; color:#86868b; font-style:italic;">"The best way to predict the future is to invent it." — Alan Kay</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>📐 新旧对比</h3>
+  <table style="width:100%; border-collapse:collapse; font-size:11px; color:#c9d1d9;">
+    <tr style="color:#8b949e; font-size:10px;">
+      <th style="padding:10px; text-align:left; border-bottom:1px solid #30363d; width:25%;">维度</th>
+      <th style="padding:10px; text-align:left; border-bottom:1px solid #30363d;">旧方案</th>
+      <th style="padding:10px; text-align:left; border-bottom:1px solid #30363d; color:#22c55e;">新方案 →</th>
+    </tr>
+    <tr><td style="padding:10px; border-bottom:1px solid #21262d;">首屏信息量</td><td style="padding:10px; border-bottom:1px solid #21262d; color:#f85149;">5条新闻 + Hero 占位</td><td style="padding:10px; border-bottom:1px solid #21262d; color:#22c55e;">TL;DR + 模型动态 + 工具 + 开源 + 论文 + 海外</td></tr>
+    <tr><td style="padding:10px; border-bottom:1px solid #21262d;">布局策略</td><td style="padding:10px; border-bottom:1px solid #21262d; color:#f85149;">单列 Editorial</td><td style="padding:10px; border-bottom:1px solid #21262d; color:#22c55e;">左主内容(2/3) + 右信息面板(1/3)</td></tr>
+    <tr><td style="padding:10px; border-bottom:1px solid #21262d;">分类体系</td><td style="padding:10px; border-bottom:1px solid #21262d; color:#f85149;">编辑视角标签</td><td style="padding:10px; border-bottom:1px solid #21262d; color:#22c55e;">模型动态 · 工具框架 · 行业政策 · 论文 · 开源</td></tr>
+    <tr><td style="padding:10px; border-bottom:1px solid #21262d;">信息层级</td><td style="padding:10px; border-bottom:1px solid #21262d; color:#f85149;">Lead + Sub 二级</td><td style="padding:10px; border-bottom:1px solid #21262d; color:#22c55e;">TL;DR(3秒)→标题(10秒)→摘要(30秒)→原文(3分)</td></tr>
+    <tr><td style="padding:10px; border-bottom:1px solid #21262d;">开源板块</td><td style="padding:10px; border-bottom:1px solid #21262d; color:#f85149;">页面底部，弱视觉权重</td><td style="padding:10px; border-bottom:1px solid #21262d; color:#22c55e;">右侧固定面板，金边高亮，核心信息位</td></tr>
+    <tr><td style="padding:10px; border-bottom:1px solid #21262d;">新增板块</td><td style="padding:10px; border-bottom:1px solid #21262d; color:#f85149;">—</td><td style="padding:10px; border-bottom:1px solid #21262d; color:#22c55e;">📄 论文速递 · 📊 今日数据 · TL;DR 扫描条</td></tr>
+    <tr><td style="padding:10px;">Hero 区</td><td style="padding:10px; color:#f85149;">大字标题 + 统计指标</td><td style="padding:10px; color:#22c55e;">极简顶部条（在线指示 + 版本 + 日期），不占信息空间</td></tr>
+  </table>
+</div>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A (推荐)</div>
+    <div class="content">
+      <h3>采用新方案：左主内容 + 右面板</h3>
+      <p>信息密度提升 3 倍，分类贴合工程师心智，TL;DR 支持 3 秒扫读。保留 Apple 美学但服务于功能。</p>
+    </div>
+  </div>
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>混合：新布局 + 旧 Hero</h3>
+      <p>保留大标题和统计，但压缩到 1/3 屏高。下面是新的主内容+面板布局。</p>
+    </div>
+  </div>
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>继续迭代</h3>
+      <p>方向对但细节还需调整。告诉我具体哪里需要改。</p>
+    </div>
+  </div>
+</div>

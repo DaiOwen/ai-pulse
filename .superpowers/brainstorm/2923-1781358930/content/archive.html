@@ -1,0 +1,105 @@
+<h2>历史归档页面设计</h2>
+<p class="subtitle">读者点击「往期回顾」后看到的页面，决定浏览历史的体验</p>
+
+<div class="section">
+  <h3>方案 A — 日历视图</h3>
+  <div class="mockup">
+    <div class="mockup-header">日历热力图 + 日期列表，适合每日追更的读者</div>
+    <div class="mockup-body" style="background:#0d1117; padding:20px; font-size:12px; max-width:700px; margin:0 auto;">
+      <div style="text-align:center; margin-bottom:16px;">
+        <div style="font-size:16px; font-weight:bold; color:#58a6ff;">📅 往期回顾</div>
+        <div style="font-size:10px; color:#8b949e;">2026年6月</div>
+      </div>
+      <!-- Calendar grid -->
+      <div style="display:grid; grid-template-columns:repeat(7,1fr); gap:6px; margin-bottom:16px; text-align:center;">
+        <div style="color:#8b949e; font-size:9px;">一</div><div style="color:#8b949e; font-size:9px;">二</div><div style="color:#8b949e; font-size:9px;">三</div><div style="color:#8b949e; font-size:9px;">四</div><div style="color:#8b949e; font-size:9px;">五</div><div style="color:#8b949e; font-size:9px;">六</div><div style="color:#8b949e; font-size:9px;">日</div>
+        <div style="color:#484f58; font-size:10px;">1</div>
+        <div style="color:#484f58; font-size:10px;">2</div>
+        <div style="background:#1f6feb22; border-radius:4px; padding:2px; color:#58a6ff; font-size:10px; border:1px solid #1f6feb44;">3<div style="font-size:7px; color:#7ee787;">三版</div></div>
+        <div style="background:#1f6feb22; border-radius:4px; padding:2px; color:#58a6ff; font-size:10px; border:1px solid #1f6feb44;">4<div style="font-size:7px; color:#7ee787;">三版</div></div>
+        <div style="background:#1f6feb22; border-radius:4px; padding:2px; color:#58a6ff; font-size:10px; border:1px solid #1f6feb44;">5</div>
+        <div style="color:#c9d1d9; font-size:10px;">6</div><div style="color:#c9d1d9; font-size:10px;">7</div>
+        <div style="background:#1f6feb22; border-radius:4px; padding:2px; color:#58a6ff; font-size:10px; border:1px solid #1f6feb44;">8</div>
+        <div style="background:#1f6feb22; border-radius:4px; padding:2px; color:#58a6ff; font-size:10px; border:1px solid #1f6feb44;">9<div style="font-size:7px; color:#7ee787;">三版</div></div>
+        <div style="background:#1f6feb22; border-radius:4px; padding:2px; color:#58a6ff; font-size:10px; border:1px solid #1f6feb44;">10</div>
+        <div style="background:#1f6feb22; border-radius:4px; padding:2px; color:#58a6ff; font-size:10px; border:1px solid #1f6feb44;">11</div>
+        <div style="background:#1f6feb33; border-radius:4px; padding:2px; color:#58a6ff; font-size:10px; border:1px solid #58a6ff; font-weight:bold;">12<div style="font-size:7px; color:#7ee787;">三版</div></div>
+        <div style="background:#1f6feb44; border-radius:4px; padding:2px; color:#fff; font-size:10px; font-weight:bold; border:2px solid #58a6ff;">13<div style="font-size:7px; color:#7ee787;">今</div></div>
+        <div style="color:#484f58; font-size:10px;">14</div><div style="color:#484f58; font-size:10px;">15</div>
+        <div style="color:#c9d1d9; font-size:10px;">...</div>
+      </div>
+      <div style="font-size:9px; color:#8b949e; text-align:center;">
+        🟢 三版 = 当天早中晚三期完整 · 🔵 有内容 = 至少一期
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>方案 B — 列表视图</h3>
+  <div class="mockup">
+    <div class="mockup-header">按时间倒序的卡片列表，展示每期摘要，适合搜索和浏览</div>
+    <div class="mockup-body" style="background:#0d1117; padding:20px; font-size:12px; max-width:700px; margin:0 auto;">
+      <div style="text-align:center; margin-bottom:16px;">
+        <div style="font-size:16px; font-weight:bold; color:#58a6ff;">📅 往期回顾</div>
+      </div>
+      <div style="background:#161b22; border:1px solid #30363d; border-radius:6px; padding:12px; margin-bottom:8px;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <span style="color:#58a6ff; font-weight:bold;">06/13 晚间版</span>
+            <span style="color:#f78166; font-size:10px; margin-left:8px;">📰 头条 5篇</span>
+          </div>
+          <span style="color:#8b949e; font-size:10px;">3小时前</span>
+        </div>
+        <div style="color:#8b949e; font-size:10px; margin-top:4px;">OpenAI发布新推理模型 · 国内AI agent平台上线 · Mistral新模型...</div>
+      </div>
+      <div style="background:#161b22; border:1px solid #30363d; border-radius:6px; padding:12px; margin-bottom:8px;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <span style="color:#f2cc60; font-weight:bold;">06/13 午间版</span>
+            <span style="color:#f78166; font-size:10px; margin-left:8px;">📰 头条 4篇</span>
+          </div>
+          <span style="color:#8b949e; font-size:10px;">7小时前</span>
+        </div>
+        <div style="color:#8b949e; font-size:10px; margin-top:4px;">字节跳动开源AI助手 · Vercel AI SDK 5.0 · Anthropic融资...</div>
+      </div>
+      <div style="background:#161b22; border:1px solid #30363d; border-radius:6px; padding:12px; margin-bottom:8px; opacity:0.6;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <span style="color:#58a6ff; font-weight:bold;">06/13 早间版</span>
+            <span style="color:#f78166; font-size:10px; margin-left:8px;">📰 头条 6篇</span>
+          </div>
+          <span style="color:#8b949e; font-size:10px;">11小时前</span>
+        </div>
+        <div style="color:#8b949e; font-size:10px; margin-top:4px;">NVIDIA新芯片 · Gemini更新 · 欧盟AI法案 · LLaMA.cpp多GPU...</div>
+      </div>
+      <div style="text-align:center; margin-top:12px;">
+        <span style="color:#8b949e; font-size:10px;">← 加载更多 →</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>日历视图</h3>
+      <p>一眼看到本月哪些天有内容，适合每日追更。GitHub贡献图式的热力标记。</p>
+    </div>
+  </div>
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>列表视图</h3>
+      <p>滚动加载，附每期摘要预览。适合快速浏览和搜索。</p>
+    </div>
+  </div>
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C (推荐)</div>
+    <div class="content">
+      <h3>日历 + 列表组合</h3>
+      <p>上方日历月份导航，下方展示所选日期对应的各版列表。兼顾全局视野和内容深度。</p>
+    </div>
+  </div>
+</div>

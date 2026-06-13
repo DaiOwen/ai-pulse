@@ -1,0 +1,198 @@
+<h2>页面布局方案</h2>
+<p class="subtitle">AI热点速览 HTML 页面的三种布局风格，点击选择你喜欢的</p>
+
+<div class="section">
+  <h3>方案 A — 经典单栏</h3>
+  <div class="mockup">
+    <div class="mockup-header">像读一份报纸，从上到下依次展开</div>
+    <div class="mockup-body" style="max-width:720px; margin:0 auto; font-size:13px;">
+      <div style="background:#1a1a2e; color:#e0e0e0; padding:24px; border-radius:6px 6px 0 0; text-align:center;">
+        <div style="font-size:22px; font-weight:bold;">🤖 AI热点速览</div>
+        <div style="font-size:12px; color:#999; margin-top:4px;">2026年6月13日 · 早间版</div>
+        <div style="font-size:11px; color:#666; margin-top:2px;">用AI之眼，看AI世界</div>
+      </div>
+      <div style="background:#16213e; color:#ccc; padding:16px 20px; border-bottom:1px solid #222;">
+        <div style="font-size:14px; font-weight:bold; color:#ff6b6b; margin-bottom:8px;">📰 今日头条</div>
+        <div style="font-size:12px; margin-bottom:6px;"><b>1.</b> OpenAI发布新推理模型，性能大幅提升</div>
+        <div style="font-size:12px; margin-bottom:6px;"><b>2.</b> 国内首个AI agent平台上线，多家企业接入</div>
+        <div style="font-size:12px;"><b>3.</b> 开源社区迎来新星：Mistral发布轻量模型</div>
+      </div>
+      <div style="background:#1a1a2e; color:#ccc; padding:16px 20px; border-bottom:1px solid #222;">
+        <div style="font-size:14px; font-weight:bold; color:#4ecdc4; margin-bottom:8px;">🛠️ 工具 · 产品</div>
+        <div style="font-size:12px; margin-bottom:4px;"><b>1.</b> Vercel AI SDK 5.0 发布</div>
+        <div style="font-size:12px; margin-bottom:4px;"><b>2.</b> 字节跳动开源AI编程助手</div>
+        <div style="font-size:12px;"><b>3.</b> LLaMA.cpp 支持多GPU推理</div>
+      </div>
+      <div style="background:#16213e; color:#ccc; padding:16px 20px; border-bottom:1px solid #222;">
+        <div style="font-size:14px; font-weight:bold; color:#f9ca24; margin-bottom:8px;">💼 行业 · 资本</div>
+        <div style="font-size:12px; margin-bottom:4px;"><b>1.</b> Anthropic获50亿美元新一轮融资</div>
+        <div style="font-size:12px;"><b>2.</b> 欧盟AI法案新规本月生效</div>
+      </div>
+      <div style="background:#1a1a2e; color:#ccc; padding:16px 20px; border-bottom:1px solid #222;">
+        <div style="font-size:14px; font-weight:bold; color:#a29bfe; margin-bottom:8px;">🌍 海外精选</div>
+        <div style="font-size:12px; margin-bottom:4px;"><b>1.</b> Google DeepMind的Gemini更新引发关注</div>
+        <div style="font-size:12px;"><b>2.</b> NVIDIA发布新一代AI训练芯片</div>
+      </div>
+      <div style="background:#16213e; color:#ccc; padding:16px 20px; border-bottom:1px solid #222;">
+        <div style="font-size:14px; font-weight:bold; color:#00d2ff; margin-bottom:8px;">⭐ 开源项目热度榜</div>
+        <div style="display:flex; gap:16px;">
+          <div style="flex:1; font-size:11px;">
+            <div style="color:#ffd700; margin-bottom:4px;">🔥 Stars上升 Top5</div>
+            <div>1. vllm-project/vllm</div>
+            <div>2. langchain-ai/langchain</div>
+            <div>3. deepseek-ai/DeepSeek</div>
+          </div>
+          <div style="flex:1; font-size:11px;">
+            <div style="color:#ff6b6b; margin-bottom:4px;">👀 关注度 Top5</div>
+            <div>1. microsoft/autogen</div>
+            <div>2. openai/whisper</div>
+            <div>3. meta-llama/llama</div>
+          </div>
+        </div>
+      </div>
+      <div style="background:#1a1a2e; color:#888; padding:12px 20px; border-radius:0 0 6px 6px; text-align:center; font-size:11px; font-style:italic;">
+        💬 "AI不会取代你，但会用AI的人会。" —— 今日一语
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>方案 B — 双栏布局</h3>
+  <div class="mockup">
+    <div class="mockup-header">左侧主内容 + 右侧排名/日历面板</div>
+    <div class="mockup-body" style="display:flex; gap:0; font-size:12px; max-width:900px; margin:0 auto;">
+      <div style="flex:1.4; background:#1a1a2e; padding:20px;">
+        <div style="font-size:18px; font-weight:bold; color:#fff; margin-bottom:12px;">🤖 AI热点速览</div>
+        <div style="font-size:10px; color:#666; margin-bottom:16px;">2026.06.13 早间版</div>
+        <div style="font-size:12px; font-weight:bold; color:#ff6b6b; margin-bottom:8px;">📰 今日头条</div>
+        <div style="font-size:11px; color:#ccc; margin-bottom:12px; line-height:1.6;">
+          1. OpenAI发布新推理模型，性能大幅提升<br>
+          2. 国内首个AI agent平台上线<br>
+          3. Mistral发布轻量模型
+        </div>
+        <div style="font-size:12px; font-weight:bold; color:#4ecdc4; margin-bottom:8px;">🛠️ 工具 · 产品</div>
+        <div style="font-size:11px; color:#ccc; margin-bottom:12px; line-height:1.6;">
+          1. Vercel AI SDK 5.0 发布<br>
+          2. 字节跳动开源AI编程助手<br>
+          3. LLaMA.cpp 支持多GPU推理
+        </div>
+        <div style="font-size:12px; font-weight:bold; color:#f9ca24; margin-bottom:8px;">💼 行业 · 资本</div>
+        <div style="font-size:11px; color:#ccc; margin-bottom:12px; line-height:1.6;">
+          1. Anthropic获50亿美元融资<br>
+          2. 欧盟AI法案新规生效
+        </div>
+        <div style="font-size:12px; font-weight:bold; color:#a29bfe; margin-bottom:8px;">🌍 海外精选</div>
+        <div style="font-size:11px; color:#ccc; line-height:1.6;">
+          1. Google DeepMind Gemini更新<br>
+          2. NVIDIA发布新一代AI训练芯片
+        </div>
+      </div>
+      <div style="flex:0.6; background:#16213e; padding:16px; border-left:1px solid #333;">
+        <div style="font-size:11px; font-weight:bold; color:#fff; margin-bottom:8px;">📅 往期回顾</div>
+        <div style="font-size:10px; color:#999; line-height:2;">
+          06/13 早间 ←<br>
+          06/12 晚间<br>
+          06/12 午间<br>
+          06/12 早间<br>
+          06/11 晚间<br>
+        </div>
+        <div style="border-top:1px solid #333; margin:12px 0;"></div>
+        <div style="font-size:11px; font-weight:bold; color:#ffd700; margin-bottom:6px;">🔥 开源热度</div>
+        <div style="font-size:10px; color:#999; margin-bottom:6px;">Stars上升</div>
+        <div style="font-size:10px; color:#ccc; line-height:1.8;">
+          1. vllm-project/vllm<br>
+          2. langchain-ai/langchain<br>
+          3. deepseek-ai/DeepSeek<br>
+          4. microsoft/autogen<br>
+          5. crewAI/crewAI
+        </div>
+        <div style="font-size:10px; color:#999; margin:6px 0;">关注度</div>
+        <div style="font-size:10px; color:#ccc; line-height:1.8;">
+          1. openai/whisper<br>
+          2. meta-llama/llama<br>
+          3. Stability-AI/...
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>方案 C — 卡片式网格</h3>
+  <div class="mockup">
+    <div class="mockup-header">现代化卡片布局，每个板块独立成卡</div>
+    <div class="mockup-body" style="max-width:900px; margin:0 auto; font-size:12px;">
+      <div style="text-align:center; padding:16px; background:#1a1a2e; border-radius:6px; margin-bottom:12px;">
+        <div style="font-size:22px; font-weight:bold; color:#fff;">🤖 AI热点速览</div>
+        <div style="font-size:11px; color:#888;">2026年6月13日 · 早间版 · 用AI之眼看AI世界</div>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+        <div style="background:#1a1a2e; border-radius:6px; padding:14px; border-top:3px solid #ff6b6b;">
+          <div style="font-size:13px; font-weight:bold; color:#ff6b6b; margin-bottom:8px;">📰 今日头条</div>
+          <div style="font-size:11px; color:#ccc; line-height:1.6;">
+            1. OpenAI发布新推理模型<br>
+            2. 国内首个AI agent平台上线<br>
+            3. Mistral发布轻量模型
+          </div>
+        </div>
+        <div style="background:#1a1a2e; border-radius:6px; padding:14px; border-top:3px solid #4ecdc4;">
+          <div style="font-size:13px; font-weight:bold; color:#4ecdc4; margin-bottom:8px;">🛠️ 工具 · 产品</div>
+          <div style="font-size:11px; color:#ccc; line-height:1.6;">
+            1. Vercel AI SDK 5.0<br>
+            2. 字节开源AI编程助手<br>
+            3. LLaMA.cpp多GPU推理
+          </div>
+        </div>
+        <div style="background:#1a1a2e; border-radius:6px; padding:14px; border-top:3px solid #f9ca24;">
+          <div style="font-size:13px; font-weight:bold; color:#f9ca24; margin-bottom:8px;">💼 行业 · 资本</div>
+          <div style="font-size:11px; color:#ccc; line-height:1.6;">
+            1. Anthropic获50亿融资<br>
+            2. 欧盟AI法案新规生效
+          </div>
+        </div>
+        <div style="background:#1a1a2e; border-radius:6px; padding:14px; border-top:3px solid #a29bfe;">
+          <div style="font-size:13px; font-weight:bold; color:#a29bfe; margin-bottom:8px;">🌍 海外精选</div>
+          <div style="font-size:11px; color:#ccc; line-height:1.6;">
+            1. Gemini更新引发关注<br>
+            2. NVIDIA新AI训练芯片
+          </div>
+        </div>
+        <div style="background:#1a1a2e; border-radius:6px; padding:14px; border-top:3px solid #ffd700; grid-column:1/-1;">
+          <div style="font-size:13px; font-weight:bold; color:#ffd700; margin-bottom:8px;">⭐ 开源项目热度榜</div>
+          <div style="display:flex; gap:20px; font-size:11px; color:#ccc;">
+            <div style="flex:1;"><b>🔥 Stars上升:</b> vllm, langchain, DeepSeek, autogen, crewAI</div>
+            <div style="flex:1;"><b>👀 关注度:</b> whisper, llama, StableDiffusion, ollama, tiktoken</div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; padding:12px; color:#666; font-size:11px; font-style:italic; margin-top:8px;">
+        💬 "AI不会取代你，但会用AI的人会。"
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>经典单栏</h3>
+      <p>阅读体验最流畅，适合长内容深度阅读，但开源榜单在底部可能被忽略。</p>
+    </div>
+  </div>
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>双栏布局</h3>
+      <p>右边栏固定日历+榜单，导航方便，适合常驻屏幕。但右侧空间有限显示不全。</p>
+    </div>
+  </div>
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C (推荐)</div>
+    <div class="content">
+      <h3>卡片式网格</h3>
+      <p>现代感强，每个板块独立醒目，开源榜单横跨底部足够宽。在大屏幕上视觉效果最好。</p>
+    </div>
+  </div>
+</div>
