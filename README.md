@@ -1,161 +1,161 @@
-🌐 **Read this in:** [English](README.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [Deutsch](README.de.md) · [한국어](README.ko.md)
+🌐 **多语言版本:** [English](README.en.md) · [中文](README.md) · [日本語](README.ja.md) · [Deutsch](README.de.md) · [한국어](README.ko.md)
 
 <p align="center">
-  <img src="assets/favicon.svg" width="64" alt="AI Pulse logo" />
+  <img src="assets/favicon.svg" width="64" alt="AI Pulse 标志" />
 </p>
 
-<h1 align="center">AI Pulse · Daily AI News Digest</h1>
+<h1 align="center">AI Pulse · AI 热点速览</h1>
 
 <p align="center">
-  <em>AI-powered daily news aggregation for developers. Zero deps. Claude Code native.</em>
+  <em>面向 AI 开发者的每日新闻智能聚合。零依赖，Claude Code 原生驱动。</em>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/license-MIT-blue" alt="License">
-  <img src="https://img.shields.io/badge/dependencies-zero-brightgreen" alt="Zero Dependencies">
-  <img src="https://img.shields.io/badge/PRs-welcome-orange" alt="PRs Welcome">
+  <img src="https://img.shields.io/badge/license-MIT-blue" alt="开源协议">
+  <img src="https://img.shields.io/badge/dependencies-zero-brightgreen" alt="零依赖">
+  <img src="https://img.shields.io/badge/PRs-welcome-orange" alt="欢迎 PR">
 </p>
 
 ---
 
-**AI Pulse** is a daily AI news aggregation HTML page for AI developers, powered by [Claude Code](https://claude.ai). It auto-generates beautiful, responsive HTML pages 3 times daily by scraping and synthesizing news from 6+ sources. No npm, no Python, no external services — just Claude Code and a terminal.
+**AI Pulse** 是一款面向 AI 开发者的每日新闻智能聚合页，基于 [Claude Code](https://claude.ai) 自动驱动。每天早中晚三次自动采集 6+ 信源，智能去重、分类、生成精美的 HTML 页面。无需 npm、无需 Python、无需任何外部服务，仅需 Claude Code 和一个终端。
 
-## Features
+## 功能特色
 
-- 🤖 **7 curated sections** — Model Updates, Tools & Deploy, Policy & Compliance, Paper Spotlight, Real-World AI Cases, Open Source Pulse, Global Brief
-- ⚡ **Four-level information depth** — TL;DR (3s) → Headlines (10s) → Summaries (30s) → Full articles
-- 🎨 **Apple-inspired design** — Dark/light theme with dynamic animated background, glassmorphism cards
-- 📱 **Responsive layout** — Works beautifully on desktop, tablet, and mobile
-- 📅 **Archive calendar** — Browse past editions with an interactive calendar
-- 🔍 **Zero dependencies** — Pure HTML/CSS/JS, no build step, no package manager
-- 🇨🇳 **Chinese AI ecosystem focus** — Priority coverage of domestic models and compliance policies
-- ⏰ **Auto-scheduled** — Generates at 07:49, 12:17, and 20:13 daily
+- 🤖 **7 大内容板块** — 大模型动态、工具与部署、政策合规、论文速递、应用落地、开源热度、海外参考
+- ⚡ **四级信息深度** — TL;DR(3秒) → 标题(10秒) → 摘要(30秒) → 原文全文
+- 🎨 **Apple 设计美学** — 暗色/亮色双主题 + 动态光球背景 + 毛玻璃卡片
+- 📱 **响应式布局** — 桌面端、平板、手机均流畅浏览
+- 📅 **日历归档导航** — 交互式日历查看历史各期
+- 🔍 **零依赖** — 纯 HTML/CSS/JS，无需构建工具或包管理器
+- 🇨🇳 **中国 AI 生态优先** — 国产模型动态优先，政策合规重点追踪
+- ⏰ **定时自动生成** — 每天 07:49 / 12:17 / 20:13 三次自动更新
 
-## Quick Start
+## 快速开始
 
 ```bash
-# 1. Clone the repository
+# 1. 克隆项目
 git clone https://github.com/DaiOwen/ai-pulse.git
 cd ai-pulse
 
-# 2. Generate your first edition
-# (Claude Code loads the project config automatically)
+# 2. 生成第一期
+（Claude Code 自动加载项目配置）
 /ai-digest morning
 
-# 3. Open index.html in your browser
+# 3. 用浏览器打开 index.html
 ```
 
-On first run, Claude Code will:
-- Search 6+ sources for the latest AI news (WebSearch)
-- Deep-fetch top articles for full content (WebFetch)
-- Deduplicate, score, translate, and classify all items
-- Generate a complete standalone HTML page saved to `archive/` and `index.html`
+首次运行时，Claude Code 将自动：
+- 从 6+ 信源搜索最新 AI 新闻（WebSearch）
+- 深度抓取 Top 文章全文（WebFetch）
+- 智能去重、评分、翻译、分类
+- 生成完整 HTML 保存到 `archive/` 和 `index.html`
 
-### Scheduled Tasks
+### 定时任务
 
-After the first manual run, three cron jobs are registered automatically:
+首次手动运行后，自动注册三个定时任务：
 
-| Task | Time | Coverage |
+| 任务 | 时间 | 覆盖范围 |
 |------|------|----------|
-| 🌅 Morning | 07:49 | Overnight global + morning domestic news |
-| ☀️ Noon | 12:17 | Incremental updates from the morning |
-| 🌙 Evening | 20:13 | Full-day summary + all-day open source data |
+| 🌅 早间版 | 07:49 | 昨夜海外动态 + 国内早间新闻 |
+| ☀️ 午间版 | 12:17 | 上午增量更新 |
+| 🌙 晚间版 | 20:13 | 全天汇总 + 开源数据 |
 
-### Manual Commands
+### 手动命令
 
-| Command | Description |
-|---------|-------------|
-| `/ai-digest morning` | Generate morning edition |
-| `/ai-digest noon` | Generate noon edition (incremental) |
-| `/ai-digest evening` | Generate evening edition (full-day summary) |
+| 命令 | 说明 |
+|------|------|
+| `/ai-digest morning` | 生成早间版 |
+| `/ai-digest noon` | 生成午间版（增量） |
+| `/ai-digest evening` | 生成晚间版（全天汇总） |
 
-## Content Sections
+## 内容板块
 
-| Section | Description |
-|---------|-------------|
-| 🤖 Model Updates | Priority on Chinese domestic + major global model releases |
-| 🛠️ Tools & Deploy | Framework updates, hardware adaptation, inference deployment |
-| 📋 Policy & Compliance | CAC filings, AI safety reviews, industry standards |
-| 📄 Paper Spotlight | One curated arXiv paper daily with practical value |
-| 💡 Real-World AI Cases | Enterprise AI integration stories & best practices |
-| ⭐ Open Source Pulse | GitHub/Gitee Stars rising Top 10 + attention Top 10 |
-| 🌍 Global Brief | 3 curated international stories impacting China |
+| 板块 | 说明 |
+|------|------|
+| 🤖 大模型动态 | 国产优先 + 国际重大模型发布/更新 |
+| 🛠️ 工具 & 部署 | 框架更新、国产硬件适配、推理部署方案 |
+| 📋 政策 & 合规 | 网信办备案、AI 安全审查、行业标准 |
+| 📄 论文速递 | 每日精选一篇有落地价值的 arXiv 论文 |
+| 💡 应用落地 | 企业 AI 集成案例、最佳实践 |
+| ⭐ 开源热度 | GitHub/Gitee Stars 上升 Top 10 + 关注度 Top 10 |
+| 🌍 海外参考 | 精选 3 条影响国内的海外动态 |
 
-## Architecture
+## 技术架构
 
 ```
-Cron Schedule (07:49 / 12:17 / 20:13)
+Cron 定时调度 (07:49 / 12:17 / 20:13)
        │
        ▼
-Claude Code Launches
+Claude Code 启动
        │
-       ├─ WebSearch (15-20 multi-keyword searches)
-       ├─ WebFetch (deep-fetch top 5-8 results)
-       └─ GitHub/Gitee API (open source trending data)
-       │
-       ▼
-Processing Pipeline
-  ① Dedup (title similarity + URL normalization)
-  ② Scoring (popularity×0.4 + timeliness×0.3 + source quality×0.3)
-  ③ Translation (global news → localized summaries)
-  ④ Classification (7 sections)
-  ⑤ Summary generation (2-3 sentences + developer impact note)
+       ├─ WebSearch（15-20 次多关键词搜索）
+       ├─ WebFetch（Top 5-8 结果深度抓取）
+       └─ GitHub/Gitee API（开源热度数据）
        │
        ▼
-HTML Generation & Archive
-  • Generates fully self-contained HTML
-  • Saves to archive/YYYY-MM-DD-{edition}.html
-  • Updates index.html to latest edition
+智能处理 Pipeline
+  ① 去重（标题相似度 + URL 归一化）
+  ② 评分（热度×0.4 + 时效×0.3 + 来源质量×0.3）
+  ③ 翻译（海外新闻 → 中文摘要）
+  ④ 分类（7 大板块）
+  ⑤ 摘要生成（每条 2-3 句 + 开发者影响标注）
+       │
+       ▼
+HTML 生成 & 归档
+  • 生成完整自包含 HTML
+  • 保存至 archive/YYYY-MM-DD-{edition}.html
+  • 更新 index.html 为最新一期
 ```
 
-## Project Structure
+## 项目结构
 
 ```
 ai-pulse/
-├── index.html              # Main page (latest issue + calendar nav)
-├── archive/                # Historical archive
+├── index.html              # 主页（最新一期 + 日历导航）
+├── archive/                # 历史归档
 │   └── YYYY-MM-DD-{edition}.html
 ├── assets/
-│   └── favicon.svg         # Site icon
-├── design/                 # Design references
-├── .claude/                # Claude Code config
-│   ├── settings.json       # Permission config
-│   └── scheduled_tasks.json # Scheduled tasks (runtime)
-├── CLAUDE.md               # Project instructions & Skill definitions
+│   └── favicon.svg         # 站点图标
+├── design/                 # 设计稿参考
+├── .claude/                # Claude Code 配置
+│   ├── settings.json       # 权限配置
+│   └── scheduled_tasks.json # 定时任务（运行时）
+├── CLAUDE.md               # 项目指令 + Skill 定义
 ├── .gitignore
 └── README.md
 ```
 
-## Screenshots
+## 截图预览
 
-### 🌙 Dark Mode (default)
+### 🌙 暗色模式（默认）
 
 ![AI Pulse Dark Mode](screenshots/dark-mode.png)
 
-### ☀️ Light Mode
+### ☀️ 亮色模式
 
 ![AI Pulse Light Mode](screenshots/light-mode.png)
 
-## FAQ
+## 常见问题
 
-**Q: Why is index.html blank?**
-A: You need to run `/ai-digest morning` first to generate content.
+**Q: 打开 index.html 没有内容？**
+A: 需要先运行 `/ai-digest morning` 生成第一期内容。
 
-**Q: How do I browse past editions?**
-A: Click the "Archive" button to open the calendar modal showing all dates and editions.
+**Q: 如何查看历史各期？**
+A: 点击「往期回顾」按钮，日历弹窗展示当月所有日期和已生成的版次。
 
-**Q: Scheduled tasks aren't running?**
-A: Run `CronList` in the terminal to check task status. Ensure Claude Code is running.
+**Q: 定时任务没有运行？**
+A: 在终端运行 `CronList` 检查任务状态，确保 Claude Code 处于运行状态。
 
-**Q: Missed a generation?**
-A: Manually run the corresponding `/ai-digest` command to backfill.
+**Q: 某天漏了生成？**
+A: 手动运行对应版次的 `/ai-digest` 命令即可补生成。
 
-**Q: Can I customize the content sections?**
-A: Yes — edit the classification rules in `CLAUDE.md` to adjust section priorities.
+**Q: 可以自定义内容板块吗？**
+A: 可以——编辑 `CLAUDE.md` 中的分类规则即可调整板块优先级。
 
 ---
 
 <p align="center">
-  Built with <a href="https://claude.ai">Claude Code</a> · 
+  基于 <a href="https://claude.ai">Claude Code</a> 构建 ·
   <a href="https://github.com/DaiOwen/ai-pulse">GitHub</a>
 </p>

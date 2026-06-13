@@ -1,4 +1,4 @@
-🌐 **언어 선택:** [English](README.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [Deutsch](README.de.md) · [한국어](README.ko.md)
+🌐 **언어 선택:** [English](README.en.md) · [中文](README.md) · [日本語](README.ja.md) · [Deutsch](README.de.md) · [한국어](README.ko.md)
 
 <p align="center">
   <img src="assets/favicon.svg" width="64" alt="AI Pulse 로고" />

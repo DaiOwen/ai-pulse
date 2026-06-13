@@ -1,4 +1,4 @@
-🌐 **多语言版本:** [English](README.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [Deutsch](README.de.md) · [한국어](README.ko.md)
+🌐 **多语言版本:** [English](README.en.md) · [中文](README.md) · [日本語](README.ja.md) · [Deutsch](README.de.md) · [한국어](README.ko.md)
 
 <p align="center">
   <img src="assets/favicon.svg" width="64" alt="AI Pulse 标志" />
