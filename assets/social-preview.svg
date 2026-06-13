@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#312e81"/>
+      <stop offset="100%" stop-color="#2e1065"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#6366f1" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glowFilter">
+      <feGaussianBlur stdDeviation="60" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="640" fill="url(#bg)"/>
+
+  <!-- Ambient glow orbs -->
+  <circle cx="200" cy="320" r="200" fill="url(#glow)" filter="url(#glowFilter)"/>
+  <circle cx="1080" cy="320" r="200" fill="url(#glow)" filter="url(#glowFilter)"/>
+
+  <!-- Accent line -->
+  <rect x="0" y="0" width="1280" height="6" fill="url(#accent)"/>
+
+  <!-- Icon circle with lightning bolt -->
+  <circle cx="200" cy="240" r="70" fill="url(#accent)" filter="url(#shadow)"/>
+  <text x="200" y="270" font-size="72" text-anchor="middle" fill="white" font-family="Arial, sans-serif">⚡</text>
+
+  <!-- Title -->
+  <text x="200" y="380" font-size="72" font-weight="bold" fill="white" font-family="Arial, Helvetica, sans-serif" letter-spacing="4">AI Pulse</text>
+
+  <!-- Subtitle -->
+  <text x="200" y="440" font-size="28" fill="#c7d2fe" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">Daily AI News Digest</text>
+
+  <!-- Divider -->
+  <line x1="200" y1="465" x2="500" y2="465" stroke="#6366f1" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Feature tags -->
+  <rect x="200" y="495" width="90" height="32" rx="16" fill="#6366f1" fill-opacity="0.2" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="245" y="516" font-size="14" fill="#a5b4fc" font-family="Arial, sans-serif" text-anchor="middle">7 Sections</text>
+
+  <rect x="305" y="495" width="110" height="32" rx="16" fill="#6366f1" fill-opacity="0.2" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="360" y="516" font-size="14" fill="#a5b4fc" font-family="Arial, sans-serif" text-anchor="middle">Zero Dependencies</text>
+
+  <rect x="430" y="495" width="80" height="32" rx="16" fill="#6366f1" fill-opacity="0.2" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="470" y="516" font-size="14" fill="#a5b4fc" font-family="Arial, sans-serif" text-anchor="middle">Open Source</text>
+
+  <!-- Right side decorative pattern -->
+  <circle cx="1000" cy="240" r="120" fill="none" stroke="#6366f1" stroke-width="1" stroke-opacity="0.15"/>
+  <circle cx="1000" cy="240" r="90" fill="none" stroke="#8b5cf6" stroke-width="1" stroke-opacity="0.2"/>
+  <circle cx="1000" cy="240" r="60" fill="none" stroke="#a78bfa" stroke-width="1" stroke-opacity="0.25"/>
+
+  <!-- Small code brackets decoration -->
+  <text x="960" y="420" font-size="36" fill="#6366f1" fill-opacity="0.3" font-family="monospace">{&lt;/&gt;}</text>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="634" width="1280" height="6" fill="url(#accent)"/>
+</svg>
