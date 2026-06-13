@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 脉搏 · 热点速览</title>
+<meta name="description" content="面向中国AI开发工程师的每日AI新闻智能聚合">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
+
+  :root {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: rgba(255,255,255,0.025);
+    --bg-card: rgba(255,255,255,0.018);
+    --border-subtle: rgba(255,255,255,0.06);
+    --border-card: rgba(255,255,255,0.04);
+    --text-primary: #f5f5f7;
+    --text-secondary: #9898a0;
+    --text-tertiary: #86868b;
+    --accent-indigo: #6366f1;
+    --accent-green: #22c55e;
+    --accent-amber: #f59e0b;
+    --accent-purple: #8b5cf6;
+    --accent-cyan: #06b6d4;
+    --bg-glow-indigo: rgba(99,102,241,0.04);
+    --bg-glow-purple: rgba(139,92,246,0.03);
+    --bg-glow-cyan: rgba(6,182,212,0.03);
+  }
+
+  [data-theme="light"] {
+    --bg-primary: #f5f5f7;
+    --bg-secondary: rgba(0,0,0,0.02);
+    --bg-card: rgba(0,0,0,0.015);
+    --border-subtle: rgba(0,0,0,0.08);
+    --border-card: rgba(0,0,0,0.06);
+    --text-primary: #1d1d1f;
+    --text-secondary: #6e6e73;
+    --text-tertiary: #86868b;
+    --bg-glow-indigo: rgba(99,102,241,0.06);
+    --bg-glow-purple: rgba(139,92,246,0.04);
+    --bg-glow-cyan: rgba(6,182,212,0.04);
+  }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(160deg, #0a0a0f 0%, #0f0f1a 30%, #0d0d18 60%, #0a0a14 100%);
+    color: var(--text-primary);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    transition: background 0.5s ease;
+  }
+
+  [data-theme="light"] body {
+    background: linear-gradient(160deg, #f5f5f7 0%, #fafafa 30%, #f0f0f3 60%, #f5f5f7 100%);
+  }
+
+  .bg-layer { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+  .orb {
+    position: absolute; border-radius: 50%; filter: blur(120px);
+    animation-timing-function: ease-in-out; animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .orb-1 { width:500px; height:500px; background:radial-gradient(circle, #6366f1 0%, transparent 70%); top:-10%; right:-5%; opacity:0.12; animation:float1 18s infinite; }
+  .orb-2 { width:400px; height:400px; background:radial-gradient(circle, #8b5cf6 0%, transparent 70%); bottom:-15%; left:-8%; opacity:0.12; animation:float2 22s infinite; }
+  .orb-3 { width:300px; height:300px; background:radial-gradient(circle, #06b6d4 0%, transparent 70%); top:45%; right:-10%; opacity:0.08; animation:float3 20s infinite; }
+  .orb-4 { width:250px; height:250px; background:radial-gradient(circle, #f59e0b 0%, transparent 70%); top:-8%; left:40%; opacity:0.06; animation:float4 24s infinite; }
+
+  @keyframes float1 {
+    0% { transform:translate(0,0) scale(1); } 33% { transform:translate(-80px,60px) scale(1.15); }
+    66% { transform:translate(40px,-30px) scale(0.9); } 100% { transform:translate(-20px,20px) scale(1.05); }
+  }
+  @keyframes float2 {
+    0% { transform:translate(0,0) scale(1); } 33% { transform:translate(60px,-50px) scale(1.2); }
+    66% { transform:translate(-30px,20px) scale(0.85); } 100% { transform:translate(10px,-10px) scale(1.1); }
+  }
+  @keyframes float3 {
+    0% { transform:translate(0,0) scale(1); } 50% { transform:translate(-50px,-40px) scale(1.3); }
+    100% { transform:translate(20px,30px) scale(0.9); }
+  }
+  @keyframes float4 {
+    0% { transform:translate(0,0) scale(1); } 25% { transform:translate(30px,50px) scale(1.25); }
+    75% { transform:translate(-40px,20px) scale(0.85); } 100% { transform:translate(10px,-10px) scale(1.05); }
+  }
+
+  .grid-overlay {
+    position:absolute; inset:0;
+    background-image:linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px),
+                     linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px);
+    background-size:60px 60px; animation:gridShift 30s linear infinite;
+  }
+  @keyframes gridShift { 0% { background-position:0 0; } 100% { background-position:60px 60px; } }
+
+  .particle {
+    position:absolute; border-radius:50%; background:rgba(255,255,255,0.35);
+    animation:rise linear infinite;
+  }
+  @keyframes rise {
+    0% { transform:translateY(0) translateX(0); opacity:0; }
+    10% { opacity:0.5; } 90% { opacity:0.05; }
+    100% { transform:translateY(-100vh) translateX(60px); opacity:0; }
+  }
+
+  .content { position:relative; z-index:1; max-width:900px; margin:0 auto; padding:0 32px 80px; }
+
+  .nav { display:flex; justify-content:space-between; align-items:center; padding:18px 0; border-bottom:0.5px solid var(--border-subtle); }
+  .nav-brand { display:flex; align-items:center; gap:10px; }
+  .nav-logo { width:34px; height:34px; border-radius:9px; background:linear-gradient(135deg, #6366f1, #8b5cf6); display:flex; align-items:center; justify-content:center; font-size:16px; }
+  .nav-title { font-size:15px; font-weight:600; color:var(--text-primary); letter-spacing:-0.02em; }
+  .nav-sub { font-size:9px; color:var(--text-tertiary); letter-spacing:0.05em; }
+  .nav-right { display:flex; align-items:center; gap:20px; }
+  .nav-link { font-size:10px; color:var(--text-tertiary); font-weight:500; cursor:pointer; transition:color 0.2s; background:none; border:none; font-family:inherit; }
+  .nav-link:hover { color:var(--text-primary); }
+  .toggle-track { width:38px; height:22px; background:rgba(99,102,241,0.25); border-radius:11px; border:0.5px solid rgba(99,102,241,0.35); position:relative; cursor:pointer; transition:background 0.3s; }
+  .toggle-thumb { width:17px; height:17px; background:linear-gradient(135deg, #6366f1, #8b5cf6); border-radius:50%; position:absolute; top:2px; left:2px; box-shadow:0 1px 4px rgba(0,0,0,0.3); transition:transform 0.3s cubic-bezier(0.25,0.8,0.25,1.2); }
+  [data-theme="light"] .toggle-thumb { transform:translateX(16px); }
+  .toggle-label { font-size:10px; color:var(--text-tertiary); }
+
+  .hero { text-align:center; padding:56px 0 48px; position:relative; }
+  .hero-glow {
+    position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+    width:500px; height:180px;
+    background:radial-gradient(ellipse, rgba(99,102,241,0.07) 0%, transparent 70%);
+    pointer-events:none;
+  }
+  .hero-badge {
+    display:inline-flex; align-items:center; gap:8px;
+    background:rgba(99,102,241,0.08); border:0.5px solid rgba(99,102,241,0.15);
+    border-radius:100px; padding:6px 16px; margin-bottom:20px; position:relative; z-index:1;
+  }
+  .hero-badge-dot {
+    width:6px; height:6px; border-radius:50%; background:var(--accent-green);
+    box-shadow:0 0 6px rgba(34,197,94,0.5); animation:pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
+  .hero-badge-text { font-size:9px; color:#a5b4fc; font-weight:500; letter-spacing:0.05em; }
+  .hero-title { font-size:44px; font-weight:300; color:var(--text-primary); letter-spacing:-0.03em; line-height:1.1; margin-bottom:6px; position:relative; z-index:1; }
+  .hero-date { font-size:13px; color:var(--text-tertiary); font-weight:400; margin-bottom:28px; position:relative; z-index:1; }
+  .hero-stats { display:flex; justify-content:center; gap:40px; position:relative; z-index:1; }
+  .hero-stat-num { font-size:22px; font-weight:600; color:var(--text-primary); }
+  .hero-stat-label { font-size:9px; color:var(--text-tertiary); letter-spacing:0.04em; margin-top:2px; }
+  .hero-stat-divider { width:0.5px; background:var(--border-subtle); }
+
+  .tldr {
+    margin-bottom:40px; padding:14px 20px;
+    background:var(--bg-glow-indigo); border:0.5px solid rgba(99,102,241,0.1);
+    border-radius:10px; display:flex; gap:12px; align-items:flex-start;
+  }
+  .tldr-label { font-size:8px; font-weight:700; color:var(--accent-indigo); letter-spacing:0.08em; flex-shrink:0; margin-top:2px; }
+  .tldr-text { font-size:11px; color:#c9d1d9; line-height:1.6; }
+
+  .section-head { display:flex; align-items:center; gap:10px; margin-bottom:20px; }
+  .section-line { width:1px; height:18px; border-radius:1px; }
+  .section-label { font-size:10px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; }
+  .section-label-cn { font-size:9px; color:var(--text-tertiary); margin-left:4px; }
+
+  .feature-card {
+    background:var(--bg-secondary); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
+    border:0.5px solid var(--border-card); border-radius:16px; padding:28px; margin-bottom:12px;
+    transition:transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .feature-card:hover {
+    transform:translateY(-2px); border-color:rgba(255,255,255,0.12);
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+  }
+  .card-tag { font-size:8px; font-weight:600; letter-spacing:0.07em; margin-bottom:8px; }
+  .card-title { font-size:20px; font-weight:500; color:var(--text-primary); letter-spacing:-0.01em; line-height:1.3; margin-bottom:8px; }
+  .card-desc { font-size:11px; color:var(--text-secondary); line-height:1.6; margin-bottom:14px; }
+  .card-meta { display:flex; gap:14px; font-size:9px; color:var(--text-tertiary); }
+  .card-meta-link { color:var(--accent-indigo); }
+  .card-row { display:flex; gap:20px; align-items:flex-start; }
+  .card-icon {
+    width:72px; height:72px; border-radius:14px; flex-shrink:0;
+    background:linear-gradient(135deg, rgba(99,102,241,0.12), rgba(139,92,246,0.06));
+    display:flex; align-items:center; justify-content:center; font-size:26px;
+  }
+  .card-body { flex:1; }
+
+  .sub-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .sub-card {
+    background:var(--bg-card); border:0.5px solid var(--border-card);
+    border-radius:12px; padding:20px;
+    transition:transform 0.3s ease, border-color 0.3s ease;
+  }
+  .sub-card:hover { transform:translateY(-1px); border-color:rgba(255,255,255,0.1); }
+  .sub-tag { font-size:8px; color:var(--text-tertiary); font-weight:500; letter-spacing:0.04em; margin-bottom:8px; }
+  .sub-title { font-size:14px; font-weight:500; color:var(--text-primary); line-height:1.4; margin-bottom:6px; }
+  .sub-desc { font-size:10px; color:var(--text-secondary); line-height:1.5; }
+
+  .tool-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; }
+  .tool-card {
+    background:var(--bg-card); border:0.5px solid var(--border-card);
+    border-radius:12px; padding:18px;
+    transition:transform 0.3s ease, border-color 0.3s ease;
+  }
+  .tool-card:hover { transform:translateY(-1px); border-color:rgba(255,255,255,0.1); }
+  .tool-icon { font-size:18px; margin-bottom:10px; }
+  .tool-name { font-size:12px; font-weight:500; color:var(--text-primary); margin-bottom:4px; }
+  .tool-desc { font-size:9px; color:var(--text-tertiary); line-height:1.4; }
+  .tool-badge {
+    display:inline-block; font-size:7px; font-weight:600; padding:2px 8px; border-radius:8px;
+    letter-spacing:0.03em; margin-top:6px;
+  }
+  .badge-new { background:rgba(34,197,94,0.12); color:#4ade80; }
+  .badge-update { background:rgba(245,158,11,0.12); color:#fbbf24; }
+
+  .paper-spotlight {
+    background:var(--bg-glow-purple); border:0.5px solid rgba(139,92,246,0.1);
+    border-radius:16px; padding:24px;
+  }
+  .paper-header { display:flex; align-items:center; gap:8px; margin-bottom:10px; }
+  .paper-label { font-size:9px; font-weight:600; color:#c4b5fd; letter-spacing:0.05em; }
+  .paper-title { font-size:16px; font-weight:500; color:var(--text-primary); line-height:1.4; margin-bottom:6px; }
+  .paper-abstract { font-size:10px; color:var(--text-secondary); line-height:1.6; margin-bottom:8px; }
+  .paper-meta { font-size:8px; color:var(--accent-purple); }
+
+  .dual-cards { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .rank-card {
+    background:var(--bg-card); border:0.5px solid var(--border-card);
+    border-radius:12px; padding:20px;
+  }
+  .rank-label { font-size:9px; font-weight:600; letter-spacing:0.05em; margin-bottom:14px; }
+  .rank-row { display:flex; align-items:center; gap:10px; font-size:10px; margin-bottom:8px; }
+  .rank-num { color:var(--text-primary); font-weight:500; min-width:16px; }
+  .rank-name { color:var(--text-primary); flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .rank-stat { font-size:9px; }
+  .rank-up { color:#4ade80; }
+  .rank-neutral { color:var(--text-tertiary); }
+
+  .footer { text-align:center; padding:36px 0 0; border-top:0.5px solid var(--border-subtle); }
+  .footer-icon { font-size:24px; margin-bottom:8px; opacity:0.6; }
+  .footer-quote { font-size:13px; font-weight:400; color:var(--text-secondary); font-style:italic; letter-spacing:-0.01em; }
+  .footer-author { font-size:9px; color:var(--text-tertiary); margin-top:4px; }
+
+  .section-gap { margin-bottom:48px; }
+
+  .calendar-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); backdrop-filter:blur(4px); z-index:100; justify-content:center; align-items:center; }
+  .calendar-overlay.active { display:flex; }
+  .calendar-modal { background:var(--bg-primary); border:0.5px solid var(--border-subtle); border-radius:16px; padding:24px; max-width:380px; width:90%; max-height:80vh; overflow-y:auto; }
+  .calendar-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; }
+  .calendar-month { font-size:16px; font-weight:600; color:var(--text-primary); }
+  .calendar-nav { font-size:18px; color:var(--text-tertiary); cursor:pointer; background:none; border:none; padding:4px 8px; }
+  .calendar-nav:hover { color:var(--text-primary); }
+  .calendar-close { font-size:20px; color:var(--text-tertiary); cursor:pointer; background:none; border:none; }
+  .calendar-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:4px; text-align:center; }
+  .calendar-day-header { font-size:9px; color:var(--text-tertiary); padding:4px; }
+  .calendar-day { font-size:12px; padding:8px 4px; border-radius:6px; cursor:pointer; color:var(--text-secondary); position:relative; }
+  .calendar-day:hover { background:rgba(99,102,241,0.1); }
+  .calendar-day.today { font-weight:700; color:#6366f1; border:1px solid rgba(99,102,241,0.3); }
+  .calendar-day.has-content { color:var(--text-primary); }
+  .calendar-day.full { background:rgba(34,197,94,0.08); }
+  .calendar-day.partial { background:rgba(99,102,241,0.06); }
+  .calendar-day.other-month { color:#484f58; }
+  .calendar-day-links { display:none; position:absolute; bottom:100%; left:50%; transform:translateX(-50%); background:var(--bg-primary); border:0.5px solid var(--border-subtle); border-radius:8px; padding:6px 10px; font-size:10px; white-space:nowrap; z-index:2; }
+  .calendar-day:hover .calendar-day-links { display:block; }
+  .calendar-day-link { display:block; color:var(--text-secondary); text-decoration:none; padding:2px 0; }
+  .calendar-day-link:hover { color:#6366f1; }
+  .calendar-legend { display:flex; gap:16px; margin-top:12px; font-size:9px; color:var(--text-tertiary); justify-content:center; }
+  .calendar-legend-item { display:flex; align-items:center; gap:4px; }
+  .calendar-legend-dot { width:8px; height:8px; border-radius:2px; }
+</style>
+</head>
+<body>
+
+<div class="bg-layer">
+  <div class="orb orb-1"></div><div class="orb orb-2"></div>
+  <div class="orb orb-3"></div><div class="orb orb-4"></div>
+  <div class="grid-overlay"></div>
+  <div class="particles" id="particles"></div>
+</div>
+
+<div class="calendar-overlay" id="calendarOverlay">
+  <div class="calendar-modal">
+    <div class="calendar-header">
+      <button class="calendar-nav" id="calPrev">&#9664;</button>
+      <span class="calendar-month" id="calMonth">2026年6月</span>
+      <button class="calendar-nav" id="calNext">&#9654;</button>
+      <button class="calendar-close" id="calClose">&#10005;</button>
+    </div>
+    <div class="calendar-grid" id="calGrid"></div>
+    <div class="calendar-legend">
+      <div class="calendar-legend-item"><div class="calendar-legend-dot" style="background:rgba(34,197,94,0.5);"></div>3版完整</div>
+      <div class="calendar-legend-item"><div class="calendar-legend-dot" style="background:rgba(99,102,241,0.4);"></div>有内容</div>
+      <div class="calendar-legend-item"><div class="calendar-legend-dot" style="background:rgba(255,255,255,0.1);"></div>暂无</div>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <nav class="nav">
+    <div class="nav-brand">
+      <div class="nav-logo">&#9889;</div>
+      <div>
+        <div class="nav-title">AI热点速览</div>
+        <div class="nav-sub">AI PULSE</div>
+      </div>
+    </div>
+    <div class="nav-right">
+      <button class="nav-link" id="btnArchive">往期回顾</button>
+      <span class="toggle-label">暗</span>
+      <div class="toggle-track" id="themeToggle"><div class="toggle-thumb"></div></div>
+      <span class="toggle-label">亮</span>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-badge">
+      <div class="hero-badge-dot"></div>
+      <span class="hero-badge-text" id="editionLabel">早间版 &#183; 08:00 &#183; 实时</span>
+    </div>
+    <h1 class="hero-title">今日 AI 脉搏</h1>
+    <p class="hero-date" id="dateLabel">2026年6月14日 &#183; 星期日</p>
+    <div class="hero-stats" id="heroStats">
+      <div><div class="hero-stat-num" id="statNews">--</div><div class="hero-stat-label">头条新闻</div></div>
+      <div class="hero-stat-divider"></div>
+      <div><div class="hero-stat-num" id="statSources">--</div><div class="hero-stat-label">信源覆盖</div></div>
+      <div class="hero-stat-divider"></div>
+      <div><div class="hero-stat-num" id="statProjects">--</div><div class="hero-stat-label">热门项目</div></div>
+      <div class="hero-stat-divider"></div>
+      <div><div class="hero-stat-num" id="statPapers">--</div><div class="hero-stat-label">精选论文</div></div>
+    </div>
+  </section>
+
+  <div class="tldr" id="tldrSection">
+    <span class="tldr-label">TL;DR</span>
+    <span class="tldr-text" id="tldrContent">AI脉搏即将上线，首次运行 `/ai-digest morning` 即可生成最新一期速览。</span>
+  </div>
+
+  <div class="section-gap" id="section-models">
+    <div class="section-head">
+      <div class="section-line" style="background:linear-gradient(180deg, #6366f1, #8b5cf6);"></div>
+      <span class="section-label" style="color:#a5b4fc;">大模型动态</span>
+      <span class="section-label-cn">Models</span>
+    </div>
+    <div class="feature-card">
+      <div class="card-row">
+        <div class="card-body">
+          <div class="card-tag" style="color:#6366f1;">HEADLINE</div>
+          <div class="card-title">欢迎使用 AI 脉搏</div>
+          <div class="card-desc">这是面向中国 AI 开发工程师的每日新闻智能聚合页。首次运行 `/ai-digest morning` 后，这里将展示最新的大模型动态、工具更新、政策解读和开源项目热度。</div>
+          <div class="card-meta"><span>AI脉搏团队</span><span>&#183;</span><span>现在</span></div>
+        </div>
+        <div class="card-icon">&#9889;</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-gap" id="section-tools">
+    <div class="section-head">
+      <div class="section-line" style="background:linear-gradient(180deg, #22c55e, #10b981);"></div>
+      <span class="section-label" style="color:#86efac;">工具 &amp; 部署</span>
+      <span class="section-label-cn">Tools &amp; Deploy</span>
+    </div>
+    <p style="color:var(--text-tertiary); font-size:11px; text-align:center; padding:20px;">运行 `/ai-digest` 后将自动填充</p>
+  </div>
+
+  <div class="section-gap" id="section-policy">
+    <div class="section-head">
+      <div class="section-line" style="background:linear-gradient(180deg, #f59e0b, #d97706);"></div>
+      <span class="section-label" style="color:#fcd34d;">政策 &amp; 合规</span>
+      <span class="section-label-cn">Policy &amp; Compliance</span>
+    </div>
+    <p style="color:var(--text-tertiary); font-size:11px; text-align:center; padding:20px;">运行 `/ai-digest` 后将自动填充</p>
+  </div>
+
+  <div class="section-gap" id="section-paper">
+    <div class="section-head">
+      <div class="section-line" style="background:linear-gradient(180deg, #8b5cf6, #7c3aed);"></div>
+      <span class="section-label" style="color:#c4b5fd;">论文速递</span>
+      <span class="section-label-cn">Paper Spotlight</span>
+    </div>
+    <p style="color:var(--text-tertiary); font-size:11px; text-align:center; padding:20px;">运行 `/ai-digest` 后将自动填充</p>
+  </div>
+
+  <div class="section-gap" id="section-cases">
+    <div class="section-head">
+      <div class="section-line" style="background:linear-gradient(180deg, #06b6d4, #0891b2);"></div>
+      <span class="section-label" style="color:#67e8f9;">应用落地</span>
+      <span class="section-label-cn">Real-World AI</span>
+    </div>
+    <p style="color:var(--text-tertiary); font-size:11px; text-align:center; padding:20px;">运行 `/ai-digest` 后将自动填充</p>
+  </div>
+
+  <div class="section-gap" id="section-oss">
+    <div class="section-head">
+      <div class="section-line" style="background:linear-gradient(180deg, #f59e0b, #d97706);"></div>
+      <span class="section-label" style="color:#fcd34d;">开源热度</span>
+      <span class="section-label-cn">Open Source Pulse</span>
+    </div>
+    <p style="color:var(--text-tertiary); font-size:11px; text-align:center; padding:20px;">运行 `/ai-digest` 后将自动填充</p>
+  </div>
+
+  <div class="section-gap" id="section-overseas">
+    <div class="section-head">
+      <div class="section-line" style="background:linear-gradient(180deg, #06b6d4, #0891b2);"></div>
+      <span class="section-label" style="color:#67e8f9;">海外参考</span>
+      <span class="section-label-cn">Global Brief</span>
+    </div>
+    <p style="color:var(--text-tertiary); font-size:11px; text-align:center; padding:20px;">运行 `/ai-digest` 后将自动填充</p>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-icon">&#9889;</div>
+    <p class="footer-quote" id="footerQuote">"预测未来最好的方式，就是创造它。"</p>
+    <p class="footer-author" id="footerAuthor">Alan Kay</p>
+  </footer>
+</div>
+
+<script>
+(function() {
+  var pc = document.getElementById('particles');
+  for (var i = 0; i < 40; i++) {
+    var p = document.createElement('div');
+    p.classList.add('particle');
+    p.style.left = Math.random() * 100 + '%';
+    p.style.top = Math.random() * 100 + '%';
+    var s = 1 + Math.random() * 2;
+    p.style.width = s + 'px'; p.style.height = s + 'px';
+    p.style.animationDuration = (12 + Math.random() * 20) + 's';
+    p.style.animationDelay = Math.random() * 15 + 's';
+    pc.appendChild(p);
+  }
+})();
+
+(function() {
+  var saved = localStorage.getItem('ai-pulse-theme');
+  if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+  document.getElementById('themeToggle').addEventListener('click', function() {
+    var current = document.documentElement.getAttribute('data-theme');
+    var next = current === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('ai-pulse-theme', next);
+  });
+})();
+
+(function() {
+  var overlay = document.getElementById('calendarOverlay');
+  var grid = document.getElementById('calGrid');
+  var monthLabel = document.getElementById('calMonth');
+  var calYear = new Date().getFullYear();
+  var calMonth = new Date().getMonth() + 1;
+  var archiveMap = {};
+
+  function renderCalendar() {
+    var daysInMonth = new Date(calYear, calMonth, 0).getDate();
+    var firstDay = new Date(calYear, calMonth - 1, 1).getDay();
+    var adjustedFirst = firstDay === 0 ? 6 : firstDay - 1;
+    var today = new Date();
+    var dayHeaders = ['一','二','三','四','五','六','日'];
+    monthLabel.textContent = calYear + '年' + calMonth + '月';
+    var html = dayHeaders.map(function(h) { return '<div class="calendar-day-header">' + h + '</div>'; }).join('');
+    for (var i = 0; i < adjustedFirst; i++) {
+      html += '<div class="calendar-day other-month"></div>';
+    }
+    for (var d = 1; d <= daysInMonth; d++) {
+      var mm = String(calMonth).padStart(2, '0');
+      var dd = String(d).padStart(2, '0');
+      var dateStr = calYear + '-' + mm + '-' + dd;
+      var isToday = d === today.getDate() && calMonth === today.getMonth() + 1 && calYear === today.getFullYear();
+      var entry = archiveMap[dateStr];
+      var cls = 'calendar-day';
+      if (isToday) cls += ' today';
+      if (entry) { cls += ' has-content'; cls += (entry === 'full') ? ' full' : ' partial'; }
+      var linksHtml = '';
+      if (entry) {
+        var editions = entry === 'full' ? ['morning','noon','evening'] : (Array.isArray(entry) ? entry : ['morning']);
+        linksHtml = '<div class="calendar-day-links">' + editions.map(function(e) {
+          var label = e === 'morning' ? '🌅 早间' : e === 'noon' ? '☀️ 午间' : '🌙 晚间';
+          return '<a class="calendar-day-link" href="archive/' + dateStr + '-' + e + '.html">' + label + '</a>';
+        }).join('') + '</div>';
+      }
+      html += '<div class="' + cls + '">' + d + linksHtml + '</div>';
+    }
+    grid.innerHTML = html;
+  }
+
+  document.getElementById('btnArchive').addEventListener('click', function() {
+    calYear = new Date().getFullYear();
+    calMonth = new Date().getMonth() + 1;
+    renderCalendar();
+    overlay.classList.add('active');
+  });
+  document.getElementById('calPrev').addEventListener('click', function() { calMonth--; if(calMonth<1){calMonth=12;calYear--;} renderCalendar(); });
+  document.getElementById('calNext').addEventListener('click', function() { calMonth++; if(calMonth>12){calMonth=1;calYear++;} renderCalendar(); });
+  document.getElementById('calClose').addEventListener('click', function() { overlay.classList.remove('active'); });
+  overlay.addEventListener('click', function(e) { if (e.target === overlay) overlay.classList.remove('active'); });
+})();
+</script>
+</body>
+</html>
