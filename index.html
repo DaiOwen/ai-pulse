@@ -237,6 +237,20 @@
 
   .section-gap { margin-bottom:48px; }
 
+  .section-indigo .section-line { background: linear-gradient(180deg, #6366f1, #8b5cf6); }
+  .section-indigo .section-label { color: #a5b4fc; }
+  .section-green .section-line { background: linear-gradient(180deg, #22c55e, #10b981); }
+  .section-green .section-label { color: #86efac; }
+  .section-amber .section-line { background: linear-gradient(180deg, #f59e0b, #d97706); }
+  .section-amber .section-label { color: #fcd34d; }
+  .section-purple .section-line { background: linear-gradient(180deg, #8b5cf6, #7c3aed); }
+  .section-purple .section-label { color: #c4b5fd; }
+  .section-cyan .section-line { background: linear-gradient(180deg, #06b6d4, #0891b2); }
+  .section-cyan .section-label { color: #67e8f9; }
+
+  .nav-link:focus-visible, .toggle-track:focus-visible, .calendar-nav:focus-visible, .calendar-close:focus-visible { outline: 2px solid #6366f1; outline-offset: 2px; border-radius: 4px; }
+  .calendar-day:focus-visible { outline: 2px solid #6366f1; outline-offset: 1px; }
+
   .calendar-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); backdrop-filter:blur(4px); z-index:100; justify-content:center; align-items:center; }
   .calendar-overlay.active { display:flex; }
   .calendar-modal { background:var(--bg-primary); border:0.5px solid var(--border-subtle); border-radius:16px; padding:24px; max-width:380px; width:90%; max-height:80vh; overflow-y:auto; }
@@ -275,10 +289,10 @@
 <div class="calendar-overlay" id="calendarOverlay">
   <div class="calendar-modal">
     <div class="calendar-header">
-      <button class="calendar-nav" id="calPrev">&#9664;</button>
+      <button class="calendar-nav" id="calPrev" aria-label="上月">&#9664;</button>
       <span class="calendar-month" id="calMonth">2026年6月</span>
-      <button class="calendar-nav" id="calNext">&#9654;</button>
-      <button class="calendar-close" id="calClose">&#10005;</button>
+      <button class="calendar-nav" id="calNext" aria-label="下月">&#9654;</button>
+      <button class="calendar-close" id="calClose" aria-label="关闭日历">&#10005;</button>
     </div>
     <div class="calendar-grid" id="calGrid"></div>
     <div class="calendar-legend">
@@ -301,7 +315,7 @@
     <div class="nav-right">
       <button class="nav-link" id="btnArchive">往期回顾</button>
       <span class="toggle-label">暗</span>
-      <div class="toggle-track" id="themeToggle"><div class="toggle-thumb"></div></div>
+      <div class="toggle-track" id="themeToggle" role="switch" tabindex="0" aria-checked="false" aria-label="切换深色/浅色模式"><div class="toggle-thumb"></div></div>
       <span class="toggle-label">亮</span>
     </div>
   </nav>
@@ -330,10 +344,10 @@
     <span class="tldr-text" id="tldrContent">AI脉搏即将上线，首次运行 `/ai-digest morning` 即可生成最新一期速览。</span>
   </div>
 
-  <div class="section-gap" id="section-models">
+  <div class="section-gap section-indigo" id="section-models">
     <div class="section-head">
-      <div class="section-line" style="background:linear-gradient(180deg, #6366f1, #8b5cf6);"></div>
-      <span class="section-label" style="color:#a5b4fc;">大模型动态</span>
+      <div class="section-line"></div>
+      <span class="section-label">大模型动态</span>
       <span class="section-label-cn">Models</span>
     </div>
     <div class="feature-card">
@@ -349,55 +363,55 @@
     </div>
   </div>
 
-  <div class="section-gap" id="section-tools">
+  <div class="section-gap section-green" id="section-tools">
     <div class="section-head">
-      <div class="section-line" style="background:linear-gradient(180deg, #22c55e, #10b981);"></div>
-      <span class="section-label" style="color:#86efac;">工具 &amp; 部署</span>
+      <div class="section-line"></div>
+      <span class="section-label">工具 &amp; 部署</span>
       <span class="section-label-cn">Tools &amp; Deploy</span>
     </div>
     <p style="color:var(--text-tertiary); font-size:11px; text-align:center; padding:20px;">运行 `/ai-digest` 后将自动填充</p>
   </div>
 
-  <div class="section-gap" id="section-policy">
+  <div class="section-gap section-amber" id="section-policy">
     <div class="section-head">
-      <div class="section-line" style="background:linear-gradient(180deg, #f59e0b, #d97706);"></div>
-      <span class="section-label" style="color:#fcd34d;">政策 &amp; 合规</span>
+      <div class="section-line"></div>
+      <span class="section-label">政策 &amp; 合规</span>
       <span class="section-label-cn">Policy &amp; Compliance</span>
     </div>
     <p style="color:var(--text-tertiary); font-size:11px; text-align:center; padding:20px;">运行 `/ai-digest` 后将自动填充</p>
   </div>
 
-  <div class="section-gap" id="section-paper">
+  <div class="section-gap section-purple" id="section-paper">
     <div class="section-head">
-      <div class="section-line" style="background:linear-gradient(180deg, #8b5cf6, #7c3aed);"></div>
-      <span class="section-label" style="color:#c4b5fd;">论文速递</span>
+      <div class="section-line"></div>
+      <span class="section-label">论文速递</span>
       <span class="section-label-cn">Paper Spotlight</span>
     </div>
     <p style="color:var(--text-tertiary); font-size:11px; text-align:center; padding:20px;">运行 `/ai-digest` 后将自动填充</p>
   </div>
 
-  <div class="section-gap" id="section-cases">
+  <div class="section-gap section-cyan" id="section-cases">
     <div class="section-head">
-      <div class="section-line" style="background:linear-gradient(180deg, #06b6d4, #0891b2);"></div>
-      <span class="section-label" style="color:#67e8f9;">应用落地</span>
+      <div class="section-line"></div>
+      <span class="section-label">应用落地</span>
       <span class="section-label-cn">Real-World AI</span>
     </div>
     <p style="color:var(--text-tertiary); font-size:11px; text-align:center; padding:20px;">运行 `/ai-digest` 后将自动填充</p>
   </div>
 
-  <div class="section-gap" id="section-oss">
+  <div class="section-gap section-amber" id="section-oss">
     <div class="section-head">
-      <div class="section-line" style="background:linear-gradient(180deg, #f59e0b, #d97706);"></div>
-      <span class="section-label" style="color:#fcd34d;">开源热度</span>
+      <div class="section-line"></div>
+      <span class="section-label">开源热度</span>
       <span class="section-label-cn">Open Source Pulse</span>
     </div>
     <p style="color:var(--text-tertiary); font-size:11px; text-align:center; padding:20px;">运行 `/ai-digest` 后将自动填充</p>
   </div>
 
-  <div class="section-gap" id="section-overseas">
+  <div class="section-gap section-cyan" id="section-overseas">
     <div class="section-head">
-      <div class="section-line" style="background:linear-gradient(180deg, #06b6d4, #0891b2);"></div>
-      <span class="section-label" style="color:#67e8f9;">海外参考</span>
+      <div class="section-line"></div>
+      <span class="section-label">海外参考</span>
       <span class="section-label-cn">Global Brief</span>
     </div>
     <p style="color:var(--text-tertiary); font-size:11px; text-align:center; padding:20px;">运行 `/ai-digest` 后将自动填充</p>
@@ -412,13 +426,13 @@
 
 <script>
 (function() {
-  var pc = document.getElementById('particles');
-  for (var i = 0; i < 40; i++) {
-    var p = document.createElement('div');
+  const pc = document.getElementById('particles');
+  for (let i = 0; i < 40; i++) {
+    const p = document.createElement('div');
     p.classList.add('particle');
     p.style.left = Math.random() * 100 + '%';
     p.style.top = Math.random() * 100 + '%';
-    var s = 1 + Math.random() * 2;
+    const s = 1 + Math.random() * 2;
     p.style.width = s + 'px'; p.style.height = s + 'px';
     p.style.animationDuration = (12 + Math.random() * 20) + 's';
     p.style.animationDelay = Math.random() * 15 + 's';
@@ -427,49 +441,63 @@
 })();
 
 (function() {
-  var saved = localStorage.getItem('ai-pulse-theme');
-  if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
-  document.getElementById('themeToggle').addEventListener('click', function() {
-    var current = document.documentElement.getAttribute('data-theme');
-    var next = current === 'light' ? 'dark' : 'light';
+  const saved = localStorage.getItem('ai-pulse-theme');
+  if (saved === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+    document.getElementById('themeToggle').setAttribute('aria-checked', 'true');
+  }
+  const toggle = document.getElementById('themeToggle');
+  function setTheme(next) {
     document.documentElement.setAttribute('data-theme', next);
     localStorage.setItem('ai-pulse-theme', next);
+    toggle.setAttribute('aria-checked', next === 'light' ? 'true' : 'false');
+  }
+  toggle.addEventListener('click', function() {
+    const current = document.documentElement.getAttribute('data-theme');
+    setTheme(current === 'light' ? 'dark' : 'light');
+  });
+  toggle.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      const current = document.documentElement.getAttribute('data-theme');
+      setTheme(current === 'light' ? 'dark' : 'light');
+    }
   });
 })();
 
 (function() {
-  var overlay = document.getElementById('calendarOverlay');
-  var grid = document.getElementById('calGrid');
-  var monthLabel = document.getElementById('calMonth');
-  var calYear = new Date().getFullYear();
-  var calMonth = new Date().getMonth() + 1;
-  var archiveMap = {};
+  const overlay = document.getElementById('calendarOverlay');
+  const grid = document.getElementById('calGrid');
+  const monthLabel = document.getElementById('calMonth');
+  let calYear = new Date().getFullYear();
+  let calMonth = new Date().getMonth() + 1;
+  const archiveMap = {};
 
   function renderCalendar() {
-    var daysInMonth = new Date(calYear, calMonth, 0).getDate();
-    var firstDay = new Date(calYear, calMonth - 1, 1).getDay();
-    var adjustedFirst = firstDay === 0 ? 6 : firstDay - 1;
-    var today = new Date();
-    var dayHeaders = ['一','二','三','四','五','六','日'];
+    const daysInMonth = new Date(calYear, calMonth, 0).getDate();
+    const firstDay = new Date(calYear, calMonth - 1, 1).getDay();
+    const adjustedFirst = firstDay === 0 ? 6 : firstDay - 1;
+    const today = new Date();
+    const dayHeaders = ['一','二','三','四','五','六','日'];
     monthLabel.textContent = calYear + '年' + calMonth + '月';
-    var html = dayHeaders.map(function(h) { return '<div class="calendar-day-header">' + h + '</div>'; }).join('');
-    for (var i = 0; i < adjustedFirst; i++) {
+    let html = dayHeaders.map(function(h) { return '<div class="calendar-day-header">' + h + '</div>'; }).join('');
+    for (let i = 0; i < adjustedFirst; i++) {
       html += '<div class="calendar-day other-month"></div>';
     }
-    for (var d = 1; d <= daysInMonth; d++) {
-      var mm = String(calMonth).padStart(2, '0');
-      var dd = String(d).padStart(2, '0');
-      var dateStr = calYear + '-' + mm + '-' + dd;
-      var isToday = d === today.getDate() && calMonth === today.getMonth() + 1 && calYear === today.getFullYear();
-      var entry = archiveMap[dateStr];
-      var cls = 'calendar-day';
+    for (let d = 1; d <= daysInMonth; d++) {
+      const mm = String(calMonth).padStart(2, '0');
+      const dd = String(d).padStart(2, '0');
+      const dateStr = calYear + '-' + mm + '-' + dd;
+      const isToday = d === today.getDate() && calMonth === today.getMonth() + 1 && calYear === today.getFullYear();
+      const entry = archiveMap[dateStr];
+      let cls = 'calendar-day';
       if (isToday) cls += ' today';
       if (entry) { cls += ' has-content'; cls += (entry === 'full') ? ' full' : ' partial'; }
-      var linksHtml = '';
+      let linksHtml = '';
       if (entry) {
-        var editions = entry === 'full' ? ['morning','noon','evening'] : (Array.isArray(entry) ? entry : ['morning']);
+        const editions = entry === 'full' ? ['morning','noon','evening'] : (Array.isArray(entry) ? entry : ['morning']);
         linksHtml = '<div class="calendar-day-links">' + editions.map(function(e) {
-          var label = e === 'morning' ? '🌅 早间' : e === 'noon' ? '☀️ 午间' : '🌙 晚间';
+          const label = e === 'morning' ? '🌅 早间' : e === 'noon' ? '☀️ 午间' : '🌙 晚间';
           return '<a class="calendar-day-link" href="archive/' + dateStr + '-' + e + '.html">' + label + '</a>';
         }).join('') + '</div>';
       }
