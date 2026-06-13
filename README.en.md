@@ -11,14 +11,23 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/github/stars/DaiOwen/ai-pulse?style=flat&color=yellow" alt="GitHub Stars">
   <img src="https://img.shields.io/badge/license-MIT-blue" alt="License">
   <img src="https://img.shields.io/badge/dependencies-zero-brightgreen" alt="Zero Dependencies">
+  <img src="https://img.shields.io/github/contributors/DaiOwen/ai-pulse?color=orange" alt="Contributors">
   <img src="https://img.shields.io/badge/PRs-welcome-orange" alt="PRs Welcome">
+  <a href="https://daiowen.github.io/ai-pulse/"><img src="https://img.shields.io/badge/demo-live%20preview-6366f1?style=flat" alt="Live Demo"></a>
 </p>
 
 ---
 
 **AI Pulse** is a daily AI news aggregation HTML page for AI developers, powered by [Claude Code](https://claude.ai). It auto-generates beautiful, responsive HTML pages 3 times daily by scraping and synthesizing news from 6+ sources. No npm, no Python, no external services — just Claude Code and a terminal.
+
+## 🔗 Live Demo
+
+**[https://daiowen.github.io/ai-pulse/](https://daiowen.github.io/ai-pulse/)**
+
+No installation needed — open in your browser to see the latest AI news digest.
 
 ## Features
 
@@ -118,10 +127,20 @@ ai-pulse/
 ├── assets/
 │   └── favicon.svg         # Site icon
 ├── design/                 # Design references
+├── screenshots/            # Screenshots
+├── .github/                # GitHub configuration
+│   ├── ISSUE_TEMPLATE/
+│   └── PULL_REQUEST_TEMPLATE.md
 ├── .claude/                # Claude Code config
-│   ├── settings.json       # Permission config
-│   └── scheduled_tasks.json # Scheduled tasks (runtime)
+│   ├── settings.json
+│   └── scheduled_tasks.json
 ├── CLAUDE.md               # Project instructions & Skill definitions
+├── CONTRIBUTING.md         # Contribution guide
+├── CODE_OF_CONDUCT.md      # Code of conduct
+├── ROADMAP.md              # Project roadmap
+├── SECURITY.md             # Security policy
+├── CHANGELOG.md            # Changelog
+├── LICENSE                 # MIT license
 ├── .gitignore
 └── README.md
 ```
@@ -135,6 +154,17 @@ ai-pulse/
 ### ☀️ Light Mode
 
 ![AI Pulse Light Mode](screenshots/light-mode.png)
+
+## Security
+
+**Data privacy and security are foundational design principles.** AI Pulse runs 100% locally — your data never leaves your machine.
+
+- 🏠 Pure local execution, zero data upload
+- 🔌 Generated HTML makes no external requests (no tracking, no telemetry, no ads)
+- 🔑 No third-party API keys or tokens required
+- 👁️ MIT open source, fully auditable code
+
+See [SECURITY.md](SECURITY.md) for the complete security policy.
 
 ## FAQ
 
@@ -153,22 +183,25 @@ A: Manually run the corresponding `/ai-digest` command to backfill.
 **Q: Can I customize the content sections?**
 A: Yes — edit the classification rules in `CLAUDE.md` to adjust section priorities.
 
----
+## Contributing
 
-## Security
+We welcome all forms of contributions — bug reports, feature requests, code submissions, and documentation improvements.
 
-**Data privacy and security are foundational design principles.** AI Pulse runs 100% locally — your data never leaves your machine.
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
-- 🏠 Pure local execution, zero data upload
-- 🔌 Generated HTML makes no external requests (no tracking, no telemetry, no ads)
-- 🔑 No third-party API keys or tokens required
-- 👁️ MIT open source, fully auditable code
+## Roadmap
 
-See [SECURITY.md](SECURITY.md) for the complete security policy.
+See [ROADMAP.md](ROADMAP.md) for the project's future development plans.
+
+## License
+
+This project is open-sourced under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ---
 
 <p align="center">
-  Built with <a href="https://claude.ai">Claude Code</a> · 
-  <a href="https://github.com/DaiOwen/ai-pulse">GitHub</a>
+  Built with <a href="https://claude.ai">Claude Code</a> ·
+  <a href="https://github.com/DaiOwen/ai-pulse">GitHub</a> ·
+  <a href="https://daiowen.github.io/ai-pulse/">Live Demo</a> ·
+  <a href="CHANGELOG.md">Changelog</a>
 </p>

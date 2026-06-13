@@ -11,14 +11,23 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/github/stars/DaiOwen/ai-pulse?style=flat&color=yellow" alt="GitHub Stars">
   <img src="https://img.shields.io/badge/license-MIT-blue" alt="ライセンス">
   <img src="https://img.shields.io/badge/dependencies-zero-brightgreen" alt="依存関係ゼロ">
+  <img src="https://img.shields.io/github/contributors/DaiOwen/ai-pulse?color=orange" alt="貢献者">
   <img src="https://img.shields.io/badge/PRs-welcome-orange" alt="PR 歓迎">
+  <a href="https://daiowen.github.io/ai-pulse/"><img src="https://img.shields.io/badge/demo-live%20preview-6366f1?style=flat" alt="Live Demo"></a>
 </p>
 
 ---
 
 **AI Pulse** は、[Claude Code](https://claude.ai) で動作する AI 開発者向け日次ニュース集約ページです。6 以上の情報源から 1 日 3 回自動でニュースを収集・整理し、美しい HTML ページを生成します。npm、Python、外部サービスは一切不要。Claude Code とターミナルだけで完結します。
+
+## 🔗 ライブデモ
+
+**[https://daiowen.github.io/ai-pulse/](https://daiowen.github.io/ai-pulse/)**
+
+インストール不要 — ブラウザで開くだけで最新の AI ニュースダイジェストをご覧いただけます。
 
 ## 機能
 
@@ -118,10 +127,20 @@ ai-pulse/
 ├── assets/
 │   └── favicon.svg         # サイトアイコン
 ├── design/                 # デザイン参考
+├── screenshots/            # スクリーンショット
+├── .github/                # GitHub 設定
+│   ├── ISSUE_TEMPLATE/
+│   └── PULL_REQUEST_TEMPLATE.md
 ├── .claude/                # Claude Code 設定
-│   ├── settings.json       # 権限設定
-│   └── scheduled_tasks.json # スケジュールタスク（実行時）
+│   ├── settings.json
+│   └── scheduled_tasks.json
 ├── CLAUDE.md               # プロジェクト指示 + Skill 定義
+├── CONTRIBUTING.md         # 貢献ガイド
+├── CODE_OF_CONDUCT.md      # 行動規範
+├── ROADMAP.md              # ロードマップ
+├── SECURITY.md             # セキュリティポリシー
+├── CHANGELOG.md            # 変更履歴
+├── LICENSE                 # MIT ライセンス
 ├── .gitignore
 └── README.md
 ```
@@ -135,6 +154,17 @@ ai-pulse/
 ### ☀️ ライトモード
 
 ![AI Pulse Light Mode](screenshots/light-mode.png)
+
+## セキュリティ
+
+**データプライバシーとセキュリティは基本設計原則です。** AI Pulse は 100% ローカルで実行され、データが外部に出ることはありません。
+
+- 🏠 純粋なローカル実行、データのアップロードは一切なし
+- 🔌 生成された HTML は外部リクエストを行いません（トラッキング、テレメトリ、広告なし）
+- 🔑 サードパーティの API キーやトークンは不要
+- 👁️ MIT オープンソース、完全に監査可能なコード
+
+完全なセキュリティポリシーについては [SECURITY.md](SECURITY.md) をご覧ください。
 
 ## よくある質問（FAQ）
 
@@ -153,9 +183,25 @@ A: 該当する `/ai-digest` コマンドを手動実行してバックフィル
 **Q: コンテンツセクションをカスタマイズできますか？**
 A: はい — `CLAUDE.md` の分類ルールを編集することでセクションの優先順位を調整できます。
 
+## 貢献
+
+バグ報告、機能リクエスト、コード提出、ドキュメント改善など、あらゆる形式の貢献を歓迎します。
+
+詳細なガイドラインについては [CONTRIBUTING.md](CONTRIBUTING.md) をご覧ください。
+
+## ロードマップ
+
+プロジェクトの将来の開発計画については [ROADMAP.md](ROADMAP.md) をご覧ください。
+
+## ライセンス
+
+このプロジェクトは MIT ライセンスの下で公開されています。詳細は [LICENSE](LICENSE) ファイルをご覧ください。
+
 ---
 
 <p align="center">
   <a href="https://claude.ai">Claude Code</a> で構築 ·
-  <a href="https://github.com/DaiOwen/ai-pulse">GitHub</a>
+  <a href="https://github.com/DaiOwen/ai-pulse">GitHub</a> ·
+  <a href="https://daiowen.github.io/ai-pulse/">ライブデモ</a> ·
+  <a href="CHANGELOG.md">変更履歴</a>
 </p>

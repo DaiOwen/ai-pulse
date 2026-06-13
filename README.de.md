@@ -11,14 +11,23 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/github/stars/DaiOwen/ai-pulse?style=flat&color=yellow" alt="GitHub Stars">
   <img src="https://img.shields.io/badge/license-MIT-blue" alt="Lizenz">
   <img src="https://img.shields.io/badge/dependencies-zero-brightgreen" alt="Keine Abhangigkeiten">
+  <img src="https://img.shields.io/github/contributors/DaiOwen/ai-pulse?color=orange" alt="Mitwirkende">
   <img src="https://img.shields.io/badge/PRs-welcome-orange" alt="PRs willkommen">
+  <a href="https://daiowen.github.io/ai-pulse/"><img src="https://img.shields.io/badge/demo-live%20preview-6366f1?style=flat" alt="Live Demo"></a>
 </p>
 
 ---
 
-**AI Pulse** ist eine tagliche KI-Nachrichtenseite fur KI-Entwickler, betrieben durch [Claude Code](https://claude.ai). Sie generiert dreimal taglich automatisch wunderschone, responsive HTML-Seiten aus 6+ Quellen. Kein npm, kein Python, keine externen Dienste -- nur Claude Code und ein Terminal.
+**AI Pulse** ist eine tagliche KI-Nachrichtenseite fur KI-Entwickler, betrieben durch [Claude Code](https://claude.ai). Sie generiert dreimal taglich automatisch wunderschone, responsive HTML-Seiten aus 6+ Quellen. Kein npm, kein Python, keine externen Dienste — nur Claude Code und ein Terminal.
+
+## 🔗 Live-Demo
+
+**[https://daiowen.github.io/ai-pulse/](https://daiowen.github.io/ai-pulse/)**
+
+Keine Installation erforderlich — offnen Sie es in Ihrem Browser, um die neueste KI-Nachrichtenubersicht zu sehen.
 
 ## Funktionen
 
@@ -118,10 +127,20 @@ ai-pulse/
 ├── assets/
 │   └── favicon.svg         # Seitenicon
 ├── design/                 # Design-Referenzen
+├── screenshots/            # Screenshots
+├── .github/                # GitHub-Konfiguration
+│   ├── ISSUE_TEMPLATE/
+│   └── PULL_REQUEST_TEMPLATE.md
 ├── .claude/                # Claude Code Konfiguration
-│   ├── settings.json       # Berechtigungskonfiguration
-│   └── scheduled_tasks.json # Geplante Aufgaben (Laufzeit)
+│   ├── settings.json
+│   └── scheduled_tasks.json
 ├── CLAUDE.md               # Projektanweisungen & Skill-Definitionen
+├── CONTRIBUTING.md         # Beitragsleitfaden
+├── CODE_OF_CONDUCT.md      # Verhaltenskodex
+├── ROADMAP.md              # Fahrplan
+├── SECURITY.md             # Sicherheitsrichtlinie
+├── CHANGELOG.md            # Anderungsprotokoll
+├── LICENSE                 # MIT-Lizenz
 ├── .gitignore
 └── README.md
 ```
@@ -135,6 +154,17 @@ ai-pulse/
 ### ☀️ Light Mode
 
 ![AI Pulse Light Mode](screenshots/light-mode.png)
+
+## Sicherheit
+
+**Datenschutz und Sicherheit sind grundlegende Designprinzipien.** AI Pulse wird 100% lokal ausgefuhrt — Ihre Daten verlassen niemals Ihren Rechner.
+
+- 🏠 Reine lokale Ausfuhrung, kein Daten-Upload
+- 🔌 Generiertes HTML stellt keine externen Anfragen (kein Tracking, keine Telemetrie, keine Werbung)
+- 🔑 Keine API-Schlussel oder Tokens von Drittanbietern erforderlich
+- 👁️ MIT Open Source, vollstandig uberprufbarer Code
+
+Die vollstandige Sicherheitsrichtlinie finden Sie in [SECURITY.md](SECURITY.md).
 
 ## Haufig gestellte Fragen (FAQ)
 
@@ -151,11 +181,27 @@ A: Fuhren Sie `CronList` im Terminal aus, um den Aufgabenstatus zu prufen. Stell
 A: Fuhren Sie den entsprechenden `/ai-digest` Befehl manuell aus, um die Ausgabe nachzuholen.
 
 **F: Kann ich die Inhaltsbereiche anpassen?**
-A: Ja -- bearbeiten Sie die Klassifizierungsregeln in `CLAUDE.md`, um die Bereichsprioritaten anzupassen.
+A: Ja — bearbeiten Sie die Klassifizierungsregeln in `CLAUDE.md`, um die Bereichsprioritaten anzupassen.
+
+## Beitragen
+
+Wir heißen alle Formen von Beitragen willkommen — Fehlerberichte, Funktionswunsche, Code-Einreichungen und Dokumentationsverbesserungen.
+
+Ausfuhrliche Richtlinien finden Sie in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Fahrplan
+
+Den zukunftigen Entwicklungsplan des Projekts finden Sie in [ROADMAP.md](ROADMAP.md).
+
+## Lizenz
+
+Dieses Projekt ist unter der MIT-Lizenz lizenziert — siehe [LICENSE](LICENSE) fur Details.
 
 ---
 
 <p align="center">
   Erstellt mit <a href="https://claude.ai">Claude Code</a> ·
-  <a href="https://github.com/DaiOwen/ai-pulse">GitHub</a>
+  <a href="https://github.com/DaiOwen/ai-pulse">GitHub</a> ·
+  <a href="https://daiowen.github.io/ai-pulse/">Live-Demo</a> ·
+  <a href="CHANGELOG.md">Anderungsprotokoll</a>
 </p>

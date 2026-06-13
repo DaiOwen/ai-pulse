@@ -11,14 +11,23 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/github/stars/DaiOwen/ai-pulse?style=flat&color=yellow" alt="GitHub Stars">
   <img src="https://img.shields.io/badge/license-MIT-blue" alt="开源协议">
   <img src="https://img.shields.io/badge/dependencies-zero-brightgreen" alt="零依赖">
+  <img src="https://img.shields.io/github/contributors/DaiOwen/ai-pulse?color=orange" alt="贡献者">
   <img src="https://img.shields.io/badge/PRs-welcome-orange" alt="欢迎 PR">
+  <a href="https://daiowen.github.io/ai-pulse/"><img src="https://img.shields.io/badge/demo-live%20preview-6366f1?style=flat" alt="Live Demo"></a>
 </p>
 
 ---
 
 **AI Pulse** 是一款面向 AI 开发者的每日新闻智能聚合页，基于 [Claude Code](https://claude.ai) 自动驱动。每天早中晚三次自动采集 6+ 信源，智能去重、分类、生成精美的 HTML 页面。无需 npm、无需 Python、无需任何外部服务，仅需 Claude Code 和一个终端。
+
+## 🔗 在线演示
+
+**[https://daiowen.github.io/ai-pulse/](https://daiowen.github.io/ai-pulse/)**
+
+无需安装，直接浏览器打开即可查看最新一期 AI 热点速览。
 
 ## 功能特色
 
@@ -118,10 +127,20 @@ ai-pulse/
 ├── assets/
 │   └── favicon.svg         # 站点图标
 ├── design/                 # 设计稿参考
+├── screenshots/            # 截图
+├── .github/                # GitHub 配置
+│   ├── ISSUE_TEMPLATE/
+│   └── PULL_REQUEST_TEMPLATE.md
 ├── .claude/                # Claude Code 配置
-│   ├── settings.json       # 权限配置
-│   └── scheduled_tasks.json # 定时任务（运行时）
+│   ├── settings.json
+│   └── scheduled_tasks.json
 ├── CLAUDE.md               # 项目指令 + Skill 定义
+├── CONTRIBUTING.md         # 贡献指南
+├── CODE_OF_CONDUCT.md      # 行为准则
+├── ROADMAP.md              # 路线图
+├── SECURITY.md             # 安全策略
+├── CHANGELOG.md            # 更新日志
+├── LICENSE                 # MIT 开源许可证
 ├── .gitignore
 └── README.md
 ```
@@ -135,6 +154,17 @@ ai-pulse/
 ### ☀️ 亮色模式
 
 ![AI Pulse Light Mode](screenshots/light-mode.png)
+
+## 安全性 / Security
+
+**数据和隐私安全是本项目的设计基石。** AI Pulse 100% 在本地运行，数据永不出户。
+
+- 🏠 纯本地运行，无任何数据上传
+- 🔌 生成的 HTML 页面零外部请求（无埋点、无遥测、无广告）
+- 🔑 无需任何第三方 API 密钥或 Token
+- 👁️ MIT 开源协议，代码完全透明可审计
+
+详见 [SECURITY.md](SECURITY.md) 查看完整安全策略。
 
 ## 常见问题
 
@@ -153,9 +183,31 @@ A: 手动运行对应版次的 `/ai-digest` 命令即可补生成。
 **Q: 可以自定义内容板块吗？**
 A: 可以——编辑 `CLAUDE.md` 中的分类规则即可调整板块优先级。
 
+## 贡献指南 / Contributing
+
+我们欢迎所有形式的贡献 — 报告 Bug、建议新功能、提交代码、改进文档。
+
+请参阅 [CONTRIBUTING.md](CONTRIBUTING.md) 了解详细指南。
+
+We welcome all forms of contributions — bug reports, feature requests, code submissions, and documentation improvements. See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+
+## 路线图 / Roadmap
+
+请参阅 [ROADMAP.md](ROADMAP.md) 了解项目未来发展计划。
+
+See [ROADMAP.md](ROADMAP.md) for the project's future development plans.
+
+## 许可证 / License
+
+本项目基于 MIT 许可证开源 — 详见 [LICENSE](LICENSE) 文件。
+
+This project is open-sourced under the MIT License — see the [LICENSE](LICENSE) file for details.
+
 ---
 
 <p align="center">
   基于 <a href="https://claude.ai">Claude Code</a> 构建 ·
-  <a href="https://github.com/DaiOwen/ai-pulse">GitHub</a>
+  <a href="https://github.com/DaiOwen/ai-pulse">GitHub</a> ·
+  <a href="https://daiowen.github.io/ai-pulse/">在线演示</a> ·
+  <a href="CHANGELOG.md">更新日志</a>
 </p>
