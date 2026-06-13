@@ -128,7 +128,13 @@ ai-pulse/
 
 ## 截图预览
 
-> *截图即将更新——运行 `/ai-digest morning` 即可查看实时页面。*
+### 🌙 暗色模式（默认）
+
+![AI Pulse Dark Mode](screenshots/dark-mode.png)
+
+### ☀️ 亮色模式
+
+![AI Pulse Light Mode](screenshots/light-mode.png)
 
 ## 常见问题
 
