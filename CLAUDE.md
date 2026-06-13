@@ -108,9 +108,11 @@
 
 1. **读取参考模板**：Read `design/fusion-preview.html` 理解视觉结构和 CSS 规范
 2. **生成完整 HTML**：按照融合设计（参考 fusion-preview.html）的视觉规格，生成完整的独立 HTML 文件
-3. **保存文件**：
-   - 保存到 `archive/YYYY-MM-DD-{edition}.html`（如 `archive/2026-06-14-morning.html`）
-   - 同时保存到 `index.html`（作为主页，显示最新一期）
+3. **保存文件（原子写入）**：
+   - 先将完整 HTML 写入临时文件 `index.tmp.html`
+   - 使用 `mv index.tmp.html index.html` 原子替换（同一文件系统内 rename 是原子操作）
+   - 同时保存到 `archive/YYYY-MM-DD-{edition}.html`（如 `archive/2026-06-14-morning.html`）
+   - **重要**：先写 archive 文件（不影响主页），确认成功后再原子替换 index.html。如果生成中途失败，index.html 不受影响
 
 ### HTML 文件要求
 
@@ -170,9 +172,15 @@
 
 使用非整点/半点时间（49分/17分/13分），避免与其他用户的 Cron 任务在整点拥挤。
 
+**⚠️ Cron 7天过期提醒：** CronCreate 的 `durable` 任务默认 7 天后自动过期。每次运行 `/ai-digest` 时检查 CronList，如任务已过期或不存在，自动重新注册。同时注册一个每周提醒任务：
+
+- 每周日 09:13 执行 Cron 健康检查：`检查 CronList，如 AI脉搏任务缺失或即将过期则重新注册`
+
 ### 3. 自检清单
 
 每次运行 `/ai-digest` 前输出一行自检：
 ```
-🔍 AI脉搏自检：权限配置 ✓ | Cron早间 ✓ 午间 ✓ 晚间 ✓ | 上次生成：archive/2026-06-13-evening.html
+🔍 AI脉搏自检：权限配置 ✓ | Cron早间 ✓ 午间 ✓ 晚间 ✓ (下次过期: YYYY-MM-DD) | 上次生成：archive/YYYY-MM-DD-evening.html
 ```
+
+如果 Cron 任务将在 24 小时内过期，自检信息中标注 ⚠️ 警告。
