@@ -155,6 +155,19 @@ A: Yes — edit the classification rules in `CLAUDE.md` to adjust section priori
 
 ---
 
+## Security
+
+**Data privacy and security are foundational design principles.** AI Pulse runs 100% locally — your data never leaves your machine.
+
+- 🏠 Pure local execution, zero data upload
+- 🔌 Generated HTML makes no external requests (no tracking, no telemetry, no ads)
+- 🔑 No third-party API keys or tokens required
+- 👁️ MIT open source, fully auditable code
+
+See [SECURITY.md](SECURITY.md) for the complete security policy.
+
+---
+
 <p align="center">
   Built with <a href="https://claude.ai">Claude Code</a> · 
   <a href="https://github.com/DaiOwen/ai-pulse">GitHub</a>
