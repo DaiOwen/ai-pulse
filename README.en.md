@@ -29,7 +29,7 @@
 
 No installation needed — open in your browser to see the latest AI news digest.
 
-> 💡 **Just here to read?** Open the live demo link above — updated 3x daily, zero setup. Want updates delivered? Subscribe via [RSS](feed.xml).
+> 💡 **Just here to read?** Open the live demo link above — updated 3x daily, zero setup. Want updates delivered? Subscribe via [RSS](https://daiowen.github.io/ai-pulse/subscribe.html).
 
 ## Features
 
