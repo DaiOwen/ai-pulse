@@ -222,6 +222,9 @@ See [SECURITY.md](SECURITY.md) for the complete security policy.
 
 ## FAQ
 
+**Q: The live demo keeps showing old content unless I refresh?**
+A: Old Service Worker cached the page. **One-time fix:** Open the page → F12 → Application → Service Workers → click "Unregister" → refresh. The new SW (v2) has already fixed this — every visit after unregister will show the latest content.
+
 **Q: Why is index.html blank?**
 A: You need to run `/ai-digest morning` first to generate content.
 
