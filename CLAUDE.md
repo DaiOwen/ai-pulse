@@ -140,10 +140,14 @@ Claude Code 按规范执行            ← WebSearch → 去重评分 → 生成
 
 ### 搜索执行规范
 
-1. 每个板块至少执行 3 次不同关键词的 WebSearch
-2. 搜索后对 Top5-8 结果执行 WebFetch 获取原文详情
-3. 开源数据额外尝试直接访问 `https://github.com/trending?since=daily` 和 Gitee API
-4. 单次采集总搜索次数控制在 15-20 次以内
+1. 每个板块至少执行 2-3 次不同关键词的 WebSearch
+2. **WebFetch 原文抓取（尽力而为）**：
+   - 搜索后尝试对 Top 3-5 结果执行 WebFetch 获取原文详情
+   - **如果 WebFetch 不可用**（常见于企业网络/地区限制），直接使用 WebSearch 返回的摘要即可——当前搜索引擎返回的片段已包含标题、来源、日期、关键数据和 2-5 句内容摘要，足以支撑高质量新闻简报
+   - WebSearch 摘要中未覆盖的细节（如高管引语、精确数字），从摘要中提取关键信息重构，标注"据多家媒体报道"
+3. **原文 URL 必须收集**：即使无法 WebFetch，也必须从 WebSearch 结果中提取每条新闻的真实 URL，填入阅读原文链接——严禁使用 `#` 占位符
+4. 开源数据优先搜索 GitHub Trending 相关博客汇总，WebSearch 返回的项目名和 star 数即为有效数据
+5. 单次采集总搜索次数：morning 15-20 次，noon 5-8 次，evening 10-15 次
 
 ## 内容处理规范
 
