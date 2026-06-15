@@ -187,10 +187,10 @@
   .card-meta { display:flex; gap:14px; font-size:11px; color:var(--text-tertiary); }
   .card-meta-link { color:var(--accent-indigo); }
 .read-original {
-  display:inline-flex; align-items:center; gap:3px;
+  display:flex; align-items:center; justify-content:flex-end; gap:3px;
   font-size:10px; font-weight:500; letter-spacing:0.03em;
   color:var(--accent-indigo); text-decoration:none;
-  transition:color 0.2s, gap 0.2s; margin-top:6px;
+  transition:color 0.2s, gap 0.2s; margin-top:10px;
 }
 .read-original:hover { color:#818cf8; gap:6px; }
 .read-original-arrow { display:inline-block; transition:transform 0.2s; font-size:9px; }
@@ -433,8 +433,9 @@
       <div class="card-tag" style="color:#6366f1;">HEADLINE</div>
       <div class="card-title">Anthropic 发布 Claude Fable 5 / Mythos 5，同时发出「递归自我改进」警告</div>
       <div class="card-desc">6 月 9 日，Anthropic 发布两款新模型：Fable 5 向公众开放，Mythos 5 仅向约 200 家关键基础设施机构开放（号称"全球最强网络安全能力"）。但更引人关注的是同步发布的反哺报告《当 AI 构建自身》——Anthropic 代码库中超过 80% 代码已由 Claude 撰写，公司警告"递归自我改进（RSI）"正在形成闭环，研发主体正从人转移到 AI，呼吁全球"放缓乃至暂停"前沿 AI 开发。Claude 访问量同期暴涨 34%。</div>
-      <div class="card-meta"><span>36氪</span><span>&#183;</span><span>6月9日</span><span>&#183;</span><span class="card-meta-link">深度报道</span><span>&#183;</span><a href="https://www.36kr.com/p/3849931768281729" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
+      <div class="card-meta"><span>36氪</span><span>&#183;</span><span>6月9日</span><span>&#183;</span><span class="card-meta-link">深度报道</span></div>
       <div style="margin-top:8px; font-size:9px; color:#a5b4fc;">💡 开发者影响：AI 自我研发闭环正在形成——这不仅是技术问题，更是开发者职业路径的结构性变化信号</div>
+      <a href="https://www.36kr.com/p/3849931768281729" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
     </div><div class="card-icon">&#9889;</div></div></div>
     <div class="sub-grid">
       <div class="sub-card">
@@ -455,13 +456,13 @@
         <div class="tool-icon">&#127942;</div><div class="tool-name">Arcee Trinity-Large-Thinking</div>
         <div class="tool-desc">30 人旧金山团队打造，Apache 2.0 开源。399B MoE（13B 激活），PinchBench 91.9 接近 Claude Opus 4.6（93.3），但输出成本仅 $0.90/百万 token vs Opus 的 $25——便宜 96%。定位为「美国主权 AI」替代方案。</div>
         <span class="tool-badge badge-new">Apache 2.0</span>
-        <a href="https://venturebeat.com/ai/arcees-new-open-source-trinity-large-thinking-is-the-rare-powerful-u-s-made" class="read-original" target="_blank" rel="noopener" style="display:block;">阅读原文 <span class="read-original-arrow">→</span></a>
+        <a href="https://venturebeat.com/ai/arcees-new-open-source-trinity-large-thinking-is-the-rare-powerful-u-s-made" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
       </div>
       <div class="tool-card">
         <div class="tool-icon">&#128187;</div><div class="tool-name">Ai2 MolmoWeb</div>
         <div class="tool-desc">开源视觉 Web Agent（4B/8B），只靠浏览器截图操作网页（无需 HTML 解析）。附带最大公开人类 Web 任务数据集：30K 任务轨迹 + 590K 子任务 + 2.2M 截图 QA，覆盖 1,100+ 网站。</div>
         <span class="tool-badge badge-new">Open-Weight</span>
-        <a href="https://venturebeat.com/data/ai2-releases-molmoweb-an-open-weight-visual-web-agent-with-30k-human-task" class="read-original" target="_blank" rel="noopener" style="display:block;">阅读原文 <span class="read-original-arrow">→</span></a>
+        <a href="https://venturebeat.com/data/ai2-releases-molmoweb-an-open-weight-visual-web-agent-with-30k-human-task" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
       </div>
     </div>
   </div>
