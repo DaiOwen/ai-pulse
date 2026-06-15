@@ -38,7 +38,7 @@ Keine Installation erforderlich — offnen Sie es in Ihrem Browser, um die neues
 - 📅 **Archiv-Kalender** — Vergangene Ausgaben uber einen interaktiven Kalender durchsuchen
 - 🔍 **Keine Abhangigkeiten** — Reines HTML/CSS/JS, kein Build-Schritt, kein Paketmanager
 - 🇨🇳 **Fokus auf das chinesische KI-Okosystem** — Prioritare Abdeckung chinesischer Modelle und Compliance-Richtlinien
-- ⏰ **Automatische Zeitplanung** — Generierung um 07:49, 12:17 und 20:13 Uhr
+- ⏰ **Automatische Zeitplanung** — Generierung um 08:00, 12:00 und 20:00 Uhr
 
 ## Schnellstart
 
@@ -79,7 +79,7 @@ start index.html   # Windows
 
 Oder doppelklicke auf `index.html`, um sie im Browser zu offnen.
 
-Nach der ersten Ausfuhrung werden Cron-Jobs automatisch registriert (taglich 07:49 / 12:17 / 20:13) – keine weiteren manuellen Schritte erforderlich.
+Nach der ersten Ausfuhrung werden Cron-Jobs automatisch registriert (taglich 08:00 / 12:00 / 20:00) – keine weiteren manuellen Schritte erforderlich.
 
 > 💡 **Was ist `/ai-digest`?** Es ist kein Terminal-Befehl, sondern ein **Claude Code Slash-Befehl** – er funktioniert nur im Claude Code Chat. Zum Vergleich: `git clone` fuhrst du im Terminal aus, `/ai-digest morning` gibst du im Claude Code Gesprach ein. Die `CLAUDE.md` im Projektverzeichnis dient als "KI-Betriebsanleitung" – Claude Code liest sie und fuhrt die Anweisungen automatisch aus. Du musst keine einzige Zeile Code schreiben.
 
@@ -89,9 +89,9 @@ Nach der ersten manuellen Ausführung werden automatisch drei Cron-Jobs registri
 
 | Aufgabe | Zeit | Abdeckung |
 |---------|------|-----------|
-| 🌅 Morgen | 07:49 | Nachrichten uber Nacht + fruhe Neuigkeiten |
-| ☀️ Mittag | 12:17 | Inkrementelle Aktualisierungen vom Vormittag |
-| 🌙 Abend | 20:13 | Zusammenfassung des gesamten Tages + Open-Source-Daten |
+| 🌅 Morgen | 08:00 | Nachrichten uber Nacht + fruhe Neuigkeiten |
+| ☀️ Mittag | 12:00 | Inkrementelle Aktualisierungen vom Vormittag |
+| 🌙 Abend | 20:00 | Zusammenfassung des gesamten Tages + Open-Source-Daten |
 
 ### Manuelle Befehle
 
@@ -107,7 +107,7 @@ Nach der ersten manuellen Ausführung werden automatisch drei Cron-Jobs registri
 **Live-Demo (GitHub Pages)** — vollautomatisch, kein manueller Eingriff:
 
 ```
-Cron feuert (07:49 / 12:17 / 20:13)
+Cron feuert (08:00 / 12:00 / 20:00)
   → Claude Code sucht & generiert HTML
   → git add & commit & push
   → GitHub Pages deployt automatisch (~1-2 Min später)
@@ -137,7 +137,7 @@ Wenn du das Repository geforkt hast und deine eigenen GitHub Pages automatisch a
 ## Architektur
 
 ```
-Cron-Zeitplan (07:49 / 12:17 / 20:13)
+Cron-Zeitplan (08:00 / 12:00 / 20:00)
        │
        ▼
 Claude Code wird gestartet

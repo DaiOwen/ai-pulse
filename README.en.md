@@ -40,7 +40,7 @@ No installation needed — open in your browser to see the latest AI news digest
 - 📅 **Archive calendar** — Browse past editions with an interactive calendar
 - 🔍 **Zero dependencies** — Pure HTML/CSS/JS, no build step, no package manager
 - 🇨🇳 **Chinese AI ecosystem focus** — Priority coverage of domestic models and compliance policies
-- ⏰ **Auto-scheduled** — Generates at 07:49, 12:17, and 20:13 daily
+- ⏰ **Auto-scheduled** — Generates at 08:00, 12:00, and 20:00 daily
 - 📡 **RSS Feed** — Subscribe via RSS reader for daily automatic updates
 - 📲 **PWA Ready** — Add to home screen, offline-capable with cached content
 - 🩺 **Health Check** — `/ai-digest status` diagnoses Cron, permissions, last generation
@@ -84,7 +84,7 @@ start index.html   # Windows
 
 Or double-click `index.html` to open it in your browser.
 
-After the first run, cron jobs are auto-registered (07:49 / 12:17 / 20:13 daily) — no further manual steps needed.
+After the first run, cron jobs are auto-registered (08:00 / 12:00 / 20:00 daily) — no further manual steps needed.
 
 > 💡 **What is `/ai-digest`?** It is not a terminal command — it's a **Claude Code slash command** that only works inside a Claude Code chat. Think of it this way: `git clone` runs in your terminal, `/ai-digest morning` is typed into the Claude Code conversation. The `CLAUDE.md` file in the project root acts as an "AI instruction manual" — Claude Code reads it and follows the instructions automatically. You don't write a single line of code.
 
@@ -94,9 +94,9 @@ After the first manual run, three cron jobs are registered automatically:
 
 | Task | Time | Coverage |
 |------|------|----------|
-| 🌅 Morning | 07:49 | Overnight global + morning domestic news |
-| ☀️ Noon | 12:17 | Incremental updates from the morning |
-| 🌙 Evening | 20:13 | Full-day summary + all-day open source data |
+| 🌅 Morning | 08:00 | Overnight global + morning domestic news |
+| ☀️ Noon | 12:00 | Incremental updates from the morning |
+| 🌙 Evening | 20:00 | Full-day summary + all-day open source data |
 
 > ⚠️ **Important: Cron only fires when Claude Code is running.** If you close your terminal or exit Claude Code, scheduled tasks will not execute. Keep a terminal window open, or use `tmux` / `screen`. You can always run `/ai-digest status` to check if everything is healthy.
 
@@ -116,7 +116,7 @@ After the first manual run, three cron jobs are registered automatically:
 **Live Demo (GitHub Pages)** — fully automated, zero human intervention:
 
 ```
-Cron fires (07:49 / 12:17 / 20:13)
+Cron fires (08:00 / 12:00 / 20:00)
   → Claude Code searches & generates HTML
   → git add & commit & push
   → GitHub Pages auto-deploys (~1-2 min later)
@@ -147,7 +147,7 @@ If you forked the repo and want your own GitHub Pages to auto-update, simply kee
 ## Architecture
 
 ```
-Cron Schedule (07:49 / 12:17 / 20:13)
+Cron Schedule (08:00 / 12:00 / 20:00)
        │
        ▼
 Claude Code Launches
