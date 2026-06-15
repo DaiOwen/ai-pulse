@@ -160,6 +160,24 @@ Claude Code 按规范执行            ← WebSearch → 去重评分 → 生成
 | GitHub Trending | 开源热榜一手数据 |
 | RSS 订阅器 | 统一订阅上述信源 |
 
+**👤 优秀 AI 博主与 KOL**（个人视角 + 一手洞察）：
+
+| 博主 | 活跃平台 | 关键词搜索 | 擅长领域 |
+|------|---------|-----------|---------|
+| **李沐** | 博客/B站/知乎/公众号 | `李沐 AI OR 深度学习 OR 论文` | 深度学习教程、论文解读 |
+| **张俊林** | 微博/公众号 | `张俊林 AI OR 大模型 OR 技术分析` | 大模型技术深度分析 |
+| **苏剑林** | 科学空间博客 | `苏剑林 OR ScienceSpace AI OR 数学` | NLP 数学原理、RoPE |
+| **宝玉** | 公众号/知乎 | `宝玉 AI OR 产品 OR 分析` | AI 产品分析 |
+| **李继刚** | 公众号 | `李继刚 AI OR prompt OR agent` | Prompt 工程、Agent |
+| **Andrej Karpathy** | X(Twitter)/博客/YouTube | `Karpathy AI OR LLM OR tutorial` | AI 教育、深度技术讲解 |
+| **Simon Willison** | 博客/X | `Simon Willison AI OR LLM OR tool` | LLM 工具实战 |
+| **Lilian Weng** | 博客/X (OpenAI) | `Lilian Weng AI OR safety OR agent` | AI 安全、Agent 架构 |
+| **Chip Huyen** | 博客/X | `Chip Huyen AI OR ML OR engineering` | ML 工程、AI 创业 |
+| **Jim Fan** | X (NVIDIA) | `Jim Fan NVIDIA AI OR robot OR agent` | 具身智能、Agent |
+| **Andrew Ng** | X/博客/Coursera | `Andrew Ng AI OR deep learning OR course` | AI 教育、产业趋势 |
+
+> 搜索策略：每位博主每次只搜 1 次，针对其擅长领域的关键词组合搜索。博主内容通常被多家媒体转载或引用，通过转载文章也可获取原始观点。微博、公众号等封闭平台内容可通过第三方转载或搜索引擎缓存间接获取。
+
 ### 搜索关键词（按板块）
 
 每板块必须从**至少 3 个不同维度的信源**各执行 1 次搜索，混合聚合平台、垂直媒体、社区和一手信源。
@@ -175,8 +193,9 @@ site:theverge.com AI model
 AI 大模型 最新 发布 2026
 OpenAI OR Anthropic OR DeepSeek 新模型
 智谱 OR 百度 OR 阿里 OR 华为 大模型
+张俊林 OR 苏剑林 AI 大模型 分析
 ```
-时效：24h | 每轮至少 4 次，覆盖聚合+垂直+企业官方
+时效：24h | 每轮至少 4 次，覆盖聚合+垂直+企业官方+KOL
 
 **🛠️ 工具 & 部署：**
 ```
@@ -187,6 +206,7 @@ site:huggingface.co trending OR models
 "vllm" OR "langchain" OR "ollama" 更新
 国产 GPU 适配 OR 推理 部署 大模型
 AI 编程 工具 OR Agent 开源 site:github.com
+Karpathy OR Simon Willison AI 工具 OR 开发
 ```
 时效：48h | 每轮至少 3 次
 
@@ -218,6 +238,7 @@ site:geekpark.net AI 产品 OR 应用
 site:zhihu.com AI 应用 OR 落地 实践
 企业 AI 实践 OR 大模型 落地 案例
 AI Agent 应用 OR RAG 实践
+宝玉 OR 李继刚 AI 应用 OR Agent OR 产品
 ```
 时效：7天 | 每轮至少 3 次
 
@@ -239,6 +260,7 @@ site:technologyreview.com AI
 site:news.ycombinator.com AI OR LLM
 site:reddit.com/r/MachineLearning AI OR LLM
 "AI news" today analysis
+Jim Fan OR Chip Huyen OR Andrew Ng AI trend 2026
 ```
 时效：24h | 每轮至少 3 次（仅 morning/evening 版）
 
