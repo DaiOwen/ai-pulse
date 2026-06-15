@@ -21,7 +21,7 @@
 
 ---
 
-**AI Pulse** is a daily AI news aggregation HTML page for AI developers, powered by [Claude Code](https://claude.ai). It auto-generates beautiful, responsive HTML pages 3 times daily by scraping and synthesizing news from 6+ sources. No npm, no Python, no external services — just Claude Code and a terminal.
+**AI Pulse** is a daily AI news aggregation HTML page for AI developers, powered by [Claude Code](https://claude.ai). It auto-generates beautiful, responsive HTML pages 3 times daily by scraping and synthesizing news from 30+ platforms and 11 notable AI bloggers across 7 dimensions — aggregators, media, communities, research, official blogs, newsletters, and KOLs. No npm, no Python, no external services — just Claude Code and a terminal.
 
 ## 🔗 Live Demo
 
@@ -143,6 +143,22 @@ If you forked the repo and want your own GitHub Pages to auto-update, simply kee
 | 💡 Real-World AI Cases | Enterprise AI integration stories & best practices |
 | ⭐ Open Source Pulse | GitHub/Gitee Stars rising Top 10 + attention Top 10 |
 | 🌍 Global Brief | 3 curated international stories impacting China |
+
+### Source Matrix
+
+Content drawn from 30+ platforms and 11 AI thought leaders across 7 dimensions:
+
+| Dimension | Representative Sources |
+|-----------|----------------------|
+| 🎯 Aggregators | RadarAI, AIHOT, AIbase, Digg AI |
+| 📰 Media | 36Kr, TMTPost, Synced, QbitAI, GeekPark, VentureBeat, The Verge |
+| 💬 Communities | Reddit r/ML, Hacker News, Zhihu AI, ModelScope |
+| 🔬 Research | arXiv, Papers with Code, Hugging Face |
+| 🏢 Official Blogs | OpenAI, DeepMind, Anthropic, Microsoft, Meta |
+| 📧 Newsletters | The Decoder, Import AI |
+| 👤 KOLs | Karpathy, Lilian Weng, Jim Fan, Simon Willison, Chip Huyen, Andrew Ng + 5 Chinese bloggers |
+
+> Core rule: a story must appear in 2+ independent sources to be considered a verified hot topic.
 
 ## Architecture
 

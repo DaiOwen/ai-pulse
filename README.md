@@ -21,7 +21,7 @@
 
 ---
 
-**AI Pulse** 是一款面向 AI 开发者的每日新闻智能聚合页，基于 [Claude Code](https://claude.ai) 自动驱动。每天早中晚三次自动采集 6+ 信源，智能去重、分类、生成精美的 HTML 页面。无需 npm、无需 Python、无需任何外部服务，仅需 Claude Code 和一个终端。
+**AI Pulse** 是一款面向 AI 开发者的每日新闻智能聚合页，基于 [Claude Code](https://claude.ai) 自动驱动。每天早中晚三次自动采集 30+ 平台和 11 位优秀 AI 博主，覆盖聚合平台、深度媒体、社区论坛、前沿研究、企业官方等七大维度，智能去重、交叉验证、分类、生成精美的 HTML 页面。无需 npm、无需 Python、无需任何外部服务，仅需 Claude Code 和一个终端。
 
 ## 🔗 在线演示
 
@@ -143,6 +143,22 @@ Cron 触发 (08:00/12:00/20:00)
 | 💡 应用落地 | 企业 AI 集成案例、最佳实践 |
 | ⭐ 开源热度 | GitHub/Gitee Stars 上升 Top 10 + 关注度 Top 10 |
 | 🌍 海外参考 | 精选 3 条影响国内的海外动态 |
+
+### 信源矩阵
+
+内容来自七大维度、30+ 平台和 11 位优秀 AI 博主的交叉验证，避免信息茧房：
+
+| 维度 | 代表信源 |
+|------|---------|
+| 🎯 聚合监控 | RadarAI, AIHOT, AIbase, Digg AI |
+| 📰 深度媒体 | 36氪, 钛媒体, 机器之心, 量子位, 新智元, 极客公园, VentureBeat, The Verge |
+| 💬 社区论坛 | Reddit r/ML, Hacker News, 知乎 AI, 魔搭社区 |
+| 🔬 前沿研究 | arXiv, Papers with Code, Hugging Face |
+| 🏢 企业官方 | OpenAI, DeepMind, Anthropic, Microsoft, Meta |
+| 📧 AI 日报 | The Decoder, Import AI |
+| 👤 优秀 KOL | 李沐, 张俊林, 苏剑林, Karpathy, Jim Fan 等 11 位 |
+
+> 核心规则：同一新闻出现在 2 个以上独立信源才算真热点，避免被单一来源的营销内容带偏。
 
 ## 技术架构
 
