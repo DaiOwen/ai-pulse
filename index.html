@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI 脉搏 · 热点速览</title>
 <meta name="description" content="面向中国AI开发工程师的每日AI新闻智能聚合">
+<meta name="theme-color" content="#0a0a0f">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="manifest" href="manifest.json">
+<link rel="alternate" type="application/rss+xml" title="AI 脉搏 RSS" href="feed.xml">
 <style>
   :root {
     --bg-primary: #0a0a0f;
@@ -143,7 +146,11 @@
   @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
   .hero-badge-text { font-size:11px; color:#a5b4fc; font-weight:500; letter-spacing:0.05em; }
   .hero-title { font-size:44px; font-weight:300; color:var(--text-primary); letter-spacing:-0.03em; line-height:1.1; margin-bottom:6px; position:relative; z-index:1; }
-  .hero-date { font-size:14px; color:var(--text-tertiary); font-weight:400; margin-bottom:28px; position:relative; z-index:1; }
+  .hero-date { font-size:14px; color:var(--text-tertiary); font-weight:400; margin-bottom:6px; position:relative; z-index:1; }
+.hero-updated { font-size:11px; color:var(--text-tertiary); font-weight:400; margin-bottom:28px; position:relative; z-index:1; display:flex; align-items:center; justify-content:center; gap:6px; }
+.hero-updated-dot { width:5px; height:5px; border-radius:50%; background:var(--accent-green); box-shadow:0 0 4px rgba(34,197,94,0.5); }
+.hero-updated.stale .hero-updated-dot { background:var(--accent-amber); box-shadow:0 0 4px rgba(245,158,11,0.5); }
+.hero-updated.stale { color:var(--accent-amber); }
   .hero-stats { display:flex; justify-content:center; gap:40px; position:relative; z-index:1; }
   .hero-stat-num { font-size:22px; font-weight:600; color:var(--text-primary); }
   .hero-stat-label { font-size:11px; color:var(--text-tertiary); letter-spacing:0.04em; margin-top:2px; }
@@ -400,6 +407,7 @@
     </div>
     <h1 class="hero-title">今日 AI 脉搏</h1>
     <p class="hero-date" id="dateLabel">2026年6月14日 &#183; 星期日</p>
+    <p class="hero-updated" id="updatedLabel"><span class="hero-updated-dot"></span> 最后更新: 2026-06-14 08:00 CST</p>
     <div class="hero-stats" id="heroStats">
       <div><div class="hero-stat-num" id="statNews">18</div><div class="hero-stat-label">头条新闻</div></div>
       <div class="hero-stat-divider"></div>
@@ -661,10 +669,18 @@
     <div class="footer-icon">&#9889;</div>
     <p class="footer-quote" id="footerQuote">"AI 不会取代人类，但会用 AI 的人类会取代不会用 AI 的人类。"</p>
     <p class="footer-author" id="footerAuthor">李开复</p>
+    <p style="margin-top:12px; font-size:10px; color:var(--text-tertiary);">
+      <a href="feed.xml" style="color:var(--text-tertiary); text-decoration:none;" title="RSS 订阅">📡 RSS 订阅</a>
+    </p>
   </footer>
 </div>
 
 <script>
+// PWA service worker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js');
+}
+
 (function() {
   const pc = document.getElementById('particles');
   for (let i = 0; i < 40; i++) {
@@ -756,6 +772,21 @@
   document.getElementById('calNext').addEventListener('click', function() { calMonth++; if(calMonth>12){calMonth=1;calYear++;} renderCalendar(); });
   document.getElementById('calClose').addEventListener('click', function() { overlay.classList.remove('active'); });
   overlay.addEventListener('click', function(e) { if (e.target === overlay) overlay.classList.remove('active'); });
+})();
+
+(function() {
+  var el = document.getElementById('updatedLabel');
+  if (!el) return;
+  var text = el.textContent || el.innerText;
+  var match = text.match(/(\d{4}-\d{2}-\d{2})\s+(\d{2}):(\d{2})/);
+  if (!match) return;
+  var updated = new Date(match[1] + 'T' + match[2] + ':' + match[3] + ':00');
+  var now = new Date();
+  var hoursOld = (now - updated) / (1000 * 60 * 60);
+  if (hoursOld > 24) {
+    el.classList.add('stale');
+    el.innerHTML = '<span class="hero-updated-dot"></span> 最后更新: ' + match[1] + ' ' + match[2] + ':' + match[3] + ' CST (' + Math.floor(hoursOld) + '小时前)';
+  }
 })();
 </script>
 </body>

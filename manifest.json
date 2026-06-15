@@ -1,0 +1,19 @@
+{
+  "name": "AI 脉搏 · 热点速览",
+  "short_name": "AI脉搏",
+  "description": "面向 AI 开发者的每日新闻智能聚合",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#0a0a0f",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "lang": "zh-CN"
+}

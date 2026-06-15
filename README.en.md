@@ -29,6 +29,8 @@
 
 No installation needed — open in your browser to see the latest AI news digest.
 
+> 💡 **Just here to read?** Open the live demo link above — updated 3x daily, zero setup. Want updates delivered? Subscribe via [RSS](feed.xml).
+
 ## Features
 
 - 🤖 **7 curated sections** — Model Updates, Tools & Deploy, Policy & Compliance, Paper Spotlight, Real-World AI Cases, Open Source Pulse, Global Brief
@@ -39,6 +41,9 @@ No installation needed — open in your browser to see the latest AI news digest
 - 🔍 **Zero dependencies** — Pure HTML/CSS/JS, no build step, no package manager
 - 🇨🇳 **Chinese AI ecosystem focus** — Priority coverage of domestic models and compliance policies
 - ⏰ **Auto-scheduled** — Generates at 07:49, 12:17, and 20:13 daily
+- 📡 **RSS Feed** — Subscribe via RSS reader for daily automatic updates
+- 📲 **PWA Ready** — Add to home screen, offline-capable with cached content
+- 🩺 **Health Check** — `/ai-digest status` diagnoses Cron, permissions, last generation
 
 ## Quick Start
 
@@ -93,14 +98,18 @@ After the first manual run, three cron jobs are registered automatically:
 | ☀️ Noon | 12:17 | Incremental updates from the morning |
 | 🌙 Evening | 20:13 | Full-day summary + all-day open source data |
 
+> ⚠️ **Important: Cron only fires when Claude Code is running.** If you close your terminal or exit Claude Code, scheduled tasks will not execute. Keep a terminal window open, or use `tmux` / `screen`. You can always run `/ai-digest status` to check if everything is healthy.
+
 ### Manual Commands
 
 | Command | Description |
 |---------|-------------|
+| `/ai-digest now` | **Instant update** — auto-picks edition, use anytime outside cron |
 | `/ai-digest morning` | Generate morning edition |
 | `/ai-digest noon` | Generate noon edition (incremental) |
 | `/ai-digest evening` | Generate evening edition (full-day summary) |
 | `/ai-digest update` | Pull latest upstream code to sync project updates |
+| `/ai-digest status` | Diagnose project health — Cron, permissions, last generation |
 
 ### Update Mechanism
 
@@ -227,6 +236,17 @@ A: Manually run the corresponding `/ai-digest` command to backfill.
 
 **Q: Can I customize the content sections?**
 A: Yes — edit the classification rules in `CLAUDE.md` to adjust section priorities.
+
+**Q: Does Claude Code cost money?**
+A: Claude Code includes a free tier (~50-100 tool calls/day). One `/ai-digest` run uses ~20-30 calls (search + fetch), so the free tier is sufficient for daily use. For heavier usage, [Claude Pro](https://claude.ai/pricing) ($20/mo) or Max ($100-200/mo) are available.
+
+**Q: Can I just read the news without installing Claude Code?**
+A: Absolutely. Two options:
+- Visit the live demo: **[https://daiowen.github.io/ai-pulse/](https://daiowen.github.io/ai-pulse/)** — no installation needed
+- Clone the repo and `git pull` the latest `index.html`, then open it in your browser
+
+**Q: How long does a generation take? Why does it seem stuck?**
+A: A full `/ai-digest` run takes 3-5 minutes (15-20 web searches + 8-10 deep fetches). It's not stuck — please be patient. Run `/ai-digest status` first to verify your setup is correct.
 
 ## Contributing
 

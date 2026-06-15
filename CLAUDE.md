@@ -12,7 +12,7 @@
 
 ### `/ai-digest [edition]`
 
-生成一期 AI 热点速览。
+生成一期 AI 热点速览。**预计耗时 3-5 分钟**（15-20 次网络搜索 + 8-10 次原文抓取 + HTML 生成），请耐心等待，勿中途取消。
 
 **参数：**
 - `edition`：`morning`（早间版·默认）| `noon`（午间版）| `evening`（晚间版）
@@ -21,6 +21,21 @@
 ```
 /ai-digest morning    # 生成早间版
 /ai-digest evening    # 生成晚间版
+```
+
+### `/ai-digest now`
+
+即时生成——不想等 Cron 定时触发时使用。自动根据当前时间选择最合适的版次：
+
+| 当前时间 | 自动选择 | 说明 |
+|---------|:--:|------|
+| 00:00 – 10:59 | `morning` | 早间版，覆盖昨夜到现在 |
+| 11:00 – 16:59 | `noon` | 午间版，增量更新 |
+| 17:00 – 23:59 | `evening` | 晚间版，全天汇总 |
+
+**示例：**
+```
+/ai-digest now        # 随时运行，自动选版次即时更新
 ```
 
 ### `/ai-digest update`
@@ -38,6 +53,31 @@
 **示例：**
 ```
 /ai-digest update      # 同步项目最新版本
+```
+
+### `/ai-digest status`
+
+诊断当前项目状态，一键排查所有配置问题。
+
+**检查项：**
+1. **权限配置**：`.claude/settings.json` 是否存在、必要权限是否完整
+2. **Cron 任务**：三个定时任务是否已注册、下次过期时间
+3. **上次生成**：最近一次成功的 archive 文件及时间
+4. **Git 状态**：是否有未提交的更改、是否与上游同步
+
+**输出示例：**
+```
+🔍 AI脉搏 状态诊断
+━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ 权限配置：完整
+✅ Cron 早间版：已注册 (下次过期: 2026-06-22)
+✅ Cron 午间版：已注册 (下次过期: 2026-06-22)
+✅ Cron 晚间版：已注册 (下次过期: 2026-06-22)
+✅ 上次生成：archive/2026-06-15-evening.html (2小时前，18条新闻)
+✅ Git：工作区干净，与 origin/master 同步
+━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️  重要提醒：Cron 仅在 Claude Code 运行时触发。
+   如果终端关闭，定时任务不会执行。建议保持 claude 进程运行。
 ```
 
 ## 新闻采集策略
@@ -130,9 +170,10 @@
    - 使用 `mv index.tmp.html index.html` 原子替换（同一文件系统内 rename 是原子操作）
    - 同时保存到 `archive/YYYY-MM-DD-{edition}.html`（如 `archive/2026-06-14-morning.html`）
    - **重要**：先写 archive 文件（不影响主页），确认成功后再原子替换 index.html。如果生成中途失败，index.html 不受影响
-4. **自动发布（Git Push）**：文件保存成功后，自动提交并推送到 GitHub：
+4. **生成 RSS 订阅文件**：更新 `feed.xml`，包含最新一期链接、标题、摘要、发布时间
+5. **自动发布（Git Push）**：文件保存成功后，自动提交并推送到 GitHub：
    ```bash
-   git add index.html archive/
+   git add index.html archive/ feed.xml
    git commit -m "auto: {edition} edition — $(date +%Y-%m-%d)"
    git push origin master
    ```
@@ -149,6 +190,8 @@
 5. **内容标记**：每条新闻包含分类标签、来源链接、时间、"💡 开发者影响"标注
 6. **阅读原文链接**：每条新闻必须包含"阅读原文 →"链接（`class="read-original"`），指向原始出处 URL，新窗口打开（`target="_blank" rel="noopener"`）。论文速递指向 arXiv 原文，开源热度指向 GitHub Trending 页面
 7. **每日一语**：页脚包含行业名言（优先 Alan Kay、Andrej Karpathy、李开复等 AI 领域人物）
+8. **PWA 支持**：包含 `<link rel="manifest">` 和 Service Worker 注册代码，支持添加到主屏幕和离线缓存
+9. **RSS 订阅**：`<head>` 中包含 `<link rel="alternate" type="application/rss+xml">`，页脚包含 RSS 订阅链接
 
 ### index.html 额外要求
 
@@ -161,6 +204,18 @@
 - 某信源无结果 → 静默跳过，不影响其他板块
 - 全部信源无结果 → 生成页面展示"暂无可获取新闻"，标注最后成功时间
 - 开源 API 限流 → 使用本地缓存的昨日数据，标注"数据来自昨日"
+
+### 生成失败通知
+
+当 `/ai-digest` 在 Cron 定时任务中执行失败时（全部信源无结果、网络错误等），应采取以下措施：
+
+1. **静默失败**：不要中断 Cron 任务链，错误不应导致后续 Cron 任务被跳过
+2. **记录失败**：在 `archive/.last-failure` 文件中记录失败时间和原因
+3. **页面降级**：index.html 保留上次成功生成的内容不变（原子写入保证了这一点）
+4. **下次自愈**：下一次 Cron 触发时自动重试，无需人工介入
+5. **连续失败检测**：如果连续 3 次 Cron 均失败，下次手动运行 `/ai-digest status` 时应显示 ⚠️ 警告
+
+连续失败原因可能是 API 限流、网络中断或 Claude Code 版本更新导致的不兼容，应提示用户检查网络连接或运行 `/ai-digest update` 更新项目代码。
 
 ## 自动配置
 
@@ -198,6 +253,12 @@
 | 晚间版 | `13 20 * * *` | 20:13 触发，全天汇总 |
 
 使用非整点/半点时间（49分/17分/13分），避免与其他用户的 Cron 任务在整点拥挤。
+
+**⚠️ 重要前提——Cron 仅在 Claude Code 运行时触发：** Cron 定时任务不是操作系统级的 crontab，而是 Claude Code 会话内的调度器。这意味着：
+- **必须保持 `claude` 进程运行**（终端不能关闭）
+- 如果关闭终端或退出 Claude Code，定时任务不会触发
+- 建议使用 `tmux` / `screen` 或保持一个终端窗口常开
+- 如果错过了某次定时生成，手动运行对应版次的 `/ai-digest` 即可补生成
 
 **⚠️ Cron 7天过期提醒：** CronCreate 的 `durable` 任务默认 7 天后自动过期。每次运行 `/ai-digest` 时检查 CronList，如任务已过期或不存在，自动重新注册。同时注册一个每周提醒任务：
 

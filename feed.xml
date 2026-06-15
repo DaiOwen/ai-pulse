@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI 脉搏 · AI 热点速览</title>
+    <link>https://daiowen.github.io/ai-pulse/</link>
+    <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天早中晚三次自动更新。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 14 Jun 2026 08:00:00 +0800</lastBuildDate>
+    <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>🌅 早间版 — 2026-06-14</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-14-morning.html</link>
+      <guid>https://daiowen.github.io/ai-pulse/archive/2026-06-14-morning.html</guid>
+      <pubDate>Sat, 14 Jun 2026 08:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <p>MiniMax M3 发布、华为 openPangu 2.0 开源、Google DiffusionGemma 新架构、GPT-5.6 150万上下文、DeepSeek 500亿融资等 18 条 AI 热点。</p>
+      ]]></description>
+    </item>
+  </channel>
+</rss>
