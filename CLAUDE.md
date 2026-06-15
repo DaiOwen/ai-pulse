@@ -205,7 +205,7 @@ Claude Code 按规范执行            ← WebSearch → 去重评分 → 生成
 3. **动态背景**：必须包含 4 个模糊光球 + 40 个微粒 + 网格线动画（纯 CSS + JS，无外部依赖）
 4. **主题切换**：右上角滑块 Toggle，默认暗色，localStorage 记住偏好
 5. **内容标记**：每条新闻包含分类标签、来源链接、时间、"💡 开发者影响"标注
-6. **阅读原文链接**：每条新闻必须包含"阅读原文 →"链接（`class="read-original"`），指向原始出处 URL，新窗口打开（`target="_blank" rel="noopener"`）。论文速递指向 arXiv 原文，开源热度指向 GitHub Trending 页面
+6. **阅读原文链接**：每条新闻必须包含"阅读原文 →"链接（`class="read-original"`），**必须填入 WebSearch 返回的真实原始 URL**，新窗口打开（`target="_blank" rel="noopener"`）。严禁使用 `#` 占位符。论文速递指向 arXiv 原文，开源热度指向 GitHub Trending 页面
 7. **每日一语**：页脚包含行业名言（优先 Alan Kay、Andrej Karpathy、李开复等 AI 领域人物）
 8. **PWA 支持**：包含 `<link rel="manifest">` 和 Service Worker 注册代码，支持添加到主屏幕和离线缓存
 9. **RSS 订阅**：`<head>` 中包含 `<link rel="alternate" type="application/rss+xml">`，页脚包含 RSS 订阅链接
