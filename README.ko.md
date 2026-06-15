@@ -42,23 +42,46 @@
 
 ## 빠른 시작
 
+> **사전 조건:** [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) CLI를 설치하고 첫 로그인(`claude login`)을 완료하세요.
+
+**1. 리포지토리 클론**
+
 ```bash
-# 1. 리포지토리 클론
 git clone https://github.com/DaiOwen/ai-pulse.git
 cd ai-pulse
-
-# 2. 첫 호 생성
-（Claude Code가 프로젝트 설정을 자동 로드합니다）
-/ai-digest morning
-
-# 3. 브라우저에서 index.html 열기
 ```
 
-첫 실행 시 Claude Code가 자동으로 다음을 수행합니다:
+**2. Claude Code를 실행하고 첫 호를 생성**
+
+프로젝트 디렉토리에서 Claude Code 대화형 인터페이스를 시작합니다:
+```bash
+claude
+```
+
+Claude Code가 프로젝트 설정(`CLAUDE.md`)을 자동으로 로드합니다. 채팅에서 슬래시 명령어를 입력하세요:
+
+```
+/ai-digest morning
+```
+
+AI가 전체 파이프라인을 자동으로 완료합니다:
 - 6개 이상의 소스에서 최신 AI 뉴스 검색 (WebSearch)
 - 상위 기사 상세 가져오기 (WebFetch)
 - 중복 제거, 점수 산정, 번역, 분류
 - 완전한 HTML을 생성하여 `archive/`와 `index.html`에 저장
+
+**3. 생성된 페이지 열기**
+
+```bash
+open index.html    # macOS
+start index.html   # Windows
+```
+
+또는 `index.html`을 더블클릭하여 브라우저에서 엽니다.
+
+첫 실행 후 Cron 작업이 자동 등록됩니다 (매일 07:49 / 12:17 / 20:13). 이후 추가 작업은 필요하지 않습니다.
+
+> 💡 **`/ai-digest` 란?** 이것은 터미널 명령어가 아니라 **Claude Code 슬래시 명령어**로, Claude Code 대화창에서만 작동합니다. 비유하자면: `git clone`은 터미널에서 실행하고, `/ai-digest morning`은 Claude Code 채팅에 입력합니다. 프로젝트 루트의 `CLAUDE.md` 파일이 "AI 사용 설명서" 역할을 하며, Claude Code가 이를 읽고 자동으로 지침을 따릅니다. 코드를 한 줄도 작성할 필요가 없습니다.
 
 ### 예약 작업
 
@@ -77,6 +100,27 @@ cd ai-pulse
 | `/ai-digest morning` | 아침 호 생성 |
 | `/ai-digest noon` | 점심 호 생성 (증분 업데이트) |
 | `/ai-digest evening` | 저녁 호 생성 (종일 요약) |
+| `/ai-digest update` | 업스트림 최신 코드를 가져와 프로젝트 업데이트 동기화 |
+
+### 업데이트 메커니즘
+
+**라이브 데모 (GitHub Pages)** — 완전 자동화, 사람 개입 불필요:
+
+```
+Cron 실행 (07:49 / 12:17 / 20:13)
+  → Claude Code가 뉴스 검색 및 HTML 생성
+  → git add & commit & push
+  → GitHub Pages 자동 배포 (약 1~2분 후 업데이트)
+```
+
+**셀프 호스팅 사용자** — 최신 콘텐츠를 얻는 두 가지 방법:
+
+| 방법 | 설명 |
+|------|------|
+| `git pull` | 업스트림 리포지토리에서 최신 `index.html` 가져오기 (Claude Code 불필요) |
+| `/ai-digest morning` | 생성 명령을 직접 실행하여 최신 뉴스 수집 (Claude Code 필요) |
+
+리포지토리를 포크하고 자신의 GitHub Pages를 자동 업데이트하려면 Claude Code를 로컬에서 실행 상태로 유지하기만 하면 됩니다 (Cron 작업 + git push가 모든 것을 처리). 자세한 내용은 [CLAUDE.md](CLAUDE.md)를 참조하세요.
 
 ## 콘텐츠 섹션
 

@@ -23,6 +23,23 @@
 /ai-digest evening    # 生成晚间版
 ```
 
+### `/ai-digest update`
+
+拉取上游仓库最新代码，一键同步项目更新（新功能、设计改进、Bug 修复等）。
+
+**执行流程：**
+1. 检查是否有本地未提交的修改（`git status --porcelain`）
+2. 如有本地修改，自动 `git stash` 暂存
+3. 执行 `git pull origin master` 拉取最新代码
+4. 展示最近 5 条 commit 变更摘要
+5. 如果 CLAUDE.md 有更新，提示「新配置将在下次启动 Claude Code 时生效」
+6. 如果之前 stash 了，自动执行 `git stash pop` 恢复本地修改
+
+**示例：**
+```
+/ai-digest update      # 同步项目最新版本
+```
+
 ## 新闻采集策略
 
 ### 搜索关键词（按板块）
@@ -113,6 +130,15 @@
    - 使用 `mv index.tmp.html index.html` 原子替换（同一文件系统内 rename 是原子操作）
    - 同时保存到 `archive/YYYY-MM-DD-{edition}.html`（如 `archive/2026-06-14-morning.html`）
    - **重要**：先写 archive 文件（不影响主页），确认成功后再原子替换 index.html。如果生成中途失败，index.html 不受影响
+4. **自动发布（Git Push）**：文件保存成功后，自动提交并推送到 GitHub：
+   ```bash
+   git add index.html archive/
+   git commit -m "auto: {edition} edition — $(date +%Y-%m-%d)"
+   git push origin master
+   ```
+   - 推送后 GitHub Pages 自动部署，在线演示约 1-2 分钟后更新
+   - 此步骤由 Cron 定时任务和手动 `/ai-digest` 命令共享
+   - 如果 git push 失败（网络问题等），内容已保存到本地，下次运行时会一并推送
 
 ### HTML 文件要求
 
@@ -121,7 +147,8 @@
 3. **动态背景**：必须包含 4 个模糊光球 + 40 个微粒 + 网格线动画（纯 CSS + JS，无外部依赖）
 4. **主题切换**：右上角滑块 Toggle，默认暗色，localStorage 记住偏好
 5. **内容标记**：每条新闻包含分类标签、来源链接、时间、"💡 开发者影响"标注
-6. **每日一语**：页脚包含行业名言（优先 Alan Kay、Andrej Karpathy、李开复等 AI 领域人物）
+6. **阅读原文链接**：每条新闻必须包含"阅读原文 →"链接（`class="read-original"`），指向原始出处 URL，新窗口打开（`target="_blank" rel="noopener"`）。论文速递指向 arXiv 原文，开源热度指向 GitHub Trending 页面
+7. **每日一语**：页脚包含行业名言（优先 Alan Kay、Andrej Karpathy、李开复等 AI 领域人物）
 
 ### index.html 额外要求
 

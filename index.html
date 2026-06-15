@@ -176,6 +176,15 @@
   .card-desc { font-size:13px; color:var(--text-secondary); line-height:1.6; margin-bottom:14px; }
   .card-meta { display:flex; gap:14px; font-size:11px; color:var(--text-tertiary); }
   .card-meta-link { color:var(--accent-indigo); }
+.read-original {
+  display:inline-flex; align-items:center; gap:3px;
+  font-size:10px; font-weight:500; letter-spacing:0.03em;
+  color:var(--accent-indigo); text-decoration:none;
+  transition:color 0.2s, gap 0.2s; margin-top:6px;
+}
+.read-original:hover { color:#818cf8; gap:6px; }
+.read-original-arrow { display:inline-block; transition:transform 0.2s; font-size:9px; }
+.read-original:hover .read-original-arrow { transform:translateX(2px); }
   .card-row { display:flex; gap:20px; align-items:flex-start; }
   .card-icon {
     width:72px; height:72px; border-radius:14px; flex-shrink:0;
@@ -324,6 +333,8 @@
   [data-theme="light"] .section-amber .section-label { color: #b45309; }
   [data-theme="light"] .section-purple .section-label { color: #7c3aed; }
   [data-theme="light"] .section-cyan .section-label { color: #0891b2; }
+  [data-theme="light"] .read-original { color: #4f46e5; }
+  [data-theme="light"] .read-original:hover { color: #4338ca; }
 
   /* Light mode card backgrounds — more opaque for contrast */
   [data-theme="light"] .feature-card { background: rgba(255,255,255,0.7); }
@@ -419,7 +430,7 @@
           <div class="card-tag" style="color:#6366f1;">HEADLINE</div>
           <div class="card-title">MiniMax M3 发布：百万上下文 + 原生多模态，编程超 GPT-5.5</div>
           <div class="card-desc">6月1日，MiniMax 正式发布新一代通用模型 M3，采用自研稀疏注意力架构 MSA，支持 100 万 token 超长上下文。模型集前沿编程能力、1M 超长上下文、原生多模态于一体，在 SWE-Bench Pro 评测中超越 GPT-5.5 和 Gemini 3.1 Pro。M3 是全球唯一具备完整能力组合的开源模型，已上传 HuggingFace 和 GitHub。定价方面，Plus 版 49 元/月（6 亿 token），Max 版 119 元/月，Ultra 版 469 元/月。</div>
-          <div class="card-meta"><span>钛媒体</span><span>&#183;</span><span>13天前</span><span>&#183;</span><span class="card-meta-link">多源报道</span></div>
+          <div class="card-meta"><span>钛媒体</span><span>&#183;</span><span>13天前</span><span>&#183;</span><span class="card-meta-link">多源报道</span><span>&#183;</span><a href="#" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
           <div style="margin-top:8px; font-size:9px; color:#a5b4fc;">💡 开发者影响：开源 1M 上下文模型，可用个人硬件微调部署</div>
         </div>
         <div class="card-icon">&#9889;</div>
@@ -434,6 +445,7 @@
         <div class="sub-desc">余承东在华为开发者大会宣布 openPangu 2.0 开源大模型，分为 Pro（505B/18B 激活）和 Flash（92B/6B 激活）两个版本。512K 上下文窗口，鸿蒙智能体深度适配，昇腾算力深度调优。6月30日起分批开源7大核心组件。余承东喊话："字典里没有第二，只有第一！"</div>
         <div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">东方财富 &#183; 2天前</div>
         <div style="margin-top:4px; font-size:8px; color:#a5b4fc;">💡 开发者影响：昇腾生态开源模型，国产推理部署首选</div>
+        <a href="#" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
       </div>
 
       <!-- Sub 2: DiffusionGemma -->
@@ -443,6 +455,7 @@
         <div class="sub-desc">谷歌推出实验性开源模型 DiffusionGemma，采用文本扩散架构替代传统自回归。26B MoE 参数但推理仅激活 3.8B，量化后在 18GB 显存消费级显卡上即可运行。支持双向注意力与并行生成，适用于行内编辑、代码补全等实时交互场景。已通过 Apache 2.0 许可证在 HuggingFace 开源。</div>
         <div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">PingWest &#183; 3天前</div>
         <div style="margin-top:4px; font-size:8px; color:#a5b4fc;">💡 开发者影响：扩散架构新范式，本地推理部署门槛降低</div>
+        <a href="#" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
       </div>
 
       <!-- Sub 3: GPT-5.6 -->
@@ -452,6 +465,7 @@
         <div class="sub-desc">GPT-5.6 内部代号 "iris-alpha"，已在 OpenAI Codex 后台日志中发现踪迹，上下文长度可能达到 150 万 tokens。市场预测 6 月底前发布概率超过 70%。与此同时，OpenAI 已于 6 月 8 日向 SEC 秘密提交 IPO 申请，Sam Altman 预计 "明年内" 上市。2026 年预计亏损约 140 亿美元。</div>
         <div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">C114 &#183; 近日</div>
         <div style="margin-top:4px; font-size:8px; color:#a5b4fc;">💡 开发者影响：150 万上下文将重新定义 Agent 应用边界</div>
+        <a href="#" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
       </div>
 
       <!-- Sub 4: DeepSeek 动态 -->
@@ -461,6 +475,7 @@
         <div class="sub-desc">DeepSeek 首轮融资约 500 亿元人民币，投后估值最高达 4000 亿元。创始人梁文锋个人出资 200 亿元，腾讯拟投 100 亿，宁德时代拟投 50 亿。DeepSeek-V4 系列已全面支持百万上下文，定价仅为国际同类产品约 2%，并主动退还缓存计费偏差赠金。市场预计 V4.1 版本将在 6 月推出。</div>
         <div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">证券时报 &#183; 近日</div>
         <div style="margin-top:4px; font-size:8px; color:#a5b4fc;">💡 开发者影响：极致性价比模型 API，适合高频大批量调用</div>
+        <a href="#" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
       </div>
     </div>
   </div>
@@ -478,18 +493,21 @@
         <div class="tool-name">小米 MiMo Code</div>
         <div class="tool-desc">开源终端 AI 编程助手，基于 OpenCode 二次开发，MIT 协议。内置持久记忆系统与 Compose 模式，覆盖设计→规划→编码→测试→审查全流程。在 SWE-Bench Pro V2 和 Terminal Bench 2 上均超 Claude Code 约 5 个百分点。</div>
         <span class="tool-badge badge-new">开源 MIT</span>
+        <a href="#" class="read-original" target="_blank" rel="noopener" style="display:block;">阅读原文 <span class="read-original-arrow">→</span></a>
       </div>
       <div class="tool-card">
         <div class="tool-icon">&#9881;</div>
         <div class="tool-name">vLLM v0.22.1</div>
         <div class="tool-desc">最新版修复多节点 Ray 数据并行挂起问题，新增 AMD Zen CPU 量化推理与 JetBrains Mellum v2 支持。CUDA_VISIBLE_DEVICES 重构为 --device-ids 参数，修复 DeepSeek-V4 初始化问题。</div>
         <span class="tool-badge badge-update">更新</span>
+        <a href="#" class="read-original" target="_blank" rel="noopener" style="display:block;">阅读原文 <span class="read-original-arrow">→</span></a>
       </div>
       <div class="tool-card">
         <div class="tool-icon">&#127942;</div>
         <div class="tool-name">Xcode 27 Beta</div>
         <div class="tool-desc">苹果在 Xcode 27 Beta 中原生集成 Google Gemini，使其成为继 OpenAI Codex 和 Claude Agent 之后第三个内置 AI 编程智能体。开发者无需切换工具即可完成多步骤开发任务。</div>
         <span class="tool-badge badge-new">新集成</span>
+        <a href="#" class="read-original" target="_blank" rel="noopener" style="display:block;">阅读原文 <span class="read-original-arrow">→</span></a>
       </div>
     </div>
 
@@ -500,6 +518,7 @@
         <div class="sub-title">K8s 成为 AI/ML 默认生产平台，GPU 利用率可提至 85%</div>
         <div class="sub-desc">KubeCon 2026 确认 Kubernetes 已成为 AI/ML 工作负载的默认生产平台。vLLM 成为 LLM 推理事实标准引擎，KServe 从 CNCF 毕业。通过多租户调度，GPU 利用率可从行业基线 25%-35% 提升至 60%-85%。</div>
         <div style="margin-top:4px; font-size:8px; color:#86efac;">💡 开发者影响：K8s + vLLM 成标准部署栈，建议尽早熟悉</div>
+        <a href="#" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
       </div>
     </div>
   </div>
@@ -518,6 +537,7 @@
         <div class="sub-desc">中央网信办部署为期 4 个月的专项行动，重点整治"应备未备"、语料安全、数据投毒、生成内容标识不到位等 7 类问题。截至 2026 年 4 月 30 日，全国已完成 868 款大模型备案、530 款应用登记。同时开设涉 AI 应用乱象举报专区（12377），受理 14 类违规问题。举报渠道包括网站 www.12377.cn、微信公众号"全国网络举报"等。</div>
         <div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">新华网 &#183; 6月12日</div>
         <div style="margin-top:4px; font-size:8px; color:#fcd34d;">💡 开发者影响：上线前务必完成备案登记，合规成本上升</div>
+        <a href="#" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
       </div>
       <div class="sub-card">
         <div class="sub-tag" style="color:#fcd34d;">数据制度</div>
@@ -525,6 +545,7 @@
         <div class="sub-desc">国家数据局召开"完善数据相关规则 赋能人工智能创新发展"座谈会，DeepSeek、字节跳动、阿里云、腾讯等参与。随后印发实施方案，提出落实数据持有权、使用权、经营权三权分置，研究合成数据等新议题，推动版权作品数据有序用于模型训练。证监会亦发布新指引，要求资本优先配置 AI 与先进制造领域。</div>
         <div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">国家数据局 &#183; 6月8日</div>
         <div style="margin-top:4px; font-size:8px; color:#fcd34d;">💡 开发者影响：数据合规使用将成为模型训练前置条件</div>
+        <a href="#" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
       </div>
     </div>
   </div>
@@ -542,7 +563,7 @@
       </div>
       <div class="paper-title">FLARE: Diffusion for Hybrid Language Model — 自回归与扩散统一框架</div>
       <div class="paper-abstract">发表于 arXiv（2606.01774），提出首个自回归+扩散统一训练框架，单个 checkpoint 同时支持 AR 验证式解码和扩散式并行去噪。实验表明，迁移数据质量是能力保留的关键因素，而非损失函数或注意力掩码设计。这为 LLM 推理阶段提供了灵活的"速度-质量"权衡选择。</div>
-      <div class="paper-meta">arXiv:2606.01774 &#183; 6月1日 &#183; 被引趋势：上升中</div>
+      <div class="paper-meta">arXiv:2606.01774 &#183; 6月1日 &#183; 被引趋势：上升中 &#183; <a href="https://arxiv.org/abs/2606.01774" class="read-original" target="_blank" rel="noopener" style="margin-top:0;">阅读原文 <span class="read-original-arrow">→</span></a></div>
       <div style="margin-top:6px; font-size:8px; color:#c4b5fd;">💡 开发者影响：统一 AR/扩散架构或将改变推理部署策略选择</div>
     </div>
   </div>
@@ -561,6 +582,7 @@
         <div style="font-size:10px; color:var(--text-secondary); line-height:1.5; margin-bottom:8px;">微信向 14.32 亿月活用户开放 AI Agent 能力，首批接入美团、滴滴、京东、携程等。用户一句话即可完成叫车、点外卖、订酒店等操作，全程不跳转。提供自动/开发两种接入模式，目前内测中。这标志着腾讯系、阿里系、字节系形成 AI 消费入口"三国杀"格局。</div>
         <div style="font-size:8px; color:var(--text-tertiary);">北京商报 &#183; 6月9日</div>
         <div style="margin-top:4px; font-size:8px; color:#67e8f9;">💡 开发者影响：微信 AI 生态催生大量小程序 Agent 开发机会</div>
+        <a href="#" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
       </div>
       <div class="rank-card">
         <div class="rank-label" style="color:#67e8f9;">&#127981; 产业级落地</div>
@@ -568,6 +590,7 @@
         <div style="font-size:10px; color:var(--text-secondary); line-height:1.5; margin-bottom:8px;">找钢网 AI 智能体实现"沟通即交易，对话即下单"，获央视《朝闻天下》专题报道。日均处理超 1000 万条交易消息，解析准确率超 95%。2025 年 AI 业务收入 3.35 亿元，同比增长 217.5%。与腾讯云 ADP 平台深度合作，推出"找钢 Claw"智能助手。</div>
         <div style="font-size:8px; color:var(--text-tertiary);">北京日报 &#183; 6月11日</div>
         <div style="margin-top:4px; font-size:8px; color:#67e8f9;">💡 开发者影响：产业 AI Agent 从问答走向交易闭环，ROI 可量化</div>
+        <a href="#" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
       </div>
     </div>
   </div>
@@ -587,6 +610,7 @@
         <div class="rank-row"><span class="rank-num">3</span><span class="rank-name">turbovec</span><span class="rank-stat rank-up">+1.6K stars/日</span></div>
         <div class="rank-row"><span class="rank-num">4</span><span class="rank-name">odysseus</span><span class="rank-stat rank-up">+1K stars/日</span></div>
         <div class="rank-row"><span class="rank-num">5</span><span class="rank-name">Agent-Reach</span><span class="rank-stat rank-up">+796 stars/日</span></div>
+        <a href="https://github.com/trending?since=daily" class="read-original" target="_blank" rel="noopener">查看完整榜单 <span class="read-original-arrow">→</span></a>
       </div>
       <div class="rank-card">
         <div class="rank-label" style="color:#fcd34d;">&#128200; 趋势解读</div>
@@ -614,18 +638,21 @@
         <div class="sub-title">Sam Altman 今日访韩，会晤三星、Naver 探讨 AI 合作</div>
         <div class="sub-desc">OpenAI CEO 奥尔特曼于 6 月 14 日访问韩国，计划会见三星电子、Naver、Kakao 等企业高管。议程包括三星 DX 部门 AI 转型、KakaoTalk 集成 ChatGPT、Naver 云合作，以及探讨 5000 亿美元 "Stargate" AI 数据中心项目的存储芯片供应。此前三星已宣布向全体员工开放 ChatGPT、Gemini、Claude 三种外部 AI。</div>
         <div style="margin-top:4px; font-size:8px; color:#67e8f9;">💡 开发者影响：多模型企业策略成为趋势，单一平台绑定减弱</div>
+        <a href="#" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
       </div>
       <div class="sub-card">
         <div class="sub-tag" style="color:#67e8f9;">💬 社区热议</div>
         <div class="sub-title">Hacker News 热议：AI 泡沫是否破裂？"AI Slop"指控成社交门槛工具</div>
         <div class="sub-desc">Hacker News 六月初热议 AI 泡沫。研究发现 "AI slop" 指控在 Reddit 和 HN 上增长 10 倍以上，94% 的负面 AI 指控使用该标签，现更多被用于社交身份标记而非真实检测。同时引发讨论的还有 AI 编程工具引入安全漏洞、Claude Code 源码泄露、UC Berkeley CS 挂科率飙升与 AI 依赖的关联等。</div>
         <div style="margin-top:4px; font-size:8px; color:#67e8f9;">💡 开发者影响：AI 工具实用主义回归，过度炒作正在退潮</div>
+        <a href="#" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
       </div>
       <div class="sub-card">
         <div class="sub-tag" style="color:#67e8f9;">🏛️ 政策动向</div>
         <div class="sub-title">亚马逊 CEO 与特朗普政府就 AI 大模型通话，行业监管博弈升温</div>
         <div class="sub-desc">亚马逊 CEO 安迪·贾西与其他科技企业负责人与特朗普政府就 AI 大模型进行通话，讨论产业政策与监管方向。与此同时，Alphabet 提议 800 亿美元股权融资用于 AI 基础设施建设，S&P 500 拒绝将 OpenAI、Anthropic 等 AI 公司快速纳入指数，市场对 AI 投资回报的审慎情绪上升。</div>
         <div style="margin-top:4px; font-size:8px; color:#67e8f9;">💡 开发者影响：海外 AI 政策不确定性增加，关注出口管制变化</div>
+        <a href="#" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
       </div>
     </div>
   </div>

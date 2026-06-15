@@ -42,23 +42,46 @@
 
 ## 快速开始
 
+> **前提条件：** 安装 [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) CLI 并完成首次登录（`claude login`）。
+
+**1. 克隆项目**
+
 ```bash
-# 1. 克隆项目
 git clone https://github.com/DaiOwen/ai-pulse.git
 cd ai-pulse
-
-# 2. 生成第一期
-（Claude Code 自动加载项目配置）
-/ai-digest morning
-
-# 3. 用浏览器打开 index.html
 ```
 
-首次运行时，Claude Code 将自动：
+**2. 启动 Claude Code 并生成第一期**
+
+在项目目录下启动 Claude Code 交互界面：
+```bash
+claude
+```
+
+Claude Code 会自动加载项目配置（`CLAUDE.md`）。在对话中输入斜杠命令：
+
+```
+/ai-digest morning
+```
+
+AI 将自动完成以下全流程：
 - 从 6+ 信源搜索最新 AI 新闻（WebSearch）
 - 深度抓取 Top 文章全文（WebFetch）
 - 智能去重、评分、翻译、分类
 - 生成完整 HTML 保存到 `archive/` 和 `index.html`
+
+**3. 打开生成的主页**
+
+```bash
+open index.html    # macOS
+start index.html   # Windows
+```
+
+或直接双击 `index.html` 在浏览器中打开。
+
+首次运行后，定时任务自动注册（每天 07:49 / 12:17 / 20:13），后续无需手动操作。
+
+> 💡 **`/ai-digest` 是什么？** 它不是终端命令，而是 **Claude Code 斜杠命令**——只在 Claude Code 对话里有效。打个比方：`git clone` 在终端里跑，`/ai-digest morning` 在 Claude Code 聊天框里输入。项目根目录的 `CLAUDE.md` 就像一份"AI 操作手册"，Claude Code 读取后自动按指令执行——不需要你写任何代码。
 
 ### 定时任务
 
@@ -77,6 +100,28 @@ cd ai-pulse
 | `/ai-digest morning` | 生成早间版 |
 | `/ai-digest noon` | 生成午间版（增量） |
 | `/ai-digest evening` | 生成晚间版（全天汇总） |
+| `/ai-digest update` | 拉取上游最新代码，同步项目更新 |
+
+### 更新机制
+
+**在线演示（GitHub Pages）** — 全程自动化，无需人工干预：
+
+```
+Cron 触发 (07:49/12:17/20:13)
+  → Claude Code 搜索采集 → 生成 HTML
+  → git add & commit & push
+  → GitHub Pages 自动部署（约 1-2 分钟后更新）
+```
+
+**自部署用户** — 三种方式获取最新：
+
+| 方式 | 说明 |
+|------|------|
+| `/ai-digest update` | **推荐。** 一键拉取上游最新代码，同步项目功能和设计改进 |
+| `git pull` | 手动终端拉取，无需 Claude Code |
+| `/ai-digest morning` | 自行运行生成命令，采集此刻最新新闻 |
+
+如果 fork 了仓库并希望自己的 GitHub Pages 也自动更新，只需在本地保持 Claude Code 运行（Cron 定时任务 + git push 自动完成）。详见 [CLAUDE.md](CLAUDE.md)。
 
 ## 内容板块
 

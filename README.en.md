@@ -42,23 +42,46 @@ No installation needed — open in your browser to see the latest AI news digest
 
 ## Quick Start
 
+> **Prerequisites:** Install [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) CLI and complete the first-time login (`claude login`).
+
+**1. Clone the repository**
+
 ```bash
-# 1. Clone the repository
 git clone https://github.com/DaiOwen/ai-pulse.git
 cd ai-pulse
-
-# 2. Generate your first edition
-# (Claude Code loads the project config automatically)
-/ai-digest morning
-
-# 3. Open index.html in your browser
 ```
 
-On first run, Claude Code will:
+**2. Launch Claude Code and generate your first edition**
+
+Start the Claude Code interactive interface from the project directory:
+```bash
+claude
+```
+
+Claude Code automatically loads the project config (`CLAUDE.md`). In the chat, enter the slash command:
+
+```
+/ai-digest morning
+```
+
+The AI will automatically complete the full pipeline:
 - Search 6+ sources for the latest AI news (WebSearch)
 - Deep-fetch top articles for full content (WebFetch)
 - Deduplicate, score, translate, and classify all items
 - Generate a complete standalone HTML page saved to `archive/` and `index.html`
+
+**3. Open the generated page**
+
+```bash
+open index.html    # macOS
+start index.html   # Windows
+```
+
+Or double-click `index.html` to open it in your browser.
+
+After the first run, cron jobs are auto-registered (07:49 / 12:17 / 20:13 daily) — no further manual steps needed.
+
+> 💡 **What is `/ai-digest`?** It is not a terminal command — it's a **Claude Code slash command** that only works inside a Claude Code chat. Think of it this way: `git clone` runs in your terminal, `/ai-digest morning` is typed into the Claude Code conversation. The `CLAUDE.md` file in the project root acts as an "AI instruction manual" — Claude Code reads it and follows the instructions automatically. You don't write a single line of code.
 
 ### Scheduled Tasks
 
@@ -77,6 +100,28 @@ After the first manual run, three cron jobs are registered automatically:
 | `/ai-digest morning` | Generate morning edition |
 | `/ai-digest noon` | Generate noon edition (incremental) |
 | `/ai-digest evening` | Generate evening edition (full-day summary) |
+| `/ai-digest update` | Pull latest upstream code to sync project updates |
+
+### Update Mechanism
+
+**Live Demo (GitHub Pages)** — fully automated, zero human intervention:
+
+```
+Cron fires (07:49 / 12:17 / 20:13)
+  → Claude Code searches & generates HTML
+  → git add & commit & push
+  → GitHub Pages auto-deploys (~1-2 min later)
+```
+
+**Self-hosted users** — three ways to get the latest:
+
+| Method | Description |
+|--------|-------------|
+| `/ai-digest update` | **Recommended.** One-click pull of latest upstream code to sync features and design |
+| `git pull` | Manual terminal pull — no Claude Code needed |
+| `/ai-digest morning` | Run the generation command yourself to collect real-time news |
+
+If you forked the repo and want your own GitHub Pages to auto-update, simply keep Claude Code running locally (cron jobs + git push handle everything). See [CLAUDE.md](CLAUDE.md) for details.
 
 ## Content Sections
 

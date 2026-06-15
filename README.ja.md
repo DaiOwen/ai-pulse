@@ -42,23 +42,46 @@
 
 ## クイックスタート
 
+> **前提条件：** [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) CLI をインストールし、初回ログイン（`claude login`）を完了してください。
+
+**1. リポジトリをクローン**
+
 ```bash
-# 1. リポジトリをクローン
 git clone https://github.com/DaiOwen/ai-pulse.git
 cd ai-pulse
-
-# 2. 初号を生成
-（Claude Code がプロジェクト設定を自動読込）
-/ai-digest morning
-
-# 3. ブラウザで index.html を開く
 ```
 
-初回実行時、Claude Code は以下の処理を自動実行します：
+**2. Claude Code を起動して初号を生成**
+
+プロジェクトディレクトリで Claude Code の対話画面を起動します：
+```bash
+claude
+```
+
+Claude Code がプロジェクト設定（`CLAUDE.md`）を自動的に読み込みます。チャットでスラッシュコマンドを入力してください：
+
+```
+/ai-digest morning
+```
+
+AI が以下の全工程を自動実行します：
 - 6 以上の情報源から最新 AI ニュースを検索（WebSearch）
 - トップ記事を詳細取得（WebFetch）
 - 重複除去、スコアリング、翻訳、分類
 - 完全な HTML を生成し `archive/` と `index.html` に保存
+
+**3. 生成されたページを開く**
+
+```bash
+open index.html    # macOS
+start index.html   # Windows
+```
+
+または `index.html` をダブルクリックしてブラウザで開きます。
+
+初回実行後、定期タスクが自動登録されます（毎日 07:49 / 12:17 / 20:13）。以降の手動操作は不要です。
+
+> 💡 **`/ai-digest` とは？** これはターミナルコマンドではなく、**Claude Code のスラッシュコマンド**です。Claude Code のチャット画面でのみ機能します。`git clone` はターミナルで実行し、`/ai-digest morning` は Claude Code との会話の中で入力します。プロジェクト直下の `CLAUDE.md` が「AI の取り扱い説明書」となり、Claude Code がそれを読み取って自動的に指示に従います。コードを一行も書く必要はありません。
 
 ### 定期実行タスク
 
@@ -77,6 +100,27 @@ cd ai-pulse
 | `/ai-digest morning` | 朝刊を生成 |
 | `/ai-digest noon` | 昼刊を生成（差分更新） |
 | `/ai-digest evening` | 夕刊を生成（終日サマリー） |
+| `/ai-digest update` | 上流の最新コードを取得してプロジェクトを同期 |
+
+### 更新メカニズム
+
+**ライブデモ（GitHub Pages）** — 完全自動化、人手不要：
+
+```
+Cron 実行 (07:49 / 12:17 / 20:13)
+  → Claude Code がニュースを検索・HTML を生成
+  → git add & commit & push
+  → GitHub Pages が自動デプロイ（約 1～2 分後に更新）
+```
+
+**セルフホストユーザー** — 最新コンテンツを取得する 2 つの方法：
+
+| 方法 | 説明 |
+|------|------|
+| `git pull` | 上流リポジトリの最新 `index.html` を取得（Claude Code 不要） |
+| `/ai-digest morning` | 生成コマンドを自分で実行して最新ニュースを収集（Claude Code 必要） |
+
+リポジトリをフォークして自分の GitHub Pages を自動更新したい場合は、ローカルで Claude Code を起動したままにするだけです（Cron ジョブ + git push がすべて自動実行）。詳細は [CLAUDE.md](CLAUDE.md) をご覧ください。
 
 ## コンテンツセクション
 

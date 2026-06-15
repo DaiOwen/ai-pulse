@@ -155,6 +155,15 @@
   .card-desc { font-size:11px; color:#9898a0; line-height:1.6; margin-bottom:14px; }
   .card-meta { display:flex; gap:14px; font-size:9px; color:#86868b; }
   .card-meta-link { color:#6366f1; }
+.read-original {
+  display:inline-flex; align-items:center; gap:3px;
+  font-size:10px; font-weight:500; letter-spacing:0.03em;
+  color:var(--accent-indigo); text-decoration:none;
+  transition:color 0.2s, gap 0.2s; margin-top:6px;
+}
+.read-original:hover { color:#818cf8; gap:6px; }
+.read-original-arrow { display:inline-block; transition:transform 0.2s; font-size:9px; }
+.read-original:hover .read-original-arrow { transform:translateX(2px); }
   .card-row { display:flex; gap:20px; align-items:flex-start; }
   .card-icon {
     width:72px; height:72px; border-radius:14px; flex-shrink:0;
@@ -305,7 +314,7 @@
           <div class="card-desc">在数学推理和编程任务上大幅超越前代模型，API价格降至前代的1/3。同步发布全新的多模态交互能力，可通过自然语言直接生成和编辑图像，引发开发者社区广泛讨论。</div>
           <div class="card-meta">
             <span>The Verge</span><span>·</span><span>2小时前</span><span>·</span>
-            <span class="card-meta-link">阅读原文 →</span>
+            <a href="#" class="read-original" target="_blank" rel="noopener" style="margin-top:0;">阅读原文 <span class="read-original-arrow">→</span></a>
           </div>
         </div>
         <div class="card-icon">🧠</div>

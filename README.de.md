@@ -42,23 +42,46 @@ Keine Installation erforderlich — offnen Sie es in Ihrem Browser, um die neues
 
 ## Schnellstart
 
+> **Voraussetzungen:** Installiere die [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) CLI und fuhre die erste Anmeldung durch (`claude login`).
+
+**1. Repository klonen**
+
 ```bash
-# 1. Repository klonen
 git clone https://github.com/DaiOwen/ai-pulse.git
 cd ai-pulse
-
-# 2. Erste Ausgabe generieren
-（Claude Code lad die Projektkonfiguration automatisch）
-/ai-digest morning
-
-# 3. index.html im Browser offnen
 ```
 
-Beim ersten Durchlauf fuhrt Claude Code automatisch folgende Schritte aus:
+**2. Claude Code starten und erste Ausgabe generieren**
+
+Starte die Claude Code Oberflache aus dem Projektverzeichnis:
+```bash
+claude
+```
+
+Claude Code ladt automatisch die Projektkonfiguration (`CLAUDE.md`). Gib im Chat den Slash-Befehl ein:
+
+```
+/ai-digest morning
+```
+
+Die KI fuhrt automatisch den gesamten Ablauf aus:
 - Durchsucht 6+ Quellen nach den neuesten KI-Nachrichten (WebSearch)
 - Ruft Top-Artikel detailliert ab (WebFetch)
 - Entfernt Duplikate, bewertet, ubersetzt und klassifiziert alle Eintrage
-- Generiert eine vollstandige, eigenstandige HTML-Seite und speichert sie in `archive/` und `index.html`
+- Generiert eine vollstandige HTML-Seite und speichert sie in `archive/` und `index.html`
+
+**3. Generierte Seite offnen**
+
+```bash
+open index.html    # macOS
+start index.html   # Windows
+```
+
+Oder doppelklicke auf `index.html`, um sie im Browser zu offnen.
+
+Nach der ersten Ausfuhrung werden Cron-Jobs automatisch registriert (taglich 07:49 / 12:17 / 20:13) – keine weiteren manuellen Schritte erforderlich.
+
+> 💡 **Was ist `/ai-digest`?** Es ist kein Terminal-Befehl, sondern ein **Claude Code Slash-Befehl** – er funktioniert nur im Claude Code Chat. Zum Vergleich: `git clone` fuhrst du im Terminal aus, `/ai-digest morning` gibst du im Claude Code Gesprach ein. Die `CLAUDE.md` im Projektverzeichnis dient als "KI-Betriebsanleitung" – Claude Code liest sie und fuhrt die Anweisungen automatisch aus. Du musst keine einzige Zeile Code schreiben.
 
 ### Geplante Aufgaben
 
@@ -77,6 +100,27 @@ Nach der ersten manuellen Ausführung werden automatisch drei Cron-Jobs registri
 | `/ai-digest morning` | Morgenausgabe generieren |
 | `/ai-digest noon` | Mittagsausgabe generieren (inkrementell) |
 | `/ai-digest evening` | Abendausgabe generieren (Tageszusammenfassung) |
+| `/ai-digest update` | Neuesten Upstream-Code pullen fur Projekt-Updates |
+
+### Update-Mechanismus
+
+**Live-Demo (GitHub Pages)** — vollautomatisch, kein manueller Eingriff:
+
+```
+Cron feuert (07:49 / 12:17 / 20:13)
+  → Claude Code sucht & generiert HTML
+  → git add & commit & push
+  → GitHub Pages deployt automatisch (~1-2 Min später)
+```
+
+**Self-hosting-Nutzer** — zwei Wege für aktuelle Inhalte:
+
+| Methode | Beschreibung |
+|---------|--------------|
+| `git pull` | Neueste `index.html` vom Upstream-Repo pullen — kein Claude Code nötig |
+| `/ai-digest morning` | Befehl selbst ausführen, um aktuelle Nachrichten zu sammeln (Claude Code erforderlich) |
+
+Wenn du das Repository geforkt hast und deine eigenen GitHub Pages automatisch aktualisieren möchtest, halte Claude Code einfach lokal am Laufen (Cron-Jobs + Git Push erledigen alles). Siehe [CLAUDE.md](CLAUDE.md) für Details.
 
 ## Inhaltsbereiche
 
