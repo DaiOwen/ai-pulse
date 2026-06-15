@@ -46,18 +46,13 @@
     --bg-glow-cyan: rgba(6,182,212,0.04);
   }
 
-  [data-theme="light"] .orb { opacity: 0.04 !important; }
-  [data-theme="light"] .particle { background: rgba(0,0,0,0.15); }
-  [data-theme="light"] .grid-overlay {
-    background-image: linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
-                      linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
-  }
-
+  [data-theme="light"] .orb { opacity: 0.08 !important; }
+    
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
-    background: linear-gradient(160deg, #0a0a0f 0%, #0f0f1a 30%, #0d0d18 60%, #0a0a14 100%);
+    background: linear-gradient(170deg, #06060d 0%, #0a0a1a 25%, #0d0a1f 50%, #080818 75%, #060610 100%);
     color: var(--text-primary);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
@@ -66,55 +61,38 @@
   }
 
   [data-theme="light"] body {
-    background: linear-gradient(160deg, #f5f5f7 0%, #fafafa 30%, #f0f0f3 60%, #f5f5f7 100%);
+    background: linear-gradient(170deg, #f5f5f7 0%, #fafafa 30%, #f0f0f5 60%, #f5f5f7 100%);
   }
 
   .bg-layer { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
-#neuralBg { position:absolute; inset:0; width:100%; height:100%; opacity:0.35; }
-[data-theme="light"] #neuralBg { opacity:0.18; }
+  #cosmicCanvas { position:absolute; inset:0; width:100%; height:100%; opacity:0.9; }
+  [data-theme="light"] #cosmicCanvas { opacity:0.35; }
+
   .orb {
-    position: absolute; border-radius: 50%; filter: blur(120px);
+    position: absolute; border-radius: 50%; filter: blur(140px);
     animation-timing-function: ease-in-out; animation-iteration-count: infinite;
     animation-direction: alternate;
   }
-  .orb-1 { width:500px; height:500px; background:radial-gradient(circle, #6366f1 0%, transparent 70%); top:-10%; right:-5%; opacity:0.12; animation:float1 18s infinite; }
-  .orb-2 { width:400px; height:400px; background:radial-gradient(circle, #8b5cf6 0%, transparent 70%); bottom:-15%; left:-8%; opacity:0.12; animation:float2 22s infinite; }
-  .orb-3 { width:300px; height:300px; background:radial-gradient(circle, #06b6d4 0%, transparent 70%); top:45%; right:-10%; opacity:0.08; animation:float3 20s infinite; }
-  .orb-4 { width:250px; height:250px; background:radial-gradient(circle, #f59e0b 0%, transparent 70%); top:-8%; left:40%; opacity:0.06; animation:float4 24s infinite; }
+  .orb-1 { width:700px; height:700px; background:radial-gradient(circle, #6366f1 0%, #8b5cf6 40%, transparent 75%); top:-15%; right:-10%; opacity:0.09; animation:float1 20s infinite; }
+  .orb-2 { width:550px; height:550px; background:radial-gradient(circle, #ec4899 0%, #8b5cf6 30%, transparent 70%); bottom:-20%; left:-10%; opacity:0.07; animation:float2 25s infinite; }
+  .orb-3 { width:450px; height:450px; background:radial-gradient(circle, #06b6d4 0%, #6366f1 35%, transparent 70%); top:40%; right:-15%; opacity:0.06; animation:float3 22s infinite; }
+  .orb-4 { width:350px; height:350px; background:radial-gradient(circle, #a855f7 0%, #ec4899 30%, transparent 70%); top:-5%; left:35%; opacity:0.05; animation:float4 28s infinite; }
 
   @keyframes float1 {
-    0% { transform:translate(0,0) scale(1); } 33% { transform:translate(-80px,60px) scale(1.15); }
-    66% { transform:translate(40px,-30px) scale(0.9); } 100% { transform:translate(-20px,20px) scale(1.05); }
+    0% { transform:translate(0,0) scale(1); } 33% { transform:translate(-100px,80px) scale(1.2); }
+    66% { transform:translate(50px,-40px) scale(0.85); } 100% { transform:translate(-30px,30px) scale(1.1); }
   }
   @keyframes float2 {
-    0% { transform:translate(0,0) scale(1); } 33% { transform:translate(60px,-50px) scale(1.2); }
-    66% { transform:translate(-30px,20px) scale(0.85); } 100% { transform:translate(10px,-10px) scale(1.1); }
+    0% { transform:translate(0,0) scale(1); } 33% { transform:translate(80px,-60px) scale(1.25); }
+    66% { transform:translate(-40px,30px) scale(0.8); } 100% { transform:translate(20px,-15px) scale(1.15); }
   }
   @keyframes float3 {
-    0% { transform:translate(0,0) scale(1); } 50% { transform:translate(-50px,-40px) scale(1.3); }
-    100% { transform:translate(20px,30px) scale(0.9); }
+    0% { transform:translate(0,0) scale(1); } 50% { transform:translate(-70px,-50px) scale(1.35); }
+    100% { transform:translate(30px,40px) scale(0.85); }
   }
   @keyframes float4 {
-    0% { transform:translate(0,0) scale(1); } 25% { transform:translate(30px,50px) scale(1.25); }
-    75% { transform:translate(-40px,20px) scale(0.85); } 100% { transform:translate(10px,-10px) scale(1.05); }
-  }
-
-  .grid-overlay {
-    position:absolute; inset:0;
-    background-image:linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px),
-                     linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px);
-    background-size:60px 60px; animation:gridShift 30s linear infinite;
-  }
-  @keyframes gridShift { 0% { background-position:0 0; } 100% { background-position:60px 60px; } }
-
-  .particle {
-    position:absolute; border-radius:50%; background:rgba(255,255,255,0.35);
-    animation:rise linear infinite;
-  }
-  @keyframes rise {
-    0% { transform:translateY(0) translateX(0); opacity:0; }
-    10% { opacity:0.5; } 90% { opacity:0.05; }
-    100% { transform:translateY(-100vh) translateX(60px); opacity:0; }
+    0% { transform:translate(0,0) scale(1); } 25% { transform:translate(50px,70px) scale(1.3); }
+    75% { transform:translate(-50px,30px) scale(0.8); } 100% { transform:translate(15px,-20px) scale(1.1); }
   }
 
   .content { position:relative; z-index:1; max-width:960px; margin:0 auto; padding:0 32px 80px; }
@@ -369,9 +347,7 @@
 <div class="bg-layer">
   <div class="orb orb-1"></div><div class="orb orb-2"></div>
   <div class="orb orb-3"></div><div class="orb orb-4"></div>
-  <div class="grid-overlay"></div>
-  <div class="particles" id="particles"></div>
-  <canvas id="neuralBg"></canvas>
+  <canvas id="cosmicCanvas"></canvas>
 </div>
 
 <div class="calendar-overlay" id="calendarOverlay">
@@ -623,85 +599,80 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js');
 }
 
+// Cosmic starfield + shooting stars
 (function() {
-  const pc = document.getElementById('particles');
-  for (let i = 0; i < 40; i++) {
-    const p = document.createElement('div');
-    p.classList.add('particle');
-    p.style.left = Math.random() * 100 + '%';
-    p.style.top = Math.random() * 100 + '%';
-    const s = 1 + Math.random() * 2;
-    p.style.width = s + 'px'; p.style.height = s + 'px';
-    p.style.animationDuration = (12 + Math.random() * 20) + 's';
-    p.style.animationDelay = Math.random() * 15 + 's';
-    pc.appendChild(p);
-  }
-})();
+  const c = document.getElementById('cosmicCanvas');
+  const ctx = c.getContext('2d');
+  let stars = [], shooters = [];
+  const STAR_COUNT = 220;
 
-// Neural network background animation
-(function() {
-  const canvas = document.getElementById('neuralBg');
-  const ctx = canvas.getContext('2d');
-  let nodes = [];
-  const NODE_COUNT = 50;
-  const CONNECT_DIST = 150;
-  const colors = ['#6366f1','#8b5cf6','#06b6d4','#a5b4fc'];
+  function resize() { c.width = window.innerWidth; c.height = window.innerHeight; }
+  resize(); window.addEventListener('resize', resize);
 
-  function resize() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  }
-  resize();
-  window.addEventListener('resize', resize);
-
-  for (let i = 0; i < NODE_COUNT; i++) {
-    nodes.push({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      vx: (Math.random() - 0.5) * 0.3,
-      vy: (Math.random() - 0.5) * 0.3,
-      r: 1 + Math.random() * 2,
-      color: colors[Math.floor(Math.random() * colors.length)]
+  // Init stars
+  for (let i = 0; i < STAR_COUNT; i++) {
+    stars.push({
+      x: Math.random() * 3000, y: Math.random() * 2000,
+      r: Math.random() * 1.8 + 0.3,
+      twinkle: Math.random() * Math.PI * 2,
+      speed: 0.003 + Math.random() * 0.015,
+      hue: [220, 260, 190, 330, 40][Math.floor(Math.random() * 5)]
     });
   }
 
-  function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  function spawnShooter() {
+    shooters.push({
+      x: Math.random() * c.width,
+      y: Math.random() * c.height * 0.5,
+      len: 80 + Math.random() * 150,
+      angle: 0.3 + Math.random() * 0.5,
+      life: 1, decay: 0.008 + Math.random() * 0.02,
+      hue: 200 + Math.random() * 60
+    });
+  }
 
-    for (let i = 0; i < nodes.length; i++) {
-      const n = nodes[i];
-      n.x += n.vx;
-      n.y += n.vy;
-      if (n.x < 0) n.x = canvas.width;
-      if (n.x > canvas.width) n.x = 0;
-      if (n.y < 0) n.y = canvas.height;
-      if (n.y > canvas.height) n.y = 0;
+  function animate(ts) {
+    ctx.clearRect(0, 0, c.width, c.height);
 
+    // Stars
+    for (const s of stars) {
+      s.twinkle += s.speed;
+      const alpha = 0.35 + 0.35 * Math.sin(s.twinkle);
       ctx.beginPath();
-      ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
-      ctx.fillStyle = n.color;
-      ctx.globalAlpha = 0.6;
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+      ctx.fillStyle = `hsla(${s.hue},60%,85%,${alpha})`;
       ctx.fill();
-
-      for (let j = i + 1; j < nodes.length; j++) {
-        const m = nodes[j];
-        const dx = n.x - m.x;
-        const dy = n.y - m.y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < CONNECT_DIST) {
-          ctx.beginPath();
-          ctx.moveTo(n.x, n.y);
-          ctx.lineTo(m.x, m.y);
-          ctx.strokeStyle = n.color;
-          ctx.globalAlpha = 0.12 * (1 - dist / CONNECT_DIST);
-          ctx.lineWidth = 0.5;
-          ctx.stroke();
-        }
+      // Glow for larger stars
+      if (s.r > 1.2) {
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r * 2.5, 0, Math.PI * 2);
+        ctx.fillStyle = `hsla(${s.hue},50%,70%,${alpha * 0.15})`;
+        ctx.fill();
       }
     }
+
+    // Shooting stars
+    if (Math.random() < 0.008) spawnShooter();
+    for (let i = shooters.length - 1; i >= 0; i--) {
+      const sh = shooters[i];
+      sh.life -= sh.decay;
+      if (sh.life <= 0) { shooters.splice(i, 1); continue; }
+      const x2 = sh.x - Math.cos(sh.angle) * sh.len;
+      const y2 = sh.y - Math.sin(sh.angle) * sh.len;
+      const grad = ctx.createLinearGradient(sh.x, sh.y, x2, y2);
+      grad.addColorStop(0, `hsla(${sh.hue},80%,90%,${sh.life * 0.9})`);
+      grad.addColorStop(1, `hsla(${sh.hue},80%,90%,0)`);
+      ctx.beginPath();
+      ctx.moveTo(sh.x, sh.y);
+      ctx.lineTo(x2, y2);
+      ctx.strokeStyle = grad;
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+    }
+
     requestAnimationFrame(animate);
   }
-  animate();
+  requestAnimationFrame(animate);
 })();
 
 (function() {
