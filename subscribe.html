@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>订阅 AI 脉搏 · RSS</title>
+<title>订阅 AI 脉搏</title>
 <style>
   :root {
     --bg:#0a0a0f; --text:#f5f5f7; --sub:#9898a0; --muted:#86868b;
@@ -17,16 +17,15 @@
   .sub{font-size:13px;color:var(--muted);margin-bottom:28px}
   .section{margin-bottom:24px}
   .section-title{font-size:11px;font-weight:600;color:var(--accent-light);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:10px}
-  .feed-url{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px;font-family:monospace;font-size:13px;color:var(--text);word-break:break-all}
-  .btn{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;cursor:pointer;transition:opacity 0.2s;border:none;font-family:inherit}
+  .feed-url{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px;font-family:monospace;font-size:13px;color:var(--text);word-break:break-all;margin-bottom:8px}
+  .btn{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;cursor:pointer;transition:opacity 0.2s;border:none;font-family:inherit;color:#fff}
   .btn:hover{opacity:0.85}
-  .btn-primary{background:var(--accent);color:#fff}
-  .btn-outline{background:rgba(255,255,255,0.04);color:var(--text);border:1px solid var(--border)}
   .btn-copy{background:rgba(255,255,255,0.04);color:var(--sub);border:1px solid var(--border);font-size:12px;white-space:nowrap}
   .reader-list{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-  .reader-link{display:flex;align-items:center;gap:8px;padding:12px 14px;background:var(--card);border:1px solid var(--border);border-radius:8px;text-decoration:none;color:var(--text);font-size:13px;transition:border-color 0.2s}
-  .reader-link:hover{border-color:rgba(99,102,241,0.3)}
-  .reader-icon{font-size:20px}
+  .reader-item{display:flex;align-items:center;gap:8px;padding:12px 14px;background:var(--card);border:1px solid var(--border);border-radius:8px;font-size:13px;color:var(--text)}
+  .reader-item .icon{font-size:20px}
+  .note{font-size:12px;color:var(--sub);line-height:1.7}
+  .note a{color:var(--accent)}
   .back{font-size:12px;color:var(--muted);margin-top:32px}
   .back a{color:var(--accent);text-decoration:none}
   .back a:hover{text-decoration:underline}
@@ -35,39 +34,29 @@
 <body>
 <div class="card">
   <h1>&#128276; 订阅 AI 脉搏</h1>
-  <p class="sub">每天 08:00 / 12:00 / 20:00 自动推送最新 AI 热点到你的 RSS 阅读器</p>
+  <p class="sub">每天 08:00 / 12:00 / 20:00 自动推送 AI 热点到你的阅读器。</p>
 
   <div class="section">
-    <div class="section-title">订阅地址</div>
+    <div class="section-title">📡 订阅地址</div>
     <div class="feed-url" id="feedUrl">https://daiowen.github.io/ai-pulse/feed.xml</div>
-    <button class="btn btn-copy" style="margin-top:8px" onclick="navigator.clipboard.writeText(document.getElementById('feedUrl').textContent);var b=this;b.textContent='✓ 已复制';setTimeout(()=>b.textContent='📋 复制链接',1500)">📋 复制链接</button>
+    <button class="btn btn-copy" onclick="navigator.clipboard.writeText(document.getElementById('feedUrl').textContent);var b=this;b.textContent='✓ 已复制';setTimeout(()=>b.textContent='📋 复制链接',1500)">📋 复制链接</button>
   </div>
 
   <div class="section">
-    <div class="section-title">一键订阅到</div>
+    <div class="section-title">📱 国内推荐的 RSS 阅读器（均免费）</div>
     <div class="reader-list">
-      <a class="reader-link" href="https://feedly.com/i/subscription/feed/https://daiowen.github.io/ai-pulse/feed.xml" target="_blank" rel="noopener">
-        <span class="reader-icon">📰</span> Feedly
-      </a>
-      <a class="reader-link" href="https://www.inoreader.com/feed/https://daiowen.github.io/ai-pulse/feed.xml" target="_blank" rel="noopener">
-        <span class="reader-icon">📖</span> Inoreader
-      </a>
-      <a class="reader-link" href="https://theoldreader.com/feeds/subscribe?url=https://daiowen.github.io/ai-pulse/feed.xml" target="_blank" rel="noopener">
-        <span class="reader-icon">📚</span> The Old Reader
-      </a>
-      <a class="reader-link" href="feed.xml" target="_blank">
-        <span class="reader-icon">📄</span> 直接打开
-      </a>
+      <div class="reader-item"><span class="icon">📰</span> Reeder 5 (iOS/macOS)</div>
+      <div class="reader-item"><span class="icon">📖</span> NetNewsWire (开源)</div>
+      <div class="reader-item"><span class="icon">📚</span> Fluent Reader (Win/Mac/Linux)</div>
+      <div class="reader-item"><span class="icon">🤖</span> FeedMe (Android)</div>
     </div>
   </div>
 
   <div class="section">
-    <div class="section-title">怎么用</div>
-    <p style="font-size:12px;color:var(--sub);line-height:1.7">
-      1. 选一个 RSS 阅读器（推荐 Feedly 或 Inoreader，免费）<br>
-      2. 添加订阅地址，或点上方按钮一键订阅<br>
-      3. 每天早中晚三次自动收到 AI 热点推送<br>
-      4. 不用打开网页，在阅读器里就能看完整内容
+    <div class="section-title">📧 邮件订阅</div>
+    <p class="note">
+      邮件推送需要配置一个免费邮件发送服务（如 <a href="https://resend.com" target="_blank" rel="noopener">Resend</a>，免费额度 100 封/天，个人项目完全够用）。配置完成后，每天三次自动发送到订阅者邮箱。<br><br>
+      <strong>不花钱。</strong>如果你需要邮件订阅，可以在 <a href="https://github.com/DaiOwen/ai-pulse/issues" target="_blank" rel="noopener">GitHub Issues</a> 里提一个 Feature Request，看到后会优先配置。
     </p>
   </div>
 
