@@ -70,6 +70,8 @@
   }
 
   .bg-layer { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+#neuralBg { position:absolute; inset:0; width:100%; height:100%; opacity:0.35; }
+[data-theme="light"] #neuralBg { opacity:0.18; }
   .orb {
     position: absolute; border-radius: 50%; filter: blur(120px);
     animation-timing-function: ease-in-out; animation-iteration-count: infinite;
@@ -369,6 +371,7 @@
   <div class="orb orb-3"></div><div class="orb orb-4"></div>
   <div class="grid-overlay"></div>
   <div class="particles" id="particles"></div>
+  <canvas id="neuralBg"></canvas>
 </div>
 
 <div class="calendar-overlay" id="calendarOverlay">
@@ -633,6 +636,72 @@ if ('serviceWorker' in navigator) {
     p.style.animationDelay = Math.random() * 15 + 's';
     pc.appendChild(p);
   }
+})();
+
+// Neural network background animation
+(function() {
+  const canvas = document.getElementById('neuralBg');
+  const ctx = canvas.getContext('2d');
+  let nodes = [];
+  const NODE_COUNT = 50;
+  const CONNECT_DIST = 150;
+  const colors = ['#6366f1','#8b5cf6','#06b6d4','#a5b4fc'];
+
+  function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  for (let i = 0; i < NODE_COUNT; i++) {
+    nodes.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      vx: (Math.random() - 0.5) * 0.3,
+      vy: (Math.random() - 0.5) * 0.3,
+      r: 1 + Math.random() * 2,
+      color: colors[Math.floor(Math.random() * colors.length)]
+    });
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    for (let i = 0; i < nodes.length; i++) {
+      const n = nodes[i];
+      n.x += n.vx;
+      n.y += n.vy;
+      if (n.x < 0) n.x = canvas.width;
+      if (n.x > canvas.width) n.x = 0;
+      if (n.y < 0) n.y = canvas.height;
+      if (n.y > canvas.height) n.y = 0;
+
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+      ctx.fillStyle = n.color;
+      ctx.globalAlpha = 0.6;
+      ctx.fill();
+
+      for (let j = i + 1; j < nodes.length; j++) {
+        const m = nodes[j];
+        const dx = n.x - m.x;
+        const dy = n.y - m.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < CONNECT_DIST) {
+          ctx.beginPath();
+          ctx.moveTo(n.x, n.y);
+          ctx.lineTo(m.x, m.y);
+          ctx.strokeStyle = n.color;
+          ctx.globalAlpha = 0.12 * (1 - dist / CONNECT_DIST);
+          ctx.lineWidth = 0.5;
+          ctx.stroke();
+        }
+      }
+    }
+    requestAnimationFrame(animate);
+  }
+  animate();
 })();
 
 (function() {
