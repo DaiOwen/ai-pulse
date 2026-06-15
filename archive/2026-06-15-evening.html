@@ -606,13 +606,20 @@ if ('serviceWorker' in navigator) {
   let stars = [], shooters = [];
   const STAR_COUNT = 220;
 
-  function resize() { c.width = window.innerWidth; c.height = window.innerHeight; }
+  function resize() {
+    const ow = c.width, oh = c.height;
+    c.width = window.innerWidth; c.height = window.innerHeight;
+    if (ow && ow > 0) {
+      const sx = c.width / ow, sy = c.height / oh;
+      for (const s of stars) { s.x *= sx; s.y *= sy; }
+    }
+  }
   resize(); window.addEventListener('resize', resize);
 
   // Init stars
   for (let i = 0; i < STAR_COUNT; i++) {
     stars.push({
-      x: Math.random() * 3000, y: Math.random() * 2000,
+      x: Math.random() * c.width, y: Math.random() * c.height,
       r: Math.random() * 1.8 + 0.3,
       twinkle: Math.random() * Math.PI * 2,
       speed: 0.003 + Math.random() * 0.015,
