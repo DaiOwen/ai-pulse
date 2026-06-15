@@ -8,6 +8,23 @@
 - 目标用户：中国 AI/大模型开发工程师
 - 运行方式：Claude Code CLI 驱动，零外部依赖
 
+## 项目架构
+
+```
+用户输入 /ai-digest morning
+        │
+        ▼
+.claude/commands/ai-digest.md    ← 命令注册（YAML frontmatter + 路由逻辑）
+        │
+        ▼
+CLAUDE.md                        ← 完整执行规范（本文件）
+        │
+        ▼
+Claude Code 按规范执行            ← WebSearch → 去重评分 → 生成 HTML → git push
+```
+
+**关键：** `/ai-digest` 能工作的前提是 `.claude/commands/ai-digest.md` 存在（命令注册）且 CLAUDE.md 被加载（执行规范）。两者缺一不可。
+
 ## 命令
 
 ### `/ai-digest [edition]`
