@@ -212,6 +212,9 @@ ai-pulse/
 
 ## 常见问题
 
+**Q: 在线演示页面总是显示旧内容，必须手动刷新？**
+A: 旧版 Service Worker 缓存了页面。**操作一次即可解决：** 打开页面 → 按 F12 → Application → Service Workers → 点击 "Unregister" 注销 → 刷新页面。新版 SW 已修复，之后每次都会自动显示最新内容。
+
 **Q: 打开 index.html 没有内容？**
 A: 需要先运行 `/ai-digest morning` 生成第一期内容。
 

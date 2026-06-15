@@ -212,6 +212,9 @@ Die vollstandige Sicherheitsrichtlinie finden Sie in [SECURITY.md](SECURITY.md).
 
 ## Haufig gestellte Fragen (FAQ)
 
+**F: Die Live-Demo zeigt immer alte Inhalte, außer ich aktualisiere manuell?**
+A: Der alte Service Worker hat die Seite zwischengespeichert. **Einmalige Losung:** Seite offnen → F12 → Application → Service Workers → "Unregister" klicken → aktualisieren. Der neue SW (v2) hat das Problem bereits behoben — jeder weitere Besuch zeigt die neuesten Inhalte.
+
 **F: Warum ist index.html leer?**
 A: Sie mussen zuerst `/ai-digest morning` ausfuhren, um Inhalte zu generieren.
 

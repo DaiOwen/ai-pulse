@@ -212,6 +212,9 @@ ai-pulse/
 
 ## 자주 묻는 질문 (FAQ)
 
+**Q: 라이브 데모가 항상 오래된 콘텐츠를 표시하고 수동 새로고침이 필요합니다.**
+A: 이전 버전의 Service Worker가 페이지를 캐시했습니다. **한 번만 수정:** 페이지 열기 → F12 → Application → Service Workers → "Unregister" 클릭 → 새로고침. 새 SW(v2)가 이미 이 문제를 수정했으며, 이후에는 항상 최신 콘텐츠가 표시됩니다.
+
 **Q: index.html이 비어 있습니다.**
 A: 첫 실행 시 `/ai-digest morning`을 먼저 실행하여 콘텐츠를 생성해야 합니다.
 

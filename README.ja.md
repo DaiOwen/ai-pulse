@@ -212,6 +212,9 @@ ai-pulse/
 
 ## よくある質問（FAQ）
 
+**Q: ライブデモが毎回古いコンテンツを表示し、手動更新が必要？**
+A: 旧バージョンの Service Worker がページをキャッシュしていました。**一度だけの修正：** ページを開く → F12 → Application → Service Workers → "Unregister" をクリック → 更新。新しい SW（v2）はこの問題を修正済みで、以降は常に最新コンテンツが表示されます。
+
 **Q: index.html が空白で表示されます。**
 A: 初回は `/ai-digest morning` を実行してコンテンツを生成してください。
 
