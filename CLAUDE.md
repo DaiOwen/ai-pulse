@@ -99,55 +99,101 @@ Claude Code 按规范执行            ← WebSearch → 去重评分 → 生成
 
 ## 新闻采集策略
 
+### 优先信源池（权威 + 深度）
+
+搜索必须优先命中以下信源。使用 `site:` 操作符锁定，避免泛搜索返回营销号/转载站。
+
+| 层级 | 信源 | 定位 | 适用板块 |
+|:--:|------|------|:--:|
+| S | **36氪** (36kr.com) | 中文科技商业第一站 | 大模型、应用、工具 |
+| S | **机器之心** (jiqizhixin.com) | 深度 AI 技术报道 | 大模型、论文、工具 |
+| S | **量子位** (qbitai.com) | AI 前沿跟踪 | 大模型、应用 |
+| A | **新华网 / 人民网** | 政策权威首发 | 政策 |
+| A | **MIT Tech Review** (technologyreview.com) | 深度技术分析 | 海外、论文 |
+| A | **VentureBeat** (venturebeat.com) | 国际 AI 产业一线 | 海外、大模型、工具 |
+| A | **Hacker News** (news.ycombinator.com) | 开发者社区热议 | 海外、工具 |
+| B | **品玩** (pingwest.com) | 科技产业深度 | 大模型、应用 |
+| B | **极客公园** (geekpark.net) | 产品视角 | 应用、工具 |
+| B | **IT之家** (ithome.com) | 快速科技资讯 | 大模型、工具 |
+| B | **证券时报** (stcn.com) | 产业+资本视角 | 大模型、政策 |
+| C | **The Verge / TechCrunch** | 国际行业动态 | 海外 |
+| C | **GitHub Trending** (github.com/trending) | 开源热榜一手数据 | 开源 |
+| C | **arXiv** (arxiv.org) | 论文原文 | 论文 |
+
 ### 搜索关键词（按板块）
 
-**🤖 大模型动态 — 搜索：**
-- 站内搜索："大模型 发布 site:36kr.com"、"AI model release China 2026"
-- "OpenAI 新模型"、"百度文心 更新"、"阿里通义"、"DeepSeek 发布"
-- "Anthropic Claude 更新"、"Mistral"、"Llama 新版本"
-- 时效过滤：最近 24 小时
+**🤖 大模型动态：**
+```
+site:36kr.com 大模型 发布
+site:jiqizhixin.com AI 模型
+site:qbitai.com AI 发布
+"大模型 发布" site:stcn.com
+"AI model" release China site:venturebeat.com
+OpenAI 新模型 OR Anthropic 更新 OR DeepSeek 发布
+```
+时效：24h | 每轮至少 3 次
 
-**🛠️ 工具 & 部署 — 搜索：**
-- "AI 开发工具 发布"、"开源 AI 框架 更新"
-- "vllm"、"langchain"、"ollama"、"国产 GPU 适配"
-- "推理部署 方案 大模型"
-- 时效过滤：最近 48 小时
+**🛠️ 工具 & 部署：**
+```
+site:jiqizhixin.com 开发工具 OR 开源
+AI 开发工具 发布 site:36kr.com
+"vllm" OR "langchain" OR "ollama" 更新
+site:github.blog AI OR LLM
+国产 GPU 适配 大模型
+```
+时效：48h | 每轮至少 3 次
 
-**📋 政策 & 合规 — 搜索：**
-- "AI 政策 中国 2026"、"大模型 备案"、"生成式AI 监管"
-- "网信办 AI"、"数据安全 AI"
-- 时效过滤：最近 7 天
+**📋 政策 & 合规：**
+```
+site:people.com.cn 人工智能 监管
+site:cac.gov.cn AI OR 算法
+AI 政策 OR 备案 site:xinhuanet.com
+"生成式AI" 监管 2026
+```
+时效：7天 | 每轮至少 2 次（政策更新频率低）
 
-**📄 论文速递 — 搜索：**
-- "arXiv cs.AI 最新论文 2026"
-- "arxiv LLM paper breakthrough"
-- 时效过滤：最近 48 小时
+**📄 论文速递：**
+```
+site:arxiv.org cs.AI 2026
+site:jiqizhixin.com 论文 解读 OR 速递
+"LLM" OR "large language model" breakthrough site:arxiv.org
+```
+时效：48h | 每轮 2-3 次（仅 morning 版）
 
-**💡 应用落地 — 搜索：**
-- "AI 应用 案例 企业"、"大模型 落地 实践"
-- "AI agent 应用"、"RAG 实践"、"企业微信 AI"
-- 时效过滤：最近 7 天
+**💡 应用落地：**
+```
+site:36kr.com AI 落地 OR 应用 案例
+site:qbitai.com AI Agent OR RAG
+site:geekpark.net AI 产品 OR 应用
+企业 AI 实践 OR 大模型 落地 site:stcn.com
+```
+时效：7天 | 每轮至少 2 次
 
-**⭐ 开源热度 — 搜索/抓取：**
-- 搜索 "GitHub trending AI 2026"、"Gitee 热门 AI 项目"
-- 抓取 GitHub Trending 页面或使用 API 获取 AI 相关仓库 Stars 数据
+**⭐ 开源热度：**
+```
+site:github.com/trending AI OR LLM
+GitHub trending AI 2026 site:cnblogs.com
+"GitHub trending" AI 周榜
+```
+时效：实时 | 每轮至少 2 次
 
-**🌍 海外参考 — 搜索：**
-- "AI news today 2026"、"Hacker News AI"
-- "The Rundown AI today"
-- 只选取对中国开发者有实际影响的（技术方案、开源项目、芯片、开发者工具）
-- 时效过滤：最近 24 小时
+**🌍 海外参考：**
+```
+site:venturebeat.com AI 2026
+site:technologyreview.com AI
+site:news.ycombinator.com AI OR LLM
+"AI news" today site:techcrunch.com
+```
+时效：24h | 每轮至少 3 次（仅 morning/evening 版）
 
 ### 搜索执行规范
 
-1. 每个板块至少执行 2-3 次不同关键词的 WebSearch
-2. **WebFetch 原文抓取（尽力而为）**：
-   - 搜索后尝试对 Top 3-5 结果执行 WebFetch 获取原文详情
-   - **如果 WebFetch 不可用**（常见于企业网络/地区限制），直接使用 WebSearch 返回的摘要即可——当前搜索引擎返回的片段已包含标题、来源、日期、关键数据和 2-5 句内容摘要，足以支撑高质量新闻简报
-   - WebSearch 摘要中未覆盖的细节（如高管引语、精确数字），从摘要中提取关键信息重构，标注"据多家媒体报道"
-3. **原文 URL 必须收集**：即使无法 WebFetch，也必须从 WebSearch 结果中提取每条新闻的真实 URL，填入阅读原文链接——严禁使用 `#` 占位符
-4. 开源数据优先搜索 GitHub Trending 相关博客汇总，WebSearch 返回的项目名和 star 数即为有效数据
-5. 单次采集总搜索次数：morning 15-20 次，noon 5-8 次，evening 10-15 次
+1. **信源优先原则**：优先使用 `site:` 定向搜索 S/A 级信源，泛搜索仅作为补充
+2. 每个板块至少执行 2-3 次不同关键词/信源的 WebSearch
+3. **WebFetch 原文抓取（尽力而为）**：搜索后尝试对 Top 3-5 结果执行 WebFetch；如果不可用（企业网络/地区限制），WebSearch 返回的摘要已足够支撑高质量简报
+4. **原文 URL 必须收集**：从搜索结果中提取每条新闻的真实 URL 填入阅读原文链接——**严禁使用 `#` 占位符**
+5. **信源标注**：每条新闻必须标注来源媒体名，优先标注 S/A 级信源
+6. 单次采集总搜索次数：morning 15-20 次，noon 5-8 次，evening 10-15 次
 
 ## 内容处理规范
 
