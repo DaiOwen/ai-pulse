@@ -5,16 +5,16 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天早中晚三次自动更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 14 Jun 2026 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
-      <title>🌅 早间版 — 2026-06-14</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-14-morning.html</link>
-      <guid>https://daiowen.github.io/ai-pulse/archive/2026-06-14-morning.html</guid>
-      <pubDate>Sat, 14 Jun 2026 08:00:00 +0800</pubDate>
+      <title>☀️ 午间版 — 2026-06-15</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-15-noon.html</link>
+      <guid>https://daiowen.github.io/ai-pulse/archive/2026-06-15-noon.html</guid>
+      <pubDate>Mon, 15 Jun 2026 12:00:00 +0800</pubDate>
       <description><![CDATA[
-        <p>MiniMax M3 发布、华为 openPangu 2.0 开源、Google DiffusionGemma 新架构、GPT-5.6 150万上下文、DeepSeek 500亿融资等 18 条 AI 热点。</p>
+        <p>智谱AI开源GLM-5.2百万上下文MIT许可证、科大讯飞星火X2-VL全国产算力训练高考148分、vLLM v0.20升级CUDA13、中央网信办上线AI乱象举报专区、腾讯WorkBuddy企业版发布等7条增量热点。</p>
       ]]></description>
     </item>
   </channel>

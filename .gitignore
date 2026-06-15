@@ -13,11 +13,8 @@ Thumbs.db
 *.tmp
 *.log
 
-# 归档文件（本地运行产物，不提交）
-archive/*.html
-
-# 例外：保留目录占位
-!archive/.gitkeep
+# 归档文件 — 提交到仓库以支持 GitHub Pages 日历导航
+# 本地用户运行 /ai-digest 会生成自己的 archive 文件
 
 # Claude Code 运行时文件（不提交）
 .claude/scheduled_tasks.json
