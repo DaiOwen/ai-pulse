@@ -237,7 +237,11 @@ site:news.ycombinator.com AI OR LLM
    - 使用 `mv index.tmp.html index.html` 原子替换（同一文件系统内 rename 是原子操作）
    - 同时保存到 `archive/YYYY-MM-DD-{edition}.html`（如 `archive/2026-06-14-morning.html`）
    - **重要**：先写 archive 文件（不影响主页），确认成功后再原子替换 index.html。如果生成中途失败，index.html 不受影响
-4. **生成 RSS 订阅文件**：更新 `feed.xml`，包含最新一期链接、标题、摘要、发布时间
+4. **生成 RSS 订阅文件**：更新 `feed.xml`——
+   - 在 `<channel>` 最顶部插入新 `<item>`（最新一期排最前）
+   - 每期 `<item>` 必须包含：标题（含版次+日期）、链接（指向 archive 文件）、发布时间（RFC 822 格式）、描述（含各板块新闻标题列表 + 阅读原文链接）
+   - 保留最近 10 条 `<item>`，旧条目自动清理
+   - 更新 `<lastBuildDate>` 为当前时间
 5. **自动发布（Git Push）**：文件保存成功后，自动提交并推送到 GitHub：
    ```bash
    git add index.html archive/ feed.xml
