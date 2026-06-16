@@ -99,179 +99,101 @@ Claude Code 按规范执行            ← WebSearch → 去重评分 → 生成
 
 ## 新闻采集策略
 
-### 全维度信源矩阵
+### 核心信源（已验证可用）
 
-搜索覆盖七大维度、30+ 平台。每个板块从对应维度捞取热点，保证内容深度和广度。
+以下信源均经过 WebSearch 实测验证。标记 ⚠️ 的偶尔空返，标记 ❌ 的基本搜不到，标记 🔒 的为封闭平台需间接搜索。
 
-**🎯 聚合监控平台**（一站看全局，优先搜索）：
-| 平台 | URL | 特点 |
-|------|-----|------|
-| RadarAI | radarai.top | 聚合全球 AI 更新与开源项目，行业趋势监控 |
-| AIHOT | — | AI 驱动 + 人工双重审核的热点监控 |
-| AIbase | — | 覆盖广泛的 AI 资讯与产品库，每日日报 |
-| Digg AI | di.gg/ai | 聚合 X 平台 AI 舆论趋势 |
+| 信源 | 状态 | 搜索方式 |
+|------|:--:|---------|
+| **36氪** (36kr.com) | ✅ | `site:36kr.com 关键词` |
+| **人民网** (people.com.cn) | ✅ | `site:people.com.cn 关键词` |
+| **The Verge** (theverge.com) | ✅ | `site:theverge.com 关键词` |
+| **VentureBeat** (venturebeat.com) | ✅ | `site:venturebeat.com 关键词` |
+| **cnblogs** (cnblogs.com) | ✅ | `GitHub trending site:cnblogs.com` |
+| **TechCrunch** (techcrunch.com) | ✅ | `site:techcrunch.com 关键词` |
+| **MIT Tech Review** (technologyreview.com) | ✅ | `site:technologyreview.com 关键词` |
+| **Ars Technica** (arstechnica.com) | ✅ | `site:arstechnica.com AI` |
+| **Hacker News** (news.ycombinator.com) | ⚠️ | `site:news.ycombinator.com AI OR LLM` |
+| **GitHub Blog** (github.blog) | ⚠️ | `site:github.blog AI OR LLM` |
+| **机器之心** (jiqizhixin.com) | ⚠️ | `site:jiqizhixin.com 关键词` |
+| **量子位** (qbitai.com) | ⚠️ | `site:qbitai.com 关键词` |
+| **Reddit** (reddit.com/r/MachineLearning) | ⚠️ | `site:reddit.com/r/MachineLearning` |
+| **arXiv** (arxiv.org) | ⚠️ | `site:arxiv.org cs.AI OR cs.CL` |
+| **公众号/微博/小红书** | 🔒 | 搜索"关键词 解读 OR 分析"获取第三方转载 |
+| **知乎** (zhihu.com) | 🔒 | `site:zhihu.com AI OR 大模型`（登录墙限制） |
+| **HuggingFace/PapersWithCode** | ❌ | 技术站点，新闻性内容少，不建议作为新闻源 |
 
-**📰 深度垂直媒体**（技术深度 + 商业分析）：
-| 信源 | URL | 定位 | 搜索方式 |
-|------|-----|------|---------|
-| 机器之心 | jiqizhixin.com | 国内 AI 技术深度第一 | `site:jiqizhixin.com` |
-| 量子位 | qbitai.com | AI 创业和产业趋势，更新快 | `site:qbitai.com` |
-| 新智元 | — | "AI+产业"特色，关注落地 | 关键词搜索 |
-| 36氪 | 36kr.com | 科技商业报道 | `site:36kr.com` |
-| 钛媒体 | tmtpost.com | AI 商业深度分析 | `site:tmtpost.com` |
-| 极客公园 | geekpark.net | 产品视角 + 创新公司追踪 | `site:geekpark.net` |
-| VentureBeat | venturebeat.com | 国际 AI 产业一线 | `site:venturebeat.com` |
-| The Verge | theverge.com | 海外科技评测与深度 | `site:theverge.com` |
+> **关键原则：优先搜 ✅ 信源，每个板块必须覆盖至少 2 个不同 ✅ 信源。⚠️ 信源作为补充，🔒 信源通过第三方转载间接获取。**
 
-**💬 社区论坛**（开发者真实声音）：
-| 信源 | URL | 特点 |
-|------|-----|------|
-| Reddit ML | reddit.com/r/MachineLearning | 全球 AI 学术+工程讨论 |
-| Hacker News | news.ycombinator.com | 科技创业者聚集地，讨论质量高 |
-| 知乎 AI | zhihu.com/topic | 中文高质量 AI 实践分享 |
-| 魔搭社区 | modelscope.cn | 阿里 AI 开发社区，模型体验+代码 |
-| Llama中文 | — | 大模型和本地部署中文技术交流 |
+### 各板块搜索计划
 
-**🔬 前沿研究**：
-| 信源 | URL | 特点 |
-|------|-----|------|
-| arXiv | arxiv.org | 论文预印本，最新研究首发地 |
-| Papers with Code | paperswithcode.com | 论文+开源代码关联 |
-| Hugging Face | huggingface.co | 开源模型/数据集中心，趋势风向标 |
+执行时严格按以下顺序搜索，不得跳过。括号内为每版最低搜索次数。
 
-**🏢 企业官方**（一手信源）：
-| 信源 | 说明 |
-|------|------|
-| OpenAI Blog (openai.com/blog) | GPT 系列官方发布 |
-| Google DeepMind Blog | Gemini 系列官方发布 |
-| Anthropic Blog | Claude 系列官方发布 |
-| Microsoft AI Blog | MAI 系列 + AI 产品 |
-| Meta AI Blog | Llama 系列官方 |
-
-**📧 AI 日报/Newsletter**：
-| 信源 | 特点 |
-|------|------|
-| The Decoder | 精选剖析重要 AI 进展，内容干货多 |
-| Import AI | 深度 AI 政策+产业分析 |
-
-**📊 信息聚合工具**：
-| 工具 | 用途 |
-|------|------|
-| GitHub Trending | 开源热榜一手数据 |
-| RSS 订阅器 | 统一订阅上述信源 |
-
-**👤 优秀 AI 博主与 KOL**（个人视角 + 一手洞察）：
-
-| 博主 | 活跃平台 | 关键词搜索 | 擅长领域 |
-|------|---------|-----------|---------|
-| **李沐** | 博客/B站/知乎/公众号 | `李沐 AI OR 深度学习 OR 论文` | 深度学习教程、论文解读 |
-| **张俊林** | 微博/公众号 | `张俊林 AI OR 大模型 OR 技术分析` | 大模型技术深度分析 |
-| **苏剑林** | 科学空间博客 | `苏剑林 OR ScienceSpace AI OR 数学` | NLP 数学原理、RoPE |
-| **宝玉** | 公众号/知乎 | `宝玉 AI OR 产品 OR 分析` | AI 产品分析 |
-| **李继刚** | 公众号 | `李继刚 AI OR prompt OR agent` | Prompt 工程、Agent |
-| **Andrej Karpathy** | X(Twitter)/博客/YouTube | `Karpathy AI OR LLM OR tutorial` | AI 教育、深度技术讲解 |
-| **Simon Willison** | 博客/X | `Simon Willison AI OR LLM OR tool` | LLM 工具实战 |
-| **Lilian Weng** | 博客/X (OpenAI) | `Lilian Weng AI OR safety OR agent` | AI 安全、Agent 架构 |
-| **Chip Huyen** | 博客/X | `Chip Huyen AI OR ML OR engineering` | ML 工程、AI 创业 |
-| **Jim Fan** | X (NVIDIA) | `Jim Fan NVIDIA AI OR robot OR agent` | 具身智能、Agent |
-| **Andrew Ng** | X/博客/Coursera | `Andrew Ng AI OR deep learning OR course` | AI 教育、产业趋势 |
-
-> 搜索策略：每位博主每次只搜 1 次，针对其擅长领域的关键词组合搜索。博主内容通常被多家媒体转载或引用，通过转载文章也可获取原始观点。微博、公众号等封闭平台内容可通过第三方转载或搜索引擎缓存间接获取。
-
-### 搜索关键词（按板块）
-
-每板块必须从**至少 3 个不同维度的信源**各执行 1 次搜索，混合聚合平台、垂直媒体、社区和一手信源。
-
-**🤖 大模型动态：**
+**🤖 大模型动态**（morning 5 次 / noon 3 次 / evening 4 次）：
 ```
-site:36kr.com 大模型 OR AI 发布
-site:jiqizhixin.com AI 模型 OR 开源
-site:qbitai.com AI OR 大模型
-site:tmtpost.com AI OR 大模型
-site:venturebeat.com AI model release
-site:theverge.com AI model
-AI 大模型 最新 发布 2026
-OpenAI OR Anthropic OR DeepSeek 新模型
-智谱 OR 百度 OR 阿里 OR 华为 大模型
-张俊林 OR 苏剑林 AI 大模型 分析
+1. site:36kr.com 大模型 OR AI OR 发布                    ← 必搜
+2. site:venturebeat.com AI model OR release              ← 必搜
+3. site:theverge.com AI OR model OR agent                ← 必搜
+4. site:technologyreview.com AI OR model                 ← morning/evening
+5. site:jiqizhixin.com AI 模型 OR 发布                    ← 补充（可能空返）
+6. AI 大模型 最新 发布 OR 开源 2026 site:stcn.com        ← 补充（资本视角）
 ```
-时效：24h | 每轮至少 4 次，覆盖聚合+垂直+企业官方+KOL
+时效：24h | 每次至少搜 3 个不同信源
 
-**🛠️ 工具 & 部署：**
+**🛠️ 工具 & 部署**（morning 4 次 / noon 2 次 / evening 3 次）：
 ```
-site:jiqizhixin.com 开发工具 OR 框架 OR 开源
-AI 开发工具 OR 开源 框架 发布 site:36kr.com
-site:modelscope.cn AI 模型 OR 工具
-site:huggingface.co trending OR models
-"vllm" OR "langchain" OR "ollama" 更新
-国产 GPU 适配 OR 推理 部署 大模型
-AI 编程 工具 OR Agent 开源 site:github.com
-Karpathy OR Simon Willison AI 工具 OR 开发
+1. site:36kr.com AI 开发 OR 开源 OR 工具                  ← 必搜
+2. site:venturebeat.com AI tool OR open source           ← 必搜
+3. site:github.blog AI OR LLM OR release                ← 补充
+4. "vllm" OR "langchain" OR "ollama" OR "MCP" 更新      ← 补充（工具关键词）
 ```
-时效：48h | 每轮至少 3 次
+时效：48h | 每次至少搜 2 个不同信源
 
-**📋 政策 & 合规：**
+**📋 政策 & 合规**（morning 2 次 / noon 1 次 / evening 2 次）：
 ```
-site:people.com.cn 人工智能 监管 OR 政策
-site:cac.gov.cn AI OR 算法 OR 备案
-AI 政策 OR 法规 site:xinhuanet.com
-"生成式AI" OR "大模型" 监管 2026
-site:zhihu.com AI 政策 OR 备案
+1. site:people.com.cn 人工智能 OR AI OR 智能体 监管       ← 必搜
+2. site:technologyreview.com AI policy OR regulation    ← 补充（国际视角）
+3. site:theverge.com AI regulation OR policy            ← 补充
 ```
-时效：7天 | 每轮至少 2 次
+时效：7天 | 每次至少搜 2 个不同信源
 
-**📄 论文速递：**
+**📄 论文速递**（仅 morning 2-3 次）：
 ```
-site:arxiv.org cs.AI OR cs.CL 2026
-site:paperswithcode.com AI OR LLM
-site:jiqizhixin.com 论文 解读 OR 速递
-site:huggingface.co papers OR trending
-"LLM" OR "large language model" breakthrough
+1. site:arxiv.org cs.AI OR cs.CL 2026                  ← 必搜
+2. site:jiqizhixin.com 论文 解读 OR 速递                  ← 补充
+3. "LLM" OR "large language model" breakthrough         ← 补充
 ```
-时效：48h | 每轮 2-3 次（仅 morning 版）
 
-**💡 应用落地：**
+**💡 应用落地**（morning 3 次 / noon 1 次 / evening 2 次）：
 ```
-site:36kr.com AI 落地 OR 应用 OR Agent 案例
-site:qbitai.com AI Agent OR 应用 OR 落地
-site:geekpark.net AI 产品 OR 应用
-site:zhihu.com AI 应用 OR 落地 实践
-企业 AI 实践 OR 大模型 落地 案例
-AI Agent 应用 OR RAG 实践
-宝玉 OR 李继刚 AI 应用 OR Agent OR 产品
+1. site:36kr.com AI 落地 OR 应用 OR Agent 案例           ← 必搜
+2. site:venturebeat.com AI agent OR enterprise          ← 必搜
+3. site:theverge.com AI product OR app OR launch        ← 补充
 ```
-时效：7天 | 每轮至少 3 次
 
-**⭐ 开源热度：**
+**⭐ 开源热度**（morning/evening 2 次 / noon 1 次）：
 ```
-site:github.com/trending AI OR LLM
-GitHub trending AI 2026 周榜 site:cnblogs.com
-site:huggingface.co trending
-Gitee 热门 AI 项目
-"GitHub trending" AI 项目 盘点
+1. GitHub trending AI 周榜 site:cnblogs.com              ← 必搜（最可靠）
+2. site:github.com/trending AI OR LLM                   ← 补充
 ```
-时效：实时 | 每轮至少 2 次
 
-**🌍 海外参考：**
+**🌍 海外参考**（仅 morning 3 次 / evening 3 次）：
 ```
-site:venturebeat.com AI 2026
-site:theverge.com AI
-site:technologyreview.com AI
-site:news.ycombinator.com AI OR LLM
-site:reddit.com/r/MachineLearning AI OR LLM
-"AI news" today analysis
-Jim Fan OR Chip Huyen OR Andrew Ng AI trend 2026
+1. site:theverge.com AI                                 ← 必搜
+2. site:venturebeat.com AI                              ← 必搜
+3. site:technologyreview.com AI                         ← 补充
+4. site:arstechnica.com AI OR LLM                       ← 补充
 ```
-时效：24h | 每轮至少 3 次（仅 morning/evening 版）
 
 ### 搜索执行规范
 
-1. **多维覆盖原则**：每个板块至少从 3 个不同维度的信源各搜 1 次（聚合平台 + 垂直媒体 + 社区/一手信源），避免信息茧房
-2. **热点交叉验证**：同一新闻出现在 2 个以上独立信源 → 确认为真热点，提升评分权重
-3. **WebFetch 原文抓取（尽力而为）**：搜索后尝试对 Top 3-5 结果执行 WebFetch；如果不可用，WebSearch 返回的摘要已足够
-4. **原文 URL 必须收集**：从搜索结果中提取每条新闻的真实 URL——**严禁使用 `#` 占位符**
-5. **信源标注**：每条新闻必须标注来源媒体名
-6. 单次采集总搜索次数：morning 15-20 次，noon 6-10 次，evening 12-18 次
+1. **必须搜够次数**：按上表最低搜索次数执行，不得因"36氪已经够了"而跳过 The Verge 或 VentureBeat
+2. **信源分散原则**：每板块至少覆盖 2 个不同 ✅ 信源。禁只搜 36氪+人民网就交差
+3. **空返处理**：⚠️ 信源空返时换一个搜索词重试一次；仍空返则跳过，不消耗额外搜索配额
+4. **封闭平台策略**：公众号/微博/小红书内容通过搜索"事件关键词+解读/分析"获取第三方转载，不直接搜索平台
+5. **原文 URL 必须收集**：从搜索结果中提取真实 URL——**严禁使用 `#` 占位符**
+6. **信源标注**：每条新闻必须标注来源媒体名
+7. 总搜索次数：morning 15-20 次，noon 6-10 次，evening 12-18 次
 
 ## 内容处理规范
 
