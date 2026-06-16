@@ -667,6 +667,31 @@ if ('serviceWorker' in navigator) {
   let calYear = new Date().getFullYear();
   let calMonth = new Date().getMonth() + 1;
   const archiveMap = {};
+  let archiveLoaded = false;
+
+  function loadArchive(cb) {
+    if (archiveLoaded) { cb(); return; }
+    fetch('https://api.github.com/repos/DaiOwen/ai-pulse/contents/archive')
+      .then(r => r.json())
+      .then(data => {
+        archiveLoaded = true;
+        if (!Array.isArray(data)) { cb(); return; }
+        data.forEach(f => {
+          const m = f.name.match(/^(\d{4}-\d{2}-\d{2})-(morning|noon|evening)\.html$/);
+          if (!m) return;
+          const [, date, ed] = m;
+          if (archiveMap[date] === 'full') return;
+          if (Array.isArray(archiveMap[date])) {
+            archiveMap[date].push(ed);
+            if (archiveMap[date].length >= 3) archiveMap[date] = 'full';
+          } else {
+            archiveMap[date] = [ed];
+          }
+        });
+        cb();
+      })
+      .catch(() => { archiveLoaded = true; cb(); });
+  }
 
   function renderCalendar() {
     const daysInMonth = new Date(calYear, calMonth, 0).getDate();
@@ -704,11 +729,11 @@ if ('serviceWorker' in navigator) {
   document.getElementById('btnArchive').addEventListener('click', function() {
     calYear = new Date().getFullYear();
     calMonth = new Date().getMonth() + 1;
-    renderCalendar();
+    loadArchive(function() { renderCalendar(); });
     overlay.classList.add('active');
   });
-  document.getElementById('calPrev').addEventListener('click', function() { calMonth--; if(calMonth<1){calMonth=12;calYear--;} renderCalendar(); });
-  document.getElementById('calNext').addEventListener('click', function() { calMonth++; if(calMonth>12){calMonth=1;calYear++;} renderCalendar(); });
+  document.getElementById('calPrev').addEventListener('click', function() { calMonth--; if(calMonth<1){calMonth=12;calYear--;} loadArchive(function() { renderCalendar(); }); });
+  document.getElementById('calNext').addEventListener('click', function() { calMonth++; if(calMonth>12){calMonth=1;calYear++;} loadArchive(function() { renderCalendar(); }); });
   document.getElementById('calClose').addEventListener('click', function() { overlay.classList.remove('active'); });
   overlay.addEventListener('click', function(e) { if (e.target === overlay) overlay.classList.remove('active'); });
 })();
