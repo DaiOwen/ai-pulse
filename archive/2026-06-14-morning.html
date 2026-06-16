@@ -3,16 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
 <title>AI 脉搏 · 热点速览</title>
 <meta name="description" content="面向中国AI开发工程师的每日AI新闻智能聚合">
-<meta name="theme-color" content="#0a0a0f">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="manifest" href="manifest.json">
-<link rel="alternate" type="application/rss+xml" title="AI 脉搏 RSS" href="feed.xml">
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
+
   :root {
     --bg-primary: #0a0a0f;
     --bg-secondary: rgba(255,255,255,0.025);
@@ -46,13 +42,11 @@
     --bg-glow-cyan: rgba(6,182,212,0.04);
   }
 
-  [data-theme="light"] .orb { opacity: 0.08 !important; }
-    
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
-    background: linear-gradient(170deg, #06060d 0%, #0a0a1a 25%, #0d0a1f 50%, #080818 75%, #060610 100%);
+    font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(160deg, #0a0a0f 0%, #0f0f1a 30%, #0d0d18 60%, #0a0a14 100%);
     color: var(--text-primary);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
@@ -61,54 +55,69 @@
   }
 
   [data-theme="light"] body {
-    background: linear-gradient(170deg, #f5f5f7 0%, #fafafa 30%, #f0f0f5 60%, #f5f5f7 100%);
+    background: linear-gradient(160deg, #f5f5f7 0%, #fafafa 30%, #f0f0f3 60%, #f5f5f7 100%);
   }
 
   .bg-layer { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
-  #cosmicCanvas { position:absolute; inset:0; width:100%; height:100%; opacity:0.9; }
-  [data-theme="light"] #cosmicCanvas { opacity:0.35; }
-
   .orb {
-    position: absolute; border-radius: 50%; filter: blur(140px);
+    position: absolute; border-radius: 50%; filter: blur(120px);
     animation-timing-function: ease-in-out; animation-iteration-count: infinite;
     animation-direction: alternate;
   }
-  .orb-1 { width:700px; height:700px; background:radial-gradient(circle, #6366f1 0%, #8b5cf6 40%, transparent 75%); top:-15%; right:-10%; opacity:0.09; animation:float1 20s infinite; }
-  .orb-2 { width:550px; height:550px; background:radial-gradient(circle, #ec4899 0%, #8b5cf6 30%, transparent 70%); bottom:-20%; left:-10%; opacity:0.07; animation:float2 25s infinite; }
-  .orb-3 { width:450px; height:450px; background:radial-gradient(circle, #06b6d4 0%, #6366f1 35%, transparent 70%); top:40%; right:-15%; opacity:0.06; animation:float3 22s infinite; }
-  .orb-4 { width:350px; height:350px; background:radial-gradient(circle, #a855f7 0%, #ec4899 30%, transparent 70%); top:-5%; left:35%; opacity:0.05; animation:float4 28s infinite; }
+  .orb-1 { width:500px; height:500px; background:radial-gradient(circle, #6366f1 0%, transparent 70%); top:-10%; right:-5%; opacity:0.12; animation:float1 18s infinite; }
+  .orb-2 { width:400px; height:400px; background:radial-gradient(circle, #8b5cf6 0%, transparent 70%); bottom:-15%; left:-8%; opacity:0.12; animation:float2 22s infinite; }
+  .orb-3 { width:300px; height:300px; background:radial-gradient(circle, #06b6d4 0%, transparent 70%); top:45%; right:-10%; opacity:0.08; animation:float3 20s infinite; }
+  .orb-4 { width:250px; height:250px; background:radial-gradient(circle, #f59e0b 0%, transparent 70%); top:-8%; left:40%; opacity:0.06; animation:float4 24s infinite; }
 
   @keyframes float1 {
-    0% { transform:translate(0,0) scale(1); } 33% { transform:translate(-100px,80px) scale(1.2); }
-    66% { transform:translate(50px,-40px) scale(0.85); } 100% { transform:translate(-30px,30px) scale(1.1); }
+    0% { transform:translate(0,0) scale(1); } 33% { transform:translate(-80px,60px) scale(1.15); }
+    66% { transform:translate(40px,-30px) scale(0.9); } 100% { transform:translate(-20px,20px) scale(1.05); }
   }
   @keyframes float2 {
-    0% { transform:translate(0,0) scale(1); } 33% { transform:translate(80px,-60px) scale(1.25); }
-    66% { transform:translate(-40px,30px) scale(0.8); } 100% { transform:translate(20px,-15px) scale(1.15); }
+    0% { transform:translate(0,0) scale(1); } 33% { transform:translate(60px,-50px) scale(1.2); }
+    66% { transform:translate(-30px,20px) scale(0.85); } 100% { transform:translate(10px,-10px) scale(1.1); }
   }
   @keyframes float3 {
-    0% { transform:translate(0,0) scale(1); } 50% { transform:translate(-70px,-50px) scale(1.35); }
-    100% { transform:translate(30px,40px) scale(0.85); }
+    0% { transform:translate(0,0) scale(1); } 50% { transform:translate(-50px,-40px) scale(1.3); }
+    100% { transform:translate(20px,30px) scale(0.9); }
   }
   @keyframes float4 {
-    0% { transform:translate(0,0) scale(1); } 25% { transform:translate(50px,70px) scale(1.3); }
-    75% { transform:translate(-50px,30px) scale(0.8); } 100% { transform:translate(15px,-20px) scale(1.1); }
+    0% { transform:translate(0,0) scale(1); } 25% { transform:translate(30px,50px) scale(1.25); }
+    75% { transform:translate(-40px,20px) scale(0.85); } 100% { transform:translate(10px,-10px) scale(1.05); }
   }
 
-  .content { position:relative; z-index:1; max-width:960px; margin:0 auto; padding:0 32px 80px; }
+  .grid-overlay {
+    position:absolute; inset:0;
+    background-image:linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px),
+                     linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px);
+    background-size:60px 60px; animation:gridShift 30s linear infinite;
+  }
+  @keyframes gridShift { 0% { background-position:0 0; } 100% { background-position:60px 60px; } }
+
+  .particle {
+    position:absolute; border-radius:50%; background:rgba(255,255,255,0.35);
+    animation:rise linear infinite;
+  }
+  @keyframes rise {
+    0% { transform:translateY(0) translateX(0); opacity:0; }
+    10% { opacity:0.5; } 90% { opacity:0.05; }
+    100% { transform:translateY(-100vh) translateX(60px); opacity:0; }
+  }
+
+  .content { position:relative; z-index:1; max-width:900px; margin:0 auto; padding:0 32px 80px; }
 
   .nav { display:flex; justify-content:space-between; align-items:center; padding:18px 0; border-bottom:0.5px solid var(--border-subtle); }
   .nav-brand { display:flex; align-items:center; gap:10px; }
   .nav-logo { width:34px; height:34px; border-radius:9px; background:linear-gradient(135deg, #6366f1, #8b5cf6); display:flex; align-items:center; justify-content:center; font-size:16px; }
-  .nav-title { font-size:16px; font-weight:600; color:var(--text-primary); letter-spacing:-0.02em; }
-  .nav-sub { font-size:11px; color:var(--text-tertiary); letter-spacing:0.05em; }
+  .nav-title { font-size:15px; font-weight:600; color:var(--text-primary); letter-spacing:-0.02em; }
+  .nav-sub { font-size:9px; color:var(--text-tertiary); letter-spacing:0.05em; }
   .nav-right { display:flex; align-items:center; gap:20px; }
-  .nav-link { font-size:13px; color:var(--text-tertiary); font-weight:500; cursor:pointer; transition:color 0.2s; background:none; border:none; font-family:inherit; }
+  .nav-link { font-size:10px; color:var(--text-tertiary); font-weight:500; cursor:pointer; transition:color 0.2s; background:none; border:none; font-family:inherit; }
   .nav-link:hover { color:var(--text-primary); }
   .toggle-track { width:38px; height:22px; background:rgba(99,102,241,0.25); border-radius:11px; border:0.5px solid rgba(99,102,241,0.35); position:relative; cursor:pointer; transition:background 0.3s; }
   .toggle-thumb { width:17px; height:17px; background:linear-gradient(135deg, #6366f1, #8b5cf6); border-radius:50%; position:absolute; top:2px; left:2px; box-shadow:0 1px 4px rgba(0,0,0,0.3); transition:transform 0.3s cubic-bezier(0.25,0.8,0.25,1.2); }
   [data-theme="light"] .toggle-thumb { transform:translateX(16px); }
-  .toggle-label { font-size:12px; color:var(--text-tertiary); }
+  .toggle-label { font-size:10px; color:var(--text-tertiary); }
 
   .hero { text-align:center; padding:56px 0 48px; position:relative; }
   .hero-glow {
@@ -127,16 +136,12 @@
     box-shadow:0 0 6px rgba(34,197,94,0.5); animation:pulse 2s ease-in-out infinite;
   }
   @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
-  .hero-badge-text { font-size:12px; color:#a5b4fc; font-weight:500; letter-spacing:0.05em; }
-  .hero-title { font-size:48px; font-weight:300; color:var(--text-primary); letter-spacing:-0.03em; line-height:1.1; margin-bottom:6px; position:relative; z-index:1; }
-  .hero-date { font-size:15px; color:var(--text-tertiary); font-weight:400; margin-bottom:6px; position:relative; z-index:1; }
-.hero-updated { font-size:12px; color:var(--text-tertiary); font-weight:400; margin-bottom:28px; position:relative; z-index:1; display:flex; align-items:center; justify-content:center; gap:6px; }
-.hero-updated-dot { width:5px; height:5px; border-radius:50%; background:var(--accent-green); box-shadow:0 0 4px rgba(34,197,94,0.5); }
-.hero-updated.stale .hero-updated-dot { background:var(--accent-amber); box-shadow:0 0 4px rgba(245,158,11,0.5); }
-.hero-updated.stale { color:var(--accent-amber); }
+  .hero-badge-text { font-size:9px; color:#a5b4fc; font-weight:500; letter-spacing:0.05em; }
+  .hero-title { font-size:44px; font-weight:300; color:var(--text-primary); letter-spacing:-0.03em; line-height:1.1; margin-bottom:6px; position:relative; z-index:1; }
+  .hero-date { font-size:13px; color:var(--text-tertiary); font-weight:400; margin-bottom:28px; position:relative; z-index:1; }
   .hero-stats { display:flex; justify-content:center; gap:40px; position:relative; z-index:1; }
-  .hero-stat-num { font-size:24px; font-weight:600; color:var(--text-primary); }
-  .hero-stat-label { font-size:12px; color:var(--text-tertiary); letter-spacing:0.04em; margin-top:2px; }
+  .hero-stat-num { font-size:22px; font-weight:600; color:var(--text-primary); }
+  .hero-stat-label { font-size:9px; color:var(--text-tertiary); letter-spacing:0.04em; margin-top:2px; }
   .hero-stat-divider { width:0.5px; background:var(--border-subtle); }
 
   .tldr {
@@ -144,13 +149,13 @@
     background:var(--bg-glow-indigo); border:0.5px solid rgba(99,102,241,0.1);
     border-radius:10px; display:flex; gap:12px; align-items:flex-start;
   }
-  .tldr-label { font-size:11px; font-weight:700; color:var(--accent-indigo); letter-spacing:0.08em; flex-shrink:0; margin-top:2px; }
-  .tldr-text { font-size:14px; color:#c9d1d9; line-height:1.6; }
+  .tldr-label { font-size:8px; font-weight:700; color:var(--accent-indigo); letter-spacing:0.08em; flex-shrink:0; margin-top:2px; }
+  .tldr-text { font-size:11px; color:#c9d1d9; line-height:1.6; }
 
   .section-head { display:flex; align-items:center; gap:10px; margin-bottom:20px; }
   .section-line { width:1px; height:18px; border-radius:1px; }
-  .section-label { font-size:13px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; }
-  .section-label-cn { font-size:12px; color:var(--text-tertiary); margin-left:4px; }
+  .section-label { font-size:10px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; }
+  .section-label-cn { font-size:9px; color:var(--text-tertiary); margin-left:4px; }
 
   .feature-card {
     background:var(--bg-secondary); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
@@ -161,20 +166,11 @@
     transform:translateY(-2px); border-color:rgba(255,255,255,0.12);
     box-shadow:0 8px 32px rgba(0,0,0,0.3);
   }
-  .card-tag { font-size:11px; font-weight:600; letter-spacing:0.07em; margin-bottom:8px; }
-  .card-title { font-size:24px; font-weight:500; color:var(--text-primary); letter-spacing:-0.01em; line-height:1.3; margin-bottom:8px; }
-  .card-desc { font-size:14px; color:var(--text-secondary); line-height:1.6; margin-bottom:14px; }
-  .card-meta { display:flex; gap:14px; font-size:12px; color:var(--text-tertiary); }
+  .card-tag { font-size:8px; font-weight:600; letter-spacing:0.07em; margin-bottom:8px; }
+  .card-title { font-size:20px; font-weight:500; color:var(--text-primary); letter-spacing:-0.01em; line-height:1.3; margin-bottom:8px; }
+  .card-desc { font-size:11px; color:var(--text-secondary); line-height:1.6; margin-bottom:14px; }
+  .card-meta { display:flex; gap:14px; font-size:9px; color:var(--text-tertiary); }
   .card-meta-link { color:var(--accent-indigo); }
-.read-original {
-  display:flex; align-items:center; justify-content:flex-end; gap:3px;
-  font-size:11px; font-weight:500; letter-spacing:0.03em;
-  color:var(--accent-indigo); text-decoration:none;
-  transition:color 0.2s, gap 0.2s; margin-top:auto; padding-top:12px;
-}
-.read-original:hover { color:#818cf8; gap:6px; }
-.read-original-arrow { display:inline-block; transition:transform 0.2s; font-size:10px; }
-.read-original:hover .read-original-arrow { transform:translateX(2px); }
   .card-row { display:flex; gap:20px; align-items:flex-start; }
   .card-icon {
     width:72px; height:72px; border-radius:14px; flex-shrink:0;
@@ -188,26 +184,24 @@
     background:var(--bg-card); border:0.5px solid var(--border-card);
     border-radius:12px; padding:20px;
     transition:transform 0.3s ease, border-color 0.3s ease;
-    display:flex; flex-direction:column;
   }
   .sub-card:hover { transform:translateY(-1px); border-color:rgba(255,255,255,0.1); }
-  .sub-tag { font-size:11px; color:var(--text-tertiary); font-weight:500; letter-spacing:0.04em; margin-bottom:8px; }
-  .sub-title { font-size:18px; font-weight:500; color:var(--text-primary); line-height:1.4; margin-bottom:6px; }
-  .sub-desc { font-size:13px; color:var(--text-secondary); line-height:1.5; }
+  .sub-tag { font-size:8px; color:var(--text-tertiary); font-weight:500; letter-spacing:0.04em; margin-bottom:8px; }
+  .sub-title { font-size:14px; font-weight:500; color:var(--text-primary); line-height:1.4; margin-bottom:6px; }
+  .sub-desc { font-size:10px; color:var(--text-secondary); line-height:1.5; }
 
   .tool-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; }
   .tool-card {
     background:var(--bg-card); border:0.5px solid var(--border-card);
     border-radius:12px; padding:18px;
     transition:transform 0.3s ease, border-color 0.3s ease;
-    display:flex; flex-direction:column;
   }
   .tool-card:hover { transform:translateY(-1px); border-color:rgba(255,255,255,0.1); }
   .tool-icon { font-size:18px; margin-bottom:10px; }
-  .tool-name { font-size:15px; font-weight:500; color:var(--text-primary); margin-bottom:4px; }
-  .tool-desc { font-size:12px; color:var(--text-tertiary); line-height:1.4; }
+  .tool-name { font-size:12px; font-weight:500; color:var(--text-primary); margin-bottom:4px; }
+  .tool-desc { font-size:9px; color:var(--text-tertiary); line-height:1.4; }
   .tool-badge {
-    display:inline-block; font-size:10px; font-weight:600; padding:2px 8px; border-radius:8px;
+    display:inline-block; font-size:7px; font-weight:600; padding:2px 8px; border-radius:8px;
     letter-spacing:0.03em; margin-top:6px;
   }
   .badge-new { background:rgba(34,197,94,0.12); color:#4ade80; }
@@ -218,29 +212,28 @@
     border-radius:16px; padding:24px;
   }
   .paper-header { display:flex; align-items:center; gap:8px; margin-bottom:10px; }
-  .paper-label { font-size:12px; font-weight:600; color:#c4b5fd; letter-spacing:0.05em; }
-  .paper-title { font-size:20px; font-weight:500; color:var(--text-primary); line-height:1.4; margin-bottom:6px; }
-  .paper-abstract { font-size:13px; color:var(--text-secondary); line-height:1.6; margin-bottom:8px; }
-  .paper-meta { font-size:11px; color:var(--accent-purple); }
+  .paper-label { font-size:9px; font-weight:600; color:#c4b5fd; letter-spacing:0.05em; }
+  .paper-title { font-size:16px; font-weight:500; color:var(--text-primary); line-height:1.4; margin-bottom:6px; }
+  .paper-abstract { font-size:10px; color:var(--text-secondary); line-height:1.6; margin-bottom:8px; }
+  .paper-meta { font-size:8px; color:var(--accent-purple); }
 
   .dual-cards { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
   .rank-card {
     background:var(--bg-card); border:0.5px solid var(--border-card);
     border-radius:12px; padding:20px;
-    display:flex; flex-direction:column;
   }
-  .rank-label { font-size:12px; font-weight:600; letter-spacing:0.05em; margin-bottom:14px; }
-  .rank-row { display:flex; align-items:center; gap:10px; font-size:13px; margin-bottom:8px; }
+  .rank-label { font-size:9px; font-weight:600; letter-spacing:0.05em; margin-bottom:14px; }
+  .rank-row { display:flex; align-items:center; gap:10px; font-size:10px; margin-bottom:8px; }
   .rank-num { color:var(--text-primary); font-weight:500; min-width:16px; }
   .rank-name { color:var(--text-primary); flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-  .rank-stat { font-size:12px; }
+  .rank-stat { font-size:9px; }
   .rank-up { color:#4ade80; }
   .rank-neutral { color:var(--text-tertiary); }
 
   .footer { text-align:center; padding:36px 0 0; border-top:0.5px solid var(--border-subtle); }
-  .footer-icon { font-size:26px; margin-bottom:8px; opacity:0.6; }
-  .footer-quote { font-size:15px; font-weight:400; color:var(--text-secondary); font-style:italic; letter-spacing:-0.01em; }
-  .footer-author { font-size:12px; color:var(--text-tertiary); margin-top:4px; }
+  .footer-icon { font-size:24px; margin-bottom:8px; opacity:0.6; }
+  .footer-quote { font-size:13px; font-weight:400; color:var(--text-secondary); font-style:italic; letter-spacing:-0.01em; }
+  .footer-author { font-size:9px; color:var(--text-tertiary); margin-top:4px; }
 
   .section-gap { margin-bottom:48px; }
 
@@ -267,8 +260,8 @@
   .calendar-nav:hover { color:var(--text-primary); }
   .calendar-close { font-size:20px; color:var(--text-tertiary); cursor:pointer; background:none; border:none; }
   .calendar-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:4px; text-align:center; }
-  .calendar-day-header { font-size:11px; color:var(--text-tertiary); padding:4px; }
-  .calendar-day { font-size:14px; padding:8px 4px; border-radius:6px; cursor:pointer; color:var(--text-secondary); position:relative; }
+  .calendar-day-header { font-size:9px; color:var(--text-tertiary); padding:4px; }
+  .calendar-day { font-size:12px; padding:8px 4px; border-radius:6px; cursor:pointer; color:var(--text-secondary); position:relative; }
   .calendar-day:hover { background:rgba(99,102,241,0.1); }
   .calendar-day.today { font-weight:700; color:#6366f1; border:1px solid rgba(99,102,241,0.3); }
   .calendar-day.has-content { color:var(--text-primary); }
@@ -279,67 +272,9 @@
   .calendar-day:hover .calendar-day-links { display:block; }
   .calendar-day-link { display:block; color:var(--text-secondary); text-decoration:none; padding:2px 0; }
   .calendar-day-link:hover { color:#6366f1; }
-  .calendar-legend { display:flex; gap:16px; margin-top:12px; font-size:11px; color:var(--text-tertiary); justify-content:center; }
+  .calendar-legend { display:flex; gap:16px; margin-top:12px; font-size:9px; color:var(--text-tertiary); justify-content:center; }
   .calendar-legend-item { display:flex; align-items:center; gap:4px; }
   .calendar-legend-dot { width:8px; height:8px; border-radius:2px; }
-
-  /* ── Responsive ── */
-  @media (max-width: 768px) {
-    .content { padding: 0 16px 60px; }
-    .hero { padding: 36px 0 28px; }
-    .hero-title { font-size: 32px; }
-    .hero-stats { gap: 20px; }
-    .hero-stat-num { font-size: 18px; }
-    .sub-grid { grid-template-columns: 1fr; }
-    .tool-row { grid-template-columns: 1fr; }
-    .dual-cards { grid-template-columns: 1fr; }
-    .card-row { flex-direction: column; }
-    .card-icon { width: 48px; height: 48px; font-size: 18px; }
-    .feature-card { padding: 18px; }
-  }
-
-  @media (max-width: 480px) {
-    .nav { flex-direction: column; gap: 10px; align-items: flex-start; }
-    .nav-right { gap: 12px; width: 100%; justify-content: flex-end; }
-    .hero-title { font-size: 26px; }
-    .hero-stats { gap: 12px; }
-    .hero-stat-num { font-size: 16px; }
-    .hero-stat-label { font-size: 8px; }
-    .calendar-modal { padding: 16px; }
-  }
-
-  /* ── Light Mode Fixes ── */
-  [data-theme="light"] .hero-badge-text { color: #4338ca; }
-  [data-theme="light"] .hero-badge { background: rgba(99,102,241,0.1); border-color: rgba(99,102,241,0.25); }
-  [data-theme="light"] .hero-glow { background: radial-gradient(ellipse, rgba(99,102,241,0.1) 0%, transparent 70%); }
-  [data-theme="light"] .tldr-text { color: #374151; }
-  [data-theme="light"] .tldr { background: rgba(99,102,241,0.06); border-color: rgba(99,102,241,0.2); }
-  [data-theme="light"] .badge-new { background: rgba(22,163,74,0.15); color: #15803d; }
-  [data-theme="light"] .badge-update { background: rgba(217,119,6,0.15); color: #b45309; }
-  [data-theme="light"] .paper-label { color: #7c3aed; }
-  [data-theme="light"] .paper-spotlight { background: rgba(139,92,246,0.06); border-color: rgba(139,92,246,0.2); }
-  [data-theme="light"] .rank-up { color: #15803d; }
-  [data-theme="light"] .rank-label { color: #b45309; }
-  [data-theme="light"] .calendar-day.other-month { color: #9ca3af; }
-  [data-theme="light"] .section-indigo .section-label { color: #4338ca; }
-  [data-theme="light"] .section-green .section-label { color: #15803d; }
-  [data-theme="light"] .section-amber .section-label { color: #b45309; }
-  [data-theme="light"] .section-purple .section-label { color: #7c3aed; }
-  [data-theme="light"] .section-cyan .section-label { color: #0891b2; }
-  [data-theme="light"] .read-original { color: #4f46e5; }
-  [data-theme="light"] .read-original:hover { color: #4338ca; }
-
-  /* Light mode card backgrounds — more opaque for contrast */
-  [data-theme="light"] .feature-card { background: rgba(255,255,255,0.7); }
-  [data-theme="light"] .sub-card { background: rgba(255,255,255,0.6); }
-  [data-theme="light"] .tool-card { background: rgba(255,255,255,0.6); }
-  [data-theme="light"] .rank-card { background: rgba(255,255,255,0.6); }
-  [data-theme="light"] .calendar-modal { background: #f5f5f7; }
-
-  /* Light mode hover — use dark borders instead of white */
-  [data-theme="light"] .feature-card:hover { border-color: rgba(0,0,0,0.15); box-shadow: 0 8px 32px rgba(0,0,0,0.08); }
-  [data-theme="light"] .sub-card:hover { border-color: rgba(0,0,0,0.12); }
-  [data-theme="light"] .tool-card:hover { border-color: rgba(0,0,0,0.12); }
 </style>
 </head>
 <body>
@@ -347,7 +282,8 @@
 <div class="bg-layer">
   <div class="orb orb-1"></div><div class="orb orb-2"></div>
   <div class="orb orb-3"></div><div class="orb orb-4"></div>
-  <canvas id="cosmicCanvas"></canvas>
+  <div class="grid-overlay"></div>
+  <div class="particles" id="particles"></div>
 </div>
 
 <div class="calendar-overlay" id="calendarOverlay">
@@ -388,189 +324,272 @@
     <div class="hero-glow"></div>
     <div class="hero-badge">
       <div class="hero-badge-dot"></div>
-      <span class="hero-badge-text" id="editionLabel">早间版 &#183; 09:41 &#183; 清晨速递</span>
+      <span class="hero-badge-text" id="editionLabel">早间版 &#183; 08:00 &#183; 实时</span>
     </div>
     <h1 class="hero-title">今日 AI 脉搏</h1>
-    <p class="hero-date" id="dateLabel">2026年06月16日 &#183; 星期二</p>
-    <p class="hero-updated" id="updatedLabel"><span class="hero-updated-dot"></span> 最后更新: 2026-06-16 09:41 CST</p>
+    <p class="hero-date" id="dateLabel">2026年6月14日 &#183; 星期日</p>
     <div class="hero-stats" id="heroStats">
       <div><div class="hero-stat-num" id="statNews">18</div><div class="hero-stat-label">头条新闻</div></div>
       <div class="hero-stat-divider"></div>
       <div><div class="hero-stat-num" id="statSources">12</div><div class="hero-stat-label">信源覆盖</div></div>
       <div class="hero-stat-divider"></div>
-      <div><div class="hero-stat-num" id="statProjects">10</div><div class="hero-stat-label">热门项目</div></div>
+      <div><div class="hero-stat-num" id="statProjects">5</div><div class="hero-stat-label">热门项目</div></div>
       <div class="hero-stat-divider"></div>
-      <div><div class="hero-stat-num" id="statPapers">0</div><div class="hero-stat-label">精选论文</div></div>
+      <div><div class="hero-stat-num" id="statPapers">1</div><div class="hero-stat-label">精选论文</div></div>
     </div>
   </section>
 
   <div class="tldr" id="tldrSection">
     <span class="tldr-label">TL;DR</span>
-    <span class="tldr-text" id="tldrContent">阿里通义再失核心：首席科学家周靖人履新6天离职；Claude Fable5平替指南爆火：OpenRouter Fusion多模型协作成本仅40%；OpenAI高管称"Chat is dead"Codex升级Sites+62企业插件；香港HKGAI V3大模型发布Agent Workshop单次28小时无干预运行；特朗普签署AI行政令自愿框架30天审查；苹果WWDC自研模型跑在Nvidia芯片上；Google找Intel造TPU 300万颗芯片转单。</span>
+    <span class="tldr-text" id="tldrContent">本周MiniMax M3与华为openPangu 2.0相继发布，国产大模型进入百万上下文时代；小米开源AI编程助手MiMo Code，多项基准超Claude Code；微信开放AI Agent生态，14亿用户一句话即可叫车点外卖；中央网信办启动「清朗·整治AI应用乱象」专项行动，已备案大模型达868款。</span>
   </div>
 
-                    <div class="section-gap section-indigo" id="section-models">
-    <div class="section-head"><div class="section-line"></div><span class="section-label">大模型动态</span><span class="section-label-cn">Models</span></div>
-    <div class="feature-card"><div class="card-row"><div class="card-body">
-      <div class="card-tag" style="color:#6366f1;">HEADLINE</div>
-      <div class="card-title">阿里通义再失核心：首席科学家周靖人履新 6 天离职，2026 年已流失 4 位关键人物</div>
-      <div class="card-desc">36氪独家：阿里首席科学家周靖人被曝离职，履新仅 6 天。这是通义核心团队 2026 年流失的第 4 位关键人物。同期，阿里成立 Token Foundry 事业部，由 CEO 吴泳铭直管，整合通义大模型与未来生活实验室——组织架构剧烈变动背后，是阿里在模型 SOTA 争夺和商业化压力之间的挣扎。通义团队动荡引发行业对"大厂 AI 人才战"的广泛讨论。</div>
-      <div class="card-meta"><span>36氪</span><span>&#183;</span><span>6月13日</span><span>&#183;</span><span class="card-meta-link">独家报道</span></div>
-      <div style="margin-top:8px; font-size:9px; color:#a5b4fc;">💡 开发者影响：核心人才流失可能影响通义模型迭代节奏，多供应商策略更显重要</div>
-      <a href="https://www.36kr.com/p/3850978776759176" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
-    </div><div class="card-icon">&#9889;</div></div></div>
+  <div class="section-gap section-indigo" id="section-models">
+    <div class="section-head">
+      <div class="section-line"></div>
+      <span class="section-label">大模型动态</span>
+      <span class="section-label-cn">Models</span>
+    </div>
+
+    <!-- Lead: MiniMax M3 -->
+    <div class="feature-card">
+      <div class="card-row">
+        <div class="card-body">
+          <div class="card-tag" style="color:#6366f1;">HEADLINE</div>
+          <div class="card-title">MiniMax M3 发布：百万上下文 + 原生多模态，编程超 GPT-5.5</div>
+          <div class="card-desc">6月1日，MiniMax 正式发布新一代通用模型 M3，采用自研稀疏注意力架构 MSA，支持 100 万 token 超长上下文。模型集前沿编程能力、1M 超长上下文、原生多模态于一体，在 SWE-Bench Pro 评测中超越 GPT-5.5 和 Gemini 3.1 Pro。M3 是全球唯一具备完整能力组合的开源模型，已上传 HuggingFace 和 GitHub。定价方面，Plus 版 49 元/月（6 亿 token），Max 版 119 元/月，Ultra 版 469 元/月。</div>
+          <div class="card-meta"><span>钛媒体</span><span>&#183;</span><span>13天前</span><span>&#183;</span><span class="card-meta-link">多源报道</span></div>
+          <div style="margin-top:8px; font-size:9px; color:#a5b4fc;">💡 开发者影响：开源 1M 上下文模型，可用个人硬件微调部署</div>
+        </div>
+        <div class="card-icon">&#9889;</div>
+      </div>
+    </div>
+
     <div class="sub-grid">
-      <div class="sub-card"><div class="sub-tag" style="color:#a5b4fc;">出口管制 · 36氪</div><div class="sub-title">Claude Fable 5 平替指南爆火：OpenRouter Fusion API 多模型协作接近 Fable 水平</div><div class="sub-desc">Fable 5 被美国政府出口管制封禁后，社区迅速推出"平替指南"。OpenRouter 的 Fusion API 通过多模型协作（组合 Claude Opus 4.8 + GPT-5.5 + Gemini 3.5 Flash）接近 Fable 5 水平，成本仅为 Fable 5 的 40%。HuggingFace CEO 感叹"开源社区的反应速度快得惊人"。</div><div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">36氪 · 6月15日</div><div style="margin-top:4px; font-size:8px; color:#a5b4fc;">💡 开发者影响：多模型协作（非单模型依赖）正在成为应对出口管制的最佳实践</div><a href="https://36kr.com/p/3854354308961287" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
-      <div class="sub-card"><div class="sub-tag" style="color:#a5b4fc;">香港 · 人民网</div><div class="sub-title">香港发布 HKGAI V3 大模型 + Agent Workshop：单次无干预运行 28 小时</div><div class="sub-desc">香港生成式人工智能研发中心发布 HKGAI V3 大模型，推出香港首个生产力级超级智能体 Agent Workshop。实现超 10 倍 Token 压缩效率、近百倍智能体无干预运行时长增长，单次稳定运行可达 28 小时。已与浪潮云、中国移动国际、联通国际、中国电信国际合作，向海外开放算力服务。</div><div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">人民网 · 6月4日</div><div style="margin-top:4px; font-size:8px; color:#a5b4fc;">💡 开发者影响：香港 AI 生态加速，Agent Workshop 可能成为出海算力新选择</div><a href="http://hm.people.com.cn/n1/2026/0604/c42272-40733968.html" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
-      <div class="sub-card"><div class="sub-tag" style="color:#a5b4fc;">OpenAI · The Verge</div><div class="sub-title">"Chat is dead"——OpenAI 高管放话，ChatGPT 将改版为超级应用</div><div class="sub-desc">OpenAI 高管对《金融时报》表示"聊天已死"。代号"superapp"的 ChatGPT 大改版将在"数周内"推出，引导用户转向编程、图像生成和第三方合作伙伴应用。Codex 同步大升级：Sites（交互式企业工作空间）、Annotations（局部精确编辑）、6 个角色专属插件包（整合 62 个企业应用 + 110 项自动化技能）。</div><div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">The Verge/VentureBeat · 6月</div><div style="margin-top:4px; font-size:8px; color:#a5b4fc;">💡 开发者影响：ChatGPT 从对话工具转型应用平台，Codex 插件生态是新的开发者入口</div><a href="https://venturebeat.com/orchestration/openais-codex-update-lets-agents-build-interactive-enterprise-workspaces-via-sites-and-role-specific-plugins" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
+      <!-- Sub 1: openPangu 2.0 -->
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#a5b4fc;">重磅发布 &#183; HDC 2026</div>
+        <div class="sub-title">华为 openPangu 2.0 发布：512K 上下文，昇腾单卡推理 2 倍性能</div>
+        <div class="sub-desc">余承东在华为开发者大会宣布 openPangu 2.0 开源大模型，分为 Pro（505B/18B 激活）和 Flash（92B/6B 激活）两个版本。512K 上下文窗口，鸿蒙智能体深度适配，昇腾算力深度调优。6月30日起分批开源7大核心组件。余承东喊话："字典里没有第二，只有第一！"</div>
+        <div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">东方财富 &#183; 2天前</div>
+        <div style="margin-top:4px; font-size:8px; color:#a5b4fc;">💡 开发者影响：昇腾生态开源模型，国产推理部署首选</div>
+      </div>
+
+      <!-- Sub 2: DiffusionGemma -->
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#a5b4fc;">突破架构</div>
+        <div class="sub-title">Google 发布 DiffusionGemma：扩散架构生成快 4 倍，消费级显卡可跑</div>
+        <div class="sub-desc">谷歌推出实验性开源模型 DiffusionGemma，采用文本扩散架构替代传统自回归。26B MoE 参数但推理仅激活 3.8B，量化后在 18GB 显存消费级显卡上即可运行。支持双向注意力与并行生成，适用于行内编辑、代码补全等实时交互场景。已通过 Apache 2.0 许可证在 HuggingFace 开源。</div>
+        <div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">PingWest &#183; 3天前</div>
+        <div style="margin-top:4px; font-size:8px; color:#a5b4fc;">💡 开发者影响：扩散架构新范式，本地推理部署门槛降低</div>
+      </div>
+
+      <!-- Sub 3: GPT-5.6 -->
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#a5b4fc;">前沿追踪</div>
+        <div class="sub-title">OpenAI 剑指 GPT-5.6：150 万上下文，秘密提交 IPO 申请</div>
+        <div class="sub-desc">GPT-5.6 内部代号 "iris-alpha"，已在 OpenAI Codex 后台日志中发现踪迹，上下文长度可能达到 150 万 tokens。市场预测 6 月底前发布概率超过 70%。与此同时，OpenAI 已于 6 月 8 日向 SEC 秘密提交 IPO 申请，Sam Altman 预计 "明年内" 上市。2026 年预计亏损约 140 亿美元。</div>
+        <div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">C114 &#183; 近日</div>
+        <div style="margin-top:4px; font-size:8px; color:#a5b4fc;">💡 开发者影响：150 万上下文将重新定义 Agent 应用边界</div>
+      </div>
+
+      <!-- Sub 4: DeepSeek 动态 -->
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#a5b4fc;">生态动态</div>
+        <div class="sub-title">DeepSeek 完成 500 亿融资，V4 系列定价仅为国际同类 2%</div>
+        <div class="sub-desc">DeepSeek 首轮融资约 500 亿元人民币，投后估值最高达 4000 亿元。创始人梁文锋个人出资 200 亿元，腾讯拟投 100 亿，宁德时代拟投 50 亿。DeepSeek-V4 系列已全面支持百万上下文，定价仅为国际同类产品约 2%，并主动退还缓存计费偏差赠金。市场预计 V4.1 版本将在 6 月推出。</div>
+        <div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">证券时报 &#183; 近日</div>
+        <div style="margin-top:4px; font-size:8px; color:#a5b4fc;">💡 开发者影响：极致性价比模型 API，适合高频大批量调用</div>
+      </div>
     </div>
   </div>
+
   <div class="section-gap section-green" id="section-tools">
-    <div class="section-head"><div class="section-line"></div><span class="section-label">工具 & 部署</span><span class="section-label-cn">Tools & Deploy</span></div>
+    <div class="section-head">
+      <div class="section-line"></div>
+      <span class="section-label">工具 &amp; 部署</span>
+      <span class="section-label-cn">Tools &amp; Deploy</span>
+    </div>
+
     <div class="tool-row">
-      <div class="tool-card"><div class="tool-icon">&#127760;</div><div class="tool-name">OpenAI Codex Sites</div><div class="tool-desc">将静态数据/文档一键转为交互式 Web 应用。无需前端开发，支持场景规划器、实时仪表盘。面向 Business/Enterprise 用户预览中。</div><span class="tool-badge badge-new">预览</span><a href="https://venturebeat.com/orchestration/openais-codex-update-lets-agents-build-interactive-enterprise-workspaces-via-sites-and-role-specific-plugins" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
-      <div class="tool-card"><div class="tool-icon">&#128268;</div><div class="tool-name">OpenRouter Fusion API</div><div class="tool-desc">多模型协作 API：自动路由至最优模型组合，接近 Fable 5 水平，成本仅 40%。支持 Claude+GPT+Gemini 混合调用。</div><span class="tool-badge badge-new">平替</span><a href="https://36kr.com/p/3854354308961287" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
-      <div class="tool-card"><div class="tool-icon">&#127981;</div><div class="tool-name">HKGAI Agent Workshop</div><div class="tool-desc">香港首个生产力级超级智能体。10 倍 Token 压缩，单次 28 小时无干预运行。浪潮云+三大运营商合作，海外算力开放。</div><span class="tool-badge badge-new">国产</span><a href="http://hm.people.com.cn/n1/2026/0604/c42272-40733968.html" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
+      <div class="tool-card">
+        <div class="tool-icon">&#128187;</div>
+        <div class="tool-name">小米 MiMo Code</div>
+        <div class="tool-desc">开源终端 AI 编程助手，基于 OpenCode 二次开发，MIT 协议。内置持久记忆系统与 Compose 模式，覆盖设计→规划→编码→测试→审查全流程。在 SWE-Bench Pro V2 和 Terminal Bench 2 上均超 Claude Code 约 5 个百分点。</div>
+        <span class="tool-badge badge-new">开源 MIT</span>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">&#9881;</div>
+        <div class="tool-name">vLLM v0.22.1</div>
+        <div class="tool-desc">最新版修复多节点 Ray 数据并行挂起问题，新增 AMD Zen CPU 量化推理与 JetBrains Mellum v2 支持。CUDA_VISIBLE_DEVICES 重构为 --device-ids 参数，修复 DeepSeek-V4 初始化问题。</div>
+        <span class="tool-badge badge-update">更新</span>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">&#127942;</div>
+        <div class="tool-name">Xcode 27 Beta</div>
+        <div class="tool-desc">苹果在 Xcode 27 Beta 中原生集成 Google Gemini，使其成为继 OpenAI Codex 和 Claude Agent 之后第三个内置 AI 编程智能体。开发者无需切换工具即可完成多步骤开发任务。</div>
+        <span class="tool-badge badge-new">新集成</span>
+      </div>
+    </div>
+
+    <!-- Additional tool item as sub-grid -->
+    <div class="sub-grid" style="margin-top:10px;">
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#86efac;">部署实战</div>
+        <div class="sub-title">K8s 成为 AI/ML 默认生产平台，GPU 利用率可提至 85%</div>
+        <div class="sub-desc">KubeCon 2026 确认 Kubernetes 已成为 AI/ML 工作负载的默认生产平台。vLLM 成为 LLM 推理事实标准引擎，KServe 从 CNCF 毕业。通过多租户调度，GPU 利用率可从行业基线 25%-35% 提升至 60%-85%。</div>
+        <div style="margin-top:4px; font-size:8px; color:#86efac;">💡 开发者影响：K8s + vLLM 成标准部署栈，建议尽早熟悉</div>
+      </div>
     </div>
   </div>
+
   <div class="section-gap section-amber" id="section-policy">
-    <div class="section-head"><div class="section-line"></div><span class="section-label">政策 & 合规</span><span class="section-label-cn">Policy & Compliance</span></div>
+    <div class="section-head">
+      <div class="section-line"></div>
+      <span class="section-label">政策 &amp; 合规</span>
+      <span class="section-label-cn">Policy &amp; Compliance</span>
+    </div>
+
     <div class="sub-grid">
-      <div class="sub-card"><div class="sub-tag" style="color:#fcd34d;">美国 · 6月15日</div><div class="sub-title">特朗普签署新版 AI 行政令：自愿审查+30 天压缩期，不设强制许可</div><div class="sub-desc">特朗普签署"促进先进 AI 创新与安全"行政令，构建政企自愿合作框架。对前沿模型不设强制许可或预先批准，但要求企业在发布前"自愿"向政府提供模型进行 30 天前置安全评估。设立 AI 网络安全信息交流中心。OpenAI、谷歌等企业高管表示支持。人民网转载中国军网报道。</div><div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">人民网/中国军网 · 6月15日</div><div style="margin-top:4px; font-size:8px; color:#fcd34d;">💡 开发者影响：美国 AI 监管走向"自愿框架"，与欧盟强监管路线形成对比</div><a href="http://military.people.com.cn/BIG5/n1/2026/0615/c1011-40740496.html" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
-      <div class="sub-card"><div class="sub-tag" style="color:#fcd34d;">四川 · 6月8日</div><div class="sub-title">四川发布智能制造行动方案：2028 年建成 300+ 智能工厂</div><div class="sub-desc">四川省发布服务型制造创新发展行动方案，明确应用工业智能体、工业大模型、工业元宇宙等新技术。目标：到 2028 年软件首版次产品达 100 个以上，建设 300 个以上先进级智能工厂。地方政策从"鼓励"走向"量化目标"。</div><div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">人民网 · 6月8日</div><div style="margin-top:4px; font-size:8px; color:#fcd34d;">💡 开发者影响：四川 300+ 智能工厂计划释放大量工业 AI 需求</div><a href="http://sc.people.com.cn/GB/n2/2026/0608/c379470-41603800.html" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#fcd34d;">监管升级</div>
+        <div class="sub-title">中央网信办启动「清朗·整治AI应用乱象」专项行动，已备案模型达868款</div>
+        <div class="sub-desc">中央网信办部署为期 4 个月的专项行动，重点整治"应备未备"、语料安全、数据投毒、生成内容标识不到位等 7 类问题。截至 2026 年 4 月 30 日，全国已完成 868 款大模型备案、530 款应用登记。同时开设涉 AI 应用乱象举报专区（12377），受理 14 类违规问题。举报渠道包括网站 www.12377.cn、微信公众号"全国网络举报"等。</div>
+        <div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">新华网 &#183; 6月12日</div>
+        <div style="margin-top:4px; font-size:8px; color:#fcd34d;">💡 开发者影响：上线前务必完成备案登记，合规成本上升</div>
+      </div>
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#fcd34d;">数据制度</div>
+        <div class="sub-title">国家数据局推进 AI 数据制度建设：三权分置 + 合成数据研究</div>
+        <div class="sub-desc">国家数据局召开"完善数据相关规则 赋能人工智能创新发展"座谈会，DeepSeek、字节跳动、阿里云、腾讯等参与。随后印发实施方案，提出落实数据持有权、使用权、经营权三权分置，研究合成数据等新议题，推动版权作品数据有序用于模型训练。证监会亦发布新指引，要求资本优先配置 AI 与先进制造领域。</div>
+        <div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">国家数据局 &#183; 6月8日</div>
+        <div style="margin-top:4px; font-size:8px; color:#fcd34d;">💡 开发者影响：数据合规使用将成为模型训练前置条件</div>
+      </div>
     </div>
   </div>
+
   <div class="section-gap section-purple" id="section-paper">
-    <div class="section-head"><div class="section-line"></div><span class="section-label">论文速递</span><span class="section-label-cn">Paper Spotlight</span></div>
+    <div class="section-head">
+      <div class="section-line"></div>
+      <span class="section-label">论文速递</span>
+      <span class="section-label-cn">Paper Spotlight</span>
+    </div>
+
     <div class="paper-spotlight">
-      <div class="paper-header"><span class="paper-label">&#128218; 今日精选 · The Verge</span></div>
-      <div class="paper-title">Apple 自研 Foundational Model：跑在 Nvidia 芯片上的"隐私优先"AI</div>
-      <div class="paper-abstract">WWDC 2026 上苹果透露其 Private Cloud Compute 的底层架构：自研 Foundational Model 实际运行在 Google Cloud 的 Nvidia 硬件上。苹果与 Nvidia、Google、Intel 三方合作，实现了"隐私计算的硬件无关性"——模型训练和推理可以在不同厂商芯片上无缝迁移。这一架构为端侧 AI 到云端 AI 的隐私保护提供了新的技术范式。</div>
-      <div class="paper-meta">The Verge · WWDC 2026 · 苹果 AI 架构首次公开</div>
-      <div style="margin-top:6px; font-size:8px; color:#c4b5fd;">💡 开发者影响：苹果的"隐私计算硬件无关"架构可能成为 Core ML 后续版本的基础</div>
+      <div class="paper-header">
+        <span class="paper-label">&#128218; 本周精选 &#183; ICML 2026</span>
+      </div>
+      <div class="paper-title">FLARE: Diffusion for Hybrid Language Model — 自回归与扩散统一框架</div>
+      <div class="paper-abstract">发表于 arXiv（2606.01774），提出首个自回归+扩散统一训练框架，单个 checkpoint 同时支持 AR 验证式解码和扩散式并行去噪。实验表明，迁移数据质量是能力保留的关键因素，而非损失函数或注意力掩码设计。这为 LLM 推理阶段提供了灵活的"速度-质量"权衡选择。</div>
+      <div class="paper-meta">arXiv:2606.01774 &#183; 6月1日 &#183; 被引趋势：上升中</div>
+      <div style="margin-top:6px; font-size:8px; color:#c4b5fd;">💡 开发者影响：统一 AR/扩散架构或将改变推理部署策略选择</div>
     </div>
   </div>
+
   <div class="section-gap section-cyan" id="section-cases">
-    <div class="section-head"><div class="section-line"></div><span class="section-label">应用落地</span><span class="section-label-cn">Real-World AI</span></div>
+    <div class="section-head">
+      <div class="section-line"></div>
+      <span class="section-label">应用落地</span>
+      <span class="section-label-cn">Real-World AI</span>
+    </div>
+
     <div class="dual-cards">
-      <div class="rank-card"><div class="rank-label" style="color:#67e8f9;">&#127981; 企业级 · VentureBeat</div><div style="font-size:14px; font-weight:500; color:var(--text-primary); margin-bottom:6px;">OpenAI Codex 企业版大升级：62 个应用 + 110 项技能，非开发者增速是工程师 3 倍</div><div style="font-size:10px; color:var(--text-secondary); line-height:1.5; margin-bottom:8px;">Codex 周活超 500 万，约 20% 非开发者且采用速度是工程师的 3 倍。6 个角色专属插件包覆盖数据分析（Snowflake）、创意生产（Figma）、销售（Salesforce）、产品设计、投行等场景。Sites 功能让非技术人员也能将数据文档一键转为交互式企业内部应用。</div><div style="font-size:8px; color:var(--text-tertiary);">VentureBeat · 6月</div><div style="margin-top:4px; font-size:8px; color:#67e8f9;">💡 开发者影响：Codex 从编程工具转型为全员生产力平台，插件生态是新的开发者机会</div><a href="https://venturebeat.com/orchestration/openais-codex-update-lets-agents-build-interactive-enterprise-workspaces-via-sites-and-role-specific-plugins" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
-      <div class="rank-card"><div class="rank-label" style="color:#67e8f9;">&#127891; 深度分析 · 36氪</div><div style="font-size:14px; font-weight:500; color:var(--text-primary); margin-bottom:6px;">吴恩达信号解读：中国 AI 的机会在"执行权"，不在模型</div><div style="font-size:10px; color:var(--text-secondary); line-height:1.5; margin-bottom:8px;">36氪深度分析吴恩达最新观点：Agent 的商业化难点不在于模型能力，而在于企业是否愿意把部分业务执行权交给 AI。中国 AI 的优势在于场景丰富、数据量大、企业对效率提升的迫切需求——这些比模型能力领先几个月更重要。大厂 Agent 之争正沿四条主线演变：生产力场景、产品打通、Skill 生态、上下文积累。</div><div style="font-size:8px; color:var(--text-tertiary);">36氪 · 6月8日</div><div style="margin-top:4px; font-size:8px; color:#67e8f9;">💡 开发者影响：与其追逐最新模型，不如深耕 Agent 执行能力——能真正"干活"的 AI 才有商业价值</div><a href="https://www.36kr.com/p/3842692739054215" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
+      <div class="rank-card">
+        <div class="rank-label" style="color:#67e8f9;">&#128640; 生态级落地</div>
+        <div style="font-size:14px; font-weight:500; color:var(--text-primary); margin-bottom:6px;">微信开放 AI Agent 生态：一句话叫车点外卖不跳转</div>
+        <div style="font-size:10px; color:var(--text-secondary); line-height:1.5; margin-bottom:8px;">微信向 14.32 亿月活用户开放 AI Agent 能力，首批接入美团、滴滴、京东、携程等。用户一句话即可完成叫车、点外卖、订酒店等操作，全程不跳转。提供自动/开发两种接入模式，目前内测中。这标志着腾讯系、阿里系、字节系形成 AI 消费入口"三国杀"格局。</div>
+        <div style="font-size:8px; color:var(--text-tertiary);">北京商报 &#183; 6月9日</div>
+        <div style="margin-top:4px; font-size:8px; color:#67e8f9;">💡 开发者影响：微信 AI 生态催生大量小程序 Agent 开发机会</div>
+      </div>
+      <div class="rank-card">
+        <div class="rank-label" style="color:#67e8f9;">&#127981; 产业级落地</div>
+        <div style="font-size:14px; font-weight:500; color:var(--text-primary); margin-bottom:6px;">找钢网 AI 智能体：交易效率提升 10 倍，日均处理千万条消息</div>
+        <div style="font-size:10px; color:var(--text-secondary); line-height:1.5; margin-bottom:8px;">找钢网 AI 智能体实现"沟通即交易，对话即下单"，获央视《朝闻天下》专题报道。日均处理超 1000 万条交易消息，解析准确率超 95%。2025 年 AI 业务收入 3.35 亿元，同比增长 217.5%。与腾讯云 ADP 平台深度合作，推出"找钢 Claw"智能助手。</div>
+        <div style="font-size:8px; color:var(--text-tertiary);">北京日报 &#183; 6月11日</div>
+        <div style="margin-top:4px; font-size:8px; color:#67e8f9;">💡 开发者影响：产业 AI Agent 从问答走向交易闭环，ROI 可量化</div>
+      </div>
     </div>
   </div>
+
   <div class="section-gap section-amber" id="section-oss">
-    <div class="section-head"><div class="section-line"></div><span class="section-label">开源热度</span><span class="section-label-cn">Open Source Pulse</span></div>
+    <div class="section-head">
+      <div class="section-line"></div>
+      <span class="section-label">开源热度</span>
+      <span class="section-label-cn">Open Source Pulse</span>
+    </div>
+
     <div class="dual-cards">
-      <div class="rank-card"><div class="rank-label" style="color:#fcd34d;">&#128200; GitHub Trending — AI Top 5（W24-25）</div>
-        <div class="rank-row"><span class="rank-num">1</span><span class="rank-name">mvanhorn/last30days-skill</span><span class="rank-stat rank-up">+12K/周</span></div><div class="rank-row"><span class="rank-num">2</span><span class="rank-name">chopratejas/headroom</span><span class="rank-stat rank-up">+10K/周</span></div><div class="rank-row"><span class="rank-num">3</span><span class="rank-name">Leonxlnx/taste-skill</span><span class="rank-stat rank-up">+8.7K/周</span></div><div class="rank-row"><span class="rank-num">4</span><span class="rank-name">addyosmani/agent-skills</span><span class="rank-stat rank-up">+8.3K/周</span></div><div class="rank-row"><span class="rank-num">5</span><span class="rank-name">apple/container</span><span class="rank-stat rank-up">+7.8K/周</span></div>
-        <a href="https://github.com/trending?since=weekly" class="read-original" target="_blank" rel="noopener">查看完整榜单 <span class="read-original-arrow">→</span></a></div>
-      <div class="rank-card"><div class="rank-label" style="color:#fcd34d;">&#128200; 趋势解读</div><div style="font-size:10px; color:var(--text-secondary); line-height:1.6;"><p><strong>Skills 生态成新爆款品类</strong> 至少 8 个 .claude/skills 项目登榜。mattpocock 月增 48K★，Skills 模块化是"AI 时代的 npm"。</p><p><strong>Token 压缩赛道火热</strong> headroom 6 种算法省 60-95% Token。Agent 上下文窗口需求的爆发式增长使压缩成为刚需。</p><p><strong>大厂密集开源</strong> 苹果 container、微软 markitdown(152K★)、NVIDIA SkillSpector 构成"安全+工具+容器"三位一体。</p><p style="margin-top:6px; color:#fcd34d;">💡 18 个项目周增 87K★——AI 开源正从"模型开源"进入"Agent 基础设施开源"时代</p></div></div>
+      <div class="rank-card">
+        <div class="rank-label" style="color:#fcd34d;">&#128200; GitHub Trending &mdash; AI 领域 Top 5</div>
+        <div class="rank-row"><span class="rank-num">1</span><span class="rank-name">headroom</span><span class="rank-stat rank-up">+13K stars/周</span></div>
+        <div class="rank-row"><span class="rank-num">2</span><span class="rank-name">hermes-agent</span><span class="rank-stat rank-up">+11.5K stars/周</span></div>
+        <div class="rank-row"><span class="rank-num">3</span><span class="rank-name">turbovec</span><span class="rank-stat rank-up">+1.6K stars/日</span></div>
+        <div class="rank-row"><span class="rank-num">4</span><span class="rank-name">odysseus</span><span class="rank-stat rank-up">+1K stars/日</span></div>
+        <div class="rank-row"><span class="rank-num">5</span><span class="rank-name">Agent-Reach</span><span class="rank-stat rank-up">+796 stars/日</span></div>
+      </div>
+      <div class="rank-card">
+        <div class="rank-label" style="color:#fcd34d;">&#128200; 趋势解读</div>
+        <div style="font-size:10px; color:var(--text-secondary); line-height:1.6;">
+          <p><strong>上下文压缩</strong> headroom 可节省 60-95% Token 成本，反映 Agent 工作流对 Token 优化的刚需。</p>
+          <p><strong>记忆增强 Agent</strong> hermes-agent 190K 总星数，记忆功能成为 Agent 标配。</p>
+          <p><strong>自托管 AI</strong> odysseus 引领私有本地部署趋势。</p>
+          <p><strong>中文平台集成</strong> Agent-Reach 支持 B 站、小红书，打破英文工具垄断。</p>
+          <p style="margin-top:6px; color:#fcd34d;">💡 Rust + Python 模式在高性能 AI 基础设施中持续流行</p>
+        </div>
+      </div>
     </div>
   </div>
+
   <div class="section-gap section-cyan" id="section-overseas">
-    <div class="section-head"><div class="section-line"></div><span class="section-label">海外参考</span><span class="section-label-cn">Global Brief</span></div>
+    <div class="section-head">
+      <div class="section-line"></div>
+      <span class="section-label">海外参考</span>
+      <span class="section-label-cn">Global Brief</span>
+    </div>
+
     <div class="sub-grid">
-      <div class="sub-card"><div class="sub-tag" style="color:#67e8f9;">🌏 Apple · The Verge</div><div class="sub-title">Apple 自研模型跑在 Nvidia 芯片上——WWDC 2026 隐私架构首次公开</div><div class="sub-desc">WWDC 2026 上苹果透露：为满足欧盟 DMA 法规，自研 Foundational Model 实际运行在 Google Cloud 的 Nvidia 硬件上。与 Nvidia、Google、Intel 三方合作实现"隐私计算的硬件无关性"。Siri AI 英文版今年晚些推出，欧盟用户因 DMA 争议将延迟。</div><div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">The Verge · 6月</div><div style="margin-top:4px; font-size:8px; color:#67e8f9;">💡 开发者影响：苹果的"硬件无关隐私计算"可能成为行业新范式</div><a href="https://www.theverge.com/archives/ai-artificial-intelligence/2026/6/2" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
-      <div class="sub-card"><div class="sub-tag" style="color:#67e8f9;">💬 芯片 · The Verge</div><div class="sub-title">Google 找 Intel 造 TPU：台积电产能不足，3 百万芯片转单</div><div class="sub-desc">The Verge 报道：台积电产能短缺迫使 Google 转向 Intel，后者将在 2028 年前为 Google 制造超 300 万颗 TPU。Nvidia 和 SK Hynix 也在测试 Intel 的制造技术。这标志着全球 AI 芯片供应链正在发生结构性重塑。</div><div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">The Verge · 6月</div><div style="margin-top:4px; font-size:8px; color:#67e8f9;">💡 开发者影响：AI 芯片从"台积电单极"走向"多极供应"，利好算力成本下降</div><a href="https://www.theverge.com/archives/ai-artificial-intelligence/2026/6/2" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
-      <div class="sub-card"><div class="sub-tag" style="color:#67e8f9;">🏛️ 美国 · 人民网</div><div class="sub-title">特朗普签署 AI 行政令：自愿框架 + 30 天审查期，企业普遍支持</div><div class="sub-desc">美国新版 AI 行政令构建政企自愿合作框架，不设强制许可或预先批准。要求企业发布前沿模型前"自愿"提交 30 天安全评估，设立 AI 网络安全信息交流中心。与欧盟的强监管路线形成鲜明对比——"自愿 vs 强制"成为全球 AI 治理的两条路径。</div><div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">人民网 · 6月15日</div><div style="margin-top:4px; font-size:8px; color:#67e8f9;">💡 开发者影响：美国自愿框架下模型发布速度更快，但安全责任仍在企业</div><a href="http://military.people.com.cn/BIG5/n1/2026/0615/c1011-40740496.html" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#67e8f9;">🌏 国际合作</div>
+        <div class="sub-title">Sam Altman 今日访韩，会晤三星、Naver 探讨 AI 合作</div>
+        <div class="sub-desc">OpenAI CEO 奥尔特曼于 6 月 14 日访问韩国，计划会见三星电子、Naver、Kakao 等企业高管。议程包括三星 DX 部门 AI 转型、KakaoTalk 集成 ChatGPT、Naver 云合作，以及探讨 5000 亿美元 "Stargate" AI 数据中心项目的存储芯片供应。此前三星已宣布向全体员工开放 ChatGPT、Gemini、Claude 三种外部 AI。</div>
+        <div style="margin-top:4px; font-size:8px; color:#67e8f9;">💡 开发者影响：多模型企业策略成为趋势，单一平台绑定减弱</div>
+      </div>
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#67e8f9;">💬 社区热议</div>
+        <div class="sub-title">Hacker News 热议：AI 泡沫是否破裂？"AI Slop"指控成社交门槛工具</div>
+        <div class="sub-desc">Hacker News 六月初热议 AI 泡沫。研究发现 "AI slop" 指控在 Reddit 和 HN 上增长 10 倍以上，94% 的负面 AI 指控使用该标签，现更多被用于社交身份标记而非真实检测。同时引发讨论的还有 AI 编程工具引入安全漏洞、Claude Code 源码泄露、UC Berkeley CS 挂科率飙升与 AI 依赖的关联等。</div>
+        <div style="margin-top:4px; font-size:8px; color:#67e8f9;">💡 开发者影响：AI 工具实用主义回归，过度炒作正在退潮</div>
+      </div>
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#67e8f9;">🏛️ 政策动向</div>
+        <div class="sub-title">亚马逊 CEO 与特朗普政府就 AI 大模型通话，行业监管博弈升温</div>
+        <div class="sub-desc">亚马逊 CEO 安迪·贾西与其他科技企业负责人与特朗普政府就 AI 大模型进行通话，讨论产业政策与监管方向。与此同时，Alphabet 提议 800 亿美元股权融资用于 AI 基础设施建设，S&P 500 拒绝将 OpenAI、Anthropic 等 AI 公司快速纳入指数，市场对 AI 投资回报的审慎情绪上升。</div>
+        <div style="margin-top:4px; font-size:8px; color:#67e8f9;">💡 开发者影响：海外 AI 政策不确定性增加，关注出口管制变化</div>
+      </div>
     </div>
   </div>
-<footer class="footer">
+
+  <footer class="footer">
     <div class="footer-icon">&#9889;</div>
     <p class="footer-quote" id="footerQuote">"AI 不会取代人类，但会用 AI 的人类会取代不会用 AI 的人类。"</p>
     <p class="footer-author" id="footerAuthor">李开复</p>
-    <p style="margin-top:12px; font-size:10px; color:var(--text-tertiary);">
-      <a href="subscribe.html" style="color:var(--text-tertiary); text-decoration:none;" title="RSS 订阅">📡 RSS 订阅</a>
-    </p>
   </footer>
 </div>
 
 <script>
-// PWA service worker
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./sw.js');
-}
-
-// Cosmic starfield + shooting stars
 (function() {
-  const c = document.getElementById('cosmicCanvas');
-  const ctx = c.getContext('2d');
-  let stars = [], shooters = [];
-  const STAR_COUNT = 220;
-
-  function resize() {
-    const ow = c.width, oh = c.height;
-    c.width = window.innerWidth; c.height = window.innerHeight;
-    if (ow && ow > 0) {
-      const sx = c.width / ow, sy = c.height / oh;
-      for (const s of stars) { s.x *= sx; s.y *= sy; }
-    }
+  const pc = document.getElementById('particles');
+  for (let i = 0; i < 40; i++) {
+    const p = document.createElement('div');
+    p.classList.add('particle');
+    p.style.left = Math.random() * 100 + '%';
+    p.style.top = Math.random() * 100 + '%';
+    const s = 1 + Math.random() * 2;
+    p.style.width = s + 'px'; p.style.height = s + 'px';
+    p.style.animationDuration = (12 + Math.random() * 20) + 's';
+    p.style.animationDelay = Math.random() * 15 + 's';
+    pc.appendChild(p);
   }
-  resize(); window.addEventListener('resize', resize);
-
-  // Init stars
-  for (let i = 0; i < STAR_COUNT; i++) {
-    stars.push({
-      x: Math.random() * c.width, y: Math.random() * c.height,
-      r: Math.random() * 1.8 + 0.3,
-      twinkle: Math.random() * Math.PI * 2,
-      speed: 0.003 + Math.random() * 0.015,
-      hue: [220, 260, 190, 330, 40][Math.floor(Math.random() * 5)]
-    });
-  }
-
-  function spawnShooter() {
-    shooters.push({
-      x: Math.random() * c.width,
-      y: Math.random() * c.height * 0.5,
-      len: 80 + Math.random() * 150,
-      angle: 0.3 + Math.random() * 0.5,
-      life: 1, decay: 0.008 + Math.random() * 0.02,
-      hue: 200 + Math.random() * 60
-    });
-  }
-
-  function animate(ts) {
-    ctx.clearRect(0, 0, c.width, c.height);
-
-    // Stars
-    for (const s of stars) {
-      s.twinkle += s.speed;
-      const alpha = 0.35 + 0.35 * Math.sin(s.twinkle);
-      ctx.beginPath();
-      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-      ctx.fillStyle = `hsla(${s.hue},60%,85%,${alpha})`;
-      ctx.fill();
-      // Glow for larger stars
-      if (s.r > 1.2) {
-        ctx.beginPath();
-        ctx.arc(s.x, s.y, s.r * 2.5, 0, Math.PI * 2);
-        ctx.fillStyle = `hsla(${s.hue},50%,70%,${alpha * 0.15})`;
-        ctx.fill();
-      }
-    }
-
-    // Shooting stars
-    if (Math.random() < 0.008) spawnShooter();
-    for (let i = shooters.length - 1; i >= 0; i--) {
-      const sh = shooters[i];
-      sh.life -= sh.decay;
-      if (sh.life <= 0) { shooters.splice(i, 1); continue; }
-      const x2 = sh.x - Math.cos(sh.angle) * sh.len;
-      const y2 = sh.y - Math.sin(sh.angle) * sh.len;
-      const grad = ctx.createLinearGradient(sh.x, sh.y, x2, y2);
-      grad.addColorStop(0, `hsla(${sh.hue},80%,90%,${sh.life * 0.9})`);
-      grad.addColorStop(1, `hsla(${sh.hue},80%,90%,0)`);
-      ctx.beginPath();
-      ctx.moveTo(sh.x, sh.y);
-      ctx.lineTo(x2, y2);
-      ctx.strokeStyle = grad;
-      ctx.lineWidth = 1.5;
-      ctx.stroke();
-    }
-
-    requestAnimationFrame(animate);
-  }
-  requestAnimationFrame(animate);
 })();
 
 (function() {
@@ -605,31 +624,6 @@ if ('serviceWorker' in navigator) {
   let calYear = new Date().getFullYear();
   let calMonth = new Date().getMonth() + 1;
   const archiveMap = {};
-  let archiveLoaded = false;
-
-  function loadArchive(cb) {
-    if (archiveLoaded) { cb(); return; }
-    fetch('https://api.github.com/repos/DaiOwen/ai-pulse/contents/archive')
-      .then(r => r.json())
-      .then(data => {
-        archiveLoaded = true;
-        if (!Array.isArray(data)) { cb(); return; }
-        data.forEach(f => {
-          const m = f.name.match(/^(\d{4}-\d{2}-\d{2})-(morning|noon|evening)\.html$/);
-          if (!m) return;
-          const [, date, ed] = m;
-          if (archiveMap[date] === 'full') return;
-          if (Array.isArray(archiveMap[date])) {
-            archiveMap[date].push(ed);
-            if (archiveMap[date].length >= 3) archiveMap[date] = 'full';
-          } else {
-            archiveMap[date] = [ed];
-          }
-        });
-        cb();
-      })
-      .catch(() => { archiveLoaded = true; cb(); });
-  }
 
   function renderCalendar() {
     const daysInMonth = new Date(calYear, calMonth, 0).getDate();
@@ -667,28 +661,13 @@ if ('serviceWorker' in navigator) {
   document.getElementById('btnArchive').addEventListener('click', function() {
     calYear = new Date().getFullYear();
     calMonth = new Date().getMonth() + 1;
-    loadArchive(function() { renderCalendar(); });
+    renderCalendar();
     overlay.classList.add('active');
   });
-  document.getElementById('calPrev').addEventListener('click', function() { calMonth--; if(calMonth<1){calMonth=12;calYear--;} loadArchive(function() { renderCalendar(); }); });
-  document.getElementById('calNext').addEventListener('click', function() { calMonth++; if(calMonth>12){calMonth=1;calYear++;} loadArchive(function() { renderCalendar(); }); });
+  document.getElementById('calPrev').addEventListener('click', function() { calMonth--; if(calMonth<1){calMonth=12;calYear--;} renderCalendar(); });
+  document.getElementById('calNext').addEventListener('click', function() { calMonth++; if(calMonth>12){calMonth=1;calYear++;} renderCalendar(); });
   document.getElementById('calClose').addEventListener('click', function() { overlay.classList.remove('active'); });
   overlay.addEventListener('click', function(e) { if (e.target === overlay) overlay.classList.remove('active'); });
-})();
-
-(function() {
-  var el = document.getElementById('updatedLabel');
-  if (!el) return;
-  var text = el.textContent || el.innerText;
-  var match = text.match(/(\d{4}-\d{2}-\d{2})\s+(\d{2}):(\d{2})/);
-  if (!match) return;
-  var updated = new Date(match[1] + 'T' + match[2] + ':' + match[3] + ':00');
-  var now = new Date();
-  var hoursOld = (now - updated) / (1000 * 60 * 60);
-  if (hoursOld > 24) {
-    el.classList.add('stale');
-    el.innerHTML = '<span class="hero-updated-dot"></span> 最后更新: ' + match[1] + ' ' + match[2] + ':' + match[3] + ' CST (' + Math.floor(hoursOld) + '小时前)';
-  }
 })();
 </script>
 </body>

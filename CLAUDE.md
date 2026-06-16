@@ -315,6 +315,7 @@ Jim Fan OR Chip Huyen OR Andrew Ng AI trend 2026
    - 使用 `mv index.tmp.html index.html` 原子替换（同一文件系统内 rename 是原子操作）
    - 同时保存到 `archive/YYYY-MM-DD-{edition}.html`（如 `archive/2026-06-14-morning.html`）
    - **重要**：先写 archive 文件（不影响主页），确认成功后再原子替换 index.html。如果生成中途失败，index.html 不受影响
+   - **⚠️ 严禁覆盖其他 archive 文件**：只写入当前期次的 archive 文件。**绝不**使用 `cp index.html archive/*.html` 或任何批量覆盖操作——这会导致历史各期内容永久丢失。每期 archive 是独立的历史记录
 4. **生成 RSS 订阅文件**：更新 `feed.xml`——
    - 在 `<channel>` 最顶部插入新 `<item>`（最新一期排最前）
    - 每期 `<item>` 必须包含：标题（含版次+日期）、链接（指向 archive 文件）、发布时间（RFC 822 格式）、描述（含各板块新闻标题列表 + 阅读原文链接）
