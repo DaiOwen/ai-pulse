@@ -611,9 +611,10 @@ if ('serviceWorker' in navigator) {
     if (archiveLoaded) { cb(); return; }
     fetch('https://api.github.com/repos/DaiOwen/ai-pulse/contents/archive')
       .then(r => r.json())
-      .then(files => {
-        if (!Array.isArray(files)) return;
-        files.forEach(f => {
+      .then(data => {
+        archiveLoaded = true;
+        if (!Array.isArray(data)) { cb(); return; }
+        data.forEach(f => {
           const m = f.name.match(/^(\d{4}-\d{2}-\d{2})-(morning|noon|evening)\.html$/);
           if (!m) return;
           const [, date, ed] = m;
@@ -625,10 +626,9 @@ if ('serviceWorker' in navigator) {
             archiveMap[date] = [ed];
           }
         });
-        archiveLoaded = true;
         cb();
       })
-      .catch(() => cb()); // fallback: render without data
+      .catch(() => { archiveLoaded = true; cb(); });
   }
 
   function renderCalendar() {
