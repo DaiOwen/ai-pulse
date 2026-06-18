@@ -609,12 +609,21 @@ if ('serviceWorker' in navigator) {
   let calMonth = new Date().getMonth() + 1;
   // Hardcoded archive index — updated by /ai-digest on each generation
   const archiveMap = {
-    '2026-06-14': ['morning'],
-    '2026-06-15': ['noon','evening'],
-    '2026-06-16': ['morning','noon','evening'],
-    '2026-06-17': ['morning'],
-    '2026-06-18': ['morning']
-  };
+    "2026-06-14": [
+        "morning"
+    ],
+    "2026-06-15": [
+        "noon",
+        "evening"
+    ],
+    "2026-06-16": "full",
+    "2026-06-17": [
+        "morning"
+    ],
+    "2026-06-18": [
+        "morning"
+    ]
+};
   // Fix: mark dates with 3 editions as 'full' for green highlight
   (function(){for(var d in archiveMap){if(archiveMap[d].length>=3)archiveMap[d]='full';}})();
 
