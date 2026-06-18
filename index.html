@@ -655,7 +655,7 @@ if ('serviceWorker' in navigator) {
         const editions = entry === 'full' ? allEditions : (Array.isArray(entry) ? allEditions.filter(function(e){return entry.indexOf(e)>=0;}) : allEditions);
         linksHtml = '<div class="calendar-day-links">' + editions.map(function(e) {
           const label = e === 'morning' ? '&#127749; 早间' : e === 'noon' ? '&#9728; 午间' : '&#127769; 晚间';
-          return '<a class="calendar-day-link" href="archive/' + dateStr + '-' + e + '.html">' + label + '</a>';
+          return '<a class="calendar-day-link" href="/ai-pulse/archive/' + dateStr + '-' + e + '.html">' + label + '</a>';
         }).join('') + '</div>';
       }
       html += '<div class="' + cls + '">' + d + linksHtml + '</div>';
