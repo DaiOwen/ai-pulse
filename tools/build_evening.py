@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-import re, datetime
+import re, datetime, sys
+sys.path.insert(0, 'tools')
+from calendar import inject_archive_map
 with open('index.html','r',encoding='utf-8') as f: html = f.read()
 
 c = r'''  <div class="section-gap section-indigo" id="section-models">
@@ -70,5 +72,7 @@ html = re.sub(r'<p class="hero-updated" id="updatedLabel">.*?</p>', f'<p class="
 tl = '大厂Token不再管够：腾讯限额、字节部分报销、阿里不限、京东自研免费；国产大模型出路转向Fusion动态路由+Omnigent元框架；字节AI四命题世界模型+Seedance+Coding+豆包商业化；津渡生科GeneLLM+BioFord Agent五大智能体自主科研；邬贺铨院士提出IoA智联网异构智能体跨域协作；北京2028目标100个工业智能体；Karpathy Skills月增65K★ 登顶5月GitHub月榜。'
 html = re.sub(r'<span class="tldr-text" id="tldrContent">.*?</span>', f'<span class="tldr-text" id="tldrContent">{tl}</span>', html, flags=re.DOTALL)
 
-with open('archive/2026-06-16-evening.html', 'w', encoding='utf-8') as f: f.write(html)
+archive_file = f"archive/{now.strftime('%Y-%m-%d')}-evening.html"
+html = inject_archive_map(html)
+with open(archive_file, 'w', encoding='utf-8') as f: f.write(html)
 print(f'OK {len(html)}B | #: {html.count(chr(34)+"#" + chr(34) + " class=" + chr(34) + "read-original")}')

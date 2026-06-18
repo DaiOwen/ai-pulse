@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-import re, datetime
-
+import re, datetime, sys
+sys.path.insert(0, 'tools')
+from calendar import inject_archive_map
 with open('index.html','r',encoding='utf-8') as f: html = f.read()
 
 c = r'''  <div class="section-gap section-indigo" id="section-models">
@@ -57,6 +58,8 @@ html = re.sub(r'<p class="hero-updated" id="updatedLabel">.*?</p>', f'<p class="
 tl = 'Perplexity发布企业级AI Agent「Computer」编排20+模型叫板微软Salesforce；Sakana AI发布Marlin 8小时自主推理生成100+页战略报告；Kimi K2 Thinking万亿MoE训练成本仅460万美元；ClickUp Brain Max跨应用企业Agent平台；工信部AI核心产业规模超1.2万亿元将发布高价值场景；WPS灵犀提出Agentic Software新概念。'
 html = re.sub(r'<span class="tldr-text" id="tldrContent">.*?</span>', f'<span class="tldr-text" id="tldrContent">{tl}</span>', html, flags=re.DOTALL)
 
-with open('archive/2026-06-16-noon.html', 'w', encoding='utf-8') as f: f.write(html)
+archive_file = f"archive/{now.strftime('%Y-%m-%d')}-noon.html"
+html = inject_archive_map(html)
+with open(archive_file, 'w', encoding='utf-8') as f: f.write(html)
 ph = html.count('"#" class="read-original')
 print(f'Built: {len(html)}B | Placeholders: {ph}')
