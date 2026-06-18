@@ -1,11 +1,12 @@
 """Generate archiveMap JS from actual archive files on disk."""
-import glob, re, json
+import glob, re, json, os
 
 def build_archive_map(archive_dir='archive'):
     """Scan archive dir and return archiveMap as a JS object string."""
     amap = {}
     for f in sorted(glob.glob(f'{archive_dir}/????-??-??-*.html')):
-        m = re.match(r'.*/(\d{4}-\d{2}-\d{2})-(morning|noon|evening)\.html$', f)
+        basename = os.path.basename(f)
+        m = re.match(r'(\d{4}-\d{2}-\d{2})-(morning|noon|evening)\.html$', basename)
         if not m:
             continue
         date, edition = m.group(1), m.group(2)
