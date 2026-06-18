@@ -12,10 +12,10 @@ allowed-tools: WebSearch, WebFetch, Bash(git:*), Bash(ls:*), Bash(mkdir:*), Bash
 
 | $ARGUMENTS | 执行动作 |
 |------------|---------|
-| `morning` | 生成早间版（CLAUDE.md § 新闻采集策略 → § HTML 生成规范 → § 自动配置） |
-| `noon` | 生成午间版（增量更新，同上流程） |
-| `evening` | 生成晚间版（全天汇总，同上流程） |
-| `now` | 根据当前时间自动选版次：00:00-10:59→morning / 11:00-16:59→noon / 17:00-23:59→evening，然后执行生成 |
+| `morning` | 生成早间版。**时间校验：** 如果当前时间 ≥ 17:00，先提示"现在是傍晚，生成早间版可能不合适"并确认 |
+| `noon` | 生成午间版。**时间校验：** 如果当前时间在 00:00-10:59 或 17:00-23:59，先提示并确认 |
+| `evening` | 生成晚间版。**时间校验：** 如果当前时间在 00:00-16:59（全天还没过完），先提示"现在才[时间]，全天还没过完，确定要生成晚间版吗？"并确认 |
+| `now` | 根据当前时间自动选版次：00:00-10:59→morning / 11:00-16:59→noon / 17:00-23:59→evening，然后执行生成（无需确认） |
 | `status` | 执行诊断：CronList 检查任务状态 → 检查 .claude/settings.json 权限 → ls archive/ 最近文件 → git status |
 | `update` | git stash → git pull origin master → 展示最近 5 条 commit → 如 CLAUDE.md 变更则提示重启 → git stash pop |
 | 空或其他 | 默认执行 `morning`（早间版） |
