@@ -618,7 +618,7 @@ if ('serviceWorker' in navigator) {
   // Fix: mark dates with 3 editions as 'full' for green highlight
   (function(){for(var d in archiveMap){if(archiveMap[d].length>=3)archiveMap[d]='full';}})();
 
-  function loadArchive(cb) { cb(); } // instant — no API call
+  function loadArchive(cb) { cb(); }// instant — no API call
 
   function renderCalendar() {
     const daysInMonth = new Date(calYear, calMonth, 0).getDate();

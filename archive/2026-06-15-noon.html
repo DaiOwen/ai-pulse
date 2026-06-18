@@ -3,18 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
 <title>AI 脉搏 · 热点速览</title>
 <meta name="description" content="面向中国AI开发工程师的每日AI新闻智能聚合">
 <meta name="theme-color" content="#0a0a0f">
-<meta property="og:title" content="AI 脉搏 · AI 热点速览">
-<meta property="og:description" content="面向 AI 开发者的每日新闻智能聚合。30+平台 + 11位KOL，每天三次自动更新。">
-<meta property="og:image" content="https://daiowen.github.io/ai-pulse/assets/favicon.svg">
-<meta property="og:url" content="https://daiowen.github.io/ai-pulse/">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="manifest" href="manifest.json">
 <link rel="alternate" type="application/rss+xml" title="AI 脉搏 RSS" href="feed.xml">
@@ -52,13 +43,18 @@
     --bg-glow-cyan: rgba(6,182,212,0.04);
   }
 
-  [data-theme="light"] .orb { opacity: 0.08 !important; }
-    
+  [data-theme="light"] .orb { opacity: 0.04 !important; }
+  [data-theme="light"] .particle { background: rgba(0,0,0,0.15); }
+  [data-theme="light"] .grid-overlay {
+    background-image: linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+  }
+
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
-    background: linear-gradient(170deg, #06060d 0%, #0a0a1a 25%, #0d0a1f 50%, #080818 75%, #060610 100%);
+    background: linear-gradient(160deg, #0a0a0f 0%, #0f0f1a 30%, #0d0d18 60%, #0a0a14 100%);
     color: var(--text-primary);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
@@ -67,49 +63,64 @@
   }
 
   [data-theme="light"] body {
-    background: linear-gradient(170deg, #f5f5f7 0%, #fafafa 30%, #f0f0f5 60%, #f5f5f7 100%);
+    background: linear-gradient(160deg, #f5f5f7 0%, #fafafa 30%, #f0f0f3 60%, #f5f5f7 100%);
   }
 
   .bg-layer { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
-  #cosmicCanvas { position:absolute; inset:0; width:100%; height:100%; opacity:0.9; }
-  [data-theme="light"] #cosmicCanvas { opacity:0.35; }
-
   .orb {
-    position: absolute; border-radius: 50%; filter: blur(140px);
+    position: absolute; border-radius: 50%; filter: blur(120px);
     animation-timing-function: ease-in-out; animation-iteration-count: infinite;
     animation-direction: alternate;
   }
-  .orb-1 { width:700px; height:700px; background:radial-gradient(circle, #6366f1 0%, #8b5cf6 40%, transparent 75%); top:-15%; right:-10%; opacity:0.09; animation:float1 20s infinite; }
-  .orb-2 { width:550px; height:550px; background:radial-gradient(circle, #ec4899 0%, #8b5cf6 30%, transparent 70%); bottom:-20%; left:-10%; opacity:0.07; animation:float2 25s infinite; }
-  .orb-3 { width:450px; height:450px; background:radial-gradient(circle, #06b6d4 0%, #6366f1 35%, transparent 70%); top:40%; right:-15%; opacity:0.06; animation:float3 22s infinite; }
-  .orb-4 { width:350px; height:350px; background:radial-gradient(circle, #a855f7 0%, #ec4899 30%, transparent 70%); top:-5%; left:35%; opacity:0.05; animation:float4 28s infinite; }
+  .orb-1 { width:500px; height:500px; background:radial-gradient(circle, #6366f1 0%, transparent 70%); top:-10%; right:-5%; opacity:0.12; animation:float1 18s infinite; }
+  .orb-2 { width:400px; height:400px; background:radial-gradient(circle, #8b5cf6 0%, transparent 70%); bottom:-15%; left:-8%; opacity:0.12; animation:float2 22s infinite; }
+  .orb-3 { width:300px; height:300px; background:radial-gradient(circle, #06b6d4 0%, transparent 70%); top:45%; right:-10%; opacity:0.08; animation:float3 20s infinite; }
+  .orb-4 { width:250px; height:250px; background:radial-gradient(circle, #f59e0b 0%, transparent 70%); top:-8%; left:40%; opacity:0.06; animation:float4 24s infinite; }
 
   @keyframes float1 {
-    0% { transform:translate(0,0) scale(1); } 33% { transform:translate(-100px,80px) scale(1.2); }
-    66% { transform:translate(50px,-40px) scale(0.85); } 100% { transform:translate(-30px,30px) scale(1.1); }
+    0% { transform:translate(0,0) scale(1); } 33% { transform:translate(-80px,60px) scale(1.15); }
+    66% { transform:translate(40px,-30px) scale(0.9); } 100% { transform:translate(-20px,20px) scale(1.05); }
   }
   @keyframes float2 {
-    0% { transform:translate(0,0) scale(1); } 33% { transform:translate(80px,-60px) scale(1.25); }
-    66% { transform:translate(-40px,30px) scale(0.8); } 100% { transform:translate(20px,-15px) scale(1.15); }
+    0% { transform:translate(0,0) scale(1); } 33% { transform:translate(60px,-50px) scale(1.2); }
+    66% { transform:translate(-30px,20px) scale(0.85); } 100% { transform:translate(10px,-10px) scale(1.1); }
   }
   @keyframes float3 {
-    0% { transform:translate(0,0) scale(1); } 50% { transform:translate(-70px,-50px) scale(1.35); }
-    100% { transform:translate(30px,40px) scale(0.85); }
+    0% { transform:translate(0,0) scale(1); } 50% { transform:translate(-50px,-40px) scale(1.3); }
+    100% { transform:translate(20px,30px) scale(0.9); }
   }
   @keyframes float4 {
-    0% { transform:translate(0,0) scale(1); } 25% { transform:translate(50px,70px) scale(1.3); }
-    75% { transform:translate(-50px,30px) scale(0.8); } 100% { transform:translate(15px,-20px) scale(1.1); }
+    0% { transform:translate(0,0) scale(1); } 25% { transform:translate(30px,50px) scale(1.25); }
+    75% { transform:translate(-40px,20px) scale(0.85); } 100% { transform:translate(10px,-10px) scale(1.05); }
   }
 
-  .content { position:relative; z-index:1; max-width:960px; margin:0 auto; padding:0 32px 80px; }
+  .grid-overlay {
+    position:absolute; inset:0;
+    background-image:linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px),
+                     linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px);
+    background-size:60px 60px; animation:gridShift 30s linear infinite;
+  }
+  @keyframes gridShift { 0% { background-position:0 0; } 100% { background-position:60px 60px; } }
+
+  .particle {
+    position:absolute; border-radius:50%; background:rgba(255,255,255,0.35);
+    animation:rise linear infinite;
+  }
+  @keyframes rise {
+    0% { transform:translateY(0) translateX(0); opacity:0; }
+    10% { opacity:0.5; } 90% { opacity:0.05; }
+    100% { transform:translateY(-100vh) translateX(60px); opacity:0; }
+  }
+
+  .content { position:relative; z-index:1; max-width:900px; margin:0 auto; padding:0 32px 80px; }
 
   .nav { display:flex; justify-content:space-between; align-items:center; padding:18px 0; border-bottom:0.5px solid var(--border-subtle); }
   .nav-brand { display:flex; align-items:center; gap:10px; }
   .nav-logo { width:34px; height:34px; border-radius:9px; background:linear-gradient(135deg, #6366f1, #8b5cf6); display:flex; align-items:center; justify-content:center; font-size:16px; }
-  .nav-title { font-size:16px; font-weight:600; color:var(--text-primary); letter-spacing:-0.02em; }
+  .nav-title { font-size:15px; font-weight:600; color:var(--text-primary); letter-spacing:-0.02em; }
   .nav-sub { font-size:11px; color:var(--text-tertiary); letter-spacing:0.05em; }
   .nav-right { display:flex; align-items:center; gap:20px; }
-  .nav-link { font-size:13px; color:var(--text-tertiary); font-weight:500; cursor:pointer; transition:color 0.2s; background:none; border:none; font-family:inherit; }
+  .nav-link { font-size:12px; color:var(--text-tertiary); font-weight:500; cursor:pointer; transition:color 0.2s; background:none; border:none; font-family:inherit; }
   .nav-link:hover { color:var(--text-primary); }
   .toggle-track { width:38px; height:22px; background:rgba(99,102,241,0.25); border-radius:11px; border:0.5px solid rgba(99,102,241,0.35); position:relative; cursor:pointer; transition:background 0.3s; }
   .toggle-thumb { width:17px; height:17px; background:linear-gradient(135deg, #6366f1, #8b5cf6); border-radius:50%; position:absolute; top:2px; left:2px; box-shadow:0 1px 4px rgba(0,0,0,0.3); transition:transform 0.3s cubic-bezier(0.25,0.8,0.25,1.2); }
@@ -133,16 +144,16 @@
     box-shadow:0 0 6px rgba(34,197,94,0.5); animation:pulse 2s ease-in-out infinite;
   }
   @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
-  .hero-badge-text { font-size:12px; color:#a5b4fc; font-weight:500; letter-spacing:0.05em; }
-  .hero-title { font-size:48px; font-weight:300; color:var(--text-primary); letter-spacing:-0.03em; line-height:1.1; margin-bottom:6px; position:relative; z-index:1; }
-  .hero-date { font-size:15px; color:var(--text-tertiary); font-weight:400; margin-bottom:6px; position:relative; z-index:1; }
-.hero-updated { font-size:12px; color:var(--text-tertiary); font-weight:400; margin-bottom:28px; position:relative; z-index:1; display:flex; align-items:center; justify-content:center; gap:6px; }
+  .hero-badge-text { font-size:11px; color:#a5b4fc; font-weight:500; letter-spacing:0.05em; }
+  .hero-title { font-size:44px; font-weight:300; color:var(--text-primary); letter-spacing:-0.03em; line-height:1.1; margin-bottom:6px; position:relative; z-index:1; }
+  .hero-date { font-size:14px; color:var(--text-tertiary); font-weight:400; margin-bottom:6px; position:relative; z-index:1; }
+.hero-updated { font-size:11px; color:var(--text-tertiary); font-weight:400; margin-bottom:28px; position:relative; z-index:1; display:flex; align-items:center; justify-content:center; gap:6px; }
 .hero-updated-dot { width:5px; height:5px; border-radius:50%; background:var(--accent-green); box-shadow:0 0 4px rgba(34,197,94,0.5); }
 .hero-updated.stale .hero-updated-dot { background:var(--accent-amber); box-shadow:0 0 4px rgba(245,158,11,0.5); }
 .hero-updated.stale { color:var(--accent-amber); }
   .hero-stats { display:flex; justify-content:center; gap:40px; position:relative; z-index:1; }
-  .hero-stat-num { font-size:24px; font-weight:600; color:var(--text-primary); }
-  .hero-stat-label { font-size:12px; color:var(--text-tertiary); letter-spacing:0.04em; margin-top:2px; }
+  .hero-stat-num { font-size:22px; font-weight:600; color:var(--text-primary); }
+  .hero-stat-label { font-size:11px; color:var(--text-tertiary); letter-spacing:0.04em; margin-top:2px; }
   .hero-stat-divider { width:0.5px; background:var(--border-subtle); }
 
   .tldr {
@@ -150,13 +161,13 @@
     background:var(--bg-glow-indigo); border:0.5px solid rgba(99,102,241,0.1);
     border-radius:10px; display:flex; gap:12px; align-items:flex-start;
   }
-  .tldr-label { font-size:11px; font-weight:700; color:var(--accent-indigo); letter-spacing:0.08em; flex-shrink:0; margin-top:2px; }
-  .tldr-text { font-size:14px; color:#c9d1d9; line-height:1.6; }
+  .tldr-label { font-size:10px; font-weight:700; color:var(--accent-indigo); letter-spacing:0.08em; flex-shrink:0; margin-top:2px; }
+  .tldr-text { font-size:13px; color:#c9d1d9; line-height:1.6; }
 
   .section-head { display:flex; align-items:center; gap:10px; margin-bottom:20px; }
   .section-line { width:1px; height:18px; border-radius:1px; }
-  .section-label { font-size:13px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; }
-  .section-label-cn { font-size:12px; color:var(--text-tertiary); margin-left:4px; }
+  .section-label { font-size:12px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; }
+  .section-label-cn { font-size:11px; color:var(--text-tertiary); margin-left:4px; }
 
   .feature-card {
     background:var(--bg-secondary); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
@@ -167,19 +178,19 @@
     transform:translateY(-2px); border-color:rgba(255,255,255,0.12);
     box-shadow:0 8px 32px rgba(0,0,0,0.3);
   }
-  .card-tag { font-size:11px; font-weight:600; letter-spacing:0.07em; margin-bottom:8px; }
-  .card-title { font-size:24px; font-weight:500; color:var(--text-primary); letter-spacing:-0.01em; line-height:1.3; margin-bottom:8px; }
-  .card-desc { font-size:14px; color:var(--text-secondary); line-height:1.6; margin-bottom:14px; }
-  .card-meta { display:flex; gap:14px; font-size:12px; color:var(--text-tertiary); }
+  .card-tag { font-size:10px; font-weight:600; letter-spacing:0.07em; margin-bottom:8px; }
+  .card-title { font-size:22px; font-weight:500; color:var(--text-primary); letter-spacing:-0.01em; line-height:1.3; margin-bottom:8px; }
+  .card-desc { font-size:13px; color:var(--text-secondary); line-height:1.6; margin-bottom:14px; }
+  .card-meta { display:flex; gap:14px; font-size:11px; color:var(--text-tertiary); }
   .card-meta-link { color:var(--accent-indigo); }
 .read-original {
-  display:flex; align-items:center; justify-content:flex-end; gap:3px;
-  font-size:11px; font-weight:500; letter-spacing:0.03em;
+  display:inline-flex; align-items:center; gap:3px;
+  font-size:10px; font-weight:500; letter-spacing:0.03em;
   color:var(--accent-indigo); text-decoration:none;
-  transition:color 0.2s, gap 0.2s; margin-top:auto; padding-top:12px;
+  transition:color 0.2s, gap 0.2s; margin-top:6px;
 }
 .read-original:hover { color:#818cf8; gap:6px; }
-.read-original-arrow { display:inline-block; transition:transform 0.2s; font-size:10px; }
+.read-original-arrow { display:inline-block; transition:transform 0.2s; font-size:9px; }
 .read-original:hover .read-original-arrow { transform:translateX(2px); }
   .card-row { display:flex; gap:20px; align-items:flex-start; }
   .card-icon {
@@ -194,26 +205,24 @@
     background:var(--bg-card); border:0.5px solid var(--border-card);
     border-radius:12px; padding:20px;
     transition:transform 0.3s ease, border-color 0.3s ease;
-    display:flex; flex-direction:column;
   }
   .sub-card:hover { transform:translateY(-1px); border-color:rgba(255,255,255,0.1); }
-  .sub-tag { font-size:11px; color:var(--text-tertiary); font-weight:500; letter-spacing:0.04em; margin-bottom:8px; }
-  .sub-title { font-size:18px; font-weight:500; color:var(--text-primary); line-height:1.4; margin-bottom:6px; }
-  .sub-desc { font-size:13px; color:var(--text-secondary); line-height:1.5; }
+  .sub-tag { font-size:10px; color:var(--text-tertiary); font-weight:500; letter-spacing:0.04em; margin-bottom:8px; }
+  .sub-title { font-size:16px; font-weight:500; color:var(--text-primary); line-height:1.4; margin-bottom:6px; }
+  .sub-desc { font-size:12px; color:var(--text-secondary); line-height:1.5; }
 
   .tool-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; }
   .tool-card {
     background:var(--bg-card); border:0.5px solid var(--border-card);
     border-radius:12px; padding:18px;
     transition:transform 0.3s ease, border-color 0.3s ease;
-    display:flex; flex-direction:column;
   }
   .tool-card:hover { transform:translateY(-1px); border-color:rgba(255,255,255,0.1); }
   .tool-icon { font-size:18px; margin-bottom:10px; }
-  .tool-name { font-size:15px; font-weight:500; color:var(--text-primary); margin-bottom:4px; }
-  .tool-desc { font-size:12px; color:var(--text-tertiary); line-height:1.4; }
+  .tool-name { font-size:14px; font-weight:500; color:var(--text-primary); margin-bottom:4px; }
+  .tool-desc { font-size:11px; color:var(--text-tertiary); line-height:1.4; }
   .tool-badge {
-    display:inline-block; font-size:10px; font-weight:600; padding:2px 8px; border-radius:8px;
+    display:inline-block; font-size:9px; font-weight:600; padding:2px 8px; border-radius:8px;
     letter-spacing:0.03em; margin-top:6px;
   }
   .badge-new { background:rgba(34,197,94,0.12); color:#4ade80; }
@@ -224,29 +233,28 @@
     border-radius:16px; padding:24px;
   }
   .paper-header { display:flex; align-items:center; gap:8px; margin-bottom:10px; }
-  .paper-label { font-size:12px; font-weight:600; color:#c4b5fd; letter-spacing:0.05em; }
-  .paper-title { font-size:20px; font-weight:500; color:var(--text-primary); line-height:1.4; margin-bottom:6px; }
-  .paper-abstract { font-size:13px; color:var(--text-secondary); line-height:1.6; margin-bottom:8px; }
-  .paper-meta { font-size:11px; color:var(--accent-purple); }
+  .paper-label { font-size:11px; font-weight:600; color:#c4b5fd; letter-spacing:0.05em; }
+  .paper-title { font-size:18px; font-weight:500; color:var(--text-primary); line-height:1.4; margin-bottom:6px; }
+  .paper-abstract { font-size:12px; color:var(--text-secondary); line-height:1.6; margin-bottom:8px; }
+  .paper-meta { font-size:10px; color:var(--accent-purple); }
 
   .dual-cards { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
   .rank-card {
     background:var(--bg-card); border:0.5px solid var(--border-card);
     border-radius:12px; padding:20px;
-    display:flex; flex-direction:column;
   }
-  .rank-label { font-size:12px; font-weight:600; letter-spacing:0.05em; margin-bottom:14px; }
-  .rank-row { display:flex; align-items:center; gap:10px; font-size:13px; margin-bottom:8px; }
+  .rank-label { font-size:11px; font-weight:600; letter-spacing:0.05em; margin-bottom:14px; }
+  .rank-row { display:flex; align-items:center; gap:10px; font-size:12px; margin-bottom:8px; }
   .rank-num { color:var(--text-primary); font-weight:500; min-width:16px; }
   .rank-name { color:var(--text-primary); flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-  .rank-stat { font-size:12px; }
+  .rank-stat { font-size:11px; }
   .rank-up { color:#4ade80; }
   .rank-neutral { color:var(--text-tertiary); }
 
   .footer { text-align:center; padding:36px 0 0; border-top:0.5px solid var(--border-subtle); }
-  .footer-icon { font-size:26px; margin-bottom:8px; opacity:0.6; }
-  .footer-quote { font-size:15px; font-weight:400; color:var(--text-secondary); font-style:italic; letter-spacing:-0.01em; }
-  .footer-author { font-size:12px; color:var(--text-tertiary); margin-top:4px; }
+  .footer-icon { font-size:24px; margin-bottom:8px; opacity:0.6; }
+  .footer-quote { font-size:14px; font-weight:400; color:var(--text-secondary); font-style:italic; letter-spacing:-0.01em; }
+  .footer-author { font-size:11px; color:var(--text-tertiary); margin-top:4px; }
 
   .section-gap { margin-bottom:48px; }
 
@@ -353,7 +361,8 @@
 <div class="bg-layer">
   <div class="orb orb-1"></div><div class="orb orb-2"></div>
   <div class="orb orb-3"></div><div class="orb orb-4"></div>
-  <canvas id="cosmicCanvas"></canvas>
+  <div class="grid-overlay"></div>
+  <div class="particles" id="particles"></div>
 </div>
 
 <div class="calendar-overlay" id="calendarOverlay">
@@ -394,17 +403,17 @@
     <div class="hero-glow"></div>
     <div class="hero-badge">
       <div class="hero-badge-dot"></div>
-      <span class="hero-badge-text" id="editionLabel">早间版 · 09:39 · 清晨速递</span>
+      <span class="hero-badge-text" id="editionLabel">午间版 &#183; 12:00 &#183; 增量更新</span>
     </div>
     <h1 class="hero-title">今日 AI 脉搏</h1>
-    <p class="hero-date" id="dateLabel">2026年06月18日 · 星期四</p>
-    <p class="hero-updated" id="updatedLabel"><span class="hero-updated-dot"></span> 最后更新: 2026-06-18 09:39 CST</p>
+    <p class="hero-date" id="dateLabel">2026年6月15日 &#183; 星期一</p>
+    <p class="hero-updated" id="updatedLabel"><span class="hero-updated-dot"></span> 最后更新: 2026-06-15 12:00 CST</p>
     <div class="hero-stats" id="heroStats">
-      <div><div class="hero-stat-num" id="statNews">18</div><div class="hero-stat-label">头条新闻</div></div>
+      <div><div class="hero-stat-num" id="statNews">7</div><div class="hero-stat-label">头条新闻</div></div>
       <div class="hero-stat-divider"></div>
-      <div><div class="hero-stat-num" id="statSources">12</div><div class="hero-stat-label">信源覆盖</div></div>
+      <div><div class="hero-stat-num" id="statSources">8</div><div class="hero-stat-label">信源覆盖</div></div>
       <div class="hero-stat-divider"></div>
-      <div><div class="hero-stat-num" id="statProjects">10</div><div class="hero-stat-label">热门项目</div></div>
+      <div><div class="hero-stat-num" id="statProjects">5</div><div class="hero-stat-label">热门项目</div></div>
       <div class="hero-stat-divider"></div>
       <div><div class="hero-stat-num" id="statPapers">0</div><div class="hero-stat-label">精选论文</div></div>
     </div>
@@ -412,77 +421,135 @@
 
   <div class="tldr" id="tldrSection">
     <span class="tldr-label">TL;DR</span>
-    <span class="tldr-text" id="tldrContent">OpenAI发布Codex桌面版macOS多Agent并行编程平台；MiniMax-M2登顶开源LLM榜首230B MoE仅10B激活MIT协议Agent工具调用超GPT-5；Loop Engineering新范式崛起Claude Code之父+龙虾之父共推；腾讯AI秘密换船WorkBuddy月访问885万接棒元宝；工信部八部门AI+制造21项措施目标1000个工业智能体；上海10万台人形机器人进工厂四城AI补贴全面铺开。</span>
+    <span class="tldr-text" id="tldrContent">智谱AI开源GLM-5.2百万上下文模型，MIT许可证正面回应美国出口管制；科大讯飞星火X2-VL全国产算力训练，高考数学148/150；vLLM v0.20升级CUDA 13，50并发吞吐量达Ollama 5.9倍；中央网信办上线「涉AI应用乱象举报专区」14类违规问题可举报；GitHub Claude Skills生态爆发，8个相关项目同时登榜周榜。</span>
   </div>
 
-                                <div class="section-gap section-indigo" id="section-models">
-    <div class="section-head"><div class="section-line"></div><span class="section-label">大模型动态</span><span class="section-label-cn">Models</span></div>
-    <div class="feature-card"><div class="card-row"><div class="card-body">
-      <div class="card-tag" style="color:#6366f1;">HEADLINE</div>
-      <div class="card-title">OpenAI 发布 Codex 桌面版：多 Agent 并行编程平台，macOS 首发</div>
-      <div class="card-desc">OpenAI 推出 Codex macOS 桌面应用——定位为"Agent 指挥中心"。核心能力：将多个编程任务并行分派给 AI Agent，每个 Agent 可自主运行 30 分钟。引入"Skills"（工具集成脚本包）和"Automations"（后台定时任务）。Sam Altman 称其为"我们内部最受喜爱的产品"。面向 ChatGPT Plus/Pro/Business/Enterprise/Edu 用户，Windows 版和云端连续 Agent 在路线图中。</div>
-      <div class="card-meta"><span>VentureBeat</span><span>&#183;</span><span>近日</span><span>&#183;</span><span class="card-meta-link">产品发布</span></div>
-      <div style="margin-top:8px; font-size:9px; color:#a5b4fc;">💡 开发者影响：Codex Desktop 标志着 AI 编程从"助手"进入"Agent 指挥中心"时代</div>
-      <a href="https://venturebeat.com/orchestration/openai-launches-a-codex-desktop-app-for-macos-to-run-multiple-ai-coding" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
-    </div><div class="card-icon">&#9889;</div></div></div>
+    <div class="section-gap section-indigo" id="section-models">
+    <div class="section-head">
+      <div class="section-line"></div>
+      <span class="section-label">大模型动态</span>
+      <span class="section-label-cn">Models</span>
+    </div>
+
+    <div class="feature-card">
+      <div class="card-row">
+        <div class="card-body">
+          <div class="card-tag" style="color:#6366f1;">HEADLINE</div>
+          <div class="card-title">智谱 AI 开源 GLM-5.2：100 万 Token 上下文，MIT 许可证直击出口管制</div>
+          <div class="card-desc">6 月 13 日，智谱 AI 宣布将于 6 月 20 日正式开源 GLM-5.2，采用 MIT 许可证。最大亮点是 100 万 token 超长上下文窗口——目前开源模型中最大。此举被广泛视为对美国 AI 出口管制（迫使 Anthropic 封锁 Fable 5 / Mythos 5 海外访问）的直接战略回应。现场演示了生成复杂 SVG 图形、Three.js + Cannon.js 3D 游戏、浏览器内迷你电子表格等编程能力。定价方面，API 调用仅为国际同类产品的约 2%。</div>
+          <div class="card-meta"><span>Pandaily</span><span>&#183;</span><span>2天前</span><span>&#183;</span><span class="card-meta-link">多源报道</span><span>&#183;</span><a href="#" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
+          <div style="margin-top:8px; font-size:9px; color:#a5b4fc;">💡 开发者影响：MIT 许可证百万上下文开源模型，可在国产硬件上自由商用部署</div>
+        </div>
+        <div class="card-icon">&#9889;</div>
+      </div>
+    </div>
+
     <div class="sub-grid">
-      <div class="sub-card"><div class="sub-tag" style="color:#a5b4fc;">开源称王 · VentureBeat</div><div class="sub-title">MiniMax-M2 登顶开源 LLM 榜首：230B MoE 仅 10B 激活，MIT 协议</div><div class="sub-desc">MiniMax-M2 在 Artificial Analysis 智能指数上排名开源模型第一。230B MoE 仅 10B 激活参数，4 张 H100 即可运行。Agent 工具调用基准 τ²-Bench 77.2 超越 GPT-5。MIT 许可证，API 仅 $0.30/$1.20 每百万 Token。阿里和腾讯联合投资背景。</div><div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">VentureBeat · 近日</div><div style="margin-top:4px; font-size:8px; color:#a5b4fc;">💡 开发者影响：MIT 开源+4 张 H100 可跑+极致性价比=值得立即评估</div><a href="https://venturebeat.com/ai/minimax-m2-is-the-new-king-of-open-source-llms-especially-for-agentic-tool" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
-      <div class="sub-card"><div class="sub-tag" style="color:#a5b4fc;">编程新范式 · 36氪</div><div class="sub-title">Loop Engineering 崛起：Claude Code 之父+龙虾之父共推"循环工程"</div><div class="sub-desc">Claude Code 创始人 Boris Cherny 和 OpenClaw 之父 Peter Steinberger 共同推崇"循环工程"——从 Prompt 工程迈向设计 Agent 循环系统。核心是让 AI 在"执行→验证→修正→再执行"的闭环中自主迭代，而非人类持续干预。36氪评论：这可能是自 DevOps 以来最大的软件工程范式变迁。</div><div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">36氪 · 6月8日</div><div style="margin-top:4px; font-size:8px; color:#a5b4fc;">💡 开发者影响：设计 Agent Loop 正在取代编写 Prompt 成为 AI 时代的核心技能</div><a href="https://eu.36kr.com/zh/p/3844224911346184" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
-      <div class="sub-card"><div class="sub-tag" style="color:#a5b4fc;">腾讯换船 · 36氪</div><div class="sub-title">腾讯 AI 秘密"换船"：元宝失宠，WorkBuddy 月访问 885 万接棒</div><div class="sub-desc">36氪独家：腾讯 WorkBuddy 办公 Agent 月访问量达 885 万（环比+831%），已取代元宝成为腾讯最高优先级 AI 产品。标志着腾讯 AI 战略从"聊天助手"转向"办公 Agent"。WorkBuddy 深度整合企业微信、腾讯文档、腾讯会议，覆盖日程管理、会议纪要、文档协作等场景。</div><div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">36氪 · 6月12日</div><div style="margin-top:4px; font-size:8px; color:#a5b4fc;">💡 开发者影响：WorkBuddy 生态开放度将决定腾讯 Agent 平台的开发者吸引力</div><a href="https://www.36kr.com/p/3848757418251523" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#a5b4fc;">国产算力 · 全国产训练</div>
+        <div class="sub-title">科大讯飞星火 X2-VL：纯国产算力训练，高考数学 148/150</div>
+        <div class="sub-desc">6 月 11-13 日在无锡 2026 长三角机器人博览会上发布。采用自研 MoE 架构，100% 基于无锡「太湖星跃」国产算力平台训练，是当前唯一完全基于全国产算力训练的主流大模型。2026 高考数学全国 I 卷实测 148/150 分（由两位国家级数学名师阅卷），多学科图文题准确率接近 95%。</div>
+        <div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">证券时报 · 6月13日</div>
+        <div style="margin-top:4px; font-size:8px; color:#a5b4fc;">💡 开发者影响：国产算力训练路线验证可行，Inspire 生态开发者可优先适配</div>
+        <a href="#" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
+      </div>
     </div>
   </div>
   <div class="section-gap section-green" id="section-tools">
-    <div class="section-head"><div class="section-line"></div><span class="section-label">工具 & 部署</span><span class="section-label-cn">Tools & Deploy</span></div>
+    <div class="section-head">
+      <div class="section-line"></div>
+      <span class="section-label">工具 & 部署</span>
+      <span class="section-label-cn">Tools & Deploy</span>
+    </div>
+
     <div class="tool-row">
-      <div class="tool-card"><div class="tool-icon">&#128187;</div><div class="tool-name">Codex Desktop macOS</div><div class="tool-desc">多 Agent 并行编程+Skills 集成+30分钟自主运行。Altman称"最受喜爱内部产品"。Windows版开发中。</div><span class="tool-badge badge-new">macOS</span><a href="https://venturebeat.com/orchestration/openai-launches-a-codex-desktop-app-for-macos-to-run-multiple-ai-coding" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
-      <div class="tool-card"><div class="tool-icon">&#127942;</div><div class="tool-name">MiniMax-M2 MIT 开源</div><div class="tool-desc">230B MoE/10B active，4×H100 可跑。Agent 工具调用超 GPT-5。API $0.30/M input。</div><span class="tool-badge badge-new">MIT</span><a href="https://venturebeat.com/ai/minimax-m2-is-the-new-king-of-open-source-llms-especially-for-agentic-tool" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
-      <div class="tool-card"><div class="tool-icon">&#129302;</div><div class="tool-name">Loop Engineering</div><div class="tool-desc">Claude Code之父+龙虾之父共推新范式。AI在"执行→验证→修正"闭环中自主迭代。</div><span class="tool-badge badge-new">新范式</span><a href="https://eu.36kr.com/zh/p/3844224911346184" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
+      <div class="tool-card">
+        <div class="tool-icon">&#128640;</div>
+        <div class="tool-name">vLLM v0.20.0</div>
+        <div class="tool-desc">正式升级至 CUDA 13.0 + PyTorch 2.11，PagedAttention 持续优化。RTX 4090 实测 50 并发用户下吞吐量达 Ollama 5.9 倍，p99 延迟仅 2.8 秒。支持 AWQ/GPTQ/FP8 量化，OpenAI 兼容 API 服务。每两周一个小版本，已成为 LLM 推理的事实标准引擎。</div>
+        <span class="tool-badge badge-update">更新</span>
+        <a href="#" class="read-original" target="_blank" rel="noopener" style="display:block;">阅读原文 <span class="read-original-arrow">→</span></a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">&#127942;</div>
+        <div class="tool-name">Claude Skills 生态爆发</div>
+        <div class="tool-desc">6 月第 24 周 GitHub Trending 榜上至少 8 个 .claude/skills 相关项目同时上榜：mattpocock/skills（月+48K stars）、addyosmani/agent-skills（周+9.3K stars）、Leonxlnx/taste-skill（月+26K stars）。Skills 模块化正成为 AI 编码新范式——不再比模型大小，比谁能编排更多 Skills。</div>
+        <span class="tool-badge badge-new">新范式</span>
+        <a href="#" class="read-original" target="_blank" rel="noopener" style="display:block;">阅读原文 <span class="read-original-arrow">→</span></a>
+      </div>
     </div>
   </div>
   <div class="section-gap section-amber" id="section-policy">
-    <div class="section-head"><div class="section-line"></div><span class="section-label">政策 & 合规</span><span class="section-label-cn">Policy & Compliance</span></div>
+    <div class="section-head">
+      <div class="section-line"></div>
+      <span class="section-label">政策 & 合规</span>
+      <span class="section-label-cn">Policy & Compliance</span>
+    </div>
+
     <div class="sub-grid">
-      <div class="sub-card"><div class="sub-tag" style="color:#fcd34d;">工信部八部门 · 1月</div><div class="sub-title">"AI+制造"21项措施：1000 个工业智能体 + 500 个典型场景</div><div class="sub-desc">工信部等八部门联合印发《"人工智能+制造"专项行动实施意见》，21 项措施覆盖算力、模型、数据、应用、安全全链条。量化目标：3-5 个通用大模型在制造业深度应用、1000 个工业智能体、500 个典型场景、培育 2-3 家全球生态型企业。</div><div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">人民网 · 1月9日</div><div style="margin-top:4px; font-size:8px; color:#fcd34d;">💡 开发者影响：1000 个工业智能体是明确的市场信号，制造业 AI 需求即将爆发</div><a href="http://finance.people.com.cn/n1/2026/0109/c1004-40641726.html" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
-      <div class="sub-card"><div class="sub-tag" style="color:#fcd34d;">地方落地 · 人民网</div><div class="sub-title">上海：10万台人形机器人进工厂 + 算力券模型券发放</div><div class="sub-desc">上海"模塑申城"工程目标：十五五末推动 10 万台人形机器人进工厂。同期发放算力券、模型券、语料券降低企业AI使用成本。北京最高 3000 万元算力补贴+具身智能工厂 3000 万元奖励。杭州 2026 年培育 50 家"AI 工厂"。厦门最高 3000 万元 AI 产业奖励。</div><div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">人民网 · 5-7月</div><div style="margin-top:4px; font-size:8px; color:#fcd34d;">💡 开发者影响：算力券+模型券降低创业成本，北京/上海/杭州/厦门四城竞争态势</div><a href="http://sh.people.com.cn/n2/2026/0611/c134768-41607234.html" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#fcd34d;">监管升级 · 6月12日</div>
+        <div class="sub-title">中央网信办上线「涉 AI 应用乱象举报专区」，14 类问题可举报</div>
+        <div class="sub-desc">6 月 12 日，中央网信办举报中心正式开设「涉 AI 应用乱象举报专区」，配合「清朗·整治 AI 应用乱象」专项行动。受理范围涵盖 14 类问题：未备案登记、语料安全、数据投毒、生成标识不到位、AI「魔改」经典、虚假信息、AI 水军等。举报渠道包括 12377 热线、www.12377.cn 网站及微信公众号「全国网络举报」。此举标志着 AI 监管从政策制定进入公众参与监督阶段。</div>
+        <div style="margin-top:6px; font-size:8px; color:var(--text-tertiary);">新华网 / 人民网 · 6月12日</div>
+        <div style="margin-top:4px; font-size:8px; color:#fcd34d;">💡 开发者影响：上线前务必完成备案登记，公众举报渠道已全面开启</div>
+        <a href="#" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
+      </div>
     </div>
   </div>
-  <div class="section-gap section-purple" id="section-paper">
-    <div class="section-head"><div class="section-line"></div><span class="section-label">论文速递</span><span class="section-label-cn">Paper Spotlight</span></div>
-    <div class="paper-spotlight"><div class="paper-header"><span class="paper-label">&#128218; 本周精选 · MIT License</span></div>
-      <div class="paper-title">MiniMax-M2：MoE 架构在 Agent 工具调用中的极致效率</div>
-      <div class="paper-abstract">MiniMax-M2 证明了稀疏 MoE 架构（230B/10B）在 Agent 工具调用场景可以同时实现 SOTA 性能和极致性价比。τ²-Bench 77.2 超越 GPT-5，API 成本仅为 GPT-5 的约 5%。MIT 开源许可证使企业可自由商用和定制，4 张 H100 的运行门槛大幅降低了 Agent 部署的硬件门槛。</div>
-      <div class="paper-meta">MiniMax · VentureBeat 报道 · 开源模型榜第一</div><div style="margin-top:6px; font-size:8px; color:#c4b5fd;">💡 开发者影响：MIT 协议+4 卡部署+超 GPT-5 Agent 能力=值得立即评估的亮点模型</div></div>
-  </div>
   <div class="section-gap section-cyan" id="section-cases">
-    <div class="section-head"><div class="section-line"></div><span class="section-label">应用落地</span><span class="section-label-cn">Real-World AI</span></div>
+    <div class="section-head">
+      <div class="section-line"></div>
+      <span class="section-label">应用落地</span>
+      <span class="section-label-cn">Real-World AI</span>
+    </div>
+
     <div class="dual-cards">
-      <div class="rank-card"><div class="rank-label" style="color:#67e8f9;">&#127981; 产业落地 · 36氪</div><div style="font-size:14px; font-weight:500; color:var(--text-primary); margin-bottom:6px;">腾讯 WorkBuddy 月访问 885 万：从聊天助手到办公 Agent 的战略换船</div><div style="font-size:10px; color:var(--text-secondary); line-height:1.5; margin-bottom:8px;">36氪独家披露腾讯 AI 战略转向：WorkBuddy 办公 Agent 月访问量 885 万（环比暴增 831%），取代元宝成为最高优先级产品。深度整合企业微信、腾讯文档、腾讯会议，从"聊天"走向"办事"。</div><div style="font-size:8px; color:var(--text-tertiary);">36氪 · 6月12日</div><a href="https://www.36kr.com/p/3848757418251523" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
-      <div class="rank-card"><div class="rank-label" style="color:#67e8f9;">&#127891; 新范式 · 36氪</div><div style="font-size:14px; font-weight:500; color:var(--text-primary); margin-bottom:6px;">Loop Engineering：自 DevOps 以来最大的软件工程范式变迁</div><div style="font-size:10px; color:var(--text-secondary); line-height:1.5; margin-bottom:8px;">Claude Code 和 Codex 都在推动"循环工程"——AI 在"执行→验证→修正→再执行"闭环中自主迭代。编写 Prompt 正在被设计 Agent Loop 取代。这不仅是技术变迁，更是开发者思维方式的根本转变。</div><div style="font-size:8px; color:var(--text-tertiary);">36氪 · 6月8日</div><a href="https://eu.36kr.com/zh/p/3844224911346184" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
+      <div class="rank-card">
+        <div class="rank-label" style="color:#67e8f9;">&#127981; 企业级 Agent 平台</div>
+        <div style="font-size:14px; font-weight:500; color:var(--text-primary); margin-bottom:6px;">腾讯 WorkBuddy 企业版发布：三一重工、中联重科、茶颜悦色已落地</div>
+        <div style="font-size:10px; color:var(--text-secondary); line-height:1.5; margin-bottom:8px;">腾讯云发布 WorkBuddy 企业版，提出「专家→助理→团队」三层架构，让 AI 从 8 小时工具进化为 7×24 数字员工。三一重工用于无人矿卡远程操控与 AI 编程提效，中联重科用于工程图纸识别与文档检索，茶颜悦色打造 AI 面试与门店运营决策平台。SkillHub 生态已收录 7.7 万+ Skills，两月下载量超 3000 万。同期，销售易 NeoAgent 2.0 面向湖南千亿级制造业集群提供智能 CRM。</div>
+        <div style="font-size:8px; color:var(--text-tertiary);">IT之家 · 6月12日</div>
+        <div style="margin-top:4px; font-size:8px; color:#67e8f9;">💡 开发者影响：企业 Agent 从 Copilot 走向数字员工，Skill 模块化是入场券</div>
+        <a href="#" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
+      </div>
     </div>
   </div>
   <div class="section-gap section-amber" id="section-oss">
-    <div class="section-head"><div class="section-line"></div><span class="section-label">开源热度</span><span class="section-label-cn">Open Source Pulse</span></div>
-    <div class="dual-cards">
-      <div class="rank-card"><div class="rank-label" style="color:#fcd34d;">&#128200; GitHub Trending — AI Top 5（6月上半旬）</div>
-        <div class="rank-row"><span class="rank-num">1</span><span class="rank-name">mvanhorn/last30days-skill</span><span class="rank-stat rank-up">+12K/周</span></div><div class="rank-row"><span class="rank-num">2</span><span class="rank-name">chopratejas/headroom</span><span class="rank-stat rank-up">+10K/周</span></div><div class="rank-row"><span class="rank-num">3</span><span class="rank-name">harry0703/MoneyPrinterTurbo</span><span class="rank-stat rank-up">+6.9K/周</span></div><div class="rank-row"><span class="rank-num">4</span><span class="rank-name">microsoft/markitdown</span><span class="rank-stat rank-up">+6.3K/周</span></div><div class="rank-row"><span class="rank-num">5</span><span class="rank-name">NVIDIA/SkillSpector</span><span class="rank-stat rank-up">+3.6K/周</span></div>
-        <a href="https://github.com/trending?since=weekly" class="read-original" target="_blank" rel="noopener">查看完整榜单 <span class="read-original-arrow">→</span></a></div>
-      <div class="rank-card"><div class="rank-label" style="color:#fcd34d;">&#128200; 趋势解读（cnblogs）</div><div style="font-size:10px; color:var(--text-secondary); line-height:1.6;"><p><strong>Skills 成为 2026 最重要的技术原语</strong> 类似 npm 的 Agent 技能市场生态已初步形成。开发者注意力从"哪个模型最强"转向"哪个框架最工程化"。</p><p><strong>Loop Engineering 范式兴起</strong> AI 编程从"写 Prompt"进化为"设计 Agent 循环系统"。</p><p><strong>TypeScript+Python 统治</strong> 占 AI 工具链绝对主力。</p><p style="margin-top:6px; color:#fcd34d;">💡 Skills 生态+Loop Engineering+多 Agent 协作=2026 开源三大方向</p></div></div>
+    <div class="section-head">
+      <div class="section-line"></div>
+      <span class="section-label">开源热度</span>
+      <span class="section-label-cn">Open Source Pulse</span>
     </div>
-  </div>
-  <div class="section-gap section-cyan" id="section-overseas">
-    <div class="section-head"><div class="section-line"></div><span class="section-label">海外参考</span><span class="section-label-cn">Global Brief</span></div>
-    <div class="sub-grid">
-      <div class="sub-card"><div class="sub-tag" style="color:#67e8f9;">🌏 Codex · VentureBeat</div><div class="sub-title">OpenAI Codex Desktop 发布：多 Agent 并行编程 macOS 首发</div><div class="sub-desc">Codex 桌面版定位"Agent 指挥中心"，多 Agent 并行+30 分钟自主运行+Skills 集成。Altman 称"最受喜爱内部产品"。Windows 版开发中。</div><div style="margin-top:4px; font-size:8px; color:#67e8f9;">💡 AI 编程从"助手"升级为"Agent 指挥中心"</div><a href="https://venturebeat.com/orchestration/openai-launches-a-codex-desktop-app-for-macos-to-run-multiple-ai-coding" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
-      <div class="sub-card"><div class="sub-tag" style="color:#67e8f9;">💬 MiniMax · VentureBeat</div><div class="sub-title">MiniMax-M2 登顶开源榜首：MIT 协议+Agent 工具调用超 GPT-5</div><div class="sub-desc">230B MoE/10B active，4×H100 可跑，API 仅 GPT-5 的 5%。中国开源模型在 Agent 赛道上全面追平甚至超越美国前沿闭源模型。</div><div style="margin-top:4px; font-size:8px; color:#67e8f9;">💡 中国开源模型在 Agent 基准上首次超越 GPT-5</div><a href="https://venturebeat.com/ai/minimax-m2-is-the-new-king-of-open-source-llms-especially-for-agentic-tool" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
-      <div class="sub-card"><div class="sub-tag" style="color:#67e8f9;">🏛️ 中国制造 · 人民网</div><div class="sub-title">工信部"AI+制造"21项措施 + 四城 AI 补贴政策全面铺开</div><div class="sub-desc">1000 个工业智能体+500 个典型场景+北京/上海/杭州/厦门四城最高 3000 万元补贴。中国 AI 产业政策从"鼓励"进入"量化目标+现金激励"阶段。</div><div style="margin-top:4px; font-size:8px; color:#67e8f9;">💡 四城 AI 产业补贴政策竞争态势明确</div><a href="http://finance.people.com.cn/n1/2026/0109/c1004-40641726.html" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a></div>
+
+    <div class="dual-cards">
+      <div class="rank-card">
+        <div class="rank-label" style="color:#fcd34d;">&#128200; GitHub Trending — AI 领域 Top 5（2026 W24）</div>
+        <div class="rank-row"><span class="rank-num">1</span><span class="rank-name">mvanhorn/last30days-skill</span><span class="rank-stat rank-up">+12K stars/周</span></div>
+        <div class="rank-row"><span class="rank-num">2</span><span class="rank-name">chopratejas/headroom</span><span class="rank-stat rank-up">+10.6K stars/周</span></div>
+        <div class="rank-row"><span class="rank-num">3</span><span class="rank-name">addyosmani/agent-skills</span><span class="rank-stat rank-up">+9.3K stars/周</span></div>
+        <div class="rank-row"><span class="rank-num">4</span><span class="rank-name">apple/container</span><span class="rank-stat rank-up">+9.1K stars/周</span></div>
+        <div class="rank-row"><span class="rank-num">5</span><span class="rank-name">Leonxlnx/taste-skill</span><span class="rank-stat rank-up">+8K stars/周</span></div>
+        <a href="https://github.com/trending?since=weekly" class="read-original" target="_blank" rel="noopener">查看完整榜单 <span class="read-original-arrow">→</span></a>
+      </div>
+      <div class="rank-card">
+        <div class="rank-label" style="color:#fcd34d;">&#128200; 趋势解读</div>
+        <div style="font-size:10px; color:var(--text-secondary); line-height:1.6;">
+          <p><strong>Claude Skills 生态爆发</strong> 6 月至少 8 个 .claude/skills 项目同时登榜，Skills 模块化正成为 AI 编码新范式。</p>
+          <p><strong>Token 压缩赛道</strong> headroom 宣称可节省 60-95% Token 消耗，反映 Agent 工作流对成本优化的刚性需求。</p>
+          <p><strong>Agent 安全标配</strong> NVIDIA SkillSpector（+3.6K stars）、微软 MXC 沙箱相继开源，Agent 安全从可选变为标配。</p>
+          <p><strong>Mac 本地化</strong> apple/container 首次开源 Mac 端轻量 Linux 容器，本地 AI 开发工具链持续完善。</p>
+          <p style="margin-top:6px; color:#fcd34d;">💡 Skills 模块化 + Token 压缩 + Agent 安全构成 6 月三大技术主线</p>
+        </div>
+      </div>
     </div>
   </div>
 <footer class="footer">
     <div class="footer-icon">&#9889;</div>
-    <p class="footer-quote" id="footerQuote">"AI 不会取代人类，但会用 AI 的人类会取代不会用 AI 的人类。"</p>
-    <p class="footer-author" id="footerAuthor">李开复</p>
+    <p class="footer-quote" id="footerQuote">"The best way to predict the future is to invent it."</p>
+    <p class="footer-author" id="footerAuthor">Alan Kay</p>
     <p style="margin-top:12px; font-size:10px; color:var(--text-tertiary);">
-      <a href="subscribe.html" style="color:var(--text-tertiary); text-decoration:none;" title="RSS 订阅">📡 RSS 订阅</a>
+      <a href="feed.xml" style="color:var(--text-tertiary); text-decoration:none;" title="RSS 订阅">📡 RSS 订阅</a>
     </p>
   </footer>
 </div>
@@ -493,87 +560,19 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js');
 }
 
-// Cosmic starfield + shooting stars
 (function() {
-  const c = document.getElementById('cosmicCanvas');
-  const ctx = c.getContext('2d');
-  let stars = [], shooters = [];
-  const STAR_COUNT = 220;
-
-  function resize() {
-    const ow = c.width, oh = c.height;
-    c.width = window.innerWidth; c.height = window.innerHeight;
-    if (ow && ow > 0) {
-      const sx = c.width / ow, sy = c.height / oh;
-      for (const s of stars) { s.x *= sx; s.y *= sy; }
-    }
+  const pc = document.getElementById('particles');
+  for (let i = 0; i < 40; i++) {
+    const p = document.createElement('div');
+    p.classList.add('particle');
+    p.style.left = Math.random() * 100 + '%';
+    p.style.top = Math.random() * 100 + '%';
+    const s = 1 + Math.random() * 2;
+    p.style.width = s + 'px'; p.style.height = s + 'px';
+    p.style.animationDuration = (12 + Math.random() * 20) + 's';
+    p.style.animationDelay = Math.random() * 15 + 's';
+    pc.appendChild(p);
   }
-  resize(); window.addEventListener('resize', resize);
-
-  // Init stars
-  for (let i = 0; i < STAR_COUNT; i++) {
-    stars.push({
-      x: Math.random() * c.width, y: Math.random() * c.height,
-      r: Math.random() * 1.8 + 0.3,
-      twinkle: Math.random() * Math.PI * 2,
-      speed: 0.003 + Math.random() * 0.015,
-      hue: [220, 260, 190, 330, 40][Math.floor(Math.random() * 5)]
-    });
-  }
-
-  function spawnShooter() {
-    shooters.push({
-      x: Math.random() * c.width,
-      y: Math.random() * c.height * 0.5,
-      len: 80 + Math.random() * 150,
-      angle: 0.3 + Math.random() * 0.5,
-      life: 1, decay: 0.008 + Math.random() * 0.02,
-      hue: 200 + Math.random() * 60
-    });
-  }
-
-  function animate(ts) {
-    ctx.clearRect(0, 0, c.width, c.height);
-
-    // Stars
-    for (const s of stars) {
-      s.twinkle += s.speed;
-      const alpha = 0.35 + 0.35 * Math.sin(s.twinkle);
-      ctx.beginPath();
-      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-      ctx.fillStyle = `hsla(${s.hue},60%,85%,${alpha})`;
-      ctx.fill();
-      // Glow for larger stars
-      if (s.r > 1.2) {
-        ctx.beginPath();
-        ctx.arc(s.x, s.y, s.r * 2.5, 0, Math.PI * 2);
-        ctx.fillStyle = `hsla(${s.hue},50%,70%,${alpha * 0.15})`;
-        ctx.fill();
-      }
-    }
-
-    // Shooting stars
-    if (Math.random() < 0.008) spawnShooter();
-    for (let i = shooters.length - 1; i >= 0; i--) {
-      const sh = shooters[i];
-      sh.life -= sh.decay;
-      if (sh.life <= 0) { shooters.splice(i, 1); continue; }
-      const x2 = sh.x - Math.cos(sh.angle) * sh.len;
-      const y2 = sh.y - Math.sin(sh.angle) * sh.len;
-      const grad = ctx.createLinearGradient(sh.x, sh.y, x2, y2);
-      grad.addColorStop(0, `hsla(${sh.hue},80%,90%,${sh.life * 0.9})`);
-      grad.addColorStop(1, `hsla(${sh.hue},80%,90%,0)`);
-      ctx.beginPath();
-      ctx.moveTo(sh.x, sh.y);
-      ctx.lineTo(x2, y2);
-      ctx.strokeStyle = grad;
-      ctx.lineWidth = 1.5;
-      ctx.stroke();
-    }
-
-    requestAnimationFrame(animate);
-  }
-  requestAnimationFrame(animate);
 })();
 
 (function() {
@@ -607,7 +606,6 @@ if ('serviceWorker' in navigator) {
   const monthLabel = document.getElementById('calMonth');
   let calYear = new Date().getFullYear();
   let calMonth = new Date().getMonth() + 1;
-  // Hardcoded archive index — updated by /ai-digest on each generation
   const archiveMap = {
     '2026-06-14': ['morning'],
     '2026-06-15': ['noon','evening'],
@@ -618,8 +616,7 @@ if ('serviceWorker' in navigator) {
   // Fix: mark dates with 3 editions as 'full' for green highlight
   (function(){for(var d in archiveMap){if(archiveMap[d].length>=3)archiveMap[d]='full';}})();
 
-  function loadArchive(cb) { cb(); } // instant — no API call
-
+  function loadArchive(cb) { cb(); }
   function renderCalendar() {
     const daysInMonth = new Date(calYear, calMonth, 0).getDate();
     const firstDay = new Date(calYear, calMonth - 1, 1).getDay();
@@ -642,8 +639,7 @@ if ('serviceWorker' in navigator) {
       if (entry) { cls += ' has-content'; cls += (entry === 'full') ? ' full' : ' partial'; }
       let linksHtml = '';
       if (entry) {
-        const allEditions = ['morning','noon','evening'];
-        const editions = entry === 'full' ? allEditions : (Array.isArray(entry) ? allEditions.filter(function(e){return entry.indexOf(e)>=0;}) : allEditions);
+        const editions = entry === 'full' ? ['morning','noon','evening'] : (Array.isArray(entry) ? entry : ['morning']);
         linksHtml = '<div class="calendar-day-links">' + editions.map(function(e) {
           const label = e === 'morning' ? '&#127749; 早间' : e === 'noon' ? '&#9728; 午间' : '&#127769; 晚间';
           return '<a class="calendar-day-link" href="archive/' + dateStr + '-' + e + '.html">' + label + '</a>';
