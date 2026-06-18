@@ -269,7 +269,7 @@ Claude Code 按规范执行            ← WebSearch → 去重评分 → 生成
 
 除上述内容外，index.html 还需包含：
 - 日历月导航入口（「往期回顾」按钮 → 下拉/弹窗展示当月日历 + 各日期版次链接）
-- 日历数据从 `archive/` 目录文件列表动态生成（读取文件名解析日期和版次）
+- 日历数据使用 JS 硬编码 `archiveMap` 对象（不再依赖 GitHub API），每次 `/ai-digest` 生成 HTML 时更新该对象：在 `const archiveMap = {` 后追加新日期的条目，格式 `'YYYY-MM-DD': ['morning']`，若该日期已有条目则追加 edition 到数组。**同步更新所有 archive/*.html 文件中的 archiveMap。**
 
 ### 错误处理
 

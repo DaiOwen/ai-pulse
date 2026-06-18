@@ -607,32 +607,18 @@ if ('serviceWorker' in navigator) {
   const monthLabel = document.getElementById('calMonth');
   let calYear = new Date().getFullYear();
   let calMonth = new Date().getMonth() + 1;
-  const archiveMap = {};
-  let archiveLoaded = false;
+  // Hardcoded archive index — updated by /ai-digest on each generation
+  const archiveMap = {
+    '2026-06-14': ['morning'],
+    '2026-06-15': ['noon','evening'],
+    '2026-06-16': ['morning','noon','evening'],
+    '2026-06-17': ['morning'],
+    '2026-06-18': ['morning']
+  };
+  // Fix: mark dates with 3 editions as 'full' for green highlight
+  (function(){for(var d in archiveMap){if(archiveMap[d].length>=3)archiveMap[d]='full';}})();
 
-  function loadArchive(cb) {
-    if (archiveLoaded) { cb(); return; }
-    fetch('https://api.github.com/repos/DaiOwen/ai-pulse/contents/archive')
-      .then(r => r.json())
-      .then(data => {
-        archiveLoaded = true;
-        if (!Array.isArray(data)) { cb(); return; }
-        data.forEach(f => {
-          const m = f.name.match(/^(\d{4}-\d{2}-\d{2})-(morning|noon|evening)\.html$/);
-          if (!m) return;
-          const [, date, ed] = m;
-          if (archiveMap[date] === 'full') return;
-          if (Array.isArray(archiveMap[date])) {
-            archiveMap[date].push(ed);
-            if (archiveMap[date].length >= 3) archiveMap[date] = 'full';
-          } else {
-            archiveMap[date] = [ed];
-          }
-        });
-        cb();
-      })
-      .catch(() => { archiveLoaded = true; cb(); });
-  }
+  function loadArchive(cb) { cb(); } // instant — no API call
 
   function renderCalendar() {
     const daysInMonth = new Date(calYear, calMonth, 0).getDate();
@@ -656,7 +642,8 @@ if ('serviceWorker' in navigator) {
       if (entry) { cls += ' has-content'; cls += (entry === 'full') ? ' full' : ' partial'; }
       let linksHtml = '';
       if (entry) {
-        const editions = entry === 'full' ? ['morning','noon','evening'] : (Array.isArray(entry) ? entry : ['morning']);
+        const allEditions = ['morning','noon','evening'];
+        const editions = entry === 'full' ? allEditions : (Array.isArray(entry) ? allEditions.filter(function(e){return entry.indexOf(e)>=0;}) : allEditions);
         linksHtml = '<div class="calendar-day-links">' + editions.map(function(e) {
           const label = e === 'morning' ? '&#127749; 早间' : e === 'noon' ? '&#9728; 午间' : '&#127769; 晚间';
           return '<a class="calendar-day-link" href="archive/' + dateStr + '-' + e + '.html">' + label + '</a>';
