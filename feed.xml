@@ -6,8 +6,47 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 23 Jun 2026 08:30:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>☀️ 午间版 — 2026-06-23（搜索服务不可用，内容基于早间版增量更新）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-23-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-06-23-noon.html</guid>
+      <pubDate>Tue, 23 Jun 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3>
+        <ul>
+          <li>智谱 GLM-5.2 全面开放：753B 参数 MIT 开源，Code Arena 第二，首创 IndexShare（36氪/stcn）</li>
+          <li>DeepSeek V3.2 / V3.2-Speciale MIT 开源：685B 参数对标 GPT-5（VentureBeat）</li>
+          <li>Meta 放弃 Llama 开源路线，发布闭源推理模型 Muse Spark（VentureBeat）</li>
+          <li>MiniMax M3 发布：自研 MSA 稀疏注意力架构，1M 上下文（stcn.com）</li>
+          <li>Black Forest Labs 开源 FLUX.2 [klein]，亚秒级 AI 图像生成（VentureBeat）</li>
+        </ul>
+        <h3>🛠️ 工具 &amp; 部署</h3>
+        <ul>
+          <li>DeepSeek-TUI 屠榜 GitHub（36氪）</li>
+          <li>清华 PilotDeck 智能体 OS 开源（36氪）</li>
+          <li>小米 MiMo Code 开源编程助手（stcn）</li>
+          <li>Cohere North Mini Code：30B MoE 开源代码 Agent（VentureBeat）</li>
+        </ul>
+        <h3>📋 政策 &amp; 合规</h3>
+        <ul>
+          <li>三部门联合印发《智能体规范应用与创新发展实施意见》（人民网）</li>
+          <li>美国 AI 监管「内战」：州级立法爆炸式增长（MIT Tech Review）</li>
+        </ul>
+        <h3>💡 应用落地</h3>
+        <ul>
+          <li>Anthropic Claude Cowork 发布：从编程到企业全场景 Agent（VentureBeat）</li>
+          <li>ServiceNow 90% IT 请求实现自主处理（VentureBeat）</li>
+        </ul>
+        <h3>⭐ 开源热度</h3>
+        <ul>
+          <li>headroom +13k · last30days-skill +12k · taste-skill +8.7k · Agent-Reach +8.3k · PilotDeck +7.5k</li>
+        </ul>
+        <p><a href="https://daiowen.github.io/ai-pulse/archive/2026-06-23-noon.html">查看完整页面 →</a></p>
+      ]]></description>
+    </item>
 
     <item>
       <title>🌅 早间版 — 2026-06-23</title>
