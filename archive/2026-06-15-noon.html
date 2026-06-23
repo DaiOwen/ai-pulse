@@ -619,50 +619,18 @@ if ('serviceWorker' in navigator) {
         "morning"
     ],
     "2026-06-18": [
+        "morning",
+        "noon"
+    ],
+    "2026-06-22": [
+        "morning"
+    ],
+    "2026-06-23": [
         "morning"
     ]
 };
   // Fix: mark dates with 3 editions as 'full' for green highlight
   (function(){for(var d in archiveMap){if(archiveMap[d].length>=3)archiveMap[d]='full';}})();
-
-  function loadArchive(cb) { cb(); }
-  function renderCalendar() {
-    const daysInMonth = new Date(calYear, calMonth, 0).getDate();
-    const firstDay = new Date(calYear, calMonth - 1, 1).getDay();
-    const adjustedFirst = firstDay === 0 ? 6 : firstDay - 1;
-    const today = new Date();
-    const dayHeaders = ['一','二','三','四','五','六','日'];
-    monthLabel.textContent = calYear + '年' + calMonth + '月';
-    let html = dayHeaders.map(function(h) { return '<div class="calendar-day-header">' + h + '</div>'; }).join('');
-    for (let i = 0; i < adjustedFirst; i++) {
-      html += '<div class="calendar-day other-month"></div>';
-    }
-    for (let d = 1; d <= daysInMonth; d++) {
-      const mm = String(calMonth).padStart(2, '0');
-      const dd = String(d).padStart(2, '0');
-      const dateStr = calYear + '-' + mm + '-' + dd;
-      const isToday = d === today.getDate() && calMonth === today.getMonth() + 1 && calYear === today.getFullYear();
-      const entry = archiveMap[dateStr];
-      let cls = 'calendar-day';
-      if (isToday) cls += ' today';
-      if (entry) { cls += ' has-content'; cls += (entry === 'full') ? ' full' : ' partial'; }
-      let linksHtml = '';
-      if (entry) {
-        const editions = entry === 'full' ? ['morning','noon','evening'] : (Array.isArray(entry) ? entry : ['morning']);
-        linksHtml = '<div class="calendar-day-links">' + editions.map(function(e) {
-          const label = e === 'morning' ? '&#127749; 早间' : e === 'noon' ? '&#9728; 午间' : '&#127769; 晚间';
-          return '<a class="calendar-day-link" href="/ai-pulse/archive/' + dateStr + '-' + e + '.html">' + label + '</a>';
-        }).join('') + '</div>';
-      }
-      html += '<div class="' + cls + '">' + d + linksHtml + '</div>';
-    }
-    grid.innerHTML = html;
-  }
-
-  document.getElementById('btnArchive').addEventListener('click', function() {
-    calYear = new Date().getFullYear();
-    calMonth = new Date().getMonth() + 1;
-    loadArchive(function() { renderCalendar(); });
     overlay.classList.add('active');
   });
   document.getElementById('calPrev').addEventListener('click', function() { calMonth--; if(calMonth<1){calMonth=12;calYear--;} loadArchive(function() { renderCalendar(); }); });
