@@ -499,14 +499,14 @@ if ('serviceWorker' in navigator) {
 
 // Cosmic starfield + shooting stars
   // Calendar
-  const archiveMap = {
+    const archiveMap = {
     "2026-06-14": ["morning"],
     "2026-06-15": ["noon", "evening"],
     "2026-06-16": "full",
     "2026-06-17": ["morning"],
     "2026-06-18": ["morning", "noon"],
     "2026-06-22": ["morning"],
-    "2026-06-23": ["morning"],
+    "2026-06-23": ["morning", "noon"],
     "2026-06-24": ["morning"]
   };
   (function(){for(var d in archiveMap){if(Array.isArray(archiveMap[d])&&archiveMap[d].length>=3)archiveMap[d]='full';}})();
