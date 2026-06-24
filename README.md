@@ -4,7 +4,7 @@
   <img src="assets/favicon.svg" width="64" alt="AI Pulse 标志" />
 </p>
 
-<h1 align="center">AI Pulse · AI 热点速览</h1>
+<h1 align="center">AI 脉搏 · AI 热点速览</h1>
 
 <p align="center">
   <em>面向 AI 开发者的每日新闻智能聚合。零依赖，Claude Code 原生驱动。</em>
@@ -17,11 +17,12 @@
   <img src="https://img.shields.io/github/contributors/DaiOwen/ai-pulse?color=orange" alt="贡献者">
   <img src="https://img.shields.io/badge/PRs-welcome-orange" alt="欢迎 PR">
   <a href="https://daiowen.github.io/ai-pulse/"><img src="https://img.shields.io/badge/demo-live%20preview-6366f1?style=flat" alt="Live Demo"></a>
+  <img src="https://img.shields.io/badge/edition-3x%20daily-22c55e" alt="每日三版">
 </p>
 
 ---
 
-**AI Pulse** 是一款面向 AI 开发者的每日新闻智能聚合页，基于 [Claude Code](https://claude.ai) 自动驱动。每天早中晚三次自动采集 30+ 平台和 11 位优秀 AI 博主，覆盖聚合平台、深度媒体、社区论坛、前沿研究、企业官方等七大维度，智能去重、交叉验证、分类、生成精美的 HTML 页面。无需 npm、无需 Python、无需任何外部服务，仅需 Claude Code 和一个终端。
+**AI 脉搏** 是一款面向中国 AI 开发者的每日新闻智能聚合页，基于 [Claude Code](https://claude.ai) 自动驱动。每天早中晚三次自动采集 30+ 平台和 11 位优秀 AI 博主，覆盖聚合平台、深度媒体、社区论坛、前沿研究、企业官方等七大维度，智能去重、交叉验证、分类、生成精美的 HTML 页面。无需 npm、无需 Python、无需任何外部服务，仅需 Claude Code 和一个终端。
 
 ## 🔗 在线演示
 
@@ -29,36 +30,41 @@
 
 无需安装，直接浏览器打开即可查看最新一期 AI 热点速览。
 
-> 💡 **只看新闻不想折腾？** 直接访问上面的在线演示链接就行了——每天三次自动更新，什么都不用装。如果想订阅，可以用 [RSS 阅读器](https://daiowen.github.io/ai-pulse/subscribe.html) 接收每日推送。
+> 💡 **只看新闻不想折腾？** 直接访问上面的在线演示链接就行了——每天三次自动更新，什么都不用装。如果想订阅，可以用 [RSS 阅读器](https://daiowen.github.io/ai-pulse/feed.xml) 接收每日推送。
 
-## 功能特色
+## ✨ 功能特色
 
-- 🤖 **7 大内容板块** — 大模型动态、工具与部署、政策合规、论文速递、应用落地、开源热度、海外参考
-- ⚡ **四级信息深度** — TL;DR(3秒) → 标题(10秒) → 摘要(30秒) → 原文全文
-- 🎨 **Apple 设计美学** — 暗色/亮色双主题 + 动态光球背景 + 毛玻璃卡片
-- 📱 **响应式布局** — 桌面端、平板、手机均流畅浏览
-- 📅 **日历归档导航** — 交互式日历查看历史各期
-- 🔍 **零依赖** — 纯 HTML/CSS/JS，无需构建工具或包管理器
-- 🇨🇳 **中国 AI 生态优先** — 国产模型动态优先，政策合规重点追踪
-- ⏰ **定时自动生成** — 每天 08:00 / 12:00 / 20:00 三次自动更新
-- 📡 **RSS 订阅** — 支持 RSS 阅读器订阅，每天自动推送最新一期
-- 📲 **PWA 支持** — 可添加到手机/桌面主屏幕，离线也能查看已缓存内容
-- 🩺 **一键诊断** — `/ai-digest status` 检查 Cron、权限、上次生成时间
+| 特色 | 说明 |
+|------|------|
+| 🤖 **7 大内容板块** | 大模型动态、工具与部署、政策合规、论文速递、应用落地、开源热度、海外参考 |
+| ⚡ **四级信息深度** | TL;DR(3秒) → 标题(10秒) → 摘要(30秒) → 原文全文 |
+| 🎨 **Apple 设计美学** | 暗色/亮色双主题 + 动态光球背景 + 毛玻璃卡片 + 网格线动画 |
+| 📱 **响应式布局** | 桌面端、平板、手机均流畅浏览 |
+| 📅 **日历归档导航** | 交互式日历查看历史各期，支持版次切换 |
+| 🔍 **零依赖** | 纯 HTML/CSS/JS，无需构建工具或包管理器 |
+| 🇨🇳 **中国 AI 生态优先** | 国产模型动态优先，政策合规重点追踪 |
+| ⏰ **定时自动生成** | 每天 08:00 / 12:00 / 20:00 三次自动更新 |
+| 📡 **RSS 订阅** | 支持 RSS 阅读器订阅，每天自动推送最新一期 |
+| 📲 **PWA 支持** | 可添加到手机/桌面主屏幕，离线也能查看已缓存内容 |
+| 🔗 **社交分享** | OG/Twitter Meta 标签，支持社交媒体分享预览 |
+| 🗺️ **Sitemap** | 自动生成 sitemap.xml，优化 SEO 爬虫索引 |
+| 🩺 **一键诊断** | `/ai-digest status` 检查 Cron、权限、上次生成时间 |
 
-## 快速开始
+## 🚀 快速开始
 
 > **前提条件：** 安装 [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) CLI 并完成首次登录（`claude login`）。
 
-**1. 克隆项目**
+### 1. 克隆项目
 
 ```bash
 git clone https://github.com/DaiOwen/ai-pulse.git
 cd ai-pulse
 ```
 
-**2. 启动 Claude Code 并生成第一期**
+### 2. 启动 Claude Code 并生成第一期
 
 在项目目录下启动 Claude Code 交互界面：
+
 ```bash
 claude
 ```
@@ -74,8 +80,10 @@ AI 将自动完成以下全流程：
 - 深度抓取 Top 文章全文（WebFetch）
 - 智能去重、评分、翻译、分类
 - 生成完整 HTML 保存到 `archive/` 和 `index.html`
+- 更新 `feed.xml` RSS 订阅源
+- 更新 `sitemap.xml` 站点地图
 
-**3. 打开生成的主页**
+### 3. 打开生成的主页
 
 ```bash
 open index.html    # macOS
@@ -88,41 +96,45 @@ start index.html   # Windows
 
 > 💡 **`/ai-digest` 是什么？** 它不是终端命令，而是 **Claude Code 斜杠命令**——只在 Claude Code 对话里有效。打个比方：`git clone` 在终端里跑，`/ai-digest morning` 在 Claude Code 聊天框里输入。项目根目录的 `CLAUDE.md` 就像一份"AI 操作手册"，Claude Code 读取后自动按指令执行——不需要你写任何代码。
 
-### 定时任务
+## ⏰ 定时任务
 
 首次手动运行后，自动注册三个定时任务：
 
 | 任务 | 时间 | 覆盖范围 |
 |------|------|----------|
-| 🌅 早间版 | 08:00 | 昨夜海外动态 + 国内早间新闻 |
+| 🌅 早间版 | 08:00 | 昨夜海外动态 + 国内早间新闻 + arXiv 论文 |
 | ☀️ 午间版 | 12:00 | 上午增量更新 |
-| 🌙 晚间版 | 20:00 | 全天汇总 + 开源数据 |
+| 🌙 晚间版 | 20:00 | 全天汇总 + 开源数据完整版 |
 
 > ⚠️ **重要前提：Cron 仅在 Claude Code 运行时触发。** 如果关闭终端或退出 Claude Code，定时任务不会执行。建议使用 `tmux` / `screen` 或保持一个终端窗口常开。错过某次生成可手动运行对应命令补生成。可通过 `/ai-digest status` 随时检查任务状态。
 
-### 手动命令
+## 🎮 手动命令
 
 | 命令 | 说明 |
 |------|------|
 | `/ai-digest now` | **即时更新**，自动选版次，不想等 Cron 时使用 |
-| `/ai-digest morning` | 生成早间版 |
+| `/ai-digest morning` | 生成早间版（含论文速递） |
 | `/ai-digest noon` | 生成午间版（增量） |
-| `/ai-digest evening` | 生成晚间版（全天汇总） |
+| `/ai-digest evening` | 生成晚间版（全天汇总 + 开源 Top10） |
 | `/ai-digest update` | 拉取上游最新代码，同步项目更新 |
 | `/ai-digest status` | 诊断项目状态，检查 Cron、权限、上次生成时间 |
 
-### 更新机制
+## 🔄 更新机制
 
-**在线演示（GitHub Pages）** — 全程自动化，无需人工干预：
+### 在线演示（GitHub Pages）
+
+全程自动化，无需人工干预：
 
 ```
 Cron 触发 (08:00/12:00/20:00)
-  → Claude Code 搜索采集 → 生成 HTML
+  → Claude Code 搜索采集 → 生成 HTML + RSS + Sitemap
   → git add & commit & push
   → GitHub Pages 自动部署（约 1-2 分钟后更新）
 ```
 
-**自部署用户** — 三种方式获取最新：
+### 自部署用户
+
+三种方式获取最新：
 
 | 方式 | 说明 |
 |------|------|
@@ -132,17 +144,17 @@ Cron 触发 (08:00/12:00/20:00)
 
 如果 fork 了仓库并希望自己的 GitHub Pages 也自动更新，只需在本地保持 Claude Code 运行（Cron 定时任务 + git push 自动完成）。详见 [CLAUDE.md](CLAUDE.md)。
 
-## 内容板块
+## 📰 内容板块
 
-| 板块 | 说明 |
-|------|------|
-| 🤖 大模型动态 | 国产优先 + 国际重大模型发布/更新 |
-| 🛠️ 工具 & 部署 | 框架更新、国产硬件适配、推理部署方案 |
-| 📋 政策 & 合规 | 网信办备案、AI 安全审查、行业标准 |
-| 📄 论文速递 | 每日精选一篇有落地价值的 arXiv 论文 |
-| 💡 应用落地 | 企业 AI 集成案例、最佳实践 |
-| ⭐ 开源热度 | GitHub/Gitee Stars 上升 Top 10 + 关注度 Top 10 |
-| 🌍 海外参考 | 精选 3 条影响国内的海外动态 |
+| 板块 | morning | noon | evening | 说明 |
+|------|:-------:|:----:|:-------:|------|
+| 🤖 大模型动态 | 4-5条 | 1-2条 | 5条 | 国产优先 + 国际重大模型发布/更新 |
+| 🛠️ 工具 & 部署 | 3-4条 | 1-2条 | 4条 | 框架更新、国产硬件适配、推理部署方案 |
+| 📋 政策 & 合规 | 1-2条 | 1条 | 2条 | 网信办备案、AI 安全审查、行业标准 |
+| 💡 应用落地 | 2条 | 1条 | 2条 | 企业 AI 集成案例、最佳实践 |
+| ⭐ 开源热度 | Top5 | Top5 | Top10 | GitHub/Gitee Stars 上升榜 |
+| 🌍 海外参考 | 3条 | — | 3条 | 精选影响国内的海外动态 |
+| 📄 论文速递 | 1篇 | — | — | 每日精选一篇有落地价值的 arXiv 论文 |
 
 ### 信源矩阵
 
@@ -151,16 +163,26 @@ Cron 触发 (08:00/12:00/20:00)
 | 维度 | 代表信源 |
 |------|---------|
 | 🎯 聚合监控 | RadarAI, AIHOT, AIbase, Digg AI |
-| 📰 深度媒体 | 36氪, 钛媒体, 机器之心, 量子位, 新智元, 极客公园, VentureBeat, The Verge |
+| 📰 深度媒体 | 36氪, 钛媒体, 机器之心, 量子位, 新智元, 极客公园, VentureBeat, The Verge, MIT Technology Review |
 | 💬 社区论坛 | Reddit r/ML, Hacker News, 知乎 AI, 魔搭社区 |
 | 🔬 前沿研究 | arXiv, Papers with Code, Hugging Face |
-| 🏢 企业官方 | OpenAI, DeepMind, Anthropic, Microsoft, Meta |
+| 🏢 企业官方 | OpenAI, DeepMind, Anthropic, Microsoft, Meta, 阿里通义, 字节豆包, 百度文心, 智谱 GLM |
 | 📧 AI 日报 | The Decoder, Import AI |
 | 👤 优秀 KOL | 李沐, 张俊林, 苏剑林, Karpathy, Jim Fan 等 11 位 |
 
 > 核心规则：同一新闻出现在 2 个以上独立信源才算真热点，避免被单一来源的营销内容带偏。
 
-## 技术架构
+### 新闻评分算法
+
+```
+总分 = 热度信号×0.4 + 时效信号×0.3 + 来源质量×0.3
+
+热度信号：多源交叉验证(+5) / 优先信源首发(+3) / 社区讨论热度高(+1)
+时效信号：6h内(+5) / 12h内(+3) / 24h内(+1) / 48h内(+0)
+来源质量：36氪/VentureBeat/TheVerge(+3) / MIT Tech Review/人民网/cnblogs(+2) / 其他(+1)
+```
+
+## 🏗️ 技术架构
 
 ```
 Cron 定时调度 (08:00 / 12:00 / 20:00)
@@ -174,34 +196,45 @@ Claude Code 启动
        │
        ▼
 智能处理 Pipeline
-  ① 去重（标题相似度 + URL 归一化）
+  ① 去重（标题相似度 > 80% + URL 归一化）
   ② 评分（热度×0.4 + 时效×0.3 + 来源质量×0.3）
-  ③ 翻译（海外新闻 → 中文摘要）
+  ③ 翻译（海外新闻 → 中文摘要，保留关键数据原文）
   ④ 分类（7 大板块）
   ⑤ 摘要生成（每条 2-3 句 + 开发者影响标注）
        │
        ▼
 HTML 生成 & 归档
-  • 生成完整自包含 HTML
+  • 生成完整自包含 HTML（暗色/亮色双主题）
   • 保存至 archive/YYYY-MM-DD-{edition}.html
   • 更新 index.html 为最新一期
+  • 更新 feed.xml RSS 订阅源（保留最近 10 条）
+  • 更新 sitemap.xml 站点地图
+  • git commit & push → GitHub Pages 自动部署
 ```
 
-## 项目结构
+## 📁 项目结构
 
 ```
 ai-pulse/
 ├── index.html              # 主页（最新一期 + 日历导航）
+├── feed.xml                # RSS 订阅源
+├── sitemap.xml             # SEO 站点地图
+├── manifest.json           # PWA 配置
+├── subscribe.html          # RSS 订阅引导页
 ├── archive/                # 历史归档
 │   └── YYYY-MM-DD-{edition}.html
 ├── assets/
-│   └── favicon.svg         # 站点图标
+│   ├── favicon.svg         # 站点图标
+│   └── og-image.svg        # 社交分享预览图
 ├── design/                 # 设计稿参考
-├── screenshots/            # 截图
+├── screenshots/            # 截图预览
 ├── .github/                # GitHub 配置
+│   ├── workflows/          # GitHub Actions 自动化
 │   ├── ISSUE_TEMPLATE/
 │   └── PULL_REQUEST_TEMPLATE.md
 ├── .claude/                # Claude Code 配置
+│   ├── commands/           # 斜杠命令定义
+│   │   └── ai-digest.md
 │   ├── settings.json
 │   └── scheduled_tasks.json
 ├── CLAUDE.md               # 项目指令 + Skill 定义
@@ -212,10 +245,10 @@ ai-pulse/
 ├── CHANGELOG.md            # 更新日志
 ├── LICENSE                 # MIT 开源许可证
 ├── .gitignore
-└── README.md
+└── README.{md,en.md,ja.md,de.md,ko.md}  # 多语言文档
 ```
 
-## 截图预览
+## 📸 截图预览
 
 ### 🌙 暗色模式（默认）
 
@@ -225,18 +258,24 @@ ai-pulse/
 
 ![AI Pulse Light Mode](screenshots/light-mode.png)
 
-## 安全性 / Security
+### 📅 日历归档
 
-**数据和隐私安全是本项目的设计基石。** AI Pulse 100% 在本地运行，数据永不出户。
+![AI Pulse Calendar](screenshots/calendar.png)
 
-- 🏠 纯本地运行，无任何数据上传
-- 🔌 生成的 HTML 页面零外部请求（无埋点、无遥测、无广告）
-- 🔑 无需任何第三方 API 密钥或 Token
-- 👁️ MIT 开源协议，代码完全透明可审计
+## 🔒 安全性 / Security
+
+**数据和隐私安全是本项目的设计基石。** AI 脉搏 100% 在本地运行，数据永不出户。
+
+| 特性 | 说明 |
+|------|------|
+| 🏠 纯本地运行 | 无任何数据上传到第三方服务器 |
+| 🔌 零外部请求 | 生成的 HTML 页面无埋点、无遥测、无广告 |
+| 🔑 无需 API 密钥 | 无需任何第三方 API Token |
+| 👁️ MIT 开源 | 代码完全透明可审计 |
 
 详见 [SECURITY.md](SECURITY.md) 查看完整安全策略。
 
-## 常见问题
+## ❓ 常见问题
 
 **Q: 在线演示页面总是显示旧内容，必须手动刷新？**
 A: 这是因为旧版 Service Worker 缓存了页面。**只需操作一次：** 打开页面 → 按 F12 → Application → Service Workers → 点击 "Unregister" 注销 → 刷新页面。新版 SW 已修复此问题，之后每次打开都会自动显示最新内容。
@@ -245,16 +284,16 @@ A: 这是因为旧版 Service Worker 缓存了页面。**只需操作一次：**
 A: 需要先运行 `/ai-digest morning` 生成第一期内容。
 
 **Q: 如何查看历史各期？**
-A: 点击「往期回顾」按钮，日历弹窗展示当月所有日期和已生成的版次。
+A: 点击页面右上角「往期回顾」按钮，日历弹窗展示当月所有日期和已生成的版次（早/午/晚）。
 
 **Q: 定时任务没有运行？**
-A: 在终端运行 `CronList` 检查任务状态，确保 Claude Code 处于运行状态。
+A: 在 Claude Code 对话中运行 `CronList` 检查任务状态，确保 Claude Code 处于运行状态。
 
 **Q: 某天漏了生成？**
 A: 手动运行对应版次的 `/ai-digest` 命令即可补生成。
 
 **Q: 可以自定义内容板块吗？**
-A: 可以——编辑 `CLAUDE.md` 中的分类规则即可调整板块优先级。
+A: 可以——编辑 `CLAUDE.md` 中的分类规则即可调整板块优先级和信源。
 
 **Q: 使用 Claude Code 需要付费吗？**
 A: Claude Code 提供免费额度（每日约 50-100 次工具调用），一次 `/ai-digest` 约消耗 20-30 次（搜索 + 抓取），免费额度完全够用。如需更高频率使用，可订阅 [Claude Pro](https://claude.ai/pricing)（$20/月）或 Max（$100-200/月）。
@@ -267,7 +306,10 @@ A: 可以。有两种方式：
 **Q: 一次生成要多久？为什么好像卡住了？**
 A: 一次完整的 `/ai-digest` 需要 3-5 分钟（15-20 次网络搜索 + 8-10 次深度抓取）。这不是卡住，请耐心等待。如果想快速验证，可以先运行 `/ai-digest status` 确认环境配置正确。
 
-## 贡献指南 / Contributing
+**Q: RSS 订阅怎么用？**
+A: 用任意 RSS 阅读器（如 Feedly、Inoreader、NetNewsWire）订阅 `https://daiowen.github.io/ai-pulse/feed.xml` 即可。每期更新后自动推送。
+
+## 🤝 贡献指南 / Contributing
 
 我们欢迎所有形式的贡献 — 报告 Bug、建议新功能、提交代码、改进文档。
 
@@ -275,13 +317,13 @@ A: 一次完整的 `/ai-digest` 需要 3-5 分钟（15-20 次网络搜索 + 8-10
 
 We welcome all forms of contributions — bug reports, feature requests, code submissions, and documentation improvements. See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
-## 路线图 / Roadmap
+## 🗺️ 路线图 / Roadmap
 
 请参阅 [ROADMAP.md](ROADMAP.md) 了解项目未来发展计划。
 
 See [ROADMAP.md](ROADMAP.md) for the project's future development plans.
 
-## 许可证 / License
+## 📄 许可证 / License
 
 本项目基于 MIT 许可证开源 — 详见 [LICENSE](LICENSE) 文件。
 
@@ -293,5 +335,6 @@ This project is open-sourced under the MIT License — see the [LICENSE](LICENSE
   基于 <a href="https://claude.ai">Claude Code</a> 构建 ·
   <a href="https://github.com/DaiOwen/ai-pulse">GitHub</a> ·
   <a href="https://daiowen.github.io/ai-pulse/">在线演示</a> ·
+  <a href="feed.xml">RSS订阅</a> ·
   <a href="CHANGELOG.md">更新日志</a>
 </p>
