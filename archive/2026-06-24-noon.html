@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>AI 脉搏 · 热点速览 — 2026年6月24日 午间版</title>
+<meta name="description" content="面向中国AI开发工程师的每日AI新闻智能聚合">
+<meta name="theme-color" content="#0a0a0f">
+<meta property="og:title" content="AI 脉搏 · AI 热点速览 — 6月24日 午间版">
+<meta property="og:description" content="Qwen-AgentWorld 首个语言世界模型 · 豆包2.1 成本暴砍80% · Claude Code 大升级 · 智谱考虑香港发售 · 微信AI内测">
+<meta property="og:url" content="https://daiowen.github.io/ai-pulse/archive/2026-06-24-noon.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://daiowen.github.io/ai-pulse/assets/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI 脉搏 · AI 热点速览">
+<meta name="twitter:description" content="面向中国 AI 开发者的每日新闻智能聚合">
+<meta name="twitter:image" content="https://daiowen.github.io/ai-pulse/assets/og-image.svg">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="manifest" href="../manifest.json">
+<link rel="alternate" type="application/rss+xml" title="AI 脉搏 RSS" href="../feed.xml">
+<link rel="sitemap" type="application/xml" href="../sitemap.xml">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
+  :root {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: rgba(255,255,255,0.025);
+    --bg-card: rgba(255,255,255,0.018);
+    --border-subtle: rgba(255,255,255,0.06);
+    --border-card: rgba(255,255,255,0.04);
+    --text-primary: #f5f5f7;
+    --text-secondary: #9898a0;
+    --text-tertiary: #86868b;
+    --accent-indigo: #6366f1;
+    --accent-green: #22c55e;
+    --accent-amber: #f59e0b;
+    --accent-purple: #8b5cf6;
+    --accent-cyan: #06b6d4;
+    --accent-rose: #ec4899;
+    --bg-glow-indigo: rgba(99,102,241,0.04);
+    --bg-glow-purple: rgba(139,92,246,0.03);
+    --bg-glow-cyan: rgba(6,182,212,0.03);
+  }
+  [data-theme="light"] {
+    --bg-primary: #f5f5f7;
+    --bg-secondary: rgba(0,0,0,0.02);
+    --bg-card: rgba(0,0,0,0.015);
+    --border-subtle: rgba(0,0,0,0.08);
+    --border-card: rgba(0,0,0,0.06);
+    --text-primary: #1d1d1f;
+    --text-secondary: #6e6e73;
+    --text-tertiary: #86868b;
+    --bg-glow-indigo: rgba(99,102,241,0.06);
+    --bg-glow-purple: rgba(139,92,246,0.04);
+    --bg-glow-cyan: rgba(6,182,212,0.04);
+  }
+  [data-theme="light"] .orb { opacity: 0.08 !important; }
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: linear-gradient(170deg, #06060d 0%, #0a0a1a 25%, #0d0a1f 50%, #080818 75%, #060610 100%);
+    color: var(--text-primary);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    transition: background 0.5s ease;
+  }
+  [data-theme="light"] body {
+    background: linear-gradient(170deg, #f5f5f7 0%, #fafafa 30%, #f0f0f5 60%, #f5f5f7 100%);
+  }
+  .bg-layer { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+  .orb {
+    position: absolute; border-radius: 50%; filter: blur(140px);
+    animation-timing-function: ease-in-out; animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .orb-1 { width:700px; height:700px; background:radial-gradient(circle, #6366f1 0%, #8b5cf6 40%, transparent 75%); top:-15%; right:-10%; opacity:0.09; animation:float1 20s infinite; }
+  .orb-2 { width:550px; height:550px; background:radial-gradient(circle, #ec4899 0%, #8b5cf6 30%, transparent 70%); bottom:-20%; left:-10%; opacity:0.07; animation:float2 25s infinite; }
+  .orb-3 { width:450px; height:450px; background:radial-gradient(circle, #06b6d4 0%, #6366f1 35%, transparent 70%); top:40%; right:-15%; opacity:0.06; animation:float3 22s infinite; }
+  .orb-4 { width:350px; height:350px; background:radial-gradient(circle, #a855f7 0%, #ec4899 30%, transparent 70%); top:-5%; left:35%; opacity:0.05; animation:float4 28s infinite; }
+  @keyframes float1 { 0% { transform:translate(0,0) scale(1); } 33% { transform:translate(-100px,80px) scale(1.2); } 66% { transform:translate(50px,-40px) scale(0.85); } 100% { transform:translate(-30px,30px) scale(1.1); } }
+  @keyframes float2 { 0% { transform:translate(0,0) scale(1); } 33% { transform:translate(80px,-60px) scale(1.25); } 66% { transform:translate(-40px,30px) scale(0.8); } 100% { transform:translate(20px,-15px) scale(1.15); } }
+  @keyframes float3 { 0% { transform:translate(0,0) scale(1); } 50% { transform:translate(-70px,-50px) scale(1.35); } 100% { transform:translate(30px,40px) scale(0.85); } }
+  @keyframes float4 { 0% { transform:translate(0,0) scale(1); } 25% { transform:translate(50px,70px) scale(1.3); } 75% { transform:translate(-50px,30px) scale(0.8); } 100% { transform:translate(15px,-20px) scale(1.1); } }
+  .grid-overlay {
+    position:absolute; inset:0;
+    background-image: linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px);
+    background-size:60px 60px;
+    animation:gridShift 30s linear infinite;
+  }
+  @keyframes gridShift { 0% { background-position:0 0; } 100% { background-position:60px 60px; } }
+  .particles { position:absolute; inset:0; }
+  .particle { position:absolute; border-radius:50%; background:rgba(255,255,255,0.35); animation:rise linear infinite; }
+  @keyframes rise { 0% { transform:translateY(0) translateX(0); opacity:0; } 10% { opacity:0.5; } 90% { opacity:0.05; } 100% { transform:translateY(-100vh) translateX(60px); opacity:0; } }
+  .content { position:relative; z-index:1; max-width:960px; margin:0 auto; padding:0 32px 80px; }
+  .nav { display:flex; justify-content:space-between; align-items:center; padding:18px 0; border-bottom:0.5px solid var(--border-subtle); }
+  .nav-brand { display:flex; align-items:center; gap:10px; }
+  .nav-logo { width:34px; height:34px; border-radius:9px; background:linear-gradient(135deg, #6366f1, #8b5cf6); display:flex; align-items:center; justify-content:center; font-size:16px; }
+  .nav-title { font-size:16px; font-weight:600; color:var(--text-primary); letter-spacing:-0.02em; }
+  .nav-sub { font-size:11px; color:var(--text-tertiary); letter-spacing:0.05em; }
+  .nav-right { display:flex; align-items:center; gap:20px; }
+  .nav-link { font-size:13px; color:var(--text-tertiary); font-weight:500; cursor:pointer; transition:color 0.2s; background:none; border:none; font-family:inherit; }
+  .nav-link:hover { color:var(--text-primary); }
+  .toggle-track { width:38px; height:22px; background:rgba(99,102,241,0.25); border-radius:11px; border:0.5px solid rgba(99,102,241,0.35); position:relative; cursor:pointer; transition:background 0.3s; }
+  .toggle-thumb { width:17px; height:17px; background:linear-gradient(135deg, #6366f1, #8b5cf6); border-radius:50%; position:absolute; top:2px; left:2px; box-shadow:0 1px 4px rgba(0,0,0,0.3); transition:transform 0.3s cubic-bezier(0.25,0.8,0.25,1.2); }
+  [data-theme="light"] .toggle-thumb { transform:translateX(16px); }
+  .toggle-label { font-size:12px; color:var(--text-tertiary); }
+  .hero { text-align:center; padding:56px 0 48px; position:relative; }
+  .hero-glow { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:500px; height:180px; background:radial-gradient(ellipse, rgba(99,102,241,0.07) 0%, transparent 70%); pointer-events:none; }
+  .hero-badge { display:inline-flex; align-items:center; gap:8px; background:rgba(99,102,241,0.08); border:0.5px solid rgba(99,102,241,0.15); border-radius:100px; padding:6px 16px; margin-bottom:20px; position:relative; z-index:1; }
+  .hero-badge-dot { width:6px; height:6px; border-radius:50%; background:var(--accent-green); box-shadow:0 0 6px rgba(34,197,94,0.5); animation:pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
+  .hero-badge-text { font-size:12px; color:#a5b4fc; font-weight:500; letter-spacing:0.05em; }
+  .hero-title { font-size:48px; font-weight:300; color:var(--text-primary); letter-spacing:-0.03em; line-height:1.1; margin-bottom:6px; position:relative; z-index:1; }
+  .hero-date { font-size:15px; color:var(--text-tertiary); font-weight:400; margin-bottom:28px; position:relative; z-index:1; }
+  .hero-stats { display:flex; justify-content:center; gap:40px; position:relative; z-index:1; }
+  .hero-stat-num { font-size:24px; font-weight:600; color:var(--text-primary); }
+  .hero-stat-label { font-size:12px; color:var(--text-tertiary); letter-spacing:0.04em; margin-top:2px; }
+  .hero-stat-divider { width:0.5px; background:var(--border-subtle); }
+  .tldr { margin-bottom:40px; padding:14px 20px; background:var(--bg-glow-indigo); border:0.5px solid rgba(99,102,241,0.1); border-radius:10px; display:flex; gap:12px; align-items:flex-start; }
+  .tldr-label { font-size:11px; font-weight:700; color:var(--accent-indigo); letter-spacing:0.08em; flex-shrink:0; margin-top:2px; }
+  .tldr-text { font-size:14px; color:#c9d1d9; line-height:1.6; }
+  .section-head { display:flex; align-items:center; gap:10px; margin-bottom:20px; }
+  .section-line { width:1px; height:18px; border-radius:1px; }
+  .section-label { font-size:13px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; }
+  .section-label-cn { font-size:12px; color:var(--text-tertiary); margin-left:4px; }
+  .feature-card { background:var(--bg-secondary); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); border:0.5px solid var(--border-card); border-radius:16px; padding:28px; margin-bottom:12px; transition:transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; }
+  .feature-card:hover { transform:translateY(-2px); border-color:rgba(255,255,255,0.12); box-shadow:0 8px 32px rgba(0,0,0,0.3); }
+  .card-tag { font-size:11px; font-weight:600; letter-spacing:0.07em; margin-bottom:8px; }
+  .card-title { font-size:24px; font-weight:500; color:var(--text-primary); letter-spacing:-0.01em; line-height:1.3; margin-bottom:8px; }
+  .card-desc { font-size:14px; color:var(--text-secondary); line-height:1.6; margin-bottom:14px; }
+  .card-meta { display:flex; gap:14px; font-size:12px; color:var(--text-tertiary); flex-wrap:wrap; align-items:center; }
+  .read-original { display:inline-flex; align-items:center; gap:3px; font-size:11px; font-weight:500; letter-spacing:0.03em; color:var(--accent-indigo); text-decoration:none; transition:color 0.2s, gap 0.2s; margin-top:auto; }
+  .read-original:hover { color:#818cf8; gap:6px; }
+  .read-original-arrow { display:inline-block; transition:transform 0.2s; font-size:9px; }
+  .read-original:hover .read-original-arrow { transform:translateX(2px); }
+  .card-row { display:flex; gap:20px; align-items:flex-start; }
+  .card-icon { width:72px; height:72px; border-radius:14px; flex-shrink:0; background:linear-gradient(135deg, rgba(99,102,241,0.12), rgba(139,92,246,0.06)); display:flex; align-items:center; justify-content:center; font-size:28px; }
+  .card-body { flex:1; display:flex; flex-direction:column; }
+  .sub-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .sub-card { background:rgba(255,255,255,0.018); border:0.5px solid rgba(255,255,255,0.04); border-radius:12px; padding:20px; transition:transform 0.3s ease, border-color 0.3s ease; display:flex; flex-direction:column; }
+  .sub-card:hover { transform:translateY(-1px); border-color:rgba(255,255,255,0.1); }
+  .sub-tag { font-size:9px; font-weight:600; letter-spacing:0.05em; margin-bottom:8px; }
+  .sub-title { font-size:15px; font-weight:500; color:var(--text-primary); line-height:1.4; margin-bottom:6px; }
+  .sub-desc { font-size:12px; color:var(--text-secondary); line-height:1.5; flex:1; margin-bottom:10px; }
+  .sub-meta { font-size:10px; color:var(--text-tertiary); display:flex; gap:10px; align-items:center; }
+  .tool-row { display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:10px; margin-bottom:10px; }
+  .tool-card { background:rgba(255,255,255,0.018); border:0.5px solid rgba(255,255,255,0.04); border-radius:12px; padding:18px; transition:transform 0.3s ease, border-color 0.3s ease; display:flex; flex-direction:column; }
+  .tool-card:hover { transform:translateY(-1px); border-color:rgba(255,255,255,0.1); }
+  .tool-icon { font-size:22px; margin-bottom:10px; }
+  .tool-name { font-size:13px; font-weight:500; color:var(--text-primary); margin-bottom:4px; }
+  .tool-desc { font-size:10px; color:var(--text-tertiary); line-height:1.4; flex:1; }
+  .tool-badge { display:inline-block; font-size:8px; font-weight:600; padding:2px 8px; border-radius:8px; letter-spacing:0.03em; margin-top:6px; }
+  .badge-new { background:rgba(34,197,94,0.12); color:#4ade80; }
+  .badge-update { background:rgba(245,158,11,0.12); color:#fbbf24; }
+  .policy-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .policy-card { background:rgba(255,255,255,0.018); border:0.5px solid rgba(255,255,255,0.04); border-radius:12px; padding:20px; display:flex; flex-direction:column; }
+  .dual-cards { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .rank-card { background:rgba(255,255,255,0.018); border:0.5px solid rgba(255,255,255,0.04); border-radius:12px; padding:20px; }
+  .rank-label { font-size:10px; font-weight:600; letter-spacing:0.05em; margin-bottom:14px; }
+  .rank-row { display:flex; align-items:center; gap:10px; font-size:12px; margin-bottom:8px; }
+  .rank-num { color:var(--text-primary); font-weight:500; min-width:20px; }
+  .rank-name { color:var(--text-primary); flex:1; }
+  .rank-stat { font-size:11px; }
+  .rank-up { color:#4ade80; }
+  .section-gap { margin-bottom:48px; }
+  .footer { text-align:center; padding:36px 0 0; border-top:0.5px solid var(--border-subtle); }
+  .footer-quote { font-size:14px; font-weight:400; color:var(--text-secondary); font-style:italic; letter-spacing:-0.01em; }
+  .footer-author { font-size:11px; color:var(--text-tertiary); margin-top:6px; }
+  .footer-links { margin-top:12px; display:flex; justify-content:center; gap:16px; flex-wrap:wrap; }
+  .footer-link { font-size:11px; color:var(--accent-indigo); text-decoration:none; transition:color 0.2s; }
+  .footer-link:hover { color:#818cf8; }
+  .dev-impact { display:flex; align-items:flex-start; gap:6px; margin-top:10px; padding:8px 12px; background:rgba(245,158,11,0.06); border-radius:8px; border-left:2px solid var(--accent-amber); }
+  .dev-impact-icon { font-size:12px; flex-shrink:0; margin-top:1px; }
+  .dev-impact-text { font-size:11px; color:#fbbf24; line-height:1.5; }
+  .news-item-tag { display:inline-block; font-size:8px; font-weight:700; padding:2px 8px; border-radius:6px; letter-spacing:0.05em; vertical-align:middle; margin-right:6px; }
+  .tag-model { background:rgba(99,102,241,0.12); color:#a5b4fc; }
+  .tag-tool { background:rgba(34,197,94,0.12); color:#4ade80; }
+  .tag-industry { background:rgba(245,158,11,0.12); color:#fbbf24; }
+  .tag-policy { background:rgba(59,130,246,0.12); color:#60a5fa; }
+  .tag-global { background:rgba(6,182,212,0.12); color:#67e8f9; }
+  @media (max-width:768px) { .sub-grid, .tool-row, .dual-cards, .policy-grid { grid-template-columns:1fr; } .tool-row { grid-template-columns:1fr 1fr; } .hero-title { font-size:32px; } .card-title { font-size:20px; } .nav-right { gap:12px; } .hero-stats { gap:20px; } }
+  .archive-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); backdrop-filter:blur(4px); z-index:100; align-items:center; justify-content:center; }
+  .archive-overlay.open { display:flex; }
+  .archive-dialog { background:#16161f; border:0.5px solid rgba(255,255,255,0.1); border-radius:16px; padding:24px; max-width:380px; width:90%; box-shadow:0 20px 60px rgba(0,0,0,0.5); }
+  [data-theme="light"] .archive-dialog { background:#ffffff; box-shadow:0 20px 60px rgba(0,0,0,0.15); }
+  .cal-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; }
+  .cal-nav-btn { background:rgba(255,255,255,0.06); border:none; color:var(--text-primary); width:28px; height:28px; border-radius:8px; cursor:pointer; font-size:14px; }
+  .cal-month-label { font-size:14px; font-weight:600; }
+  .cal-grid { display:grid; grid-template-columns:repeat(7, 1fr); gap:4px; text-align:center; }
+  .cal-dow { font-size:10px; color:var(--text-tertiary); padding:4px 0; }
+  .cal-day { font-size:13px; padding:8px 4px; border-radius:8px; cursor:default; position:relative; color:var(--text-tertiary); }
+  .cal-day.has-archive { color:var(--text-primary); background:rgba(99,102,241,0.08); cursor:pointer; transition:background 0.2s; }
+  .cal-day.has-archive:hover { background:rgba(99,102,241,0.2); }
+  .cal-day.full { background:rgba(34,197,94,0.12); color:#4ade80; font-weight:600; }
+  .cal-day.full:hover { background:rgba(34,197,94,0.25); }
+  .cal-day.today { border:1px solid var(--accent-indigo); }
+  .cal-close { display:block; width:100%; margin-top:16px; padding:8px; background:rgba(255,255,255,0.06); border:none; border-radius:8px; color:var(--text-tertiary); cursor:pointer; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="bg-layer">
+  <div class="orb orb-1"></div><div class="orb orb-2"></div>
+  <div class="orb orb-3"></div><div class="orb orb-4"></div>
+  <div class="grid-overlay"></div>
+  <div class="particles" id="particles"></div>
+</div>
+<div class="content">
+  <nav class="nav">
+    <div class="nav-brand">
+      <div class="nav-logo">⚡</div>
+      <div>
+        <div class="nav-title">AI热点速览</div>
+        <div class="nav-sub">AI PULSE · NOON</div>
+      </div>
+    </div>
+    <div class="nav-right">
+      <a href="../index.html" class="nav-link">返回主页</a>
+      <span class="toggle-label">暗</span>
+      <div class="toggle-track" id="themeToggle"><div class="toggle-thumb"></div></div>
+      <span class="toggle-label">亮</span>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-badge">
+      <div class="hero-badge-dot"></div>
+      <span class="hero-badge-text">午间版 · 12:00 CST · 12条精选</span>
+    </div>
+    <h1 class="hero-title">今日 AI 脉搏</h1>
+    <p class="hero-date">2026年6月24日 · 星期三</p>
+    <div class="hero-stats">
+      <div><div class="hero-stat-num">12</div><div class="hero-stat-label">头条新闻</div></div>
+      <div class="hero-stat-divider"></div>
+      <div><div class="hero-stat-num">5</div><div class="hero-stat-label">信源覆盖</div></div>
+      <div class="hero-stat-divider"></div>
+      <div><div class="hero-stat-num">5</div><div class="hero-stat-label">热门项目</div></div>
+    </div>
+  </section>
+
+  <div class="tldr">
+    <span class="tldr-label">TL;DR</span>
+    <span class="tldr-text">
+      千问发布 Qwen-AgentWorld 首个语言世界模型 · 豆包 2.1 成本暴砍 80% 追平 Claude Opus 4.7 · Claude Code 大升级引卡帕西惊叹 · 智谱考虑香港发售数十亿美元 · 微信 AI 内测原生助手 · 字节寻求 200 亿美元贷款加码 AI
+    </span>
+  </div>
+
+  <div class="section-gap">
+    <div class="section-head">
+      <div class="section-line" style="background:linear-gradient(180deg, #6366f1, #8b5cf6);"></div>
+      <span class="section-label" style="color:#a5b4fc;"><span class="news-item-tag tag-model">模型</span>大模型动态</span>
+      <span class="section-label-cn">Model Updates</span>
+    </div>
+    <div class="feature-card">
+      <div class="card-row">
+        <div class="card-body">
+          <div class="card-tag" style="color:#ec4899;">🔴 HEADLINE · 阿里千问 · 世界模型</div>
+          <div class="card-title">千问发布 Qwen-AgentWorld：首个原生语言世界模型（LWM）</div>
+          <div class="card-desc">阿里千问大模型正式发布 Qwen-AgentWorld，这是首个原生语言世界模型（Language World Model, LWM）。单一模型同时覆盖文本类环境（MCP、Search、Terminal、SWE）与 GUI 类环境（Web、OS、Android），实现跨领域知识迁移。同步发布的还有 AgentWorldBench，覆盖七大领域的语言世界模型评测基准，每条测试样本均配备真实环境执行所得的真实环境观测数据。</div>
+          <div class="card-meta">
+            <span>📰 36氪</span><span>·</span><span>🕐 54分钟前</span>
+            <a href="https://mp.weixin.qq.com/s/bcNrnicCIjsArrFGMamSKg" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
+          </div>
+          <div class="dev-impact">
+            <span class="dev-impact-icon">💡</span>
+            <span class="dev-impact-text"><strong>开发者影响：</strong>语言世界模型是 Agent 的「大脑模拟器」，可在单一模型内完成环境感知、决策规划、工具调用。Agent 开发范式将从「多模型拼接」转向「单模型全栈」。</span>
+          </div>
+        </div>
+        <div class="card-icon">🌍</div>
+      </div>
+    </div>
+    <div class="sub-grid">
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#22c55e;">🇨🇳 字节跳动 · 豆包</div>
+        <div class="sub-title">豆包 2.1 成本暴砍 80%，编程能力追平 Claude Opus 4.7</div>
+        <div class="sub-desc">字节跳动发布豆包 2.1，API 成本暴砍 80%，编程能力追平 Claude Opus 4.7。延续了字节在 AI 领域的激进定价策略，进一步降低开发者使用门槛。</div>
+        <div class="sub-meta"><span>📰 36氪热榜</span><a href="https://36kr.com/p/3865600233395201" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+      </div>
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#8b5cf6;">🇨🇳 智谱 · IPO</div>
+        <div class="sub-title">智谱考虑在香港发售数十亿美元股票，股价自 IPO 以来飙升 2000%</div>
+        <div class="sub-desc">中国 AI 模型公司智谱考虑在香港发售股份，融资规模可能达数十亿美元。该公司自 1 月上市以来，股价已飙升 2000%。智谱 IPO 后为期六个月的锁定期将于 7 月 8 日到期。</div>
+        <div class="sub-meta"><span>📰 36氪快讯</span><a href="https://wap.cj.sina.cn/pc/7x24/4951693" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-gap">
+    <div class="section-head">
+      <div class="section-line" style="background:linear-gradient(180deg, #22c55e, #10b981);"></div>
+      <span class="section-label" style="color:#86efac;"><span class="news-item-tag tag-tool">工具</span>工具 & 部署</span>
+      <span class="section-label-cn">Tools & Frameworks</span>
+    </div>
+    <div class="tool-row">
+      <div class="tool-card">
+        <div class="tool-icon">🤖</div>
+        <div class="tool-name">Claude Code 大升级</div>
+        <div class="tool-desc">卡帕西发文称「LLM 第三次变革」，Claude Code 迎来重大功能升级，编程 Agent 能力进一步增强。</div>
+        <div class="tool-badge badge-new">热议</div>
+        <a href="https://36kr.com/p/3866453077120256" class="read-original" style="margin-top:8px;" target="_blank" rel="noopener">36氪 →</a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">💬</div>
+        <div class="tool-name">微信 AI 内测</div>
+        <div class="tool-desc">微信小范围内测原生 AI 助手，朋友圈、聊天等场景深度融合 AI 能力，用户体验全面升级。</div>
+        <div class="tool-badge badge-new">内测</div>
+        <a href="https://36kr.com/p/3865706037924872" class="read-original" style="margin-top:8px;" target="_blank" rel="noopener">36氪 →</a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">💰</div>
+        <div class="tool-name">阿里峰谷 Token</div>
+        <div class="tool-desc">QoderWork 推国内首个「峰谷Token」，Agent 夜间运行低至 2 折，Qwen3.7-Max 模型优惠力度最大。</div>
+        <div class="tool-badge badge-new">首发</div>
+        <a href="https://36kr.com/newsflashes/3866661531800835" class="read-original" style="margin-top:8px;" target="_blank" rel="noopener">36氪 →</a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">🔍</div>
+        <div class="tool-name">百度开源全球第一</div>
+        <div class="tool-desc">百度开源项目拿下全球第一，作者疑似 DeepSeek 走出大神，国产开源模型持续发力。</div>
+        <div class="tool-badge badge-hot">热榜</div>
+        <a href="https://www.cnblogs.com" class="read-original" style="margin-top:8px;" target="_blank" rel="noopener">cnblogs →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-gap">
+    <div class="section-head">
+      <div class="section-line" style="background:linear-gradient(180deg, #3b82f6, #2563eb);"></div>
+      <span class="section-label" style="color:#93c5fd;"><span class="news-item-tag tag-policy">政策</span>政策 & 合规</span>
+      <span class="section-label-cn">Policy & Regulation</span>
+    </div>
+    <div class="policy-grid">
+      <div class="policy-card">
+        <div class="sub-tag" style="color:#60a5fa;">🇨🇳 融资 · 字节跳动</div>
+        <div class="sub-title">字节跳动寻求 200 亿美元境外贷款，规模为该公司历来最大</div>
+        <div class="sub-desc">字节跳动正与多家银行开展初步洽谈，计划筹措约 200 亿美元贷款，或将成为该公司有史以来规模最大的离岸贷款。当前字节正持续加大人工智能领域的投入。</div>
+        <div class="sub-meta"><span>📰 新浪财经 / 36氪</span><a href="https://wap.cj.sina.cn/pc/7x24/4951739" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+      </div>
+      <div class="policy-card">
+        <div class="sub-tag" style="color:#f59e0b;">🌍 合作 · 高通字节</div>
+        <div class="sub-title">高通正与字节跳动洽谈定制芯片设计服务</div>
+        <div class="sub-desc">消息人士称，高通正与字节跳动就提供定制芯片设计服务进行洽谈。此举将进一步加深高通与中国 AI 公司的合作关系。</div>
+        <div class="sub-meta"><span>📰 新浪财经</span><a href="https://wap.cj.sina.cn/pc/7x24/4951740" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-gap">
+    <div class="section-head">
+      <div class="section-line" style="background:linear-gradient(180deg, #f59e0b, #d97706);"></div>
+      <span class="section-label" style="color:#fcd34d;"><span class="news-item-tag tag-industry">应用</span>应用落地</span>
+      <span class="section-label-cn">Applications</span>
+    </div>
+    <div class="sub-grid">
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#f59e0b;">🏢 腾讯 · AI 投资</div>
+        <div class="sub-title">腾讯买出 AI 半壁江山：战略投资版图揭秘</div>
+        <div class="sub-desc">36氪深度报道腾讯在 AI 领域的投资布局，通过战略投资构建了完整的 AI 生态系统，从大模型到应用落地全面覆盖。</div>
+        <div class="sub-meta"><span>📰 36氪热榜</span><a href="https://36kr.com/p/3865519682802948" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+      </div>
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#06b6d4;">🌐 软银 · 数据中心</div>
+        <div class="sub-title">孙正义：若成功入股东京电力将建设 AI 数据中心</div>
+        <div class="sub-desc">软银集团董事长孙正义在股东大会上表示，如果出资入股东京电力得以实现，软银应该在日本建设 AI 数据中心，进一步扩大 AI 基础设施布局。</div>
+        <div class="sub-meta"><span>📰 界面新闻</span><a href="https://www.jiemian.com/article/14637086.html" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-gap">
+    <div class="section-head">
+      <div class="section-line" style="background:linear-gradient(180deg, #f59e0b, #d97706);"></div>
+      <span class="section-label" style="color:#fcd34d;">开源热度</span>
+      <span class="section-label-cn">Open Source Pulse</span>
+    </div>
+    <div class="dual-cards">
+      <div class="rank-card">
+        <div class="rank-label" style="color:#f59e0b;">🔥 36氪热榜 AI 相关 · 24小时</div>
+        <div class="rank-row"><span class="rank-num">1</span><span class="rank-name">腾讯买出AI半壁江山</span><span class="rank-stat rank-up">热</span></div>
+        <div class="rank-row"><span class="rank-num">2</span><span class="rank-name">字节掀桌，豆包2.1成本暴砍80%</span><span class="rank-stat rank-up">热</span></div>
+        <div class="rank-row"><span class="rank-num">3</span><span class="rank-name">Claude Code大升级</span><span class="rank-stat rank-up">新</span></div>
+        <div class="rank-row"><span class="rank-num">4</span><span class="rank-name">被骂了一年的Codex突然爆了</span><span class="rank-stat rank-up">热</span></div>
+        <div class="rank-row"><span class="rank-num">5</span><span class="rank-name">微信AI全网最细体验</span><span class="rank-stat rank-up">新</span></div>
+      </div>
+      <div class="rank-card">
+        <div class="rank-label" style="color:#ec4899;">📊 行业动态</div>
+        <div style="font-size:12px; color:var(--text-secondary); line-height:1.8;">
+          📱 <strong>GenAI 手机</strong> —— 2026年预计占全球出货量 45%<br>
+          🤖 <strong>语言世界模型</strong> —— Qwen-AgentWorld 首发定义新范式<br>
+          💰 <strong>AI 融资</strong> —— 字节 200 亿美元贷款加码 AI<br>
+          🔧 <strong>Agent 工具</strong> —— 微信 AI 内测原生助手<br>
+          🏭 <strong>基础设施</strong> —— 软银拟在日本建设 AI 数据中心
+        </div>
+        <div style="margin-top:12px; font-size:10px; color:var(--text-tertiary);">
+          数据来源：36氪快讯、热榜 · 2026年6月24日
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p class="footer-quote">"The best way to predict the future is to invent it."</p>
+    <p class="footer-author">—— Alan Kay, 计算机科学先驱 (1971)</p>
+    <div class="footer-links">
+      <a href="../feed.xml" class="footer-link">📡 RSS 订阅</a>
+      <a href="https://github.com/DaiOwen/ai-pulse" class="footer-link" target="_blank" rel="noopener">⭐ GitHub</a>
+    </div>
+    <p style="font-size:10px; color:var(--text-tertiary); margin-top:10px;">© 2026 AI 脉搏 · AI Pulse — 面向中国 AI 开发工程师的每日智能聚合</p>
+  </footer>
+</div>
+
+<script>
+  const pc = document.getElementById('particles');
+  for (let i = 0; i < 40; i++) {
+    const p = document.createElement('div');
+    p.classList.add('particle');
+    p.style.left = Math.random() * 100 + '%';
+    p.style.top = Math.random() * 100 + '%';
+    const s = 1 + Math.random() * 2;
+    p.style.width = s + 'px'; p.style.height = s + 'px';
+    p.style.animationDuration = (12 + Math.random() * 20) + 's';
+    p.style.animationDelay = Math.random() * 15 + 's';
+    pc.appendChild(p);
+  }
+  const html = document.documentElement;
+  const themeToggle = document.getElementById('themeToggle');
+  const savedTheme = localStorage.getItem('ai-pulse-theme');
+  if (savedTheme === 'light') {
+    html.setAttribute('data-theme', 'light');
+  }
+  themeToggle.addEventListener('click', function() {
+    const isDark = html.getAttribute('data-theme') === 'dark';
+    const newTheme = isDark ? 'light' : 'dark';
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('ai-pulse-theme', newTheme);
+  });
+</script>
+</body>
+</html>
