@@ -354,6 +354,40 @@
   .cal-edition-dot.noon { background:#f97316; }
   .cal-edition-dot.evening { background:#6366f1; }
   .cal-close { display:block; width:100%; margin-top:16px; padding:8px; background:rgba(255,255,255,0.06); border:none; border-radius:8px; color:var(--text-tertiary); cursor:pointer; font-size:12px; }
+
+  /* 返回顶部按钮 */
+  .back-to-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(99,102,241,0.3);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .back-to-top:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 24px rgba(99,102,241,0.4);
+  }
+  [data-theme="light"] .back-to-top {
+    box-shadow: 0 4px 16px rgba(99,102,241,0.25);
+  }
 </style>
 </head>
 <body>
@@ -697,6 +731,9 @@
 
 </div>
 
+<!-- 返回顶部按钮 -->
+<button id="backToTop" class="back-to-top" title="返回顶部">↑</button>
+
 <!-- ═══════════ ARCHIVE OVERLAY ═══════════ -->
 <div class="archive-overlay" id="archiveOverlay">
   <div class="archive-dialog">
@@ -838,6 +875,15 @@
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js').catch(function() {});
   }
+
+  // 返回顶部按钮
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', function() {
+    backToTop.classList.toggle('visible', window.scrollY > 500);
+  });
+  backToTop.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 </script>
 </body>
 </html>
