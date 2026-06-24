@@ -1,0 +1,80 @@
+name: AI Digest Auto Update
+
+on:
+  schedule:
+    # 早间版 08:00 CST (00:00 UTC)
+    - cron: '0 0 * * *'
+    # 午间版 12:00 CST (04:00 UTC)
+    - cron: '0 4 * * *'
+    # 晚间版 20:00 CST (12:00 UTC)
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: 'Edition to generate (morning/noon/evening)'
+        required: true
+        default: 'morning'
+        type: choice
+        options:
+          - morning
+          - noon
+          - evening
+
+jobs:
+  generate-digest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code CLI
+        run: |
+          npm install -g @anthropic-ai/claude-code
+
+      - name: Determine edition
+        id: edition
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "edition=${{ github.event.inputs.edition }}" >> $GITHUB_OUTPUT
+          else
+            HOUR=$(date -u +%H)
+            if [ "$HOUR" = "00" ]; then
+              echo "edition=morning" >> $GITHUB_OUTPUT
+            elif [ "$HOUR" = "04" ]; then
+              echo "edition=noon" >> $GITHUB_OUTPUT
+            else
+              echo "edition=evening" >> $GITHUB_OUTPUT
+            fi
+          fi
+
+      - name: Generate AI Digest
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          claude -p "/ai-digest ${{ steps.edition.outputs.edition }}" --allowedTools "Bash,Read,Write,Edit,Grep,Glob,WebSearch,WebFetch" --dangerouslySkipPermissions
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --quiet && git diff --staged --quiet || git commit -m "auto: ${{ steps.edition.outputs.edition }} edition — $(date +'%Y-%m-%d')"
+          git push
+
+      - name: Create summary
+        run: |
+          echo "## AI Digest Generated" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Edition**: ${{ steps.edition.outputs.edition }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Time**: $(date +'%Y-%m-%d %H:%M:%S CST')" >> $GITHUB_STEP_SUMMARY
+          echo "- **Status**: ✅ Success" >> $GITHUB_STEP_SUMMARY
