@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>关于 · AI 脉搏</title>
+<meta name="description" content="AI 脉搏是什么？面向中国 AI 开发者的每日新闻智能聚合平台">
+<meta name="theme-color" content="#0a0a0f">
+<meta property="og:title" content="关于 · AI 脉搏">
+<meta property="og:description" content="了解 AI 脉搏的设计理念、技术架构和未来规划">
+<meta property="og:url" content="https://daiowen.github.io/ai-pulse/about.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://daiowen.github.io/ai-pulse/assets/og-image.svg">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="manifest" href="manifest.json">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
+
+  :root {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: rgba(255,255,255,0.025);
+    --bg-card: rgba(255,255,255,0.018);
+    --border-subtle: rgba(255,255,255,0.06);
+    --border-card: rgba(255,255,255,0.04);
+    --text-primary: #f5f5f7;
+    --text-secondary: #9898a0;
+    --text-tertiary: #86868b;
+    --accent-indigo: #6366f1;
+    --accent-green: #22c55e;
+    --accent-amber: #f59e0b;
+    --accent-purple: #8b5cf6;
+    --accent-cyan: #06b6d4;
+    --accent-rose: #ec4899;
+  }
+
+  [data-theme="light"] {
+    --bg-primary: #f5f5f7;
+    --bg-secondary: rgba(0,0,0,0.02);
+    --bg-card: rgba(0,0,0,0.015);
+    --border-subtle: rgba(0,0,0,0.08);
+    --border-card: rgba(0,0,0,0.06);
+    --text-primary: #1d1d1f;
+    --text-secondary: #6e6e73;
+    --text-tertiary: #86868b;
+  }
+
+  [data-theme="light"] .orb { opacity: 0.08 !important; }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: linear-gradient(170deg, #06060d 0%, #0a0a1a 25%, #0d0a1f 50%, #080818 75%, #060610 100%);
+    color: var(--text-primary);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    transition: background 0.5s ease;
+  }
+
+  [data-theme="light"] body {
+    background: linear-gradient(170deg, #f5f5f7 0%, #fafafa 30%, #f0f0f5 60%, #f5f5f7 100%);
+  }
+
+  .bg-layer { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+  .orb {
+    position: absolute; border-radius: 50%; filter: blur(140px);
+    animation-timing-function: ease-in-out; animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .orb-1 { width:600px; height:600px; background:radial-gradient(circle, #6366f1 0%, #8b5cf6 40%, transparent 75%); top:-20%; right:-5%; opacity:0.08; animation:float1 25s infinite; }
+  .orb-2 { width:450px; height:450px; background:radial-gradient(circle, #ec4899 0%, #8b5cf6 30%, transparent 70%); bottom:-10%; left:-5%; opacity:0.06; animation:float2 30s infinite; }
+  .orb-3 { width:350px; height:350px; background:radial-gradient(circle, #06b6d4 0%, #6366f1 35%, transparent 70%); top:50%; right:-10%; opacity:0.05; animation:float3 28s infinite; }
+
+  @keyframes float1 {
+    0% { transform:translate(0,0) scale(1); } 50% { transform:translate(-80px,60px) scale(1.1); }
+    100% { transform:translate(40px,-30px) scale(0.95); }
+  }
+  @keyframes float2 {
+    0% { transform:translate(0,0) scale(1); } 50% { transform:translate(60px,-40px) scale(1.15); }
+    100% { transform:translate(-30px,20px) scale(0.9); }
+  }
+  @keyframes float3 {
+    0% { transform:translate(0,0) scale(1); } 50% { transform:translate(-50px,-30px) scale(1.2); }
+    100% { transform:translate(25px,30px) scale(0.85); }
+  }
+
+  .content { position:relative; z-index:1; max-width:800px; margin:0 auto; padding:0 32px 80px; }
+
+  .nav { display:flex; justify-content:space-between; align-items:center; padding:18px 0; border-bottom:0.5px solid var(--border-subtle); }
+  .nav-brand { display:flex; align-items:center; gap:10px; }
+  .nav-logo { width:34px; height:34px; border-radius:9px; background:linear-gradient(135deg, #6366f1, #8b5cf6); display:flex; align-items:center; justify-content:center; font-size:16px; }
+  .nav-title { font-size:16px; font-weight:600; color:var(--text-primary); }
+  .nav-link { font-size:13px; color:var(--text-tertiary); font-weight:500; cursor:pointer; transition:color 0.2s; background:none; border:none; font-family:inherit; text-decoration:none; }
+  .nav-link:hover { color:var(--text-primary); }
+  .toggle-track { width:38px; height:22px; background:rgba(99,102,241,0.25); border-radius:11px; border:0.5px solid rgba(99,102,241,0.35); position:relative; cursor:pointer; }
+  .toggle-thumb { width:17px; height:17px; background:linear-gradient(135deg, #6366f1, #8b5cf6); border-radius:50%; position:absolute; top:2px; left:2px; box-shadow:0 1px 4px rgba(0,0,0,0.3); transition:transform 0.3s; }
+  [data-theme="light"] .toggle-thumb { transform:translateX(16px); }
+  .toggle-label { font-size:12px; color:var(--text-tertiary); }
+
+  .hero { text-align:center; padding:60px 0 40px; }
+  .hero-title { font-size:42px; font-weight:300; color:var(--text-primary); letter-spacing:-0.03em; margin-bottom:8px; }
+  .hero-sub { font-size:16px; color:var(--text-tertiary); font-weight:400; }
+
+  .section { margin-bottom:48px; }
+  .section-title { font-size:22px; font-weight:500; color:var(--text-primary); margin-bottom:16px; display:flex; align-items:center; gap:10px; }
+  .section-icon { font-size:24px; }
+  .section-desc { font-size:14px; color:var(--text-secondary); line-height:1.8; margin-bottom:20px; }
+
+  .card {
+    background:var(--bg-secondary); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
+    border:0.5px solid var(--border-card); border-radius:16px; padding:24px; margin-bottom:16px;
+  }
+
+  .feature-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .feature-item {
+    background:rgba(255,255,255,0.018); border:0.5px solid rgba(255,255,255,0.04);
+    border-radius:12px; padding:18px; display:flex; flex-direction:column;
+  }
+  .feature-icon { font-size:28px; margin-bottom:10px; }
+  .feature-name { font-size:15px; font-weight:500; color:var(--text-primary); margin-bottom:4px; }
+  .feature-desc { font-size:12px; color:var(--text-secondary); line-height:1.5; }
+
+  .stat-row { display:flex; gap:24px; justify-content:center; margin:24px 0; }
+  .stat-item { text-align:center; }
+  .stat-num { font-size:32px; font-weight:600; color:var(--accent-indigo); }
+  .stat-label { font-size:12px; color:var(--text-tertiary); margin-top:4px; }
+
+  .source-table { width:100%; border-collapse:collapse; font-size:13px; }
+  .source-table th { color:var(--text-tertiary); font-weight:500; padding:8px 12px; border-bottom:1px solid var(--border-subtle); }
+  .source-table td { color:var(--text-primary); padding:10px 12px; border-bottom:0.5px solid var(--border-card); }
+  .source-table tr:last-child td { border-bottom:none; }
+
+  .timeline { position:relative; padding-left:24px; }
+  .timeline-item { position:relative; padding-bottom:20px; }
+  .timeline-item::before { content:''; position:absolute; left:-24px; top:6px; width:8px; height:8px; border-radius:50%; background:var(--accent-indigo); }
+  .timeline-item::after { content:''; position:absolute; left:-21px; top:14px; width:2px; height:calc(100% - 8px); background:var(--border-subtle); }
+  .timeline-item:last-child::after { display:none; }
+  .timeline-date { font-size:12px; color:var(--accent-indigo); font-weight:500; margin-bottom:4px; }
+  .timeline-content { font-size:14px; color:var(--text-secondary); line-height:1.6; }
+
+  .cta-box {
+    background:rgba(99,102,241,0.08); border:0.5px solid rgba(99,102,241,0.15);
+    border-radius:12px; padding:24px; text-align:center; margin:32px 0;
+  }
+  .cta-title { font-size:18px; font-weight:500; color:var(--text-primary); margin-bottom:8px; }
+  .cta-desc { font-size:13px; color:var(--text-secondary); margin-bottom:16px; }
+  .cta-btn {
+    display:inline-flex; align-items:center; gap:8px;
+    background:linear-gradient(135deg, #6366f1, #8b5cf6); color:#fff;
+    font-size:14px; font-weight:500; padding:12px 24px; border-radius:10px;
+    text-decoration:none; transition:transform 0.2s, box-shadow 0.2s;
+  }
+  .cta-btn:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(99,102,241,0.3); }
+
+  .footer { text-align:center; padding:32px 0 0; border-top:0.5px solid var(--border-subtle); }
+  .footer-links { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; }
+  .footer-link { font-size:12px; color:var(--accent-indigo); text-decoration:none; }
+  .footer-link:hover { color:#818cf8; }
+
+  @media (max-width:768px) {
+    .feature-grid { grid-template-columns:1fr; }
+    .hero-title { font-size:32px; }
+    .stat-row { flex-wrap:wrap; gap:16px; }
+  }
+
+  /* 亮色模式修正 */
+  [data-theme="light"] .cta-btn { color: #fff; }
+</style>
+</head>
+<body>
+
+<div class="bg-layer">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+
+<div class="content">
+  <nav class="nav">
+    <div class="nav-brand">
+      <div class="nav-logo">⚡</div>
+      <a href="index.html" class="nav-title" style="text-decoration:none;color:inherit;">AI 脉搏</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:20px;">
+      <a href="index.html" class="nav-link">首页</a>
+      <a href="feed.xml" class="nav-link">RSS</a>
+      <span class="toggle-label">暗</span>
+      <div class="toggle-track" id="themeToggle"><div class="toggle-thumb"></div></div>
+      <span class="toggle-label">亮</span>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1 class="hero-title">关于 AI 脉搏</h1>
+    <p class="hero-sub">面向中国 AI 开发者的每日新闻智能聚合</p>
+  </section>
+
+  <!-- 核心定位 -->
+  <div class="section">
+    <div class="section-title"><span class="section-icon">🎯</span>我们是谁</div>
+    <div class="card">
+      <p class="section-desc">
+        <strong>AI 脉搏</strong> 是一个面向中国 AI 开发工程师的每日新闻聚合平台。我们相信：信息是开发者的生产力，但信息过载是开发者的敌人。
+      </p>
+      <p class="section-desc">
+        每天，AI 行业产生数百条新闻——新模型发布、工具更新、政策法规、开源项目……但开发者没有时间去逐一筛选。我们用 AI 技术帮你做这件事：从 30+ 平台智能采集、去重、评分、分类，生成一份 5 分钟可读完的精华摘要。
+      </p>
+      <p class="section-desc" style="color:var(--accent-indigo);font-weight:500;">
+        「我们不生产新闻，我们是 AI 新闻的过滤器。」
+      </p>
+    </div>
+  </div>
+
+  <!-- 设计理念 -->
+  <div class="section">
+    <div class="section-title"><span class="section-icon">💡</span>设计理念</div>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <div class="feature-icon">⚡</div>
+        <div class="feature-name">四级信息深度</div>
+        <div class="feature-desc">一句话速览(3秒) → 标题浏览(10秒) → 摘要阅读(30秒) → 原文深读。按你的时间预算消费信息。</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🤖</div>
+        <div class="feature-name">AI 原生驱动</div>
+        <div class="feature-desc">基于 Claude Code 构建，从搜索到生成全流程自动化。没有人工编辑，没有主观偏见。</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🔒</div>
+        <div class="feature-name">本地优先</div>
+        <div class="feature-desc">100% 本地运行，数据不出户。生成的 HTML 零外部请求，无埋点无追踪。</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🇨🇳</div>
+        <div class="feature-name">中国视角</div>
+        <div class="feature-desc">优先覆盖国产大模型动态、网信办政策、国内开源项目。海外内容标注来源，保留关键数据原文。</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">📊</div>
+        <div class="feature-name">交叉验证</div>
+        <div class="feature-desc">同一新闻必须出现在 2+ 独立信源才算真热点。避免被单一来源的营销内容带偏。</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">⏰</div>
+        <div class="feature-name">三版更新</div>
+        <div class="feature-desc">早间(08:00)覆盖昨夜海外动态，午间(12:00)增量更新，晚间(20:00)全天汇总+开源数据。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 数据来源 -->
+  <div class="section">
+    <div class="section-title"><span class="section-icon">📰</span>内容来源</div>
+    <div class="card">
+      <p class="section-desc">我们从七大维度、30+ 平台采集信息，避免信息茧房：</p>
+      <table class="source-table">
+        <tr><th>维度</th><th>代表信源</th></tr>
+        <tr><td>🎯 聚合监控</td><td>RadarAI, AIHOT, AIbase, Digg AI</td></tr>
+        <tr><td>📰 深度媒体</td><td>36氪, 钛媒体, 机器之心, 量子位, VentureBeat, The Verge</td></tr>
+        <tr><td>💬 社区论坛</td><td>Reddit r/ML, Hacker News, 知乎 AI, 魔搭社区</td></tr>
+        <tr><td>🔬 前沿研究</td><td>arXiv, Papers with Code, Hugging Face</td></tr>
+        <tr><td>🏢 企业官方</td><td>OpenAI, Anthropic, 阿里通义, 字节豆包, 智谱 GLM</td></tr>
+        <tr><td>📧 AI 日报</td><td>The Decoder, Import AI</td></tr>
+        <tr><td>👤 优秀博主</td><td>Karpathy, Jim Fan, 李沐, 张俊林 等</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- 技术架构 -->
+  <div class="section">
+    <div class="section-title"><span class="section-icon">🔧</span>技术实现</div>
+    <div class="card">
+      <p class="section-desc">
+        <strong>零依赖架构：</strong>纯 HTML/CSS/JS，无需 npm、无需 Python、无需任何外部服务。一个 Claude Code CLI + 一个终端，即可运行全流程。
+      </p>
+      <div class="stat-row">
+        <div class="stat-item"><div class="stat-num">0</div><div class="stat-label">外部依赖</div></div>
+        <div class="stat-item"><div class="stat-num">3</div><div class="stat-label">每日更新</div></div>
+        <div class="stat-item"><div class="stat-num">30+</div><div class="stat-label">信源覆盖</div></div>
+        <div class="stat-item"><div class="stat-num">7</div><div class="stat-label">内容板块</div></div>
+      </div>
+      <p class="section-desc">
+        <strong>自动化流程：</strong>Cron 定时触发 → Claude Code 搜索采集 → 智能去重评分 → 生成 HTML → Git 推送 → GitHub Pages 自动部署。全程无人值守。
+      </p>
+    </div>
+  </div>
+
+  <!-- 发展历程 -->
+  <div class="section">
+    <div class="section-title"><span class="section-icon">📅</span>发展历程</div>
+    <div class="card">
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2026.06.14</div>
+          <div class="timeline-content">项目启动，发布 v1.0，实现 7 板块聚合 + 暗/亮双主题 + 日历归档</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2026.06.18</div>
+          <div class="timeline-content">增加 RSS 订阅支持，发布 feed.xml</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2026.06.22</div>
+          <div class="timeline-content">增加 PWA 支持，可添加到手机主屏幕</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2026.06.24</div>
+          <div class="timeline-content">增加 sitemap.xml、社交分享 Meta 标签、多语言文档 (zh/en/ja/de/ko)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 未来规划 -->
+  <div class="section">
+    <div class="section-title"><span class="section-icon">🚀</span>未来规划</div>
+    <div class="card">
+      <p class="section-desc">我们正在探索以下方向：</p>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <div class="feature-icon">🔔</div>
+          <div class="feature-name">推送通知</div>
+          <div class="feature-desc">Email/微信/Telegram 推送，不错过每期更新</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🔍</div>
+          <div class="feature-name">历史搜索</div>
+          <div class="feature-desc">搜索历史各期，追踪特定话题演变</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🏷️</div>
+          <div class="feature-name">兴趣标签</div>
+          <div class="feature-desc">选择关注的大模型/工具类别，个性化排序</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">📊</div>
+          <div class="feature-name">周报分析</div>
+          <div class="feature-desc">每周 AI 趋势分析，深度解读行业动态</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 参与贡献 -->
+  <div class="cta-box">
+    <div class="cta-title">想参与贡献？</div>
+    <div class="cta-desc">项目完全开源，欢迎提交 Issue、PR，或只是给我们一个 ⭐</div>
+    <a href="https://github.com/DaiOwen/ai-pulse" class="cta-btn" target="_blank" rel="noopener">
+      GitHub 仓库 →
+    </a>
+  </div>
+
+  <!-- 底部 -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html" class="footer-link">首页</a>
+      <a href="feed.xml" class="footer-link">RSS订阅</a>
+      <a href="https://github.com/DaiOwen/ai-pulse" class="footer-link" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p style="font-size:11px;color:var(--text-tertiary);margin-top:12px;">
+      © 2026 AI 脉搏 · 基于 Claude Code 构建 · MIT 开源协议
+    </p>
+  </footer>
+</div>
+
+<script>
+  const html = document.documentElement;
+  const themeToggle = document.getElementById('themeToggle');
+  const savedTheme = localStorage.getItem('ai-pulse-theme');
+  if (savedTheme === 'light') {
+    html.setAttribute('data-theme', 'light');
+  }
+  themeToggle.addEventListener('click', function() {
+    const isDark = html.getAttribute('data-theme') === 'dark';
+    const newTheme = isDark ? 'light' : 'dark';
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('ai-pulse-theme', newTheme);
+  });
+</script>
+</body>
+</html>
