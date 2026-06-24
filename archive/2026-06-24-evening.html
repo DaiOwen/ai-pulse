@@ -467,6 +467,23 @@
     color: var(--accent-indigo);
     background: rgba(99,102,241,0.1);
   }
+
+  /* 网络受限模式提示 */
+  .offline-notice {
+    background: rgba(245,158,11,0.08);
+    border: 0.5px solid rgba(245,158,11,0.25);
+    border-radius: 10px;
+    padding: 14px 20px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .offline-icon { font-size: 22px; flex-shrink: 0; }
+  .offline-title { font-size: 14px; font-weight:600; color: #fbbf24; margin-bottom: 2px; }
+  .offline-desc { font-size: 12px; color: var(--text-secondary); line-height: 1.5; }
+  [data-theme="light"] .offline-notice { background: rgba(217,119,6,0.08); }
+  [data-theme="light"] .offline-title { color: #b45309; }
 </style>
 </head>
 <body>
