@@ -6,11 +6,11 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>AI 脉搏 · 热点速览 — 2026年6月23日 午间版</title>
+<title>AI 脉搏 · 热点速览 — 2026年6月24日 早间版</title>
 <meta name="description" content="面向中国AI开发工程师的每日AI新闻智能聚合">
 <meta name="theme-color" content="#0a0a0f">
-<meta property="og:title" content="AI 脉搏 · AI 热点速览 — 6月23日 午间版">
-<meta property="og:description" content="GLM-5.2 全面开源 · DeepSeek V3.2 MIT 发布 · Meta 放弃 Llama 转向 Muse Spark · 三部门智能体新政">
+<meta property="og:title" content="AI 脉搏 · AI 热点速览 — 6月24日 早间版">
+<meta property="og:description" content="Anthropic Glasswing 网络安全超危模型 · DeepSeek V3.2 MIT 开源 · 中国 AI 全球治理方案 · Google FunctionGemma 端侧 · OpenAI Codex 桌面 App">
 <meta property="og:url" content="https://daiowen.github.io/ai-pulse/">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -145,11 +145,11 @@
     border-radius:100px; padding:6px 16px; margin-bottom:20px; position:relative; z-index:1;
   }
   .hero-badge-dot {
-    width:6px; height:6px; border-radius:50%; background:var(--accent-amber);
-    box-shadow:0 0 6px rgba(245,158,11,0.5); animation:pulse 2s ease-in-out infinite;
+    width:6px; height:6px; border-radius:50%; background:var(--accent-green);
+    box-shadow:0 0 6px rgba(34,197,94,0.5); animation:pulse 2s ease-in-out infinite;
   }
   @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
-  .hero-badge-text { font-size:12px; color:#fbbf24; font-weight:500; letter-spacing:0.05em; }
+  .hero-badge-text { font-size:12px; color:#a5b4fc; font-weight:500; letter-spacing:0.05em; }
   .hero-title { font-size:48px; font-weight:300; color:var(--text-primary); letter-spacing:-0.03em; line-height:1.1; margin-bottom:6px; position:relative; z-index:1; }
   .hero-date { font-size:15px; color:var(--text-tertiary); font-weight:400; margin-bottom:28px; position:relative; z-index:1; }
   .hero-stats { display:flex; justify-content:center; gap:40px; position:relative; z-index:1; }
@@ -164,14 +164,6 @@
   }
   .tldr-label { font-size:11px; font-weight:700; color:var(--accent-indigo); letter-spacing:0.08em; flex-shrink:0; margin-top:2px; }
   .tldr-text { font-size:14px; color:#c9d1d9; line-height:1.6; }
-
-  .api-notice {
-    margin-bottom:32px; padding:12px 16px;
-    background:rgba(245,158,11,0.06); border:0.5px solid rgba(245,158,11,0.15);
-    border-radius:10px; display:flex; gap:10px; align-items:center;
-  }
-  .api-notice-icon { font-size:16px; flex-shrink:0; }
-  .api-notice-text { font-size:12px; color:#fbbf24; line-height:1.5; }
 
   .section-head { display:flex; align-items:center; gap:10px; margin-bottom:20px; }
   .section-line { width:1px; height:18px; border-radius:1px; }
@@ -248,6 +240,16 @@
     display:flex; flex-direction:column;
   }
 
+  .paper-spotlight {
+    background:rgba(139,92,246,0.03); border:0.5px solid rgba(139,92,246,0.1);
+    border-radius:16px; padding:24px; margin-bottom:32px;
+  }
+  .paper-header { display:flex; align-items:center; gap:8px; margin-bottom:10px; }
+  .paper-label { font-size:10px; font-weight:600; color:#c4b5fd; letter-spacing:0.05em; }
+  .paper-title { font-size:17px; font-weight:500; color:var(--text-primary); line-height:1.4; margin-bottom:6px; }
+  .paper-abstract { font-size:11px; color:var(--text-secondary); line-height:1.6; margin-bottom:8px; }
+  .paper-meta { font-size:9px; color:#8b5cf6; }
+
   .dual-cards { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
   .rank-card {
     background:rgba(255,255,255,0.018); border:0.5px solid rgba(255,255,255,0.04);
@@ -286,6 +288,7 @@
   .tag-tool { background:rgba(34,197,94,0.12); color:#4ade80; }
   .tag-industry { background:rgba(245,158,11,0.12); color:#fbbf24; }
   .tag-policy { background:rgba(59,130,246,0.12); color:#60a5fa; }
+  .tag-paper { background:rgba(139,92,246,0.12); color:#c4b5fd; }
   .tag-global { background:rgba(6,182,212,0.12); color:#67e8f9; }
 
   @media (max-width:768px) {
@@ -311,6 +314,7 @@
   .cal-day.has-archive { color:var(--text-primary); background:rgba(99,102,241,0.08); cursor:pointer; transition:background 0.2s; }
   .cal-day.has-archive:hover { background:rgba(99,102,241,0.2); }
   .cal-day.full { background:rgba(34,197,94,0.12); color:#4ade80; font-weight:600; }
+  .cal-day.full:hover { background:rgba(34,197,94,0.25); }
   .cal-day.today { border:1px solid var(--accent-indigo); }
   .cal-day-editions { display:flex; gap:2px; justify-content:center; margin-top:2px; }
   .cal-edition-dot { width:4px; height:4px; border-radius:50%; }
@@ -337,7 +341,7 @@
       <div class="nav-logo">⚡</div>
       <div>
         <div class="nav-title">AI热点速览</div>
-        <div class="nav-sub">AI PULSE · NOON</div>
+        <div class="nav-sub">AI PULSE · MORNING</div>
       </div>
     </div>
     <div class="nav-right">
@@ -353,12 +357,12 @@
     <div class="hero-glow"></div>
     <div class="hero-badge">
       <div class="hero-badge-dot"></div>
-      <span class="hero-badge-text">午间版 · 12:00 CST · 增量更新</span>
+      <span class="hero-badge-text">早间版 · 08:00 CST · 18条精选</span>
     </div>
     <h1 class="hero-title">今日 AI 脉搏</h1>
-    <p class="hero-date">2026年6月23日 · 星期二</p>
+    <p class="hero-date">2026年6月24日 · 星期三</p>
     <div class="hero-stats">
-      <div><div class="hero-stat-num">18</div><div class="hero-stat-label">精选新闻</div></div>
+      <div><div class="hero-stat-num">18</div><div class="hero-stat-label">头条新闻</div></div>
       <div class="hero-stat-divider"></div>
       <div><div class="hero-stat-num">8</div><div class="hero-stat-label">信源覆盖</div></div>
       <div class="hero-stat-divider"></div>
@@ -368,17 +372,11 @@
     </div>
   </section>
 
-  <!-- ═══════════ API Notice ═══════════ -->
-  <div class="api-notice">
-    <span class="api-notice-icon">⚠️</span>
-    <span class="api-notice-text">搜索服务暂时不可用，内容基于今早 08:00 早间版。如需最新增量，请稍后再试或手动运行 <code>/ai-digest now</code>。</span>
-  </div>
-
   <!-- ═══════════ TL;DR ═══════════ -->
   <div class="tldr">
     <span class="tldr-label">TL;DR</span>
     <span class="tldr-text">
-      智谱 GLM-5.2 MIT 全面开源 · DeepSeek V3.2 发布对标 GPT-5 · Meta 放弃 Llama 转向闭源 Muse Spark · 中国三部门联合发文规范智能体发展 · MiniMax M3 稀疏注意力架构 1M 上下文 · Anthropic Claude Cowork 进军企业协作
+      Anthropic Glasswing 网络安全超危模型内部分发 · DeepSeek V3.2 MIT 开源 685B MoE 对标 GPT-5 · Google FunctionGemma 270M 端侧模型控制手机 · OpenAI Codex 桌面版 macOS 发布 · GitHub Agent HQ 统一多 Agent 管控 · 中国发布 AI 全球治理方案
     </span>
   </div>
 
@@ -394,19 +392,19 @@
     <div class="feature-card">
       <div class="card-row">
         <div class="card-body">
-          <div class="card-tag" style="color:#6366f1;">🇨🇳 HEADLINE · 智谱AI · 6月22日</div>
-          <div class="card-title">GLM-5.2 全面开放，753B 参数 MIT 开源，Code Arena 排名第二</div>
-          <div class="card-desc">智谱 AI 宣布 GLM-5.2 面向全量用户开放，API 与模型本体均采用 MIT 开源协议。该模型为 753B 参数 MoE 架构，在 Code Arena 排名第二，SWE-bench Pro 得分 62.1，仅次 OpenAI 旗舰。首创 IndexShare 注意力优化技术，每 token FLOPs 降低 2.9×。英文科技媒体评价其为「让硅谷侧目的中国开源力量」。智谱同步推进科创板上市进程。</div>
+          <div class="card-tag" style="color:#ec4899;">🔴 HEADLINE · Anthropic · 网络安全</div>
+          <div class="card-title">Anthropic 发布 Project Glasswing：首个因「过于危险」被限制发布的 AI 模型</div>
+          <div class="card-desc">Anthropic 正式公开 Project Glasswing——基于 Claude Mythos Preview 构建的网络安全 AI。该模型可自主发现并串联零日漏洞链，包括一个隐匿 27 年的 OpenBSD 内核漏洞和 16 年的 FFmpeg 漏洞。在 CyberGym 评测获 83.1%，SWE-bench Verified 达 93.9%。Anthropic 称其「过于危险不宜公开发布」，仅限 AWS/Apple/Google/Microsoft/Nvidia/CrowdStrike 等受审核合作伙伴使用，定价高达 $25/M 输入 token、$125/M 输出 token。同步承诺投入 $100M 安全研究积分。</div>
           <div class="card-meta">
-            <span>📰 36氪 / stcn.com / IndianExpress</span><span>·</span><span>🕐 6月22日</span>
-            <a href="https://www.stcn.com/article/detail/3965855.html" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
+            <span>📰 VentureBeat / Anthropic</span><span>·</span><span>🕐 6月23日</span>
+            <a href="https://venturebeat.com/ai/anthropic-says-its-most-powerful-ai-cyber-model-is-too-dangerous-to-release" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
           </div>
           <div class="dev-impact">
             <span class="dev-impact-icon">💡</span>
-            <span class="dev-impact-text"><strong>开发者影响：</strong>MIT 协议无商用限制，753B 模型 API 即日可用。IndexShare 降低推理成本，适合中文场景 Agent 开发和高吞吐量应用。</span>
+            <span class="dev-impact-text"><strong>开发者影响：</strong>首次出现「能力过强 → 限制分发」的安全范式转变。企业安全团队需关注 AI 驱动攻击面的变化，模型能力评级体系（如 CyberGym）将成为采购参考标准。</span>
           </div>
         </div>
-        <div class="card-icon">🧠</div>
+        <div class="card-icon">🛡️</div>
       </div>
     </div>
 
@@ -414,27 +412,27 @@
     <div class="sub-grid">
       <div class="sub-card">
         <div class="sub-tag" style="color:#22c55e;">🇨🇳 OPEN SOURCE · DeepSeek</div>
-        <div class="sub-title">DeepSeek V3.2 / V3.2-Speciale 发布，MIT 开源对标 GPT-5</div>
-        <div class="sub-desc">685B 参数，128K 上下文，MIT 协议。IMO 和 IOI 2025 金牌级表现，稀疏注意力将推理成本降低约 70%。V3.2-Speciale 为专业推理增强版，多项基准与 GPT-5 互有胜负。API 定价仅为竞争对手的 1/10~1/20。</div>
+        <div class="sub-title">DeepSeek V3.2 / V3.2-Speciale：MIT 协议 685B MoE，IMO/IOI 双金，推理成本降 70%</div>
+        <div class="sub-desc">DeepSeek 发布 V3.2 系列，685B 参数 MoE 架构，MIT 许可协议。引入 DeepSeek Sparse Attention (DSA) 将长序列推理成本降低约 70%。V3.2-Speciale 在 IMO 2025 和 IOI 2025 摘金，ICPC World Finals 获亚军。API 定价仅为竞争对手的 1/10~1/20。</div>
         <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/ai/deepseek-just-dropped-two-insanely-powerful-ai-models-that-rival-gpt-5-and" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
       </div>
       <div class="sub-card">
-        <div class="sub-tag" style="color:#ec4899;">🌍 META · 闭源转型</div>
-        <div class="sub-title">Meta 放弃 Llama 开源路线，发布闭源推理模型 Muse Spark</div>
-        <div class="sub-desc">Meta Superintelligence Labs 推出首款闭源模型 Muse Spark，引入「视觉思维链」(visual chain of thought)，Intelligence Index 得分 52。这标志着 Meta 从 Llama 开源战略的重大转向，引发开源社区震动。</div>
-        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/technology/goodbye-llama-meta-launches-new-proprietary-ai-model-muse-spark-first-since" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+        <div class="sub-tag" style="color:#6366f1;">🇨🇳 OPEN SOURCE · Z.ai (智谱)</div>
+        <div class="sub-title">Z.ai 开源 GLM-4.5 系列：355B MoE，Apache 2.0，原生生成 PPT</div>
+        <div class="sub-desc">智谱海外品牌 Z.ai 发布 GLM-4.5（355B total / 32B active，MoE）和 GLM-4.5-Air（106B / 12B active）。在 BrowseComp、AIME24、SWE-bench Verified 上对标 Claude 4 Sonnet/Opus。可单 prompt 生成完整 PowerPoint 演示文稿。Apache 2.0 协议，API $0.20/M 起。</div>
+        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/ai/chinese-startup-z-ai-launches-powerful-open-source-glm-4-5-model-family-with-powerpoint-creation" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
       </div>
       <div class="sub-card">
-        <div class="sub-tag" style="color:#f59e0b;">🇨🇳 MINIMAX · 架构创新</div>
-        <div class="sub-title">MiniMax M3 发布：自研稀疏注意力 MSA，1M 上下文计算量降至 1/20</div>
-        <div class="sub-desc">MiniMax 推出全新 M3 模型，自研 MSA 稀疏注意力架构在 100 万 token 上下文下计算量仅为上一代的 1/20。具备前沿 Coding 能力、1M 超长上下文和原生多模态。公司已启动 A 股科创板 IPO。</div>
-        <div class="sub-meta"><span>📰 stcn.com</span><a href="https://www.stcn.com/article/detail/3936406.html" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+        <div class="sub-tag" style="color:#06b6d4;">🤖 EDGE AI · Google</div>
+        <div class="sub-title">Google 发布 FunctionGemma：270M 参数端侧模型，可自主操控手机应用</div>
+        <div class="sub-desc">Google 发布 FunctionGemma，一个仅 2.7 亿参数的端侧函数调用模型——将自然语言指令实时转化为结构化代码，无需联网即可操控移动设备。在函数调用任务上达 85% 准确率，匹敌数十倍于己的模型。已在 Hugging Face 和 Kaggle 开放下载。</div>
+        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/technology/google-releases-functiongemma-a-tiny-edge-model-that-can-control-mobile" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
       </div>
       <div class="sub-card">
-        <div class="sub-tag" style="color:#06b6d4;">🌍 BLACK FOREST LABS</div>
-        <div class="sub-title">Black Forest Labs 开源 FLUX.2 [klein]，一秒内生成 AI 图片</div>
-        <div class="sub-desc">Stable Diffusion 原团队创业项目发布 FLUX.2 [klein] 系列：4B 参数版本 Apache 2.0 开源，9B 版本非商用许可。在消费级 GPU 上实现亚秒级图片生成，速度比前代提升 8×。</div>
-        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/technology/black-forest-labs-launches-open-source-flux-2-klein-to-generate-ai-images-in" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+        <div class="sub-tag" style="color:#f59e0b;">🌍 RESEARCH · Thinking Machines</div>
+        <div class="sub-title">Mira Murati 创业公司 Thinking Machines 发布「交互模型」，对话延迟仅 0.4 秒</div>
+        <div class="sub-desc">前 OpenAI CTO Mira Murati 的创业公司 Thinking Machines 展示 276B 参数（12B active）「全双工」交互模型，同时处理语音输入与输出 200ms 分片。语音对话延迟仅 0.40 秒（GPT-realtime-2.0 为 1.18 秒），FD-bench V1.5 得分 77.8，接近对手两倍。目前仅研究预览。</div>
+        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/technology/thinking-machines-shows-off-preview-of-near-realtime-ai-voice-and-video-conversation-with-new-interaction-models" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
       </div>
     </div>
   </div>
@@ -450,31 +448,31 @@
     <div class="tool-row">
       <div class="tool-card">
         <div class="tool-icon">🖥️</div>
-        <div class="tool-name">DeepSeek-TUI</div>
-        <div class="tool-desc">「DeepSeek 版 Claude Code」——终端原生编程智能体，支持 Plan/Agent/YOLO 三种模式，原生 MCP + Skills，9.47 元即可开发一个 App。GitHub 屠榜中。</div>
-        <div class="tool-badge badge-hot">趋势 #1</div>
-        <a href="https://eu.36kr.com/zh/p/3799220130312705" class="read-original" style="margin-top:8px;" target="_blank" rel="noopener">36氪 →</a>
+        <div class="tool-name">OpenAI Codex Desktop</div>
+        <div class="tool-desc">macOS 版「Agent 指挥中心」发布，支持并行运行多个 AI 编码 Agent，独立工作最长 30 分钟。内置 Skills 包和 Automation 定时任务机制。</div>
+        <div class="tool-badge badge-new">新发布</div>
+        <a href="https://venturebeat.com/orchestration/openai-launches-a-codex-desktop-app-for-macos-to-run-multiple-ai-coding" class="read-original" style="margin-top:8px;" target="_blank" rel="noopener">VentureBeat →</a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">🏢</div>
+        <div class="tool-name">GitHub Agent HQ</div>
+        <div class="tool-desc">GitHub 发布多 Agent 统一管控面板，支持 Anthropic/OpenAI/Google/Cognition/xAI 等 Agent 集中管理。含 Mission Control、自定义 Agent AGENTS.md 和 MCP 集成。</div>
+        <div class="tool-badge badge-new">新发布</div>
+        <a href="https://venturebeat.com/ai/githubs-agent-hq-aims-to-solve-enterprises-biggest-ai-coding-problem-too" class="read-original" style="margin-top:8px;" target="_blank" rel="noopener">VentureBeat →</a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">🔒</div>
+        <div class="tool-name">Kilo KiloClaw</div>
+        <div class="tool-desc">企业级 AI Agent 治理平台，解决「影子 AI」危机。提供审计日志、凭证管理、集中化 Agent 管控，让员工自主使用的 Agent 纳入合规轨道。</div>
+        <div class="tool-badge badge-new">新发布</div>
+        <a href="https://venturebeat.com/orchestration/the-end-of-shadow-ai-at-enterprises-kilo-launches-kiloclaw-for-organizations" class="read-original" style="margin-top:8px;" target="_blank" rel="noopener">VentureBeat →</a>
       </div>
       <div class="tool-card">
         <div class="tool-icon">🤖</div>
-        <div class="tool-name">PilotDeck 智能体 OS</div>
-        <div class="tool-desc">清华 THUNLP + 面壁智能 + OpenBMB 联合开源。独立 WorkSpace 隔离、白盒化可编辑记忆、智能路由节省 Token 70%。</div>
-        <div class="tool-badge badge-new">新发布</div>
-        <a href="https://www.36kr.com/p/3828533398524807" class="read-original" style="margin-top:8px;" target="_blank" rel="noopener">36氪 →</a>
-      </div>
-      <div class="tool-card">
-        <div class="tool-icon">💻</div>
-        <div class="tool-name">MiMo Code</div>
-        <div class="tool-desc">小米首个开源 AI 编程助手，MIT 协议。持久记忆系统 + 无限上下文 + 语音输入，支持接入 DeepSeek/Kimi/GLM。</div>
-        <div class="tool-badge badge-new">新发布</div>
-        <a href="https://egs.stcn.com/news/detail/2301096" class="read-original" style="margin-top:8px;" target="_blank" rel="noopener">stcn →</a>
-      </div>
-      <div class="tool-card">
-        <div class="tool-icon">☁️</div>
-        <div class="tool-name">Cohere North Mini Code</div>
-        <div class="tool-desc">30B MoE (3B active) 开源代码 Agent，Apache 2.0，单 H100 可跑。2.8× 吞吐量超越 Mistral Devstral Small 2。</div>
-        <div class="tool-badge badge-update">开源新秀</div>
-        <a href="https://venturebeat.com/ai/cohere-open-sources-a-coding-agent-that-runs-on-a-single-h100" class="read-original" style="margin-top:8px;" target="_blank" rel="noopener">VentureBeat →</a>
+        <div class="tool-name">Anthropic Claude Tag</div>
+        <div class="tool-desc">Slack 持久化 AI 队友，替代原 Slack App。可学习频道上下文、自主监控和响应。企业级安全管控，支持 Token 花费上限设定。@Claude 即用。</div>
+        <div class="tool-badge badge-update">更新</div>
+        <a href="https://venturebeat.com/technology/anthropic-launches-claude-tag-replacing-its-slack-app-with-a-persistent-ai-teammate-that-learns-monitors-and-works-autonomously" class="read-original" style="margin-top:8px;" target="_blank" rel="noopener">VentureBeat →</a>
       </div>
     </div>
   </div>
@@ -489,22 +487,34 @@
 
     <div class="policy-grid">
       <div class="policy-card">
-        <div class="sub-tag" style="color:#60a5fa;">🇨🇳 监管 · 三部门联合发文</div>
-        <div class="sub-title">三部门联合印发《智能体规范应用与创新发展实施意见》</div>
-        <div class="sub-desc">国家网信办、发改委、工信部联合发文，首次明确定义「智能体」为具备自主感知、记忆、决策、交互与执行能力的智能系统。提出 19 个典型应用场景，覆盖科学研究、产业发展、民生福祉等领域，确立安全可控、分类分级、包容审慎的监管原则。</div>
-        <div class="sub-meta"><span>📰 人民网 · 5月9日</span><a href="http://society.people.com.cn/n1/2026/0509/c1008-40716311.html" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+        <div class="sub-tag" style="color:#60a5fa;">🇨🇳 治理 · 中国方案</div>
+        <div class="sub-title">中国发布《为人工智能全球治理贡献中国方案》，强调「智能向善」</div>
+        <div class="sub-desc">人民网 6 月 20 日报道，中国在国际场合正式发布 AI 全球治理中国方案。核心原则包括：以人为本、智能向善、安全可控、包容普惠。提出建立健全 AI 研发伦理规范和安全标准，推动形成具有广泛共识的国际 AI 治理框架。中国已发布 30 项 AI 国家标准，84 项在制定中。</div>
+        <div class="sub-meta"><span>📰 人民网 · 6月20日</span><a href="https://finance.people.com.cn/BIG5/n1/2026/0620/c1004-40743922.html" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
         <div class="dev-impact">
           <span class="dev-impact-icon">💡</span>
-          <span class="dev-impact-text"><strong>开发者影响：</strong>智能体产品即将迎来合规元年。涉及自主决策和用户数据的 Agent 应用需关注分类分级要求，安全可控和可解释性将成为产品上线必备项。</span>
+          <span class="dev-impact-text"><strong>开发者影响：</strong>国家标准体系加速完善（30+84 项），涉及智能体、AI 安全、数据治理等领域。面向国内外市场的 AI 产品需同步关注中国国标与国际框架的合规要求。</span>
         </div>
       </div>
       <div class="policy-card">
-        <div class="sub-tag" style="color:#f59e0b;">🌍 美国 · AI 监管战争</div>
-        <div class="sub-title">美国 AI 监管「内战」：州级立法爆炸式增长，联邦 vs 州权博弈加剧</div>
-        <div class="sub-desc">MIT Tech Review 深度报道：2025 年美国各州提出 1000+ AI 法案，约 40 州通过了 100+ 项法律。纽约 RAISE Act、加州 SB 53 前沿 AI 安全法等重量级法案正在推进，与联邦去监管化政策形成激烈对抗。2026 年将成为 AI 立法「摊牌之年」。</div>
-        <div class="sub-meta"><span>📰 MIT Tech Review · 1月23日</span><a href="https://www.technologyreview.com/2026/01/23/1131559/americas-coming-war-over-ai-regulation/" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+        <div class="sub-tag" style="color:#f59e0b;">🌍 国际 · AI 数字主权</div>
+        <div class="sub-title">人民网：AI 智能体决策不应架空人类「数字主权」——四层防护体系提案</div>
+        <div class="sub-desc">人民网刊发深度评论，提出 AI 智能体治理的「四层防护体系」：外约束（法律法规）、内嵌入（伦理植入算法）、供应链（全链条安全）、软法（行业自律）。核心主张「双权分离」——AI 对数据的「访问权」与对结果的「行动权」必须在架构层面分离，确保关键决策节点上人类始终掌握最终控制权。</div>
+        <div class="sub-meta"><span>📰 人民网 · 2月2日</span><a href="http://finance.people.com.cn/BIG5/n1/2026/0202/c1004-40657725.html" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
       </div>
     </div>
+  </div>
+
+  <!-- ═══════════ 📄 论文速递 ═══════════ -->
+  <div class="paper-spotlight">
+    <div class="paper-header">
+      <span style="font-size:20px;">📄</span>
+      <span class="paper-label"><span class="news-item-tag tag-paper">论文</span>今日论文</span>
+    </div>
+    <div class="paper-title">MacAgentBench：首次在真实 macOS 桌面上大规模评测 AI Agent 的多维度基准</div>
+    <div class="paper-abstract">来自多所高校的研究团队构建了 MacAgentBench——第一个在真实 macOS 桌面环境中评测 AI Agent 的基准。与之前依赖简化模拟环境的工作不同，该基准在真实 Finder、Safari、Terminal、Xcode 等应用上测试 Agent 的文件操作、网页交互、Shell 执行和代码编辑能力。结果显示当前最先进的 GUI Agent 在真实桌面环境中的任务完成率远低于模拟环境，揭示了从「模拟评测」到「真实桌面」的巨大鸿沟。该工作对 Computer Use 和桌面 Agent 的工程实践具有直接指导意义。</div>
+    <div class="paper-meta">arXiv: 2606.22557 · 2026年6月21日发布 · 建议阅读时间 10 分钟</div>
+    <a href="https://browse-export.arxiv.org/abs/2606.22557" class="read-original" target="_blank" rel="noopener" style="display:inline-flex;margin-top:8px;">阅读论文全文 <span class="read-original-arrow">→</span></a>
   </div>
 
   <!-- ═══════════ 💡 应用落地 ═══════════ -->
@@ -518,15 +528,15 @@
     <div class="sub-grid">
       <div class="sub-card">
         <div class="sub-tag" style="color:#f59e0b;">🏢 ENTERPRISE · Anthropic</div>
-        <div class="sub-title">Anthropic Claude Cowork 发布：从编程助手到企业全场景 Agent</div>
-        <div class="sub-desc">继 Claude Code 改变编程后，Anthropic 推出 Claude Cowork——面向企业全场景的 Agent 平台。支持私有插件市场、MCP 连接器（GDrive/Gmail/Salesforce/DocuSign），企业管理员可构建内部 Agent 生态。Spotify 已实现代码迁移工程时间减少 90%，Novo Nordisk 将合规文档处理从 10+ 周压缩至 10 分钟。</div>
-        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/orchestration/anthropic-says-claude-code-transformed-programming-now-claude-cowork-is" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+        <div class="sub-title">Anthropic：80% 新生产代码由 Claude 编写，工程师人均代码产出增长 8×</div>
+        <div class="sub-desc">Anthropic 披露内部惊人数据：2026 年 5 月合并到生产环境的代码中 80% 为 AI 编写，工程师人均代码产出增长 8 倍。VentureBeat 同步发布企业采纳路线图：从 AI 辅助补全到全自主 Agent 编程的四个阶段。</div>
+        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/technology/anthropic-says-80-of-its-new-production-code-is-now-authored-by-claude-how-your-enterprise-can-keep-up" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
       </div>
       <div class="sub-card">
-        <div class="sub-tag" style="color:#22c55e;">🏢 ENTERPRISE · ServiceNow</div>
-        <div class="sub-title">ServiceNow 90% IT 请求实现自主处理，推出企业 Agent 劳动力平台</div>
-        <div class="sub-desc">ServiceNow 披露内部 AI 部署数据：90% 的 IT 支持请求由 AI Agent 自主解决。发布「Autonomous Workforce」框架和 EmployeeWorks 产品，创新性地采用角色继承权限模型——Agent 直接从企业现有访问控制系统继承权限，而非运行时推理，确保合规先行。</div>
-        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/orchestration/servicenow-resolves-90-of-its-own-it-requests-autonomously-now-it-wants-to" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+        <div class="sub-tag" style="color:#22c55e;">🏢 ENTERPRISE · AI 支付</div>
+        <div class="sub-title">支付宝「AI 付」+ 微信「AI 专属卡」+ 京东 A2P2：中国 AI 支付三路并进</div>
+        <div class="sub-desc">36氪报道中国 AI 支付最新进展：支付宝在瑞幸 Lucky AI 实现智能体全链路支付（仍需手动确认），联合千问推出 ACT 协议；微信推出 WorkBuddy 桌面智能体支付闭环，采用额度锁定换取安全；京东发布 A2P2 协议定义 Agent 授权和审计规则。</div>
+        <div class="sub-meta"><span>📰 36氪</span><a href="https://www.36kr.com/p/3864189754063493" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
       </div>
     </div>
   </div>
@@ -541,24 +551,25 @@
 
     <div class="dual-cards">
       <div class="rank-card">
-        <div class="rank-label" style="color:#f59e0b;">🔥 本周 Stars 上升最快</div>
+        <div class="rank-label" style="color:#f59e0b;">🔥 本周 Stars 上升最快 · W25</div>
         <div class="rank-row"><span class="rank-num">1</span><span class="rank-name">chopratejas/headroom</span><span class="rank-stat rank-up">+13k</span></div>
         <div class="rank-row"><span class="rank-num">2</span><span class="rank-name">mvanhorn/last30days-skill</span><span class="rank-stat rank-up">+12k</span></div>
         <div class="rank-row"><span class="rank-num">3</span><span class="rank-name">Leonxlnx/taste-skill</span><span class="rank-stat rank-up">+8.7k</span></div>
-        <div class="rank-row"><span class="rank-num">4</span><span class="rank-name">Panniantong/Agent-Reach</span><span class="rank-stat rank-up">+8.3k</span></div>
-        <div class="rank-row"><span class="rank-num">5</span><span class="rank-name">OpenBMB/PilotDeck</span><span class="rank-stat rank-up">+7.5k</span></div>
+        <div class="rank-row"><span class="rank-num">4</span><span class="rank-name">NVIDIA/skillspector</span><span class="rank-stat rank-up">+8.2k</span></div>
+        <div class="rank-row"><span class="rank-num">5</span><span class="rank-name">apple/container</span><span class="rank-stat rank-up">+7.8k</span></div>
       </div>
       <div class="rank-card">
-        <div class="rank-label" style="color:#ec4899;">📊 趋势关键词</div>
+        <div class="rank-label" style="color:#ec4899;">📊 W24-W25 趋势关键词</div>
         <div style="font-size:12px; color:var(--text-secondary); line-height:1.8;">
-          🔥 <strong>Skills 范式</strong> —— headroom Token 压缩 60-95% 登顶<br>
-          🧠 <strong>Agent 基础设施</strong> —— Agent-Reach 一键联网<br>
-          🎨 <strong>AI 前端品质</strong> —— taste-skill 反模板化 UI<br>
-          🏗️ <strong>智能体 OS</strong> —— PilotDeck 清华出品<br>
-          🔌 <strong>跨平台接入</strong> —— last30days-skill AI 驱动搜索
+          🔥 <strong>Token 压缩</strong> —— headroom 宣称 60-95% Token 节省<br>
+          🔍 <strong>AI 搜索技能</strong> —— last30days-skill 跨平台聚合<br>
+          🎨 <strong>UI 美学反模板</strong> —— taste-skill 生成非 AI 风格 UI<br>
+          🛡️ <strong>Agent 安全</strong> —— NVIDIA SkillSpector 开源安全扫描<br>
+          🍎 <strong>Apple 开源</strong> —— macOS 原生 Linux 容器 VZ 框架<br>
+          📝 <strong>文档转换</strong> —— 微软 markitdown 文件转 Markdown
         </div>
         <div style="margin-top:12px; font-size:10px; color:var(--text-tertiary);">
-          数据来源：GitHub Trending W23-W25 · 整理自 cnblogs.com<br>
+          数据来源：GitHub Trending W24-W25 · 整理自 cnblogs.com<br>
           <a href="https://www.cnblogs.com/whincwu/p/20713199" class="read-original" style="display:inline-flex;margin-top:4px;" target="_blank" rel="noopener">查看完整周榜 →</a>
         </div>
       </div>
@@ -575,28 +586,28 @@
 
     <div class="sub-grid">
       <div class="sub-card">
-        <div class="sub-tag" style="color:#06b6d4;">GOOGLE DEEPMIND</div>
-        <div class="sub-title">Google 发布 Gemini Spark —— 24/7 云端 AI Agent，对标 OpenClaw</div>
-        <div class="sub-desc">Google I/O 2026 发布 Gemini Spark：通过 Google Cloud VM 实现 24×7 持续运行的 AI Agent，可自主处理邮件、管理日程、监控信用卡异常收费。同时发布 DiffusionGemma——首个基于扩散模型的文本生成模型，抛弃传统从左到右逐 token 生成，实现 4× 推理加速。</div>
-        <div class="sub-meta"><span>📰 The Verge / ComputerWorld</span><a href="https://www.theverge.com/tech/932996/google-gemini-spark-antigravity-io-2026" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
-      </div>
-      <div class="sub-card">
-        <div class="sub-tag" style="color:#ec4899;">OPENAI</div>
-        <div class="sub-title">OpenAI GPT-5.4 发布：首个原生「Computer Use」模型，迈向自主 Agent</div>
-        <div class="sub-desc">GPT-5.4 是 OpenAI 首个具备原生计算机操作能力的模型，可操作应用、跨设备完成任务。同步发布 GPT-5.4 Thinking 变体和 Codex 桌面 App（macOS），开发者可在本地并行运行多个 AI 编码 Agent。The Verge 评价其为「自主 Agent 的一大步」。</div>
+        <div class="sub-tag" style="color:#06b6d4;">OPENAI</div>
+        <div class="sub-title">OpenAI 发布 ChatGPT Atlas 浏览器 + GPT-5.4 Computer Use 模型</div>
+        <div class="sub-desc">OpenAI 发布内置 ChatGPT 的 AI 浏览器 Atlas（Chromium 内核），具备 Agent 能力和浏览器记忆。同步发布 GPT-5.4——首个原生 Computer Use 模型，可跨应用操作设备。The Verge 评价其为「自主 Agent 的一大步」，事实准确性提升 33%。</div>
         <div class="sub-meta"><span>📰 The Verge / VentureBeat</span><a href="https://www.theverge.com/ai-artificial-intelligence/889926/openai-gpt-5-4-model-release-ai-agents" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
       </div>
       <div class="sub-card">
-        <div class="sub-tag" style="color:#22c55e;">NVIDIA</div>
-        <div class="sub-title">Nvidia 开源 Parakeet-TDT-0.6B-V2：60 分钟音频 1 秒转录，WER 仅 6.05%</div>
-        <div class="sub-desc">Nvidia 在 Hugging Face 完全开源轻量级语音识别模型 Parakeet-TDT-0.6B-V2，采用 TDT 架构实现极速推理——1 秒转录 60 分钟音频。WER 仅 6.05%，在边缘设备和云端场景均适用。</div>
-        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/ai/nvidia-launches-fully-open-source-transcription-ai-model-parakeet-tdt-0-6b-v2-on-hugging-face" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+        <div class="sub-tag" style="color:#ec4899;">GOOGLE</div>
+        <div class="sub-title">Google Gemini 2.5 Deep Think 获 IMO 金牌，但公开版为「铜牌」缩减版</div>
+        <div class="sub-desc">Google 发布推理增强版 Gemini 2.5 Deep Think，完整版在 IMO 2025 摘金。但公测版本是性能削弱后的「铜牌」级别，完整版仅限 Google AI Ultra 计划（$249.99/月）。这延续了前沿模型「完整版受限、公开版降级」的行业趋势。</div>
+        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/business/google-releases-olympiad-medal-winning-gemini-2-5-deep-think-ai-publicly-but-theres-a-catch" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+      </div>
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#22c55e;">AR CEE</div>
+        <div class="sub-title">Arcee 开源 Trinity-Large-Thinking：美国本土 399B 推理模型，Apache 2.0</div>
+        <div class="sub-desc">美国 AI 公司 Arcee 开源 Trinity-Large-Thinking（399B/13B active），作为非中国产开源推理模型的替代选项。PinchBench 91.9（接近 Opus 4.6 的 93.3），AIME25 达 96.3。2048 块 B300 GPU 训练 33 天耗资 $20M，API 定价仅 $0.90/M，约为 Opus 4.6 的 1/28。</div>
+        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/ai/arcees-new-open-source-trinity-large-thinking-is-the-rare-powerful-u-s-made" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
       </div>
       <div class="sub-card">
         <div class="sub-tag" style="color:#8b5cf6;">ANTHROPIC</div>
-        <div class="sub-title">Anthropic Sonnet 4.6：旗舰级性能，1/5 的价格，推动企业大规模采用</div>
-        <div class="sub-desc">Sonnet 4.6 以 $3/$15 每百万 token 的定价（仅为 Opus 的 1/5）提供接近旗舰水平的性能。Computer Use 能力 16 个月内提升 5×（14.9%→72.5%）。1M token 上下文窗口。企业客户报告已将大部分流量迁移至 Sonnet 4.6。</div>
-        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/technology/anthropics-sonnet-4-6-matches-flagship-ai-performance-at-one-fifth-the-cost" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+        <div class="sub-title">Anthropic Claude Cowork：从编程到全场景企业 Agent，Spotify 工程时间减 90%</div>
+        <div class="sub-desc">继 Claude Code 改写编程工作流后，Anthropic 发布 Claude Cowork——面向非技术用户的桌面 Agent。支持在指定文件夹内读写文件、MCP 连接器接入 GDrive/Salesforce/DocuSign。Spotify 代码迁移工程时间减少 90%，Novo Nordisk 合规文档从 10+ 周压缩至 10 分钟。</div>
+        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/orchestration/anthropic-says-claude-code-transformed-programming-now-claude-cowork-is" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
       </div>
     </div>
   </div>
@@ -664,7 +675,8 @@
     "2026-06-17": ["morning"],
     "2026-06-18": ["morning", "noon"],
     "2026-06-22": ["morning"],
-    "2026-06-23": ["morning", "noon"]
+    "2026-06-23": ["morning"],
+    "2026-06-24": ["morning"]
   };
   (function(){for(var d in archiveMap){if(Array.isArray(archiveMap[d])&&archiveMap[d].length>=3)archiveMap[d]='full';}})();
 
@@ -683,11 +695,11 @@
 
     monthLabel.textContent = calYear + '年' + calMonth + '月';
 
-    let html = '';
+    let html2 = '';
     const dows = ['一','二','三','四','五','六','日'];
-    dows.forEach(d => html += '<div class="cal-dow">' + d + '</div>');
+    dows.forEach(d => html2 += '<div class="cal-dow">' + d + '</div>');
 
-    for (let i = 0; i < adjustedFirst; i++) html += '<div class="cal-day"></div>';
+    for (let i = 0; i < adjustedFirst; i++) html2 += '<div class="cal-day"></div>';
 
     for (let d = 1; d <= daysInMonth; d++) {
       const ds = calYear + '-' + String(calMonth).padStart(2,'0') + '-' + String(d).padStart(2,'0');
@@ -698,25 +710,24 @@
       }
       if (ds === todayStr) cls += ' today';
 
-      html += '<div class="' + cls + '"';
+      html2 += '<div class="' + cls + '"';
       if (entry) {
-        html += ' data-date="' + ds + '"';
-        html += ' style="cursor:pointer"';
+        html2 += ' data-date="' + ds + '"';
+        html2 += ' style="cursor:pointer"';
       }
-      html += '>' + d;
+      html2 += '>' + d;
       if (entry && entry !== 'full' && Array.isArray(entry)) {
-        html += '<div class="cal-day-editions">';
+        html2 += '<div class="cal-day-editions">';
         entry.forEach(function(ed) {
-          html += '<span class="cal-edition-dot ' + ed + '"></span>';
+          html2 += '<span class="cal-edition-dot ' + ed + '"></span>';
         });
-        html += '</div>';
+        html2 += '</div>';
       }
-      html += '</div>';
+      html2 += '</div>';
     }
 
-    calGrid.innerHTML = html;
+    calGrid.innerHTML = html2;
 
-    // Click handlers
     calGrid.querySelectorAll('.has-archive').forEach(function(el) {
       el.addEventListener('click', function() {
         const date = el.getAttribute('data-date');
