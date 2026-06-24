@@ -1101,6 +1101,102 @@
 
   // 页面加载时执行
   scrollToHashNews();
+
+  // ===== 快捷键支持 =====
+  document.addEventListener('keydown', function(e) {
+    // 忽略输入框内的按键
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+      if (e.key === 'Escape') e.target.blur();
+      return;
+    }
+
+    // 获取所有新闻卡片
+    const newsItems = document.querySelectorAll('.feature-card, .sub-card');
+    const viewportCenter = window.innerHeight / 2;
+
+    // 找到当前视口中最近顶部的新闻
+    let currentPosition = -1;
+    for (let i = 0; i < newsItems.length; i++) {
+      const rect = newsItems[i].getBoundingClientRect();
+      if (rect.top >= 0 && rect.top < viewportCenter) {
+        currentPosition = i;
+      }
+    }
+
+    switch(e.key.toLowerCase()) {
+      case 'j':
+      case 'arrowdown':
+        e.preventDefault();
+        if (currentPosition >= 0 && currentPosition < newsItems.length - 1) {
+          newsItems[currentPosition + 1].scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else if (currentPosition < 0 && newsItems.length > 0) {
+          newsItems[0].scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        break;
+      case 'k':
+      case 'arrowup':
+        e.preventDefault();
+        if (currentPosition > 0) {
+          newsItems[currentPosition - 1].scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        break;
+      case 't':
+        document.getElementById('themeToggle').click();
+        showToast('主题已切换');
+        break;
+      case '?':
+        showShortcutsHelp();
+        break;
+    }
+  });
+
+  function showShortcutsHelp() {
+    const existing = document.querySelector('.shortcuts-modal');
+    if (existing) {
+      existing.remove();
+      return;
+    }
+
+    const modal = document.createElement('div');
+    modal.className = 'shortcuts-modal';
+    modal.style.cssText = `
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #16161f;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 24px 32px;
+      z-index: 200;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      min-width: 280px;
+    `;
+    modal.innerHTML = `
+      <h3 style="margin-bottom:16px;font-size:18px;font-weight:500;">⌨️ 快捷键</h3>
+      <div style="font-size:14px;line-height:2;">
+        <div><kbd style="background:rgba(255,255,255,0.1);padding:2px 8px;border-radius:4px;">J</kbd> / <kbd style="background:rgba(255,255,255,0.1);padding:2px 8px;border-radius:4px;">↓</kbd> 下一条新闻</div>
+        <div><kbd style="background:rgba(255,255,255,0.1);padding:2px 8px;border-radius:4px;">K</kbd> / <kbd style="background:rgba(255,255,255,0.1);padding:2px 8px;border-radius:4px;">↑</kbd> 上一条新闻</div>
+        <div><kbd style="background:rgba(255,255,255,0.1);padding:2px 8px;border-radius:4px;">T</kbd> 切换主题</div>
+        <div><kbd style="background:rgba(255,255,255,0.1);padding:2px 8px;border-radius:4px;">?</kbd> 显示/隐藏帮助</div>
+      </div>
+      <div style="margin-top:16px;font-size:12px;color:var(--text-tertiary);">按任意键关闭</div>
+    `;
+    document.body.appendChild(modal);
+
+    // 点击外部或按任意键关闭
+    setTimeout(() => {
+      const closeHandler = (e) => {
+        modal.remove();
+        document.removeEventListener('keydown', closeHandler);
+        document.removeEventListener('click', closeHandler);
+      };
+      document.addEventListener('keydown', closeHandler);
+      document.addEventListener('click', closeHandler);
+    }, 100);
+  }
 </script>
 </body>
 </html>
