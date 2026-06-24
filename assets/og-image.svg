@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="50%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0d0a1f"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="orbGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="orbGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="60"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative orbs -->
+  <ellipse cx="200" cy="100" rx="300" ry="200" fill="url(#orbGrad1)" filter="url(#blur)"/>
+  <ellipse cx="1000" cy="500" rx="250" ry="180" fill="url(#orbGrad2)" filter="url(#blur)"/>
+
+  <!-- Grid pattern -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Logo icon -->
+  <rect x="100" y="240" width="80" height="80" rx="20" fill="url(#accentGrad)"/>
+  <text x="140" y="295" font-size="48" text-anchor="middle" fill="white" font-family="sans-serif">⚡</text>
+
+  <!-- Title -->
+  <text x="200" y="250" font-size="72" font-weight="300" fill="#f5f5f7" font-family="Inter, sans-serif" letter-spacing="-3">
+    AI 脉搏
+  </text>
+
+  <!-- Subtitle -->
+  <text x="200" y="320" font-size="28" fill="#86868b" font-family="Inter, sans-serif">
+    AI 热点速览 · 面向中国 AI 开发者的每日智能聚合
+  </text>
+
+  <!-- Stats -->
+  <g transform="translate(200, 400)">
+    <rect width="180" height="60" rx="12" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.2)"/>
+    <text x="90" y="25" font-size="32" font-weight="600" text-anchor="middle" fill="#f5f5f7">18+</text>
+    <text x="90" y="50" font-size="14" text-anchor="middle" fill="#86868b">头条新闻</text>
+  </g>
+  <g transform="translate(400, 400)">
+    <rect width="180" height="60" rx="12" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.2)"/>
+    <text x="90" y="25" font-size="32" font-weight="600" text-anchor="middle" fill="#f5f5f7">3×</text>
+    <text x="90" y="50" font-size="14" text-anchor="middle" fill="#86868b">每日更新</text>
+  </g>
+  <g transform="translate(600, 400)">
+    <rect width="180" height="60" rx="12" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.2)"/>
+    <text x="90" y="25" font-size="32" font-weight="600" text-anchor="middle" fill="#f5f5f7">10+</text>
+    <text x="90" y="50" font-size="14" text-anchor="middle" fill="#86868b">信源覆盖</text>
+  </g>
+
+  <!-- URL -->
+  <text x="200" y="520" font-size="18" fill="#6366f1" font-family="Inter, sans-serif">
+    daiowen.github.io/ai-pulse
+  </text>
+
+  <!-- Edition badge -->
+  <g transform="translate(950, 50)">
+    <rect width="150" height="40" rx="20" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.3)"/>
+    <circle cx="25" cy="20" r="6" fill="#22c55e"/>
+    <text x="85" y="26" font-size="14" font-weight="500" text-anchor="middle" fill="#4ade80">每日更新</text>
+  </g>
+</svg>
