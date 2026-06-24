@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>搜索 · AI 脉搏</title>
+<meta name="description" content="搜索 AI 脉搏历史内容">
+<meta name="theme-color" content="#0a0a0f">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="manifest" href="manifest.json">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
+
+  :root {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: rgba(255,255,255,0.025);
+    --bg-card: rgba(255,255,255,0.018);
+    --border-subtle: rgba(255,255,255,0.06);
+    --border-card: rgba(255,255,255,0.04);
+    --text-primary: #f5f5f7;
+    --text-secondary: #9898a0;
+    --text-tertiary: #86868b;
+    --accent-indigo: #6366f1;
+    --accent-amber: #f59e0b;
+  }
+
+  [data-theme="light"] {
+    --bg-primary: #f5f5f7;
+    --bg-secondary: rgba(0,0,0,0.02);
+    --bg-card: rgba(0,0,0,0.015);
+    --border-subtle: rgba(0,0,0,0.08);
+    --border-card: rgba(0,0,0,0.06);
+    --text-primary: #1d1d1f;
+    --text-secondary: #6e6e73;
+    --text-tertiary: #86868b;
+  }
+
+  [data-theme="light"] .orb { opacity: 0.08 !important; }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: linear-gradient(170deg, #06060d 0%, #0a0a1a 25%, #0d0a1f 50%, #080818 75%, #060610 100%);
+    color: var(--text-primary);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    transition: background 0.5s ease;
+  }
+
+  [data-theme="light"] body {
+    background: linear-gradient(170deg, #f5f5f7 0%, #fafafa 30%, #f0f0f5 60%, #f5f5f7 100%);
+  }
+
+  .bg-layer { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+  .orb {
+    position: absolute; border-radius: 50%; filter: blur(140px);
+    animation-timing-function: ease-in-out; animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .orb-1 { width:500px; height:500px; background:radial-gradient(circle, #6366f1 0%, #8b5cf6 40%, transparent 75%); top:-20%; right:-5%; opacity:0.07; animation:float1 25s infinite; }
+  .orb-2 { width:350px; height:350px; background:radial-gradient(circle, #06b6d4 0%, #6366f1 35%, transparent 70%); bottom:-10%; left:-5%; opacity:0.05; animation:float2 30s infinite; }
+
+  @keyframes float1 {
+    0% { transform:translate(0,0) scale(1); } 50% { transform:translate(-60px,40px) scale(1.1); }
+    100% { transform:translate(30px,-20px) scale(0.95); }
+  }
+  @keyframes float2 {
+    0% { transform:translate(0,0) scale(1); } 50% { transform:translate(40px,-30px) scale(1.15); }
+    100% { transform:translate(-20px,15px) scale(0.9); }
+  }
+
+  .content { position:relative; z-index:1; max-width:800px; margin:0 auto; padding:0 32px 80px; }
+
+  .nav { display:flex; justify-content:space-between; align-items:center; padding:18px 0; border-bottom:0.5px solid var(--border-subtle); }
+  .nav-brand { display:flex; align-items:center; gap:10px; }
+  .nav-logo { width:34px; height:34px; border-radius:9px; background:linear-gradient(135deg, #6366f1, #8b5cf6); display:flex; align-items:center; justify-content:center; font-size:16px; }
+  .nav-title { font-size:16px; font-weight:600; color:var(--text-primary); }
+  .nav-link { font-size:13px; color:var(--text-tertiary); font-weight:500; cursor:pointer; transition:color 0.2s; text-decoration:none; }
+  .nav-link:hover { color:var(--text-primary); }
+  .toggle-track { width:38px; height:22px; background:rgba(99,102,241,0.25); border-radius:11px; border:0.5px solid rgba(99,102,241,0.35); position:relative; cursor:pointer; }
+  .toggle-thumb { width:17px; height:17px; background:linear-gradient(135deg, #6366f1, #8b5cf6); border-radius:50%; position:absolute; top:2px; left:2px; box-shadow:0 1px 4px rgba(0,0,0,0.3); transition:transform 0.3s; }
+  [data-theme="light"] .toggle-thumb { transform:translateX(16px); }
+  .toggle-label { font-size:12px; color:var(--text-tertiary); }
+
+  .hero { text-align:center; padding:50px 0 30px; }
+  .hero-title { font-size:36px; font-weight:300; color:var(--text-primary); margin-bottom:16px; }
+
+  .search-box {
+    position: relative;
+    margin-bottom: 32px;
+  }
+  .search-input {
+    width: 100%;
+    padding: 16px 20px 16px 48px;
+    background: var(--bg-secondary);
+    border: 0.5px solid var(--border-card);
+    border-radius: 12px;
+    color: var(--text-primary);
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    backdrop-filter: blur(16px);
+  }
+  .search-input:focus {
+    border-color: rgba(99,102,241,0.4);
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.1);
+  }
+  .search-input::placeholder { color: var(--text-tertiary); }
+  .search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: var(--text-tertiary);
+  }
+  .search-hint {
+    font-size: 12px;
+    color: var(--text-tertiary);
+    margin-top: 8px;
+  }
+
+  .result-stats {
+    font-size: 13px;
+    color: var(--text-tertiary);
+    margin-bottom: 16px;
+  }
+
+  .result-item {
+    background: var(--bg-secondary);
+    border: 0.5px solid var(--border-card);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 12px;
+    transition: border-color 0.2s;
+  }
+  .result-item:hover { border-color: rgba(255,255,255,0.12); }
+  .result-date {
+    font-size: 11px;
+    color: var(--accent-indigo);
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .result-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-primary);
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }
+  .result-title a { color: inherit; text-decoration: none; }
+  .result-title a:hover { color: var(--accent-indigo); }
+  .result-snippet {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+  }
+  .result-snippet mark {
+    background: rgba(99,102,241,0.2);
+    color: var(--accent-indigo);
+    padding: 1px 3px;
+    border-radius: 3px;
+  }
+
+  .empty-search {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .empty-icon { font-size: 40px; margin-bottom: 12px; }
+  .empty-title { font-size: 16px; color: var(--text-primary); margin-bottom: 6px; }
+  .empty-desc { font-size: 13px; color: var(--text-tertiary); }
+
+  .footer { text-align:center; padding:32px 0 0; border-top:0.5px solid var(--border-subtle); }
+  .footer-links { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; }
+  .footer-link { font-size:12px; color:var(--accent-indigo); text-decoration:none; }
+
+  @media (max-width:768px) {
+    .hero-title { font-size:28px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="bg-layer">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+</div>
+
+<div class="content">
+  <nav class="nav">
+    <div class="nav-brand">
+      <div class="nav-logo">⚡</div>
+      <a href="index.html" class="nav-title" style="text-decoration:none;color:inherit;">AI 脉搏</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:20px;">
+      <a href="index.html" class="nav-link">首页</a>
+      <a href="favorites.html" class="nav-link">收藏</a>
+      <a href="about.html" class="nav-link">关于</a>
+      <span class="toggle-label">暗</span>
+      <div class="toggle-track" id="themeToggle"><div class="toggle-thumb"></div></div>
+      <span class="toggle-label">亮</span>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1 class="hero-title">🔍 搜索历史内容</h1>
+  </section>
+
+  <div class="search-box">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput" class="search-input" placeholder="输入关键词搜索，如：DeepSeek、Anthropic、开源..." autofocus>
+    <div class="search-hint">搜索所有历史归档内容 · 支持关键词模糊匹配</div>
+  </div>
+
+  <div id="searchResults">
+    <div class="empty-search">
+      <div class="empty-icon">🔎</div>
+      <div class="empty-title">输入关键词开始搜索</div>
+      <div class="empty-desc">可搜索模型名称、公司名、技术关键词等</div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html" class="footer-link">首页</a>
+      <a href="feed.xml" class="footer-link">RSS订阅</a>
+      <a href="https://github.com/DaiOwen/ai-pulse" class="footer-link" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p style="font-size:11px;color:var(--text-tertiary);margin-top:12px;">© 2026 AI 脉搏 · 基于 Claude Code 构建</p>
+  </footer>
+</div>
+
+<script>
+  // 主题切换
+  const html = document.documentElement;
+  const themeToggle = document.getElementById('themeToggle');
+  const savedTheme = localStorage.getItem('ai-pulse-theme');
+  if (savedTheme === 'light') {
+    html.setAttribute('data-theme', 'light');
+  }
+  themeToggle.addEventListener('click', function() {
+    const isDark = html.getAttribute('data-theme') === 'dark';
+    const newTheme = isDark ? 'light' : 'dark';
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('ai-pulse-theme', newTheme);
+  });
+
+  // 搜索索引数据（从归档中提取）
+  const searchIndex = [
+    { id: "glasswing-20260624", title: "Anthropic 发布 Project Glasswing：首个因「过于危险」被限制发布的 AI 模型", content: "网络安全AI 零日漏洞 CyberGym SWE-bench 过于危险 限制发布", date: "2026-06-24", edition: "evening", url: "archive/2026-06-24-evening.html#news-glasswing-20260624", source: "VentureBeat" },
+    { id: "deepseek-v32-20260624", title: "DeepSeek V3.2 / V3.2-Speciale：MIT 协议 685B MoE，IMO/IOI 双金", content: "DeepSeek V3.2 MIT开源 685B MoE IMO IOI 稀疏注意力 DSA 推理成本降70%", date: "2026-06-24", edition: "evening", url: "archive/2026-06-24-evening.html#news-deepseek-v32-20260624", source: "VentureBeat" },
+    { id: "glm45-20260624", title: "Z.ai 开源 GLM-4.5 系列：355B MoE，Apache 2.0，原生生成 PPT", content: "智谱 GLM-4.5 Z.ai Apache 2.0 355B MoE PPT BrowseComp AIME24", date: "2026-06-24", edition: "evening", url: "archive/2026-06-24-evening.html#news-glm45-20260624", source: "VentureBeat" },
+    { id: "functiongemma-20260624", title: "Google 发布 FunctionGemma：270M 参数端侧模型", content: "Google FunctionGemma 270M 端侧 函数调用 移动设备 85%准确率 HuggingFace", date: "2026-06-24", edition: "evening", url: "archive/2026-06-24-evening.html#news-functiongemma-20260624", source: "VentureBeat" },
+    { id: "thinking-machines-20260624", title: "Thinking Machines 发布「交互模型」，对话延迟仅 0.4 秒", content: "Mira Murati Thinking Machines 交互模型 全双工 276B 语音 0.4秒延迟", date: "2026-06-24", edition: "evening", url: "archive/2026-06-24-evening.html#news-thinking-machines-20260624", source: "VentureBeat" },
+    { id: "gpt54-20260624", title: "OpenAI 发布 GPT-5.4：首个原生 Computer Use 模型", content: "OpenAI GPT-5.4 Computer Use Atlas浏览器 事实准确性 33%", date: "2026-06-24", edition: "evening", url: "archive/2026-06-24-evening.html", source: "The Verge" },
+    { id: "codex-desktop-20260624", title: "OpenAI Codex Desktop：macOS 版 Agent 指挥中心", content: "OpenAI Codex Desktop macOS Agent 并行 Skills Automation", date: "2026-06-24", edition: "evening", url: "archive/2026-06-24-evening.html", source: "VentureBeat" },
+    { id: "github-agent-hq-20260624", title: "GitHub Agent HQ：多 Agent 统一管控面板", content: "GitHub Agent HQ Mission Control AGENTS.md MCP Anthropic OpenAI", date: "2026-06-24", edition: "evening", url: "archive/2026-06-24-evening.html", source: "VentureBeat" },
+    { id: "claude-tag-20260624", title: "Anthropic Claude Tag：Slack 持久化 AI 队友", content: "Anthropic Claude Tag Slack 持久化 AI队友 频道上下文", date: "2026-06-24", edition: "evening", url: "archive/2026-06-24-evening.html", source: "VentureBeat" },
+    { id: "claude-cowork-20260624", title: "Anthropic Claude Cowork：面向非技术用户的桌面 Agent", content: "Anthropic Claude Cowork 桌面Agent MCP GDrive Salesforce Spotify 90%", date: "2026-06-24", edition: "evening", url: "archive/2026-06-24-evening.html", source: "VentureBeat" },
+    { id: "gemini-deep-think-20260624", title: "Google Gemini 2.5 Deep Think 获 IMO 金牌，但公开版为「铜牌」", content: "Google Gemini 2.5 Deep Think IMO金牌 铜牌 AI Ultra $249.99", date: "2026-06-24", edition: "evening", url: "archive/2026-06-24-evening.html", source: "VentureBeat" },
+    { id: "trinity-20260624", title: "Arcee 开源 Trinity-Large-Thinking：美国本土 399B 推理模型", content: "Arcee Trinity-Large-Thinking 399B Apache 2.0 PinchBench 91.9 AIME25 $0.90/M", date: "2026-06-24", edition: "evening", url: "archive/2026-06-24-evening.html", source: "VentureBeat" },
+    { id: "atlas-browser-20260624", title: "OpenAI Atlas AI 浏览器发布", content: "OpenAI Atlas 浏览器 Chromium ChatGPT Agent 记忆", date: "2026-06-24", edition: "evening", url: "archive/2026-06-24-evening.html", source: "The Verge" },
+    { id: "ai-payment-20260624", title: "支付宝「AI 付」+ 微信「AI 专属卡」+ 京东 A2P2", content: "支付宝 AI付 微信 AI专属卡 京东 A2P2 ACT协议 WorkBuddy", date: "2026-06-24", edition: "noon", url: "archive/2026-06-24-noon.html", source: "36氪" },
+    { id: "claude-code-upgrade-20260624", title: "Claude Code 大升级，卡帕西称「LLM 第三次变革」", content: "Claude Code 升级 Karpathy LLM变革 编程", date: "2026-06-24", edition: "noon", url: "archive/2026-06-24-noon.html", source: "36氪" },
+    { id: "qwen-agentworld-20260624", title: "千问发布 Qwen-AgentWorld：首个原生语言世界模型", content: "千问 Qwen-AgentWorld 语言世界模型 LWM", date: "2026-06-24", edition: "noon", url: "archive/2026-06-24-noon.html", source: "36氪" },
+    { id: "doubao21-20260624", title: "豆包 2.1 成本暴砍 80%，编程能力追平 Claude Opus 4.7", content: "豆包 2.1 成本降80% Claude Opus 4.7 编程", date: "2026-06-24", edition: "noon", url: "archive/2026-06-24-noon.html", source: "36氪" },
+    { id: "zhipu-ipo-20260624", title: "智谱考虑在香港发售数十亿美元股票", content: "智谱 IPO 香港 股价 2000%", date: "2026-06-24", edition: "noon", url: "archive/2026-06-24-noon.html", source: "36氪" },
+    { id: "wechat-ai-20260624", title: "微信 AI 内测原生助手", content: "微信 AI 内测 原生助手", date: "2026-06-24", edition: "noon", url: "archive/2026-06-24-noon.html", source: "36氪" },
+    { id: "bytedance-loan-20260624", title: "字节跳动寻求 200 亿美元境外贷款加码 AI", content: "字节跳动 200亿美元 贷款 AI", date: "2026-06-24", edition: "noon", url: "archive/2026-06-24-noon.html", source: "新浪财经" }
+  ];
+
+  // 搜索函数
+  function performSearch(query) {
+    const resultsDiv = document.getElementById('searchResults');
+
+    if (!query || query.trim().length < 2) {
+      resultsDiv.innerHTML = `
+        <div class="empty-search">
+          <div class="empty-icon">🔎</div>
+          <div class="empty-title">输入关键词开始搜索</div>
+          <div class="empty-desc">可搜索模型名称、公司名、技术关键词等</div>
+        </div>
+      `;
+      return;
+    }
+
+    const q = query.toLowerCase().trim();
+    const keywords = q.split(/\s+/);
+
+    // 评分搜索
+    const scored = searchIndex.map(item => {
+      const titleLower = item.title.toLowerCase();
+      const contentLower = item.content.toLowerCase();
+      let score = 0;
+
+      keywords.forEach(kw => {
+        if (titleLower.includes(kw)) score += 10;
+        if (contentLower.includes(kw)) score += 3;
+      });
+
+      return { ...item, score };
+    }).filter(item => item.score > 0)
+      .sort((a, b) => b.score - a.score);
+
+    if (scored.length === 0) {
+      resultsDiv.innerHTML = `
+        <div class="empty-search">
+          <div class="empty-icon">😕</div>
+          <div class="empty-title">未找到相关内容</div>
+          <div class="empty-desc">试试其他关键词，如：DeepSeek、开源、Agent</div>
+        </div>
+      `;
+      return;
+    }
+
+    let html = `<div class="result-stats">找到 ${scored.length} 条结果</div>`;
+
+    scored.forEach(item => {
+      const editionLabel = item.edition === 'morning' ? '🌅 早间版' : item.edition === 'noon' ? '☀️ 午间版' : '🌙 晚间版';
+      const highlightedTitle = highlightText(item.title, keywords);
+      const highlightedContent = highlightText(item.content, keywords);
+
+      html += `
+        <div class="result-item">
+          <div class="result-date">${item.date} · ${editionLabel} · ${item.source}</div>
+          <div class="result-title"><a href="${item.url}">${highlightedTitle}</a></div>
+          <div class="result-snippet">${highlightedContent}</div>
+        </div>
+      `;
+    });
+
+    resultsDiv.innerHTML = html;
+  }
+
+  function highlightText(text, keywords) {
+    let result = text;
+    keywords.forEach(kw => {
+      const regex = new RegExp(`(${escapeRegex(kw)})`, 'gi');
+      result = result.replace(regex, '<mark>$1</mark>');
+    });
+    return result;
+  }
+
+  function escapeRegex(str) {
+    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  // 搜索输入事件
+  let searchTimeout;
+  document.getElementById('searchInput').addEventListener('input', function(e) {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+      performSearch(e.target.value);
+    }, 300);
+  });
+
+  // 快捷键：/ 聚焦搜索
+  document.addEventListener('keydown', function(e) {
+    if (e.key === '/' && e.target.tagName !== 'INPUT') {
+      e.preventDefault();
+      document.getElementById('searchInput').focus();
+    }
+    if (e.key === 'Escape') {
+      document.getElementById('searchInput').blur();
+    }
+  });
+</script>
+</body>
+</html>
