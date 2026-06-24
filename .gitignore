@@ -1,6 +1,12 @@
 # Superpowers brainstorming temp files
 .superpowers/
 
+# Playwright CLI temp files
+.playwright-cli/
+
+# Design preview files (not for production)
+design/
+
 # OS
 .DS_Store
 Thumbs.db
@@ -12,13 +18,8 @@ Thumbs.db
 # Temp
 *.tmp
 *.log
+__pycache__/
 
-# 归档文件 — 提交到仓库以支持 GitHub Pages 日历导航
-# 本地用户运行 /ai-digest 会生成自己的 archive 文件
-
-# Claude Code 运行时文件（不提交）
+# Claude Code runtime files
 .claude/scheduled_tasks.json
 .claude/scheduled_tasks.lock
-
-# 注意：index.html 作为模板被跟踪，即使每次 /ai-digest 会更新它
-__pycache__/
