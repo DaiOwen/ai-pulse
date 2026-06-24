@@ -733,9 +733,9 @@
         const date = el.getAttribute('data-date');
         const entry = archiveMap[date];
         if (entry === 'full') {
-          window.open('archive/' + date + '-morning.html', '_blank');
+          window.open(date + '-morning.html', '_blank');
         } else if (Array.isArray(entry) && entry.length > 0) {
-          window.open('archive/' + date + '-' + entry[0] + '.html', '_blank');
+          window.open(date + '-' + entry[0] + '.html', '_blank');
         }
       });
     });

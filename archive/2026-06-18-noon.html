@@ -273,14 +273,18 @@
   .calendar-nav:hover { color:var(--text-primary); }
   .calendar-close { font-size:20px; color:var(--text-tertiary); cursor:pointer; background:none; border:none; }
   .calendar-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:4px; text-align:center; }
-  .calendar-day-header { font-size:11px; color:var(--text-tertiary); padding:4px; }
-  .calendar-day { font-size:14px; padding:8px 4px; border-radius:6px; cursor:pointer; color:var(--text-secondary); position:relative; }
-  .calendar-day:hover { background:rgba(99,102,241,0.1); }
-  .calendar-day.today { font-weight:700; color:#6366f1; border:1px solid rgba(99,102,241,0.3); }
-  .calendar-day.has-content { color:var(--text-primary); }
-  .calendar-day.full { background:rgba(34,197,94,0.08); }
-  .calendar-day.partial { background:rgba(99,102,241,0.06); }
-  .calendar-day.other-month { color:#484f58; }
+  .cal-dow { font-size:11px; color:var(--text-tertiary); padding:4px 0; }
+  .cal-day { font-size:13px; padding:8px 4px; border-radius:8px; cursor:default; position:relative; color:var(--text-tertiary); }
+  .cal-day.has-archive { color:var(--text-primary); background:rgba(99,102,241,0.08); cursor:pointer; transition:background 0.2s; }
+  .cal-day.has-archive:hover { background:rgba(99,102,241,0.2); }
+  .cal-day.full { background:rgba(34,197,94,0.12); color:#4ade80; font-weight:600; }
+  .cal-day.full:hover { background:rgba(34,197,94,0.25); }
+  .cal-day.today { border:1px solid var(--accent-indigo); }
+  .cal-day-editions { display:flex; gap:2px; justify-content:center; margin-top:2px; }
+  .cal-edition-dot { width:6px; height:6px; border-radius:50%; }
+  .cal-edition-dot.morning { background:#f59e0b; }
+  .cal-edition-dot.noon { background:#06b6d4; }
+  .cal-edition-dot.evening { background:#8b5cf6; }
   .calendar-day-links { display:none; position:absolute; bottom:100%; left:50%; transform:translateX(-50%); background:var(--bg-primary); border:0.5px solid var(--border-subtle); border-radius:8px; padding:6px 10px; font-size:10px; white-space:nowrap; z-index:2; }
   .calendar-day:hover .calendar-day-links { display:block; }
   .calendar-day-link { display:block; color:var(--text-secondary); text-decoration:none; padding:2px 0; }
@@ -484,149 +488,104 @@ if ('serviceWorker' in navigator) {
 }
 
 // Cosmic starfield + shooting stars
-(function() {
-  const c = document.getElementById('cosmicCanvas');
-  const ctx = c.getContext('2d');
-  let stars = [], shooters = [];
-  const STAR_COUNT = 220;
+  // Calendar
+  const archiveMap = {
+    "2026-06-14": ["morning"],
+    "2026-06-15": ["noon", "evening"],
+    "2026-06-16": "full",
+    "2026-06-17": ["morning"],
+    "2026-06-18": ["morning", "noon"],
+    "2026-06-22": ["morning"],
+    "2026-06-23": ["morning"],
+    "2026-06-24": ["morning"]
+  };
+  (function(){for(var d in archiveMap){if(Array.isArray(archiveMap[d])&&archiveMap[d].length>=3)archiveMap[d]='full';}})();
 
-  function resize() {
-    const ow = c.width, oh = c.height;
-    c.width = window.innerWidth; c.height = window.innerHeight;
-    if (ow && ow > 0) {
-      const sx = c.width / ow, sy = c.height / oh;
-      for (const s of stars) { s.x *= sx; s.y *= sy; }
-    }
-  }
-  resize(); window.addEventListener('resize', resize);
-
-  // Init stars
-  for (let i = 0; i < STAR_COUNT; i++) {
-    stars.push({
-      x: Math.random() * c.width, y: Math.random() * c.height,
-      r: Math.random() * 1.8 + 0.3,
-      twinkle: Math.random() * Math.PI * 2,
-      speed: 0.003 + Math.random() * 0.015,
-      hue: [220, 260, 190, 330, 40][Math.floor(Math.random() * 5)]
-    });
-  }
-
-  function spawnShooter() {
-    shooters.push({
-      x: Math.random() * c.width,
-      y: Math.random() * c.height * 0.5,
-      len: 80 + Math.random() * 150,
-      angle: 0.3 + Math.random() * 0.5,
-      life: 1, decay: 0.008 + Math.random() * 0.02,
-      hue: 200 + Math.random() * 60
-    });
-  }
-
-  function animate(ts) {
-    ctx.clearRect(0, 0, c.width, c.height);
-
-    // Stars
-    for (const s of stars) {
-      s.twinkle += s.speed;
-      const alpha = 0.35 + 0.35 * Math.sin(s.twinkle);
-      ctx.beginPath();
-      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-      ctx.fillStyle = `hsla(${s.hue},60%,85%,${alpha})`;
-      ctx.fill();
-      // Glow for larger stars
-      if (s.r > 1.2) {
-        ctx.beginPath();
-        ctx.arc(s.x, s.y, s.r * 2.5, 0, Math.PI * 2);
-        ctx.fillStyle = `hsla(${s.hue},50%,70%,${alpha * 0.15})`;
-        ctx.fill();
-      }
-    }
-
-    // Shooting stars
-    if (Math.random() < 0.008) spawnShooter();
-    for (let i = shooters.length - 1; i >= 0; i--) {
-      const sh = shooters[i];
-      sh.life -= sh.decay;
-      if (sh.life <= 0) { shooters.splice(i, 1); continue; }
-      const x2 = sh.x - Math.cos(sh.angle) * sh.len;
-      const y2 = sh.y - Math.sin(sh.angle) * sh.len;
-      const grad = ctx.createLinearGradient(sh.x, sh.y, x2, y2);
-      grad.addColorStop(0, `hsla(${sh.hue},80%,90%,${sh.life * 0.9})`);
-      grad.addColorStop(1, `hsla(${sh.hue},80%,90%,0)`);
-      ctx.beginPath();
-      ctx.moveTo(sh.x, sh.y);
-      ctx.lineTo(x2, y2);
-      ctx.strokeStyle = grad;
-      ctx.lineWidth = 1.5;
-      ctx.stroke();
-    }
-
-    requestAnimationFrame(animate);
-  }
-  requestAnimationFrame(animate);
-})();
-
-(function() {
-  const saved = localStorage.getItem('ai-pulse-theme');
-  if (saved === 'light') {
-    document.documentElement.setAttribute('data-theme', 'light');
-    document.getElementById('themeToggle').setAttribute('aria-checked', 'true');
-  }
-  const toggle = document.getElementById('themeToggle');
-  function setTheme(next) {
-    document.documentElement.setAttribute('data-theme', next);
-    localStorage.setItem('ai-pulse-theme', next);
-    toggle.setAttribute('aria-checked', next === 'light' ? 'true' : 'false');
-  }
-  toggle.addEventListener('click', function() {
-    const current = document.documentElement.getAttribute('data-theme');
-    setTheme(current === 'light' ? 'dark' : 'light');
-  });
-  toggle.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      const current = document.documentElement.getAttribute('data-theme');
-      setTheme(current === 'light' ? 'dark' : 'light');
-    }
-  });
-})();
-
-(function() {
-  const overlay = document.getElementById('calendarOverlay');
-  const grid = document.getElementById('calGrid');
   const monthLabel = document.getElementById('calMonth');
+  const calGrid = document.getElementById('calGrid');
+  const overlay = document.getElementById('archiveOverlay');
   let calYear = new Date().getFullYear();
   let calMonth = new Date().getMonth() + 1;
-  // Hardcoded archive index — updated by /ai-digest on each generation
-  const archiveMap = {
-    "2026-06-14": [
-        "morning"
-    ],
-    "2026-06-15": [
-        "noon",
-        "evening"
-    ],
-    "2026-06-16": "full",
-    "2026-06-17": [
-        "morning"
-    ],
-    "2026-06-18": [
-        "morning",
-        "noon"
-    ],
-    "2026-06-22": [
-        "morning"
-    ],
-    "2026-06-23": [
-        "morning"
-    ]
-};
-  // Fix: mark dates with 3 editions as 'full' for green highlight
-  (function(){for(var d in archiveMap){if(archiveMap[d].length>=3)archiveMap[d]='full';}})();
+
+  function renderCalendar() {
+    const daysInMonth = new Date(calYear, calMonth, 0).getDate();
+    const firstDay = new Date(calYear, calMonth - 1, 1).getDay();
+    const adjustedFirst = firstDay === 0 ? 6 : firstDay - 1;
+    const today = new Date();
+    const todayStr = today.getFullYear() + '-' + String(today.getMonth()+1).padStart(2,'0') + '-' + String(today.getDate()).padStart(2,'0');
+
+    monthLabel.textContent = calYear + '年' + calMonth + '月';
+
+    let html2 = '';
+    const dows = ['一','二','三','四','五','六','日'];
+    dows.forEach(d => html2 += '<div class="cal-dow">' + d + '</div>');
+
+    for (let i = 0; i < adjustedFirst; i++) html2 += '<div class="cal-day"></div>';
+
+    for (let d = 1; d <= daysInMonth; d++) {
+      const ds = calYear + '-' + String(calMonth).padStart(2,'0') + '-' + String(d).padStart(2,'0');
+      const entry = archiveMap[ds];
+      let cls = 'cal-day';
+      if (entry) {
+        cls += entry === 'full' ? ' full has-archive' : ' has-archive';
+      }
+      if (ds === todayStr) cls += ' today';
+
+      html2 += '<div class="' + cls + '"';
+      if (entry) {
+        html2 += ' data-date="' + ds + '"';
+        html2 += ' style="cursor:pointer"';
+      }
+      html2 += '>' + d;
+      if (entry && entry !== 'full' && Array.isArray(entry)) {
+        html2 += '<div class="cal-day-editions">';
+        entry.forEach(function(ed) {
+          html2 += '<span class="cal-edition-dot ' + ed + '"></span>';
+        });
+        html2 += '</div>';
+      }
+      html2 += '</div>';
+    }
+
+    calGrid.innerHTML = html2;
+
+    calGrid.querySelectorAll('.has-archive').forEach(function(el) {
+      el.addEventListener('click', function() {
+        const date = el.getAttribute('data-date');
+        const entry = archiveMap[date];
+        if (entry === 'full') {
+          window.open(date + '-morning.html', '_blank');
+        } else if (Array.isArray(entry) && entry.length > 0) {
+          window.open(date + '-' + entry[0] + '.html', '_blank');
+        }
+      });
+    });
+  }
+
+  document.getElementById('btnArchive').addEventListener('click', function() {
+    overlay.classList.add('open');
+    calYear = new Date().getFullYear();
+    calMonth = new Date().getMonth() + 1;
+    renderCalendar();
+  });
+  document.getElementById('calPrev').addEventListener('click', function() {
+    calMonth--; if (calMonth < 1) { calMonth = 12; calYear--; }
+    renderCalendar();
+  });
+  document.getElementById('calNext').addEventListener('click', function() {
+    calMonth++; if (calMonth > 12) { calMonth = 1; calYear++; }
+    renderCalendar();
+  });
+  document.getElementById('calClose').addEventListener('click', function() {
+    overlay.classList.remove('open');
+  });
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) overlay.classList.remove('open');
+  });
     overlay.classList.add('active');
   });
-  document.getElementById('calPrev').addEventListener('click', function() { calMonth--; if(calMonth<1){calMonth=12;calYear--;} loadArchive(function() { renderCalendar(); }); });
-  document.getElementById('calNext').addEventListener('click', function() { calMonth++; if(calMonth>12){calMonth=1;calYear++;} loadArchive(function() { renderCalendar(); }); });
+  document.getElementById('calPrev').addEventListener('click', function() { calMonth--; if(calMonth<1){calMonth=12;calYear--;} renderCalendar(); });
+  document.getElementById('calNext').addEventListener('click', function() { calMonth++; if(calMonth>12){calMonth=1;calYear++;} renderCalendar(); });
   document.getElementById('calClose').addEventListener('click', function() { overlay.classList.remove('active'); });
   overlay.addEventListener('click', function(e) { if (e.target === overlay) overlay.classList.remove('active'); });
 })();
