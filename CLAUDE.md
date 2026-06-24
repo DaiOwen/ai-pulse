@@ -6,20 +6,34 @@
 
 **不要读模板文件，不要读旧 index.html，不要 CronList 自检。直接开始。**
 
-### 第1步：搜索（精简版）
+### 第1步：搜索
 
-用 6-8 次 WebSearch 覆盖所有板块。以下搜索一次返回可覆盖多个板块：
+**关键原则：优先搜 ✅ 信源，每条新闻必须标注来源。URL 必须真实，禁止 `#` 占位。**
+
+用以下搜索覆盖所有板块（共约 10-12 次）。同一搜索可跨板块复用结果。
+
+#### 核心搜索（必搜，每次 4 次）
 
 ```
-1. site:venturebeat.com AI model OR release OR agent          → 大模型+工具+应用
-2. site:36kr.com 大模型 OR AI OR 开源 OR 工具 OR 发布          → 大模型+工具+应用
-3. site:theverge.com AI                                       → 海外参考+大模型
-4. site:people.com.cn 人工智能 OR AI OR 智能体                  → 政策合规
-5. GitHub trending AI 周榜 site:cnblogs.com                     → 开源热度
-6. site:arxiv.org cs.AI OR cs.CL 2026                         → 论文速递(morning only)
+1. site:venturebeat.com AI model OR release          → 大模型+应用
+2. site:36kr.com 大模型 OR AI OR 发布                  → 大模型+工具+应用
+3. site:theverge.com AI OR model OR agent            → 大模型+海外
+4. site:people.com.cn 人工智能 OR AI OR 智能体        → 政策
 ```
 
-**停止搜更多。** 如果某次搜索空返，跳过，不重试。noon 版只需 3-4 次搜索（skip arxiv + theverge）。
+#### 补充搜索（按版次，4-6 次）
+
+```
+5. site:36kr.com AI 开源 OR 工具 OR Agent              → 工具+应用（morning/evening）
+6. site:venturebeat.com AI agent OR enterprise       → 应用落地（morning/evening）
+7. GitHub trending AI 周榜 site:cnblogs.com            → 开源热度（必搜）
+8. site:arxiv.org cs.AI OR cs.CL 2026                → 论文（仅 morning）
+9. site:technologyreview.com AI OR regulation        → 政策国际+海外（仅 morning/evening）
+```
+
+**noon 版搜索 5-6 次**（skip arxiv + technologyreview）
+
+**空返不重试。** 同一信源结果可覆盖多个板块。
 
 ### 第2步：生成 HTML
 
