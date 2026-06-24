@@ -388,6 +388,66 @@
   [data-theme="light"] .back-to-top {
     box-shadow: 0 4px 16px rgba(99,102,241,0.25);
   }
+
+  /* 收藏按钮 */
+  .favorite-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px 8px;
+    transition: all 0.2s ease;
+    color: var(--text-tertiary);
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .favorite-btn:hover {
+    color: var(--accent-amber);
+    background: rgba(245,158,11,0.1);
+  }
+  .favorite-btn.active {
+    color: #fbbf24;
+  }
+  .favorite-btn .favorite-icon { transition: transform 0.2s; }
+  .favorite-btn:hover .favorite-icon { transform: scale(1.15); }
+  .favorite-btn.active .favorite-icon { transform: scale(1.1); }
+
+  /* 导航收藏计数 */
+  .fav-count {
+    font-size: 11px;
+    background: var(--accent-amber);
+    color: #000;
+    padding: 1px 5px;
+    border-radius: 10px;
+    margin-left: 4px;
+    font-weight: 600;
+  }
+
+  /* Toast 提示 */
+  .toast {
+    position: fixed;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(34,197,94,0.95);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    z-index: 1000;
+    animation: toastIn 0.3s ease, toastOut 0.3s ease 1.7s forwards;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  }
+  @keyframes toastIn {
+    from { opacity: 0; transform: translateX(-50%) translateY(20px); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+  }
+  @keyframes toastOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
 </style>
 </head>
 <body>
@@ -412,6 +472,7 @@
     </div>
     <div class="nav-right">
       <button class="nav-link" id="btnArchive">往期回顾</button>
+      <a href="favorites.html" class="nav-link" style="text-decoration:none;">收藏<span class="fav-count" id="favCount">0</span></a>
       <a href="about.html" class="nav-link" style="text-decoration:none;">关于</a>
       <span class="toggle-label">暗</span>
       <div class="toggle-track" id="themeToggle"><div class="toggle-thumb"></div></div>
@@ -456,7 +517,7 @@
     </div>
 
     <!-- Lead Story -->
-    <div class="feature-card">
+    <div class="feature-card" id="news-glasswing-20260624">
       <div class="card-row">
         <div class="card-body">
           <div class="card-tag" style="color:#ec4899;">🔴 HEADLINE · Anthropic · 网络安全</div>
@@ -464,6 +525,9 @@
           <div class="card-desc">Anthropic 正式公开 Project Glasswing——基于 Claude Mythos Preview 构建的网络安全 AI。该模型可自主发现并串联零日漏洞链，包括一个隐匿 27 年的 OpenBSD 内核漏洞和 16 年的 FFmpeg 漏洞。在 CyberGym 评测获 83.1%，SWE-bench Verified 达 93.9%。Anthropic 称其「过于危险不宜公开发布」，仅限 AWS/Apple/Google/Microsoft/Nvidia/CrowdStrike 等受审核合作伙伴使用，定价高达 $25/M 输入 token、$125/M 输出 token。同步承诺投入 $100M 安全研究积分。</div>
           <div class="card-meta">
             <span>📰 VentureBeat / Anthropic</span><span>·</span><span>🕐 6月23日</span>
+            <button class="favorite-btn" data-id="news-glasswing-20260624" data-title="Anthropic 发布 Project Glasswing：首个因「过于危险」被限制发布的 AI 模型" data-url="https://venturebeat.com/ai/anthropic-says-its-most-powerful-ai-cyber-model-is-too-dangerous-to-release" data-source="VentureBeat" onclick="toggleFavorite(this)">
+              <span class="favorite-icon">☆</span> 收藏
+            </button>
             <a href="https://venturebeat.com/ai/anthropic-says-its-most-powerful-ai-cyber-model-is-too-dangerous-to-release" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
           </div>
           <div class="dev-impact">
@@ -477,25 +541,37 @@
 
     <!-- Sub stories -->
     <div class="sub-grid">
-      <div class="sub-card">
+      <div class="sub-card" id="news-deepseek-v32-20260624">
         <div class="sub-tag" style="color:#22c55e;">🇨🇳 OPEN SOURCE · DeepSeek</div>
         <div class="sub-title">DeepSeek V3.2 / V3.2-Speciale：MIT 协议 685B MoE，IMO/IOI 双金，推理成本降 70%</div>
         <div class="sub-desc">DeepSeek 发布 V3.2 系列，685B 参数 MoE 架构，MIT 许可协议。引入 DeepSeek Sparse Attention (DSA) 将长序列推理成本降低约 70%。V3.2-Speciale 在 IMO 2025 和 IOI 2025 摘金，ICPC World Finals 获亚军。API 定价仅为竞争对手的 1/10~1/20。</div>
-        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/ai/deepseek-just-dropped-two-insanely-powerful-ai-models-that-rival-gpt-5-and" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+        <div class="sub-meta">
+          <span>📰 VentureBeat</span>
+          <button class="favorite-btn" data-id="news-deepseek-v32-20260624" data-title="DeepSeek V3.2 / V3.2-Speciale：MIT 协议 685B MoE" data-url="https://venturebeat.com/ai/deepseek-just-dropped-two-insanely-powerful-ai-models-that-rival-gpt-5-and" data-source="VentureBeat" onclick="toggleFavorite(this)"><span class="favorite-icon">☆</span></button>
+          <a href="https://venturebeat.com/ai/deepseek-just-dropped-two-insanely-powerful-ai-models-that-rival-gpt-5-and" class="read-original" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
       </div>
-      <div class="sub-card">
+      <div class="sub-card" id="news-glm45-20260624">
         <div class="sub-tag" style="color:#6366f1;">🇨🇳 OPEN SOURCE · Z.ai (智谱)</div>
         <div class="sub-title">Z.ai 开源 GLM-4.5 系列：355B MoE，Apache 2.0，原生生成 PPT</div>
         <div class="sub-desc">智谱海外品牌 Z.ai 发布 GLM-4.5（355B total / 32B active，MoE）和 GLM-4.5-Air（106B / 12B active）。在 BrowseComp、AIME24、SWE-bench Verified 上对标 Claude 4 Sonnet/Opus。可单 prompt 生成完整 PowerPoint 演示文稿。Apache 2.0 协议，API $0.20/M 起。</div>
-        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/ai/chinese-startup-z-ai-launches-powerful-open-source-glm-4-5-model-family-with-powerpoint-creation" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+        <div class="sub-meta">
+          <span>📰 VentureBeat</span>
+          <button class="favorite-btn" data-id="news-glm45-20260624" data-title="Z.ai 开源 GLM-4.5 系列：355B MoE，Apache 2.0" data-url="https://venturebeat.com/ai/chinese-startup-z-ai-launches-powerful-open-source-glm-4-5-model-family-with-powerpoint-creation" data-source="VentureBeat" onclick="toggleFavorite(this)"><span class="favorite-icon">☆</span></button>
+          <a href="https://venturebeat.com/ai/chinese-startup-z-ai-launches-powerful-open-source-glm-4-5-model-family-with-powerpoint-creation" class="read-original" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
       </div>
-      <div class="sub-card">
+      <div class="sub-card" id="news-functiongemma-20260624">
         <div class="sub-tag" style="color:#06b6d4;">🤖 EDGE AI · Google</div>
         <div class="sub-title">Google 发布 FunctionGemma：270M 参数端侧模型，可自主操控手机应用</div>
         <div class="sub-desc">Google 发布 FunctionGemma，一个仅 2.7 亿参数的端侧函数调用模型——将自然语言指令实时转化为结构化代码，无需联网即可操控移动设备。在函数调用任务上达 85% 准确率，匹敌数十倍于己的模型。已在 Hugging Face 和 Kaggle 开放下载。</div>
-        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/technology/google-releases-functiongemma-a-tiny-edge-model-that-can-control-mobile" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+        <div class="sub-meta">
+          <span>📰 VentureBeat</span>
+          <button class="favorite-btn" data-id="news-functiongemma-20260624" data-title="Google 发布 FunctionGemma：270M 参数端侧模型" data-url="https://venturebeat.com/technology/google-releases-functiongemma-a-tiny-edge-model-that-can-control-mobile" data-source="VentureBeat" onclick="toggleFavorite(this)"><span class="favorite-icon">☆</span></button>
+          <a href="https://venturebeat.com/technology/google-releases-functiongemma-a-tiny-edge-model-that-can-control-mobile" class="read-original" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
       </div>
-      <div class="sub-card">
+      <div class="sub-card" id="news-thinking-machines-20260624">
         <div class="sub-tag" style="color:#f59e0b;">🌍 RESEARCH · Thinking Machines</div>
         <div class="sub-title">Mira Murati 创业公司 Thinking Machines 发布「交互模型」，对话延迟仅 0.4 秒</div>
         <div class="sub-desc">前 OpenAI CTO Mira Murati 的创业公司 Thinking Machines 展示 276B 参数（12B active）「全双工」交互模型，同时处理语音输入与输出 200ms 分片。语音对话延迟仅 0.40 秒（GPT-realtime-2.0 为 1.18 秒），FD-bench V1.5 得分 77.8，接近对手两倍。目前仅研究预览。</div>
@@ -884,6 +960,76 @@
   backToTop.addEventListener('click', function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
+  // ===== 收藏功能 =====
+  function getFavorites() {
+    return JSON.parse(localStorage.getItem('ai-pulse-favorites') || '{}');
+  }
+
+  function saveFavorites(favorites) {
+    localStorage.setItem('ai-pulse-favorites', JSON.stringify(favorites));
+    updateFavoriteCount();
+  }
+
+  function updateFavoriteCount() {
+    const favorites = getFavorites();
+    const count = Object.keys(favorites).length;
+    const countEl = document.getElementById('favCount');
+    if (countEl) {
+      countEl.textContent = count;
+      countEl.style.display = count > 0 ? 'inline' : 'none';
+    }
+  }
+
+  function toggleFavorite(btn) {
+    const id = btn.dataset.id;
+    const favorites = getFavorites();
+
+    if (favorites[id]) {
+      delete favorites[id];
+      btn.classList.remove('active');
+      btn.querySelector('.favorite-icon').textContent = '☆';
+      showToast('已取消收藏');
+    } else {
+      favorites[id] = {
+        title: btn.dataset.title,
+        url: btn.dataset.url,
+        source: btn.dataset.source,
+        date: document.querySelector('.hero-date')?.textContent || '',
+        savedAt: new Date().toISOString()
+      };
+      btn.classList.add('active');
+      btn.querySelector('.favorite-icon').textContent = '★';
+      showToast('已添加到收藏');
+    }
+
+    saveFavorites(favorites);
+  }
+
+  function restoreFavorites() {
+    const favorites = getFavorites();
+    document.querySelectorAll('.favorite-btn').forEach(btn => {
+      if (favorites[btn.dataset.id]) {
+        btn.classList.add('active');
+        btn.querySelector('.favorite-icon').textContent = '★';
+      }
+    });
+    updateFavoriteCount();
+  }
+
+  function showToast(message) {
+    const existing = document.querySelector('.toast');
+    if (existing) existing.remove();
+
+    const toast = document.createElement('div');
+    toast.className = 'toast';
+    toast.textContent = message;
+    document.body.appendChild(toast);
+    setTimeout(() => toast.remove(), 2000);
+  }
+
+  // 页面加载时恢复收藏状态
+  restoreFavorites();
 </script>
 </body>
 </html>
