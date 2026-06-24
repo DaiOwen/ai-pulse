@@ -448,6 +448,25 @@
     from { opacity: 1; }
     to { opacity: 0; }
   }
+
+  /* 分享按钮 */
+  .share-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    color: var(--text-tertiary);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .share-btn:hover {
+    color: var(--accent-indigo);
+    background: rgba(99,102,241,0.1);
+  }
 </style>
 </head>
 <body>
@@ -525,6 +544,7 @@
           <div class="card-desc">Anthropic 正式公开 Project Glasswing——基于 Claude Mythos Preview 构建的网络安全 AI。该模型可自主发现并串联零日漏洞链，包括一个隐匿 27 年的 OpenBSD 内核漏洞和 16 年的 FFmpeg 漏洞。在 CyberGym 评测获 83.1%，SWE-bench Verified 达 93.9%。Anthropic 称其「过于危险不宜公开发布」，仅限 AWS/Apple/Google/Microsoft/Nvidia/CrowdStrike 等受审核合作伙伴使用，定价高达 $25/M 输入 token、$125/M 输出 token。同步承诺投入 $100M 安全研究积分。</div>
           <div class="card-meta">
             <span>📰 VentureBeat / Anthropic</span><span>·</span><span>🕐 6月23日</span>
+            <button class="share-btn" onclick="shareNews('news-glasswing-20260624', 'Anthropic 发布 Project Glasswing：首个因「过于危险」被限制发布的 AI 模型')">🔗 分享</button>
             <button class="favorite-btn" data-id="news-glasswing-20260624" data-title="Anthropic 发布 Project Glasswing：首个因「过于危险」被限制发布的 AI 模型" data-url="https://venturebeat.com/ai/anthropic-says-its-most-powerful-ai-cyber-model-is-too-dangerous-to-release" data-source="VentureBeat" onclick="toggleFavorite(this)">
               <span class="favorite-icon">☆</span> 收藏
             </button>
@@ -1030,6 +1050,57 @@
 
   // 页面加载时恢复收藏状态
   restoreFavorites();
+
+  // ===== 分享功能 =====
+  function shareNews(newsId, title) {
+    const baseUrl = window.location.origin + window.location.pathname;
+    const shareUrl = baseUrl + '#' + newsId;
+
+    // 复制链接到剪贴板
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(shareUrl).then(() => {
+        showToast('链接已复制！可分享给朋友');
+      }).catch(() => {
+        fallbackCopy(shareUrl);
+      });
+    } else {
+      fallbackCopy(shareUrl);
+    }
+  }
+
+  function fallbackCopy(text) {
+    const input = document.createElement('input');
+    input.style.position = 'fixed';
+    input.style.opacity = '0';
+    input.value = text;
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    document.body.removeChild(input);
+    showToast('链接已复制！可分享给朋友');
+  }
+
+  // 页面加载时检查 hash，跳转到对应新闻
+  function scrollToHashNews() {
+    if (window.location.hash) {
+      const targetId = window.location.hash.substring(1);
+      const target = document.getElementById(targetId);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          // 高亮显示目标新闻
+          target.style.transition = 'box-shadow 0.3s ease';
+          target.style.boxShadow = '0 0 0 2px var(--accent-indigo)';
+          setTimeout(() => {
+            target.style.boxShadow = '';
+          }, 3000);
+        }, 500);
+      }
+    }
+  }
+
+  // 页面加载时执行
+  scrollToHashNews();
 </script>
 </body>
 </html>
