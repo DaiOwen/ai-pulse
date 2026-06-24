@@ -130,6 +130,21 @@
     0% { transform:translate(0,0) scale(1); } 25% { transform:translate(50px,70px) scale(1.3); }
     75% { transform:translate(-50px,30px) scale(0.8); } 100% { transform:translate(15px,-20px) scale(1.1); }
   }
+
+  /* 打印优化样式 */
+  @media print {
+    .bg-layer, .back-to-top, .nav-right, .hero-badge-dot, .archive-overlay { display: none !important; }
+    body { background: #fff !important; color: #000 !important; }
+    .feature-card, .sub-card, .tool-card, .policy-card { break-inside: avoid; box-shadow: none !important; border: 1px solid #ddd !important; }
+    .card-title, .sub-title { color: #000 !important; }
+    .card-desc, .sub-desc { color: #333 !important; }
+    .read-original::after { content: " (" attr(href) ")"; font-size: 10px; color: #666; }
+    .dev-impact { background: #f9f9f9 !important; border-left: 3px solid #333 !important; }
+    .nav { border-bottom: 2px solid #000 !important; }
+    .hero-stats { display: none !important; }
+    .footer { border-top: 1px solid #000 !important; }
+    @page { margin: 1.5cm; }
+  }
   .grid-overlay {
     position:absolute; inset:0;
     background-image: linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px),
@@ -507,10 +522,10 @@
       </div>
     </div>
     <div class="nav-right">
-      <button class="nav-link" id="btnArchive">往期回顾</button>
+      <button class="nav-link" id="btnArchive">📅 往期回顾</button>
       <a href="settings.html" class="nav-link" style="text-decoration:none;">🏷️ 设置</a>
       <a href="search.html" class="nav-link" style="text-decoration:none;">🔍 搜索</a>
-      <a href="favorites.html" class="nav-link" style="text-decoration:none;">收藏<span class="fav-count" id="favCount">0</span></a>
+      <a href="favorites.html" class="nav-link" style="text-decoration:none;">⭐ 收藏<span class="fav-count" id="favCount">0</span></a>
       <a href="about.html" class="nav-link" style="text-decoration:none;">关于</a>
       <span class="toggle-label">暗</span>
       <div class="toggle-track" id="themeToggle"><div class="toggle-thumb"></div></div>
@@ -562,7 +577,7 @@
           <div class="card-title">Anthropic 发布 Project Glasswing：首个因「过于危险」被限制发布的 AI 模型</div>
           <div class="card-desc">Anthropic 正式公开 Project Glasswing——基于 Claude Mythos Preview 构建的网络安全 AI。该模型可自主发现并串联零日漏洞链，包括一个隐匿 27 年的 OpenBSD 内核漏洞和 16 年的 FFmpeg 漏洞。在 CyberGym 评测获 83.1%，SWE-bench Verified 达 93.9%。Anthropic 称其「过于危险不宜公开发布」，仅限 AWS/Apple/Google/Microsoft/Nvidia/CrowdStrike 等受审核合作伙伴使用，定价高达 $25/M 输入 token、$125/M 输出 token。同步承诺投入 $100M 安全研究积分。</div>
           <div class="card-meta">
-            <span>📰 VentureBeat / Anthropic</span><span>·</span><span>🕐 6月23日</span>
+            <span>📰 VentureBeat / Anthropic</span><span>·</span><span class="news-time" data-date="2026-06-23">🕐 6月23日</span>
             <button class="share-btn" onclick="shareNews('news-glasswing-20260624', 'Anthropic 发布 Project Glasswing：首个因「过于危险」被限制发布的 AI 模型')">🔗 分享</button>
             <button class="favorite-btn" data-id="news-glasswing-20260624" data-title="Anthropic 发布 Project Glasswing：首个因「过于危险」被限制发布的 AI 模型" data-url="https://venturebeat.com/ai/anthropic-says-its-most-powerful-ai-cyber-model-is-too-dangerous-to-release" data-source="VentureBeat" onclick="toggleFavorite(this)">
               <span class="favorite-icon">☆</span> 收藏
@@ -1181,6 +1196,104 @@
 
   // 页面加载后应用偏好
   setTimeout(applyUserPreferences, 100);
+
+  // ===== 相对时间显示 =====
+  function updateRelativeTimes() {
+    const now = new Date();
+    const todayStr = now.toISOString().split('T')[0];
+
+    document.querySelectorAll('.news-time').forEach(el => {
+      const dateStr = el.dataset.date;
+      if (!dateStr) return;
+
+      // 解析日期（格式：YYYY-MM-DD）
+      const newsDate = new Date(dateStr + 'T12:00:00');
+      const diffMs = now - newsDate;
+      const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+      let relativeText = '';
+      if (diffDays === 0) {
+        relativeText = '🕐 今天';
+      } else if (diffDays === 1) {
+        relativeText = '🕐 昨天';
+      } else if (diffDays === 2) {
+        relativeText = '🕐 2天前';
+      } else if (diffDays <= 7) {
+        relativeText = `🕐 ${diffDays}天前`;
+      } else {
+        // 显示原始日期
+        const month = newsDate.getMonth() + 1;
+        const day = newsDate.getDate();
+        relativeText = `🕐 ${month}月${day}日`;
+      }
+
+      el.textContent = relativeText;
+    });
+  }
+
+  // 页面加载时更新相对时间
+  updateRelativeTimes();
+
+  // ===== 移动端下拉刷新 =====
+  let pullStartY = 0;
+  let pullIndicator = null;
+
+  function createPullIndicator() {
+    pullIndicator = document.createElement('div');
+    pullIndicator.style.cssText = `
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #6366f1, #8b5cf6);
+      z-index: 9999;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.15s ease;
+    `;
+    document.body.appendChild(pullIndicator);
+  }
+
+  function updatePullProgress(progress) {
+    if (!pullIndicator) createPullIndicator();
+    // progress: 0 to 1
+    pullIndicator.style.transform = `scaleX(${Math.min(progress, 1)})`;
+  }
+
+  function resetPull() {
+    if (pullIndicator) {
+      pullIndicator.style.transform = 'scaleX(0)';
+    }
+  }
+
+  document.addEventListener('touchstart', function(e) {
+    if (window.scrollY === 0 && e.touches.length === 1) {
+      pullStartY = e.touches[0].clientY;
+    }
+  }, { passive: true });
+
+  document.addEventListener('touchmove', function(e) {
+    if (pullStartY > 0 && window.scrollY === 0) {
+      const pullY = e.touches[0].clientY - pullStartY;
+      if (pullY > 0) {
+        const progress = Math.min(pullY / 80, 1);
+        updatePullProgress(progress);
+      }
+    }
+  }, { passive: true });
+
+  document.addEventListener('touchend', function() {
+    if (pullIndicator && pullIndicator.style.transform.replace(/[^0-9.]/g, '') > 0.8) {
+      // 触发刷新
+      location.reload();
+    }
+    pullStartY = 0;
+    setTimeout(resetPull, 100);
+  });
+
+  // 初始创建
+  createPullIndicator();
 
   // ===== 快捷键支持 =====
   document.addEventListener('keydown', function(e) {
