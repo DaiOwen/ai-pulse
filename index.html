@@ -508,6 +508,7 @@
     </div>
     <div class="nav-right">
       <button class="nav-link" id="btnArchive">往期回顾</button>
+      <a href="settings.html" class="nav-link" style="text-decoration:none;">🏷️ 设置</a>
       <a href="search.html" class="nav-link" style="text-decoration:none;">🔍 搜索</a>
       <a href="favorites.html" class="nav-link" style="text-decoration:none;">收藏<span class="fav-count" id="favCount">0</span></a>
       <a href="about.html" class="nav-link" style="text-decoration:none;">关于</a>
@@ -1119,6 +1120,67 @@
 
   // 页面加载时执行
   scrollToHashNews();
+
+  // ===== 个性化标签排序 =====
+  function applyUserPreferences() {
+    const userTags = JSON.parse(localStorage.getItem('ai-pulse-tags') || '[]');
+    if (userTags.length === 0) return; // 未设置则不排序
+
+    const sections = document.querySelectorAll('.section-gap');
+    const tagMapping = {
+      '模型': '大模型动态',
+      '工具': '工具',
+      '政策': '政策',
+      '应用': '应用',
+      '开源': '开源',
+      '海外': '海外',
+      '论文': '论文'
+    };
+
+    // 为每个板块添加优先级标记
+    sections.forEach(section => {
+      const label = section.querySelector('.section-label')?.textContent || '';
+      let priority = 999; // 默认低优先级
+
+      userTags.forEach((tag, index) => {
+        if (label.includes(tagMapping[tag] || tag)) {
+          priority = index;
+        }
+      });
+
+      section.dataset.priority = priority;
+      if (priority < 999) {
+        section.style.borderLeft = '3px solid var(--accent-indigo)';
+        section.style.paddingLeft = '20px';
+        section.style.marginLeft = '-3px';
+      }
+    });
+
+    // 按优先级重新排序板块
+    const container = document.querySelector('.content');
+    const tldr = document.querySelector('.tldr');
+    const footer = document.querySelector('.footer');
+
+    // 获取所有板块并排序
+    const sortedSections = Array.from(sections).sort((a, b) => {
+      return parseInt(a.dataset.priority) - parseInt(b.dataset.priority);
+    });
+
+    // 移除原有板块
+    sections.forEach(s => s.remove());
+
+    // 按新顺序插入
+    let insertBefore = footer;
+    for (let i = sortedSections.length - 1; i >= 0; i--) {
+      container.insertBefore(sortedSections[i], insertBefore);
+      insertBefore = sortedSections[i];
+    }
+
+    console.log('已按用户偏好排序板块:', userTags);
+  }
+
+  // 页面加载后应用偏好
+  setTimeout(applyUserPreferences, 100);
 
   // ===== 快捷键支持 =====
   document.addEventListener('keydown', function(e) {

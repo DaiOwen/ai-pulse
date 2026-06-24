@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>个性化设置 · AI 脉搏</title>
+<meta name="description" content="设置你感兴趣的内容标签">
+<meta name="theme-color" content="#0a0a0f">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
+
+  :root {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: rgba(255,255,255,0.025);
+    --bg-card: rgba(255,255,255,0.018);
+    --border-subtle: rgba(255,255,255,0.06);
+    --border-card: rgba(255,255,255,0.04);
+    --text-primary: #f5f5f7;
+    --text-secondary: #9898a0;
+    --text-tertiary: #86868b;
+    --accent-indigo: #6366f1;
+    --accent-green: #22c55e;
+    --accent-amber: #f59e0b;
+    --accent-purple: #8b5cf6;
+  }
+
+  [data-theme="light"] {
+    --bg-primary: #f5f5f7;
+    --bg-secondary: rgba(0,0,0,0.02);
+    --bg-card: rgba(0,0,0,0.015);
+    --border-subtle: rgba(0,0,0,0.08);
+    --border-card: rgba(0,0,0,0.06);
+    --text-primary: #1d1d1f;
+    --text-secondary: #6e6e73;
+    --text-tertiary: #86868b;
+  }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: linear-gradient(170deg, #06060d 0%, #0a0a1a 25%, #0d0a1f 50%, #080818 75%, #060610 100%);
+    color: var(--text-primary);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  [data-theme="light"] body {
+    background: linear-gradient(170deg, #f5f5f7 0%, #fafafa 30%, #f0f0f5 60%, #f5f5f7 100%);
+  }
+
+  .content { max-width:600px; margin:0 auto; padding:0 32px 60px; }
+
+  .nav { display:flex; justify-content:space-between; align-items:center; padding:18px 0; border-bottom:0.5px solid var(--border-subtle); }
+  .nav-brand { display:flex; align-items:center; gap:10px; }
+  .nav-logo { width:34px; height:34px; border-radius:9px; background:linear-gradient(135deg, #6366f1, #8b5cf6); display:flex; align-items:center; justify-content:center; font-size:16px; }
+  .nav-title { font-size:16px; font-weight:600; }
+  .nav-link { font-size:13px; color:var(--text-tertiary); font-weight:500; text-decoration:none; transition:color 0.2s; }
+  .nav-link:hover { color:var(--text-primary); }
+
+  .hero { text-align:center; padding:50px 0 30px; }
+  .hero-title { font-size:32px; font-weight:300; margin-bottom:8px; }
+  .hero-sub { font-size:14px; color:var(--text-tertiary); }
+
+  .intro { font-size:14px; color:var(--text-secondary); line-height:1.7; margin-bottom:32px; padding:16px 20px; background:var(--bg-secondary); border-radius:12px; }
+
+  .tag-section { margin-bottom:24px; }
+  .section-title { font-size:15px; font-weight:600; margin-bottom:12px; color:var(--text-primary); }
+
+  .tag-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .tag-option {
+    background:var(--bg-secondary);
+    border:0.5px solid var(--border-card);
+    border-radius:10px;
+    padding:14px 16px;
+    cursor:pointer;
+    transition:all 0.2s;
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .tag-option:hover { border-color:rgba(255,255,255,0.12); }
+  .tag-option.selected { border-color:var(--accent-indigo); background:rgba(99,102,241,0.08); }
+  .tag-checkbox { width:20px; height:20px; border-radius:6px; border:1.5px solid var(--border-card); display:flex; align-items:center; justify-content:center; transition:all 0.2s; }
+  .tag-option.selected .tag-checkbox { border-color:var(--accent-indigo); background:var(--accent-indigo); }
+  .tag-option.selected .tag-checkbox::after { content:'✓'; color:#fff; font-size:12px; font-weight:600; }
+  .tag-info { flex:1; }
+  .tag-icon { font-size:20px; margin-bottom:4px; }
+  .tag-name { font-size:14px; font-weight:500; color:var(--text-primary); }
+  .tag-desc { font-size:11px; color:var(--text-tertiary); margin-top:2px; }
+
+  .save-btn {
+    width:100%;
+    padding:14px;
+    background:linear-gradient(135deg, #6366f1, #8b5cf6);
+    color:#fff;
+    font-size:15px;
+    font-weight:500;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    transition:transform 0.2s, box-shadow 0.2s;
+    margin-top:24px;
+  }
+  .save-btn:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(99,102,241,0.3); }
+  .save-btn:active { transform:translateY(0); }
+
+  .toast {
+    position:fixed;
+    bottom:80px;
+    left:50%;
+    transform:translateX(-50%);
+    background:rgba(34,197,94,0.95);
+    color:#fff;
+    padding:12px 24px;
+    border-radius:10px;
+    font-size:14px;
+    z-index:100;
+    animation:fadeInOut 2s ease forwards;
+  }
+  @keyframes fadeInOut {
+    from { opacity:0; transform:translateX(-50%) translateY(20px); }
+    10% { opacity:1; transform:translateX(-50%) translateY(0); }
+    90% { opacity:1; }
+    to { opacity:0; }
+  }
+
+  .reset-btn {
+    width:100%;
+    padding:12px;
+    background:none;
+    border:0.5px solid var(--border-card);
+    color:var(--text-tertiary);
+    font-size:13px;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:12px;
+    transition:all 0.2s;
+  }
+  .reset-btn:hover { border-color:rgba(255,255,255,0.12); color:var(--text-secondary); }
+
+  .footer { text-align:center; padding:32px 0 0; border-top:0.5px solid var(--border-subtle); }
+  .footer-links { display:flex; justify-content:center; gap:16px; }
+  .footer-link { font-size:12px; color:var(--accent-indigo); text-decoration:none; }
+
+  @media (max-width:480px) {
+    .tag-grid { grid-template-columns:1fr; }
+    .hero-title { font-size:26px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="content">
+  <nav class="nav">
+    <div class="nav-brand">
+      <div class="nav-logo">⚡</div>
+      <a href="index.html" class="nav-title" style="color:inherit;text-decoration:none;">AI 脉搏</a>
+    </div>
+    <a href="index.html" class="nav-link">首页</a>
+  </nav>
+
+  <section class="hero">
+    <h1 class="hero-title">🏷️ 个性化设置</h1>
+    <p class="hero-sub">选择你感兴趣的内容，首页将优先展示</p>
+  </section>
+
+  <div class="intro">
+    💡 选择你关注的板块后，首页会按照你的偏好排列内容顺序。未选择的板块仍可查看，只是不会优先展示。
+  </div>
+
+  <div class="tag-section">
+    <div class="section-title">内容板块</div>
+    <div class="tag-grid">
+      <div class="tag-option" data-tag="模型" onclick="toggleTag(this)">
+        <div class="tag-checkbox"></div>
+        <div class="tag-info">
+          <div class="tag-icon">🤖</div>
+          <div class="tag-name">大模型动态</div>
+          <div class="tag-desc">模型发布、版本更新、性能评测</div>
+        </div>
+      </div>
+      <div class="tag-option" data-tag="工具" onclick="toggleTag(this)">
+        <div class="tag-checkbox"></div>
+        <div class="tag-info">
+          <div class="tag-icon">🛠️</div>
+          <div class="tag-name">工具 & 部署</div>
+          <div class="tag-desc">框架更新、部署方案、DevOps</div>
+        </div>
+      </div>
+      <div class="tag-option" data-tag="政策" onclick="toggleTag(this)">
+        <div class="tag-checkbox"></div>
+        <div class="tag-info">
+          <div class="tag-icon">📋</div>
+          <div class="tag-name">政策 & 合规</div>
+          <div class="tag-desc">监管动态、行业标准、合规指南</div>
+        </div>
+      </div>
+      <div class="tag-option" data-tag="应用" onclick="toggleTag(this)">
+        <div class="tag-checkbox"></div>
+        <div class="tag-info">
+          <div class="tag-icon">💡</div>
+          <div class="tag-name">应用落地</div>
+          <div class="tag-desc">企业案例、最佳实践、ROI分析</div>
+        </div>
+      </div>
+      <div class="tag-option" data-tag="开源" onclick="toggleTag(this)">
+        <div class="tag-checkbox"></div>
+        <div class="tag-info">
+          <div class="tag-icon">⭐</div>
+          <div class="tag-name">开源热度</div>
+          <div class="tag-desc">GitHub Trending、项目推荐</div>
+        </div>
+      </div>
+      <div class="tag-option" data-tag="海外" onclick="toggleTag(this)">
+        <div class="tag-checkbox"></div>
+        <div class="tag-info">
+          <div class="tag-icon">🌍</div>
+          <div class="tag-name">海外参考</div>
+          <div class="tag-desc">国际动态、海外观点</div>
+        </div>
+      </div>
+      <div class="tag-option" data-tag="论文" onclick="toggleTag(this)">
+        <div class="tag-checkbox"></div>
+        <div class="tag-info">
+          <div class="tag-icon">📄</div>
+          <div class="tag-name">论文速递</div>
+          <div class="tag-desc">arXiv精选、技术突破</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="save-btn" onclick="savePreferences()">保存设置</button>
+  <button class="reset-btn" onclick="resetPreferences()">恢复默认（全部关注）</button>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html" class="footer-link">首页</a>
+      <a href="favorites.html" class="footer-link">收藏</a>
+      <a href="search.html" class="footer-link">搜索</a>
+    </div>
+    <p style="font-size:11px;color:var(--text-tertiary);margin-top:12px;">设置保存在浏览器本地</p>
+  </footer>
+</div>
+
+<script>
+  // 加载已保存的偏好
+  function loadPreferences() {
+    const saved = JSON.parse(localStorage.getItem('ai-pulse-tags') || '[]');
+    document.querySelectorAll('.tag-option').forEach(opt => {
+      if (saved.includes(opt.dataset.tag)) {
+        opt.classList.add('selected');
+      }
+    });
+  }
+
+  // 切换标签选择
+  function toggleTag(el) {
+    el.classList.toggle('selected');
+  }
+
+  // 保存偏好
+  function savePreferences() {
+    const selected = [];
+    document.querySelectorAll('.tag-option.selected').forEach(opt => {
+      selected.push(opt.dataset.tag);
+    });
+    localStorage.setItem('ai-pulse-tags', JSON.stringify(selected));
+    showToast('设置已保存！首页将按你的偏好展示内容');
+  }
+
+  // 重置偏好
+  function resetPreferences() {
+    localStorage.removeItem('ai-pulse-tags');
+    document.querySelectorAll('.tag-option').forEach(opt => {
+      opt.classList.remove('selected');
+    });
+    showToast('已恢复默认设置');
+  }
+
+  // Toast 提示
+  function showToast(msg) {
+    const existing = document.querySelector('.toast');
+    if (existing) existing.remove();
+    const toast = document.createElement('div');
+    toast.className = 'toast';
+    toast.textContent = msg;
+    document.body.appendChild(toast);
+    setTimeout(() => toast.remove(), 2000);
+  }
+
+  // 页面加载时恢复设置
+  loadPreferences();
+</script>
+</body>
+</html>
