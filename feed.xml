@@ -5,8 +5,50 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 24 Jun 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 24 Jun 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>🌙 晚间版 — 2026-06-24（Glasswing + DeepSeek V3.2 + GLM-4.5 + GPT-5.4 + Trinity）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-24-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-06-24-evening.html</guid>
+      <pubDate>Tue, 24 Jun 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3>
+        <ul>
+          <li>Anthropic Glasswing 发布：首个因「过于危险」被限制发布的 AI 网络安全模型（VentureBeat）</li>
+          <li>DeepSeek V3.2 MIT 开源：685B 参数，IMO/IOI 双金（VentureBeat）</li>
+          <li>GLM-4.5 Apache 2.0 开源：原生生成 PPT（VentureBeat）</li>
+          <li>GPT-5.4 发布：首个原生 Computer Use 模型（The Verge）</li>
+          <li>Gemini 2.5 Deep Think：IMO 金牌但公开版为「铜牌」（VentureBeat）</li>
+        </ul>
+        <h3>🛠️ 工具 &amp; 部署</h3>
+        <ul>
+          <li>OpenAI Atlas 浏览器发布：Agent 能力 + 浏览器记忆（The Verge）</li>
+          <li>Claude Cowork 发布：面向非技术用户的桌面 Agent（VentureBeat）</li>
+          <li>Trinity-Large-Thinking Apache 2.0：美国本土 399B 推理模型（VentureBeat）</li>
+          <li>GitHub Agent HQ：多 Agent 统一管控面板（VentureBeat）</li>
+        </ul>
+        <h3>⭐ 开源热度 Top10</h3>
+        <ul>
+          <li>headroom +13k · last30days-skill +12k · taste-skill +8.7k · NVIDIA/skillspector +8.2k · apple/container +7.8k</li>
+          <li>DeepSeek-V3 +6.5k · GLM-4.5 +5.8k · claude-code +4.2k · trinity +3.8k · functiongemma +3.2k</li>
+        </ul>
+        <h3>💡 应用落地</h3>
+        <ul>
+          <li>Anthropic：80% 新生产代码由 Claude 编写，工程师产出增 8×</li>
+          <li>Spotify：Claude Cowork 使工程时间减 90%</li>
+          <li>Novo Nordisk：合规文档从 10+ 周压缩至 10 分钟</li>
+        </ul>
+        <h3>🌍 海外参考</h3>
+        <ul>
+          <li>OpenAI Atlas 浏览器 + GPT-5.4 Computer Use 模型</li>
+          <li>Google Gemini 2.5 Deep Think IMO 金牌但公开版降级</li>
+          <li>Arcee Trinity-Large-Thinking 美国本土开源推理模型</li>
+        </ul>
+        <p><a href="https://daiowen.github.io/ai-pulse/archive/2026-06-24-evening.html">查看完整页面 →</a></p>
+      ]]></description>
+    </item>
 
     <item>
       <title>☀️ 午间版 — 2026-06-24（Qwen-AgentWorld + 豆包2.1 + Claude Code升级 + 智谱IPO + 微信AI）</title>
