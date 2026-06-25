@@ -5,8 +5,43 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 24 Jun 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Jun 2026 08:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>🌅 早间版 — 2026-06-25（Google搜索改版 + Railway $100M + Goose免费 + Cowork + Slackbot AI）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-25-morning.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-06-25-morning.html</guid>
+      <pubDate>Wed, 25 Jun 2026 08:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3>
+        <ul>
+          <li>Google 搜索框 25 年来首次改版：AI 原生搜索时代正式开启（VentureBeat）</li>
+          <li>Railway 获 $100M 融资：挑战 AWS 的 AI 原生云基础设施（VentureBeat）</li>
+          <li>Anthropic Cowork 发布：Claude Desktop Agent，无需编程即可操作文件（VentureBeat）</li>
+          <li>Salesforce Slackbot AI Agent：与微软谷歌竞争职场 AI（VentureBeat）</li>
+          <li>Listen Labs 获 $69M：AI 自动化用户访谈（VentureBeat）</li>
+        </ul>
+        <h3>🛠️ 工具 &amp; 部署</h3>
+        <ul>
+          <li>Goose：Claude Code 的免费开源替代方案，月省 $200（VentureBeat）</li>
+          <li>NousCoder-14B：开源代码模型，定位 Claude Code 时代（VentureBeat）</li>
+          <li>Google Search AI：搜索框 25 年来首次改版（VentureBeat）</li>
+          <li>Claude Cowork：面向非技术用户的桌面 Agent（VentureBeat）</li>
+        </ul>
+        <h3>⭐ 开源热度 Top5</h3>
+        <ul>
+          <li>Goose (Block) · NousCoder-14B · Railway CLI · Listen Labs SDK · Slackbot Templates</li>
+        </ul>
+        <h3>🌍 海外参考</h3>
+        <ul>
+          <li>Google 搜索框改版：25 年来首次重大设计更新</li>
+          <li>Anthropic Cowork：桌面 Agent 让非技术用户也能用 AI</li>
+          <li>Goose 开源：Block 公司免费替代 Claude Code</li>
+        </ul>
+        <p><a href="https://daiowen.github.io/ai-pulse/archive/2026-06-25-morning.html">查看完整页面 →</a></p>
+      ]]></description>
+    </item>
 
     <item>
       <title>🌙 晚间版 — 2026-06-24（Glasswing + DeepSeek V3.2 + GLM-4.5 + GPT-5.4 + Trinity）</title>
