@@ -4,7 +4,9 @@
 
 ## 快速执行（每次 /ai-digest 的标准流程）
 
-**不要读模板文件，不要读旧 index.html，不要 CronList 自检。直接开始。**
+**不要读旧 index.html，不要 CronList 自检。直接开始。**
+
+**⚠️ 重要：必须读取 template.html 获取完整样式框架！**
 
 ### 第1步：搜索（带容错）
 
@@ -12,7 +14,7 @@
 
 **搜索容错机制：**
 1. 主搜索：WebSearch → 如果失败 → 降级搜索
-2. 降级搜索：GitHub Trending API（更稳定）
+2. 降级搜索：curl 直接获取 RSS（VentureBeat AI RSS 最稳定）
 3. 如果所有搜索失败：生成「回顾版」页面
 
 **回顾版内容：**
@@ -52,12 +54,10 @@
 **空返不重试。** 同一信源结果可覆盖多个板块。
 
 **如果所有搜索返回空结果：**
-1. 尝试 GitHub API 获取 trending repos
+1. 使用 curl 获取 VentureBeat AI RSS: `curl -sL "https://venturebeat.com/category/ai/feed/"`
 2. 如果仍失败，生成「回顾版」
 3. 回顾版从最近 3 天归档中抽取热门内容
 4. 页面顶部显示「网络受限模式」提示
-
-### 第2步：去重 + 评分
 
 ### 第2步：去重 + 评分
 
@@ -76,11 +76,16 @@
 
 ### 第3步：生成 HTML
 
-直接拼接字符串生成完整 HTML，**不要读取任何模板文件**。复用以下固化结构：
+**⚠️ 必须先读取 template.html 获取完整 CSS/JS 框架！**
 
-- CSS/JS 框架完全固化：4 个模糊光球 + 40 微粒 + 网格线动画 + theme toggle + PWA + 日历弹窗（代码见下方模板）
-- 搜索到的新闻填入对应板块
-- archiveMap 在现有值基础上追加当前日期
+1. 读取 `template.html` 获取样式框架
+2. 替换模板变量：
+   - `{{DATE}}` → 完整日期（如 "2026年6月25日"）
+   - `{{EDITION}}` → 版次（morning/noon/evening）
+   - `{{TLDR_CONTENT}}` → TL;DR 摘要
+   - `{{NEWS_CONTENT}}` → 新闻内容 HTML
+   - `{{ARCHIVE_MAP}}` → 归档映射 JSON
+3. 保持所有样式完整：日历弹窗、收藏功能、返回顶部、亮暗主题等
 
 ### 第4步：写入文件（3 个文件）
 
