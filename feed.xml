@@ -5,8 +5,34 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 25 Jun 2026 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Jun 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>☀️ 午间版 — 2026-06-25（NousCoder-14B开源 + Railway融资 + Goose热门）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-25-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-06-25-noon.html</guid>
+      <pubDate>Wed, 25 Jun 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3>
+        <ul>
+          <li>NousCoder-14B：Claude Code 时代的开源代码模型（VentureBeat）</li>
+          <li>Railway 获 $100M：AI 原生云挑战 AWS（VentureBeat）</li>
+        </ul>
+        <h3>🛠️ 工具 &amp; 部署</h3>
+        <ul>
+          <li>Goose：Claude Code 免费替代，Apache 2.0 开源</li>
+          <li>NousCoder-14B：14B 开源代码模型</li>
+          <li>Claude Cowork：桌面 Agent，无需编程</li>
+          <li>Railway：AI 原生云平台</li>
+        </ul>
+        <h3>⭐ 开源热度 Top5</h3>
+        <ul>
+          <li>Goose (Block) · NousCoder-14B · Railway CLI · Listen Labs SDK · Slackbot Templates</li>
+        </ul>
+        <p><a href="https://daiowen.github.io/ai-pulse/archive/2026-06-25-noon.html">查看完整页面 →</a></p>
+      ]]></description>
+    </item>
 
     <item>
       <title>🌅 早间版 — 2026-06-25（Google搜索改版 + Railway $100M + Goose免费 + Cowork + Slackbot AI）</title>
