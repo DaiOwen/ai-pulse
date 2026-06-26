@@ -6,11 +6,11 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>AI 脉搏 · 热点速览 — 2026年6月25日 早间版</title>
+<title>AI 脉搏 · 热点速览 — 2026年6月25日 午间版</title>
 <meta name="description" content="面向中国AI开发工程师的每日AI新闻智能聚合">
 <meta name="theme-color" content="#0a0a0f">
-<meta property="og:title" content="AI 脉搏 · AI 热点速览 — 6月25日 早间版">
-<meta property="og:description" content="Google搜索框25年来首次改版 · Railway获$100M挑战AWS · Claude Code替代方案Goose免费开源 · Anthropic Cowork桌面Agent · Salesforce Slackbot AI">
+<meta property="og:title" content="AI 脉搏 · AI 热点速览 — 6月25日 午间版">
+<meta property="og:description" content="Google搜索改版 · Railway获$100M · Goose免费替代Claude Code · NousCoder-14B开源 · 企业AI应用进展">
 <meta property="og:url" content="https://daiowen.github.io/ai-pulse/">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://daiowen.github.io/ai-pulse/assets/og-image.svg">
@@ -61,6 +61,7 @@
 
   [data-theme="light"] .orb { opacity: 0.08 !important; }
 
+  /* ===== 亮色模式文字颜色修正 ===== */
   [data-theme="light"] .hero-badge-text { color: #6366f1 !important; }
   [data-theme="light"] .tldr-label { color: #4f46e5 !important; }
   [data-theme="light"] .tldr-text { color: #374151 !important; }
@@ -130,6 +131,7 @@
     75% { transform:translate(-50px,30px) scale(0.8); } 100% { transform:translate(15px,-20px) scale(1.1); }
   }
 
+  /* 打印优化样式 */
   @media print {
     .bg-layer, .back-to-top, .nav-right, .hero-badge-dot, .archive-overlay { display: none !important; }
     body { background: #fff !important; color: #000 !important; }
@@ -296,406 +298,1098 @@
   .paper-meta { font-size:9px; color:#8b5cf6; }
 
   .dual-cards { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .rank-card {
+    background:rgba(255,255,255,0.018); border:0.5px solid rgba(255,255,255,0.04);
+    border-radius:12px; padding:20px;
+  }
+  .rank-label { font-size:10px; font-weight:600; letter-spacing:0.05em; margin-bottom:14px; }
+  .rank-row { display:flex; align-items:center; gap:10px; font-size:12px; margin-bottom:8px; }
+  .rank-num { color:var(--text-primary); font-weight:500; min-width:20px; }
+  .rank-name { color:var(--text-primary); flex:1; }
+  .rank-stat { font-size:11px; }
+  .rank-up { color:#4ade80; }
+  .rank-neutral { color:var(--text-tertiary); }
+
+  .section-gap { margin-bottom:48px; }
+
+  .footer { text-align:center; padding:36px 0 0; border-top:0.5px solid var(--border-subtle); }
+  .footer-quote { font-size:14px; font-weight:400; color:var(--text-secondary); font-style:italic; letter-spacing:-0.01em; }
+  .footer-author { font-size:11px; color:var(--text-tertiary); margin-top:6px; }
+  .footer-links { margin-top:12px; display:flex; justify-content:center; gap:16px; flex-wrap:wrap; }
+  .footer-link { font-size:11px; color:var(--accent-indigo); text-decoration:none; transition:color 0.2s; }
+  .footer-link:hover { color:#818cf8; }
 
   .dev-impact {
-    background:rgba(217,119,6,0.06); border-left:2px solid #f59e0b;
-    padding:8px 12px; margin-top:10px; border-radius:0 6px 6px 0;
+    display:flex; align-items:flex-start; gap:6px; margin-top:10px;
+    padding:8px 12px; background:rgba(245,158,11,0.06); border-radius:8px;
+    border-left:2px solid var(--accent-amber);
   }
-  .dev-impact-label { font-size:9px; color:#fbbf24; font-weight:600; letter-spacing:0.05em; margin-bottom:2px; }
-  .dev-impact-text { font-size:11px; color:#fcd34d; line-height:1.5; }
+  .dev-impact-icon { font-size:12px; flex-shrink:0; margin-top:1px; }
+  .dev-impact-text { font-size:11px; color:#fbbf24; line-height:1.5; }
 
-  .oss-section { margin-bottom:32px; }
-  .oss-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:16px; }
-  .oss-title { font-size:14px; font-weight:600; color:var(--text-primary); }
-  .oss-badge { font-size:10px; color:var(--text-tertiary); background:rgba(255,255,255,0.04); padding:4px 10px; border-radius:6px; }
-  .oss-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; }
-  .oss-card {
-    background:rgba(255,255,255,0.015); border:0.5px solid rgba(255,255,255,0.03);
-    border-radius:10px; padding:14px 16px; display:flex; align-items:center; gap:12px;
-    transition:transform 0.2s ease, border-color 0.2s ease;
+  .news-item-tag {
+    display:inline-block; font-size:8px; font-weight:700; padding:2px 8px; border-radius:6px;
+    letter-spacing:0.05em; vertical-align:middle; margin-right:6px;
   }
-  .oss-card:hover { transform:translateY(-1px); border-color:rgba(255,255,255,0.08); }
-  .oss-rank { font-size:16px; font-weight:700; color:var(--text-tertiary); width:24px; }
-  .oss-rank.up { color:var(--accent-green); }
-  .oss-info { flex:1; }
-  .oss-name { font-size:12px; font-weight:500; color:var(--text-primary); margin-bottom:2px; }
-  .oss-stars { font-size:10px; color:var(--text-tertiary); }
-  .oss-stars span { color:var(--accent-green); font-weight:500; }
-
-  .calendar-wrap { position:relative; }
-  .calendar-btn {
-    display:inline-flex; align-items:center; gap:6px;
-    background:rgba(255,255,255,0.03); border:0.5px solid rgba(255,255,255,0.06);
-    border-radius:8px; padding:6px 14px; font-size:12px; color:var(--text-tertiary);
-    cursor:pointer; transition:background 0.2s, border-color 0.2s;
-  }
-  .calendar-btn:hover { background:rgba(255,255,255,0.05); border-color:rgba(255,255,255,0.1); }
-  .calendar-overlay {
-    position:absolute; top:100%; left:0; margin-top:8px;
-    background:var(--bg-secondary); border:0.5px solid var(--border-subtle);
-    border-radius:12px; padding:16px; display:none; z-index:100;
-    box-shadow:0 8px 32px rgba(0,0,0,0.4); backdrop-filter:blur(16px);
-  }
-  .calendar-overlay.show { display:block; }
-  .cal-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
-  .cal-month { font-size:13px; font-weight:600; color:var(--text-primary); }
-  .cal-nav { font-size:11px; color:var(--text-tertiary); cursor:pointer; }
-  .cal-grid { display:grid; grid-template-columns:repeat(7, 1fr); gap:4px; }
-  .cal-day { width:28px; height:28px; border-radius:6px; display:flex; align-items:center; justify-content:center; font-size:11px; color:var(--text-tertiary); }
-  .cal-day.today { background:var(--accent-indigo); color:#fff; }
-  .cal-day.full { background:rgba(34,197,94,0.12); color:#4ade80; cursor:pointer; }
-
-  .footer { border-top:0.5px solid var(--border-subtle); padding:32px 0; margin-top:40px; text-align:center; }
-  .footer-text { font-size:12px; color:var(--text-tertiary); margin-bottom:8px; }
-  .footer-link { font-size:12px; color:var(--accent-indigo); text-decoration:none; transition:color 0.2s; }
-  .footer-link:hover { color:#818cf8; }
-  .footer-dot { margin:0 8px; color:var(--text-tertiary); }
-
-  .back-to-top {
-    position:fixed; bottom:32px; right:32px;
-    background:rgba(99,102,241,0.12); border:0.5px solid rgba(99,102,241,0.2);
-    border-radius:10px; width:40px; height:40px;
-    display:flex; align-items:center; justify-content:center;
-    cursor:pointer; opacity:0; transition:opacity 0.3s, transform 0.3s;
-    z-index:50;
-  }
-  .back-to-top.show { opacity:1; }
-  .back-to-top:hover { transform:translateY(-2px); background:rgba(99,102,241,0.18); }
+  .tag-model { background:rgba(99,102,241,0.12); color:#a5b4fc; }
+  .tag-tool { background:rgba(34,197,94,0.12); color:#4ade80; }
+  .tag-industry { background:rgba(245,158,11,0.12); color:#fbbf24; }
+  .tag-policy { background:rgba(59,130,246,0.12); color:#60a5fa; }
+  .tag-paper { background:rgba(139,92,246,0.12); color:#c4b5fd; }
+  .tag-global { background:rgba(6,182,212,0.12); color:#67e8f9; }
 
   @media (max-width:768px) {
-    .content { padding:0 20px 60px; }
-    .hero { padding:40px 0 32px; }
-    .hero-title { font-size:32px; }
-    .sub-grid, .tool-row, .dual-cards, .policy-grid, .oss-grid { grid-template-columns:1fr; }
+    .sub-grid, .tool-row, .dual-cards, .policy-grid { grid-template-columns:1fr; }
     .tool-row { grid-template-columns:1fr 1fr; }
+    .hero-title { font-size:32px; }
     .card-title { font-size:20px; }
     .nav-right { gap:12px; }
     .hero-stats { gap:20px; }
   }
+
+  /* ═══════ Calendar modal ═══════ */
+  .archive-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); backdrop-filter:blur(4px); z-index:100; align-items:center; justify-content:center; }
+  .archive-overlay.open { display:flex; }
+  .archive-dialog { background:#16161f; border:0.5px solid rgba(255,255,255,0.1); border-radius:16px; padding:24px; max-width:380px; width:90%; box-shadow:0 20px 60px rgba(0,0,0,0.5); }
+  [data-theme="light"] .archive-dialog { background:#ffffff; box-shadow:0 20px 60px rgba(0,0,0,0.15); }
+  .cal-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; }
+  .cal-nav-btn { background:rgba(255,255,255,0.06); border:none; color:var(--text-primary); width:28px; height:28px; border-radius:8px; cursor:pointer; font-size:14px; }
+  .cal-month-label { font-size:14px; font-weight:600; }
+  .cal-grid { display:grid; grid-template-columns:repeat(7, 1fr); gap:4px; text-align:center; }
+  .cal-dow { font-size:10px; color:var(--text-tertiary); padding:4px 0; }
+  .cal-day { font-size:13px; padding:8px 4px; border-radius:8px; cursor:default; position:relative; color:var(--text-tertiary); }
+  .cal-day.has-archive { color:var(--text-primary); background:rgba(99,102,241,0.08); cursor:pointer; transition:background 0.2s; }
+  .cal-day.has-archive:hover { background:rgba(99,102,241,0.2); }
+  .cal-day.full { background:rgba(34,197,94,0.12); color:#4ade80; font-weight:600; }
+  .cal-day.full:hover { background:rgba(34,197,94,0.25); }
+  .cal-day.today { border:1px solid var(--accent-indigo); }
+  .cal-day-editions { display:flex; gap:2px; justify-content:center; margin-top:2px; }
+  .cal-edition-dot { width:4px; height:4px; border-radius:50%; }
+  .cal-edition-dot.morning { background:#f59e0b; }
+  .cal-edition-dot.noon { background:#f97316; }
+  .cal-edition-dot.evening { background:#6366f1; }
+  .cal-close { display:block; width:100%; margin-top:16px; padding:8px; background:rgba(255,255,255,0.06); border:none; border-radius:8px; color:var(--text-tertiary); cursor:pointer; font-size:12px; }
+
+  /* 返回顶部按钮 */
+  .back-to-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(99,102,241,0.3);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .back-to-top:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 24px rgba(99,102,241,0.4);
+  }
+  [data-theme="light"] .back-to-top {
+    box-shadow: 0 4px 16px rgba(99,102,241,0.25);
+  }
+
+  /* 收藏按钮 */
+  .favorite-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px 8px;
+    transition: all 0.2s ease;
+    color: var(--text-tertiary);
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .favorite-btn:hover {
+    color: var(--accent-amber);
+    background: rgba(245,158,11,0.1);
+  }
+  .favorite-btn.active {
+    color: #fbbf24;
+  }
+  .favorite-btn .favorite-icon { transition: transform 0.2s; }
+  .favorite-btn:hover .favorite-icon { transform: scale(1.15); }
+  .favorite-btn.active .favorite-icon { transform: scale(1.1); }
+
+  /* 导航收藏计数 */
+  .fav-count {
+    font-size: 11px;
+    background: var(--accent-amber);
+    color: #000;
+    padding: 1px 5px;
+    border-radius: 10px;
+    margin-left: 4px;
+    font-weight: 600;
+  }
+
+  /* Toast 提示 */
+  .toast {
+    position: fixed;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(34,197,94,0.95);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    z-index: 1000;
+    animation: toastIn 0.3s ease, toastOut 0.3s ease 1.7s forwards;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  }
+  @keyframes toastIn {
+    from { opacity: 0; transform: translateX(-50%) translateY(20px); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+  }
+  @keyframes toastOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+
+  /* 分享按钮 */
+  .share-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    color: var(--text-tertiary);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .share-btn:hover {
+    color: var(--accent-indigo);
+    background: rgba(99,102,241,0.1);
+  }
+
+  /* 网络受限模式提示 */
+  .offline-notice {
+    background: rgba(245,158,11,0.08);
+    border: 0.5px solid rgba(245,158,11,0.25);
+    border-radius: 10px;
+    padding: 14px 20px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .offline-icon { font-size: 22px; flex-shrink: 0; }
+  .offline-title { font-size: 14px; font-weight:600; color: #fbbf24; margin-bottom: 2px; }
+  .offline-desc { font-size: 12px; color: var(--text-secondary); line-height: 1.5; }
+  [data-theme="light"] .offline-notice { background: rgba(217,119,6,0.08); }
+  [data-theme="light"] .offline-title { color: #b45309; }
 </style>
 </head>
 <body>
 
 <div class="bg-layer">
-  <div class="orb orb-1"></div>
-  <div class="orb orb-2"></div>
-  <div class="orb orb-3"></div>
-  <div class="orb orb-4"></div>
+  <div class="orb orb-1"></div><div class="orb orb-2"></div>
+  <div class="orb orb-3"></div><div class="orb orb-4"></div>
   <div class="grid-overlay"></div>
-  <div class="particles">
-    <script>
-      const particles = document.querySelector('.particles');
-      for(let i=0;i<40;i++){
-        const p = document.createElement('div');
-        p.className='particle';
-        p.style.left=Math.random()*100+'%';
-        p.style.width=p.style.height=Math.random()*3+1+'px';
-        p.style.animationDuration=Math.random()*12+8+'s';
-        p.style.animationDelay=Math.random()*5+'s';
-        particles.appendChild(p);
-      }
-    </script>
-  </div>
+  <div class="particles" id="particles"></div>
 </div>
 
 <div class="content">
 
-<nav class="nav">
-  <div class="nav-brand">
-    <div class="nav-logo">⚡</div>
-    <div>
-      <div class="nav-title">AI 脉搏</div>
-      <div class="nav-sub">热点速览</div>
-    </div>
-  </div>
-  <div class="nav-right">
-    <a class="nav-link" href="archive/2026-06-24-evening.html">昨日归档</a>
-    <a class="nav-link" href="feed.xml">RSS</a>
-    <div style="display:flex; align-items:center; gap:8px;">
-      <span class="toggle-label">☀️</span>
-      <div class="toggle-track" onclick="toggleTheme()">
-        <div class="toggle-thumb"></div>
+  <!-- ═══════════ NAV ═══════════ -->
+  <nav class="nav">
+    <div class="nav-brand">
+      <div class="nav-logo">⚡</div>
+      <div>
+        <div class="nav-title">AI热点速览</div>
+        <div class="nav-sub">AI PULSE · NOON</div>
       </div>
-      <span class="toggle-label">🌙</span>
     </div>
-  </div>
-</nav>
+    <div class="nav-right">
+      <button class="nav-link" id="btnArchive">📅 往期回顾</button>
+      <a href="settings.html" class="nav-link" style="text-decoration:none;">🏷️ 设置</a>
+      <a href="search.html" class="nav-link" style="text-decoration:none;">🔍 搜索</a>
+      <a href="favorites.html" class="nav-link" style="text-decoration:none;">⭐ 收藏<span class="fav-count" id="favCount">0</span></a>
+      <a href="about.html" class="nav-link" style="text-decoration:none;">关于</a>
+      <span class="toggle-label">暗</span>
+      <div class="toggle-track" id="themeToggle"><div class="toggle-thumb"></div></div>
+      <span class="toggle-label">亮</span>
+    </div>
+  </nav>
 
-<header class="hero">
-  <div class="hero-glow"></div>
-  <div class="hero-badge">
-    <div class="hero-badge-dot"></div>
-    <span class="hero-badge-text">2026年6月25日 · 早间版</span>
-  </div>
-  <h1 class="hero-title">AI 热点速览</h1>
-  <div class="hero-date">周三 · 北京时间 08:00</div>
-  <div class="hero-stats">
-    <div><div class="hero-stat-num">8</div><div class="hero-stat-label">头条</div></div>
-    <div class="hero-stat-divider"></div>
-    <div><div class="hero-stat-num">4</div><div class="hero-stat-label">工具</div></div>
-    <div class="hero-stat-divider"></div>
-    <div><div class="hero-stat-num">5</div><div class="hero-stat-label">开源</div></div>
-  </div>
-</header>
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-badge">
+      <div class="hero-badge-dot"></div>
+      <span class="hero-badge-text">午间版 · 12:00 CST · 增量更新</span>
+    </div>
+    <h1 class="hero-title">今日 AI 脉搏</h1>
+    <p class="hero-date">2026年6月25日 · 星期三</p>
+    <div class="hero-stats">
+      <div><div class="hero-stat-num">32</div><div class="hero-stat-label">头条新闻</div></div>
+      <div class="hero-stat-divider"></div>
+      <div><div class="hero-stat-num">12</div><div class="hero-stat-label">信源覆盖</div></div>
+      <div class="hero-stat-divider"></div>
+      <div><div class="hero-stat-num">10</div><div class="hero-stat-label">热门项目</div></div>
+      <div class="hero-stat-divider"></div>
+      <div><div class="hero-stat-num">3</div><div class="hero-stat-label">海外动态</div></div>
+    </div>
+  </section>
 
-<div class="tldr">
-  <span class="tldr-label">TL;DR</span>
-  <span class="tldr-text">Google 搜索框 25 年来首次改版，AI 原生云基础设施创业公司 Railway 获 $100M，Claude Code 替代方案 Goose 免费，Anthropic Cowork 面向非技术用户，Salesforce Slackbot AI agent 与微软谷歌竞争。</span>
-</div>
-
-<!-- 大模型动态 -->
-<section id="models">
-  <div class="section-head">
-    <div class="section-line" style="background:linear-gradient(180deg, #6366f1, transparent);"></div>
-    <span class="section-label" style="color:#6366f1;">Models</span>
-    <span class="section-label-cn">大模型动态</span>
+  <!-- ═══════════ TL;DR ═══════════ -->
+  <div class="tldr">
+    <span class="tldr-label">⚡ 一句话速览</span>
+    <span class="tldr-text">
+      早间版更新：Google 搜索框 25 年首次改版 · Railway 获 $100M 挑战 AWS · Goose 免费替代 Claude Code · 午间增量：NousCoder-14B 开源代码模型发布 · Anthropic Cowork 面向非技术用户 · Salesforce Slackbot AI 与微软谷歌竞争
+    </span>
   </div>
 
-  <div class="feature-card">
-    <div class="card-row">
-      <div class="card-icon">🔍</div>
-      <div class="card-body">
-        <div class="card-tag" style="color:#6366f1;">🚀 GOOGLE · 搜索革命</div>
-        <div class="card-title">Google 搜索框 25 年来首次改版：AI 原生搜索时代正式开启</div>
-        <div class="card-desc">Google 对其标志性的搜索框进行了 25 年来的首次重大设计改版。新设计融合了 AI 功能，搜索框变得更圆润、更具交互性，支持多模态输入（文字、图片、语音）。这是 Google 应对 AI 搜索竞争的关键一步，标志着从「搜索链接」到「AI 回答」的范式转变。</div>
-        <div class="card-meta">
-          <span>📰 VentureBeat</span><span>·</span><span class="news-time" data-date="2026-06-19">🕐 6月19日</span>
+  <!-- ═══════════ 🤖 大模型动态 ═══════════ -->
+  <div class="section-gap">
+    <div class="section-head">
+      <div class="section-line" style="background:linear-gradient(180deg, #6366f1, #8b5cf6);"></div>
+      <span class="section-label" style="color:#a5b4fc;"><span class="news-item-tag tag-model">模型</span>大模型动态</span>
+      <span class="section-label-cn">Model Updates</span>
+    </div>
+
+    <!-- Lead Story -->
+    <div class="feature-card" id="news-glasswing-20260624">
+      <div class="card-row">
+        <div class="card-body">
+          <div class="card-tag" style="color:#ec4899;">🔴 HEADLINE · Anthropic · 网络安全</div>
+          <div class="card-title">Anthropic 发布 Project Glasswing：首个因「过于危险」被限制发布的 AI 模型</div>
+          <div class="card-desc">Anthropic 正式公开 Project Glasswing——基于 Claude Mythos Preview 构建的网络安全 AI。该模型可自主发现并串联零日漏洞链，包括一个隐匿 27 年的 OpenBSD 内核漏洞和 16 年的 FFmpeg 漏洞。在 CyberGym 评测获 83.1%，SWE-bench Verified 达 93.9%。Anthropic 称其「过于危险不宜公开发布」，仅限 AWS/Apple/Google/Microsoft/Nvidia/CrowdStrike 等受审核合作伙伴使用，定价高达 $25/M 输入 token、$125/M 输出 token。同步承诺投入 $100M 安全研究积分。</div>
+          <div class="card-meta">
+            <span>📰 VentureBeat / Anthropic</span><span>·</span><span class="news-time" data-date="2026-06-23">🕐 6月23日</span>
+            <button class="share-btn" onclick="shareNews('news-glasswing-20260624', 'Anthropic 发布 Project Glasswing：首个因「过于危险」被限制发布的 AI 模型')">🔗 分享</button>
+            <button class="favorite-btn" data-id="news-glasswing-20260624" data-title="Anthropic 发布 Project Glasswing：首个因「过于危险」被限制发布的 AI 模型" data-url="https://venturebeat.com/ai/anthropic-says-its-most-powerful-ai-cyber-model-is-too-dangerous-to-release" data-source="VentureBeat" onclick="toggleFavorite(this)">
+              <span class="favorite-icon">☆</span> 收藏
+            </button>
+            <a href="https://venturebeat.com/ai/anthropic-says-its-most-powerful-ai-cyber-model-is-too-dangerous-to-release" class="read-original" target="_blank" rel="noopener">阅读原文 <span class="read-original-arrow">→</span></a>
+          </div>
+          <div class="dev-impact">
+            <span class="dev-impact-icon">💡</span>
+            <span class="dev-impact-text"><strong>开发者影响：</strong>首次出现「能力过强 → 限制分发」的安全范式转变。企业安全团队需关注 AI 驱动攻击面的变化，模型能力评级体系（如 CyberGym）将成为采购参考标准。</span>
+          </div>
         </div>
-        <a href="https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think" class="read-original" target="_blank" rel="noopener">阅读原文 →</a>
+        <div class="card-icon">🛡️</div>
       </div>
     </div>
-  </div>
 
-  <div class="sub-grid">
-    <div class="sub-card">
-      <div class="sub-tag" style="color:#22c55e;">🇺🇸 INFRA · Railway</div>
-      <div class="sub-title">Railway 获 $100M 融资：挑战 AWS 的 AI 原生云基础设施</div>
-      <div class="sub-desc">Railway 获得 1 亿美元融资，定位为「AI 原生云基础设施」，直接挑战 AWS。其平台支持一键部署、自动扩缩容，专为 AI 应用和 Agent 设计。创始团队来自 Heroku，强调开发者体验优于传统云服务商。</div>
-      <div class="sub-meta">
-        <span>📰 VentureBeat</span><span>·</span><a href="https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud" class="read-original" target="_blank" rel="noopener">原文 →</a>
-      </div>
-    </div>
-    <div class="sub-card">
-      <div class="sub-tag" style="color:#8b5cf6;">🤖 ANTHROPIC · Cowork</div>
-      <div class="sub-title">Anthropic 发布 Cowork：Claude Desktop Agent，无需编程即可操作文件</div>
-      <div class="sub-desc">Anthropic 推出 Cowork，一个面向非技术用户的 Claude 桌面 Agent。用户无需编写代码，Cowork 可以直接读取本地文件、整理数据、生成报告。首批客户包括 Spotify 和 Novo Nordisk，工程效率提升显著。</div>
-      <div class="sub-meta">
-        <span>📰 VentureBeat</span><span>·</span><a href="https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no" class="read-original" target="_blank" rel="noopener">原文 →</a>
-      </div>
-    </div>
-    <div class="sub-card">
-      <div class="sub-tag" style="color:#06b6d4;">💬 SALESFORCE · Slackbot</div>
-      <div class="sub-title">Salesforce 推出新 Slackbot AI Agent，与微软谷歌竞争职场 AI</div>
-      <div class="sub-desc">Salesforce 发布新版 Slackbot AI agent，具备自主执行任务能力，可跨系统查询数据、生成报告、安排会议。这是 Salesforce 在职场 AI 领域与 Microsoft Copilot、Google Gemini 的直接竞争。</div>
-      <div class="sub-meta">
-        <span>📰 VentureBeat</span><span>·</span><a href="https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and" class="read-original" target="_blank" rel="noopener">原文 →</a>
-      </div>
-    </div>
-    <div class="sub-card">
-      <div class="sub-tag" style="color:#f59e0b;">🎤 LISTEN LABS · AI 调研</div>
-      <div class="sub-title">Listen Labs 获 $69M：AI 自动化用户访谈，病毒式招聘营销后融资</div>
-      <div class="sub-desc">Listen Labs 获得 6900 万美元融资，其 AI 平台可自动进行用户访谈和分析。此前该公司因「 billboard 招聘广告」病毒式传播而备受关注。平台可替代传统用户调研，成本和时间大幅降低。</div>
-      <div class="sub-meta">
-        <span>📰 VentureBeat</span><span>·</span><a href="https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai" class="read-original" target="_blank" rel="noopener">原文 →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 工具 & 部署 -->
-<section id="tools" style="margin-top:32px;">
-  <div class="section-head">
-    <div class="section-line" style="background:linear-gradient(180deg, #22c55e, transparent);"></div>
-    <span class="section-label" style="color:#22c55e;">Tools</span>
-    <span class="section-label-cn">工具 & 部署</span>
-  </div>
-
-  <div class="feature-card">
-    <div class="card-row">
-      <div class="card-icon">🦢</div>
-      <div class="card-body">
-        <div class="card-tag" style="color:#22c55e;">💡 OPEN SOURCE · Goose</div>
-        <div class="card-title">Goose：Claude Code 的免费开源替代方案，月省 $200</div>
-        <div class="card-desc">Goose 是一个开源的 AI 编程 Agent，功能对标 Claude Code（$200/月），但完全免费。支持自主编辑文件、运行命令、调试代码。由 Block 公司开源，基于 Apache 2.0 协议，已迅速获得开发者社区关注。</div>
-        <div class="card-meta">
-          <span>📰 VentureBeat</span><span>·</span><span class="news-time" data-date="2026-06-24">🕐 6月24日</span>
+    <!-- Sub stories -->
+    <div class="sub-grid">
+      <div class="sub-card" id="news-deepseek-v32-20260624">
+        <div class="sub-tag" style="color:#22c55e;">🇨🇳 OPEN SOURCE · DeepSeek</div>
+        <div class="sub-title">DeepSeek V3.2 / V3.2-Speciale：MIT 协议 685B MoE，IMO/IOI 双金，推理成本降 70%</div>
+        <div class="sub-desc">DeepSeek 发布 V3.2 系列，685B 参数 MoE 架构，MIT 许可协议。引入 DeepSeek Sparse Attention (DSA) 将长序列推理成本降低约 70%。V3.2-Speciale 在 IMO 2025 和 IOI 2025 摘金，ICPC World Finals 获亚军。API 定价仅为竞争对手的 1/10~1/20。</div>
+        <div class="sub-meta">
+          <span>📰 VentureBeat</span>
+          <button class="favorite-btn" data-id="news-deepseek-v32-20260624" data-title="DeepSeek V3.2 / V3.2-Speciale：MIT 协议 685B MoE" data-url="https://venturebeat.com/ai/deepseek-just-dropped-two-insanely-powerful-ai-models-that-rival-gpt-5-and" data-source="VentureBeat" onclick="toggleFavorite(this)"><span class="favorite-icon">☆</span></button>
+          <a href="https://venturebeat.com/ai/deepseek-just-dropped-two-insanely-powerful-ai-models-that-rival-gpt-5-and" class="read-original" target="_blank" rel="noopener">阅读原文 →</a>
         </div>
+      </div>
+      <div class="sub-card" id="news-glm45-20260624">
+        <div class="sub-tag" style="color:#6366f1;">🇨🇳 OPEN SOURCE · Z.ai (智谱)</div>
+        <div class="sub-title">Z.ai 开源 GLM-4.5 系列：355B MoE，Apache 2.0，原生生成 PPT</div>
+        <div class="sub-desc">智谱海外品牌 Z.ai 发布 GLM-4.5（355B total / 32B active，MoE）和 GLM-4.5-Air（106B / 12B active）。在 BrowseComp、AIME24、SWE-bench Verified 上对标 Claude 4 Sonnet/Opus。可单 prompt 生成完整 PowerPoint 演示文稿。Apache 2.0 协议，API $0.20/M 起。</div>
+        <div class="sub-meta">
+          <span>📰 VentureBeat</span>
+          <button class="favorite-btn" data-id="news-glm45-20260624" data-title="Z.ai 开源 GLM-4.5 系列：355B MoE，Apache 2.0" data-url="https://venturebeat.com/ai/chinese-startup-z-ai-launches-powerful-open-source-glm-4-5-model-family-with-powerpoint-creation" data-source="VentureBeat" onclick="toggleFavorite(this)"><span class="favorite-icon">☆</span></button>
+          <a href="https://venturebeat.com/ai/chinese-startup-z-ai-launches-powerful-open-source-glm-4-5-model-family-with-powerpoint-creation" class="read-original" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+      <div class="sub-card" id="news-functiongemma-20260624">
+        <div class="sub-tag" style="color:#06b6d4;">🤖 EDGE AI · Google</div>
+        <div class="sub-title">Google 发布 FunctionGemma：270M 参数端侧模型，可自主操控手机应用</div>
+        <div class="sub-desc">Google 发布 FunctionGemma，一个仅 2.7 亿参数的端侧函数调用模型——将自然语言指令实时转化为结构化代码，无需联网即可操控移动设备。在函数调用任务上达 85% 准确率，匹敌数十倍于己的模型。已在 Hugging Face 和 Kaggle 开放下载。</div>
+        <div class="sub-meta">
+          <span>📰 VentureBeat</span>
+          <button class="favorite-btn" data-id="news-functiongemma-20260624" data-title="Google 发布 FunctionGemma：270M 参数端侧模型" data-url="https://venturebeat.com/technology/google-releases-functiongemma-a-tiny-edge-model-that-can-control-mobile" data-source="VentureBeat" onclick="toggleFavorite(this)"><span class="favorite-icon">☆</span></button>
+          <a href="https://venturebeat.com/technology/google-releases-functiongemma-a-tiny-edge-model-that-can-control-mobile" class="read-original" target="_blank" rel="noopener">阅读原文 →</a>
+        </div>
+      </div>
+      <div class="sub-card" id="news-thinking-machines-20260624">
+        <div class="sub-tag" style="color:#f59e0b;">🌍 RESEARCH · Thinking Machines</div>
+        <div class="sub-title">Mira Murati 创业公司 Thinking Machines 发布「交互模型」，对话延迟仅 0.4 秒</div>
+        <div class="sub-desc">前 OpenAI CTO Mira Murati 的创业公司 Thinking Machines 展示 276B 参数（12B active）「全双工」交互模型，同时处理语音输入与输出 200ms 分片。语音对话延迟仅 0.40 秒（GPT-realtime-2.0 为 1.18 秒），FD-bench V1.5 得分 77.8，接近对手两倍。目前仅研究预览。</div>
+        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/technology/thinking-machines-shows-off-preview-of-near-realtime-ai-voice-and-video-conversation-with-new-interaction-models" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+      </div>
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#ec4899;">🚀 OPENAI · GPT-5.4</div>
+        <div class="sub-title">OpenAI 发布 GPT-5.4：首个原生 Computer Use 模型，事实准确性提升 33%</div>
+        <div class="sub-desc">OpenAI 同步发布 GPT-5.4——首个原生 Computer Use 模型，可跨应用操作设备。The Verge 评价其为「自主 Agent 的一大步」，事实准确性相比前代提升 33%。配合 Atlas AI 浏览器，实现完整桌面 Agent 能力闭环。</div>
+        <div class="sub-meta"><span>📰 The Verge</span><a href="https://www.theverge.com/ai-artificial-intelligence/889926/openai-gpt-5-4-model-release-ai-agents" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ 🛠️ 工具 & 部署 ═══════════ -->
+  <div class="section-gap">
+    <div class="section-head">
+      <div class="section-line" style="background:linear-gradient(180deg, #22c55e, #10b981);"></div>
+      <span class="section-label" style="color:#86efac;"><span class="news-item-tag tag-tool">工具</span>工具 & 部署</span>
+      <span class="section-label-cn">Tools & Frameworks</span>
+    </div>
+
+    <div class="tool-row">
+      <div class="tool-card">
+        <div class="tool-icon">🖥️</div>
+        <div class="tool-name">OpenAI Codex Desktop</div>
+        <div class="tool-desc">macOS 版「Agent 指挥中心」发布，支持并行运行多个 AI 编码 Agent，独立工作最长 30 分钟。内置 Skills 包和 Automation 定时任务机制。</div>
+        <div class="tool-badge badge-new">新发布</div>
+        <a href="https://venturebeat.com/orchestration/openai-launches-a-codex-desktop-app-for-macos-to-run-multiple-ai-coding" class="read-original" style="margin-top:8px;" target="_blank" rel="noopener">VentureBeat →</a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">🏢</div>
+        <div class="tool-name">GitHub Agent HQ</div>
+        <div class="tool-desc">GitHub 发布多 Agent 统一管控面板，支持 Anthropic/OpenAI/Google/Cognition/xAI 等 Agent 集中管理。含 Mission Control、自定义 Agent AGENTS.md 和 MCP 集成。</div>
+        <div class="tool-badge badge-new">新发布</div>
+        <a href="https://venturebeat.com/ai/githubs-agent-hq-aims-to-solve-enterprises-biggest-ai-coding-problem-too" class="read-original" style="margin-top:8px;" target="_blank" rel="noopener">VentureBeat →</a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">🔒</div>
+        <div class="tool-name">Kilo KiloClaw</div>
+        <div class="tool-desc">企业级 AI Agent 治理平台，解决「影子 AI」危机。提供审计日志、凭证管理、集中化 Agent 管控，让员工自主使用的 Agent 纳入合规轨道。</div>
+        <div class="tool-badge badge-new">新发布</div>
+        <a href="https://venturebeat.com/orchestration/the-end-of-shadow-ai-at-enterprises-kilo-launches-kiloclaw-for-organizations" class="read-original" style="margin-top:8px;" target="_blank" rel="noopener">VentureBeat →</a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">🤖</div>
+        <div class="tool-name">Anthropic Claude Tag</div>
+        <div class="tool-desc">Slack 持久化 AI 队友，替代原 Slack App。可学习频道上下文、自主监控和响应。企业级安全管控，支持 Token 花费上限设定。@Claude 即用。</div>
+        <div class="tool-badge badge-update">更新</div>
+        <a href="https://venturebeat.com/technology/anthropic-launches-claude-tag-replacing-its-slack-app-with-a-persistent-ai-teammate-that-learns-monitors-and-works-autonomously" class="read-original" style="margin-top:8px;" target="_blank" rel="noopener">VentureBeat →</a>
+      </div>
+    </div>
+    <div class="tool-row">
+      <div class="tool-card">
+        <div class="tool-icon">🌐</div>
+        <div class="tool-name">OpenAI Atlas Browser</div>
+        <div class="tool-desc">内置 ChatGPT 的 AI 浏览器 Atlas（Chromium 内核），具备 Agent 能力和浏览器记忆。可自主完成搜索、导航、信息提取等任务。</div>
+        <div class="tool-badge badge-new">新发布</div>
+        <a href="https://www.theverge.com/ai-artificial-intelligence/889926/openai-gpt-5-4-model-release-ai-agents" class="read-original" style="margin-top:8px;" target="_blank" rel="noopener">The Verge →</a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">💼</div>
+        <div class="tool-name">Claude Cowork</div>
+        <div class="tool-desc">面向非技术用户的桌面 Agent，支持在指定文件夹内读写文件、MCP 连接器接入 GDrive/Salesforce/DocuSign。</div>
+        <div class="tool-badge badge-new">新发布</div>
+        <a href="https://venturebeat.com/orchestration/anthropic-says-claude-code-transformed-programming-now-claude-cowork-is" class="read-original" style="margin-top:8px;" target="_blank" rel="noopener">VentureBeat →</a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">📊</div>
+        <div class="tool-name">Trinity-Large-Thinking</div>
+        <div class="tool-desc">美国本土 399B 推理模型 Apache 2.0 开源，PinchBench 91.9，API $0.90/M，约为 Opus 4.6 的 1/28。</div>
+        <div class="tool-badge badge-hot">热门</div>
+        <a href="https://venturebeat.com/ai/arcees-new-open-source-trinity-large-thinking-is-the-rare-powerful-u-s-made" class="read-original" style="margin-top:8px;" target="_blank" rel="noopener">VentureBeat →</a>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">🔍</div>
+        <div class="tool-name">NVIDIA SkillSpector</div>
+        <div class="tool-desc">AI Agent 安全扫描工具开源，可检测 Agent 代码中的安全漏洞和潜在风险。</div>
+        <div class="tool-badge badge-new">新发布</div>
+        <a href="https://github.com/NVIDIA/skillspector" class="read-original" style="margin-top:8px;" target="_blank" rel="noopener">GitHub →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ 📋 政策 & 合规 ═══════════ -->
+  <div class="section-gap">
+    <div class="section-head">
+      <div class="section-line" style="background:linear-gradient(180deg, #3b82f6, #2563eb);"></div>
+      <span class="section-label" style="color:#93c5fd;"><span class="news-item-tag tag-policy">政策</span>政策 & 合规</span>
+      <span class="section-label-cn">Policy & Regulation</span>
+    </div>
+
+    <div class="policy-grid">
+      <div class="policy-card">
+        <div class="sub-tag" style="color:#60a5fa;">🇨🇳 治理 · 中国方案</div>
+        <div class="sub-title">中国发布《为人工智能全球治理贡献中国方案》，强调「智能向善」</div>
+        <div class="sub-desc">人民网 6 月 20 日报道，中国在国际场合正式发布 AI 全球治理中国方案。核心原则包括：以人为本、智能向善、安全可控、包容普惠。提出建立健全 AI 研发伦理规范和安全标准，推动形成具有广泛共识的国际 AI 治理框架。中国已发布 30 项 AI 国家标准，84 项在制定中。</div>
+        <div class="sub-meta"><span>📰 人民网 · 6月20日</span><a href="https://finance.people.com.cn/BIG5/n1/2026/0620/c1004-40743922.html" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
         <div class="dev-impact">
-          <div class="dev-impact-label">开发者影响</div>
-          <div class="dev-impact-text">免费替代 Claude Code，个人开发者和小团队的成本压力大幅降低。本地运行，数据不出本机。</div>
+          <span class="dev-impact-icon">💡</span>
+          <span class="dev-impact-text"><strong>开发者影响：</strong>国家标准体系加速完善（30+84 项），涉及智能体、AI 安全、数据治理等领域。面向国内外市场的 AI 产品需同步关注中国国标与国际框架的合规要求。</span>
         </div>
-        <a href="https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free" class="read-original" target="_blank" rel="noopener">阅读原文 →</a>
+      </div>
+      <div class="policy-card">
+        <div class="sub-tag" style="color:#f59e0b;">🌍 国际 · AI 数字主权</div>
+        <div class="sub-title">人民网：AI 智能体决策不应架空人类「数字主权」——四层防护体系提案</div>
+        <div class="sub-desc">人民网刊发深度评论，提出 AI 智能体治理的「四层防护体系」：外约束（法律法规）、内嵌入（伦理植入算法）、供应链（全链条安全）、软法（行业自律）。核心主张「双权分离」——AI 对数据的「访问权」与对结果的「行动权」必须在架构层面分离，确保关键决策节点上人类始终掌握最终控制权。</div>
+        <div class="sub-meta"><span>📰 人民网 · 2月2日</span><a href="http://finance.people.com.cn/BIG5/n1/2026/0202/c1004-40657725.html" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
       </div>
     </div>
   </div>
 
-  <div class="tool-row">
-    <div class="tool-card">
-      <div class="tool-icon">🧠</div>
-      <div class="tool-name">NousCoder-14B</div>
-      <div class="tool-desc">Nous Research 开源 14B 代码模型，定位 Claude Code 时代的免费替代</div>
-      <div class="tool-badge badge-new">开源</div>
+  <!-- ═══════════ 💡 应用落地 ═══════════ -->
+  <div class="section-gap">
+    <div class="section-head">
+      <div class="section-line" style="background:linear-gradient(180deg, #f59e0b, #d97706);"></div>
+      <span class="section-label" style="color:#fcd34d;"><span class="news-item-tag tag-industry">应用</span>应用落地</span>
+      <span class="section-label-cn">Applications</span>
     </div>
-    <div class="tool-card">
-      <div class="tool-icon">🤖</div>
-      <div class="tool-name">Claude Cowork</div>
-      <div class="tool-desc">Anthropic 桌面 Agent，非技术用户直接操作本地文件</div>
-      <div class="tool-badge badge-hot">热门</div>
-    </div>
-    <div class="tool-card">
-      <div class="tool-icon">💬</div>
-      <div class="tool-name">Slackbot AI</div>
-      <div class="tool-desc">Salesforce 新版 Slack 机器人，自主执行职场任务</div>
-      <div class="tool-badge badge-update">更新</div>
-    </div>
-    <div class="tool-card">
-      <div class="tool-icon">🔍</div>
-      <div class="tool-name">Google Search AI</div>
-      <div class="tool-desc">搜索框 25 年来首次改版，AI 原生交互设计</div>
-      <div class="tool-badge badge-hot">热门</div>
-    </div>
-  </div>
-</section>
 
-<!-- 开源热度 -->
-<section id="opensource" class="oss-section" style="margin-top:32px;">
-  <div class="section-head">
-    <div class="section-line" style="background:linear-gradient(180deg, #f59e0b, transparent);"></div>
-    <span class="section-label" style="color:#f59e0b;">Open Source</span>
-    <span class="section-label-cn">开源热度</span>
-  </div>
-
-  <div class="oss-header">
-    <span class="oss-title">本周 GitHub AI 热门</span>
-    <span class="oss-badge">基于 VentureBeat 报道</span>
-  </div>
-
-  <div class="oss-grid">
-    <div class="oss-card">
-      <div class="oss-rank up">1</div>
-      <div class="oss-info">
-        <div class="oss-name">Goose (Block)</div>
-        <div class="oss-stars">免费 Claude Code 替代 · <span>+3.2k</span></div>
+    <div class="sub-grid">
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#f59e0b;">🏢 ENTERPRISE · Anthropic</div>
+        <div class="sub-title">Anthropic：80% 新生产代码由 Claude 编写，工程师人均代码产出增长 8×</div>
+        <div class="sub-desc">Anthropic 披露内部惊人数据：2026 年 5 月合并到生产环境的代码中 80% 为 AI 编写，工程师人均代码产出增长 8 倍。VentureBeat 同步发布企业采纳路线图：从 AI 辅助补全到全自主 Agent 编程的四个阶段。</div>
+        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/technology/anthropic-says-80-of-its-new-production-code-is-now-authored-by-claude-how-your-enterprise-can-keep-up" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
       </div>
-    </div>
-    <div class="oss-card">
-      <div class="oss-rank up">2</div>
-      <div class="oss-info">
-        <div class="oss-name">NousCoder-14B</div>
-        <div class="oss-stars">开源代码模型 · <span>+2.8k</span></div>
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#22c55e;">🏢 ENTERPRISE · AI 支付</div>
+        <div class="sub-title">支付宝「AI 付」+ 微信「AI 专属卡」+ 京东 A2P2：中国 AI 支付三路并进</div>
+        <div class="sub-desc">36氪报道中国 AI 支付最新进展：支付宝在瑞幸 Lucky AI 实现智能体全链路支付（仍需手动确认），联合千问推出 ACT 协议；微信推出 WorkBuddy 桌面智能体支付闭环，采用额度锁定换取安全；京东发布 A2P2 协议定义 Agent 授权和审计规则。</div>
+        <div class="sub-meta"><span>📰 36氪</span><a href="https://www.36kr.com/p/3864189754063493" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
       </div>
-    </div>
-    <div class="oss-card">
-      <div class="oss-rank">3</div>
-      <div class="oss-info">
-        <div class="oss-name">Railway CLI</div>
-        <div class="oss-stars">AI 原生云部署 · <span>+1.5k</span></div>
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#8b5cf6;">🏢 ENTERPRISE · Spotify</div>
+        <div class="sub-title">Claude Cowork 实战：Spotify 工程时间减 90%，Novo Nordisk 合规文档从 10+ 周压缩至 10 分钟</div>
+        <div class="sub-desc">Anthropic 发布 Claude Cowork 后的首批客户案例：Spotify 使用 Claude 进行代码迁移，工程时间减少 90%；Novo Nordisk 用 Claude 处理合规文档，从原本 10+ 周压缩至 10 分钟。展示了非技术用户也能从 AI Agent 中获益。</div>
+        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/orchestration/anthropic-says-claude-code-transformed-programming-now-claude-cowork-is" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
       </div>
-    </div>
-    <div class="oss-card">
-      <div class="oss-rank">4</div>
-      <div class="oss-info">
-        <div class="oss-name">Listen Labs SDK</div>
-        <div class="oss-stars">AI 用户调研 · <span>+1.2k</span></div>
-      </div>
-    </div>
-    <div class="oss-card">
-      <div class="oss-rank">5</div>
-      <div class="oss-info">
-        <div class="oss-name">Slackbot Templates</div>
-        <div class="oss-stars">职场 Agent 模板 · <span>+0.9k</span></div>
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#ec4899;">🛡️ SECURITY · Project Glasswing</div>
+        <div class="sub-title">Anthropic 投入 $100M 安全研究积分，Project Glasswing 仅限 6 家合作伙伴</div>
+        <div class="sub-desc">Anthropic 同步宣布投入 $100M 安全研究积分，并限制 Project Glasswing 仅对 AWS/Apple/Google/Microsoft/Nvidia/CrowdStrike 等受审核合作伙伴开放。这标志着前沿 AI 能力的分发从「公开发布」转向「授权使用」的新模式。</div>
+        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/ai/anthropic-says-its-most-powerful-ai-cyber-model-is-too-dangerous-to-release" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
       </div>
     </div>
   </div>
-</section>
 
-<!-- 海外参考 -->
-<section id="global" style="margin-top:32px;">
-  <div class="section-head">
-    <div class="section-line" style="background:linear-gradient(180deg, #06b6d4, transparent);"></div>
-    <span class="section-label" style="color:#06b6d4;">Global</span>
-    <span class="section-label-cn">海外参考</span>
+  <!-- ═══════════ ⭐ 开源热度 Top10 ═══════════ -->
+  <div class="section-gap">
+    <div class="section-head">
+      <div class="section-line" style="background:linear-gradient(180deg, #f59e0b, #d97706);"></div>
+      <span class="section-label" style="color:#fcd34d;">开源热度 Top10</span>
+      <span class="section-label-cn">Open Source Pulse</span>
+    </div>
+
+    <div class="dual-cards">
+      <div class="rank-card">
+        <div class="rank-label" style="color:#f59e0b;">🔥 本周 Stars 上升最快 Top10 · W25</div>
+        <div class="rank-row"><span class="rank-num">1</span><span class="rank-name">chopratejas/headroom</span><span class="rank-stat rank-up">+13k</span></div>
+        <div class="rank-row"><span class="rank-num">2</span><span class="rank-name">mvanhorn/last30days-skill</span><span class="rank-stat rank-up">+12k</span></div>
+        <div class="rank-row"><span class="rank-num">3</span><span class="rank-name">Leonxlnx/taste-skill</span><span class="rank-stat rank-up">+8.7k</span></div>
+        <div class="rank-row"><span class="rank-num">4</span><span class="rank-name">NVIDIA/skillspector</span><span class="rank-stat rank-up">+8.2k</span></div>
+        <div class="rank-row"><span class="rank-num">5</span><span class="rank-name">apple/container</span><span class="rank-stat rank-up">+7.8k</span></div>
+        <div class="rank-row"><span class="rank-num">6</span><span class="rank-name">deepseek-ai/DeepSeek-V3</span><span class="rank-stat rank-up">+6.5k</span></div>
+        <div class="rank-row"><span class="rank-num">7</span><span class="rank-name">THUDM/GLM-4.5</span><span class="rank-stat rank-up">+5.8k</span></div>
+        <div class="rank-row"><span class="rank-num">8</span><span class="rank-name">anthropics/claude-code</span><span class="rank-stat rank-up">+4.2k</span></div>
+        <div class="rank-row"><span class="rank-num">9</span><span class="rank-name">arcee-ai/trinity</span><span class="rank-stat rank-up">+3.8k</span></div>
+        <div class="rank-row"><span class="rank-num">10</span><span class="rank-name">google/functiongemma</span><span class="rank-stat rank-up">+3.2k</span></div>
+      </div>
+      <div class="rank-card">
+        <div class="rank-label" style="color:#ec4899;">📊 W24-W25 趋势关键词</div>
+        <div style="font-size:12px; color:var(--text-secondary); line-height:1.8;">
+          🔥 <strong>Token 压缩</strong> —— headroom 宣称 60-95% Token 节省<br>
+          🔍 <strong>AI 搜索技能</strong> —— last30days-skill 跨平台聚合<br>
+          🎨 <strong>UI 美学反模板</strong> —— taste-skill 生成非 AI 风格 UI<br>
+          🛡️ <strong>Agent 安全</strong> —— NVIDIA SkillSpector 开源安全扫描<br>
+          🍎 <strong>Apple 开源</strong> —— macOS 原生 Linux 容器 VZ 框架<br>
+          📝 <strong>文档转换</strong> —— 微软 markitdown 文件转 Markdown<br>
+          🤖 <strong>国产开源模型</strong> —— DeepSeek V3.2 + GLM-4.5<br>
+          🧠 <strong>推理模型</strong> —— Trinity-Large-Thinking Apache 2.0<br>
+          📱 <strong>端侧模型</strong> —— FunctionGemma 270M 参数<br>
+          💻 <strong>AI 编程工具</strong> —— Claude Code 热度持续
+        </div>
+        <div style="margin-top:12px; font-size:10px; color:var(--text-tertiary);">
+          数据来源：GitHub Trending W24-W25 · 整理自 cnblogs.com<br>
+          <a href="https://www.cnblogs.com/whincwu/p/20713199" class="read-original" style="display:inline-flex;margin-top:4px;" target="_blank" rel="noopener">查看完整周榜 →</a>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="sub-grid">
-    <div class="sub-card">
-      <div class="sub-tag" style="color:#06b6d4;">🇺🇸 GOOGLE</div>
-      <div class="sub-title">Google 搜索框改版：25 年来首次重大设计更新，AI 原生交互</div>
-      <div class="sub-desc">Google 对搜索框进行了 25 年来的首次设计改版。新搜索框支持多模态输入，融合 AI 功能，标志着从「链接搜索」到「AI 回答」的转变。</div>
-      <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think" class="read-original" target="_blank" rel="noopener">原文 →</a></div>
+  <!-- ═══════════ 🌍 海外参考 ═══════════ -->
+  <div class="section-gap">
+    <div class="section-head">
+      <div class="section-line" style="background:linear-gradient(180deg, #06b6d4, #0891b2);"></div>
+      <span class="section-label" style="color:#67e8f9;"><span class="news-item-tag tag-global">海外</span>海外参考</span>
+      <span class="section-label-cn">Global Brief</span>
     </div>
-    <div class="sub-card">
-      <div class="sub-tag" style="color:#8b5cf6;">🇺🇸 ANTHROPIC</div>
-      <div class="sub-title">Anthropic Cowork：桌面 Agent 让非技术用户也能用 AI 处理文件</div>
-      <div class="sub-desc">Anthropic 发布 Cowork，一个无需编程的桌面 Agent，可读取本地文件、整理数据、生成报告。Spotify 工程效率提升 90%。</div>
-      <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no" class="read-original" target="_blank" rel="noopener">原文 →</a></div>
-    </div>
-    <div class="sub-card">
-      <div class="sub-tag" style="color:#22c55e;">🇺🇸 BLOCK</div>
-      <div class="sub-title">Goose 开源：Block 公司免费替代 Claude Code，Apache 2.0</div>
-      <div class="sub-desc">Block（原 Square）开源 Goose，功能对标 Claude Code 但完全免费。支持自主编辑、运行、调试，本地运行数据不出本机。</div>
-      <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free" class="read-original" target="_blank" rel="noopener">原文 →</a></div>
-    </div>
-  </div>
-</section>
 
-<!-- 页脚 -->
-<footer class="footer">
-  <div class="footer-text">
-    AI 脉搏 · 面向中国 AI 开发者的每日新闻聚合
+    <div class="sub-grid">
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#06b6d4;">OPENAI</div>
+        <div class="sub-title">OpenAI 发布 ChatGPT Atlas 浏览器 + GPT-5.4 Computer Use 模型</div>
+        <div class="sub-desc">OpenAI 发布内置 ChatGPT 的 AI 浏览器 Atlas（Chromium 内核），具备 Agent 能力和浏览器记忆。同步发布 GPT-5.4——首个原生 Computer Use 模型，可跨应用操作设备。The Verge 评价其为「自主 Agent 的一大步」，事实准确性提升 33%。</div>
+        <div class="sub-meta"><span>📰 The Verge / VentureBeat</span><a href="https://www.theverge.com/ai-artificial-intelligence/889926/openai-gpt-5-4-model-release-ai-agents" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+      </div>
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#ec4899;">GOOGLE</div>
+        <div class="sub-title">Google Gemini 2.5 Deep Think 获 IMO 金牌，但公开版为「铜牌」缩减版</div>
+        <div class="sub-desc">Google 发布推理增强版 Gemini 2.5 Deep Think，完整版在 IMO 2025 摘金。但公测版本是性能削弱后的「铜牌」级别，完整版仅限 Google AI Ultra 计划（$249.99/月）。这延续了前沿模型「完整版受限、公开版降级」的行业趋势。</div>
+        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/business/google-releases-olympiad-medal-winning-gemini-2-5-deep-think-ai-publicly-but-theres-a-catch" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+      </div>
+      <div class="sub-card">
+        <div class="sub-tag" style="color:#22c55e;">ARCEE</div>
+        <div class="sub-title">Arcee 开源 Trinity-Large-Thinking：美国本土 399B 推理模型，Apache 2.0</div>
+        <div class="sub-desc">美国 AI 公司 Arcee 开源 Trinity-Large-Thinking（399B/13B active），作为非中国产开源推理模型的替代选项。PinchBench 91.9（接近 Opus 4.6 的 93.3），AIME25 达 96.3。2048 块 B300 GPU 训练 33 天耗资 $20M，API 定价仅 $0.90/M，约为 Opus 4.6 的 1/28。</div>
+        <div class="sub-meta"><span>📰 VentureBeat</span><a href="https://venturebeat.com/ai/arcees-new-open-source-trinity-large-thinking-is-the-rare-powerful-u-s-made" class="read-original" target="_blank" rel="noopener">阅读原文 →</a></div>
+      </div>
+    </div>
   </div>
-  <a class="footer-link" href="https://daiowen.github.io/ai-pulse/">主页</a>
-  <span class="footer-dot">·</span>
-  <a class="footer-link" href="feed.xml">RSS</a>
-  <span class="footer-dot">·</span>
-  <a class="footer-link" href="archive/2026-06-24-evening.html">昨日归档</a>
-  <span class="footer-dot">·</span>
-  <a class="footer-link" href="https://github.com/daiowen/ai-pulse">GitHub</a>
-  <div style="margin-top:8px; font-size:10px; color:var(--text-tertiary);">
-    自动生成 · Claude Code CLI · 2026
-  </div>
-</footer>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <p class="footer-quote">"The best way to predict the future is to invent it."</p>
+    <p class="footer-author">—— Alan Kay, 计算机科学先驱 (1971)</p>
+    <div class="footer-links">
+      <a href="feed.xml" class="footer-link">📡 RSS 订阅</a>
+      <a href="https://github.com/DaiOwen/ai-pulse" class="footer-link" target="_blank" rel="noopener">⭐ GitHub</a>
+    </div>
+    <p style="font-size:10px; color:var(--text-tertiary); margin-top:10px;">© 2026 AI 脉搏 · AI Pulse — 面向中国 AI 开发工程师的每日智能聚合</p>
+  </footer>
 
 </div>
 
-<!-- 返回顶部 -->
-<div class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2">
-    <path d="M12 19V5M5 12l7-7 7 7"/>
-  </svg>
+<!-- 返回顶部按钮 -->
+<button id="backToTop" class="back-to-top" title="返回顶部">↑</button>
+
+<!-- ═══════════ ARCHIVE OVERLAY ═══════════ -->
+<div class="archive-overlay" id="archiveOverlay">
+  <div class="archive-dialog">
+    <div class="cal-header">
+      <button class="cal-nav-btn" id="calPrev">◀</button>
+      <span class="cal-month-label" id="calMonth">2026年6月</span>
+      <button class="cal-nav-btn" id="calNext">▶</button>
+    </div>
+    <div class="cal-grid" id="calGrid"></div>
+    <button class="cal-close" id="calClose">关闭</button>
+  </div>
 </div>
 
 <script>
-  // 主题切换
-  function toggleTheme() {
-    const html = document.documentElement;
-    const current = html.getAttribute('data-theme');
-    html.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
-    localStorage.setItem('theme', html.getAttribute('data-theme'));
+  // Particles
+  const pc = document.getElementById('particles');
+  for (let i = 0; i < 40; i++) {
+    const p = document.createElement('div');
+    p.classList.add('particle');
+    p.style.left = Math.random() * 100 + '%';
+    p.style.top = Math.random() * 100 + '%';
+    const s = 1 + Math.random() * 2;
+    p.style.width = s + 'px'; p.style.height = s + 'px';
+    p.style.animationDuration = (12 + Math.random() * 20) + 's';
+    p.style.animationDelay = Math.random() * 15 + 's';
+    pc.appendChild(p);
   }
-  (function() {
-    const saved = localStorage.getItem('theme');
-    if (saved) document.documentElement.setAttribute('data-theme', saved);
-  })();
 
-  // 返回顶部按钮
-  const backToTop = document.querySelector('.back-to-top');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 400) backToTop.classList.add('show');
-    else backToTop.classList.remove('show');
+  // Theme toggle
+  const html = document.documentElement;
+  const themeToggle = document.getElementById('themeToggle');
+  const savedTheme = localStorage.getItem('ai-pulse-theme');
+  if (savedTheme === 'light') {
+    html.setAttribute('data-theme', 'light');
+  }
+  themeToggle.addEventListener('click', function() {
+    const isDark = html.getAttribute('data-theme') === 'dark';
+    const newTheme = isDark ? 'light' : 'dark';
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('ai-pulse-theme', newTheme);
   });
 
-  // 归档映射
+  // Calendar
   const archiveMap = {
-    '2026-06-25': ['morning'],
-    '2026-06-24': ['morning', 'noon', 'evening'],
-    '2026-06-23': ['morning', 'noon'],
-    '2026-06-22': ['morning'],
-    '2026-06-18': ['morning', 'noon'],
-    '2026-06-17': ['morning'],
-    '2026-06-16': ['morning', 'noon', 'evening'],
+    "2026-06-14": ["morning"],
+    "2026-06-15": ["noon", "evening"],
+    "2026-06-16": "full",
+    "2026-06-17": ["morning"],
+    "2026-06-18": ["morning", "noon"],
+    "2026-06-22": ["morning"],
+    "2026-06-23": ["morning", "noon"],
+    "2026-06-24": "full"
   };
-</script>
+  (function(){for(var d in archiveMap){if(Array.isArray(archiveMap[d])&&archiveMap[d].length>=3)archiveMap[d]='full';}})();
 
+  const monthLabel = document.getElementById('calMonth');
+  const calGrid = document.getElementById('calGrid');
+  const overlay = document.getElementById('archiveOverlay');
+  let calYear = new Date().getFullYear();
+  let calMonth = new Date().getMonth() + 1;
+
+  function renderCalendar() {
+    const daysInMonth = new Date(calYear, calMonth, 0).getDate();
+    const firstDay = new Date(calYear, calMonth - 1, 1).getDay();
+    const adjustedFirst = firstDay === 0 ? 6 : firstDay - 1;
+    const today = new Date();
+    const todayStr = today.getFullYear() + '-' + String(today.getMonth()+1).padStart(2,'0') + '-' + String(today.getDate()).padStart(2,'0');
+
+    monthLabel.textContent = calYear + '年' + calMonth + '月';
+
+    let html2 = '';
+    const dows = ['一','二','三','四','五','六','日'];
+    dows.forEach(d => html2 += '<div class="cal-dow">' + d + '</div>');
+
+    for (let i = 0; i < adjustedFirst; i++) html2 += '<div class="cal-day"></div>';
+
+    for (let d = 1; d <= daysInMonth; d++) {
+      const ds = calYear + '-' + String(calMonth).padStart(2,'0') + '-' + String(d).padStart(2,'0');
+      const entry = archiveMap[ds];
+      let cls = 'cal-day';
+      if (entry) {
+        cls += entry === 'full' ? ' full has-archive' : ' has-archive';
+      }
+      if (ds === todayStr) cls += ' today';
+
+      html2 += '<div class="' + cls + '"';
+      if (entry) {
+        html2 += ' data-date="' + ds + '"';
+        html2 += ' style="cursor:pointer"';
+      }
+      html2 += '>' + d;
+      if (entry && entry !== 'full' && Array.isArray(entry)) {
+        html2 += '<div class="cal-day-editions">';
+        entry.forEach(function(ed) {
+          html2 += '<span class="cal-edition-dot ' + ed + '"></span>';
+        });
+        html2 += '</div>';
+      }
+      html2 += '</div>';
+    }
+
+    calGrid.innerHTML = html2;
+
+    calGrid.querySelectorAll('.has-archive').forEach(function(el) {
+      el.addEventListener('click', function() {
+        const date = el.getAttribute('data-date');
+        const entry = archiveMap[date];
+        if (entry === 'full') {
+          window.open('archive/' + date + '-morning.html', '_blank');
+        } else if (Array.isArray(entry) && entry.length > 0) {
+          window.open('archive/' + date + '-' + entry[0] + '.html', '_blank');
+        }
+      });
+    });
+  }
+
+  document.getElementById('btnArchive').addEventListener('click', function() {
+    overlay.classList.add('open');
+    calYear = new Date().getFullYear();
+    calMonth = new Date().getMonth() + 1;
+    renderCalendar();
+  });
+  document.getElementById('calPrev').addEventListener('click', function() {
+    calMonth--; if (calMonth < 1) { calMonth = 12; calYear--; }
+    renderCalendar();
+  });
+  document.getElementById('calNext').addEventListener('click', function() {
+    calMonth++; if (calMonth > 12) { calMonth = 1; calYear++; }
+    renderCalendar();
+  });
+  document.getElementById('calClose').addEventListener('click', function() {
+    overlay.classList.remove('open');
+  });
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) overlay.classList.remove('open');
+  });
+
+  // Service Worker
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').catch(function() {});
+  }
+
+  // 返回顶部按钮
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', function() {
+    backToTop.classList.toggle('visible', window.scrollY > 500);
+  });
+  backToTop.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // ===== 收藏功能 =====
+  function getFavorites() {
+    return JSON.parse(localStorage.getItem('ai-pulse-favorites') || '{}');
+  }
+
+  function saveFavorites(favorites) {
+    localStorage.setItem('ai-pulse-favorites', JSON.stringify(favorites));
+    updateFavoriteCount();
+  }
+
+  function updateFavoriteCount() {
+    const favorites = getFavorites();
+    const count = Object.keys(favorites).length;
+    const countEl = document.getElementById('favCount');
+    if (countEl) {
+      countEl.textContent = count;
+      countEl.style.display = count > 0 ? 'inline' : 'none';
+    }
+  }
+
+  function toggleFavorite(btn) {
+    const id = btn.dataset.id;
+    const favorites = getFavorites();
+
+    if (favorites[id]) {
+      delete favorites[id];
+      btn.classList.remove('active');
+      btn.querySelector('.favorite-icon').textContent = '☆';
+      showToast('已取消收藏');
+    } else {
+      favorites[id] = {
+        title: btn.dataset.title,
+        url: btn.dataset.url,
+        source: btn.dataset.source,
+        date: document.querySelector('.hero-date')?.textContent || '',
+        savedAt: new Date().toISOString()
+      };
+      btn.classList.add('active');
+      btn.querySelector('.favorite-icon').textContent = '★';
+      showToast('已添加到收藏');
+    }
+
+    saveFavorites(favorites);
+  }
+
+  function restoreFavorites() {
+    const favorites = getFavorites();
+    document.querySelectorAll('.favorite-btn').forEach(btn => {
+      if (favorites[btn.dataset.id]) {
+        btn.classList.add('active');
+        btn.querySelector('.favorite-icon').textContent = '★';
+      }
+    });
+    updateFavoriteCount();
+  }
+
+  function showToast(message) {
+    const existing = document.querySelector('.toast');
+    if (existing) existing.remove();
+
+    const toast = document.createElement('div');
+    toast.className = 'toast';
+    toast.textContent = message;
+    document.body.appendChild(toast);
+    setTimeout(() => toast.remove(), 2000);
+  }
+
+  // 页面加载时恢复收藏状态
+  restoreFavorites();
+
+  // ===== 分享功能 =====
+  function shareNews(newsId, title) {
+    const baseUrl = window.location.origin + window.location.pathname;
+    const shareUrl = baseUrl + '#' + newsId;
+
+    // 复制链接到剪贴板
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(shareUrl).then(() => {
+        showToast('链接已复制！可分享给朋友');
+      }).catch(() => {
+        fallbackCopy(shareUrl);
+      });
+    } else {
+      fallbackCopy(shareUrl);
+    }
+  }
+
+  function fallbackCopy(text) {
+    const input = document.createElement('input');
+    input.style.position = 'fixed';
+    input.style.opacity = '0';
+    input.value = text;
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    document.body.removeChild(input);
+    showToast('链接已复制！可分享给朋友');
+  }
+
+  // 页面加载时检查 hash，跳转到对应新闻
+  function scrollToHashNews() {
+    if (window.location.hash) {
+      const targetId = window.location.hash.substring(1);
+      const target = document.getElementById(targetId);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          // 高亮显示目标新闻
+          target.style.transition = 'box-shadow 0.3s ease';
+          target.style.boxShadow = '0 0 0 2px var(--accent-indigo)';
+          setTimeout(() => {
+            target.style.boxShadow = '';
+          }, 3000);
+        }, 500);
+      }
+    }
+  }
+
+  // 页面加载时执行
+  scrollToHashNews();
+
+  // ===== 个性化标签排序 =====
+  function applyUserPreferences() {
+    const userTags = JSON.parse(localStorage.getItem('ai-pulse-tags') || '[]');
+    if (userTags.length === 0) return; // 未设置则不排序
+
+    const sections = document.querySelectorAll('.section-gap');
+    const tagMapping = {
+      '模型': '大模型动态',
+      '工具': '工具',
+      '政策': '政策',
+      '应用': '应用',
+      '开源': '开源',
+      '海外': '海外',
+      '论文': '论文'
+    };
+
+    // 为每个板块添加优先级标记
+    sections.forEach(section => {
+      const label = section.querySelector('.section-label')?.textContent || '';
+      let priority = 999; // 默认低优先级
+
+      userTags.forEach((tag, index) => {
+        if (label.includes(tagMapping[tag] || tag)) {
+          priority = index;
+        }
+      });
+
+      section.dataset.priority = priority;
+      if (priority < 999) {
+        section.style.borderLeft = '3px solid var(--accent-indigo)';
+        section.style.paddingLeft = '20px';
+        section.style.marginLeft = '-3px';
+      }
+    });
+
+    // 按优先级重新排序板块
+    const container = document.querySelector('.content');
+    const tldr = document.querySelector('.tldr');
+    const footer = document.querySelector('.footer');
+
+    // 获取所有板块并排序
+    const sortedSections = Array.from(sections).sort((a, b) => {
+      return parseInt(a.dataset.priority) - parseInt(b.dataset.priority);
+    });
+
+    // 移除原有板块
+    sections.forEach(s => s.remove());
+
+    // 按新顺序插入
+    let insertBefore = footer;
+    for (let i = sortedSections.length - 1; i >= 0; i--) {
+      container.insertBefore(sortedSections[i], insertBefore);
+      insertBefore = sortedSections[i];
+    }
+
+    console.log('已按用户偏好排序板块:', userTags);
+  }
+
+  // 页面加载后应用偏好
+  setTimeout(applyUserPreferences, 100);
+
+  // ===== 相对时间显示 =====
+  function updateRelativeTimes() {
+    const now = new Date();
+    const todayStr = now.toISOString().split('T')[0];
+
+    document.querySelectorAll('.news-time').forEach(el => {
+      const dateStr = el.dataset.date;
+      if (!dateStr) return;
+
+      // 解析日期（格式：YYYY-MM-DD）
+      const newsDate = new Date(dateStr + 'T12:00:00');
+      const diffMs = now - newsDate;
+      const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+      let relativeText = '';
+      if (diffDays === 0) {
+        relativeText = '🕐 今天';
+      } else if (diffDays === 1) {
+        relativeText = '🕐 昨天';
+      } else if (diffDays === 2) {
+        relativeText = '🕐 2天前';
+      } else if (diffDays <= 7) {
+        relativeText = `🕐 ${diffDays}天前`;
+      } else {
+        // 显示原始日期
+        const month = newsDate.getMonth() + 1;
+        const day = newsDate.getDate();
+        relativeText = `🕐 ${month}月${day}日`;
+      }
+
+      el.textContent = relativeText;
+    });
+  }
+
+  // 页面加载时更新相对时间
+  updateRelativeTimes();
+
+  // ===== 移动端下拉刷新 =====
+  let pullStartY = 0;
+  let pullIndicator = null;
+
+  function createPullIndicator() {
+    pullIndicator = document.createElement('div');
+    pullIndicator.style.cssText = `
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #6366f1, #8b5cf6);
+      z-index: 9999;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.15s ease;
+    `;
+    document.body.appendChild(pullIndicator);
+  }
+
+  function updatePullProgress(progress) {
+    if (!pullIndicator) createPullIndicator();
+    // progress: 0 to 1
+    pullIndicator.style.transform = `scaleX(${Math.min(progress, 1)})`;
+  }
+
+  function resetPull() {
+    if (pullIndicator) {
+      pullIndicator.style.transform = 'scaleX(0)';
+    }
+  }
+
+  document.addEventListener('touchstart', function(e) {
+    if (window.scrollY === 0 && e.touches.length === 1) {
+      pullStartY = e.touches[0].clientY;
+    }
+  }, { passive: true });
+
+  document.addEventListener('touchmove', function(e) {
+    if (pullStartY > 0 && window.scrollY === 0) {
+      const pullY = e.touches[0].clientY - pullStartY;
+      if (pullY > 0) {
+        const progress = Math.min(pullY / 80, 1);
+        updatePullProgress(progress);
+      }
+    }
+  }, { passive: true });
+
+  document.addEventListener('touchend', function() {
+    if (pullIndicator && pullIndicator.style.transform.replace(/[^0-9.]/g, '') > 0.8) {
+      // 触发刷新
+      location.reload();
+    }
+    pullStartY = 0;
+    setTimeout(resetPull, 100);
+  });
+
+  // 初始创建
+  createPullIndicator();
+
+  // ===== 快捷键支持 =====
+  document.addEventListener('keydown', function(e) {
+    // 忽略输入框内的按键
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+      if (e.key === 'Escape') e.target.blur();
+      return;
+    }
+
+    // 获取所有新闻卡片
+    const newsItems = document.querySelectorAll('.feature-card, .sub-card');
+    const viewportCenter = window.innerHeight / 2;
+
+    // 找到当前视口中最近顶部的新闻
+    let currentPosition = -1;
+    for (let i = 0; i < newsItems.length; i++) {
+      const rect = newsItems[i].getBoundingClientRect();
+      if (rect.top >= 0 && rect.top < viewportCenter) {
+        currentPosition = i;
+      }
+    }
+
+    switch(e.key.toLowerCase()) {
+      case 'j':
+      case 'arrowdown':
+        e.preventDefault();
+        if (currentPosition >= 0 && currentPosition < newsItems.length - 1) {
+          newsItems[currentPosition + 1].scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else if (currentPosition < 0 && newsItems.length > 0) {
+          newsItems[0].scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        break;
+      case 'k':
+      case 'arrowup':
+        e.preventDefault();
+        if (currentPosition > 0) {
+          newsItems[currentPosition - 1].scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        break;
+      case 't':
+        document.getElementById('themeToggle').click();
+        showToast('主题已切换');
+        break;
+      case '?':
+        showShortcutsHelp();
+        break;
+    }
+  });
+
+  function showShortcutsHelp() {
+    const existing = document.querySelector('.shortcuts-modal');
+    if (existing) {
+      existing.remove();
+      return;
+    }
+
+    const modal = document.createElement('div');
+    modal.className = 'shortcuts-modal';
+    modal.style.cssText = `
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #16161f;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 24px 32px;
+      z-index: 200;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      min-width: 280px;
+    `;
+    modal.innerHTML = `
+      <h3 style="margin-bottom:16px;font-size:18px;font-weight:500;">⌨️ 快捷键</h3>
+      <div style="font-size:14px;line-height:2;">
+        <div><kbd style="background:rgba(255,255,255,0.1);padding:2px 8px;border-radius:4px;">J</kbd> / <kbd style="background:rgba(255,255,255,0.1);padding:2px 8px;border-radius:4px;">↓</kbd> 下一条新闻</div>
+        <div><kbd style="background:rgba(255,255,255,0.1);padding:2px 8px;border-radius:4px;">K</kbd> / <kbd style="background:rgba(255,255,255,0.1);padding:2px 8px;border-radius:4px;">↑</kbd> 上一条新闻</div>
+        <div><kbd style="background:rgba(255,255,255,0.1);padding:2px 8px;border-radius:4px;">T</kbd> 切换主题</div>
+        <div><kbd style="background:rgba(255,255,255,0.1);padding:2px 8px;border-radius:4px;">?</kbd> 显示/隐藏帮助</div>
+      </div>
+      <div style="margin-top:16px;font-size:12px;color:var(--text-tertiary);">按任意键关闭</div>
+    `;
+    document.body.appendChild(modal);
+
+    // 点击外部或按任意键关闭
+    setTimeout(() => {
+      const closeHandler = (e) => {
+        modal.remove();
+        document.removeEventListener('keydown', closeHandler);
+        document.removeEventListener('click', closeHandler);
+      };
+      document.addEventListener('keydown', closeHandler);
+      document.addEventListener('click', closeHandler);
+    }, 100);
+  }
+</script>
 </body>
 </html>
