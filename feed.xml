@@ -5,8 +5,38 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 26 Jun 2026 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Jun 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>🌙 晚间版 — 2026-06-26（Anthropic Mythos危机 + Google搜索改版 + Railway $100M + Goose）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-26-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-06-26-evening.html</guid>
+      <pubDate>Thu, 26 Jun 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🚨 突发头条</h3>
+        <ul>
+          <li>Anthropic Mythos 事件升级：Trump 政府 ultimatum 后两周谈判僵局无解（The Verge）</li>
+        </ul>
+        <h3>🤖 大模型动态</h3>
+        <ul>
+          <li>Google 搜索框 25 年首次改版：AI 原生搜索时代开启（VentureBeat）</li>
+          <li>Railway 获 $100M 融资：挑战 AWS 的 AI 原生云基础设施（VentureBeat）</li>
+          <li>NousCoder-14B：Claude Code 时代开源代码模型（VentureBeat）</li>
+        </ul>
+        <h3>🛠️ 工具 &amp; 部署</h3>
+        <ul>
+          <li>Goose：Claude Code 免费替代，Apache 2.0 开源</li>
+          <li>Anthropic Cowork：桌面 Agent，无需编程</li>
+          <li>Salesforce Slackbot AI：职场 Agent 竞争</li>
+        </ul>
+        <h3>⭐ 开源热度</h3>
+        <ul>
+          <li>Goose (Block) · NousCoder-14B · Railway CLI · Listen Labs SDK</li>
+        </ul>
+        <p><a href="https://daiowen.github.io/ai-pulse/archive/2026-06-26-evening.html">查看完整页面 →</a></p>
+      ]]></description>
+    </item>
 
     <item>
       <title>🌅 早间版 — 2026-06-26（Google搜索改版 + Railway $100M + Goose免费 + NousCoder-14B）</title>
