@@ -5,8 +5,40 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 26 Jun 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 28 Jun 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>☀️ 午间版 — 2026-06-28（OpenAI GPT-5.6限制 + 亚洲AI反击Anthropic + Ford AI失败教训）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-28-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-06-28-noon.html</guid>
+      <pubDate>Sat, 28 Jun 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3>
+        <ul>
+          <li>OpenAI 限制 GPT-5.6 部署回应政府请求（TechCrunch）</li>
+          <li>亚洲 AI 初创推出 Mythos 类模型反击 Anthropic 出口禁令（TechCrunch）</li>
+          <li>Apple Vision Pro 高管跳槽 OpenAI（TechCrunch）</li>
+          <li>OpenAI 挖角 Uber 印度区负责人（TechCrunch）</li>
+        </ul>
+        <h3>🛠️ 工具 &amp; 部署</h3>
+        <ul>
+          <li>Wayfinder Router：本地与云端 LLM 确定性路由（GitHub）</li>
+          <li>Notion 关闭邮件应用，用户转向 AI Agent（Ars Technica）</li>
+          <li>Oracle 裁员 2.1 万转向 AI 投资（Ars Technica）</li>
+        </ul>
+        <h3>💼 应用落地</h3>
+        <ul>
+          <li>Ford 用 AI 替代人工失败案例（Hacker News）</li>
+          <li>印度支付行业：AI 驱动下一阶段增长（TechCrunch）</li>
+        </ul>
+        <h3>🔥 开源热度 Top5</h3>
+        <ul>
+          <li>wayfinder-router · bashblog · WAL-RUS · Goose · NousCoder-14B</li>
+        </ul>
+        <p><a href="https://daiowen.github.io/ai-pulse/archive/2026-06-28-noon.html">查看完整页面 →</a></p>
+      ]]></description>
+    </item>
 
     <item>
       <title>🌙 晚间版 — 2026-06-26（Anthropic Mythos危机 + Google搜索改版 + Railway $100M + Goose）</title>
