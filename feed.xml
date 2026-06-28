@@ -5,8 +5,54 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 28 Jun 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 28 Jun 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>🌙 晚间版 — 2026-06-28（Anthropic Fable 5解禁 + DeepSeek招聘 + 智元15000台量产 + 韩国三大工程）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-28-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-06-28-evening.html</guid>
+      <pubDate>Sat, 28 Jun 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🚨 突发头条</h3>
+        <ul>
+          <li>美国即将解禁 Anthropic Fable 5 访问权限（36氪快讯）</li>
+        </ul>
+        <h3>🤖 大模型动态</h3>
+        <ul>
+          <li>DeepSeek 计划将所有部门规模扩大至少一倍（36氪快讯）</li>
+          <li>Anthropic 称阿里巴巴攻击 Claude 并窃取能力（Ars Technica）</li>
+          <li>OpenAI 限制 GPT-5.6 部署回应政府请求（TechCrunch）</li>
+          <li>亚洲 AI 初创推出 Mythos 类模型反击 Anthropic 禁令（TechCrunch）</li>
+          <li>对话张亚勤：AI不是泡沫，但AI公司有泡沫（36氪）</li>
+        </ul>
+        <h3>🛠️ 工具 &amp; 部署</h3>
+        <ul>
+          <li>Wayfinder Router：本地与云端 LLM 确定性路由（GitHub）</li>
+          <li>Notion 关闭邮件应用，用户转向 AI Agent（Ars Technica）</li>
+          <li>Oracle 裁员 2.1 万转向 AI 投资（Ars Technica）</li>
+          <li>WAL-RUS：PostgreSQL 备份 Rust 重写版（ClickHouse）</li>
+          <li>悟空安全上线「弹必赔」0 添加安全软件（36氪快讯）</li>
+        </ul>
+        <h3>💼 应用落地</h3>
+        <ul>
+          <li>智元第 15000 台通用具身机器人量产下线（36氪快讯）</li>
+          <li>Ford 用 AI 替代人工失败案例（Hacker News）</li>
+          <li>G7易流发布货运行业首款穿戴式 AI 硬件（36氪）</li>
+        </ul>
+        <h3>📋 政策 &amp; 合规</h3>
+        <ul>
+          <li>韩国宣布「三大工程」计划，三星 SK 发布投资（36氪快讯）</li>
+          <li>韩国计划培训全体军事人员为「无人机战士」（Ars Technica）</li>
+          <li>NYT 指控微软为 OpenAI 构建侵权超算（Ars Technica）</li>
+        </ul>
+        <h3>🔥 开源热度 Top10</h3>
+        <ul>
+          <li>wayfinder-router · bashblog · WAL-RUS · Goose · NousCoder-14B · Railway CLI · Listen Labs · Slackbot · Cowork · DiffusionGemma</li>
+        </ul>
+        <p><a href="https://daiowen.github.io/ai-pulse/archive/2026-06-28-evening.html">查看完整页面 →</a></p>
+      ]]></description>
+    </item>
 
     <item>
       <title>☀️ 午间版 — 2026-06-28（OpenAI GPT-5.6限制 + 亚洲AI反击Anthropic + Ford AI失败教训）</title>
