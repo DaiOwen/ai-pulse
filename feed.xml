@@ -5,8 +5,46 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 28 Jun 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 29 Jun 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>☀️ 午间版 — 2026-06-29（回顾版：Fable 5解禁 + DeepSeek招聘 + 智元量产 + Google改版）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-29-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-06-29-noon.html</guid>
+      <pubDate>Sun, 29 Jun 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>📡 网络受限模式</h3>
+        <p>当前网络搜索服务不可用，本版展示近期热门内容回顾。</p>
+        <h3>🤖 大模型动态</h3>
+        <ul>
+          <li>美国即将解禁 Anthropic Fable 5 访问权限（36氪快讯）</li>
+          <li>DeepSeek 计划将所有部门规模扩大至少一倍（36氪快讯）</li>
+          <li>Google 搜索框 25 年来首次改版（VentureBeat）</li>
+        </ul>
+        <h3>🛠️ 工具 &amp; 部署</h3>
+        <ul>
+          <li>Goose：Claude Code 免费替代方案，Apache 2.0 开源（VentureBeat）</li>
+          <li>Wayfinder Router：本地与云端 LLM 确定性路由（GitHub）</li>
+          <li>Claude Cowork：桌面 Agent，无需编程（VentureBeat）</li>
+        </ul>
+        <h3>💼 应用落地</h3>
+        <ul>
+          <li>智元第 15000 台通用具身机器人量产下线（36氪快讯）</li>
+          <li>Ford 用 AI 替代人工失败案例（Hacker News）</li>
+        </ul>
+        <h3>📋 政策 &amp; 合规</h3>
+        <ul>
+          <li>韩国宣布「三大工程」计划（36氪快讯）</li>
+          <li>NYT 指控微软为 OpenAI 构建侵权超算（Ars Technica）</li>
+        </ul>
+        <h3>🔥 开源热度 Top5</h3>
+        <ul>
+          <li>Goose (Block) · NousCoder-14B · Wayfinder Router · Railway CLI · WAL-RUS</li>
+        </ul>
+        <p><a href="https://daiowen.github.io/ai-pulse/archive/2026-06-29-noon.html">查看完整页面 →</a></p>
+      ]]></description>
+    </item>
 
     <item>
       <title>🌙 晚间版 — 2026-06-28（Anthropic Fable 5解禁 + DeepSeek招聘 + 智元15000台量产 + 韩国三大工程）</title>
