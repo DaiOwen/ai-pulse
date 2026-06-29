@@ -8,54 +8,34 @@
 
 **⚠️ 重要：必须读取 template.html 获取完整样式框架！**
 
-### 第1步：搜索（带容错）
+### 第1步：抓取新闻（本地 Python 脚本）
 
-**关键原则：优先搜 ✅ 信源，每条新闻必须标注来源。URL 必须真实，禁止 `#` 占位。**
+**关键原则：优先本地抓取，每条新闻必须标注来源。URL 必须真实，禁止 `#` 占位。**
 
-**搜索容错机制：**
-1. 主搜索：WebSearch → 如果失败 → 降级搜索
-2. 降级搜索：curl 直接获取 RSS（VentureBeat AI RSS 最稳定）
-3. 如果所有搜索失败：生成「回顾版」页面
+**抓取方式：**
+```bash
+# 主抓取（优先）
+python3 fetch_news.py > news.json
 
-**回顾版内容：**
-- 展示最近 3 天归档中的热门内容
-- 标注「网络受限模式」提示
-- 保持页面结构和样式不变
-
-用以下搜索覆盖所有板块（共约 10-12 次）。同一搜索可跨板块复用结果。
-
-#### 核心搜索（必搜，每次 4 次）
-
-**关键原则：优先搜 ✅ 信源，每条新闻必须标注来源。URL 必须真实，禁止 `#` 占位。**
-
-用以下搜索覆盖所有板块（共约 10-12 次）。同一搜索可跨板块复用结果。
-
-#### 核心搜索（必搜，每次 4 次）
-
-```
-1. site:venturebeat.com AI model OR release          → 大模型+应用
-2. site:36kr.com 大模型 OR AI OR 发布                  → 大模型+工具+应用
-3. site:theverge.com AI OR model OR agent            → 大模型+海外
-4. site:people.com.cn 人工智能 OR AI OR 智能体        → 政策
+# 如果脚本失败，生成「回顾版」
 ```
 
-#### 补充搜索（按版次，4-6 次）
+**支持的信源（8个）：**
 
-```
-5. site:36kr.com AI 开源 OR 工具 OR Agent              → 工具+应用（morning/evening）
-6. site:venturebeat.com AI agent OR enterprise       → 应用落地（morning/evening）
-7. GitHub trending AI 周榜 site:cnblogs.com            → 开源热度（必搜）
-8. site:arxiv.org cs.AI OR cs.CL 2026                → 论文（仅 morning）
-9. site:technologyreview.com AI OR regulation        → 政策国际+海外（仅 morning/evening）
-```
+| 信源 | 类型 | URL |
+|------|------|-----|
+| 量子位 | 国内AI快讯 | qbitai.com |
+| 36氪 | 国内科技商业 | 36kr.com |
+| 机器之心 | 国内AI深度 | jiqizhixin.com |
+| 澎湃新闻 | 国内综合 | thepaper.cn |
+| TechCrunch | 海外科技 | techcrunch.com |
+| The Verge | 海外科技 | theverge.com |
+| Ars Technica | 海外深度 | arstechnica.com |
+| Hacker News | 开发者社区 | news.ycombinator.com |
 
-**noon 版搜索 5-6 次**（skip arxiv + technologyreview）
-
-**空返不重试。** 同一信源结果可覆盖多个板块。
-
-**如果所有搜索返回空结果：**
-1. 使用 curl 获取 VentureBeat AI RSS: `curl -sL "https://venturebeat.com/category/ai/feed/"`
-2. 如果仍失败，生成「回顾版」
+**抓取容错机制：**
+1. 主抓取：`python3 fetch_news.py` → 输出 JSON
+2. 如果失败或结果为空：生成「回顾版」页面
 3. 回顾版从最近 3 天归档中抽取热门内容
 4. 页面顶部显示「网络受限模式」提示
 
@@ -69,7 +49,7 @@
 
 热度信号：多源交叉验证(+5) / 优先信源首发(+3) / 社区讨论热度高(+1)
 时效信号：6h内(+5) / 12h内(+3) / 24h内(+1) / 48h内(+0)
-来源质量：36氪/VentureBeat/TheVerge(+3) / MIT Tech Review/人民网/cnblogs(+2) / 其他(+1)
+来源质量：量子位/36氪/TechCrunch(+3) / 机器之心/澎湃新闻/Ars Technica(+2) / 其他(+1)
 ```
 
 **翻译规范（海外内容）：** 原文标题 + 中文翻译。摘要全中文 2-3 句。关键数据（金额、百分比、版本号）原文照搬。
@@ -122,4 +102,3 @@ git push origin master
 ```
 
 **严禁使用 `#` 作为 URL。**
-
