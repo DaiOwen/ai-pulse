@@ -129,14 +129,34 @@ class Kr36Fetcher(BaseFetcher):
 
     def parse(self, html: str) -> List[NewsItem]:
         items = []
-        # RSS 格式：<item><title>...</title><link>...</link></item>
-        pattern = r'<item>.*?<title>([^<]+)</title>.*?<link>([^<]+)</link>.*?</item>'
-        matches = re.findall(pattern, html, re.DOTALL)
+        # RSS 格式：先清理CDATA，再匹配
+        # 36kr RSS格式: <title>...<![CDATA[...]]>...</title> 或 <title>...</title>
+        # 先提取所有item块
+        item_pattern = r'<item>(.*?)</item>'
+        item_matches = re.findall(item_pattern, html, re.DOTALL)
 
-        for title, link in matches:
+        for item_html in item_matches:
+            # 提取title
+            title_match = re.search(r'<title>(.*?)</title>', item_html, re.DOTALL)
+            if not title_match:
+                continue
+            title = title_match.group(1).strip()
+
+            # 提取link
+            link_match = re.search(r'<link>(.*?)</link>', item_html, re.DOTALL)
+            if not link_match:
+                continue
+            link = link_match.group(1).strip()
+
+            # 清理CDATA
+            title = re.sub(r'<!\[CDATA\[(.*?)\]\]>', r'\1', title)
+            link = re.sub(r'<!\[CDATA\[(.*?)\]\]>', r'\1', link)
             title = title.strip()
+            link = link.strip()
+
             if not title or len(title) < 15:
                 continue
+
             ai_keywords = ['AI', '模型', '开源', 'GPT', '大模型', '智能', '算法',
                           '机器人', '算力', '芯片', '英伟达', 'Meta', 'OpenAI',
                           'Anthropic', 'DeepSeek', '字节', '阿里', '腾讯', '百度',
@@ -144,12 +164,8 @@ class Kr36Fetcher(BaseFetcher):
             if not any(kw in title for kw in ai_keywords):
                 continue
 
-            # 清理 CDATA
-            title = re.sub(r'<!\[CDATA\[(.*?)\]\]>', r'\1', title)
-            link = re.sub(r'<!\[CDATA\[(.*?)\]\]>', r'\1', link)
-
             items.append(NewsItem(
-                title=title, url=link.strip(), source="36氪",
+                title=title, url=link, source="36氪",
                 category=self._categorize(title)
             ))
 
