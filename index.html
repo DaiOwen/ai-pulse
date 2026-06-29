@@ -6,11 +6,11 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>AI 脉搏 · 热点速览 — 2026年6月29日 早间版</title>
+<title>AI 脉搏 · 热点速览 — 2026年6月29日 晚间版</title>
 <meta name="description" content="面向中国AI开发工程师的每日AI新闻智能聚合">
 <meta name="theme-color" content="#0a0a0f">
-<meta property="og:title" content="AI 脉搏 · AI 热点速览 — 6月29日 早间版">
-<meta property="og:description" content="回顾版：Fable 5解禁 + DeepSeek扩招 + 智元量产 + Google搜索改版 + Goose开源">
+<meta property="og:title" content="AI 脉搏 · AI 热点速览 — 6月29日 晚间版">
+<meta property="og:description" content="GPT-5.6发布 + 百度开源OCR + 福特AI失败 + 苹果高管跳槽OpenAI + 亚洲AI反击Anthropic">
 <meta property="og:url" content="https://daiowen.github.io/ai-pulse/">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://daiowen.github.io/ai-pulse/assets/og-image.svg">
@@ -475,9 +475,9 @@
     background: rgba(99,102,241,0.1);
   }
 
-  .offline-notice {
-    background: rgba(245,158,11,0.08);
-    border: 0.5px solid rgba(245,158,11,0.25);
+  .fetch-notice {
+    background: rgba(34,197,94,0.08);
+    border: 0.5px solid rgba(34,197,94,0.25);
     border-radius: 10px;
     padding: 14px 20px;
     margin-bottom: 32px;
@@ -485,11 +485,11 @@
     align-items: center;
     gap: 14px;
   }
-  .offline-icon { font-size: 22px; flex-shrink: 0; }
-  .offline-title { font-size: 14px; font-weight:600; color: #fbbf24; margin-bottom: 2px; }
-  .offline-desc { font-size: 12px; color: var(--text-secondary); line-height: 1.5; }
-  [data-theme="light"] .offline-notice { background: rgba(217,119,6,0.08); }
-  [data-theme="light"] .offline-title { color: #b45309; }
+  .fetch-icon { font-size: 22px; flex-shrink: 0; }
+  .fetch-title { font-size: 14px; font-weight:600; color: #4ade80; margin-bottom: 2px; }
+  .fetch-desc { font-size: 12px; color: var(--text-secondary); line-height: 1.5; }
+  [data-theme="light"] .fetch-notice { background: rgba(22,163,74,0.08); }
+  [data-theme="light"] .fetch-title { color: #16a34a; }
 </style>
 </head>
 <body>
@@ -508,7 +508,7 @@
       <div class="nav-logo">⚡</div>
       <div>
         <div class="nav-title">AI热点速览</div>
-        <div class="nav-sub" id="navSub">AI PULSE · MORNING</div>
+        <div class="nav-sub" id="navSub">AI PULSE · EVENING</div>
       </div>
     </div>
     <div class="nav-right">
@@ -527,29 +527,29 @@
     <div class="hero-glow"></div>
     <div class="hero-badge">
       <div class="hero-badge-dot"></div>
-      <span class="hero-badge-text" id="heroBadge">早间版 · 08:00 CST</span>
+      <span class="hero-badge-text" id="heroBadge">晚间版 · 20:00 CST</span>
     </div>
     <h1 class="hero-title">今日 AI 脉搏</h1>
     <p class="hero-date" id="heroDate">2026年6月29日</p>
     <div class="hero-stats">
-      <div><div class="hero-stat-num" id="statNews">16</div><div class="hero-stat-label">头条新闻</div></div>
+      <div><div class="hero-stat-num" id="statNews">18</div><div class="hero-stat-label">头条新闻</div></div>
       <div class="hero-stat-divider"></div>
-      <div><div class="hero-stat-num" id="statSources">7</div><div class="hero-stat-label">信源覆盖</div></div>
+      <div><div class="hero-stat-num" id="statSources">10</div><div class="hero-stat-label">信源覆盖</div></div>
       <div class="hero-stat-divider"></div>
     </div>
   </section>
 
-  <div class="offline-notice">
-    <span class="offline-icon">📡</span>
+  <div class="fetch-notice">
+    <span class="fetch-icon">📡</span>
     <div>
-      <div class="offline-title">网络受限模式</div>
-      <div class="offline-desc">当前网络搜索服务不可用，本版展示近期热门内容回顾。完整版将于网络恢复后更新。</div>
+      <div class="fetch-title">实时抓取模式</div>
+      <div class="fetch-desc">本版内容来自 10 个信源的实时抓取：量子位、36氪、Solidot、雷锋网、钛媒体、IT之家、TechCrunch、The Verge、Ars Technica、Hacker News</div>
     </div>
   </div>
 
   <div class="tldr">
     <span class="tldr-label">TL;DR</span>
-    <span class="tldr-text" id="tldrText">Fable 5 即将解禁 · DeepSeek 大规模扩招 · 智元机器人量产突破 · Google 搜索25年首改版 · Goose 开源替代 Claude Code</span>
+    <span class="tldr-text" id="tldrText">GPT-5.6 发布挑战 Fable 5 · 百度开源 OCR 作者疑似前 DeepSeek 研究员 · 福特 AI 失败重聘老工程师 · 苹果 Vision Pro 高管跳槽 OpenAI · 亚洲 AI 反击 Anthropic 禁令</span>
   </div>
 
   <!-- 大模型动态 -->
@@ -562,52 +562,52 @@
 
     <div class="feature-card">
       <div class="card-tag" style="color:var(--accent-indigo);">🚨 突发头条</div>
-      <h2 class="card-title">美国即将解禁 Anthropic Fable 5 访问权限</h2>
-      <p class="card-desc">据多方信源确认，美国政府即将解除对 Anthropic Fable 5 模型的访问限制。该模型此前因「能力过于强大」被暂时封锁，解禁后将面向全球开发者开放。业界普遍认为这将对当前 AI 竞争格局产生重大影响。</p>
+      <h2 class="card-title">GPT-5.6 突然发布！Fable 5 痛失最强基模王座</h2>
+      <p class="card-desc">OpenAI 突然发布 GPT-5.6，在多项基准测试中超越 Anthropic Fable 5，成为当前最强基础模型。这一发布时机恰逢 Fable 5 因出口禁令受限之际，引发业界对 AI 竞争格局的重新评估。</p>
       <div class="card-meta">
-        <span>📍 来源：36氪快讯</span>
-        <a class="read-original" href="https://36kr.com" target="_blank">阅读原文 <span class="read-original-arrow">→</span></a>
+        <span>📍 来源：量子位</span>
+        <a class="read-original" href="https://www.qbitai.com/2026/06/438895.html" target="_blank">阅读原文 <span class="read-original-arrow">→</span></a>
       </div>
     </div>
 
     <div class="sub-grid">
       <div class="sub-card">
-        <span class="sub-tag" style="color:var(--accent-green);"><span class="news-item-tag tag-model">大模型</span>DeepSeek</span>
-        <h3 class="sub-title">DeepSeek 计划将所有部门规模扩大至少一倍</h3>
-        <p class="sub-desc">国产大模型独角兽 DeepSeek 启动大规模招聘计划，所有核心部门将至少翻倍扩招。</p>
+        <span class="sub-tag" style="color:var(--accent-green);"><span class="news-item-tag tag-model">开源</span>百度</span>
+        <h3 class="sub-title">一次吃下一本书！百度开源新 OCR，作者疑似前 DeepSeek 研究员</h3>
+        <p class="sub-desc">百度开源新一代 OCR 模型，支持整本书籍的一次性识别处理。项目作者被社区怀疑是前 DeepSeek 研究员，引发开源社区热议。</p>
         <div class="sub-meta">
-          <span>📍 36氪快讯</span>
-          <a class="read-original" href="https://36kr.com" target="_blank">原文 →</a>
+          <span>📍 量子位</span>
+          <a class="read-original" href="https://www.qbitai.com/2026/06/439464.html" target="_blank">原文 →</a>
         </div>
       </div>
       <div class="sub-card">
-        <span class="sub-tag" style="color:var(--accent-cyan);"><span class="news-item-tag tag-model">大模型</span>Google</span>
-        <h3 class="sub-title">Google 搜索框 25 年来首次改版</h3>
-        <p class="sub-desc">Google 宣布搜索框迎来 25 年来首次重大设计更新，AI 原生搜索时代正式开启。</p>
+        <span class="sub-tag" style="color:var(--accent-cyan);"><span class="news-item-tag tag-model">模型</span>Anthropic</span>
+        <h3 class="sub-title">Claude Fable 5 分批重新上线！GPT-5.6 秒跟</h3>
+        <p class="sub-desc">Anthropic Fable 5 在出口禁令后分批重新上线，但 OpenAI 迅速跟进发布 GPT-5.6，竞争态势白热化。</p>
         <div class="sub-meta">
-          <span>📍 VentureBeat</span>
-          <a class="read-original" href="https://venturebeat.com" target="_blank">原文 →</a>
+          <span>📍 量子位</span>
+          <a class="read-original" href="https://www.qbitai.com/2026/06/438789.html" target="_blank">原文 →</a>
         </div>
       </div>
     </div>
 
     <div class="sub-grid" style="margin-top:10px;">
       <div class="sub-card">
-        <span class="sub-tag" style="color:var(--accent-purple);"><span class="news-item-tag tag-model">融资</span>Railway</span>
-        <h3 class="sub-title">Railway 获 $100M 融资挑战 AWS</h3>
-        <p class="sub-desc">Railway 获得 1 亿美元融资，定位为 AI 原生云基础设施，直接挑战 AWS。</p>
+        <span class="sub-tag" style="color:var(--accent-purple);"><span class="news-item-tag tag-model">快讯</span>36氪</span>
+        <h3 class="sub-title">9点1氪｜苹果涨价引山姆代购潮；DeepSeek 大规模招聘；黄金跌破4000美元</h3>
+        <p class="sub-desc">36氪早间快讯：DeepSeek 启动大规模招聘计划，所有核心部门将至少翻倍扩招。</p>
         <div class="sub-meta">
-          <span>📍 VentureBeat</span>
-          <a class="read-original" href="https://venturebeat.com" target="_blank">原文 →</a>
+          <span>📍 36氪</span>
+          <a class="read-original" href="https://36kr.com/p/3870720040588295?f=rss" target="_blank">原文 →</a>
         </div>
       </div>
       <div class="sub-card">
-        <span class="sub-tag" style="color:var(--accent-indigo);"><span class="news-item-tag tag-model">开源</span>NousCoder</span>
-        <h3 class="sub-title">NousCoder-14B：Claude Code 时代开源代码模型</h3>
-        <p class="sub-desc">Nous Research 发布 14B 参数开源代码模型，定位 Claude Code 时代的替代方案。</p>
+        <span class="sub-tag" style="color:var(--accent-amber);"><span class="news-item-tag tag-model">融资</span>深度机智</span>
+        <h3 class="sub-title">两个月连获两轮数亿元融资，深度机智加速国产物理 AI 基座模型落地</h3>
+        <p class="sub-desc">深度机智以全栈自主路线加速国产物理 AI 基座模型研发，获得资本市场高度认可。</p>
         <div class="sub-meta">
-          <span>📍 VentureBeat</span>
-          <a class="read-original" href="https://venturebeat.com" target="_blank">原文 →</a>
+          <span>📍 量子位</span>
+          <a class="read-original" href="https://www.qbitai.com/2026/06/438887.html" target="_blank">原文 →</a>
         </div>
       </div>
     </div>
@@ -621,67 +621,23 @@
       <span class="section-label-cn">工具 & 部署</span>
     </div>
 
-    <div class="feature-card">
-      <div class="card-tag" style="color:var(--accent-green);">🔥 开源热门</div>
-      <h2 class="card-title">Goose：Claude Code 免费替代方案</h2>
-      <p class="card-desc">Block 公司开源的 Goose 项目成为 GitHub 热门，定位为 Claude Code 的免费替代方案，采用 Apache 2.0 协议。开发者可节省每月约 $200 的订阅费用。</p>
-      <div class="dev-impact">
-        <span class="dev-impact-icon">💡</span>
-        <span class="dev-impact-text">开发者影响：开源替代方案降低 AI 编程工具使用门槛，中小团队可大幅降低运营成本。</span>
-      </div>
-      <div class="card-meta">
-        <span>📍 来源：VentureBeat</span>
-        <a class="read-original" href="https://venturebeat.com" target="_blank">阅读原文 <span class="read-original-arrow">→</span></a>
-      </div>
-    </div>
-
     <div class="sub-grid">
       <div class="sub-card">
-        <span class="sub-tag" style="color:var(--accent-green);"><span class="news-item-tag tag-tool">工具</span>Claude Cowork</span>
-        <h3 class="sub-title">Anthropic Cowork：桌面 Agent，无需编程</h3>
-        <p class="sub-desc">Anthropic 发布 Claude Desktop Agent，非技术用户也能通过 AI 操作文件完成任务。</p>
+        <span class="sub-tag" style="color:var(--accent-green);"><span class="news-item-tag tag-tool">开源</span>前端克隆</span>
+        <h3 class="sub-title">前端工程师最不想看到的开源项目：一行命令克隆任意网站</h3>
+        <p class="sub-desc">新开源工具可一键克隆任意网站的前端代码，引发开发者社区对代码安全和知识产权的讨论。</p>
         <div class="sub-meta">
-          <span>📍 VentureBeat</span>
-          <a class="read-original" href="https://venturebeat.com" target="_blank">原文 →</a>
+          <span>📍 量子位</span>
+          <a class="read-original" href="https://www.qbitai.com/2026/06/439515.html" target="_blank">原文 →</a>
         </div>
       </div>
       <div class="sub-card">
-        <span class="sub-tag" style="color:var(--accent-amber);"><span class="news-item-tag tag-tool">企业</span>Slackbot</span>
-        <h3 class="sub-title">Salesforce Slackbot AI Agent 职场竞争</h3>
-        <p class="sub-desc">Salesforce 推出 Slackbot AI Agent，与微软谷歌竞争职场 AI 市场。</p>
+        <span class="sub-tag" style="color:var(--accent-green);"><span class="news-item-tag tag-tool">加速</span>英伟达</span>
+        <h3 class="sub-title">英伟达 MoE 新开源：一行 import，微调加速 3.7 倍</h3>
+        <p class="sub-desc">英伟达开源 MoE 模型优化工具，仅需一行代码即可实现微调加速 3.7 倍，大幅降低训练成本。</p>
         <div class="sub-meta">
-          <span>📍 VentureBeat</span>
-          <a class="read-original" href="https://venturebeat.com" target="_blank">原文 →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 政策 & 合规 -->
-  <section class="section-gap">
-    <div class="section-head">
-      <div class="section-line" style="background:#60a5fa;"></div>
-      <span class="section-label" style="color:#60a5fa;">POLICY</span>
-      <span class="section-label-cn">政策 & 合规</span>
-    </div>
-
-    <div class="policy-grid">
-      <div class="policy-card">
-        <span class="sub-tag" style="color:#60a5fa;"><span class="news-item-tag tag-policy">国际</span>韩国</span>
-        <h3 class="sub-title">韩国宣布「三大工程」AI 投资计划</h3>
-        <p class="sub-desc">韩国政府宣布重大 AI 投资计划「三大工程」，三星、SK 等巨头配套投资。</p>
-        <div class="sub-meta">
-          <span>📍 36氪快讯</span>
-          <a class="read-original" href="https://36kr.com" target="_blank">原文 →</a>
-        </div>
-      </div>
-      <div class="policy-card">
-        <span class="sub-tag" style="color:#60a5fa;"><span class="news-item-tag tag-policy">监管</span>美国</span>
-        <h3 class="sub-title">美国 AI 监管「内战」：州级立法爆炸式增长</h3>
-        <p class="sub-desc">MIT Tech Review 报道美国各州 AI 监管立法快速增长，联邦层面陷入僵局。</p>
-        <div class="sub-meta">
-          <span>📍 MIT Tech Review</span>
-          <a class="read-original" href="https://technologyreview.com" target="_blank">原文 →</a>
+          <span>📍 量子位</span>
+          <a class="read-original" href="https://www.qbitai.com/2026/06/438703.html" target="_blank">原文 →</a>
         </div>
       </div>
     </div>
@@ -697,60 +653,60 @@
 
     <div class="sub-grid">
       <div class="sub-card">
-        <span class="sub-tag" style="color:var(--accent-amber);"><span class="news-item-tag tag-industry">产业</span>智元</span>
-        <h3 class="sub-title">智元第 15000 台通用具身机器人量产下线</h3>
-        <p class="sub-desc">智元机器人宣布第 15000 台量产下线，国产机器人产业迈入规模化新阶段。</p>
+        <span class="sub-tag" style="color:var(--accent-amber);"><span class="news-item-tag tag-industry">机器人</span>它石智航</span>
+        <h3 class="sub-title">让机器人学会「预判接触」：TacForeSight 破解精细操作难题</h3>
+        <p class="sub-desc">它石智航牵头四大顶尖机构发布 TacForeSight，让机器人能够预判接触，实现更精细的操作。</p>
         <div class="sub-meta">
-          <span>📍 36氪快讯</span>
-          <a class="read-original" href="https://36kr.com" target="_blank">原文 →</a>
+          <span>📍 量子位</span>
+          <a class="read-original" href="https://www.qbitai.com/2026/06/438701.html" target="_blank">原文 →</a>
         </div>
       </div>
       <div class="sub-card">
-        <span class="sub-tag" style="color:var(--accent-rose);"><span class="news-item-tag tag-industry">案例</span>Ford</span>
-        <h3 class="sub-title">Ford 用 AI 替代人工失败案例</h3>
-        <p class="sub-desc">Ford 分享过度依赖 AI 替代人工决策导致生产问题的教训。</p>
+        <span class="sub-tag" style="color:var(--accent-amber);"><span class="news-item-tag tag-industry">产业</span>华勤技术</span>
+        <h3 class="sub-title">华勤技术与正行创新战略合作，加速机器人「走进工厂」</h3>
+        <p class="sub-desc">华勤技术与正行创新达成战略合作，共同推动机器人在工厂产线的规模化应用落地。</p>
         <div class="sub-meta">
-          <span>📍 Hacker News</span>
-          <a class="read-original" href="https://news.ycombinator.com" target="_blank">原文 →</a>
+          <span>📍 量子位</span>
+          <a class="read-original" href="https://www.qbitai.com/2026/06/438741.html" target="_blank">原文 →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 开源热度 Top5 -->
+  <!-- 开源热度 -->
   <section class="section-gap">
     <div class="section-head">
       <div class="section-line" style="background:var(--accent-rose);"></div>
       <span class="section-label" style="color:var(--accent-rose);">OPEN SOURCE</span>
-      <span class="section-label-cn">开源热度 Top5</span>
+      <span class="section-label-cn">开源热度 Top10</span>
     </div>
 
     <div class="rank-card">
-      <div class="rank-label" style="color:var(--accent-rose);">🔥 GitHub 热门项目</div>
+      <div class="rank-label" style="color:var(--accent-rose);">🔥 Hacker News 热门</div>
       <div class="rank-row">
         <span class="rank-num">1</span>
-        <span class="rank-name">Goose (Block)</span>
-        <span class="rank-stat rank-up">↑ Claude Code 替代</span>
+        <span class="rank-name">Signed satellite images for AI agents</span>
+        <span class="rank-stat rank-up">↑ AI Agent</span>
       </div>
       <div class="rank-row">
         <span class="rank-num">2</span>
-        <span class="rank-name">NousCoder-14B</span>
-        <span class="rank-stat rank-up">↑ 14B 代码模型</span>
+        <span class="rank-name">AI and Liability</span>
+        <span class="rank-stat rank-up">↑ 安全</span>
       </div>
       <div class="rank-row">
         <span class="rank-num">3</span>
-        <span class="rank-name">Railway CLI</span>
-        <span class="rank-stat rank-neutral">AI 云平台</span>
+        <span class="rank-name">AI-assisted binary patching</span>
+        <span class="rank-stat rank-neutral">逆向工程</span>
       </div>
       <div class="rank-row">
         <span class="rank-num">4</span>
-        <span class="rank-name">Listen Labs SDK</span>
-        <span class="rank-stat rank-neutral">AI 访谈</span>
+        <span class="rank-name">AI boom risks global financial crash</span>
+        <span class="rank-stat rank-neutral">金融</span>
       </div>
       <div class="rank-row">
         <span class="rank-num">5</span>
-        <span class="rank-name">Slackbot Templates</span>
-        <span class="rank-stat rank-neutral">职场 Agent</span>
+        <span class="rank-name">Sophon PFG-1: 330GB on-die DRAM ASIC</span>
+        <span class="rank-stat rank-neutral">芯片</span>
       </div>
     </div>
   </section>
@@ -765,53 +721,74 @@
 
     <div class="sub-grid">
       <div class="sub-card">
-        <span class="sub-tag" style="color:var(--accent-cyan);"><span class="news-item-tag tag-global">海外</span>Anthropic</span>
-        <h3 class="sub-title">Anthropic 称阿里巴巴攻击 Claude 并窃取能力</h3>
-        <p class="sub-desc">Anthropic 公开指控阿里巴巴对其 Claude 模型发起攻击并窃取核心能力。</p>
+        <span class="sub-tag" style="color:var(--accent-cyan);"><span class="news-item-tag tag-global">海外</span>Ford</span>
+        <h3 class="sub-title">Ford rehires 'gray beard' engineers after AI falls short</h3>
+        <p class="sub-desc">福特汽车在 AI 项目失败后，重新聘请经验丰富的老工程师，成为 AI 替代人工失败的典型案例。</p>
         <div class="sub-meta">
-          <span>📍 Ars Technica</span>
-          <a class="read-original" href="https://arstechnica.com" target="_blank">原文 →</a>
+          <span>📍 TechCrunch</span>
+          <a class="read-original" href="https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/" target="_blank">原文 →</a>
         </div>
       </div>
       <div class="sub-card">
-        <span class="sub-tag" style="color:var(--accent-cyan);"><span class="news-item-tag tag-global">海外</span>Oracle</span>
-        <h3 class="sub-title">Oracle 裁员 2.1 万转向 AI 投资</h3>
-        <p class="sub-desc">Oracle 宣布裁员 2.1 万人，将资源转向 AI 领域投资。</p>
+        <span class="sub-tag" style="color:var(--accent-cyan);"><span class="news-item-tag tag-global">海外</span>Apple</span>
+        <h3 class="sub-title">Apple Vision Pro exec is reportedly leaving for OpenAI</h3>
+        <p class="sub-desc">苹果 Vision Pro 高管 reportedly 跳槽 OpenAI，显示顶级 AI 人才争夺战持续升级。</p>
         <div class="sub-meta">
-          <span>📍 Ars Technica</span>
-          <a class="read-original" href="https://arstechnica.com" target="_blank">原文 →</a>
+          <span>📍 TechCrunch</span>
+          <a class="read-original" href="https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/" target="_blank">原文 →</a>
         </div>
       </div>
     </div>
 
     <div class="sub-grid" style="margin-top:10px;">
       <div class="sub-card">
-        <span class="sub-tag" style="color:var(--accent-cyan);"><span class="news-item-tag tag-global">海外</span>Notion</span>
-        <h3 class="sub-title">Notion 关闭邮件应用，用户转向 AI Agent</h3>
-        <p class="sub-desc">Notion 宣布关闭其邮件应用，用户开始转向 AI Agent 解决方案。</p>
+        <span class="sub-tag" style="color:var(--accent-cyan);"><span class="news-item-tag tag-global">海外</span>亚洲AI</span>
+        <h3 class="sub-title">Asian AI startups launch Mythos-like models as Anthropic's export ban drags on</h3>
+        <p class="sub-desc">亚洲 AI 初创企业推出 Mythos 类模型，作为对 Anthropic 出口禁令的反制措施。</p>
         <div class="sub-meta">
-          <span>📍 Ars Technica</span>
-          <a class="read-original" href="https://arstechnica.com" target="_blank">原文 →</a>
+          <span>📍 TechCrunch</span>
+          <a class="read-original" href="https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/" target="_blank">原文 →</a>
+        </div>
+      </div>
+      <div class="sub-card">
+        <span class="sub-tag" style="color:var(--accent-cyan);"><span class="news-item-tag tag-global">海外</span>OpenAI</span>
+        <h3 class="sub-title">OpenAI limits GPT-5.6 rollout after government request</h3>
+        <p class="sub-desc">OpenAI 应政府要求限制 GPT-5.6 部署范围，但表示限制不应成为常态。</p>
+        <div class="sub-meta">
+          <span>📍 TechCrunch</span>
+          <a class="read-original" href="https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/" target="_blank">原文 →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 论文速递 -->
+  <!-- 产业动态 -->
   <section class="section-gap">
     <div class="section-head">
       <div class="section-line" style="background:var(--accent-purple);"></div>
-      <span class="section-label" style="color:var(--accent-purple);">PAPER</span>
-      <span class="section-label-cn">论文速递</span>
+      <span class="section-label" style="color:var(--accent-purple);">INDUSTRY</span>
+      <span class="section-label-cn">产业动态</span>
     </div>
 
-    <div class="paper-spotlight">
-      <div class="paper-header">
-        <span class="paper-label">📄 研究精选</span>
+    <div class="sub-grid">
+      <div class="sub-card">
+        <span class="sub-tag" style="color:var(--accent-purple);"><span class="news-item-tag tag-industry">融资</span>源策未来</span>
+        <h3 class="sub-title">港大教授李弘扬创业做通用全身具身大脑，获数亿种子轮融资</h3>
+        <p class="sub-desc">源策未来 Archon Robotics 完成数亿元种子轮融资，投资方包括真格基金、高榕创投、IDG 资本等。</p>
+        <div class="sub-meta">
+          <span>📍 36氪</span>
+          <a class="read-original" href="https://36kr.com/p/3868055841641476?f=rss" target="_blank">原文 →</a>
+        </div>
       </div>
-      <h3 class="paper-title">EinsteinArena：AI Agent 自主发现 12 项数学新成果</h3>
-      <p class="paper-abstract">来自 arXiv 的最新研究展示了 AI Agent 在数学领域的突破性能力，自主发现了 12 项此前未被人类发现的新数学成果，验证了 AI 在基础科学研究中的潜力。</p>
-      <div class="paper-meta">arXiv 2606.10402 · AI Agent · 数学发现</div>
+      <div class="sub-card">
+        <span class="sub-tag" style="color:var(--accent-purple);"><span class="news-item-tag tag-industry">硬件</span>雷锋网</span>
+        <h3 class="sub-title">扛不住内存涨价！苹果游说美国政府，请求采购长鑫存储芯片</h3>
+        <p class="sub-desc">苹果因内存涨价压力，游说美国政府批准从长鑫存储采购芯片，同时 DeepSeek 发布最新论文。</p>
+        <div class="sub-meta">
+          <span>📍 雷锋网</span>
+          <a class="read-original" href="https://www.leiphone.com/category/zaobao/VHTb7BMH3w4pgCSB.html" target="_blank">原文 →</a>
+        </div>
+      </div>
     </div>
   </section>
 
