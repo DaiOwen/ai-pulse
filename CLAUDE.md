@@ -20,18 +20,20 @@ python3 fetch_news.py > news.json
 # 如果脚本失败，生成「回顾版」
 ```
 
-**支持的信源（8个）：**
+**支持的信源（10个）：**
 
-| 信源 | 类型 | URL |
-|------|------|-----|
-| 量子位 | 国内AI快讯 | qbitai.com |
-| 36氪 | 国内科技商业 | 36kr.com |
-| 机器之心 | 国内AI深度 | jiqizhixin.com |
-| 澎湃新闻 | 国内综合 | thepaper.cn |
-| TechCrunch | 海外科技 | techcrunch.com |
-| The Verge | 海外科技 | theverge.com |
-| Ars Technica | 海外深度 | arstechnica.com |
-| Hacker News | 开发者社区 | news.ycombinator.com |
+| 信源 | 类型 | 状态 | 备注 |
+|------|------|------|------|
+| 量子位 | 国内AI快讯 | ✅ | 直接HTML抓取 |
+| 36氪 | 国内科技商业 | ✅ | RSS抓取（修复JS渲染问题） |
+| Solidot | 开源科技新闻 | ✅ | 替代机器之心 |
+| 雷锋网 | AI/硬件新闻 | ✅ | 替代澎湃新闻 |
+| 钛媒体 | 国内科技商业 | ✅ | 新增 |
+| IT之家 | 科技资讯 | ✅ | 新增 |
+| TechCrunch | 海外科技 | ✅ | 直接HTML抓取 |
+| The Verge | 海外科技 | ⚠️ 偶发超时 | 直接HTML抓取 |
+| Ars Technica | 海外深度 | ✅ | 直接HTML抓取 |
+| Hacker News | 开发者社区 | ✅ | Algolia API（修复超时问题） |
 
 **抓取容错机制：**
 1. 主抓取：`python3 fetch_news.py` → 输出 JSON
