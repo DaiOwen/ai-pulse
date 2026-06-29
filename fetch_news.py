@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 AI 新闻抓取脚本 - 多信源并行抓取
-支持信源：量子位、36氪、机器之心、澎湃新闻、InfoQ、TechCrunch、The Verge、Ars Technica
+支持信源：量子位、36氪、Solidot、雷锋网、TechCrunch、The Verge、Ars Technica、Hacker News
 """
 
 import urllib.request
@@ -186,17 +186,50 @@ class Kr36Fetcher(BaseFetcher):
         return "general"
 
 
-class JiqizhixinFetcher(BaseFetcher):
-    """机器之心抓取器"""
+class SolidotFetcher(BaseFetcher):
+    """Solidot 抓取器 - 替代机器之心"""
     def __init__(self):
-        super().__init__("机器之心", "https://www.jiqizhixin.com/articles")
+        super().__init__("Solidot", "https://www.solidot.org")
 
     def parse(self, html: str) -> List[NewsItem]:
         items = []
-        # 机器之心的文章标题
+        # Solidot 的文章结构
+        pattern = r'<a[^>]*href="([^"]+)"[^>]*>([^<]{10,80})</a>'
+        matches = re.findall(pattern, html)
+
+        for link, title in matches:
+            title = title.strip()
+            if not title or len(title) < 15:
+                continue
+
+            ai_keywords = ['AI', '人工智能', '模型', '算法', '机器人', '芯片',
+                          '算力', '自动驾驶', '智能', '科技', 'GPT', 'Claude',
+                          'DeepSeek', 'OpenAI', 'Anthropic', 'LLM', '机器学习']
+            if not any(kw in title for kw in ai_keywords):
+                continue
+
+            full_url = link if link.startswith('http') else f"https://www.solidot.org{link}"
+            items.append(NewsItem(
+                title=title,
+                url=full_url,
+                source="Solidot",
+                category="general"
+            ))
+
+        return items[:8]
+
+
+class LeiphoneFetcher(BaseFetcher):
+    """雷锋网抓取器 - 替代澎湃新闻"""
+    def __init__(self):
+        super().__init__("雷锋网", "https://www.leiphone.com")
+
+    def parse(self, html: str) -> List[NewsItem]:
+        items = []
+        # 雷锋网的文章标题
         patterns = [
             r'<a[^>]*href="([^"]+)"[^>]*title="([^"]{10,80})"[^>]*>',
-            r'<h[23][^>]*>[^<]*<a[^>]*href="([^"]+)"[^>]*>([^<]{10,80})</a>',
+            r'<a[^>]*href="([^"]+)"[^>]*>([^<]{10,80})</a>',
         ]
 
         for pattern in patterns:
@@ -211,47 +244,29 @@ class JiqizhixinFetcher(BaseFetcher):
                 if not title or len(title) < 15:
                     continue
 
-                full_url = link if link.startswith('http') else f"https://www.jiqizhixin.com{link}"
+                ai_keywords = ['AI', '人工智能', '模型', '算法', '机器人', '芯片',
+                              '算力', '自动驾驶', '智能', '科技', 'GPT', 'Claude',
+                              'DeepSeek', '具身', '大模型', '开源']
+                if not any(kw in title for kw in ai_keywords):
+                    continue
+
+                full_url = link if link.startswith('http') else f"https://www.leiphone.com{link}"
                 items.append(NewsItem(
                     title=title,
                     url=full_url,
-                    source="机器之心",
+                    source="雷锋网",
                     category="general"
                 ))
 
-        return items[:8]
+        # 去重
+        seen = set()
+        unique = []
+        for item in items:
+            if item.title not in seen:
+                seen.add(item.title)
+                unique.append(item)
 
-
-class ThePaperFetcher(BaseFetcher):
-    """澎湃新闻抓取器"""
-    def __init__(self):
-        super().__init__("澎湃新闻", "https://www.thepaper.cn/channel_25951")
-
-    def parse(self, html: str) -> List[NewsItem]:
-        items = []
-        # 澎湃新闻科技频道
-        pattern = r'<a[^>]*href="([^"]+)"[^>]*>([^<]{10,80})</a>'
-        matches = re.findall(pattern, html)
-
-        for link, title in matches:
-            title = title.strip()
-            if not title or len(title) < 15:
-                continue
-
-            ai_keywords = ['AI', '人工智能', '模型', '算法', '机器人', '芯片',
-                          '算力', '自动驾驶', '智能', '科技']
-            if not any(kw in title for kw in ai_keywords):
-                continue
-
-            full_url = link if link.startswith('http') else f"https://www.thepaper.cn{link}"
-            items.append(NewsItem(
-                title=title,
-                url=full_url,
-                source="澎湃新闻",
-                category="general"
-            ))
-
-        return items[:6]
+        return unique[:6]
 
 
 class TechCrunchFetcher(BaseFetcher):
@@ -386,8 +401,8 @@ class NewsAggregator:
         self.fetchers = [
             QbitaiFetcher(),
             Kr36Fetcher(),
-            JiqizhixinFetcher(),
-            ThePaperFetcher(),
+            SolidotFetcher(),
+            LeiphoneFetcher(),
             TechCrunchFetcher(),
             TheVergeFetcher(),
             ArsTechnicaFetcher(),
