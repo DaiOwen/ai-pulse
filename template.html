@@ -499,6 +499,60 @@
   .offline-desc { font-size: 12px; color: var(--text-secondary); line-height: 1.5; }
   [data-theme="light"] .offline-notice { background: rgba(217,119,6,0.08); }
   [data-theme="light"] .offline-title { color: #b45309; }
+
+  /* 信源提示 tips */
+  .source-tip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 12px;
+    position: relative;
+    z-index: 1;
+  }
+  .source-tip-text {
+    font-size: 11px;
+    color: var(--text-tertiary);
+    letter-spacing: 0.02em;
+  }
+  .source-tip-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 9px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 6px;
+    letter-spacing: 0.04em;
+    background: rgba(34,197,94,0.1);
+    color: #4ade80;
+    border: 0.5px solid rgba(34,197,94,0.2);
+    cursor: default;
+    position: relative;
+  }
+  .source-tip-badge-icon { font-size: 10px; }
+  .source-tip-detail {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1a1a2e;
+    border: 0.5px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 12px 16px;
+    min-width: 280px;
+    max-width: 380px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    z-index: 200;
+  }
+  [data-theme="light"] .source-tip-detail { background: #ffffff; box-shadow: 0 8px 32px rgba(0,0,0,0.12); }
+  .source-tip-badge:hover .source-tip-detail { display: block; }
+  .source-tip-detail-title { font-size: 11px; font-weight: 600; color: #4ade80; margin-bottom: 6px; }
+  [data-theme="light"] .source-tip-detail-title { color: #16a34a; }
+  .source-tip-detail-list { font-size: 10px; color: var(--text-secondary); line-height: 1.8; }
+  .source-tip-arrow { font-size: 8px; opacity: 0.6; }
+  [data-theme="light"] .source-tip-badge { background: rgba(22,163,74,0.12); color: #16a34a; border-color: rgba(22,163,74,0.25); }
 </style>
 </head>
 <body>
@@ -550,6 +604,17 @@
       <div><div class="hero-stat-num" id="statProjects">{{PROJECT_COUNT}}</div><div class="hero-stat-label">热门项目</div></div>
       <div class="hero-stat-divider"></div>
       <div><div class="hero-stat-num" id="statPapers">{{PAPER_COUNT}}</div><div class="hero-stat-label">精选论文</div></div>
+    </div>
+    <div class="source-tip">
+      <span class="source-tip-text">{{SOURCE_COUNT}} 信源实时抓取</span>
+      <span class="source-tip-badge">
+        <span class="source-tip-badge-icon">📡</span>详情
+        <span class="source-tip-arrow">▾</span>
+        <span class="source-tip-detail">
+          <div class="source-tip-detail-title">📡 实时抓取信源</div>
+          <div class="source-tip-detail-list">{{SOURCE_LIST}}</div>
+        </span>
+      </span>
     </div>
   </section>
 
