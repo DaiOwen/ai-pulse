@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 AI 新闻抓取脚本 - 多信源并行抓取
-支持信源：量子位、36氪、Solidot、雷锋网、TechCrunch、The Verge、Ars Technica、Hacker News
+支持信源：量子位、36氪(RSS)、Solidot、雷锋网、钛媒体、IT之家、TechCrunch、The Verge、Ars Technica、Hacker News(API)
 """
 
 import urllib.request
@@ -28,7 +28,7 @@ class NewsItem:
         self.url = url
         self.source = source
         self.summary = summary
-        self.category = category  # model, tool, policy, application, opensource, global, paper
+        self.category = category
         self.timestamp = timestamp
         self.score = 0
 
@@ -86,7 +86,6 @@ class QbitaiFetcher(BaseFetcher):
 
     def parse(self, html: str) -> List[NewsItem]:
         items = []
-        # 匹配标题和链接
         pattern = r'<a[^>]*href="([^"]+)"[^>]*>([^<]{10,80})</a>'
         matches = re.findall(pattern, html)
 
@@ -94,7 +93,6 @@ class QbitaiFetcher(BaseFetcher):
             title = title.strip()
             if not title or len(title) < 15:
                 continue
-            # 过滤非AI内容
             ai_keywords = ['AI', '模型', '开源', 'GPT', 'Claude', 'DeepSeek', '谷歌',
                           '百度', '大模型', '智能', '算法', '机器人', '算力', '芯片',
                           '英伟达', 'Meta', 'OpenAI', 'Anthropic', 'LLM', 'Agent',
@@ -104,23 +102,20 @@ class QbitaiFetcher(BaseFetcher):
 
             full_url = link if link.startswith('http') else f"https://www.qbitai.com{link}"
             items.append(NewsItem(
-                title=title,
-                url=full_url,
-                source="量子位",
+                title=title, url=full_url, source="量子位",
                 category=self._categorize(title)
             ))
 
         return items[:10]
 
     def _categorize(self, title: str) -> str:
-        """分类新闻"""
-        if any(kw in title for kw in ['GPT', 'Claude', 'DeepSeek', 'LLM', '大模型', '基模', '模型发布']):
+        if any(kw in title for kw in ['GPT', 'Claude', 'DeepSeek', 'LLM', '大模型', '基模']):
             return "model"
         elif any(kw in title for kw in ['开源', 'GitHub', '工具', '框架', '部署']):
             return "tool"
-        elif any(kw in title for kw in ['融资', 'IPO', '收购', '并购', '投资']):
+        elif any(kw in title for kw in ['融资', 'IPO', '收购', '投资']):
             return "industry"
-        elif any(kw in title for kw in ['政策', '监管', '合规', '法律', '安全']):
+        elif any(kw in title for kw in ['政策', '监管', '合规', '法律']):
             return "policy"
         elif any(kw in title for kw in ['机器人', '自动驾驶', '应用', '落地', '量产']):
             return "application"
@@ -128,49 +123,37 @@ class QbitaiFetcher(BaseFetcher):
 
 
 class Kr36Fetcher(BaseFetcher):
-    """36氪抓取器"""
+    """36氪抓取器 - 使用 RSS"""
     def __init__(self):
-        super().__init__("36氪", "https://36kr.com/information/technology/")
+        super().__init__("36氪", "https://36kr.com/feed")
 
     def parse(self, html: str) -> List[NewsItem]:
         items = []
-        # 36氪的标题在特定结构中
-        # 尝试多种模式
-        patterns = [
-            r'<a[^>]*class="[^"]*article-item[^"]*"[^>]*>([^<]{10,80})</a>',
-            r'<div[^>]*class="[^"]*article-item-title[^"]*"[^>]*>([^<]{10,80})</div>',
-            r'<span[^>]*class="[^"]*title[^"]*"[^>]*>([^<]{10,80})</span>',
-        ]
+        # RSS 格式：<item><title>...</title><link>...</link></item>
+        pattern = r'<item>.*?<title>([^<]+)</title>.*?<link>([^<]+)</link>.*?</item>'
+        matches = re.findall(pattern, html, re.DOTALL)
 
-        for pattern in patterns:
-            matches = re.findall(pattern, html)
-            for title in matches:
-                title = title.strip()
-                if not title or len(title) < 15:
-                    continue
-                ai_keywords = ['AI', '模型', '开源', 'GPT', '大模型', '智能', '算法',
-                              '机器人', '算力', '芯片', '英伟达', 'Meta', 'OpenAI',
-                              'Anthropic', 'DeepSeek', '字节', '阿里', '腾讯', '百度',
-                              '融资', 'IPO', '自动驾驶', '具身']
-                if not any(kw in title for kw in ai_keywords):
-                    continue
+        for title, link in matches:
+            title = title.strip()
+            if not title or len(title) < 15:
+                continue
+            ai_keywords = ['AI', '模型', '开源', 'GPT', '大模型', '智能', '算法',
+                          '机器人', '算力', '芯片', '英伟达', 'Meta', 'OpenAI',
+                          'Anthropic', 'DeepSeek', '字节', '阿里', '腾讯', '百度',
+                          '融资', 'IPO', '自动驾驶', '具身']
+            if not any(kw in title for kw in ai_keywords):
+                continue
 
-                items.append(NewsItem(
-                    title=title,
-                    url="https://36kr.com",  # 36氪需要JS渲染，链接较难提取
-                    source="36氪",
-                    category=self._categorize(title)
-                ))
+            # 清理 CDATA
+            title = re.sub(r'<!\[CDATA\[(.*?)\]\]>', r'\1', title)
+            link = re.sub(r'<!\[CDATA\[(.*?)\]\]>', r'\1', link)
 
-        # 去重
-        seen = set()
-        unique = []
-        for item in items:
-            if item.title not in seen:
-                seen.add(item.title)
-                unique.append(item)
+            items.append(NewsItem(
+                title=title, url=link.strip(), source="36氪",
+                category=self._categorize(title)
+            ))
 
-        return unique[:8]
+        return items[:8]
 
     def _categorize(self, title: str) -> str:
         if any(kw in title for kw in ['GPT', 'Claude', 'DeepSeek', 'LLM', '大模型']):
@@ -187,13 +170,12 @@ class Kr36Fetcher(BaseFetcher):
 
 
 class SolidotFetcher(BaseFetcher):
-    """Solidot 抓取器 - 替代机器之心"""
+    """Solidot 抓取器"""
     def __init__(self):
         super().__init__("Solidot", "https://www.solidot.org")
 
     def parse(self, html: str) -> List[NewsItem]:
         items = []
-        # Solidot 的文章结构
         pattern = r'<a[^>]*href="([^"]+)"[^>]*>([^<]{10,80})</a>'
         matches = re.findall(pattern, html)
 
@@ -201,7 +183,6 @@ class SolidotFetcher(BaseFetcher):
             title = title.strip()
             if not title or len(title) < 15:
                 continue
-
             ai_keywords = ['AI', '人工智能', '模型', '算法', '机器人', '芯片',
                           '算力', '自动驾驶', '智能', '科技', 'GPT', 'Claude',
                           'DeepSeek', 'OpenAI', 'Anthropic', 'LLM', '机器学习']
@@ -210,9 +191,7 @@ class SolidotFetcher(BaseFetcher):
 
             full_url = link if link.startswith('http') else f"https://www.solidot.org{link}"
             items.append(NewsItem(
-                title=title,
-                url=full_url,
-                source="Solidot",
+                title=title, url=full_url, source="Solidot",
                 category="general"
             ))
 
@@ -220,13 +199,12 @@ class SolidotFetcher(BaseFetcher):
 
 
 class LeiphoneFetcher(BaseFetcher):
-    """雷锋网抓取器 - 替代澎湃新闻"""
+    """雷锋网抓取器"""
     def __init__(self):
         super().__init__("雷锋网", "https://www.leiphone.com")
 
     def parse(self, html: str) -> List[NewsItem]:
         items = []
-        # 雷锋网的文章标题
         patterns = [
             r'<a[^>]*href="([^"]+)"[^>]*title="([^"]{10,80})"[^>]*>',
             r'<a[^>]*href="([^"]+)"[^>]*>([^<]{10,80})</a>',
@@ -252,9 +230,85 @@ class LeiphoneFetcher(BaseFetcher):
 
                 full_url = link if link.startswith('http') else f"https://www.leiphone.com{link}"
                 items.append(NewsItem(
-                    title=title,
-                    url=full_url,
-                    source="雷锋网",
+                    title=title, url=full_url, source="雷锋网",
+                    category="general"
+                ))
+
+        # 去重
+        seen = set()
+        unique = []
+        for item in items:
+            if item.title not in seen:
+                seen.add(item.title)
+                unique.append(item)
+
+        return unique[:6]
+
+
+class TmtpostFetcher(BaseFetcher):
+    """钛媒体抓取器"""
+    def __init__(self):
+        super().__init__("钛媒体", "https://www.tmtpost.com")
+
+    def parse(self, html: str) -> List[NewsItem]:
+        items = []
+        pattern = r'<a[^>]*href="([^"]+)"[^>]*>([^<]{10,80})</a>'
+        matches = re.findall(pattern, html)
+
+        for link, title in matches:
+            title = title.strip()
+            if not title or len(title) < 15:
+                continue
+
+            ai_keywords = ['AI', '人工智能', '模型', '算法', '机器人', '芯片',
+                          '算力', '自动驾驶', '智能', '科技', 'GPT', '大模型',
+                          '开源', '融资', 'IPO']
+            if not any(kw in title for kw in ai_keywords):
+                continue
+
+            full_url = link if link.startswith('http') else f"https://www.tmtpost.com{link}"
+            items.append(NewsItem(
+                title=title, url=full_url, source="钛媒体",
+                category="general"
+            ))
+
+        return items[:6]
+
+
+class IthomeFetcher(BaseFetcher):
+    """IT之家抓取器"""
+    def __init__(self):
+        super().__init__("IT之家", "https://www.ithome.com")
+
+    def parse(self, html: str) -> List[NewsItem]:
+        items = []
+        # IT之家标题结构
+        patterns = [
+            r'<a[^>]*href="([^"]+)"[^>]*title="([^"]{10,80})"[^>]*>',
+            r'<a[^>]*href="([^"]+)"[^>]*>([^<]{10,80})</a>',
+        ]
+
+        for pattern in patterns:
+            matches = re.findall(pattern, html)
+            for match in matches:
+                if len(match) == 2:
+                    link, title = match
+                else:
+                    continue
+
+                title = title.strip()
+                if not title or len(title) < 15:
+                    continue
+
+                ai_keywords = ['AI', '人工智能', '模型', '算法', '机器人', '芯片',
+                              '算力', '自动驾驶', '智能', '科技', 'GPT', '大模型',
+                              '开源', '微软', '谷歌', '苹果']
+                if not any(kw in title for kw in ai_keywords):
+                    continue
+
+                full_url = link if link.startswith('http') else f"https://www.ithome.com{link}"
+                items.append(NewsItem(
+                    title=title, url=full_url, source="IT之家",
                     category="general"
                 ))
 
@@ -276,7 +330,6 @@ class TechCrunchFetcher(BaseFetcher):
 
     def parse(self, html: str) -> List[NewsItem]:
         items = []
-        # TechCrunch 文章标题
         pattern = r'<a[^>]*href="([^"]+)"[^>]*>([^<]{10,100})</a>'
         matches = re.findall(pattern, html)
 
@@ -291,11 +344,13 @@ class TechCrunchFetcher(BaseFetcher):
             if not any(kw.lower() in title.lower() for kw in ai_keywords):
                 continue
 
+            # 过滤导航链接
+            if any(kw in link for kw in ['/category/', '/page/', '/author/', '/tag/']):
+                continue
+
             full_url = link if link.startswith('http') else f"https://techcrunch.com{link}"
             items.append(NewsItem(
-                title=title,
-                url=full_url,
-                source="TechCrunch",
+                title=title, url=full_url, source="TechCrunch",
                 category="global"
             ))
 
@@ -322,11 +377,13 @@ class TheVergeFetcher(BaseFetcher):
             if not any(kw.lower() in title.lower() for kw in ai_keywords):
                 continue
 
+            # 过滤导航链接
+            if any(kw in link for kw in ['/category/', '/page/', '/author/', '/tag/']):
+                continue
+
             full_url = link if link.startswith('http') else f"https://www.theverge.com{link}"
             items.append(NewsItem(
-                title=title,
-                url=full_url,
-                source="The Verge",
+                title=title, url=full_url, source="The Verge",
                 category="global"
             ))
 
@@ -353,11 +410,13 @@ class ArsTechnicaFetcher(BaseFetcher):
             if not any(kw.lower() in title.lower() for kw in ai_keywords):
                 continue
 
+            # 过滤导航链接
+            if any(kw in link for kw in ['/category/', '/page/', '/author/', '/tag/']):
+                continue
+
             full_url = link if link.startswith('http') else f"https://arstechnica.com{link}"
             items.append(NewsItem(
-                title=title,
-                url=full_url,
-                source="Ars Technica",
+                title=title, url=full_url, source="Ars Technica",
                 category="global"
             ))
 
@@ -365,32 +424,47 @@ class ArsTechnicaFetcher(BaseFetcher):
 
 
 class HackerNewsFetcher(BaseFetcher):
-    """Hacker News 抓取器"""
+    """Hacker News 抓取器 - 使用 Algolia API"""
     def __init__(self):
-        super().__init__("Hacker News", "https://news.ycombinator.com/")
+        super().__init__("Hacker News", "https://hn.algolia.com/api/v1/search_by_date")
+
+    def fetch(self) -> str:
+        """使用 Algolia API 获取 AI 相关新闻"""
+        try:
+            url = f"{self.url}?tags=story&query=AI&hitsPerPage=20"
+            req = urllib.request.Request(url, headers=self.headers)
+            with urllib.request.urlopen(req, timeout=self.timeout) as response:
+                return response.read().decode('utf-8', errors='ignore')
+        except Exception as e:
+            print(f"[ERROR] {self.name}: {e}", file=sys.stderr)
+            return ""
 
     def parse(self, html: str) -> List[NewsItem]:
         items = []
-        # HN 的标题结构：class="titleline"
-        pattern = r'<span class="titleline">[^<]*<a[^>]*href="([^"]+)"[^>]*>([^<]{10,100})</a>'
-        matches = re.findall(pattern, html)
+        try:
+            data = json.loads(html)
+            hits = data.get('hits', [])
 
-        for link, title in matches:
-            title = title.strip()
-            if not title or len(title) < 15:
-                continue
+            for hit in hits:
+                title = hit.get('title', '').strip()
+                url = hit.get('url', '')
+                if not title or len(title) < 15:
+                    continue
+                if not url:
+                    url = f"https://news.ycombinator.com/item?id={hit.get('objectID', '')}"
 
-            ai_keywords = ['AI', 'machine learning', 'LLM', 'GPT', 'Claude',
-                          'OpenAI', 'model', 'neural', 'algorithm', 'training']
-            if not any(kw.lower() in title.lower() for kw in ai_keywords):
-                continue
+                ai_keywords = ['AI', 'machine learning', 'LLM', 'GPT', 'Claude',
+                              'OpenAI', 'model', 'neural', 'algorithm', 'training',
+                              'artificial intelligence']
+                if not any(kw.lower() in title.lower() for kw in ai_keywords):
+                    continue
 
-            items.append(NewsItem(
-                title=title,
-                url=link if link.startswith('http') else f"https://news.ycombinator.com/{link}",
-                source="Hacker News",
-                category="opensource"
-            ))
+                items.append(NewsItem(
+                    title=title, url=url, source="Hacker News",
+                    category="opensource"
+                ))
+        except Exception as e:
+            print(f"[ERROR] {self.name} parse: {e}", file=sys.stderr)
 
         return items[:5]
 
@@ -403,13 +477,15 @@ class NewsAggregator:
             Kr36Fetcher(),
             SolidotFetcher(),
             LeiphoneFetcher(),
+            TmtpostFetcher(),
+            IthomeFetcher(),
             TechCrunchFetcher(),
             TheVergeFetcher(),
             ArsTechnicaFetcher(),
             HackerNewsFetcher(),
         ]
 
-    def fetch_all(self, max_workers: int = 4) -> List[NewsItem]:
+    def fetch_all(self, max_workers: int = 5) -> List[NewsItem]:
         """并行抓取所有信源"""
         all_news = []
 
@@ -463,18 +539,18 @@ class NewsAggregator:
             score = 0
             # 来源质量
             quality_map = {
-                "量子位": 3, "36氪": 3, "机器之心": 3,
-                "澎湃新闻": 2, "TechCrunch": 3, "The Verge": 3,
-                "Ars Technica": 2, "Hacker News": 2
+                "量子位": 3, "36氪": 3, "TechCrunch": 3,
+                "Solidot": 2, "雷锋网": 2, "钛媒体": 2, "IT之家": 2,
+                "The Verge": 3, "Ars Technica": 2, "Hacker News": 2
             }
             score += quality_map.get(item.source, 1) * 0.3
 
-            # 热度信号（标题关键词）
+            # 热度信号
             hot_keywords = ['发布', '开源', '融资', 'IPO', '突破', '首发', '重磅']
             if any(kw in item.title for kw in hot_keywords):
                 score += 3 * 0.4
 
-            # 时效（简化处理）
+            # 时效
             score += 2 * 0.3
 
             item.score = round(score, 2)
@@ -484,13 +560,13 @@ class NewsAggregator:
     def categorize(self, news: List[NewsItem]) -> Dict[str, List[NewsItem]]:
         """按板块分类"""
         categories = {
-            "models": [],      # 大模型动态
-            "tools": [],       # 工具&部署
-            "policy": [],      # 政策&合规
-            "applications": [], # 应用落地
-            "opensource": [],  # 开源热度
-            "global": [],      # 海外参考
-            "general": []      # 其他
+            "models": [],
+            "tools": [],
+            "policy": [],
+            "applications": [],
+            "opensource": [],
+            "global": [],
+            "general": []
         }
 
         for item in news:
