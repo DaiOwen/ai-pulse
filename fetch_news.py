@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 AI 新闻抓取脚本 - 多信源并行抓取
-支持信源：量子位、36氪(RSS)、Solidot、雷锋网、钛媒体、IT之家、TechCrunch、The Verge、Ars Technica、Hacker News(API)
+支持信源：量子位、36氪(RSS)、Solidot、雷锋网、钛媒体、IT之家、TechCrunch、The Verge、Ars Technica、Hacker News(API)、GitHub Trending、arXiv
 """
 
 import urllib.request
@@ -440,6 +440,94 @@ class ArsTechnicaFetcher(BaseFetcher):
         return items[:5]
 
 
+class GitHubTrendingFetcher(BaseFetcher):
+    """GitHub Trending 抓取器"""
+    def __init__(self):
+        super().__init__("GitHub Trending", "https://github.com/trending?l=python&since=daily")
+
+    def parse(self, html: str) -> List[NewsItem]:
+        items = []
+        # GitHub trending 项目
+        pattern = r'<h2[^>]*>.*?<a[^>]*href="([^"]+)"[^>]*>(.*?)</a>.*?</h2>'
+        matches = re.findall(pattern, html, re.DOTALL)
+
+        for link, name in matches:
+            # 清理 HTML 标签
+            name = re.sub(r'<[^>]+>', '', name).strip()
+            if not name or len(name) < 3:
+                continue
+            # 过滤非 AI 项目
+            ai_keywords = ['ai', 'ml', 'llm', 'gpt', 'model', 'neural', 'deep', 'machine',
+                          'agent', 'chat', 'diffusion', 'transformer', 'embedding']
+            if not any(kw in name.lower() for kw in ai_keywords):
+                continue
+
+            full_url = f"https://github.com{link}" if not link.startswith('http') else link
+            items.append(NewsItem(
+                title=f"GitHub Trending: {name}",
+                url=full_url,
+                source="GitHub Trending",
+                category="opensource"
+            ))
+
+        return items[:10]
+
+
+class ArxivFetcher(BaseFetcher):
+    """arXiv 论文抓取器"""
+    def __init__(self):
+        super().__init__("arXiv", "http://export.arxiv.org/api/query")
+        self.timeout = 30  # arXiv 可能需要更长时间
+
+    def fetch(self) -> str:
+        """使用 arXiv API 获取最新 AI 论文"""
+        try:
+            query = "search_query=cat:cs.AI+OR+cat:cs.CL&sortBy=submittedDate&sortOrder=descending&max_results=10"
+            url = f"{self.url}?{query}"
+            req = urllib.request.Request(url, headers=self.headers)
+            with urllib.request.urlopen(req, timeout=self.timeout) as response:
+                return response.read().decode('utf-8', errors='ignore')
+        except Exception as e:
+            print(f"[ERROR] {self.name}: {e}", file=sys.stderr)
+            return ""
+
+    def parse(self, html: str) -> List[NewsItem]:
+        items = []
+        try:
+            # 提取论文条目
+            entries = re.findall(r'<entry>(.*?)</entry>', html, re.DOTALL)
+
+            for entry in entries:
+                # 提取标题
+                title_match = re.search(r'<title>([^<]+)</title>', entry)
+                if not title_match:
+                    continue
+                title = title_match.group(1).strip()
+
+                # 提取链接
+                link_match = re.search(r'<id>([^<]+)</id>', entry)
+                url = link_match.group(1).strip() if link_match else ""
+
+                # 提取摘要
+                summary_match = re.search(r'<summary>(.*?)</summary>', entry, re.DOTALL)
+                summary = summary_match.group(1).strip()[:200] if summary_match else ""
+
+                if not title or len(title) < 10:
+                    continue
+
+                items.append(NewsItem(
+                    title=title,
+                    url=url,
+                    source="arXiv",
+                    summary=summary,
+                    category="paper"
+                ))
+        except Exception as e:
+            print(f"[ERROR] {self.name} parse: {e}", file=sys.stderr)
+
+        return items[:5]
+
+
 class HackerNewsFetcher(BaseFetcher):
     """Hacker News 抓取器 - 使用 Algolia API"""
     def __init__(self):
@@ -500,6 +588,8 @@ class NewsAggregator:
             TheVergeFetcher(),
             ArsTechnicaFetcher(),
             HackerNewsFetcher(),
+            GitHubTrendingFetcher(),
+            ArxivFetcher(),
         ]
 
     def fetch_all(self, max_workers: int = 5) -> List[NewsItem]:
@@ -583,6 +673,7 @@ class NewsAggregator:
             "applications": [],
             "opensource": [],
             "global": [],
+            "papers": [],
             "general": []
         }
 
@@ -600,6 +691,8 @@ class NewsAggregator:
                 categories["opensource"].append(item)
             elif cat == "global":
                 categories["global"].append(item)
+            elif cat == "paper":
+                categories["papers"].append(item)
             else:
                 categories["general"].append(item)
 

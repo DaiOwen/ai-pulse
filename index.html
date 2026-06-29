@@ -532,9 +532,9 @@
     <h1 class="hero-title">今日 AI 脉搏</h1>
     <p class="hero-date" id="heroDate">2026年6月29日</p>
     <div class="hero-stats">
-      <div><div class="hero-stat-num" id="statNews">18</div><div class="hero-stat-label">头条新闻</div></div>
+      <div><div class="hero-stat-num" id="statNews">20</div><div class="hero-stat-label">头条新闻</div></div>
       <div class="hero-stat-divider"></div>
-      <div><div class="hero-stat-num" id="statSources">10</div><div class="hero-stat-label">信源覆盖</div></div>
+      <div><div class="hero-stat-num" id="statSources">12</div><div class="hero-stat-label">信源覆盖</div></div>
       <div class="hero-stat-divider"></div>
     </div>
   </section>
@@ -543,13 +543,13 @@
     <span class="fetch-icon">📡</span>
     <div>
       <div class="fetch-title">实时抓取模式</div>
-      <div class="fetch-desc">本版内容来自 10 个信源的实时抓取：量子位、36氪、Solidot、雷锋网、钛媒体、IT之家、TechCrunch、The Verge、Ars Technica、Hacker News</div>
+      <div class="fetch-desc">本版内容来自 12 个信源的实时抓取：量子位、36氪、Solidot、雷锋网、钛媒体、IT之家、TechCrunch、The Verge、Ars Technica、Hacker News、GitHub Trending、arXiv</div>
     </div>
   </div>
 
   <div class="tldr">
     <span class="tldr-label">TL;DR</span>
-    <span class="tldr-text" id="tldrText">GPT-5.6 发布挑战 Fable 5 · 百度开源 OCR 作者疑似前 DeepSeek 研究员 · 福特 AI 失败重聘老工程师 · 苹果 Vision Pro 高管跳槽 OpenAI · 亚洲 AI 反击 Anthropic 禁令</span>
+    <span class="tldr-text" id="tldrText">GPT-5.6 发布挑战 Fable 5 · 百度开源 OCR 作者疑似前 DeepSeek 研究员 · 福特 AI 失败重聘老工程师 · 苹果高管跳槽 OpenAI · 亚洲 AI 反击 Anthropic 禁令 · GitHub 自动驾驶开源热门</span>
   </div>
 
   <!-- 大模型动态 -->
@@ -682,31 +682,83 @@
     </div>
 
     <div class="rank-card">
-      <div class="rank-label" style="color:var(--accent-rose);">🔥 Hacker News 热门</div>
+      <div class="rank-label" style="color:var(--accent-rose);">🔥 GitHub Trending</div>
       <div class="rank-row">
         <span class="rank-num">1</span>
+        <span class="rank-name">commaai/openpilot</span>
+        <span class="rank-stat rank-up">↑ 自动驾驶</span>
+      </div>
+      <div class="rank-row">
+        <span class="rank-num">2</span>
+        <span class="rank-name">xbtlin/ai-berkshire</span>
+        <span class="rank-stat rank-up">↑ AI投资</span>
+      </div>
+      <div class="rank-row">
+        <span class="rank-num">3</span>
+        <span class="rank-name">TauricResearch/TradingAgents</span>
+        <span class="rank-stat rank-neutral">交易Agent</span>
+      </div>
+    </div>
+
+    <div style="margin-top:16px;">
+      <div class="rank-label" style="color:var(--accent-rose);">🔥 Hacker News 热门</div>
+      <div class="rank-row">
+        <span class="rank-num">4</span>
         <span class="rank-name">Signed satellite images for AI agents</span>
         <span class="rank-stat rank-up">↑ AI Agent</span>
       </div>
       <div class="rank-row">
-        <span class="rank-num">2</span>
+        <span class="rank-num">5</span>
         <span class="rank-name">AI and Liability</span>
         <span class="rank-stat rank-up">↑ 安全</span>
       </div>
       <div class="rank-row">
-        <span class="rank-num">3</span>
+        <span class="rank-num">6</span>
         <span class="rank-name">AI-assisted binary patching</span>
         <span class="rank-stat rank-neutral">逆向工程</span>
       </div>
       <div class="rank-row">
-        <span class="rank-num">4</span>
+        <span class="rank-num">7</span>
         <span class="rank-name">AI boom risks global financial crash</span>
         <span class="rank-stat rank-neutral">金融</span>
       </div>
       <div class="rank-row">
-        <span class="rank-num">5</span>
+        <span class="rank-num">8</span>
         <span class="rank-name">Sophon PFG-1: 330GB on-die DRAM ASIC</span>
         <span class="rank-stat rank-neutral">芯片</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 论文速递 -->
+  <section class="section-gap">
+    <div class="section-head">
+      <div class="section-line" style="background:var(--accent-purple);"></div>
+      <span class="section-label" style="color:var(--accent-purple);">PAPER</span>
+      <span class="section-label-cn">论文速递</span>
+    </div>
+
+    <div class="paper-spotlight">
+      <div class="paper-header">
+        <span class="paper-label">📄 今日精选</span>
+      </div>
+      <h3 class="paper-title">Which Nash Equilibrium? Solver-Dependent Selection on Zero-Sum Nash Polytopes</h3>
+      <p class="paper-abstract">Many two-player zero-sum games admit not a unique Nash equilibrium but a convex set of them: a polytope. This paper explores how different solvers select different equilibria from this polytope, revealing solver-dependent biases.</p>
+      <div class="paper-meta">arXiv 2606.28308 · Game Theory · Nash Equilibrium</div>
+      <div class="card-meta" style="margin-top:10px;">
+        <a class="read-original" href="http://arxiv.org/abs/2606.28308v1" target="_blank">查看论文 <span class="read-original-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="paper-spotlight">
+      <div class="paper-header">
+        <span class="paper-label">📄 今日精选</span>
+      </div>
+      <h3 class="paper-title">Parameter Efficient Hybrid Transformer (PEHT) for Network Traffic Prediction via Dynamic Urban Congestion Integration</h3>
+      <p class="paper-abstract">Accurate network traffic prediction is a critical element for efficient resource allocation in dynamic urban environments. This paper proposes PEHT, a parameter-efficient hybrid transformer that integrates dynamic urban congestion data.</p>
+      <div class="paper-meta">arXiv 2606.28274 · Transformer · Traffic Prediction</div>
+      <div class="card-meta" style="margin-top:10px;">
+        <a class="read-original" href="http://arxiv.org/abs/2606.28274v1" target="_blank">查看论文 <span class="read-original-arrow">→</span></a>
       </div>
     </div>
   </section>
