@@ -67,6 +67,10 @@ python3 fetch_news.py > news.json
    - `{{TLDR_CONTENT}}` → TL;DR 摘要
    - `{{NEWS_CONTENT}}` → 新闻内容 HTML
    - `{{ARCHIVE_MAP}}` → 归档映射 JSON
+   - `{{NEWS_COUNT}}` → 头条新闻数量
+   - `{{SOURCE_COUNT}}` → 信源覆盖数量
+   - `{{PROJECT_COUNT}}` → 热门项目数量（开源热度板块项目数，每天必须有）
+   - `{{PAPER_COUNT}}` → 精选论文数量（论文速递板块论文数，每天必须有）
 3. 保持所有样式完整：日历弹窗、收藏功能、返回顶部、亮暗主题等
 
 ### 第4步：写入文件（3 个文件）
@@ -95,7 +99,7 @@ git push origin master
 | 应用落地 | 2条 | 1条 | 2条 |
 | 开源热度 | Top5 | Top5 | Top10 |
 | 海外参考 | 3条 | — | 3条 |
-| 论文速递 | 1篇 | — | — |
+| 论文速递 | 1篇 | 1篇 | 1篇 |
 
 ### 每条新闻格式
 

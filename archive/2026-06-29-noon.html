@@ -6,11 +6,11 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>AI 脉搏 · 热点速览 — 2026年6月29日 午间版</title>
+<title>AI 脉搏 · 热点速览 — 2026年6月29日 午间</title>
 <meta name="description" content="面向中国AI开发工程师的每日AI新闻智能聚合">
 <meta name="theme-color" content="#0a0a0f">
-<meta property="og:title" content="AI 脉搏 · AI 热点速览 — 6月29日 午间版">
-<meta property="og:description" content="回顾版：Anthropic Fable 5解禁 + DeepSeek招聘 + 智元15000台量产 + Google搜索改版">
+<meta property="og:title" content="AI 脉搏 · AI 热点速览 — 06/29 午间">
+<meta property="og:description" content="GPT-5.6发布 + 百度开源OCR + 福特AI失败 + 苹果游说长鑫存储">
 <meta property="og:url" content="https://daiowen.github.io/ai-pulse/">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://daiowen.github.io/ai-pulse/assets/og-image.svg">
@@ -61,6 +61,7 @@
 
   [data-theme="light"] .orb { opacity: 0.08 !important; }
 
+  /* ===== 亮色模式文字颜色修正 ===== */
   [data-theme="light"] .hero-badge-text { color: #6366f1 !important; }
   [data-theme="light"] .tldr-label { color: #4f46e5 !important; }
   [data-theme="light"] .tldr-text { color: #374151 !important; }
@@ -130,6 +131,7 @@
     75% { transform:translate(-50px,30px) scale(0.8); } 100% { transform:translate(15px,-20px) scale(1.1); }
   }
 
+  /* 打印优化样式 */
   @media print {
     .bg-layer, .back-to-top, .nav-right, .hero-badge-dot, .archive-overlay { display: none !important; }
     body { background: #fff !important; color: #000 !important; }
@@ -345,6 +347,7 @@
     .hero-stats { gap:20px; }
   }
 
+  /* ═══════ Calendar modal ═══════ */
   .archive-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); backdrop-filter:blur(4px); z-index:100; align-items:center; justify-content:center; }
   .archive-overlay.open { display:flex; }
   .archive-dialog { background:#16161f; border:0.5px solid rgba(255,255,255,0.1); border-radius:16px; padding:24px; max-width:380px; width:90%; box-shadow:0 20px 60px rgba(0,0,0,0.5); }
@@ -367,6 +370,7 @@
   .cal-edition-dot.evening { background:#6366f1; }
   .cal-close { display:block; width:100%; margin-top:16px; padding:8px; background:rgba(255,255,255,0.06); border:none; border-radius:8px; color:var(--text-tertiary); cursor:pointer; font-size:12px; }
 
+  /* 返回顶部按钮 */
   .back-to-top {
     position: fixed;
     bottom: 24px;
@@ -400,6 +404,7 @@
     box-shadow: 0 4px 16px rgba(99,102,241,0.25);
   }
 
+  /* 收藏按钮 */
   .favorite-btn {
     background: none;
     border: none;
@@ -424,6 +429,7 @@
   .favorite-btn:hover .favorite-icon { transform: scale(1.15); }
   .favorite-btn.active .favorite-icon { transform: scale(1.1); }
 
+  /* 导航收藏计数 */
   .fav-count {
     font-size: 11px;
     background: var(--accent-amber);
@@ -434,6 +440,7 @@
     font-weight: 600;
   }
 
+  /* Toast 提示 */
   .toast {
     position: fixed;
     bottom: 90px;
@@ -457,6 +464,7 @@
     to { opacity: 0; }
   }
 
+  /* 分享按钮 */
   .share-btn {
     background: none;
     border: none;
@@ -475,6 +483,7 @@
     background: rgba(99,102,241,0.1);
   }
 
+  /* 网络受限模式提示 */
   .offline-notice {
     background: rgba(245,158,11,0.08);
     border: 0.5px solid rgba(245,158,11,0.25);
@@ -503,6 +512,7 @@
 
 <div class="content">
 
+  <!-- ═══════════ NAV ═══════════ -->
   <nav class="nav">
     <div class="nav-brand">
       <div class="nav-logo">⚡</div>
@@ -523,228 +533,231 @@
     </div>
   </nav>
 
+  <!-- ═══════════ HERO ═══════════ -->
   <section class="hero">
     <div class="hero-glow"></div>
     <div class="hero-badge">
       <div class="hero-badge-dot"></div>
-      <span class="hero-badge-text" id="heroBadge">午间版 · 12:00 CST</span>
+      <span class="hero-badge-text" id="heroBadge">午间 · 12:00 CST</span>
     </div>
     <h1 class="hero-title">今日 AI 脉搏</h1>
     <p class="hero-date" id="heroDate">2026年6月29日</p>
     <div class="hero-stats">
-      <div><div class="hero-stat-num" id="statNews">12</div><div class="hero-stat-label">头条新闻</div></div>
+      <div><div class="hero-stat-num" id="statNews">8</div><div class="hero-stat-label">头条新闻</div></div>
       <div class="hero-stat-divider"></div>
-      <div><div class="hero-stat-num" id="statSources">6</div><div class="hero-stat-label">信源覆盖</div></div>
+      <div><div class="hero-stat-num" id="statSources">10</div><div class="hero-stat-label">信源覆盖</div></div>
       <div class="hero-stat-divider"></div>
+      <div><div class="hero-stat-num" id="statProjects">5</div><div class="hero-stat-label">热门项目</div></div>
+      <div class="hero-stat-divider"></div>
+      <div><div class="hero-stat-num" id="statPapers">1</div><div class="hero-stat-label">精选论文</div></div>
     </div>
   </section>
 
-  <div class="offline-notice">
-    <span class="offline-icon">📡</span>
-    <div>
-      <div class="offline-title">网络受限模式</div>
-      <div class="offline-desc">当前网络搜索服务不可用，本版展示近期热门内容回顾。完整版将于网络恢复后更新。</div>
-    </div>
-  </div>
-
+  <!-- ═══════════ TL;DR ═══════════ -->
   <div class="tldr">
     <span class="tldr-label">TL;DR</span>
-    <span class="tldr-text" id="tldrText">Anthropic Fable 5 即将解禁 · DeepSeek 大规模扩招 · 智元机器人量产突破 · Google 搜索25年首改版 · Goose 开源替代 Claude Code</span>
+    <span class="tldr-text" id="tldrText">GPT-5.6 突然发布，Fable 5 痛失最强基模王座；百度开源新 OCR 模型可一次处理整本书；苹果游说美国政府请求采购长鑫存储芯片；Rokid 发布 AIOS 智能眼镜进入"原生"时代；开源项目 MiMo-Code（小米AI编码框架）获 11k Star；论文 DanceOPD 提出策略生成场蒸馏方法加速扩散模型推理。</span>
   </div>
 
-  <section class="section-gap">
+  <!-- ═══════════ 大模型动态 ═══════════ -->
+  <div class="section-gap">
     <div class="section-head">
       <div class="section-line" style="background:var(--accent-indigo);"></div>
-      <span class="section-label" style="color:var(--accent-indigo);">MODELS</span>
-      <span class="section-label-cn">大模型动态</span>
+      <span class="section-label" style="color:var(--accent-indigo);">🤖 大模型动态</span>
+      <span class="section-label-cn">MODELS</span>
     </div>
 
     <div class="feature-card">
-      <div class="card-tag" style="color:var(--accent-indigo);">🚨 突发头条</div>
-      <h2 class="card-title">美国即将解禁 Anthropic Fable 5 访问权限</h2>
-      <p class="card-desc">据多方信源确认，美国政府即将解除对 Anthropic Fable 5 模型的访问限制。该模型此前因「能力过于强大」被暂时封锁，解禁后将面向全球开发者开放。业界普遍认为这将对当前 AI 竞争格局产生重大影响。</p>
-      <div class="card-meta">
-        <span>📍 来源：36氪快讯</span>
-        <a class="read-original" href="https://36kr.com" target="_blank">阅读原文 <span class="read-original-arrow">→</span></a>
+      <div class="card-row">
+        <div class="card-icon">🚀</div>
+        <div class="card-body">
+          <div class="card-tag" style="color:var(--accent-indigo);"><span class="news-item-tag tag-model">模型</span></div>
+          <div class="card-title">GPT-5.6 突然发布！Fable 5 痛失最强基模王座</div>
+          <div class="card-desc">OpenAI 毫无预警发布 GPT-5.6，在多项基准测试中超越 Anthropic Fable 5，重新夺回最强基础模型地位。但随后美国政府要求限制 GPT-5.6 部署范围，OpenAI 表示"限制不应成为常态"。</div>
+          <div class="card-meta">
+            <span>来源：量子位</span>
+            <a class="read-original" href="https://www.qbitai.com/2026/06/438895.html" target="_blank">阅读原文 <span class="read-original-arrow">→</span></a>
+          </div>
+          <div class="dev-impact">
+            <span class="dev-impact-icon">⚡</span>
+            <span class="dev-impact-text">开发者影响：GPT-5.6 API 可用性受限，建议关注 OpenAI 官方公告确认访问权限</span>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="sub-grid">
       <div class="sub-card">
-        <span class="sub-tag" style="color:var(--accent-green);"><span class="news-item-tag tag-model">大模型</span>DeepSeek</span>
-        <h3 class="sub-title">DeepSeek 计划将所有部门规模扩大至少一倍</h3>
-        <p class="sub-desc">国产大模型独角兽 DeepSeek 启动大规模招聘计划，所有核心部门将至少翻倍扩招，显示其在 AI 领域持续加码的决心。</p>
+        <div class="sub-tag" style="color:var(--accent-indigo);"><span class="news-item-tag tag-model">模型</span></div>
+        <div class="sub-title">百度开源新 OCR，一次吃下一本书</div>
+        <div class="sub-desc">百度开源全新 OCR 模型，支持整页/整本书级别文档识别，作者疑似前 DeepSeek 研究员。在中文文档理解基准上达到 SOTA。</div>
         <div class="sub-meta">
-          <span>📍 36氪快讯</span>
-          <a class="read-original" href="https://36kr.com" target="_blank">原文 →</a>
+          <span>量子位</span>
+          <a class="read-original" href="https://www.qbitai.com/2026/06/439464.html" target="_blank">原文 →</a>
         </div>
       </div>
       <div class="sub-card">
-        <span class="sub-tag" style="color:var(--accent-cyan);"><span class="news-item-tag tag-model">大模型</span>Google</span>
-        <h3 class="sub-title">Google 搜索框 25 年来首次改版</h3>
-        <p class="sub-desc">Google 宣布搜索框迎来 25 年来首次重大设计更新，AI 原生搜索时代正式开启，搜索体验将发生根本性变化。</p>
+        <div class="sub-tag" style="color:var(--accent-indigo);"><span class="news-item-tag tag-model">模型</span></div>
+        <div class="sub-title">Claude Fable 5 分批重新上线，GPT-5.6 秒跟</div>
+        <div class="sub-desc">Anthropic Fable 5 在短暂下线后分批恢复访问，但 GPT-5.6 随即发布，两者在推理和代码生成上展开新一轮角逐。</div>
         <div class="sub-meta">
-          <span>📍 VentureBeat</span>
-          <a class="read-original" href="https://venturebeat.com" target="_blank">原文 →</a>
+          <span>量子位</span>
+          <a class="read-original" href="https://www.qbitai.com/2026/06/438789.html" target="_blank">原文 →</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="section-gap">
+  <!-- ═══════════ 工具 & 部署 ═══════════ -->
+  <div class="section-gap">
     <div class="section-head">
       <div class="section-line" style="background:var(--accent-green);"></div>
-      <span class="section-label" style="color:var(--accent-green);">TOOLS</span>
-      <span class="section-label-cn">工具 & 部署</span>
-    </div>
-
-    <div class="feature-card">
-      <div class="card-tag" style="color:var(--accent-green);">🔥 开源热门</div>
-      <h2 class="card-title">Goose：Claude Code 免费替代方案</h2>
-      <p class="card-desc">Block 公司开源的 Goose 项目成为 GitHub 热门，定位为 Claude Code 的免费替代方案，采用 Apache 2.0 协议。开发者可节省每月约 $200 的订阅费用，同时获得相近的代码生成体验。</p>
-      <div class="dev-impact">
-        <span class="dev-impact-icon">💡</span>
-        <span class="dev-impact-text">开发者影响：开源替代方案降低 AI 编程工具使用门槛，中小团队可大幅降低运营成本。</span>
-      </div>
-      <div class="card-meta">
-        <span>📍 来源：VentureBeat</span>
-        <a class="read-original" href="https://venturebeat.com" target="_blank">阅读原文 <span class="read-original-arrow">→</span></a>
-      </div>
-    </div>
-
-    <div class="tool-row">
-      <div class="tool-card">
-        <div class="tool-icon">🔀</div>
-        <div class="tool-name">Wayfinder Router</div>
-        <div class="tool-desc">本地与云端 LLM 确定性路由，优化推理成本</div>
-        <span class="tool-badge badge-new">NEW</span>
-      </div>
-      <div class="tool-card">
-        <div class="tool-icon">🤖</div>
-        <div class="tool-name">Claude Cowork</div>
-        <div class="tool-desc">桌面 Agent，无需编程即可操作文件</div>
-        <span class="tool-badge badge-hot">HOT</span>
-      </div>
-      <div class="tool-card">
-        <div class="tool-icon">💾</div>
-        <div class="tool-name">WAL-RUS</div>
-        <div class="tool-desc">PostgreSQL 备份 Rust 重写版，性能大幅提升</div>
-        <span class="tool-badge badge-new">NEW</span>
-      </div>
-      <div class="tool-card">
-        <div class="tool-icon">📊</div>
-        <div class="tool-name">Railway CLI</div>
-        <div class="tool-desc">AI 原生云平台命令行工具</div>
-        <span class="tool-badge badge-update">UPDATE</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-gap">
-    <div class="section-head">
-      <div class="section-line" style="background:var(--accent-amber);"></div>
-      <span class="section-label" style="color:var(--accent-amber);">APPLICATIONS</span>
-      <span class="section-label-cn">应用落地</span>
-    </div>
-
-    <div class="feature-card">
-      <div class="card-tag" style="color:var(--accent-amber);">🏭 产业突破</div>
-      <h2 class="card-title">智元第 15000 台通用具身机器人量产下线</h2>
-      <p class="card-desc">智元机器人宣布第 15000 台通用具身机器人成功量产下线，标志着国产机器人产业迈入规模化量产新阶段。该里程碑式的成就展示了「中国智造」在高端装备制造领域的实力。</p>
-      <div class="card-meta">
-        <span>📍 来源：36氪快讯</span>
-        <a class="read-original" href="https://36kr.com" target="_blank">阅读原文 <span class="read-original-arrow">→</span></a>
-      </div>
+      <span class="section-label" style="color:var(--accent-green);">🛠️ 工具 & 部署</span>
+      <span class="section-label-cn">TOOLS</span>
     </div>
 
     <div class="sub-grid">
       <div class="sub-card">
-        <span class="sub-tag" style="color:var(--accent-rose);"><span class="news-item-tag tag-industry">案例</span>Ford</span>
-        <h3 class="sub-title">Ford 用 AI 替代人工失败案例</h3>
-        <p class="sub-desc">Ford 汽车分享了一个重要教训：过度依赖 AI 替代人工决策导致生产问题，强调 AI 应作为辅助而非替代。</p>
+        <div class="sub-tag" style="color:var(--accent-green);"><span class="news-item-tag tag-tool">工具</span></div>
+        <div class="sub-title">一行命令克隆任意网站的开源项目</div>
+        <div class="sub-desc">前端工程师热议的新开源项目，可通过一行命令完整克隆任意网站的前端代码，引发关于版权和安全的讨论。</div>
         <div class="sub-meta">
-          <span>📍 Hacker News</span>
-          <a class="read-original" href="https://news.ycombinator.com" target="_blank">原文 →</a>
+          <span>量子位</span>
+          <a class="read-original" href="https://www.qbitai.com/2026/06/439515.html" target="_blank">原文 →</a>
         </div>
       </div>
       <div class="sub-card">
-        <span class="sub-tag" style="color:var(--accent-green);"><span class="news-item-tag tag-industry">产业</span>G7易流</span>
-        <h3 class="sub-title">货运行业首款穿戴式 AI 硬件发布</h3>
-        <p class="sub-desc">G7易流发布货运行业首款穿戴式 AI 硬件，推动物流行业智能化升级。</p>
+        <div class="sub-tag" style="color:var(--accent-green);"><span class="news-item-tag tag-tool">工具</span></div>
+        <div class="sub-title">Rokid 发布 AIOS，智能眼镜进入"原生"时代</div>
+        <div class="sub-desc">Rokid 发布 AIOS 操作系统，重构 AR 眼镜交互底层逻辑，让智能眼镜从"手机附属"走向原生 AI 交互。</div>
         <div class="sub-meta">
-          <span>📍 36氪</span>
-          <a class="read-original" href="https://36kr.com" target="_blank">原文 →</a>
+          <span>雷锋网</span>
+          <a class="read-original" href="https://www.leiphone.com/category/weiwu/k5oKITJv8cfsQwm2.html" target="_blank">原文 →</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="section-gap">
+  <!-- ═══════════ 政策 & 合规 ═══════════ -->
+  <div class="section-gap">
     <div class="section-head">
-      <div class="section-line" style="background:#60a5fa;"></div>
-      <span class="section-label" style="color:#60a5fa;">POLICY</span>
-      <span class="section-label-cn">政策 & 合规</span>
+      <div class="section-line" style="background:var(--accent-cyan);"></div>
+      <span class="section-label" style="color:var(--accent-cyan);">📜 政策 & 合规</span>
+      <span class="section-label-cn">POLICY</span>
     </div>
 
-    <div class="policy-grid">
-      <div class="policy-card">
-        <span class="sub-tag" style="color:#60a5fa;"><span class="news-item-tag tag-policy">国际</span>韩国</span>
-        <h3 class="sub-title">韩国宣布「三大工程」计划</h3>
-        <p class="sub-desc">韩国政府宣布重大 AI 投资计划「三大工程」，三星、SK 等巨头发布配套投资方案，加速 AI 产业布局。</p>
+    <div class="sub-grid">
+      <div class="sub-card">
+        <div class="sub-tag" style="color:var(--accent-cyan);"><span class="news-item-tag tag-policy">政策</span></div>
+        <div class="sub-title">苹果游说美国政府，请求采购长鑫存储芯片</div>
+        <div class="sub-desc">扛不住内存涨价压力，苹果正式游说美国政府请求允许采购长鑫存储芯片，若获批将打破当前存储供应链格局。</div>
         <div class="sub-meta">
-          <span>📍 36氪快讯</span>
-          <a class="read-original" href="https://36kr.com" target="_blank">原文 →</a>
+          <span>雷锋网</span>
+          <a class="read-original" href="https://www.leiphone.com/category/zaobao/VHTb7BMH3w4pgCSB.html" target="_blank">原文 →</a>
         </div>
       </div>
-      <div class="policy-card">
-        <span class="sub-tag" style="color:#60a5fa;"><span class="news-item-tag tag-policy">法律</span>NYT</span>
-        <h3 class="sub-title">NYT 指控微软为 OpenAI 构建侵权超算</h3>
-        <p class="sub-desc">纽约时报最新诉讼指控微软为 OpenAI 构建超级计算机时侵犯版权，案件持续发酵。</p>
+      <div class="sub-card">
+        <div class="sub-tag" style="color:var(--accent-cyan);"><span class="news-item-tag tag-policy">政策</span></div>
+        <div class="sub-title">OpenAI 限制 GPT-5.6 部署，称限制不应成常态</div>
+        <div class="sub-desc">应美国政府要求，OpenAI 限制 GPT-5.6 部署范围。CEO 表示"限制不应成为常态"，引发 AI 治理与国家安全平衡的讨论。</div>
         <div class="sub-meta">
-          <span>📍 Ars Technica</span>
-          <a class="read-original" href="https://arstechnica.com" target="_blank">原文 →</a>
+          <span>TechCrunch</span>
+          <a class="read-original" href="https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/" target="_blank">原文 →</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="section-gap">
+  <!-- ═══════════ 应用落地 ═══════════ -->
+  <div class="section-gap">
     <div class="section-head">
-      <div class="section-line" style="background:var(--accent-rose);"></div>
-      <span class="section-label" style="color:var(--accent-rose);">OPEN SOURCE</span>
-      <span class="section-label-cn">开源热度 Top5</span>
+      <div class="section-line" style="background:var(--accent-amber);"></div>
+      <span class="section-label" style="color:var(--accent-amber);">💼 应用落地</span>
+      <span class="section-label-cn">APPLICATIONS</span>
+    </div>
+
+    <div class="sub-grid">
+      <div class="sub-card">
+        <div class="sub-tag" style="color:var(--accent-amber);"><span class="news-item-tag tag-industry">应用</span></div>
+        <div class="sub-title">深度机智两月连获两轮数亿元融资，加速国产物理 AI 基座模型落地</div>
+        <div class="sub-desc">深度机智以全栈自主路线加速国产物理 AI 基座模型落地，两个月内连续完成两轮数亿元融资，投资方看好具身智能赛道。</div>
+        <div class="sub-meta">
+          <span>量子位</span>
+          <a class="read-original" href="https://www.qbitai.com/2026/06/438887.html" target="_blank">原文 →</a>
+        </div>
+      </div>
+      <div class="sub-card">
+        <div class="sub-tag" style="color:var(--accent-amber);"><span class="news-item-tag tag-industry">应用</span></div>
+        <div class="sub-title">华勤技术与正行创新合作，加速机器人"走进工厂"</div>
+        <div class="sub-desc">华勤技术与正行创新达成战略合作，推动机器人从实验室走向工厂产线，加速具身智能在制造业的规模化应用。</div>
+        <div class="sub-meta">
+          <span>量子位</span>
+          <a class="read-original" href="https://www.qbitai.com/2026/06/438741.html" target="_blank">原文 →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ 开源热度 ═══════════ -->
+  <div class="section-gap">
+    <div class="section-head">
+      <div class="section-line" style="background:var(--accent-green);"></div>
+      <span class="section-label" style="color:var(--accent-green);">🔥 开源热度</span>
+      <span class="section-label-cn">OPEN SOURCE</span>
     </div>
 
     <div class="rank-card">
-      <div class="rank-label" style="color:var(--accent-rose);">🔥 GitHub 热门项目</div>
+      <div class="rank-label" style="color:var(--accent-green);">🏆 GitHub Trending · AI Top 5</div>
       <div class="rank-row">
         <span class="rank-num">1</span>
-        <span class="rank-name">Goose (Block)</span>
-        <span class="rank-stat rank-up">↑ Claude Code 替代</span>
+        <span class="rank-name">XiaomiMiMo/MiMo-Code — 小米 AI 编码智能体框架，模型与智能体共同进化</span>
+        <span class="rank-stat rank-up">⭐ 11k</span>
       </div>
       <div class="rank-row">
         <span class="rank-num">2</span>
-        <span class="rank-name">NousCoder-14B</span>
-        <span class="rank-stat rank-up">↑ 14B 代码模型</span>
+        <span class="rank-name">omnigent-ai/omnigent — 统一 AI 智能体框架，协调 Claude/Codex/Cursor/Pi</span>
+        <span class="rank-stat rank-up">⭐ 5.3k</span>
       </div>
       <div class="rank-row">
         <span class="rank-num">3</span>
-        <span class="rank-name">Wayfinder Router</span>
-        <span class="rank-stat rank-neutral">LLM 路由</span>
+        <span class="rank-name">commaai/openpilot — 开源自动驾驶辅助系统</span>
+        <span class="rank-stat rank-neutral">⭐ 52k+</span>
       </div>
       <div class="rank-row">
         <span class="rank-num">4</span>
-        <span class="rank-name">Railway CLI</span>
-        <span class="rank-stat rank-neutral">AI 云平台</span>
+        <span class="rank-name">TauricResearch/TradingAgents — 多智能体金融交易框架</span>
+        <span class="rank-stat rank-neutral">🔥 Trending</span>
       </div>
       <div class="rank-row">
         <span class="rank-num">5</span>
-        <span class="rank-name">WAL-RUS</span>
-        <span class="rank-stat rank-neutral">PostgreSQL 备份</span>
+        <span class="rank-name">xbtlin/ai-berkshire — AI 投资组合管理工具</span>
+        <span class="rank-stat rank-neutral">🔥 Trending</span>
       </div>
     </div>
-  </section>
+  </div>
 
+  <!-- ═══════════ 论文速递 ═══════════ -->
+  <div class="section-gap">
+    <div class="section-head">
+      <div class="section-line" style="background:var(--accent-purple);"></div>
+      <span class="section-label" style="color:var(--accent-purple);">📄 论文速递</span>
+      <span class="section-label-cn">PAPERS</span>
+    </div>
+
+    <div class="paper-spotlight">
+      <div class="paper-header">
+        <span class="paper-label">📑 HuggingFace 今日热榜 #1（72 票）</span>
+      </div>
+      <div class="paper-title">DanceOPD: 策略生成场蒸馏 — 加速扩散模型推理的新范式</div>
+      <div class="paper-abstract">提出将扩散模型蒸馏到更少推理步骤的方法，同时保持策略生成能力（diversity + quality），解决了快速高质量图像生成中的核心权衡。在少步生成场景下显著优于标准蒸馏基线。</div>
+      <div class="paper-meta">arXiv 2606.27377 · 2026-06 · 扩散模型 · 蒸馏 · 推理加速</div>
+      <div style="margin-top:8px;">
+        <a class="read-original" href="https://arxiv.org/abs/2606.27377" target="_blank">阅读论文 <span class="read-original-arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
   <footer class="footer">
     <p class="footer-quote">"The best way to predict the future is to create it."</p>
     <p class="footer-author">— Peter Drucker</p>
@@ -758,8 +771,10 @@
 
 </div>
 
+<!-- ═══════════ BACK TO TOP ═══════════ -->
 <button class="back-to-top" id="backToTop">↑</button>
 
+<!-- ═══════════ CALENDAR OVERLAY ═══════════ -->
 <div class="archive-overlay" id="archiveOverlay">
   <div class="archive-dialog">
     <div class="cal-header">
@@ -776,6 +791,7 @@
 </div>
 
 <script>
+  // ═══════════ THEME TOGGLE ═══════════
   const themeToggle = document.getElementById('themeToggle');
   function setTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
@@ -790,6 +806,7 @@
     if (saved) setTheme(saved);
   })();
 
+  // ═══════════ PARTICLES ═══════════
   (function() {
     const container = document.getElementById('particles');
     for (let i = 0; i < 40; i++) {
@@ -803,6 +820,7 @@
     }
   })();
 
+  // ═══════════ BACK TO TOP ═══════════
   const backToTop = document.getElementById('backToTop');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 400) backToTop.classList.add('visible');
@@ -812,8 +830,10 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  const archiveMap = {"2026-06-14":["morning","noon","evening"],"2026-06-15":["noon","evening"],"2026-06-16":["morning","noon","evening"],"2026-06-17":["morning"],"2026-06-18":["morning","noon"],"2026-06-22":["morning"],"2026-06-23":["morning","noon"],"2026-06-24":["morning","noon","evening"],"2026-06-25":["morning","noon"],"2026-06-26":["morning","evening"],"2026-06-28":["noon","evening"],"2026-06-29":["noon"]};
+  // ═══════════ ARCHIVE MAP ═══════════
+  const archiveMap = {"2026-06-14":["morning","noon","evening"],"2026-06-15":["noon","evening"],"2026-06-16":["morning","noon","evening"],"2026-06-17":["morning"],"2026-06-18":["morning","noon"],"2026-06-19":["evening"],"2026-06-22":["morning"],"2026-06-23":["morning","noon"],"2026-06-24":["morning","noon","evening"],"2026-06-25":["morning","noon"],"2026-06-26":["morning","evening"],"2026-06-28":["noon","evening"],"2026-06-29":["morning","noon","evening"]};
 
+  // ═══════════ CALENDAR ═══════════
   const btnArchive = document.getElementById('btnArchive');
   const archiveOverlay = document.getElementById('archiveOverlay');
   const calClose = document.getElementById('calClose');
@@ -827,29 +847,40 @@
     const year = date.getFullYear();
     const month = date.getMonth();
     calMonthLabel.textContent = `${year}年${month + 1}月`;
+
+    // Clear existing days
     while (calGrid.children.length > 7) calGrid.removeChild(calGrid.lastChild);
+
     const firstDay = new Date(year, month, 1).getDay();
     const daysInMonth = new Date(year, month + 1, 0).getDate();
     const today = new Date();
+
+    // Empty cells
     for (let i = 0; i < firstDay; i++) {
       const cell = document.createElement('div');
       cell.className = 'cal-day';
       calGrid.appendChild(cell);
     }
+
+    // Days
     for (let d = 1; d <= daysInMonth; d++) {
       const cell = document.createElement('div');
       cell.className = 'cal-day';
       cell.textContent = d;
+
       const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+
       if (today.getFullYear() === year && today.getMonth() === month && today.getDate() === d) {
         cell.classList.add('today');
       }
+
       if (archiveMap[dateStr]) {
         cell.classList.add('has-archive');
         const editions = archiveMap[dateStr];
         if (editions.includes('morning') && editions.includes('noon') && editions.includes('evening')) {
           cell.classList.add('full');
         }
+
         const dots = document.createElement('div');
         dots.className = 'cal-day-editions';
         editions.forEach(e => {
@@ -858,11 +889,13 @@
           dots.appendChild(dot);
         });
         cell.appendChild(dots);
+
         cell.addEventListener('click', () => {
           const edition = editions[editions.length - 1];
           window.location.href = `archive/${dateStr}-${edition}.html`;
         });
       }
+
       calGrid.appendChild(cell);
     }
   }
@@ -884,6 +917,7 @@
     renderCalendar(currentDate);
   });
 
+  // ═══════════ FAVORITES ═══════════
   function updateFavCount() {
     const favs = JSON.parse(localStorage.getItem('aiPulseFavorites') || '[]');
     document.getElementById('favCount').textContent = favs.length;
