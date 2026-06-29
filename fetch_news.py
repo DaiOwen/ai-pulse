@@ -377,6 +377,7 @@ class TheVergeFetcher(BaseFetcher):
     """The Verge 抓取器"""
     def __init__(self):
         super().__init__("The Verge", "https://www.theverge.com/ai-artificial-intelligence")
+        self.timeout = 20  # The Verge 需要更长的超时时间
 
     def parse(self, html: str) -> List[NewsItem]:
         items = []
