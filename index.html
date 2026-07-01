@@ -105,9 +105,10 @@
 
   .bg-layer { position: fixed; inset: 0; pointer-events: none; z-index: -1; }
   .orb {
-    position: absolute; border-radius: 50%; filter: blur(140px);
+    position: absolute; border-radius: 50%; filter: blur(120px) saturate(1.2);
     animation-timing-function: ease-in-out; animation-iteration-count: infinite;
     animation-direction: alternate;
+    will-change: transform;
   }
   .orb-1 { width:700px; height:700px; background:radial-gradient(circle, #6366f1 0%, #8b5cf6 40%, transparent 75%); top:-15%; right:-10%; opacity:0.09; animation:float1 20s infinite; }
   .orb-2 { width:550px; height:550px; background:radial-gradient(circle, #ec4899 0%, #8b5cf6 30%, transparent 70%); bottom:-20%; left:-10%; opacity:0.07; animation:float2 25s infinite; }
@@ -197,7 +198,7 @@
   }
   @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
   .hero-badge-text { font-size:12px; color:#a5b4fc; font-weight:500; letter-spacing:0.05em; }
-  .hero-title { font-size:48px; font-weight:300; color:var(--text-primary); letter-spacing:-0.03em; line-height:1.1; margin-bottom:6px; position:relative; z-index:1; }
+  .hero-title { font-size: clamp(32px, 5vw, 48px); font-weight: 400; color:var(--text-primary); letter-spacing:-0.04em; line-height:1.1; margin-bottom:6px; position:relative; z-index:1; }
   .hero-date { font-size:15px; color:var(--text-tertiary); font-weight:400; margin-bottom:28px; position:relative; z-index:1; }
   .hero-stats { display:flex; justify-content:center; gap:40px; position:relative; z-index:1; }
   .hero-stat-num { font-size:24px; font-weight:600; color:var(--text-primary); }
@@ -210,7 +211,7 @@
     border-radius:10px; display:flex; gap:12px; align-items:flex-start;
   }
   .tldr-label { font-size:11px; font-weight:700; color:var(--accent-indigo); letter-spacing:0.08em; flex-shrink:0; margin-top:2px; }
-  .tldr-text { font-size:14px; color:#c9d1d9; line-height:1.6; }
+  .tldr-text { font-size:14px; color:#e5e7eb; line-height:1.6; }
 
   .section-head { display:flex; align-items:center; gap:10px; margin-bottom:20px; }
   .section-line { width:1px; height:18px; border-radius:1px; }
@@ -220,11 +221,13 @@
   .feature-card {
     background:var(--bg-secondary); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
     border:0.5px solid var(--border-card); border-radius:16px; padding:28px; margin-bottom:12px;
-    transition:transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    transition:transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), border-color 0.4s ease, box-shadow 0.4s ease;
+    will-change: transform;
   }
   .feature-card:hover {
-    transform:translateY(-2px); border-color:rgba(255,255,255,0.12);
-    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+    transform:translateY(-4px) scale(1.005);
+    border-color:rgba(99,102,241,0.2);
+    box-shadow:0 12px 40px rgba(99,102,241,0.08), 0 4px 12px rgba(0,0,0,0.2);
   }
   .card-tag { font-size:11px; font-weight:600; letter-spacing:0.07em; margin-bottom:8px; }
   .card-title { font-size:24px; font-weight:500; color:var(--text-primary); letter-spacing:-0.01em; line-height:1.3; margin-bottom:8px; }
@@ -236,8 +239,21 @@
     font-size:11px; font-weight:500; letter-spacing:0.03em;
     color:var(--accent-indigo); text-decoration:none;
     transition:color 0.2s, gap 0.2s; margin-top:auto;
+    position: relative;
+    padding-bottom: 2px;
+  }
+  .read-original::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--accent-indigo);
+    transition: width 0.3s ease;
   }
   .read-original:hover { color:#818cf8; gap:6px; }
+  .read-original:hover::after { width: 100%; }
   .read-original-arrow { display:inline-block; transition:transform 0.2s; font-size:9px; }
   .read-original:hover .read-original-arrow { transform:translateX(2px); }
   .card-row { display:flex; gap:20px; align-items:flex-start; }
@@ -254,8 +270,9 @@
     border-radius:12px; padding:20px;
     transition:transform 0.3s ease, border-color 0.3s ease;
     display:flex; flex-direction:column;
+    contain: layout style paint;
   }
-  .sub-card:hover { transform:translateY(-1px); border-color:rgba(255,255,255,0.1); }
+  .sub-card:hover { transform:translateY(-2px); border-color:rgba(255,255,255,0.1); box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
   .sub-tag { font-size:9px; font-weight:600; letter-spacing:0.05em; margin-bottom:8px; }
   .sub-title { font-size:15px; font-weight:500; color:var(--text-primary); line-height:1.4; margin-bottom:6px; }
   .sub-desc { font-size:12px; color:var(--text-secondary); line-height:1.5; flex:1; margin-bottom:10px; }
@@ -310,7 +327,16 @@
   .rank-up { color:#4ade80; }
   .rank-neutral { color:var(--text-tertiary); }
 
-  .section-gap { margin-bottom:48px; }
+  .section-gap {
+    margin-bottom:48px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .section-gap.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
   .footer { text-align:center; padding:36px 0 0; border-top:0.5px solid var(--border-subtle); }
   .footer-quote { font-size:14px; font-weight:400; color:var(--text-secondary); font-style:italic; letter-spacing:-0.01em; }
@@ -345,6 +371,34 @@
     .card-title { font-size:20px; }
     .nav-right { gap:12px; }
     .hero-stats { gap:20px; }
+    .read-original {
+      padding: 8px 0;
+      min-height: 44px;
+    }
+  }
+
+  /* 触摸设备优化：禁用 hover 效果 */
+  @media (hover: none) {
+    .feature-card:hover {
+      transform: none;
+      box-shadow: none;
+    }
+    .sub-card:hover {
+      transform: none;
+      box-shadow: none;
+    }
+  }
+
+  /* 减少动画偏好 */
+  @media (prefers-reduced-motion: reduce) {
+    .orb, .particle, .grid-overlay {
+      animation: none;
+    }
+    .section-gap {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
   }
 
   /* ═══════ Calendar modal ═══════ */
@@ -427,7 +481,27 @@
   }
   .favorite-btn .favorite-icon { transition: transform 0.2s; }
   .favorite-btn:hover .favorite-icon { transform: scale(1.15); }
-  .favorite-btn.active .favorite-icon { transform: scale(1.1); }
+  /* 阅读进度指示器 */
+  .reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    z-index: 1000;
+    transition: width 0.1s linear;
+  }
+
+  /* 收藏按钮心跳动画 */
+  @keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.2); }
+    50% { transform: scale(0.95); }
+    75% { transform: scale(1.1); }
+  }
+  .favorite-btn.active .favorite-icon {
+    animation: heartbeat 0.8s ease;
+  }
 
   /* 导航收藏计数 */
   .fav-count {
@@ -556,6 +630,9 @@
 </style>
 </head>
 <body>
+
+<!-- 阅读进度指示器 -->
+<div class="reading-progress" id="readingProgress" style="width: 0%;"></div>
 
 <div class="bg-layer">
   <div class="orb orb-1"></div><div class="orb orb-2"></div>
@@ -1053,9 +1130,10 @@
     if (saved) setTheme(saved);
   })();
 
-  // ═══════════ PARTICLES ═══════════
+  // ═══════════ PARTICLES WITH MOUSE INTERACTION ═══════════
   (function() {
     const container = document.getElementById('particles');
+    const particles = [];
     for (let i = 0; i < 40; i++) {
       const p = document.createElement('div');
       p.className = 'particle';
@@ -1064,10 +1142,63 @@
       p.style.animationDuration = (Math.random() * 12 + 8) + 's';
       p.style.animationDelay = Math.random() * 5 + 's';
       container.appendChild(p);
+      particles.push(p);
     }
+
+    // Mouse interaction: particles gently avoid cursor
+    let mouseX = -1000, mouseY = -1000;
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    function updateParticles() {
+      particles.forEach(p => {
+        const rect = p.getBoundingClientRect();
+        const px = rect.left + rect.width / 2;
+        const py = rect.top + rect.height / 2;
+        const dx = px - mouseX;
+        const dy = py - mouseY;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 100) {
+          const force = (100 - dist) / 100 * 2;
+          p.style.transform = `translate(${dx / dist * force}px, ${dy / dist * force}px)`;
+        } else {
+          p.style.transform = 'translate(0, 0)';
+        }
+      });
+      requestAnimationFrame(updateParticles);
+    }
+    updateParticles();
   })();
 
-  // ═══════════ BACK TO TOP ═══════════
+  // ═══════════ READING PROGRESS ═══════════
+  const readingProgress = document.getElementById('readingProgress');
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    readingProgress.style.width = progress + '%';
+  });
+
+  // ═══════════ SCROLL ANIMATION ═══════════
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+  };
+
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.section-gap').forEach(section => {
+    sectionObserver.observe(section);
+  });
   const backToTop = document.getElementById('backToTop');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 400) backToTop.classList.add('visible');
