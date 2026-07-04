@@ -5,8 +5,45 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 01 Jul 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jul 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>🌙 晚报 — 2026-07-04 回顾版（英伟达开源机器人技能库 + DeepSeek V4涨价 + Anthropic开放Fable/Mythos + Venice AI独角兽 + Etched 50亿估值）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-04-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-04-evening.html</guid>
+      <pubDate>Fri, 04 Jul 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>📡 网络受限模式</h3>
+        <p>当前网络不可用，内容精选自近3天归档。</p>
+        <h3>🤖 大模型动态</h3>
+        <ul>
+          <li>英伟达开源机器人技能库，Jim Fan：范式变了（量子位）</li>
+          <li>DeepSeek V4 正式版涨价翻倍（量子位）</li>
+          <li>Anthropic 发布 Claude Sonnet 5，更便宜运行 Agent（TechCrunch）</li>
+          <li>美国解除 Anthropic Fable、Mythos 出口限制（Hacker News）</li>
+          <li>Google 推出 Nano Banana 2 Lite 图像生成器（TechCrunch）</li>
+        </ul>
+        <h3>🛠️ 工具 &amp; 部署</h3>
+        <ul>
+          <li>Agentic OS — AI Agent 的操作系统（Hacker News）</li>
+          <li>OpenClaw 正式上线 Android 和 iOS（TechCrunch）</li>
+          <li>DeepSeek 联手北大开源 DSpark，推理提速 60-85%（雷锋网）</li>
+          <li>OpenSquilla 0.4.0 AI 写作助手首个稳定版（Hacker News）</li>
+        </ul>
+        <h3>📜 政策 &amp; 合规</h3>
+        <ul>
+          <li>Cloudflare 要求 AI 公司付费使用出版商内容（TechCrunch）</li>
+          <li>旧金山监管机构反对 362 页 AI 辅助城市代码重写（Hacker News）</li>
+        </ul>
+        <h3>🌍 海外参考</h3>
+        <ul>
+          <li>Nvidia 竞争对手 Etched 估值达 50 亿美元（TechCrunch）</li>
+          <li>DeepMind 扑克 AI 团队投身量化对冲基金（TechCrunch）</li>
+          <li>Apple 要求用户为 Big Tech 的 AI obsession 付费（The Verge）</li>
+        </ul>
+      ]]></description>
+    </item>
 
     <item>
       <title>🌙 晚报 — 2026-07-01（Claude Mythos融资 · DeepSeek V4涨价 · Anthropic开放Fable/Mythos · Google Nano Banana 2 Lite · Etched 50亿估值）</title>
