@@ -5,8 +5,39 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 05 Jul 2026 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 05 Jul 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>☀️ 午间版 — 2026-07-05（豆包智能体下线 + 可灵AI 30亿融资 + Local MCP本地隐私 + 袁进辉冲港股IPO + AI岗位年轻人受冲击）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-05-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-05-noon.html</guid>
+      <pubDate>Sat, 05 Jul 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3>
+        <ul>
+          <li>豆包智能体功能将于7月15日下线（钛媒体）</li>
+          <li>可灵AI落地近30亿美元融资（钛媒体）</li>
+          <li>Anthropic推出Claude Science进军药物开发（钛媒体）</li>
+        </ul>
+        <h3>🛠️ 工具 &amp; 部署</h3>
+        <ul>
+          <li>Local MCP：让Claude/ChatGPT读取本地iMessage和Teams（Hacker News）</li>
+          <li>Utilix：面向开发者和AI Agent的工具层（Hacker News）</li>
+          <li>智平方完成近50亿元融资（钛媒体）</li>
+        </ul>
+        <h3>📜 政策 &amp; 合规</h3>
+        <ul>
+          <li>AI暴露岗位中年轻工作者受冲击最大（Hacker News）</li>
+          <li>Google独立日广告：AI参与撰写《独立宣言》引争议（TechCrunch）</li>
+        </ul>
+        <h3>💼 应用落地</h3>
+        <ul>
+          <li>袁进辉新公司成立不到三年冲港股IPO（36氪）</li>
+          <li>剑桥副教授创业硅光芯片，获一亿投资（36氪）</li>
+        </ul>
+      ]]></description>
+    </item>
 
     <item>
       <title>🌅 早报 — 2026-07-05（阿里禁用Claude Code + 微软25亿美元AI新公司 + Anthropic进军药物开发 + AReaL 2.0开源 + 天工3.2升级）</title>
