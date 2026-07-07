@@ -5,8 +5,43 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 06 Jul 2026 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 06 Jul 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>☀️ 午间版 — 2026-07-06（xAI更名SpaceXAI + AI勒索仍需人类 + 微软裁员5000人 + Vercel CEO论模型Agent分离 + Fun-ASR-Realtime + OpenSquilla登顶DRACO）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-06-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-06-noon.html</guid>
+      <pubDate>Sun, 06 Jul 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3>
+        <ul>
+          <li>xAI正式更名为SpaceXAI，AI与航天生态深度融合（The Verge）</li>
+          <li>千问发布实时语音识别大模型Fun-ASR-Realtime（36氪）</li>
+          <li>OpenSquilla 0.5.0 Preview登顶DRACO双榜，开源追平闭源（量子位）</li>
+        </ul>
+        <h3>🛠️ 工具 &amp; 部署</h3>
+        <ul>
+          <li>Pi (Rust)：高性能AI编码Agent CLI（Hacker News）</li>
+          <li>Stet：Markdown编辑器每个AI编辑需人工批准（Hacker News）</li>
+        </ul>
+        <h3>📜 政策 &amp; 合规</h3>
+        <ul>
+          <li>微软裁员近5000人：Xbox和商业销售受影响（TechCrunch）</li>
+          <li>Google用用户数据训练AI：如何退出（TechCrunch）</li>
+        </ul>
+        <h3>💼 应用落地</h3>
+        <ul>
+          <li>华源智因获千万种子轮：AI复刻人类细胞预判药效（36氪）</li>
+          <li>联合国舞台上中国公司给AI减负：类脑芯片低功耗推理（量子位）</li>
+        </ul>
+        <h3>🌍 海外参考</h3>
+        <ul>
+          <li>"首个"AI自主勒索攻击仍需人类参与（TechCrunch）</li>
+          <li>Vercel CEO：模型与Agent必须分离（TechCrunch）</li>
+        </ul>
+      ]]></description>
+    </item>
 
     <item>
       <title>🌅 早报 — 2026-07-06（AI比人力更贵 + $6/月无限LLM API + 儿童采用AI速度3倍 + WAIC世界模型激辩 + 贻如科技超亿融资 + ReContext长上下文）</title>
