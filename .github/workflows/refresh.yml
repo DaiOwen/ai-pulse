@@ -1,0 +1,112 @@
+name: Refresh AI Digest
+
+on:
+  schedule:
+    # Morning edition 08:00 CST (00:00 UTC)
+    - cron: '0 0 * * *'
+    # Noon edition 12:00 CST (04:00 UTC)
+    - cron: '0 4 * * *'
+    # Evening edition 20:00 CST (12:00 UTC)
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: 'Edition to generate (morning/noon/evening)'
+        required: true
+        default: 'morning'
+        type: choice
+        options:
+          - morning
+          - noon
+          - evening
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Determine edition and date
+        id: config
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            EDITION="${{ github.event.inputs.edition }}"
+          else
+            HOUR=$(date -u +%H)
+            if [ "$HOUR" = "00" ]; then
+              EDITION="morning"
+            elif [ "$HOUR" = "04" ]; then
+              EDITION="noon"
+            else
+              EDITION="evening"
+            fi
+          fi
+          DATE=$(date +'%Y-%m-%d')
+          echo "edition=$EDITION" >> $GITHUB_OUTPUT
+          echo "date=$DATE" >> $GITHUB_OUTPUT
+          echo "📅 Edition: $EDITION, Date: $DATE"
+
+      - name: Check if already generated
+        id: check
+        run: |
+          ARCHIVE="archive/${{ steps.config.outputs.date }}-${{ steps.config.outputs.edition }}.html"
+          if [ -f "$ARCHIVE" ]; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+            echo "⏭️ Archive $ARCHIVE already exists, skipping generation"
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+            echo "🔄 No archive found for today, generating fresh content..."
+          fi
+
+      - name: Fetch news and generate HTML
+        if: steps.check.outputs.exists == 'false'
+        run: |
+          # Try fetching fresh news first
+          if python3 fetch_news.py > news.json 2>fetch_log.txt; then
+            TOTAL=$(python3 -c "import json; print(json.load(open('news.json')).get('total',0))")
+            echo "📊 Fetched $TOTAL news items"
+
+            if [ "$TOTAL" -ge 5 ]; then
+              echo "✅ Enough news items, generating full page..."
+              python3 generate_html.py "${{ steps.config.outputs.date }}" "${{ steps.config.outputs.edition }}" < news.json
+            else
+              echo "⚠️ Only $TOTAL items, falling back to archive-based generation..."
+              python3 generate_html.py "${{ steps.config.outputs.date }}" "${{ steps.config.outputs.edition }}" --fallback
+            fi
+          else
+            echo "❌ Fetch failed, falling back to archive-based generation..."
+            python3 generate_html.py "${{ steps.config.outputs.date }}" "${{ steps.config.outputs.edition }}" --fallback
+          fi
+
+      - name: Commit and push
+        if: steps.check.outputs.exists == 'false'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html archive/ feed.xml
+          git diff --quiet && git diff --staged --quiet || git commit -m "auto: ${{ steps.config.outputs.edition }} — ${{ steps.config.outputs.date }} (GitHub Actions refresh)"
+          git push
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## AI Digest Refresh" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Date**: ${{ steps.config.outputs.date }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Edition**: ${{ steps.config.outputs.edition }}" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.check.outputs.exists }}" = "true" ]; then
+            echo "- **Status**: ⏭️ Skipped (already exists)" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- **Status**: ✅ Generated" >> $GITHUB_STEP_SUMMARY
+          fi
