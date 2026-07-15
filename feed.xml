@@ -5,10 +5,47 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 15 Jul 2026 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-        <item>
+            <item>
+      <title>🌙 晚间版 — 2026-07-15（又快又聪明，阿里发布Qwen-Audio + Anthropic, Blackston）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-15-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-15-evening.html</guid>
+      <pubDate>Wed, 15 Jul 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>📜 政策 & 合规</h3><ul>
+        <li>OPPO回应完成端侧AI备案：是适配监管要求的一项常规合规动作（36氪）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>NovaForge AI – Free AI, PDF, Image and Developer Tools in One Place（Hacker News）</li>
+        <li>AI's $5.8T Buildout Needs Every Bond Flavor It Can Sell（Hacker News）</li>
+        <li>Tutorial: Algebraic Foundations Powering FlashAttention（Hacker News）</li>
+        <li>GitHub Trending: HKUDS /
+
+      DeepTutor（GitHub Trending）</li>
+        <li>GitHub Trending: Shubhamsaboo /
+
+      awesome-llm-apps（GitHub Trending）</li>
+        <li>GitHub Trending: vllm-project /
+
+      vllm（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Anthropic, Blackstone bet the next trillion-dollar AI business is implementation, not models（TechCrunch）</li>
+        <li>Reelful&#8217;s AI turns your camera roll into short-form videos for social media（TechCrunch）</li>
+        <li>Indian AI coding startup Emergent becomes a unicorn with $130M Series C（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>又快又聪明，阿里发布Qwen-Audio-3.0-Realtime：实时语音大模型四项功能升级（量子位）</li>
+        <li>主论坛丨WAIC 2026主论坛（下午场）重磅揭晓！（量子位）</li>
+        <li>我和「二次元老公」约上会了！全球首个可以玩的实时交互模型，Xmax X2.0发布（量子位）</li>
+        <li>B站AI创造公开赛正式上线投币榜，单月参赛人数突破五千（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌅 早间版 — 2026-07-15（又快又聪明，阿里发布Qwen-Audio + OpenAI researcher Mi）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-07-15-morning.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-15-morning.html</guid>
@@ -406,40 +443,7 @@
       ]]></description>
     </item>
 
-    <item>
-      <title>🌙 晚报 — 2026-07-05（阿谀AI降低亲社会意图 + ComplianceAgent开源合规 + 忆生科技数亿融资 + 清华具身智能创业 + nano-vllm + free-llm-api-resources）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-05-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-05-evening.html</guid>
-      <pubDate>Sat, 05 Jul 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>Science论文：阿谀型AI降低亲社会意图并促进依赖（Hacker News）</li>
-          <li>阿里内部全面禁用Claude Code（36氪/TechCrunch）</li>
-          <li>从LLM到JEPA，中国团队把世界模型搬进细胞内部（量子位）</li>
-          <li>微软砸25亿美元组建6000人AI新公司（36氪）</li>
-          <li>豆包智能体功能将于7月15日下线（钛媒体）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>Local MCP：让Claude/ChatGPT读取本地iMessage和Teams（Hacker News）</li>
-          <li>ComplianceAgent：开源EU AI Act合规扫描器（Hacker News）</li>
-          <li>nano-vllm：轻量级推理引擎（GitHub Trending）</li>
-          <li>AReaL 2.0开源自演进Agent RL框架（量子位）</li>
-        </ul>
-        <h3>📜 政策 &amp; 合规</h3>
-        <ul>
-          <li>ComplianceAgent开源EU AI Act合规扫描器（Hacker News）</li>
-          <li>Midjourney要求好莱坞公开AI使用细节（TechCrunch）</li>
-        </ul>
-        <h3>🌍 海外参考</h3>
-        <ul>
-          <li>Anthropic进军药物开发：Claude Science正式亮相（The Verge）</li>
-          <li>Zuckerberg坦承AI Agent进展不如预期（TechCrunch）</li>
-          <li>AO3同人文社区与AI的检测攻防战（The Verge）</li>
-        </ul>
-      ]]></description>
-    </item>
+    
 
     
 
