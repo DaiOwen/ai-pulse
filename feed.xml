@@ -5,8 +5,60 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 13 Jul 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jul 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>☀️ 午间版 — 2026-07-13（Qwen-Audio-3.0实时语音 + OpenAI首款硬件曝光 + SpaceXAI Grok上传代码 + DeepSeek梁文锋AI首富 + 智谱314亿港元 + Apple iOS 27 Siri AI）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-13-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-13-noon.html</guid>
+      <pubDate>Sun, 13 Jul 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3>
+        <ul>
+          <li>阿里发布Qwen-Audio-3.0-Realtime实时语音大模型（量子位）</li>
+          <li>OpenAI首款硬件曝光：可移动无屏智能音箱（TechCrunch+The Verge）</li>
+          <li>GPT-5.6-sol入榜DRACO，OpenSquilla质量成本双领先（量子位）</li>
+          <li>DeepSeek梁文锋成全球AI公司领域新首富（36氪）</li>
+        </ul>
+        <h3>🛠️ 工具 &amp; 部署</h3>
+        <ul>
+          <li>SpaceXAI Grok编程工具将用户代码库上传云端（The Verge）</li>
+          <li>高德发布ABot-World Studio世界模型工坊（量子位）</li>
+        </ul>
+        <h3>📜 政策 &amp; 合规</h3>
+        <ul>
+          <li>Meta因裁员中使用歧视性AI被起诉（Gizmodo/Hacker News）</li>
+          <li>OpenAI反驳Apple商业秘密诉讼（TechCrunch）</li>
+        </ul>
+        <h3>💼 应用落地</h3>
+        <ul>
+          <li>小米机器人首次实现汽车工厂柔性工件长时作业（36氪）</li>
+          <li>陪伴型人形机器人2030年产值预估11亿美元（36氪）</li>
+        </ul>
+        <h3>🔥 开源热度 Top5</h3>
+        <ul>
+          <li>awesome-llm-apps · ai-hedge-fund · PrimeIntellect-ai/verifiers · pydantic-ai · OGAC</li>
+        </ul>
+        <h3>📄 论文速递</h3>
+        <ul>
+          <li>Do AI Agents Know When a Task Is Simple? 复杂度感知推理（arXiv 2607.13034）</li>
+        </ul>
+        <h3>🌍 海外参考</h3>
+        <ul>
+          <li>Apple开放iOS 27公开测试版，新版Siri AI全面升级（TechCrunch）</li>
+          <li>OpenAI研究员Miles Wang筹备$2B AI药物发现公司（TechCrunch）</li>
+          <li>George Lucas: 拒绝AI就像拒绝汽车（PC Gamer/Hacker News）</li>
+        </ul>
+        <h3>💰 产业动态</h3>
+        <ul>
+          <li>智谱完成配售新H股募资约314亿港元（36氪）</li>
+          <li>爱诗科技完成29.8亿元C轮融资（量子位）</li>
+          <li>逐际动力再融2亿美元提速港股IPO（量子位）</li>
+          <li>上海AI Lab李林阳创业AI芯片设计获数千万元（雷锋网）</li>
+        </ul>
+      ]]></description>
+    </item>
 
     <item>
       <title>🌙 晚间版 — 2026-07-13（OpenAI安全主管跑路 + 字节探索自动驾驶 + 趋境科技半年募资10亿 + Science警告AI缩小科学 + Agent AI监管法案）</title>
