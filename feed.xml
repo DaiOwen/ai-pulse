@@ -5,8 +5,63 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 13 Jul 2026 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jul 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>🌙 晚间版 — 2026-07-13（OpenAI安全主管跑路 + 字节探索自动驾驶 + 趋境科技半年募资10亿 + Science警告AI缩小科学 + Agent AI监管法案）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-13-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-13-evening.html</guid>
+      <pubDate>Sun, 13 Jul 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3>
+        <ul>
+          <li>GPT-5.6刚发布，OpenAI安全主管就跑路了？？（量子位）</li>
+          <li>老黄RTX Spark真机现身Bilibili World！CPU+GPU焊在一起（量子位）</li>
+          <li>字节跳动Seed世界模型团队探索自动驾驶（36氪）</li>
+          <li>WAIC思想者论坛：谁在拆解AI底层的底层？（量子位）</li>
+          <li>西门子将亮相2026世界人工智能大会（量子位）</li>
+        </ul>
+        <h3>🛠️ 工具 &amp; 部署</h3>
+        <ul>
+          <li>OGAC：企业级AI合规治理平台（Hacker News）</li>
+          <li>CNCF发布招商银行AI调度平台案例（量子位）</li>
+          <li>Waze引入Gemini AI语音指令（The Verge）</li>
+          <li>Hugging Face CEO：开源AI比以往任何时候都更重要（TechCrunch）</li>
+        </ul>
+        <h3>📜 政策 &amp; 合规</h3>
+        <ul>
+          <li>参议员Warner首次提出Agent AI监管法案（Tech Policy Press）</li>
+          <li>反对AI数据中心扩张：全球社区抗争刚刚开始（The Verge）</li>
+        </ul>
+        <h3>💼 应用落地</h3>
+        <ul>
+          <li>港中大博士创业消费级四足机器人，天使轮数千万元（36氪）</li>
+          <li>Om AI赵天成：押注物理AI原生的"流式"未来（36氪）</li>
+        </ul>
+        <h3>🔥 开源热度 Top10</h3>
+        <ul>
+          <li>awesome-llm-apps · ai-hedge-fund · pydantic-ai · OGAC · HAMi · Clark · OneDev AI · Scalable Visual Pretraining · VEXAIoT · ai-hedge-fund</li>
+        </ul>
+        <h3>📄 论文速递</h3>
+        <ul>
+          <li>Scalable Visual Pretraining for Language Intelligence（arXiv 2607.09657）</li>
+        </ul>
+        <h3>🌍 海外参考</h3>
+        <ul>
+          <li>SK海力士265亿美元创美股史上最大外国IPO（TechCrunch）</li>
+          <li>Science: AI加速科学但缩小了科学（Science/Hacker News）</li>
+          <li>Lorde批评Ray-Ban Meta AI眼镜"不够性感"（The Verge）</li>
+        </ul>
+        <h3>💰 产业动态</h3>
+        <ul>
+          <li>趋境科技完成A轮融资，半年内募资10亿（量子位）</li>
+          <li>头部人形机器人关节公司半年再获数亿元融资（36氪）</li>
+          <li>AI家庭智能硬件公司获数千万元融资（36氪）</li>
+          <li>芯片商Etched累计融资近60亿（雷锋网）</li>
+        </ul>
+      ]]></description>
+    </item>
 
     <item>
       <title>🌅 早间版 — 2026-07-13（RTX Spark真机 + GPT-5.6解50年数学猜想 + Anthropic回应Claude变笨 + 十万卡集群 + SK海力士265亿美元IPO）</title>
