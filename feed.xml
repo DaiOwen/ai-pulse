@@ -5,10 +5,39 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 13 Jul 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 08:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-    <item>
+        <item>
+      <title>🌅 早间版 — 2026-07-15（又快又聪明，阿里发布Qwen-Audio + OpenAI researcher Mi）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-15-morning.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-15-morning.html</guid>
+      <pubDate>Wed, 15 Jul 2026 08:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🔥 开源热度</h3><ul>
+        <li>Decibri – unified audio layer for AI agents and Voice AI applications（Hacker News）</li>
+        <li>At last, a good reason to buy an AI PC: Reining in runaway token bills（Hacker News）</li>
+        <li>Australia to establish government AI office, curb data centres' water use（Hacker News）</li>
+        <li>GitHub Trending: Shubhamsaboo /
+
+      awesome-llm-apps（GitHub Trending）</li>
+        <li>GitHub Trending: virattt /
+
+      ai-hedge-fund（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>OpenAI researcher Miles Wang in talks to launch AI drug discovery startup valued at $2B（TechCrunch）</li>
+        <li>Lorde says AI glasses are &#8216;not sexy&#8217;（TechCrunch）</li>
+        <li>OpenAI&#8217;s first hardware device is reportedly a screenless speaker that can move（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>又快又聪明，阿里发布Qwen-Audio-3.0-Realtime：实时语音大模型四项功能升级（量子位）</li>
+        <li>B站AI创造公开赛正式上线投币榜，单月参赛人数突破五千（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-07-13（Qwen-Audio-3.0实时语音 + OpenAI首款硬件曝光 + SpaceXAI Grok上传代码 + DeepSeek梁文锋AI首富 + 智谱314亿港元 + Apple iOS 27 Siri AI）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-07-13-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-13-noon.html</guid>
@@ -412,602 +441,37 @@
       ]]></description>
     </item>
 
-    <item>
-      <title>☀️ 午间版 — 2026-07-05（豆包智能体下线 + 可灵AI 30亿融资 + Local MCP本地隐私 + 袁进辉冲港股IPO + AI岗位年轻人受冲击）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-05-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-05-noon.html</guid>
-      <pubDate>Sat, 05 Jul 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>豆包智能体功能将于7月15日下线（钛媒体）</li>
-          <li>可灵AI落地近30亿美元融资（钛媒体）</li>
-          <li>Anthropic推出Claude Science进军药物开发（钛媒体）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>Local MCP：让Claude/ChatGPT读取本地iMessage和Teams（Hacker News）</li>
-          <li>Utilix：面向开发者和AI Agent的工具层（Hacker News）</li>
-          <li>智平方完成近50亿元融资（钛媒体）</li>
-        </ul>
-        <h3>📜 政策 &amp; 合规</h3>
-        <ul>
-          <li>AI暴露岗位中年轻工作者受冲击最大（Hacker News）</li>
-          <li>Google独立日广告：AI参与撰写《独立宣言》引争议（TechCrunch）</li>
-        </ul>
-        <h3>💼 应用落地</h3>
-        <ul>
-          <li>袁进辉新公司成立不到三年冲港股IPO（36氪）</li>
-          <li>剑桥副教授创业硅光芯片，获一亿投资（36氪）</li>
-        </ul>
-      ]]></description>
-    </item>
+    
 
-    <item>
-      <title>🌅 早报 — 2026-07-05（阿里禁用Claude Code + 微软25亿美元AI新公司 + Anthropic进军药物开发 + AReaL 2.0开源 + 天工3.2升级）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-05-morning.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-05-morning.html</guid>
-      <pubDate>Sat, 05 Jul 2026 08:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>阿里内部全面禁用Claude Code（36氪/TechCrunch）</li>
-          <li>微软砸25亿美元组建6000人AI新公司（36氪）</li>
-          <li>从LLM到JEPA，中国团队把世界模型搬进细胞内部（量子位）</li>
-          <li>天工 3.2 升级：Skywork Tags让Agent加入工作群聊（量子位）</li>
-          <li>科大讯飞三大平台同步升级（量子位）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>AReaL 2.0 开源：面向自演进智能体的RL基础设施（量子位）</li>
-          <li>Two-tier-memory：AI编码Agent可查询长期记忆（Hacker News）</li>
-          <li>Sprout：AI CLI一键修复开发工具安装故障（Hacker News）</li>
-          <li>WorldClaw与百度智能云达成战略合作（量子位）</li>
-        </ul>
-        <h3>📜 政策 &amp; 合规</h3>
-        <ul>
-          <li>《人工智能 智能体互联》7项国家标准发布（钛媒体）</li>
-          <li>Midjourney要求好莱坞公开AI使用细节（TechCrunch）</li>
-        </ul>
-        <h3>🌍 海外参考</h3>
-        <ul>
-          <li>Anthropic进军药物开发：Claude Science正式亮相（The Verge）</li>
-          <li>Zuckerberg坦承AI Agent进展不如预期（TechCrunch）</li>
-          <li>AO3同人文社区与AI的检测攻防战（The Verge）</li>
-        </ul>
-      ]]></description>
-    </item>
+    
 
-    <item>
-      <title>🌙 晚报 — 2026-07-04 回顾版（英伟达开源机器人技能库 + DeepSeek V4涨价 + Anthropic开放Fable/Mythos + Venice AI独角兽 + Etched 50亿估值）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-04-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-04-evening.html</guid>
-      <pubDate>Fri, 04 Jul 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>📡 网络受限模式</h3>
-        <p>当前网络不可用，内容精选自近3天归档。</p>
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>英伟达开源机器人技能库，Jim Fan：范式变了（量子位）</li>
-          <li>DeepSeek V4 正式版涨价翻倍（量子位）</li>
-          <li>Anthropic 发布 Claude Sonnet 5，更便宜运行 Agent（TechCrunch）</li>
-          <li>美国解除 Anthropic Fable、Mythos 出口限制（Hacker News）</li>
-          <li>Google 推出 Nano Banana 2 Lite 图像生成器（TechCrunch）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>Agentic OS — AI Agent 的操作系统（Hacker News）</li>
-          <li>OpenClaw 正式上线 Android 和 iOS（TechCrunch）</li>
-          <li>DeepSeek 联手北大开源 DSpark，推理提速 60-85%（雷锋网）</li>
-          <li>OpenSquilla 0.4.0 AI 写作助手首个稳定版（Hacker News）</li>
-        </ul>
-        <h3>📜 政策 &amp; 合规</h3>
-        <ul>
-          <li>Cloudflare 要求 AI 公司付费使用出版商内容（TechCrunch）</li>
-          <li>旧金山监管机构反对 362 页 AI 辅助城市代码重写（Hacker News）</li>
-        </ul>
-        <h3>🌍 海外参考</h3>
-        <ul>
-          <li>Nvidia 竞争对手 Etched 估值达 50 亿美元（TechCrunch）</li>
-          <li>DeepMind 扑克 AI 团队投身量化对冲基金（TechCrunch）</li>
-          <li>Apple 要求用户为 Big Tech 的 AI obsession 付费（The Verge）</li>
-        </ul>
-      ]]></description>
-    </item>
+    
 
-    <item>
-      <title>🌙 晚报 — 2026-07-01（Claude Mythos融资 · DeepSeek V4涨价 · Anthropic开放Fable/Mythos · Google Nano Banana 2 Lite · Etched 50亿估值）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-01-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-01-evening.html</guid>
-      <pubDate>Wed, 01 Jul 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>Claude Mythos 让梁文锋决定融资（量子位）</li>
-          <li>DeepSeek V4 正式版涨价翻倍（量子位）</li>
-          <li>Anthropic 发布 Claude Sonnet 5，更便宜运行 Agent（TechCrunch）</li>
-          <li>美国解除 Anthropic Fable、Mythos 出口限制（Hacker News）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>Google 推出 Nano Banana 2 Lite 图像生成器（TechCrunch）</li>
-          <li>Show HN: Agentic OS — AI Agent 的操作系统（Hacker News）</li>
-          <li>OpenClaw 正式上线 Android 和 iOS（TechCrunch）</li>
-        </ul>
-        <h3>📜 政策 &amp; 合规</h3>
-        <ul>
-          <li>旧金山监管机构反对 362 页 AI 辅助城市代码重写（Hacker News）</li>
-          <li>中国信通院发布 AI Infra 运维首个国家标准（量子位）</li>
-        </ul>
-        <h3>🌍 海外参考</h3>
-        <ul>
-          <li>Nvidia 竞争对手 Etched 估值达 50 亿美元（TechCrunch）</li>
-          <li>DeepMind 扑克 AI 团队投身量化对冲基金（TechCrunch）</li>
-          <li>Google 推出 Nano Banana 2 Lite 图像生成器（TechCrunch）</li>
-        </ul>
-      ]]></description>
-    </item>
+    
 
-    <item>
-      <title>🌙 晚报 — 2026-06-30（GPT-5.6发布 + Gemini图像免费 + Anthropic半价协议 + Arena估值1亿 + DeepSeek开源DSpark）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-30-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-06-30-evening.html</guid>
-      <pubDate>Tue, 30 Jun 2026 18:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>GPT-5.6 突然发布！Fable 5 痛失最强基模王座（量子位）</li>
-          <li>Claude Fable 5 分批重新上线（量子位）</li>
-          <li>百度开源新 OCR，一次吃下一本书（量子位）</li>
-          <li>特朗普政府要求 OpenAI 分阶段发布新模型（TechCrunch）</li>
-          <li>中国 Z.ai 声称网络安全能力可匹敌 Mythos（The Verge）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>DeepSeek 联手北大开源 DSpark，单用户推理提速 60-85%（雷锋网）</li>
-          <li>英伟达 MoE 新开源：一行 import，微调加速 3.7 倍（量子位）</li>
-          <li>Gemini 个性化 AI 图像生成对美国用户免费开放（TechCrunch）</li>
-        </ul>
-        <h3>📜 政策 &amp; 合规</h3>
-        <ul>
-          <li>国常会部署：加力推进人工智能创新突破（钛媒体）</li>
-          <li>《人工智能 智能体互联》7 项国家标准发布（钛媒体）</li>
-        </ul>
-        <h3>🌍 海外参考</h3>
-        <ul>
-          <li>Anthropic 与加州政府达成半价协议（TechCrunch）</li>
-          <li>AI 评测平台 Arena 估值达 1 亿美元（TechCrunch）</li>
-          <li>福特重新聘用资深工程师，AI 未达预期（TechCrunch）</li>
-          <li>TIDAL 切断 AI 音乐变现渠道（TechCrunch）</li>
-        </ul>
-      ]]></description>
-    </item>
+    
 
-    <item>
-      <title>☀️ 午间版 — 2026-06-29（GPT-5.6发布 + 百度开源OCR + 苹果游说长鑫存储 + MiMo-Code 11k⭐）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-29-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-06-29-noon.html</guid>
-      <pubDate>Sun, 29 Jun 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>GPT-5.6 突然发布！Fable 5 痛失最强基模王座（量子位）</li>
-          <li>百度开源新 OCR，作者疑似前 DeepSeek 研究员（量子位）</li>
-          <li>Claude Fable 5 分批重新上线，GPT-5.6 秒跟（量子位）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>一行命令克隆任意网站的开源项目（量子位）</li>
-          <li>Rokid 发布 AIOS，智能眼镜进入"原生"时代（雷锋网）</li>
-        </ul>
-        <h3>📜 政策 &amp; 合规</h3>
-        <ul>
-          <li>苹果游说美国政府，请求采购长鑫存储芯片（雷锋网）</li>
-          <li>OpenAI 限制 GPT-5.6 部署，称限制不应成常态（TechCrunch）</li>
-        </ul>
-        <h3>💼 应用落地</h3>
-        <ul>
-          <li>深度机智两月连获两轮数亿元融资（量子位）</li>
-          <li>华勤技术与正行创新合作，加速机器人走进工厂（量子位）</li>
-        </ul>
-        <h3>🔥 开源热度 Top5</h3>
-        <ul>
-          <li>MiMo-Code ⭐11k · omnigent ⭐5.3k · openpilot ⭐52k+ · TradingAgents · ai-berkshire</li>
-        </ul>
-        <h3>📄 论文速递</h3>
-        <ul>
-          <li>DanceOPD：策略生成场蒸馏，加速扩散模型推理（arXiv 2606.27377）</li>
-        </ul>
-        <p><a href="https://daiowen.github.io/ai-pulse/archive/2026-06-29-noon.html">查看完整页面 →</a></p>
-      ]]></description>
-    </item>
+    
 
-    <item>
-      <title>🌙 晚间版 — 2026-06-29（GPT-5.6发布 + 百度开源OCR + 福特AI失败 + 苹果高管跳槽OpenAI）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-29-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-06-29-evening.html</guid>
-      <pubDate>Mon, 30 Jun 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>GPT-5.6 突然发布！Fable 5 痛失最强基模王座（量子位）</li>
-          <li>百度开源新 OCR，作者疑似前 DeepSeek 研究员（量子位）</li>
-          <li>Claude Fable 5 分批重新上线，GPT-5.6 秒跟（量子位）</li>
-          <li>DeepSeek 大规模招聘，所有部门翻倍扩招（36氪）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>前端工程师最不想看到的开源项目：一行命令克隆任意网站（量子位）</li>
-          <li>英伟达 MoE 新开源：一行 import，微调加速 3.7 倍（量子位）</li>
-        </ul>
-        <h3>💼 应用落地</h3>
-        <ul>
-          <li>让机器人学会「预判接触」：TacForeSight 破解精细操作难题（量子位）</li>
-          <li>华勤技术与正行创新战略合作，加速机器人走进工厂（量子位）</li>
-        </ul>
-        <h3>🔥 开源热度</h3>
-        <ul>
-          <li>GitHub Trending: commaai/openpilot · xbtlin/ai-berkshire · TauricResearch/TradingAgents</li>
-          <li>Hacker News: Signed satellite images for AI agents · AI and Liability · AI-assisted binary patching</li>
-        </ul>
-        <h3>📄 论文速递</h3>
-        <ul>
-          <li>Which Nash Equilibrium? Solver-Dependent Selection on Zero-Sum Nash Polytopes（arXiv 2606.28308）</li>
-          <li>Parameter Efficient Hybrid Transformer (PEHT) for Network Traffic Prediction（arXiv 2606.28274）</li>
-        </ul>
-        <h3>🌍 海外参考</h3>
-        <ul>
-          <li>Ford rehires engineers after AI falls short（TechCrunch）</li>
-          <li>Apple Vision Pro exec leaving for OpenAI（TechCrunch）</li>
-          <li>Asian AI startups launch Mythos-like models（TechCrunch）</li>
-          <li>OpenAI limits GPT-5.6 rollout after government request（TechCrunch）</li>
-        </ul>
-        <h3>💡 产业动态</h3>
-        <ul>
-          <li>港大教授李弘扬创业做通用全身具身大脑，获数亿种子轮融资（36氪）</li>
-          <li>苹果游说美国政府，请求采购长鑫存储芯片（雷锋网）</li>
-        </ul>
-        <p><a href="https://daiowen.github.io/ai-pulse/archive/2026-06-29-evening.html">查看完整页面 →</a></p>
-      ]]></description>
-    </item>
+    
 
-    <item>
-      <title>🌅 早间版 — 2026-06-29（回顾版：Fable 5解禁 + DeepSeek扩招 + 智元量产 + Goose开源）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-29-morning.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-06-29-morning.html</guid>
-      <pubDate>Sun, 29 Jun 2026 08:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>📡 网络受限模式</h3>
-        <p>当前网络搜索服务不可用，本版展示近期热门内容回顾。</p>
-        <h3>🚨 突发头条</h3>
-        <ul>
-          <li>美国即将解禁 Anthropic Fable 5 访问权限（36氪快讯）</li>
-        </ul>
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>DeepSeek 计划将所有部门规模扩大至少一倍（36氪快讯）</li>
-          <li>Google 搜索框 25 年来首次改版（VentureBeat）</li>
-          <li>Railway 获 $100M 融资挑战 AWS（VentureBeat）</li>
-          <li>NousCoder-14B：Claude Code 时代开源代码模型（VentureBeat）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>Goose：Claude Code 免费替代方案，Apache 2.0 开源（VentureBeat）</li>
-          <li>Claude Cowork：桌面 Agent，无需编程（VentureBeat）</li>
-          <li>Salesforce Slackbot AI Agent 职场竞争（VentureBeat）</li>
-        </ul>
-        <h3>📋 政策 &amp; 合规</h3>
-        <ul>
-          <li>韩国宣布「三大工程」AI 投资计划（36氪快讯）</li>
-          <li>美国 AI 监管「内战」：州级立法爆炸式增长（MIT Tech Review）</li>
-        </ul>
-        <h3>💼 应用落地</h3>
-        <ul>
-          <li>智元第 15000 台通用具身机器人量产下线（36氪快讯）</li>
-          <li>Ford 用 AI 替代人工失败案例（Hacker News）</li>
-        </ul>
-        <h3>🔥 开源热度 Top5</h3>
-        <ul>
-          <li>Goose (Block) · NousCoder-14B · Railway CLI · Listen Labs SDK · Slackbot Templates</li>
-        </ul>
-        <h3>🌍 海外参考</h3>
-        <ul>
-          <li>Anthropic 称阿里巴巴攻击 Claude 并窃取能力（Ars Technica）</li>
-          <li>Oracle 裁员 2.1 万转向 AI 投资（Ars Technica）</li>
-          <li>Notion 关闭邮件应用，用户转向 AI Agent（Ars Technica）</li>
-        </ul>
-        <h3>📄 论文速递</h3>
-        <ul>
-          <li>EinsteinArena：AI Agent 自主发现 12 项数学新成果（arXiv 2606.10402）</li>
-        </ul>
-        <p><a href="https://daiowen.github.io/ai-pulse/archive/2026-06-29-morning.html">查看完整页面 →</a></p>
-      ]]></description>
-    </item>
+    
 
-    <item>
-      <title>🌙 晚间版 — 2026-06-29（回顾版：Fable 5解禁 + DeepSeek扩招 + Anthropic阿里争议 + 韩国AI投资）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-29-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-06-29-evening.html</guid>
-      <pubDate>Sun, 29 Jun 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>📡 网络受限模式</h3>
-        <p>当前网络搜索服务不可用，本版展示近期热门内容回顾。</p>
-        <h3>🚨 突发头条</h3>
-        <ul>
-          <li>美国即将解禁 Anthropic Fable 5 访问权限（36氪快讯）</li>
-        </ul>
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>DeepSeek 计划将所有部门规模扩大至少一倍（36氪快讯）</li>
-          <li>Anthropic 称阿里巴巴攻击 Claude 并窃取能力（Ars Technica）</li>
-          <li>OpenAI 限制 GPT-5.6 部署回应政府请求（TechCrunch）</li>
-          <li>亚洲 AI 初创推出 Mythos 类模型反击 Anthropic 禁令（TechCrunch）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>Goose：Claude Code 免费替代方案，Apache 2.0 开源（VentureBeat）</li>
-          <li>Wayfinder Router：本地与云端 LLM 确定性路由（GitHub）</li>
-          <li>Claude Cowork：桌面 Agent，无需编程（VentureBeat）</li>
-          <li>WAL-RUS：PostgreSQL 备份 Rust 重写版（ClickHouse）</li>
-        </ul>
-        <h3>💼 应用落地</h3>
-        <ul>
-          <li>智元第 15000 台通用具身机器人量产下线（36氪快讯）</li>
-          <li>Ford 用 AI 替代人工失败案例（Hacker News）</li>
-          <li>G7易流发布货运行业首款穿戴式 AI 硬件（36氪）</li>
-        </ul>
-        <h3>📋 政策 &amp; 合规</h3>
-        <ul>
-          <li>韩国宣布「三大工程」计划（36氪快讯）</li>
-          <li>NYT 指控微软为 OpenAI 构建侵权超算（Ars Technica）</li>
-        </ul>
-        <h3>🔥 开源热度 Top10</h3>
-        <ul>
-          <li>Goose · NousCoder-14B · Wayfinder Router · Railway CLI · WAL-RUS · bashblog · Listen Labs · Slackbot · Cowork · DiffusionGemma</li>
-        </ul>
-        <h3>🌍 海外参考</h3>
-        <ul>
-          <li>Google 搜索框 25 年来首次改版（VentureBeat）</li>
-          <li>Railway 获 $100M 融资挑战 AWS（VentureBeat）</li>
-          <li>Oracle 裁员 2.1 万转向 AI 投资（Ars Technica）</li>
-          <li>Notion 关闭邮件应用，用户转向 AI Agent（Ars Technica）</li>
-        </ul>
-        <p><a href="https://daiowen.github.io/ai-pulse/archive/2026-06-29-evening.html">查看完整页面 →</a></p>
-      ]]></description>
-    </item>
+    
 
-    <item>
-      <title>☀️ 午间版 — 2026-06-29（回顾版：Fable 5解禁 + DeepSeek招聘 + 智元量产 + Google改版）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-29-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-06-29-noon.html</guid>
-      <pubDate>Sun, 29 Jun 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>📡 网络受限模式</h3>
-        <p>当前网络搜索服务不可用，本版展示近期热门内容回顾。</p>
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>美国即将解禁 Anthropic Fable 5 访问权限（36氪快讯）</li>
-          <li>DeepSeek 计划将所有部门规模扩大至少一倍（36氪快讯）</li>
-          <li>Google 搜索框 25 年来首次改版（VentureBeat）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>Goose：Claude Code 免费替代方案，Apache 2.0 开源（VentureBeat）</li>
-          <li>Wayfinder Router：本地与云端 LLM 确定性路由（GitHub）</li>
-          <li>Claude Cowork：桌面 Agent，无需编程（VentureBeat）</li>
-        </ul>
-        <h3>💼 应用落地</h3>
-        <ul>
-          <li>智元第 15000 台通用具身机器人量产下线（36氪快讯）</li>
-          <li>Ford 用 AI 替代人工失败案例（Hacker News）</li>
-        </ul>
-        <h3>📋 政策 &amp; 合规</h3>
-        <ul>
-          <li>韩国宣布「三大工程」计划（36氪快讯）</li>
-          <li>NYT 指控微软为 OpenAI 构建侵权超算（Ars Technica）</li>
-        </ul>
-        <h3>🔥 开源热度 Top5</h3>
-        <ul>
-          <li>Goose (Block) · NousCoder-14B · Wayfinder Router · Railway CLI · WAL-RUS</li>
-        </ul>
-        <p><a href="https://daiowen.github.io/ai-pulse/archive/2026-06-29-noon.html">查看完整页面 →</a></p>
-      ]]></description>
-    </item>
+    
 
-    <item>
-      <title>🌙 晚间版 — 2026-06-28（Anthropic Fable 5解禁 + DeepSeek招聘 + 智元15000台量产 + 韩国三大工程）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-28-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-06-28-evening.html</guid>
-      <pubDate>Sat, 28 Jun 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🚨 突发头条</h3>
-        <ul>
-          <li>美国即将解禁 Anthropic Fable 5 访问权限（36氪快讯）</li>
-        </ul>
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>DeepSeek 计划将所有部门规模扩大至少一倍（36氪快讯）</li>
-          <li>Anthropic 称阿里巴巴攻击 Claude 并窃取能力（Ars Technica）</li>
-          <li>OpenAI 限制 GPT-5.6 部署回应政府请求（TechCrunch）</li>
-          <li>亚洲 AI 初创推出 Mythos 类模型反击 Anthropic 禁令（TechCrunch）</li>
-          <li>对话张亚勤：AI不是泡沫，但AI公司有泡沫（36氪）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>Wayfinder Router：本地与云端 LLM 确定性路由（GitHub）</li>
-          <li>Notion 关闭邮件应用，用户转向 AI Agent（Ars Technica）</li>
-          <li>Oracle 裁员 2.1 万转向 AI 投资（Ars Technica）</li>
-          <li>WAL-RUS：PostgreSQL 备份 Rust 重写版（ClickHouse）</li>
-          <li>悟空安全上线「弹必赔」0 添加安全软件（36氪快讯）</li>
-        </ul>
-        <h3>💼 应用落地</h3>
-        <ul>
-          <li>智元第 15000 台通用具身机器人量产下线（36氪快讯）</li>
-          <li>Ford 用 AI 替代人工失败案例（Hacker News）</li>
-          <li>G7易流发布货运行业首款穿戴式 AI 硬件（36氪）</li>
-        </ul>
-        <h3>📋 政策 &amp; 合规</h3>
-        <ul>
-          <li>韩国宣布「三大工程」计划，三星 SK 发布投资（36氪快讯）</li>
-          <li>韩国计划培训全体军事人员为「无人机战士」（Ars Technica）</li>
-          <li>NYT 指控微软为 OpenAI 构建侵权超算（Ars Technica）</li>
-        </ul>
-        <h3>🔥 开源热度 Top10</h3>
-        <ul>
-          <li>wayfinder-router · bashblog · WAL-RUS · Goose · NousCoder-14B · Railway CLI · Listen Labs · Slackbot · Cowork · DiffusionGemma</li>
-        </ul>
-        <p><a href="https://daiowen.github.io/ai-pulse/archive/2026-06-28-evening.html">查看完整页面 →</a></p>
-      ]]></description>
-    </item>
+    
 
-    <item>
-      <title>☀️ 午间版 — 2026-06-28（OpenAI GPT-5.6限制 + 亚洲AI反击Anthropic + Ford AI失败教训）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-28-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-06-28-noon.html</guid>
-      <pubDate>Sat, 28 Jun 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>OpenAI 限制 GPT-5.6 部署回应政府请求（TechCrunch）</li>
-          <li>亚洲 AI 初创推出 Mythos 类模型反击 Anthropic 出口禁令（TechCrunch）</li>
-          <li>Apple Vision Pro 高管跳槽 OpenAI（TechCrunch）</li>
-          <li>OpenAI 挖角 Uber 印度区负责人（TechCrunch）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>Wayfinder Router：本地与云端 LLM 确定性路由（GitHub）</li>
-          <li>Notion 关闭邮件应用，用户转向 AI Agent（Ars Technica）</li>
-          <li>Oracle 裁员 2.1 万转向 AI 投资（Ars Technica）</li>
-        </ul>
-        <h3>💼 应用落地</h3>
-        <ul>
-          <li>Ford 用 AI 替代人工失败案例（Hacker News）</li>
-          <li>印度支付行业：AI 驱动下一阶段增长（TechCrunch）</li>
-        </ul>
-        <h3>🔥 开源热度 Top5</h3>
-        <ul>
-          <li>wayfinder-router · bashblog · WAL-RUS · Goose · NousCoder-14B</li>
-        </ul>
-        <p><a href="https://daiowen.github.io/ai-pulse/archive/2026-06-28-noon.html">查看完整页面 →</a></p>
-      ]]></description>
-    </item>
+    
 
-    <item>
-      <title>🌙 晚间版 — 2026-06-26（Anthropic Mythos危机 + Google搜索改版 + Railway $100M + Goose）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-26-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-06-26-evening.html</guid>
-      <pubDate>Thu, 26 Jun 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🚨 突发头条</h3>
-        <ul>
-          <li>Anthropic Mythos 事件升级：Trump 政府 ultimatum 后两周谈判僵局无解（The Verge）</li>
-        </ul>
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>Google 搜索框 25 年首次改版：AI 原生搜索时代开启（VentureBeat）</li>
-          <li>Railway 获 $100M 融资：挑战 AWS 的 AI 原生云基础设施（VentureBeat）</li>
-          <li>NousCoder-14B：Claude Code 时代开源代码模型（VentureBeat）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>Goose：Claude Code 免费替代，Apache 2.0 开源</li>
-          <li>Anthropic Cowork：桌面 Agent，无需编程</li>
-          <li>Salesforce Slackbot AI：职场 Agent 竞争</li>
-        </ul>
-        <h3>⭐ 开源热度</h3>
-        <ul>
-          <li>Goose (Block) · NousCoder-14B · Railway CLI · Listen Labs SDK</li>
-        </ul>
-        <p><a href="https://daiowen.github.io/ai-pulse/archive/2026-06-26-evening.html">查看完整页面 →</a></p>
-      ]]></description>
-    </item>
+    
 
-    <item>
-      <title>🌅 早间版 — 2026-06-26（Google搜索改版 + Railway $100M + Goose免费 + NousCoder-14B）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-26-morning.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-06-26-morning.html</guid>
-      <pubDate>Thu, 26 Jun 2026 08:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>Google 搜索框 25 年首次改版：AI 原生搜索时代正式开启（VentureBeat）</li>
-          <li>Railway 获 $100M 融资：挑战 AWS 的 AI 原生云基础设施（VentureBeat）</li>
-          <li>NousCoder-14B：Claude Code 时代的开源代码模型（VentureBeat）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>Goose：Claude Code 免费替代方案，Apache 2.0 开源</li>
-          <li>Anthropic Cowork：桌面 Agent，无需编程</li>
-          <li>Salesforce Slackbot AI：职场 Agent 竞争</li>
-        </ul>
-        <h3>⭐ 开源热度</h3>
-        <ul>
-          <li>Goose (Block) · NousCoder-14B · Railway CLI · Listen Labs SDK</li>
-        </ul>
-        <p><a href="https://daiowen.github.io/ai-pulse/archive/2026-06-26-morning.html">查看完整页面 →</a></p>
-      ]]></description>
-    </item>
+    
 
-    <item>
-      <title>☀️ 午间版 — 2026-06-25（NousCoder-14B开源 + Railway融资 + Goose热门）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-25-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-06-25-noon.html</guid>
-      <pubDate>Wed, 25 Jun 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>NousCoder-14B：Claude Code 时代的开源代码模型（VentureBeat）</li>
-          <li>Railway 获 $100M：AI 原生云挑战 AWS（VentureBeat）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>Goose：Claude Code 免费替代，Apache 2.0 开源</li>
-          <li>NousCoder-14B：14B 开源代码模型</li>
-          <li>Claude Cowork：桌面 Agent，无需编程</li>
-          <li>Railway：AI 原生云平台</li>
-        </ul>
-        <h3>⭐ 开源热度 Top5</h3>
-        <ul>
-          <li>Goose (Block) · NousCoder-14B · Railway CLI · Listen Labs SDK · Slackbot Templates</li>
-        </ul>
-        <p><a href="https://daiowen.github.io/ai-pulse/archive/2026-06-25-noon.html">查看完整页面 →</a></p>
-      ]]></description>
-    </item>
+    
 
-    <item>
-      <title>🌅 早间版 — 2026-06-25（Google搜索改版 + Railway $100M + Goose免费 + Cowork + Slackbot AI）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-06-25-morning.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-06-25-morning.html</guid>
-      <pubDate>Wed, 25 Jun 2026 08:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>Google 搜索框 25 年来首次改版：AI 原生搜索时代正式开启（VentureBeat）</li>
-          <li>Railway 获 $100M 融资：挑战 AWS 的 AI 原生云基础设施（VentureBeat）</li>
-          <li>Anthropic Cowork 发布：Claude Desktop Agent，无需编程即可操作文件（VentureBeat）</li>
-          <li>Salesforce Slackbot AI Agent：与微软谷歌竞争职场 AI（VentureBeat）</li>
-          <li>Listen Labs 获 $69M：AI 自动化用户访谈（VentureBeat）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>Goose：Claude Code 的免费开源替代方案，月省 $200（VentureBeat）</li>
-          <li>NousCoder-14B：开源代码模型，定位 Claude Code 时代（VentureBeat）</li>
-          <li>Google Search AI：搜索框 25 年来首次改版（VentureBeat）</li>
-          <li>Claude Cowork：面向非技术用户的桌面 Agent（VentureBeat）</li>
-        </ul>
-        <h3>⭐ 开源热度 Top5</h3>
-        <ul>
-          <li>Goose (Block) · NousCoder-14B · Railway CLI · Listen Labs SDK · Slackbot Templates</li>
-        </ul>
-        <h3>🌍 海外参考</h3>
-        <ul>
-          <li>Google 搜索框改版：25 年来首次重大设计更新</li>
-          <li>Anthropic Cowork：桌面 Agent 让非技术用户也能用 AI</li>
-          <li>Goose 开源：Block 公司免费替代 Claude Code</li>
-        </ul>
-        <p><a href="https://daiowen.github.io/ai-pulse/archive/2026-06-25-morning.html">查看完整页面 →</a></p>
-      ]]></description>
-    </item>
+    
 
   </channel>
 </rss>
