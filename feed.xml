@@ -5,10 +5,44 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 15 Jul 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-            <item>
+                <item>
+      <title>🌙 晚间版 — 2026-07-16（又快又聪明，阿里发布Qwen-Audio + Microsoft is reporte）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-16-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-16-evening.html</guid>
+      <pubDate>Thu, 16 Jul 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🔥 开源热度</h3><ul>
+        <li>Linux kernel won't be anti-AI – Linus Torvalds（Hacker News）</li>
+        <li>GitHub Copilot: your AI pair programmer (2021)（Hacker News）</li>
+        <li>Can AI build a jet engine? JARVIS Challenge tests AI copilots（Hacker News）</li>
+        <li>GitHub Trending: HKUDS /
+
+      DeepTutor（GitHub Trending）</li>
+        <li>GitHub Trending: Shubhamsaboo /
+
+      awesome-llm-apps（GitHub Trending）</li>
+        <li>GitHub Trending: vllm-project /
+
+      vllm（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Microsoft is reportedly training salespeople to talk down OpenAI and Anthropic（TechCrunch）</li>
+        <li>Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex（TechCrunch）</li>
+        <li>Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>又快又聪明，阿里发布Qwen-Audio-3.0-Realtime：实时语音大模型四项功能升级（量子位）</li>
+        <li>8点1氪丨国行苹果AI功能完成备案；三家共享单车上调起步价；知情人曝DeepSeek开始筹备IPO（36氪）</li>
+        <li>主论坛丨WAIC 2026主论坛（下午场）重磅揭晓！（量子位）</li>
+        <li>我和「二次元老公」约上会了！全球首个可以玩的实时交互模型，Xmax X2.0发布（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-07-15（又快又聪明，阿里发布Qwen-Audio + Anthropic, Blackston）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-07-15-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-15-evening.html</guid>
@@ -410,38 +444,7 @@
       ]]></description>
     </item>
 
-    <item>
-      <title>🌅 早报 — 2026-07-06（AI比人力更贵 + $6/月无限LLM API + 儿童采用AI速度3倍 + WAIC世界模型激辩 + 贻如科技超亿融资 + ReContext长上下文）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-06-morning.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-06-morning.html</guid>
-      <pubDate>Sun, 06 Jul 2026 08:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>Forbes调查：AI比被替代的人力更贵（Hacker News）</li>
-          <li>WAIC 2026世界模型激辩：答案不在VLA或世界模型（量子位）</li>
-          <li>阿里内部全面禁用Claude Code（36氪/TechCrunch）</li>
-          <li>微软砸25亿美元组建6000人AI新公司（36氪）</li>
-          <li>儿童采用AI速度是成人3倍（Hacker News）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>Show HN: $6/月无限量LLM API（Hacker News）</li>
-          <li>free-llm-api-resources免费API汇总（GitHub Trending）</li>
-          <li>nano-vllm轻量级推理引擎（GitHub Trending）</li>
-        </ul>
-        <h3>📜 政策 &amp; 合规</h3>
-        <ul>
-          <li>《人工智能 智能体互联》7项国标发布（钛媒体）</li>
-          <li>儿童采用AI速度3倍于成人：监管空白亟需填补（Hacker News）</li>
-        </ul>
-        <h3>🌍 海外参考</h3>
-        <ul>
-          <li>Midjourney从AI slop到医学研究（Hacker News）</li>
-          <li>Mistral AI全景：OpenAI竞争者（TechCrunch）</li>
-        </ul>
-      ]]></description>
-    </item>
+    
 
     
 
