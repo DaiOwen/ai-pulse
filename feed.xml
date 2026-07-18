@@ -5,10 +5,52 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 17 Jul 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                    <item>
+                        <item>
+      <title>🌙 晚间版 — 2026-07-18（WAIC直击 | 十大开源社区「挤」进了 + How Apple&#8217;s bi）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-18-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-18-evening.html</guid>
+      <pubDate>Sat, 18 Jul 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🔥 开源热度</h3><ul>
+        <li>StartupForge AI – Turn Any Business Idea into a Startup Blueprint（Hacker News）</li>
+        <li>Why Teens Deserve Access to Safe AI（Hacker News）</li>
+        <li>AI hasn't shifted the bottleneck from coding to code review（Hacker News）</li>
+        <li>Face Value: How AI is reshaping trust, identity, and scams（Hacker News）</li>
+        <li>Overtraining as the path to human-like AI（Hacker News）</li>
+        <li>GitHub Trending: RyanCodrai /
+
+      turbovec（GitHub Trending）</li>
+        <li>GitHub Trending: HKUDS /
+
+      DeepTutor（GitHub Trending）</li>
+        <li>GitHub Trending: aws /
+
+      agent-toolkit-for-aws（GitHub Trending）</li>
+        <li>GitHub Trending: rohitg00 /
+
+      ai-engineering-from-scratch（GitHub Trending）</li>
+        <li>GitHub Trending: open-telemetry /
+
+      semantic-conventions-genai（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>How Apple&#8217;s big lawsuit could disrupt OpenAI&#8217;s IPO plans（TechCrunch）</li>
+        <li>Vertu wants executives to pay $6,880 for an AI agent — here&#8217;s how it actually performs（TechCrunch）</li>
+        <li>Databricks hits $188B valuation, extending its run as AI&#8217;s favorite second act（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>WAIC直击 | 十大开源社区「挤」进了一家GPU展台，沐曦凭什么？（量子位）</li>
+        <li>36氪首发 | 港科大博士创业做机器人全身触觉系统，红杉、瓴智、智元共同押注（36氪）</li>
+        <li>震业新材完成超亿元A轮融资，招商致远、玉柴股份、海富产业基金领投｜36氪首发（36氪）</li>
+        <li>医疗AI独角兽OpenEvidence再传融资意向，潜在估值升至200亿美元（36氪）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-07-17（36氪首发 | 港科大博士创业做机器人全 + Google Vids now lets）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-07-17-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-17-evening.html</guid>
@@ -391,55 +433,7 @@
       ]]></description>
     </item>
 
-    <item>
-      <title>🌅 早间版 — 2026-07-10（GPT-5.6发布 + OpenAI高管离职潮 + 蚂蚁灵波开源双响 + 具身智能融资破900亿 + 马斯克称赞Anthropic）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-10-morning.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-10-morning.html</guid>
-      <pubDate>Thu, 10 Jul 2026 08:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>OpenAI 发布 GPT-5.6 模型家族：Sol/Terra/Luna 三档齐发，编码效率提升54%（TechCrunch）</li>
-          <li>OpenAI 发布 GPT-Live 全双工语音系统（量子位）</li>
-          <li>蚂蚁灵波开源 LingBot-Video：全球首个具身视频基模（量子位）</li>
-          <li>蚂蚁灵波开源 LingBot-World 2.0：小时级实时世界模型（量子位）</li>
-          <li>马斯克公开称赞 Anthropic "当前AI领导者"，承诺不切断算力（TechCrunch）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>OpenAI 关停 Atlas 浏览器，转向 Chrome 扩展+桌面应用（TechCrunch）</li>
-          <li>移远通信发布 Hawk AR 眼镜 + Dolphin XR 算力单元（雷锋网）</li>
-          <li>Patreon 联手 Cloudflare 网络层屏蔽 AI 训练爬虫（404 Media）</li>
-          <li>Google 自动为 AI 生成广告添加"由 AI 创建"标签（The Verge）</li>
-        </ul>
-        <h3>📜 政策 &amp; 合规</h3>
-        <ul>
-          <li>《人工智能 智能体互联》7项国家标准正式发布（钛媒体）</li>
-          <li>联合国 ADS GTR 自动驾驶全球法规正式落地（36氪）</li>
-        </ul>
-        <h3>🔥 开源热度 Top5</h3>
-        <ul>
-          <li>crawl4ai ⭐72K · pocket-tts ⭐7.1K · LingBot-Video NEW · LingBot-World 2.0 NEW · UST×Claude NEW</li>
-        </ul>
-        <h3>📄 论文速递</h3>
-        <ul>
-          <li>Institutional Red-Teaming：部署规则因果影响多智能体AI安全（arXiv 2607.07695）</li>
-        </ul>
-        <h3>🌍 海外参考</h3>
-        <ul>
-          <li>OpenAI 高管离职潮：Fidji Simo 辞职+首席未来学家离职（TechCrunch+量子位）</li>
-          <li>AI 智能体初创 Lyzr 让自家 Agent 主导 $100M 融资（TechCrunch）</li>
-          <li>AI 能否回答 3 万亿美元生产力问题？（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3>
-        <ul>
-          <li>具身智能融资半年破 900 亿，投资逻辑从"后空翻"转向"搬砖头"（36氪）</li>
-          <li>昇视唯盛完成数亿元 B 轮：智能焊工切入工业具身智能（36氪）</li>
-          <li>深度智控获晶科/国投/红杉等数亿融资（36氪）</li>
-          <li>快造科技估值翻数倍至 70 亿元（雷锋网）</li>
-        </ul>
-      ]]></description>
-    </item>
+    
 
     
 
