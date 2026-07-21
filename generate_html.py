@@ -142,6 +142,48 @@ def map_category(raw_cat):
         return "industry"
 
 
+def reclassify_by_keywords(item):
+    """Reclassify items based on title keywords when category is 'general'/'industry'.
+    This is needed because fetch_news.py often dumps tool/policy/model news into 'general'.
+    """
+    title = item.get("title", "").lower()
+    raw_cat = (item.get("category", "") or "general").lower()
+
+    # Only reclassify items in general/industry categories
+    if raw_cat not in ("general", "industry"):
+        return None
+
+    # Model keywords
+    model_kw = ["模型", "llm", "gpt", "claude", "gemini", "qwen", "deepseek", "开源",
+                "发布", "升级", "发布", "模型", "voice", "audio", "realtime", "推理",
+                "world model", "世界模型", "大模型"]
+    if any(kw in title for kw in model_kw):
+        return "models"
+
+    # Tool keywords
+    tool_kw = ["工具", "部署", "平台", "框架", "api", "sdk", "cli", "插件",
+                "studio", "工坊", "调度", "引擎", "github", "show hn", "开源",
+                "硬件", "设备", "音箱", "智能体", "assistant", "copilot",
+                "上传", "代码库", "grok", "waze", "导航", "hugging face"]
+    if any(kw in title for kw in tool_kw):
+        return "tools"
+
+    # Policy keywords
+    policy_kw = ["监管", "法案", "合规", "政策", "诉讼", "起诉", "法规", "标准",
+                 "sued", "lawsuit", "regulation", "regulate", "bill", "policy",
+                 "trade secret", "discriminatory", "歧视", "隐私", "数据安全"]
+    if any(kw in title for kw in policy_kw):
+        return "policy"
+
+    # Application keywords
+    app_kw = ["机器人", "自动驾驶", "工厂", "医疗", "药物", "芯片设计",
+              "robot", "autonomous", "drug", "芯片", "四足"]
+    if any(kw in title for kw in app_kw):
+        return "applications"
+
+    return None
+
+
 def categorize_news(news_data):
     """Organize news into sections, score and sort"""
     sections = {}
@@ -154,19 +196,43 @@ def categorize_news(news_data):
         mapped = map_category(cat_key)
         for item in items:
             item["_score"] = calculate_score(item)
+            # For general/industry items, try keyword reclassification first
+            if mapped == "industry" and cat_key in ("general", "industry"):
+                reclassified = reclassify_by_keywords(item)
+                if reclassified:
+                    item["_mapped_cat"] = reclassified
+                    sections[reclassified].append(item)
+                    continue
             item["_mapped_cat"] = mapped
             sections[mapped].append(item)
-
-    # Also handle "general" category → industry
-    for item in cats.get("general", []):
-        item["_score"] = calculate_score(item)
-        item["_mapped_cat"] = "industry"
-        sections["industry"].append(item)
 
     # Deduplicate and sort each section
     for key in sections:
         sections[key] = deduplicate(sections[key])
         sections[key].sort(key=lambda x: x.get("_score", 0), reverse=True)
+
+    # Rebalance: if a section is empty but the config requires it,
+    # pull items from industry (which tends to be over-stuffed)
+    # This ensures all expected sections have content
+    for target_key in ("tools", "policy", "applications", "papers"):
+        if not sections.get(target_key):
+            # Try to move items from industry that match the target
+            industry_items = sections.get("industry", [])
+            moved = []
+            remaining = []
+            for item in industry_items:
+                if len(sections[target_key]) >= 3:
+                    remaining.append(item)
+                    continue
+                reclassified = reclassify_by_keywords(item)
+                if reclassified == target_key:
+                    item["_mapped_cat"] = target_key
+                    sections[target_key].append(item)
+                    moved.append(item)
+                else:
+                    remaining.append(item)
+            if moved:
+                sections["industry"] = remaining
 
     return sections
 
