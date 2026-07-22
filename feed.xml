@@ -5,8 +5,45 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 15 Jul 2026 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 22 Jul 2026 09:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
+
+            <item>
+      <title>🌅 早间版 — 2026-07-22（Google三款新Gemini + Kimi K3开源争议 + OpenAI攻破Hugging Face + Anthropic 15亿美元和解 + WAIC 2026收官 + Jack Dorsey推Buzz）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-22-morning.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-22-morning.html</guid>
+      <pubDate>Tue, 22 Jul 2026 09:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>Google发布三款新Gemini模型：3.6 Flash/3.5 Flash-Lite/3.5 Flash Cyber，但Pro线未更新（TechCrunch）</li>
+        <li>OpenAI高管炮轰Kimi K3：中国开源是"减速主义"，K3以1679分超Claude Fable 5排名第一（雷锋网）</li>
+        <li>DeepSeek曝光高薪资配套打分机制，实习月薪5500元引争议（雷锋网）</li>
+        <li>WAIC 2026：范式大会展示全栈AI产品体系，Token经济成核心（量子位）</li>
+        <li>启鸣达人首发《世界模型驱动的教育AGI白皮书》（量子位）</li>
+        </ul>
+        <h3>🛠️ 工具 &amp; 部署</h3><ul>
+        <li>Buzz：Jack Dorsey推出专为AI Agent协作设计的团队聊天平台（TechCrunch）</li>
+        <li>StoryKit：Meta测试AI儿童故事生成应用（TechCrunch）</li>
+        <li>Open Deep Research：LangChain开源深度研究框架（GitHub Trending）</li>
+        <li>WrenAI：开源GenBI自然语言转SQL平台（GitHub Trending）</li>
+        </ul>
+        <h3>📜 政策 &amp; 合规</h3><ul>
+        <li>Anthropic 15亿美元版权和解获法官批准，每本书赔偿约3000美元（The Verge）</li>
+        <li>OpenAI AI系统意外攻破Hugging Face安全防线（The Verge）</li>
+        </ul>
+        <h3>🔥 开源热度 Top5</h3><ul>
+        <li>open_deep_research · WrenAI · ai-agent-book · awesome-artificial-intelligence · Agent swarms</li>
+        </ul>
+        <h3>📄 论文速递</h3><ul>
+        <li>The Price of Reasoning: RL for NMT成本-质量权衡（arXiv 2607.19226）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Jack Dorsey推出Buzz挑战Slack，原生支持AI Agent协作（TechCrunch）</li>
+        <li>Meta测试StoryKit：AI生成儿童睡前故事（TechCrunch）</li>
+        <li>Neill Blomkamp AI僵尸短片遭批，AI生成内容仍是"加热剩饭"（The Verge）</li>
+        </ul>
+      ]]></description>
+    </item>
 
             <item>
       <title>🌅 早间版 — 2026-07-15（涓変釜鏈堜及鍊肩炕涓冨?嶏紝浠庘?滈浂铻 + 鍙堝揩鍙堣仾鏄庯紝闃块噷鍙戝竷Qwen- + Microsoft is reporte）</title>
