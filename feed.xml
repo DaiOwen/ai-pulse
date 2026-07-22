@@ -5,10 +5,54 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 22 Jul 2026 09:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-            <item>
+                <item>
+      <title>🌙 晚间版 — 2026-07-22（WAIC重磅成果｜上海仪电智算牵头成立“ + WAIC重磅成果｜仪电智算云在国家人工智 + The Anthropic-Physic）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-22-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-22-evening.html</guid>
+      <pubDate>Wed, 22 Jul 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>WAIC重磅成果｜上海仪电智算牵头成立“智算系统架构联盟”并发布《超节点系统架构规范》（量子位）</li>
+        <li>WAIC重磅成果｜智爱赛思全面升级并发布科研专属Token Plan（量子位）</li>
+        <li>OpenAI 高管不满中国的开源 AI 战略（Solidot）</li>
+        <li>苹果 Apple 智能在列，网信部门发布 7 款提供手机端侧生成式人工智能服务已备案信息（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Air Force conducts live-fire test for Collaborative Combat Aircraft program（Hacker News）</li>
+        <li>Ask HN: Why AI labs publish different benchmarks?（Hacker News）</li>
+        <li>The AI Bubble Is No Ordinary Bubble（Hacker News）</li>
+        <li>A live graph of AI memory anyone can add to（Hacker News）</li>
+        <li>GitHub Trending: bojieli /
+
+      ai-agent-book（GitHub Trending）</li>
+        <li>GitHub Trending: langchain-ai /
+
+      open_deep_research（GitHub Trending）</li>
+        <li>GitHub Trending: Canner /
+
+      WrenAI（GitHub Trending）</li>
+        <li>GitHub Trending: owainlewis /
+
+      awesome-artificial-intelligence（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>The Anthropic-Physical Intelligence rumor roiling AI Twitter（TechCrunch）</li>
+        <li>Meta is testing an AI bedtime story app for people with no imagination（TechCrunch）</li>
+        <li>Jack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>WAIC重磅成果｜仪电智算云在国家人工智能应用中试基地建设中展现全栈服务能力（量子位）</li>
+        <li>上市前夜 | 一季度净利是去年全年近三倍，深圳存储公司再闯港股IPO（36氪）</li>
+        <li>广州：拟稳步有序推进现房销售制，推进房地产开发融资方式改革（36氪）</li>
+        <li>WAIC重磅成果｜上海市教育算力专区正式开启试运行（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌅 早间版 — 2026-07-22（Google三款新Gemini + Kimi K3开源争议 + OpenAI攻破Hugging Face + Anthropic 15亿美元和解 + WAIC 2026收官 + Jack Dorsey推Buzz）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-07-22-morning.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-22-morning.html</guid>
@@ -403,73 +447,9 @@
       ]]></description>
     </item>
 
-    <item>
-      <title>☀️ 午间版 — 2026-07-06（xAI更名SpaceXAI + AI勒索仍需人类 + 微软裁员5000人 + Vercel CEO论模型Agent分离 + Fun-ASR-Realtime + OpenSquilla登顶DRACO）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-06-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-06-noon.html</guid>
-      <pubDate>Sun, 06 Jul 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>xAI正式更名为SpaceXAI，AI与航天生态深度融合（The Verge）</li>
-          <li>千问发布实时语音识别大模型Fun-ASR-Realtime（36氪）</li>
-          <li>OpenSquilla 0.5.0 Preview登顶DRACO双榜，开源追平闭源（量子位）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>Pi (Rust)：高性能AI编码Agent CLI（Hacker News）</li>
-          <li>Stet：Markdown编辑器每个AI编辑需人工批准（Hacker News）</li>
-        </ul>
-        <h3>📜 政策 &amp; 合规</h3>
-        <ul>
-          <li>微软裁员近5000人：Xbox和商业销售受影响（TechCrunch）</li>
-          <li>Google用用户数据训练AI：如何退出（TechCrunch）</li>
-        </ul>
-        <h3>💼 应用落地</h3>
-        <ul>
-          <li>华源智因获千万种子轮：AI复刻人类细胞预判药效（36氪）</li>
-          <li>联合国舞台上中国公司给AI减负：类脑芯片低功耗推理（量子位）</li>
-        </ul>
-        <h3>🌍 海外参考</h3>
-        <ul>
-          <li>"首个"AI自主勒索攻击仍需人类参与（TechCrunch）</li>
-          <li>Vercel CEO：模型与Agent必须分离（TechCrunch）</li>
-        </ul>
-      ]]></description>
-    </item>
+    
 
-    <item>
-      <title>🌅 早报 — 2026-07-06（AI比人力更贵 + $6/月无限LLM API + 儿童采用AI速度3倍 + WAIC世界模型激辩 + 贻如科技超亿融资 + ReContext长上下文）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-06-morning.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-06-morning.html</guid>
-      <pubDate>Sun, 06 Jul 2026 08:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>Forbes调查：AI比被替代的人力更贵（Hacker News）</li>
-          <li>WAIC 2026世界模型激辩：答案不在VLA或世界模型（量子位）</li>
-          <li>阿里内部全面禁用Claude Code（36氪/TechCrunch）</li>
-          <li>微软砸25亿美元组建6000人AI新公司（36氪）</li>
-          <li>儿童采用AI速度是成人3倍（Hacker News）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>Show HN: $6/月无限量LLM API（Hacker News）</li>
-          <li>free-llm-api-resources免费API汇总（GitHub Trending）</li>
-          <li>nano-vllm轻量级推理引擎（GitHub Trending）</li>
-        </ul>
-        <h3>📜 政策 &amp; 合规</h3>
-        <ul>
-          <li>《人工智能 智能体互联》7项国标发布（钛媒体）</li>
-          <li>儿童采用AI速度3倍于成人：监管空白亟需填补（Hacker News）</li>
-        </ul>
-        <h3>🌍 海外参考</h3>
-        <ul>
-          <li>Midjourney从AI slop到医学研究（Hacker News）</li>
-          <li>Mistral AI全景：OpenAI竞争者（TechCrunch）</li>
-        </ul>
-      ]]></description>
-    </item>
+    
 
     
 
