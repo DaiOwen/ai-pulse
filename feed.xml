@@ -5,10 +5,60 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 30 Jul 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                        <item>
+                            <item>
+      <title>🌙 晚间版 — 2026-07-31（36氪联合PureblueAI清蓝发布第 + OceanBase回应融资报道：全力投入 + 菜鸟CTO李强创业做Physical A + Anthropic says its o）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-31-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-31-evening.html</guid>
+      <pubDate>Fri, 31 Jul 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>36氪联合PureblueAI清蓝发布第二期「2026消费品牌AI推荐力名册」（36氪）</li>
+        <li>传奇AlphaFold团队全员解散！诺奖得主投奔Anthropic，资源转向Gemini（量子位）</li>
+        <li>WorkBuddy重大升级，AI时代的Office来了（量子位）</li>
+        <li>晶泰科技发布AI4S原生操作系统 XtalPi Science ，以多智能体矩阵开启自主科学发现新范式（雷锋网）</li>
+        <li>消息称华为 Mate 80 Air 手机下半年发布，搭载麒麟 9030 系列芯片（IT之家）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>菜鸟CTO李强创业做Physical AI平台，获云启、商汤超亿元种子轮融资｜硬氪首发（36氪）</li>
+        <li>超越OpenAI、Anthropic！国产AI安全智能体杀进全球前四、国内第一（量子位）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>The cure for AI slop is a 1986 aircraft manual（Hacker News）</li>
+        <li>Show HN: Reclip – AI Video Clipper, Voiceover and Creator Tools（Hacker News）</li>
+        <li>Genesis-Science-1, an Open-Weight Model for Scientific Research（Hacker News）</li>
+        <li>Amazon finds cases of AI causing runaway spending on tech projects（Hacker News）</li>
+        <li>Show HN: ResiliReplay - Chaos testing for AI agents and MCP servers（Hacker News）</li>
+        <li>GitHub Trending: deepfakes /
+
+      faceswap（GitHub Trending）</li>
+        <li>GitHub Trending: Panniantong /
+
+      Agent-Reach（GitHub Trending）</li>
+        <li>GitHub Trending: microsoft /
+
+      agent-governance-toolkit（GitHub Trending）</li>
+        <li>GitHub Trending: streamlit /
+
+      streamlit（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Anthropic says its own AI models breached three companies during security tests（TechCrunch）</li>
+        <li>Reddit reports a solid quarter but shows signs of AI&#8217;s impact（TechCrunch）</li>
+        <li>Investors love AI, as long as you’re a cloud host（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>OceanBase回应融资报道：全力投入AI数据创新，与资本市场保持开放沟通（量子位）</li>
+        <li>GPT-5.6自己优化自己实锤了，新的左脚踩右脚已经出现（量子位）</li>
+        <li>李飞飞的世界模型，终于开始训练机器人了（量子位）</li>
+        <li>中科院院士对话北电数智AI专家：以 AI 与数学 “乘法效应” 开辟产业落地新路径（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-07-30（周鸿祎发布纳米Work：新一代企业智能体 + 首个鸿蒙PC开源AI统一工作台Jiuwe + 自研SNN类脑芯片、做医疗设备的“上游大 + Microsoft is openly ）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-07-30-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-30-evening.html</guid>
@@ -392,58 +442,7 @@
       ]]></description>
     </item>
 
-    <item>
-      <title>🌅 早间版 — 2026-07-13（RTX Spark真机 + GPT-5.6解50年数学猜想 + Anthropic回应Claude变笨 + 十万卡集群 + SK海力士265亿美元IPO）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-13-morning.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-13-morning.html</guid>
-      <pubDate>Sun, 13 Jul 2026 08:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3>
-        <ul>
-          <li>老黄RTX Spark真机现身Bilibili World！CPU和GPU直接焊在一起，笔记本跑120B大模型（量子位）</li>
-          <li>GPT-5.6一小时解开50年数学猜想，700词Prompt驾驭64个子Agent（量子位）</li>
-          <li>全网骂Claude变笨，Anthropic下场揭秘：坑你的不是模型（36氪）</li>
-          <li>OpenAI推出ChatGPT智能体，家庭场景深度布局（TechCrunch）</li>
-          <li>MoleculeOS正式开放：AI生物研发进入"操作系统时代"（量子位）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3>
-        <ul>
-          <li>Clark：拥有自己电脑的AI助手（Hacker News）</li>
-          <li>OneDev AI：编码Agent作为Issue/PR/CI队友（Hacker News）</li>
-          <li>百度搭子重磅升级：日均提问暴增20倍，企业版同步发布（量子位）</li>
-          <li>Hugging Face CEO：开源AI比以往任何时候都更重要（TechCrunch）</li>
-        </ul>
-        <h3>📜 政策 &amp; 合规</h3>
-        <ul>
-          <li>《人工智能 智能体互联》7项国家标准正式发布（钛媒体）</li>
-          <li>反对AI数据中心扩张：全球社区抗争刚刚开始（The Verge）</li>
-        </ul>
-        <h3>💼 应用落地</h3>
-        <ul>
-          <li>中国首个十万卡集群落成！全国产算力支撑"十万卡时代"（量子位）</li>
-          <li>近百玩家涌入具身数据赛道：一年融资44.7亿（量子位）</li>
-        </ul>
-        <h3>🔥 开源热度 Top5</h3>
-        <ul>
-          <li>awesome-llm-apps · ai-hedge-fund · pydantic-ai · Clark · OneDev AI</li>
-        </ul>
-        <h3>📄 论文速递</h3>
-        <ul>
-          <li>UniClawBench：主动型智能体通用基准测试（arXiv 2607.08768）</li>
-        </ul>
-        <h3>🌍 海外参考</h3>
-        <ul>
-          <li>SK海力士265亿美元创美股史上最大外国IPO（TechCrunch）</li>
-          <li>Apple"热核级"回应OpenAI威胁（WSJ/Hacker News）</li>
-          <li>AI Agent初创让Agent主导1亿美元融资（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3>
-        <ul>
-          <li>芯片商Etched累计融资近60亿，获台积电、辛顿、李飞飞押注（雷锋网）</li>
-          <li>华为Mate 80 Air下半年发布，搭载麒麟9030系列芯片（IT之家）</li>
-        </ul>
-      ]]></description>
-    </item>
+    
 
     
 
