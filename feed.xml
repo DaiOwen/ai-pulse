@@ -5,10 +5,50 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 03 Aug 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                        <item>
+                                            <item>
+      <title>🌙 晚间版 — 2026-08-04（阿里Qwen3.8正式发布，编程与办公再 + AI不再用完即忘：华为诺亚开源MindM + 独家丨璨辰科技完成数千万天使系列融资，A + After killer quarter）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-04-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-04-evening.html</guid>
+      <pubDate>Tue, 04 Aug 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>阿里Qwen3.8正式发布，编程与办公再进化，推理更快更稳定（量子位）</li>
+        <li>Google Earth 发布然后撤回了 AI 工具（Solidot）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>独家丨璨辰科技完成数千万天使系列融资，AI 虚拟器官仿真平台加速落地（雷锋网）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>AI Agent Ecosystem Trends 2026 H1: Analysis of 15K+ Agents Submission（Hacker News）</li>
+        <li>Show HN: Manhwa AI – Create webtoons with consistent AI characters（Hacker News）</li>
+        <li>Superbad.com if it came from the mind of an AI（Hacker News）</li>
+        <li>Eval-driven development: Lessons from evaluating GenAI at scale（Hacker News）</li>
+        <li>Full-Stack AI Engineer, Clinical Systems – NYC Based – Healthtech（Hacker News）</li>
+        <li>GitHub Trending: Panniantong /
+
+      Agent-Reach（GitHub Trending）</li>
+        <li>GitHub Trending: livekit /
+
+      agents（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>After killer quarter, Palantir CEO Alex Karp calls AI industry &#8216;Marxist&#8217;（TechCrunch）</li>
+        <li>Design Arena creators raise $7.9 million to bring taste to AI models（TechCrunch）</li>
+        <li>Influencers draw backlash for attending OpenAI&#8217;s first luxury trip（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>AI不再用完即忘：华为诺亚开源MindMemOS，记忆和Skill一起进化（量子位）</li>
+        <li>前安克3D打印业务负责人要做B端工具产品，获数千万融资｜36氪首发（36氪）</li>
+        <li>OpenAI前员工刚跑路就喊话：要套现就赶紧套，别等IPO！（量子位）</li>
+        <li>3氪首发 | 两位“三清”博士联合创业做空间态势感知服务，完成数千万天使+轮融资（36氪）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-08-03（氪星晚报 ｜Prada集团上半年营收增长 + AI不再用完即忘：华为诺亚开源MindM + 独家丨璨辰科技完成数千万天使系列融资，A + Sam Altman and AI’s ）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-03-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-03-evening.html</guid>
@@ -408,33 +448,7 @@
       ]]></description>
     </item>
 
-            <item>
-      <title>🌅 早间版 — 2026-07-15（涓変釜鏈堜及鍊肩炕涓冨?嶏紝浠庘?滈浂铻 + 鍙堝揩鍙堣仾鏄庯紝闃块噷鍙戝竷Qwen- + Microsoft is reporte）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-15-morning.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-15-morning.html</guid>
-      <pubDate>Wed, 15 Jul 2026 08:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>涓変釜鏈堜及鍊肩炕涓冨?嶏紝浠庘?滈浂铻嶈祫鈥濆埌鍐插埡IPO锛? DeepSeek鐨勬?ヨ浆寮?鑳屽悗鏄?浣曞師鍥狅紵（閽涘獟浣?）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Generative AI is an Engineering Disaster（Hacker News）</li>
-        <li>AI Data Center Companies for Sale 鈥? Owners Liquidating Assets Before Crash [video]（Hacker News）</li>
-        <li>AIcss: UI Components for AI Agents（Hacker News）</li>
-        <li>Show HN: Throttle 鈥? Local Claude Cockpit for macOS, now with remote control（Hacker News）</li>
-        <li>Launching cdbx.ai with 50% off Pro Plans（Hacker News）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Microsoft is reportedly training salespeople to talk down OpenAI and Anthropic（TechCrunch）</li>
-        <li>Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex（TechCrunch）</li>
-        <li>Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>鍙堝揩鍙堣仾鏄庯紝闃块噷鍙戝竷Qwen-Audio-3.0-Realtime锛氬疄鏃惰??闊冲ぇ妯″瀷鍥涢」鍔熻兘鍗囩骇（閲忓瓙浣?）</li>
-        <li>8鐐?1姘?涓ㄥ浗琛岃嫻鏋淎I鍔熻兘瀹屾垚澶囨?堬紱涓夊?跺叡浜?鍗曡溅涓婅皟璧锋?ヤ环锛涚煡鎯呬汉鏇滵eepSeek寮?濮嬬?瑰?嘔PO（36姘?）</li>
-        </ul>
-      ]]></description>
-    </item>
+            
 
 
 
