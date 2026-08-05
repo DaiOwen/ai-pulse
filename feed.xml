@@ -5,10 +5,54 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 04 Aug 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                            <item>
+                                                <item>
+      <title>🌙 晚间版 — 2026-08-05（阿里Qwen3.8正式发布，编程与办公再 + 开源版Claude Science来了！ + Open-weight AI model）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-05-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-05-evening.html</guid>
+      <pubDate>Wed, 05 Aug 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>阿里Qwen3.8正式发布，编程与办公再进化，推理更快更稳定（量子位）</li>
+        <li>事关自动驾驶系统安全，强制性国标正式发布；央行今日将开展5000亿元买断式逆回购；申通快递被立案调查、鸿蒙智行回应“竹知了”事件。（钛媒体）</li>
+        <li>我国首部 L3/L4 智能网联汽车自动驾驶系统安全要求强制性国标正式发布，2027 年 7 月起实施（IT之家）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>36氪首发 | 大疆前高管押注个人出行机器人，累计融资近亿美元（36氪）</li>
+        <li>自研高性能分布式解决方案，「芯晓科技」将芯片电源签核周期从几周缩短至几天 | 水下项目（36氪）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Google AI Studio exposed. Drive Trash is fake（Hacker News）</li>
+        <li>The Moral Compass of AI: Why Fairness Shapes Our Future（Hacker News）</li>
+        <li>SpaceX hit by surging AI costs as insiders prepare to sell their shares（Hacker News）</li>
+        <li>Do you find paid contribution on AI Annotation (e.g. DataAnnotation), moral?（Hacker News）</li>
+        <li>GitHub Trending: livekit /
+
+      agents（GitHub Trending）</li>
+        <li>GitHub Trending: Panniantong /
+
+      Agent-Reach（GitHub Trending）</li>
+        <li>GitHub Trending: Shubhamsaboo /
+
+      awesome-llm-apps（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Open-weight AI models are catching up to the frontier. The safety gap remains.（TechCrunch）</li>
+        <li>Anthropic signs $10B deal with AI cloud startup Volta（TechCrunch）</li>
+        <li>Spotify expands AI remix and covers project with Merlin partnership（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>开源版Claude Science来了！零依赖、MIT协议，内置30+项科研Skills（量子位）</li>
+        <li>一层“布”涨价270%之后，投资机构用数亿元投票玻璃基板，巽霖科技完成近2亿元B轮融资（36氪）</li>
+        <li>36氪首发 | 两位“三清”博士联合创业做空间态势感知服务，完成数千万天使+轮融资（36氪）</li>
+        <li>宇树科技开启科创板IPO初步询价，市场预估IPO市值或将超400亿元（36氪）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-08-04（阿里Qwen3.8正式发布，编程与办公再 + AI不再用完即忘：华为诺亚开源MindM + 独家丨璨辰科技完成数千万天使系列融资，A + After killer quarter）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-04-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-04-evening.html</guid>
@@ -411,42 +455,7 @@
       ]]></description>
     </item>
 
-            <item>
-      <title>🌅 早间版 — 2026-07-22（Google三款新Gemini + Kimi K3开源争议 + OpenAI攻破Hugging Face + Anthropic 15亿美元和解 + WAIC 2026收官 + Jack Dorsey推Buzz）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-22-morning.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-22-morning.html</guid>
-      <pubDate>Tue, 22 Jul 2026 09:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>Google发布三款新Gemini模型：3.6 Flash/3.5 Flash-Lite/3.5 Flash Cyber，但Pro线未更新（TechCrunch）</li>
-        <li>OpenAI高管炮轰Kimi K3：中国开源是"减速主义"，K3以1679分超Claude Fable 5排名第一（雷锋网）</li>
-        <li>DeepSeek曝光高薪资配套打分机制，实习月薪5500元引争议（雷锋网）</li>
-        <li>WAIC 2026：范式大会展示全栈AI产品体系，Token经济成核心（量子位）</li>
-        <li>启鸣达人首发《世界模型驱动的教育AGI白皮书》（量子位）</li>
-        </ul>
-        <h3>🛠️ 工具 &amp; 部署</h3><ul>
-        <li>Buzz：Jack Dorsey推出专为AI Agent协作设计的团队聊天平台（TechCrunch）</li>
-        <li>StoryKit：Meta测试AI儿童故事生成应用（TechCrunch）</li>
-        <li>Open Deep Research：LangChain开源深度研究框架（GitHub Trending）</li>
-        <li>WrenAI：开源GenBI自然语言转SQL平台（GitHub Trending）</li>
-        </ul>
-        <h3>📜 政策 &amp; 合规</h3><ul>
-        <li>Anthropic 15亿美元版权和解获法官批准，每本书赔偿约3000美元（The Verge）</li>
-        <li>OpenAI AI系统意外攻破Hugging Face安全防线（The Verge）</li>
-        </ul>
-        <h3>🔥 开源热度 Top5</h3><ul>
-        <li>open_deep_research · WrenAI · ai-agent-book · awesome-artificial-intelligence · Agent swarms</li>
-        </ul>
-        <h3>📄 论文速递</h3><ul>
-        <li>The Price of Reasoning: RL for NMT成本-质量权衡（arXiv 2607.19226）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Jack Dorsey推出Buzz挑战Slack，原生支持AI Agent协作（TechCrunch）</li>
-        <li>Meta测试StoryKit：AI生成儿童睡前故事（TechCrunch）</li>
-        <li>Neill Blomkamp AI僵尸短片遭批，AI生成内容仍是"加热剩饭"（The Verge）</li>
-        </ul>
-      ]]></description>
-    </item>
+            
 
             
 
