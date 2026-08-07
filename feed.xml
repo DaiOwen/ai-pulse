@@ -5,10 +5,54 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 06 Aug 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                    <item>
+                                                        <item>
+      <title>🌙 晚间版 — 2026-08-07（PPIO正式发布“Fusion融合模型” + DeepSeek豪掷1.4亿护航宇树IP + OpenAI&#8217;s new A）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-07-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-07-evening.html</guid>
+      <pubDate>Fri, 07 Aug 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>PPIO正式发布“Fusion融合模型”：用十分之一的价格超越顶级模型的智商（量子位）</li>
+        <li>Artificial Analysis榜单：阿里Qwen3.8Agentic能力得分全球第一（量子位）</li>
+        <li>150.8元/股！宇树科技超百名员工参与IPO「盛宴」，一批90后千万富豪或将诞生；DeepSeek拟上调API服务定价；字节拟训练超5万亿参数大模型（雷锋网）</li>
+        <li>AI空调全球第一，海尔空调发布全场景AI空气方案（钛媒体）</li>
+        <li>GPT-Live 底层拆解：OpenAI 如何让 95% 的音频帧不再延迟（雷锋网）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Ask HN: What will be the Chernobyl or Bhopal scale industrial disaster of AI?（Hacker News）</li>
+        <li>EU AI Act Content Labelling: Fake Around and Find Out（Hacker News）</li>
+        <li>SEAI: Hardware-rooted identity for autonomous AI（Hacker News）</li>
+        <li>GitHub Trending: Significant-Gravitas /
+
+      AutoGPT（GitHub Trending）</li>
+        <li>GitHub Trending: unclecode /
+
+      crawl4ai（GitHub Trending）</li>
+        <li>GitHub Trending: aws /
+
+      agent-toolkit-for-aws（GitHub Trending）</li>
+        <li>GitHub Trending: livekit /
+
+      agents（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>OpenAI&#8217;s new AI smart speaker will reportedly sell for between $300 and $400（TechCrunch）</li>
+        <li>ChatGPT brings unlimited text chats to free users（TechCrunch）</li>
+        <li>Naïve raises $28.5M to automate the grunt work of setting up and running a company（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>DeepSeek豪掷1.4亿护航宇树IPO，杭州绝代双骄战略合体（量子位）</li>
+        <li>MiniMax H3登顶开源社区第一，定义视频模型领域“斩杀线”（量子位）</li>
+        <li>AI SSD：大模型推理的存储范式转移（量子位）</li>
+        <li>Show me《指环王》！卡帕西强推大模型评测新基准（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-08-06（华为 nova16 SE 手机发布：麒麟 + 开源版Claude Science来了！ + Meta launches Muse C）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-06-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-06-evening.html</guid>
@@ -407,47 +451,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-07-28（蚂蚁百灵发布新一代原生混合推理模型Lin + DeepSeek被曝主动叫停了第二轮融资 + Satya Nadella says c）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-28-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-28-evening.html</guid>
-      <pubDate>Tue, 28 Jul 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>蚂蚁百灵发布新一代原生混合推理模型Ling-3.0-Flash（量子位）</li>
-        <li>全新统一流式架构，Vivix灵动时刻正式发布首个实时互动模型（量子位）</li>
-        <li>氪星晚报｜美国大型企业告别裁员潮重启招聘；英伟达、微软、IBM等数十家企业成立新联盟，旨在共同保障AI安全；《光伏行业成本核算模型通则》发布，引导行业有序竞争（36氪）</li>
-        <li>微软AI发布网络安全模型MAI-Cyber-1-Flash，漏洞检测性能提升并降低50%成本（36氪）</li>
-        <li>长鑫科技批量造富：12名核心成员身家过亿，碧桂园却卖飞痛失490亿；哈啰电车骑行中断电落锁致博士十级伤残；月之暗面开源Kimi K3模型（雷锋网）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Can AMD Break the CUDA Moat? AMD Advancing AI 2026（Hacker News）</li>
-        <li>Show HN: SeaTicket – AI agent that resolve GitHub and Discord issues（Hacker News）</li>
-        <li>Is This What Comes After AI Slop?（Hacker News）</li>
-        <li>First Genesis Mission Projects Selected to Boost AI-Driven Scientific Discovery（Hacker News）</li>
-        <li>GitHub Trending: andrewyng /
 
-      aisuite（GitHub Trending）</li>
-        <li>GitHub Trending: arc53 /
-
-      DocsGPT（GitHub Trending）</li>
-        <li>GitHub Trending: sickn33 /
-
-      agentic-awesome-skills（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Satya Nadella says companies that trust one AI for everything may not survive（TechCrunch）</li>
-        <li>Threads users can now chat with Meta AI in their DMs（TechCrunch）</li>
-        <li>Google&#8217;s AI search is rapidly becoming the default, new data shows（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>DeepSeek被曝主动叫停了第二轮融资签约（量子位）</li>
-        <li>老黄「开源协议」就剩一家没签，是谁啊好难猜啊（量子位）</li>
-        <li>36氪首发 | 前大疆工程师创业做智能网球发球机，产品已开启海外市场批量交付（36氪）</li>
-        <li>36氪首发｜家居音频品牌「MORROR ART」完成亿元级B+轮融资，日初资本领投、零一创投跟投（36氪）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
