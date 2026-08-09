@@ -5,10 +5,59 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 08 Aug 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                <item>
+                                                                    <item>
+      <title>🌙 晚间版 — 2026-08-09（PPIO正式发布“Fusion融合模型” + 蚂蚁集团开源Avernet，让人与智能体 + OpenAI acquires pres）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-09-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-09-evening.html</guid>
+      <pubDate>Sun, 09 Aug 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>PPIO正式发布“Fusion融合模型”：用十分之一的价格超越顶级模型的智商（量子位）</li>
+        <li>都学坏了！奥特曼亲手封锁最强模型Astra，重蹈Mythos覆辙（量子位）</li>
+        <li>阿里推出国内首个AI语音平台CosyVoice Studio，将语义理解融入语音能力（量子位）</li>
+        <li>150.8元/股！宇树科技超百名员工参与IPO「盛宴」，一批90后千万富豪或将诞生；DeepSeek拟上调API服务定价；字节拟训练超5万亿参数大模型（雷锋网）</li>
+        <li>DeepMind 的 WeatherNext 模型在飓风预测上取得突破（Solidot）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>ChatGPT starts blocking direct requests to copy an author's style（Hacker News）</li>
+        <li>Model Genome: Fingerprinting Whether an LLM Was Trained from Scratch or Derived（Hacker News）</li>
+        <li>I built a video editor in Rust with extensive AI-powered features（Hacker News）</li>
+        <li>The AI Apocalypse Is Here（Hacker News）</li>
+        <li>Show HN: Aidress – LangChain integration for cross-agent discovery and trust（Hacker News）</li>
+        <li>GitHub Trending: TauricResearch /
+
+      TradingAgents（GitHub Trending）</li>
+        <li>GitHub Trending: Significant-Gravitas /
+
+      AutoGPT（GitHub Trending）</li>
+        <li>GitHub Trending: kyutai-labs /
+
+      pocket-tts（GitHub Trending）</li>
+        <li>GitHub Trending: google-deepmind /
+
+      weathernext（GitHub Trending）</li>
+        <li>GitHub Trending: harveyai /
+
+      harvey-labs（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>OpenAI acquires presentation startup NextSlide（TechCrunch）</li>
+        <li>OpenAI says it slowed Astra model development over security concerns（TechCrunch）</li>
+        <li>After Rippling blew millions on AI in months, it built an employee ROI tool（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>蚂蚁集团开源Avernet，让人与智能体像组织一样高效协作（量子位）</li>
+        <li>openJiuwen发布业界首个企业级智能体分布式蜂群架构，联合邮储成功落地金融生产环境（量子位）</li>
+        <li>奥特曼的ChatGPT育儿大法，捅了马蜂窝（量子位）</li>
+        <li>阿里视频大模型Wan3.0开启公测：文档、ppt也能变视频（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-08-08（PPIO正式发布“Fusion融合模型” + 蚂蚁集团开源Avernet，让人与智能体 + OpenAI says it slowe）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-08-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-08-noon.html</guid>
@@ -378,55 +427,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-07-31（36氪联合PureblueAI清蓝发布第 + OceanBase回应融资报道：全力投入 + 菜鸟CTO李强创业做Physical A + Anthropic says its o）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-07-31-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-07-31-evening.html</guid>
-      <pubDate>Fri, 31 Jul 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>36氪联合PureblueAI清蓝发布第二期「2026消费品牌AI推荐力名册」（36氪）</li>
-        <li>传奇AlphaFold团队全员解散！诺奖得主投奔Anthropic，资源转向Gemini（量子位）</li>
-        <li>WorkBuddy重大升级，AI时代的Office来了（量子位）</li>
-        <li>晶泰科技发布AI4S原生操作系统 XtalPi Science ，以多智能体矩阵开启自主科学发现新范式（雷锋网）</li>
-        <li>消息称华为 Mate 80 Air 手机下半年发布，搭载麒麟 9030 系列芯片（IT之家）</li>
-        </ul>
-        <h3>🛠️ 工具 & 部署</h3><ul>
-        <li>菜鸟CTO李强创业做Physical AI平台，获云启、商汤超亿元种子轮融资｜硬氪首发（36氪）</li>
-        <li>超越OpenAI、Anthropic！国产AI安全智能体杀进全球前四、国内第一（量子位）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>The cure for AI slop is a 1986 aircraft manual（Hacker News）</li>
-        <li>Show HN: Reclip – AI Video Clipper, Voiceover and Creator Tools（Hacker News）</li>
-        <li>Genesis-Science-1, an Open-Weight Model for Scientific Research（Hacker News）</li>
-        <li>Amazon finds cases of AI causing runaway spending on tech projects（Hacker News）</li>
-        <li>Show HN: ResiliReplay - Chaos testing for AI agents and MCP servers（Hacker News）</li>
-        <li>GitHub Trending: deepfakes /
 
-      faceswap（GitHub Trending）</li>
-        <li>GitHub Trending: Panniantong /
-
-      Agent-Reach（GitHub Trending）</li>
-        <li>GitHub Trending: microsoft /
-
-      agent-governance-toolkit（GitHub Trending）</li>
-        <li>GitHub Trending: streamlit /
-
-      streamlit（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Anthropic says its own AI models breached three companies during security tests（TechCrunch）</li>
-        <li>Reddit reports a solid quarter but shows signs of AI&#8217;s impact（TechCrunch）</li>
-        <li>Investors love AI, as long as you’re a cloud host（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>OceanBase回应融资报道：全力投入AI数据创新，与资本市场保持开放沟通（量子位）</li>
-        <li>GPT-5.6自己优化自己实锤了，新的左脚踩右脚已经出现（量子位）</li>
-        <li>李飞飞的世界模型，终于开始训练机器人了（量子位）</li>
-        <li>中科院院士对话北电数智AI专家：以 AI 与数学 “乘法效应” 开辟产业落地新路径（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
