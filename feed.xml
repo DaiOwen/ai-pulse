@@ -5,10 +5,39 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 09 Aug 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                    <item>
+                                                                        <item>
+      <title>☀️ 午间版 — 2026-08-09（当题库追不上模型，AI开始给自己出题：中 + 蚂蚁集团开源Avernet，让人与智能体 + OpenAI acquires pres）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-09-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-09-noon.html</guid>
+      <pubDate>Sun, 09 Aug 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>当题库追不上模型，AI开始给自己出题：中国这支团队跑通了数据层RSI（量子位）</li>
+        <li>都学坏了！奥特曼亲手封锁最强模型Astra，重蹈Mythos覆辙（量子位）</li>
+        <li>阿里推出国内首个AI语音平台CosyVoice Studio，将语义理解融入语音能力（量子位）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>AI creates 16 new viruses from scratch after training on 9T nucleotides（Hacker News）</li>
+        <li>I asked 4 AI companions what they were. They lied, then texted me the next day（Hacker News）</li>
+        <li>Suggest some uncensored AI for photo genaration?（Hacker News）</li>
+        <li>GitHub Trending: TauricResearch /
+
+      TradingAgents（GitHub Trending）</li>
+        <li>GitHub Trending: Significant-Gravitas /
+
+      AutoGPT（GitHub Trending）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>蚂蚁集团开源Avernet，让人与智能体像组织一样高效协作（量子位）</li>
+        <li>openJiuwen发布业界首个企业级智能体分布式蜂群架构，联合邮储成功落地金融生产环境（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-08-09（PPIO正式发布“Fusion融合模型” + 蚂蚁集团开源Avernet，让人与智能体 + OpenAI acquires pres）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-09-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-09-evening.html</guid>
@@ -381,51 +410,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-01（氪星晚报 ｜Prada集团上半年营收增长 + 国内唯一做多模态长记忆的公司，融资数千万 + 菜鸟CTO李强创业做Physical A + OpenAI reportedly fi）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-01-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-01-evening.html</guid>
-      <pubDate>Sat, 01 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>氪星晚报 ｜Prada集团上半年营收增长16%，Miu Miu增速显著放缓；浪潮数据发布自研AI数据操作系统（36氪）</li>
-        <li>比 Seedance 便宜七成的模型，宣布开源：视频生成行业变天了？（雷锋网）</li>
-        </ul>
-        <h3>🛠️ 工具 & 部署</h3><ul>
-        <li>菜鸟CTO李强创业做Physical AI平台，获云启、商汤超亿元种子轮融资｜硬氪首发（36氪）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>US lawmakers investigate DoorDash's use of Moonshot AI's Kimi K2.6 model（Hacker News）</li>
-        <li>AI broke writing as proof-of-thought（Hacker News）</li>
-        <li>Flint: A Visualization Language for the AI Era（Hacker News）</li>
-        <li>Leopold Aschenbrenner built a $45B AI hedge fund – and lost most of it in days（Hacker News）</li>
-        <li>Snapchat joins other popular platforms in fight against 'AI slop'（Hacker News）</li>
-        <li>GitHub Trending: deepfakes /
 
-      faceswap（GitHub Trending）</li>
-        <li>GitHub Trending: trailofbits /
-
-      skills（GitHub Trending）</li>
-        <li>GitHub Trending: NousResearch /
-
-      hermes-agent（GitHub Trending）</li>
-        <li>GitHub Trending: 0x4m4 /
-
-      hexstrike-ai（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>OpenAI reportedly finds evidence that more of its agents ran amok（TechCrunch）</li>
-        <li>Sam Altman isn&#8217;t the only one who wants to pump the brakes on AI（TechCrunch）</li>
-        <li>Snapchat no longer rewards fully AI-generated Spotlight content（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>国内唯一做多模态长记忆的公司，融资数千万，押注主动智能｜涌现新项目（36氪）</li>
-        <li>GPT-5.6自己优化自己实锤了，新的左脚踩右脚已经出现（量子位）</li>
-        <li>李飞飞的世界模型，终于开始训练机器人了（量子位）</li>
-        <li>36氪独家｜曾爱玲入职B站担任AI视频生成业务负责人，向CEO陈睿汇报（36氪）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
