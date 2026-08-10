@@ -5,10 +5,58 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 09 Aug 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                        <item>
+                                                                            <item>
+      <title>🌙 晚间版 — 2026-08-10（3B模型碾压英伟达谷歌后，Om AI端侧 + openJiuwen发布业界首个企业级智 + Anthropic is turning）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-10-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-10-evening.html</guid>
+      <pubDate>Mon, 10 Aug 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>3B模型碾压英伟达谷歌后，Om AI端侧原生VLX模型：小参数实现物理世界精准感知（量子位）</li>
+        <li>当题库追不上模型，AI开始给自己出题：中国这支团队跑通了数据层RSI（量子位）</li>
+        <li>都学坏了！奥特曼亲手封锁最强模型Astra，重蹈Mythos覆辙（量子位）</li>
+        <li>阿里推出国内首个AI语音平台CosyVoice Studio，将语义理解融入语音能力（量子位）</li>
+        <li>150.8元/股！宇树科技超百名员工参与IPO「盛宴」，一批90后千万富豪或将诞生；DeepSeek拟上调API服务定价；字节拟训练超5万亿参数大模型（雷锋网）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>What do I want to be? – a poem about parenting in the AI age（Hacker News）</li>
+        <li>What if we let AI govern us?（Hacker News）</li>
+        <li>The Airtable acquisition and what hypergrowth teaches you（Hacker News）</li>
+        <li>Show HN: An AI chief of staff for founders who can't afford one（Hacker News）</li>
+        <li>GitHub Trending: google-deepmind /
+
+      weathernext（GitHub Trending）</li>
+        <li>GitHub Trending: ZhuLinsen /
+
+      daily_stock_analysis（GitHub Trending）</li>
+        <li>GitHub Trending: harveyai /
+
+      harvey-labs（GitHub Trending）</li>
+        <li>GitHub Trending: MervinPraison /
+
+      PraisonAI（GitHub Trending）</li>
+        <li>GitHub Trending: TauricResearch /
+
+      TradingAgents（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Anthropic is turning Claude Code’s auto mode on by default（TechCrunch）</li>
+        <li>The AI safety test is becoming a safety risk（TechCrunch）</li>
+        <li>OpenAI acquires presentation startup NextSlide（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>openJiuwen发布业界首个企业级智能体分布式蜂群架构，联合邮储成功落地金融生产环境（量子位）</li>
+        <li>180万刀，连亚马逊都烧不起Claude了（量子位）</li>
+        <li>Opus 5狂烧6.9亿token做游戏，GPT-5.6用5美元复刻了（量子位）</li>
+        <li>奥特曼的ChatGPT育儿大法，捅了马蜂窝（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-08-09（当题库追不上模型，AI开始给自己出题：中 + 蚂蚁集团开源Avernet，让人与智能体 + OpenAI acquires pres）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-09-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-09-noon.html</guid>
@@ -365,50 +413,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-02（氪星晚报 ｜Prada集团上半年营收增长 + 国内唯一做多模态长记忆的公司，融资数千万 + Judge denies xAI’s r）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-02-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-02-evening.html</guid>
-      <pubDate>Sun, 02 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>氪星晚报 ｜Prada集团上半年营收增长16%，Miu Miu增速显著放缓；浪潮数据发布自研AI数据操作系统（36氪）</li>
-        <li>比 Seedance 便宜七成的模型，宣布开源：视频生成行业变天了？（雷锋网）</li>
-        <li>Google Earth 发布然后撤回了 AI 工具（Solidot）</li>
-        <li>全球七连冠，海尔大暖通发布热泵家商全场景4大AI新方案 | 品牌（钛媒体）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Futurism says Meta has "almost nothing" to show for AI. The numbers say（Hacker News）</li>
-        <li>Show HN: FirstEmployee.ai – Start a Business（Hacker News）</li>
-        <li>The world first agentic AI radio（Hacker News）</li>
-        <li>Show HN: CostPerPrompt – Live AI API pricing and real-workload cost calculators（Hacker News）</li>
-        <li>Hiring FDE's (full stack software eng) // 100K+ & equity // AI for Manufacturing（Hacker News）</li>
-        <li>GitHub Trending: abus-aikorea /
 
-      voice-pro（GitHub Trending）</li>
-        <li>GitHub Trending: deepfakes /
-
-      faceswap（GitHub Trending）</li>
-        <li>GitHub Trending: ashishpatel26 /
-
-      500-AI-Agents-Projects（GitHub Trending）</li>
-        <li>GitHub Trending: unslothai /
-
-      unsloth（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Judge denies xAI’s request to block Minnesota ban on ‘nudify’ apps（TechCrunch）</li>
-        <li>YouTuber Hank Green says his AI usage is ‘not healthy’（TechCrunch）</li>
-        <li>Sam Altman is still making the case for parenting via ChatGPT（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>国内唯一做多模态长记忆的公司，融资数千万，押注主动智能｜涌现新项目（36氪）</li>
-        <li>OpenAI前员工刚跑路就喊话：要套现就赶紧套，别等IPO！（量子位）</li>
-        <li>部分美国企业换上中国大模型以降低成本（36氪）</li>
-        <li>GPT-5.6今起大降价，最大幅度80%！（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
