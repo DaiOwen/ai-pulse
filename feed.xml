@@ -5,10 +5,63 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 11 Aug 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                    <item>
+                                                                                        <item>
+      <title>🌙 晚间版 — 2026-08-12（谷歌创始人布林紧急接管Gemini团队， + 蚂蚁首次投向机器人“指尖”！数亿元押注， + 当AI开始“自作主张”，谁来为智能体戴上 + OpenAI launches Chat）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-12-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-12-evening.html</guid>
+      <pubDate>Wed, 12 Aug 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>谷歌创始人布林紧急接管Gemini团队，但“3.5 Pro已被取消”（量子位）</li>
+        <li>模型路线趋同之后，Physical AI的胜负手变了（量子位）</li>
+        <li>从卖芯片到卖整个AI工作流：英伟达发布Nemotron 3.5与模型路由器（钛媒体）</li>
+        <li>含 iPhone Ultra、iPhone 18 Pro 等，六款未发布的苹果 iPhone 新机首度现身 iOS 27 系统代码（IT之家）</li>
+        <li>DeepSeek招土木工程师；腾讯参投！林俊旸深夜官宣新公司：做下一代AI智能体；宇树科技中签号出炉：共19414个丨雷峰早报（雷锋网）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>当AI开始“自作主张”，谁来为智能体戴上“项圈”？全球AI安全实战化大考，中国方案打入前三（量子位）</li>
+        <li>「说 Harness 会被淘汰的，肯定没做过工程」，Kimi 前 CLI 负责人戳破了 AI 圈最大的误解（雷锋网）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>MiniMax H3: An Open Model Breaking the Boundaries Between Tasks and Modalities（Hacker News）</li>
+        <li>Company Offering '100% Human-Written, Never AI' Medical Research Is 100% AI（Hacker News）</li>
+        <li>Numbat by Perplexity: Endpoint visibility into AI agent activity（Hacker News）</li>
+        <li>4Chan Chuds Used AI to Clothe Her. She Fought Back (2024)（Hacker News）</li>
+        <li>The traits that make engineers stand out, according to Coinbase's CTO（Hacker News）</li>
+        <li>GitHub Trending: ZhuLinsen /
+
+      daily_stock_analysis（GitHub Trending）</li>
+        <li>GitHub Trending: HKUDS /
+
+      DeepTutor（GitHub Trending）</li>
+        <li>GitHub Trending: huggingface /
+
+      transformers（GitHub Trending）</li>
+        <li>GitHub Trending: harveyai /
+
+      harvey-labs（GitHub Trending）</li>
+        <li>GitHub Trending: LLMQuant /
+
+      quant-mind（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>OpenAI launches ChatGPT desktop app for Linux（TechCrunch）</li>
+        <li>Google’s Gemini app surges to 1 billion users（TechCrunch）</li>
+        <li>Brad Lightcap, OpenAI&#8217;s longtime COO, is leaving to &#8216;start something new&#8217;（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>蚂蚁首次投向机器人“指尖”！数亿元押注，全球首个物理交互脑发布（量子位）</li>
+        <li>GPU开始金融化！黄仁勋拉上华尔街搞5000亿美元融资（量子位）</li>
+        <li>百年黎曼猜想被Claude破了新纪录！是个未公开新模型（量子位）</li>
+        <li>Claude骂声中启动「隐形水印」：新模型全量嵌入，标记所有文字（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-08-11（模型路线趋同之后，Physical AI + GPU开始金融化！黄仁勋拉上华尔街搞50 + 当AI开始“自作主张”，谁来为智能体戴上 + OpenAI reportedly co）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-11-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-11-noon.html</guid>
@@ -366,49 +419,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-05（阿里Qwen3.8正式发布，编程与办公再 + 开源版Claude Science来了！ + Open-weight AI model）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-05-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-05-evening.html</guid>
-      <pubDate>Wed, 05 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>阿里Qwen3.8正式发布，编程与办公再进化，推理更快更稳定（量子位）</li>
-        <li>事关自动驾驶系统安全，强制性国标正式发布；央行今日将开展5000亿元买断式逆回购；申通快递被立案调查、鸿蒙智行回应“竹知了”事件。（钛媒体）</li>
-        <li>我国首部 L3/L4 智能网联汽车自动驾驶系统安全要求强制性国标正式发布，2027 年 7 月起实施（IT之家）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>36氪首发 | 大疆前高管押注个人出行机器人，累计融资近亿美元（36氪）</li>
-        <li>自研高性能分布式解决方案，「芯晓科技」将芯片电源签核周期从几周缩短至几天 | 水下项目（36氪）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Google AI Studio exposed. Drive Trash is fake（Hacker News）</li>
-        <li>The Moral Compass of AI: Why Fairness Shapes Our Future（Hacker News）</li>
-        <li>SpaceX hit by surging AI costs as insiders prepare to sell their shares（Hacker News）</li>
-        <li>Do you find paid contribution on AI Annotation (e.g. DataAnnotation), moral?（Hacker News）</li>
-        <li>GitHub Trending: livekit /
 
-      agents（GitHub Trending）</li>
-        <li>GitHub Trending: Panniantong /
-
-      Agent-Reach（GitHub Trending）</li>
-        <li>GitHub Trending: Shubhamsaboo /
-
-      awesome-llm-apps（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Open-weight AI models are catching up to the frontier. The safety gap remains.（TechCrunch）</li>
-        <li>Anthropic signs $10B deal with AI cloud startup Volta（TechCrunch）</li>
-        <li>Spotify expands AI remix and covers project with Merlin partnership（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>开源版Claude Science来了！零依赖、MIT协议，内置30+项科研Skills（量子位）</li>
-        <li>一层“布”涨价270%之后，投资机构用数亿元投票玻璃基板，巽霖科技完成近2亿元B轮融资（36氪）</li>
-        <li>36氪首发 | 两位“三清”博士联合创业做空间态势感知服务，完成数千万天使+轮融资（36氪）</li>
-        <li>宇树科技开启科创板IPO初步询价，市场预估IPO市值或将超400亿元（36氪）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
