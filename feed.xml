@@ -5,10 +5,57 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 12 Aug 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                        <item>
+                                                                                            <item>
+      <title>🌙 晚间版 — 2026-08-13（谷歌创始人布林紧急接管Gemini团队， + 蚂蚁首次投向机器人“指尖”！数亿元押注， + Amazon will train on）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-13-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-13-evening.html</guid>
+      <pubDate>Thu, 13 Aug 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>谷歌创始人布林紧急接管Gemini团队，但“3.5 Pro已被取消”（量子位）</li>
+        <li>央行：综合运用并适时调整货币政策工具，保持流动性充裕；二季度新AI产品影响105亿利润，腾讯总裁回应；荣耀发布首款机器人手机。（钛媒体）</li>
+        <li>Mate 90 系列 + 韬定律芯片首秀？文旅部透露华为终端 Haco 发布会定档 9 月 23 日（IT之家）</li>
+        <li>Google TurboQuant AI 压缩算法大幅减少大模型内存使用（Solidot）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>AI Hype Is Running into Reality（Hacker News）</li>
+        <li>We put llms.txt on 83 websites. In 12 weeks OpenAI's crawler read it 7 times（Hacker News）</li>
+        <li>Anthropic in Talks to Buy World Model AI Startup Decart for $6B（Hacker News）</li>
+        <li>Apple and AI: Siri the Early Years（Hacker News）</li>
+        <li>GitHub Trending: ZhuLinsen /
+
+      daily_stock_analysis（GitHub Trending）</li>
+        <li>GitHub Trending: HKUDS /
+
+      DeepTutor（GitHub Trending）</li>
+        <li>GitHub Trending: omnigent-ai /
+
+      omnigent（GitHub Trending）</li>
+        <li>GitHub Trending: unslothai /
+
+      unsloth（GitHub Trending）</li>
+        <li>GitHub Trending: VectifyAI /
+
+      OpenKB（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Amazon will train on Twitch streamers&#8217; content by default, unless they opt out（TechCrunch）</li>
+        <li>AI coding startup Cognition reportedly already in talks to raise at $40B valuation（TechCrunch）</li>
+        <li>As AI safety concerns mount, three pioneers make the case for staying open（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>蚂蚁首次投向机器人“指尖”！数亿元押注，全球首个物理交互脑发布（量子位）</li>
+        <li>GPU开始金融化！黄仁勋拉上华尔街搞5000亿美元融资（量子位）</li>
+        <li>百年黎曼猜想被Claude破了新纪录！是个未公开新模型（量子位）</li>
+        <li>Claude骂声中启动「隐形水印」：新模型全量嵌入，标记所有文字（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-08-12（谷歌创始人布林紧急接管Gemini团队， + 蚂蚁首次投向机器人“指尖”！数亿元押注， + 当AI开始“自作主张”，谁来为智能体戴上 + OpenAI launches Chat）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-12-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-12-evening.html</guid>
@@ -380,44 +427,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-06（华为 nova16 SE 手机发布：麒麟 + 开源版Claude Science来了！ + Meta launches Muse C）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-06-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-06-evening.html</guid>
-      <pubDate>Thu, 06 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>华为 nova16 SE 手机发布：麒麟 8020 芯片、8500mAh 电池，2499 元起（IT之家）</li>
-        <li>华为续航最长平板 MatePad Pro 2026 发布：麒麟 T93 芯片，5999 元起（IT之家）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>机器人大舞台有料你就来！WRC前瞻首发：整机厂秀肌肉，零部件闷声发财｜WRC 2026（雷锋网）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>AI agents that inherit the user's permissions, not API keys（Hacker News）</li>
-        <li>GitHub Trending: NousResearch /
 
-      hermes-agent（GitHub Trending）</li>
-        <li>GitHub Trending: NovaSky-AI /
-
-      SkyRL（GitHub Trending）</li>
-        <li>GitHub Trending: BerriAI /
-
-      litellm（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Meta launches Muse Code, an AI agent for large code bases（TechCrunch）</li>
-        <li>Jeff Dean and other top AI researchers are leaving Google to launch their own startup（TechCrunch）</li>
-        <li>Shopify says AI search is driving more traffic and sales, not replacing Google（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>开源版Claude Science来了！零依赖、MIT协议，内置30+项科研Skills（量子位）</li>
-        <li>DeepSeek低价风暴打服硅谷！海外平台争相倒贴V4 Flash（量子位）</li>
-        <li>资本重仓端侧物理AI：前海母基金数亿元押注，Om AI联汇加速端侧AI商业化落地（量子位）</li>
-        <li>突发，Jeff Dean离职创业！谷歌股价应声蒸发1.34万亿（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
