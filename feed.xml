@@ -5,10 +5,58 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 13 Aug 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                            <item>
+                                                                                                <item>
+      <title>🌙 晚间版 — 2026-08-14（360纳米大片流水线携手《知识就是力量》 + 刚刚，DeepSeek V4 Pro正式 + Writer introduces ne）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-14-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-14-evening.html</guid>
+      <pubDate>Fri, 14 Aug 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>360纳米大片流水线携手《知识就是力量》发布“知力·纳米”科普科幻AI大片创作平台（量子位）</li>
+        <li>央行出手！万亿买断式逆回购今日落地；DeepSeek官宣涨价、长鑫科技成中国市值最大上市公司；宇树科技遭弃购8734股、史上最大IPO或将易主。（钛媒体）</li>
+        <li>苹果最贵手机：曝 iPhone Ultra 下月 8 日发布，不与 iPhone 18 Pro / Max 同步上市（IT之家）</li>
+        <li>Mate 90 系列 + 韬定律芯片首秀？文旅部透露华为终端 Haco 发布会定档 9 月 23 日（IT之家）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>4.8亿美元砸向端侧算力！Agent芯片新贵冲出重围（量子位）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>The next frontier in AI governance isn't stronger guardrails. It's fire brigades（Hacker News）</li>
+        <li>Agentstow: Canonical configs, fanned out to all your AI coding agents（Hacker News）</li>
+        <li>Tax Law Is Funding the AI Infrastructure Boom, Not Creating It（Hacker News）</li>
+        <li>Muxxy: Like Slime, for AI and Tmux（Hacker News）</li>
+        <li>DeepMind's Hassabis Pitched AI-Oversight Body Before Shake-Up（Hacker News）</li>
+        <li>GitHub Trending: unslothai /
+
+      unsloth（GitHub Trending）</li>
+        <li>GitHub Trending: ZhuLinsen /
+
+      daily_stock_analysis（GitHub Trending）</li>
+        <li>GitHub Trending: HKUDS /
+
+      DeepTutor（GitHub Trending）</li>
+        <li>GitHub Trending: vllm-project /
+
+      vllm（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Writer introduces new AI model and upgraded harness to contain token costs（TechCrunch）</li>
+        <li>Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation.（TechCrunch）</li>
+        <li>OpenAI introduces &#8216;Ultrafast,&#8217; a new mode that makes GPT-5.6 Sol work at 14x the speed（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>刚刚，DeepSeek V4 Pro正式版发布，多项对标Fable 5（量子位）</li>
+        <li>引领智能手机迈入具身交互时代 全球首款机器人手机荣耀Robot Phone发布（量子位）</li>
+        <li>具身数据来了实战派！40天2轮融资数千万，瞄准物理AI基础设施（量子位）</li>
+        <li>深度体验DeepSeek Harness，我原谅它涨价了（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-08-13（谷歌创始人布林紧急接管Gemini团队， + 蚂蚁首次投向机器人“指尖”！数亿元押注， + Amazon will train on）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-13-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-13-evening.html</guid>
@@ -383,49 +431,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-07（PPIO正式发布“Fusion融合模型” + DeepSeek豪掷1.4亿护航宇树IP + OpenAI&#8217;s new A）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-07-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-07-evening.html</guid>
-      <pubDate>Fri, 07 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>PPIO正式发布“Fusion融合模型”：用十分之一的价格超越顶级模型的智商（量子位）</li>
-        <li>Artificial Analysis榜单：阿里Qwen3.8Agentic能力得分全球第一（量子位）</li>
-        <li>150.8元/股！宇树科技超百名员工参与IPO「盛宴」，一批90后千万富豪或将诞生；DeepSeek拟上调API服务定价；字节拟训练超5万亿参数大模型（雷锋网）</li>
-        <li>AI空调全球第一，海尔空调发布全场景AI空气方案（钛媒体）</li>
-        <li>GPT-Live 底层拆解：OpenAI 如何让 95% 的音频帧不再延迟（雷锋网）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Ask HN: What will be the Chernobyl or Bhopal scale industrial disaster of AI?（Hacker News）</li>
-        <li>EU AI Act Content Labelling: Fake Around and Find Out（Hacker News）</li>
-        <li>SEAI: Hardware-rooted identity for autonomous AI（Hacker News）</li>
-        <li>GitHub Trending: Significant-Gravitas /
 
-      AutoGPT（GitHub Trending）</li>
-        <li>GitHub Trending: unclecode /
-
-      crawl4ai（GitHub Trending）</li>
-        <li>GitHub Trending: aws /
-
-      agent-toolkit-for-aws（GitHub Trending）</li>
-        <li>GitHub Trending: livekit /
-
-      agents（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>OpenAI&#8217;s new AI smart speaker will reportedly sell for between $300 and $400（TechCrunch）</li>
-        <li>ChatGPT brings unlimited text chats to free users（TechCrunch）</li>
-        <li>Naïve raises $28.5M to automate the grunt work of setting up and running a company（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>DeepSeek豪掷1.4亿护航宇树IPO，杭州绝代双骄战略合体（量子位）</li>
-        <li>MiniMax H3登顶开源社区第一，定义视频模型领域“斩杀线”（量子位）</li>
-        <li>AI SSD：大模型推理的存储范式转移（量子位）</li>
-        <li>Show me《指环王》！卡帕西强推大模型评测新基准（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
