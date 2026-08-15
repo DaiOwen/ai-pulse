@@ -5,10 +5,43 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 15 Aug 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                    <item>
+                                                                                                        <item>
+      <title>☀️ 午间版 — 2026-08-15（太初元碁助力国家级“AI+教育”大赛 “ + 刚刚，Qwen3.8-27B 开源了！家 + Google will now allo）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-15-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-15-noon.html</guid>
+      <pubDate>Sat, 15 Aug 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>太初元碁助力国家级“AI+教育”大赛 “AI+加速卡模型适配赛道”开启招募（量子位）</li>
+        <li>智谱发布 GLM-5.3 编程能力最强开源模型（IT之家）</li>
+        <li>智谱正式发布 GLM-5.3：编程能力最强开源模型，较 GLM-5.2 提升 50%（IT之家）</li>
+        </ul>
+        <h3>📜 政策 & 合规</h3><ul>
+        <li>德塔智能与舞肌科技达成战略合作，联合规范全身协同灵巧操作数据采集（量子位）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>4.8亿美元砸向端侧算力！Agent芯片新贵冲出重围（量子位）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Comma.ai Launches a PCIe Gen4 X4 to USB4 Dock with Open-Source Firmware（Hacker News）</li>
+        <li>People Who Will Thrive in the AI Age（Hacker News）</li>
+        <li>Dynatrace to buy AI observability startup Arize for $915M（Hacker News）</li>
+        <li>2nd brain scrolls corners of X for you so you can focus on other things（Hacker News）</li>
+        <li>GitHub Trending: unslothai /
+
+      unsloth（GitHub Trending）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>刚刚，Qwen3.8-27B 开源了！家用显卡也能跑（量子位）</li>
+        <li>具身数据来了实战派！40天2轮融资数千万，瞄准物理AI基础设施（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-08-15（太初元碁助力国家级“AI+教育”大赛 “ + 刚刚，Qwen3.8-27B 开源了！家 + Google will now allo）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-15-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-15-evening.html</guid>
@@ -401,33 +434,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-08-08（PPIO正式发布“Fusion融合模型” + 蚂蚁集团开源Avernet，让人与智能体 + OpenAI says it slowe）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-08-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-08-noon.html</guid>
-      <pubDate>Sat, 08 Aug 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>PPIO正式发布“Fusion融合模型”：用十分之一的价格超越顶级模型的智商（量子位）</li>
-        <li>都学坏了！奥特曼亲手封锁最强模型Astra，重蹈Mythos覆辙（量子位）</li>
-        <li>阿里推出国内首个AI语音平台CosyVoice Studio，将语义理解融入语音能力（量子位）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>AMD 收购将权重直接刻在芯片上的 AI 初创公司（Solidot）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>JEDEC releases new SPHBM4 standard to slash AI memory costs – 512-bit interface（Hacker News）</li>
-        <li>The Genesis Mission: AI and Quantum-Driven Discovery（Hacker News）</li>
-        <li>AI on a Piece of Sponge?（Hacker News）</li>
-        <li>Mythos social engineering AISI INC-2026-07-28-01（Hacker News）</li>
-        <li>Show HN: Buddy – An iOS browser with an AI agent inside（Hacker News）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>蚂蚁集团开源Avernet，让人与智能体像组织一样高效协作（量子位）</li>
-        <li>openJiuwen发布业界首个企业级智能体分布式蜂群架构，联合邮储成功落地金融生产环境（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
+
 
 
 
