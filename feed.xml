@@ -5,10 +5,53 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 14 Aug 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                <item>
+                                                                                                    <item>
+      <title>🌙 晚间版 — 2026-08-15（太初元碁助力国家级“AI+教育”大赛 “ + 刚刚，Qwen3.8-27B 开源了！家 + Google will now allo）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-15-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-15-evening.html</guid>
+      <pubDate>Sat, 15 Aug 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>太初元碁助力国家级“AI+教育”大赛 “AI+加速卡模型适配赛道”开启招募（量子位）</li>
+        <li>智谱发布 GLM-5.3 编程能力最强开源模型（IT之家）</li>
+        <li>智谱正式发布 GLM-5.3：编程能力最强开源模型，较 GLM-5.2 提升 50%（IT之家）</li>
+        </ul>
+        <h3>📜 政策 & 合规</h3><ul>
+        <li>德塔智能与舞肌科技达成战略合作，联合规范全身协同灵巧操作数据采集（量子位）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>4.8亿美元砸向端侧算力！Agent芯片新贵冲出重围（量子位）</li>
+        <li>3D存算一体芯片领军企业谦合益邦完成超20亿元B轮融资（雷锋网）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>ShieldFont: Bludgeoning AI Scrapers That Disrespect Robots.txt（Hacker News）</li>
+        <li>Talos AI Agent Super Secure（Hacker News）</li>
+        <li>A Framework for Solving the AI Data Center Energy Crisis（Hacker News）</li>
+        <li>GitHub Trending: unslothai /
+
+      unsloth（GitHub Trending）</li>
+        <li>GitHub Trending: K-Dense-AI /
+
+      scientific-agent-skills（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Google will now allow users to remove visible watermark from its AI generations（TechCrunch）</li>
+        <li>Does Mark Zuckerberg really believe AI is &#8216;for everyone&#8217;?（TechCrunch）</li>
+        <li>Meta&#8217;s &#8216;open&#8217; AI, and a $250M deal gone very wrong（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>刚刚，Qwen3.8-27B 开源了！家用显卡也能跑（量子位）</li>
+        <li>具身数据来了实战派！40天2轮融资数千万，瞄准物理AI基础设施（量子位）</li>
+        <li>深度体验DeepSeek Harness，我原谅它涨价了（量子位）</li>
+        <li>Claude一举扫清2000阶以下哈达玛矩阵！AI开始清空数学待解列表（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-08-14（360纳米大片流水线携手《知识就是力量》 + 刚刚，DeepSeek V4 Pro正式 + Writer introduces ne）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-14-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-14-evening.html</guid>
@@ -386,50 +429,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-08（150.8元/股！宇树科技超百名员工参与 + 工业AI企业硕橙科技完成超亿元D+轮融资 + OpenAI says it slowe）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-08-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-08-evening.html</guid>
-      <pubDate>Sat, 08 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>150.8元/股！宇树科技超百名员工参与IPO「盛宴」，一批90后千万富豪或将诞生；DeepSeek拟上调API服务定价；字节拟训练超5万亿参数大模型（雷锋网）</li>
-        <li>82 篇论文撑起的判断：IJCAI 凭什么是推理、规划、知识的「第一主场」（雷锋网）</li>
-        <li>GPT-Live 底层拆解：OpenAI 如何让 95% 的音频帧不再延迟（雷锋网）</li>
-        <li>字节跳动开发 10 万亿参数模型（Solidot）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>IJCAI 2026 专访：机器人想学会人类动作，还差一座桥 | GAIR Paper 118（雷锋网）</li>
-        <li>AMD 收购将权重直接刻在芯片上的 AI 初创公司（Solidot）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>AI struggles to patch vulns without adult supervision（Hacker News）</li>
-        <li>Show HN: Salestrics – An open MCP server and CRM for AI-native revenue teams（Hacker News）</li>
-        <li>Robust AI Security and Alignment: A Sisyphean Endeavor?（Hacker News）</li>
-        <li>MegaDev AI Workshop（Hacker News）</li>
-        <li>GitHub Trending: Significant-Gravitas /
 
-      AutoGPT（GitHub Trending）</li>
-        <li>GitHub Trending: wshobson /
-
-      agents（GitHub Trending）</li>
-        <li>GitHub Trending: kijai /
-
-      ComfyUI-KJNodes（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>OpenAI says it slowed Astra model development over security concerns（TechCrunch）</li>
-        <li>After Rippling blew millions on AI in months, it built an employee ROI tool（TechCrunch）</li>
-        <li>Cloudflare launches Kitesurf, a browser built for AI agents（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>工业AI企业硕橙科技完成超亿元D+轮融资，工业母机产业投资基金领投｜首发（钛媒体）</li>
-        <li>全球「AI学术顶会」精华汇聚地（雷锋网）</li>
-        <li>IJCAI-ECAI 2026（雷锋网）</li>
-        <li>《时代》杂志网站展示只有 AI 能看到的广告（Solidot）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
