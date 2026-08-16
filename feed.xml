@@ -5,10 +5,50 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 15 Aug 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                        <item>
+                                                                                                            <item>
+      <title>🌙 晚间版 — 2026-08-16（根治AI音乐通病！这家国产音乐模型正面挑 + 刚刚，Qwen3.8-27B 开源了！家 + Woman claims her ste）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-16-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-16-evening.html</guid>
+      <pubDate>Sun, 16 Aug 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>根治AI音乐通病！这家国产音乐模型正面挑战SUNO（量子位）</li>
+        <li>太初元碁助力国家级“AI+教育”大赛 “AI+加速卡模型适配赛道”开启招募（量子位）</li>
+        <li>Mate 90 系列 + 韬定律芯片首秀？文旅部透露华为终端 Haco 发布会定档 9 月 23 日（IT之家）</li>
+        <li>古尔曼：苹果 iPhone 18 Pro / Ultra 发布会预计 9 月 9 日举行，预售避开 9&#183;11（IT之家）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>3D存算一体芯片领军企业谦合益邦完成超20亿元B轮融资（雷锋网）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>TrueStar – AI moderated expert interviews and multi-agent deep research（Hacker News）</li>
+        <li>The AI Bubble Is on Its Last Legs（Hacker News）</li>
+        <li>The complete AI SEO playbook: from zero to 4.6M impressions in 3 months（Hacker News）</li>
+        <li>GitHub Trending: unslothai /
+
+      unsloth（GitHub Trending）</li>
+        <li>GitHub Trending: ashishpatel26 /
+
+      500-AI-Agents-Projects（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Woman claims her stepfather used Grok to transform childhood photo into explicit imagery（TechCrunch）</li>
+        <li>Anthropic shares more details about how Claude’s new watermarks will work（TechCrunch）</li>
+        <li>Google will now allow users to remove visible watermark from its AI generations（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>刚刚，Qwen3.8-27B 开源了！家用显卡也能跑（量子位）</li>
+        <li>至知研究院提出大模型可解释性新路线：拆权重，数据成本不到1%（量子位）</li>
+        <li>源神启动！一张消费级显卡跑“Opus级”Agent，Qwen3.8-27B多项榜单反超Claude（量子位）</li>
+        <li>DeepSeek Harness插件一夜燃爆GitHub：长期记忆、电子宠物、4399小游戏全来了（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-08-15（太初元碁助力国家级“AI+教育”大赛 “ + 刚刚，Qwen3.8-27B 开源了！家 + Google will now allo）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-15-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-15-noon.html</guid>
@@ -385,54 +425,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-09（PPIO正式发布“Fusion融合模型” + 蚂蚁集团开源Avernet，让人与智能体 + OpenAI acquires pres）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-09-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-09-evening.html</guid>
-      <pubDate>Sun, 09 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>PPIO正式发布“Fusion融合模型”：用十分之一的价格超越顶级模型的智商（量子位）</li>
-        <li>都学坏了！奥特曼亲手封锁最强模型Astra，重蹈Mythos覆辙（量子位）</li>
-        <li>阿里推出国内首个AI语音平台CosyVoice Studio，将语义理解融入语音能力（量子位）</li>
-        <li>150.8元/股！宇树科技超百名员工参与IPO「盛宴」，一批90后千万富豪或将诞生；DeepSeek拟上调API服务定价；字节拟训练超5万亿参数大模型（雷锋网）</li>
-        <li>DeepMind 的 WeatherNext 模型在飓风预测上取得突破（Solidot）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>ChatGPT starts blocking direct requests to copy an author's style（Hacker News）</li>
-        <li>Model Genome: Fingerprinting Whether an LLM Was Trained from Scratch or Derived（Hacker News）</li>
-        <li>I built a video editor in Rust with extensive AI-powered features（Hacker News）</li>
-        <li>The AI Apocalypse Is Here（Hacker News）</li>
-        <li>Show HN: Aidress – LangChain integration for cross-agent discovery and trust（Hacker News）</li>
-        <li>GitHub Trending: TauricResearch /
 
-      TradingAgents（GitHub Trending）</li>
-        <li>GitHub Trending: Significant-Gravitas /
-
-      AutoGPT（GitHub Trending）</li>
-        <li>GitHub Trending: kyutai-labs /
-
-      pocket-tts（GitHub Trending）</li>
-        <li>GitHub Trending: google-deepmind /
-
-      weathernext（GitHub Trending）</li>
-        <li>GitHub Trending: harveyai /
-
-      harvey-labs（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>OpenAI acquires presentation startup NextSlide（TechCrunch）</li>
-        <li>OpenAI says it slowed Astra model development over security concerns（TechCrunch）</li>
-        <li>After Rippling blew millions on AI in months, it built an employee ROI tool（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>蚂蚁集团开源Avernet，让人与智能体像组织一样高效协作（量子位）</li>
-        <li>openJiuwen发布业界首个企业级智能体分布式蜂群架构，联合邮储成功落地金融生产环境（量子位）</li>
-        <li>奥特曼的ChatGPT育儿大法，捅了马蜂窝（量子位）</li>
-        <li>阿里视频大模型Wan3.0开启公测：文档、ppt也能变视频（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
