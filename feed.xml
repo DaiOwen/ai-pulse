@@ -5,10 +5,55 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 16 Aug 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                <item>
+                                                                                                                    <item>
+      <title>🌙 晚间版 — 2026-08-17（根治AI音乐通病！这家国产音乐模型正面挑 + 刚刚，Qwen3.8-27B 开源了！家 + Stripe will reported）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-17-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-17-evening.html</guid>
+      <pubDate>Mon, 17 Aug 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>根治AI音乐通病！这家国产音乐模型正面挑战SUNO（量子位）</li>
+        <li>太初元碁助力国家级“AI+教育”大赛 “AI+加速卡模型适配赛道”开启招募（量子位）</li>
+        <li>【数智周报】  华为云OfficeClaw升级为OfficeAce；Meta发布轻量化AI模型，单张显卡即可运行；千问办公助理收费；智谱宣布ZCode全面升级（钛媒体）</li>
+        <li>Mate 90 系列 + 韬定律芯片首秀？文旅部透露华为终端 Haco 发布会定档 9 月 23 日（IT之家）</li>
+        <li>Google TurboQuant AI 压缩算法大幅减少大模型内存使用（Solidot）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>3D存算一体芯片领军企业谦合益邦完成超20亿元B轮融资（雷锋网）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>BlockArena: AI-Generated FPS Game（Hacker News）</li>
+        <li>AI Agent Safety Is Still Thinking Like Permissions（Hacker News）</li>
+        <li>Why Chinese Citizens Are More Optimistic About AI Than Americans（Hacker News）</li>
+        <li>Show HN: Continuum – Financial simulations for DIY multimillionaires（Hacker News）</li>
+        <li>GitHub Trending: xai-org /
+
+      grok-1（GitHub Trending）</li>
+        <li>GitHub Trending: jundot /
+
+      omlx（GitHub Trending）</li>
+        <li>GitHub Trending: 0xSero /
+
+      ai-data-extraction（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+（TechCrunch）</li>
+        <li>Why people aren&#8217;t buying Mark Zuckerberg’s AI future（TechCrunch）</li>
+        <li>Anthropic CEO says AI backlash is ‘fundamentally a crisis of trust’（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>刚刚，Qwen3.8-27B 开源了！家用显卡也能跑（量子位）</li>
+        <li>至知研究院提出大模型可解释性新路线：拆权重，数据成本不到1%（量子位）</li>
+        <li>源神启动！一张消费级显卡跑“Opus级”Agent，Qwen3.8-27B多项榜单反超Claude（量子位）</li>
+        <li>DeepSeek Harness插件一夜燃爆GitHub：长期记忆、电子宠物、4399小游戏全来了（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-08-16（根治AI音乐通病！这家国产音乐模型正面挑 + 刚刚，Qwen3.8-27B 开源了！家 + Woman claims her ste）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-16-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-16-noon.html</guid>
@@ -376,53 +421,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-10（3B模型碾压英伟达谷歌后，Om AI端侧 + openJiuwen发布业界首个企业级智 + Anthropic is turning）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-10-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-10-evening.html</guid>
-      <pubDate>Mon, 10 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>3B模型碾压英伟达谷歌后，Om AI端侧原生VLX模型：小参数实现物理世界精准感知（量子位）</li>
-        <li>当题库追不上模型，AI开始给自己出题：中国这支团队跑通了数据层RSI（量子位）</li>
-        <li>都学坏了！奥特曼亲手封锁最强模型Astra，重蹈Mythos覆辙（量子位）</li>
-        <li>阿里推出国内首个AI语音平台CosyVoice Studio，将语义理解融入语音能力（量子位）</li>
-        <li>150.8元/股！宇树科技超百名员工参与IPO「盛宴」，一批90后千万富豪或将诞生；DeepSeek拟上调API服务定价；字节拟训练超5万亿参数大模型（雷锋网）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>What do I want to be? – a poem about parenting in the AI age（Hacker News）</li>
-        <li>What if we let AI govern us?（Hacker News）</li>
-        <li>The Airtable acquisition and what hypergrowth teaches you（Hacker News）</li>
-        <li>Show HN: An AI chief of staff for founders who can't afford one（Hacker News）</li>
-        <li>GitHub Trending: google-deepmind /
 
-      weathernext（GitHub Trending）</li>
-        <li>GitHub Trending: ZhuLinsen /
-
-      daily_stock_analysis（GitHub Trending）</li>
-        <li>GitHub Trending: harveyai /
-
-      harvey-labs（GitHub Trending）</li>
-        <li>GitHub Trending: MervinPraison /
-
-      PraisonAI（GitHub Trending）</li>
-        <li>GitHub Trending: TauricResearch /
-
-      TradingAgents（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Anthropic is turning Claude Code’s auto mode on by default（TechCrunch）</li>
-        <li>The AI safety test is becoming a safety risk（TechCrunch）</li>
-        <li>OpenAI acquires presentation startup NextSlide（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>openJiuwen发布业界首个企业级智能体分布式蜂群架构，联合邮储成功落地金融生产环境（量子位）</li>
-        <li>180万刀，连亚马逊都烧不起Claude了（量子位）</li>
-        <li>Opus 5狂烧6.9亿token做游戏，GPT-5.6用5美元复刻了（量子位）</li>
-        <li>奥特曼的ChatGPT育儿大法，捅了马蜂窝（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
