@@ -5,10 +5,53 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 17 Aug 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                        <item>
+                                                                                                                            <item>
+      <title>🌙 晚间版 — 2026-08-18（终于！世界模型进入“有声时代”：24FP + 共生知行发布人形机器人赛车Demo：以卡 + Anthropic&#8217;s an）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-18-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-18-evening.html</guid>
+      <pubDate>Tue, 18 Aug 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>终于！世界模型进入“有声时代”：24FPS画面+48kHz立体声实时生成（量子位）</li>
+        <li>根治AI音乐通病！这家国产音乐模型正面挑战SUNO（量子位）</li>
+        <li>YC 开源自家 Harness，3 天斩获 3.9k Star，QM 如何划清 Agent 的权限边界（雷锋网）</li>
+        <li>阿里巴巴开放权重模型下载量过去半年突破 30 亿（Solidot）</li>
+        <li>Mate 90 系列 + 韬定律芯片首秀？文旅部透露华为终端 Haco 发布会定档 9 月 23 日（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Follow-Up Thoughts on Watermarking Schemes for AI-Generated Text（Hacker News）</li>
+        <li>Consumers Prefer AI Music Until They're Told It's AI（Hacker News）</li>
+        <li>GitHub Trending: jundot /
+
+      omlx（GitHub Trending）</li>
+        <li>GitHub Trending: 0x4m4 /
+
+      hexstrike-ai（GitHub Trending）</li>
+        <li>GitHub Trending: unslothai /
+
+      unsloth（GitHub Trending）</li>
+        <li>GitHub Trending: Blaizzy /
+
+      mlx-audio（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Anthropic&#8217;s annualized revenue surges to $65B（TechCrunch）</li>
+        <li>AI automation startup Relay shuts down, staff joins Google&#8217;s Chrome team（TechCrunch）</li>
+        <li>Amazon, which started off selling books, is destroying rare texts to train AI（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>共生知行发布人形机器人赛车Demo：以卡丁车测试双足机器人的“全身智能”（量子位）</li>
+        <li>菲尔兹奖得主：AI现在主要靠「抬杠」突破重大数学猜想（量子位）</li>
+        <li>至知研究院提出大模型可解释性新路线：拆权重，数据成本不到1%（量子位）</li>
+        <li>源神启动！一张消费级显卡跑“Opus级”Agent，Qwen3.8-27B多项榜单反超Claude（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-08-17（根治AI音乐通病！这家国产音乐模型正面挑 + 刚刚，Qwen3.8-27B 开源了！家 + Stripe will reported）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-17-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-17-noon.html</guid>
@@ -373,33 +416,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-08-11（模型路线趋同之后，Physical AI + GPU开始金融化！黄仁勋拉上华尔街搞50 + 当AI开始“自作主张”，谁来为智能体戴上 + OpenAI reportedly co）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-11-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-11-noon.html</guid>
-      <pubDate>Tue, 11 Aug 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>模型路线趋同之后，Physical AI的胜负手变了（量子位）</li>
-        <li>DeepMind 的 WeatherNext 模型在飓风预测上取得突破（Solidot）</li>
-        <li>苹果 iOS / iPadOS 27.0 开发者预览版 Beta 5 发布：Safari 浏览器、Siri 等图标迎来重新设计（IT之家）</li>
-        </ul>
-        <h3>🛠️ 工具 & 部署</h3><ul>
-        <li>当AI开始“自作主张”，谁来为智能体戴上“项圈”？全球AI安全实战化大考，中国方案打入前三（量子位）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Folding Prion Protein with AI（Hacker News）</li>
-        <li>Teaching an Open Model to Do Science（Hacker News）</li>
-        <li>'We Did Our Best': Metaphors of Parenting and AI（Hacker News）</li>
-        <li>Call centres using AI to 'whiten' Indian accents (2025)（Hacker News）</li>
-        <li>Portail – Sovereign Rust AI Gateway and BitNet B1.58 SIMD Tensor Engine（Hacker News）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>GPU开始金融化！黄仁勋拉上华尔街搞5000亿美元融资（量子位）</li>
-        <li>对话郎咸朋：具身也会有“蔚小理”，靠融资实现不了物理AGI（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
+
 
 
 
