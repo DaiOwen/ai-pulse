@@ -5,10 +5,35 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 18 Aug 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                            <item>
+                                                                                                                                <item>
+      <title>☀️ 午间版 — 2026-08-18（终于！世界模型进入“有声时代”：24FP + 共生知行发布人形机器人赛车Demo：以卡 + Anthropic&#8217;s an）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-18-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-18-noon.html</guid>
+      <pubDate>Tue, 18 Aug 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>终于！世界模型进入“有声时代”：24FPS画面+48kHz立体声实时生成（量子位）</li>
+        <li>阿里巴巴开放权重模型下载量过去半年突破 30 亿（Solidot）</li>
+        <li>YC 开源自家 Harness，3 天斩获 3.9k Star，QM 如何划清 Agent 的权限边界（雷锋网）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>What If I Told You Humans Are Moving Faster Than AI?（Hacker News）</li>
+        <li>Why It Hasn't Happened Yet: Capable AI and Malicious Intent（Hacker News）</li>
+        <li>San Diego 150 Years Ago: Rare AI Reconstruction Visuals [video]（Hacker News）</li>
+        <li>A candy brand discovered TikTok made an AI clone of its founder to run ads [video]（Hacker News）</li>
+        <li>Three different papers pushed to ArXiv proving same 1986 conjecture; all use AI（Hacker News）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>共生知行发布人形机器人赛车Demo：以卡丁车测试双足机器人的“全身智能”（量子位）</li>
+        <li>菲尔兹奖得主：AI现在主要靠「抬杠」突破重大数学猜想（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-08-18（终于！世界模型进入“有声时代”：24FP + 共生知行发布人形机器人赛车Demo：以卡 + Anthropic&#8217;s an）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-18-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-18-evening.html</guid>
@@ -363,58 +388,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-12（谷歌创始人布林紧急接管Gemini团队， + 蚂蚁首次投向机器人“指尖”！数亿元押注， + 当AI开始“自作主张”，谁来为智能体戴上 + OpenAI launches Chat）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-12-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-12-evening.html</guid>
-      <pubDate>Wed, 12 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>谷歌创始人布林紧急接管Gemini团队，但“3.5 Pro已被取消”（量子位）</li>
-        <li>模型路线趋同之后，Physical AI的胜负手变了（量子位）</li>
-        <li>从卖芯片到卖整个AI工作流：英伟达发布Nemotron 3.5与模型路由器（钛媒体）</li>
-        <li>含 iPhone Ultra、iPhone 18 Pro 等，六款未发布的苹果 iPhone 新机首度现身 iOS 27 系统代码（IT之家）</li>
-        <li>DeepSeek招土木工程师；腾讯参投！林俊旸深夜官宣新公司：做下一代AI智能体；宇树科技中签号出炉：共19414个丨雷峰早报（雷锋网）</li>
-        </ul>
-        <h3>🛠️ 工具 & 部署</h3><ul>
-        <li>当AI开始“自作主张”，谁来为智能体戴上“项圈”？全球AI安全实战化大考，中国方案打入前三（量子位）</li>
-        <li>「说 Harness 会被淘汰的，肯定没做过工程」，Kimi 前 CLI 负责人戳破了 AI 圈最大的误解（雷锋网）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>MiniMax H3: An Open Model Breaking the Boundaries Between Tasks and Modalities（Hacker News）</li>
-        <li>Company Offering '100% Human-Written, Never AI' Medical Research Is 100% AI（Hacker News）</li>
-        <li>Numbat by Perplexity: Endpoint visibility into AI agent activity（Hacker News）</li>
-        <li>4Chan Chuds Used AI to Clothe Her. She Fought Back (2024)（Hacker News）</li>
-        <li>The traits that make engineers stand out, according to Coinbase's CTO（Hacker News）</li>
-        <li>GitHub Trending: ZhuLinsen /
 
-      daily_stock_analysis（GitHub Trending）</li>
-        <li>GitHub Trending: HKUDS /
-
-      DeepTutor（GitHub Trending）</li>
-        <li>GitHub Trending: huggingface /
-
-      transformers（GitHub Trending）</li>
-        <li>GitHub Trending: harveyai /
-
-      harvey-labs（GitHub Trending）</li>
-        <li>GitHub Trending: LLMQuant /
-
-      quant-mind（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>OpenAI launches ChatGPT desktop app for Linux（TechCrunch）</li>
-        <li>Google’s Gemini app surges to 1 billion users（TechCrunch）</li>
-        <li>Brad Lightcap, OpenAI&#8217;s longtime COO, is leaving to &#8216;start something new&#8217;（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>蚂蚁首次投向机器人“指尖”！数亿元押注，全球首个物理交互脑发布（量子位）</li>
-        <li>GPU开始金融化！黄仁勋拉上华尔街搞5000亿美元融资（量子位）</li>
-        <li>百年黎曼猜想被Claude破了新纪录！是个未公开新模型（量子位）</li>
-        <li>Claude骂声中启动「隐形水印」：新模型全量嵌入，标记所有文字（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
