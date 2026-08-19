@@ -5,10 +5,52 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 18 Aug 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 19 Aug 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                <item>
+                                                                                                                                    <item>
+      <title>🌙 晚间版 — 2026-08-19（人人都能写好听的歌，阿里发布AI音乐模型 + 网易传媒发布&#8221;蜜蜂AI” ： + OpenAI institutes ne）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-19-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-19-evening.html</guid>
+      <pubDate>Wed, 19 Aug 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>人人都能写好听的歌，阿里发布AI音乐模型HappyShrimp（量子位）</li>
+        <li>阿里巴巴开放权重模型下载量过去半年突破 30 亿（Solidot）</li>
+        <li>雷军正式官宣：小米新一代玄戒芯片即将发布，微博小尾巴已更换为神秘新机（IT之家）</li>
+        <li>小米卢伟冰：新一代玄戒芯片即将发布，系列旗舰产品会密集上市（IT之家）</li>
+        <li>Mate 90 系列 + 韬定律芯片首秀？文旅部透露华为终端 Haco 发布会定档 9 月 23 日（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Do All Your Agents Need Models Like Claude 5 or GPT-5.6?（Hacker News）</li>
+        <li>OpenAI announces slowing pace of development after hack by rogue agent（Hacker News）</li>
+        <li>Follow-Up Thoughts on Watermarking Schemes for AI-Generated Text（Hacker News）</li>
+        <li>Show HN: Monity.ai – Get notified when any website changes（Hacker News）</li>
+        <li>GitHub Trending: jundot /
+
+      omlx（GitHub Trending）</li>
+        <li>GitHub Trending: pipeshub-ai /
+
+      pipeshub-ai（GitHub Trending）</li>
+        <li>GitHub Trending: unslothai /
+
+      unsloth（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>OpenAI institutes new safeguards after Hugging Face breach（TechCrunch）</li>
+        <li>Why Apple&#8217;s camera-equipped AirPods may not be the &#8216;pervert pods&#8217; consumers fear（TechCrunch）</li>
+        <li>OpenAI launches a safer ChatGPT for teens — years after teens started using it（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>网易传媒发布&#8221;蜜蜂AI” ：从工具到伙伴，让AI更懂人（量子位）</li>
+        <li>共生知行发布人形机器人赛车Demo：以卡丁车测试双足机器人的“全身智能”（量子位）</li>
+        <li>650亿美元！IPO前夕，Anthropic营收底牌曝光（量子位）</li>
+        <li>菲尔兹奖得主：AI现在主要靠「抬杠」突破重大数学猜想（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-08-18（终于！世界模型进入“有声时代”：24FP + 共生知行发布人形机器人赛车Demo：以卡 + Anthropic&#8217;s an）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-18-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-18-noon.html</guid>
@@ -341,52 +383,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-13（谷歌创始人布林紧急接管Gemini团队， + 蚂蚁首次投向机器人“指尖”！数亿元押注， + Amazon will train on）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-13-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-13-evening.html</guid>
-      <pubDate>Thu, 13 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>谷歌创始人布林紧急接管Gemini团队，但“3.5 Pro已被取消”（量子位）</li>
-        <li>央行：综合运用并适时调整货币政策工具，保持流动性充裕；二季度新AI产品影响105亿利润，腾讯总裁回应；荣耀发布首款机器人手机。（钛媒体）</li>
-        <li>Mate 90 系列 + 韬定律芯片首秀？文旅部透露华为终端 Haco 发布会定档 9 月 23 日（IT之家）</li>
-        <li>Google TurboQuant AI 压缩算法大幅减少大模型内存使用（Solidot）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>AI Hype Is Running into Reality（Hacker News）</li>
-        <li>We put llms.txt on 83 websites. In 12 weeks OpenAI's crawler read it 7 times（Hacker News）</li>
-        <li>Anthropic in Talks to Buy World Model AI Startup Decart for $6B（Hacker News）</li>
-        <li>Apple and AI: Siri the Early Years（Hacker News）</li>
-        <li>GitHub Trending: ZhuLinsen /
 
-      daily_stock_analysis（GitHub Trending）</li>
-        <li>GitHub Trending: HKUDS /
-
-      DeepTutor（GitHub Trending）</li>
-        <li>GitHub Trending: omnigent-ai /
-
-      omnigent（GitHub Trending）</li>
-        <li>GitHub Trending: unslothai /
-
-      unsloth（GitHub Trending）</li>
-        <li>GitHub Trending: VectifyAI /
-
-      OpenKB（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Amazon will train on Twitch streamers&#8217; content by default, unless they opt out（TechCrunch）</li>
-        <li>AI coding startup Cognition reportedly already in talks to raise at $40B valuation（TechCrunch）</li>
-        <li>As AI safety concerns mount, three pioneers make the case for staying open（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>蚂蚁首次投向机器人“指尖”！数亿元押注，全球首个物理交互脑发布（量子位）</li>
-        <li>GPU开始金融化！黄仁勋拉上华尔街搞5000亿美元融资（量子位）</li>
-        <li>百年黎曼猜想被Claude破了新纪录！是个未公开新模型（量子位）</li>
-        <li>Claude骂声中启动「隐形水印」：新模型全量嵌入，标记所有文字（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
