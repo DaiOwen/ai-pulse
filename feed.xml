@@ -5,10 +5,52 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 19 Aug 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                        <item>
+                                                                                                                                            <item>
+      <title>🌙 晚间版 — 2026-08-20（IDC发布2026中国AI50强：360 + 网易传媒发布&#8221;蜜蜂AI” ： + OpenAI seeks to one-）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-20-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-20-evening.html</guid>
+      <pubDate>Thu, 20 Aug 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>IDC发布2026中国AI50强：360以“智能体+安全”双轮驱动入选（量子位）</li>
+        <li>人人都能写好听的歌，阿里发布AI音乐模型HappyShrimp（量子位）</li>
+        <li>奕境X9发布会送假Labubu？品牌方回应；宇树科技IPO名场面：王兴兴表情极为平静像「打工人」；豆包大模型，正式上车特斯拉丨雷峰早报（雷锋网）</li>
+        <li>事关每个人看病报销，全民医保“十五五”规划发布；宇树科技上市首日收涨460%，京东也发布机器人战略；三星据悉上调芯片代工价格，SK海力士抛出40万亿韩元回购。（钛媒体）</li>
+        <li>小米新一代玄戒芯片即将发布，消息称 2025 年底回片、当天一次点亮成功（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Credentialism is coming for AI agents（Hacker News）</li>
+        <li>How to use AI for your next job interview（Hacker News）</li>
+        <li>Round Hill Music Sues Suno and Anthropic for $1B over AI Training Data（Hacker News）</li>
+        <li>US warns of AI-powered attacks on Siemens PLCs in critical infrastructure（Hacker News）</li>
+        <li>GitHub Trending: jundot /
+
+      omlx（GitHub Trending）</li>
+        <li>GitHub Trending: K-Dense-AI /
+
+      scientific-agent-skills（GitHub Trending）</li>
+        <li>GitHub Trending: NousResearch /
+
+      hermes-agent（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>OpenAI seeks to one-up Anthropic with new customer privacy protections（TechCrunch）</li>
+        <li>AI was supposed to win people over by now &#8212; it hasn&#8217;t（TechCrunch）</li>
+        <li>Google packs Search and Gemini with new AI study tools（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>网易传媒发布&#8221;蜜蜂AI” ：从工具到伙伴，让AI更懂人（量子位）</li>
+        <li>具身数据底座开卖，首发5100元：机器人训练数据有了新解法（量子位）</li>
+        <li>全球首个人形机器人自主乒乓球完整对局亮相2026世界机器人大会（量子位）</li>
+        <li>AI for Science开始“动手”了：机器人正式走进国家级实验室（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-08-19（人人都能写好听的歌，阿里发布AI音乐模型 + 网易传媒发布&#8221;蜜蜂AI” ： + OpenAI institutes ne）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-19-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-19-noon.html</guid>
@@ -319,48 +361,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-15（太初元碁助力国家级“AI+教育”大赛 “ + 刚刚，Qwen3.8-27B 开源了！家 + Google will now allo）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-15-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-15-evening.html</guid>
-      <pubDate>Sat, 15 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>太初元碁助力国家级“AI+教育”大赛 “AI+加速卡模型适配赛道”开启招募（量子位）</li>
-        <li>智谱发布 GLM-5.3 编程能力最强开源模型（IT之家）</li>
-        <li>智谱正式发布 GLM-5.3：编程能力最强开源模型，较 GLM-5.2 提升 50%（IT之家）</li>
-        </ul>
-        <h3>📜 政策 & 合规</h3><ul>
-        <li>德塔智能与舞肌科技达成战略合作，联合规范全身协同灵巧操作数据采集（量子位）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>4.8亿美元砸向端侧算力！Agent芯片新贵冲出重围（量子位）</li>
-        <li>3D存算一体芯片领军企业谦合益邦完成超20亿元B轮融资（雷锋网）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>ShieldFont: Bludgeoning AI Scrapers That Disrespect Robots.txt（Hacker News）</li>
-        <li>Talos AI Agent Super Secure（Hacker News）</li>
-        <li>A Framework for Solving the AI Data Center Energy Crisis（Hacker News）</li>
-        <li>GitHub Trending: unslothai /
 
-      unsloth（GitHub Trending）</li>
-        <li>GitHub Trending: K-Dense-AI /
-
-      scientific-agent-skills（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Google will now allow users to remove visible watermark from its AI generations（TechCrunch）</li>
-        <li>Does Mark Zuckerberg really believe AI is &#8216;for everyone&#8217;?（TechCrunch）</li>
-        <li>Meta&#8217;s &#8216;open&#8217; AI, and a $250M deal gone very wrong（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>刚刚，Qwen3.8-27B 开源了！家用显卡也能跑（量子位）</li>
-        <li>具身数据来了实战派！40天2轮融资数千万，瞄准物理AI基础设施（量子位）</li>
-        <li>深度体验DeepSeek Harness，我原谅它涨价了（量子位）</li>
-        <li>Claude一举扫清2000阶以下哈达玛矩阵！AI开始清空数学待解列表（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
