@@ -5,10 +5,38 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 21 Aug 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 21 Aug 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                    <item>
+                                                                                                                                                        <item>
+      <title>☀️ 午间版 — 2026-08-21（雷军正式官宣：小米新一代玄戒芯片即将发布 + 光帆AI技术正式落地韶音OpenFit  + AI data startup Micr）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-21-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-21-noon.html</guid>
+      <pubDate>Fri, 21 Aug 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>雷军正式官宣：小米新一代玄戒芯片即将发布，微博小尾巴已更换为神秘新机（IT之家）</li>
+        <li>智谱正式发布 GLM-5.3：编程能力最强开源模型，较 GLM-5.2 提升 50%（IT之家）</li>
+        <li>原生支持 4K 图像输出，商汤开源 8B 参数量多模态大模型&#160;SenseNova U1.5 Lite（IT之家）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>国产“预制算力”来了：工厂预制率超90% 24小时内投运 交付效率提升70%（量子位）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>The Sloppiest Thing About AI（Hacker News）</li>
+        <li>Meta's app for creating generative AI minigames is now available in the US（Hacker News）</li>
+        <li>Apple Music to Label AI-Generated Songs（Hacker News）</li>
+        <li>Show HN: I built a permission layer for AI agents, then spent a day breaking it（Hacker News）</li>
+        <li>Can Reddit survive in the AI era?（Hacker News）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>光帆AI技术正式落地韶音OpenFit 2 AI耳机，携手突破AI边界（量子位）</li>
+        <li>首批！优必选行者具身智能大模型完成生成式人工智能服务备案（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-08-21（奕境X9发布会送假Labubu？品牌方回 + 远信储能：前五大客户贡献超九成收入，经营 + AI data startup Micr）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-21-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-21-evening.html</guid>
@@ -327,33 +355,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-08-16（根治AI音乐通病！这家国产音乐模型正面挑 + 刚刚，Qwen3.8-27B 开源了！家 + Woman claims her ste）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-16-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-16-noon.html</guid>
-      <pubDate>Sun, 16 Aug 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>根治AI音乐通病！这家国产音乐模型正面挑战SUNO（量子位）</li>
-        <li>太初元碁助力国家级“AI+教育”大赛 “AI+加速卡模型适配赛道”开启招募（量子位）</li>
-        <li>Mate 90 系列 + 韬定律芯片首秀？文旅部透露华为终端 Haco 发布会定档 9 月 23 日（IT之家）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>3D存算一体芯片领军企业谦合益邦完成超20亿元B轮融资（雷锋网）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Show HN: Grow your SaaS visibility with AI-powered discovery（Hacker News）</li>
-        <li>ProofRun – a local verification receipt for AI coding agents（Hacker News）</li>
-        <li>ShieldFont: Bludgeoning AI Scrapers That Disrespect Robots.txt（Hacker News）</li>
-        <li>Has the hallucination problem in AI been solved?（Hacker News）</li>
-        <li>TrueStar – AI moderated expert interviews and multi-agent deep research（Hacker News）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>刚刚，Qwen3.8-27B 开源了！家用显卡也能跑（量子位）</li>
-        <li>至知研究院提出大模型可解释性新路线：拆权重，数据成本不到1%（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
+
 
 
 
