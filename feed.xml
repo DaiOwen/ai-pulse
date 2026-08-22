@@ -5,10 +5,60 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 21 Aug 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                        <item>
+                                                                                                                                                            <item>
+      <title>🌙 晚间版 — 2026-08-22（雷鸟iO发布：两天续航、全天候主动式AI + 机器人的GPT-3时刻真·来了！卡卡西上 + Anthropic’s Opus 4.6）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-22-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-22-evening.html</guid>
+      <pubDate>Sat, 22 Aug 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>雷鸟iO发布：两天续航、全天候主动式AI，轻至34g（量子位）</li>
+        <li>汉庭旗舰店亮相，发布“两低两高”商业模型；雅诗兰黛集团2026财年中国大陆市场有机净销售额增长9%。（钛媒体）</li>
+        <li>雷军正式官宣：小米新一代玄戒芯片即将发布，微博小尾巴已更换为神秘新机（IT之家）</li>
+        <li>开源兼容层 Wine 11.16 发布：新增 VA-API 硬件解码，修复 Steam 无法启动等 35 个 Bug（IT之家）</li>
+        <li>2027 款广汽丰田凯美瑞上市：智能座舱大升级、小米生态接口，权益价 13.18 万起（IT之家）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>国产“预制算力”来了：工厂预制率超90% 24小时内投运 交付效率提升70%（量子位）</li>
+        <li>高通骁龙 2nm 芯片命名曝光：第六代骁龙 8 至尊版 / 超级至尊版（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>In 1957, Disney Built Our Friend the Atom. We Now Need Our Friend the AI（Hacker News）</li>
+        <li>Show HN: Updating my wedding registry website with AI in 275 commits（Hacker News）</li>
+        <li>Show HN: AI driven civic dashboard for Palo Alto（Hacker News）</li>
+        <li>Linus: "A debug session from hell, enormously helped by an AI"（Hacker News）</li>
+        <li>Nvidia to Pay AI Startup Poolside a $6B License, Newcomer Says（Hacker News）</li>
+        <li>GitHub Trending: Tencent /
+
+      AI-Infra-Guard（GitHub Trending）</li>
+        <li>GitHub Trending: MadsLorentzen /
+
+      ai-job-search（GitHub Trending）</li>
+        <li>GitHub Trending: vllm-project /
+
+      vllm（GitHub Trending）</li>
+        <li>GitHub Trending: jax-ml /
+
+      jax（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Anthropic’s Opus 4.6 is a smut-machine（TechCrunch）</li>
+        <li>Nvidia just showed that the harness, not the AI model, is now the real hero（TechCrunch）</li>
+        <li>Starcloud raises $250 million for orbital data centers as launch options dry up（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>机器人的GPT-3时刻真·来了！卡卡西上身，看3秒就学会新动作（量子位）</li>
+        <li>首批！优必选行者具身智能大模型完成生成式人工智能服务备案（量子位）</li>
+        <li>最大运力自动驾驶轻卡落地，来自无人车巨头（量子位）</li>
+        <li>明略科技携手海康机器人亮相世界机器人大会，以“Agent+具身”联合进入商业机器人场景（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-08-21（雷军正式官宣：小米新一代玄戒芯片即将发布 + 光帆AI技术正式落地韶音OpenFit  + AI data startup Micr）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-21-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-21-noon.html</guid>
@@ -310,50 +360,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-17（根治AI音乐通病！这家国产音乐模型正面挑 + 刚刚，Qwen3.8-27B 开源了！家 + Stripe will reported）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-17-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-17-evening.html</guid>
-      <pubDate>Mon, 17 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>根治AI音乐通病！这家国产音乐模型正面挑战SUNO（量子位）</li>
-        <li>太初元碁助力国家级“AI+教育”大赛 “AI+加速卡模型适配赛道”开启招募（量子位）</li>
-        <li>【数智周报】  华为云OfficeClaw升级为OfficeAce；Meta发布轻量化AI模型，单张显卡即可运行；千问办公助理收费；智谱宣布ZCode全面升级（钛媒体）</li>
-        <li>Mate 90 系列 + 韬定律芯片首秀？文旅部透露华为终端 Haco 发布会定档 9 月 23 日（IT之家）</li>
-        <li>Google TurboQuant AI 压缩算法大幅减少大模型内存使用（Solidot）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>3D存算一体芯片领军企业谦合益邦完成超20亿元B轮融资（雷锋网）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>BlockArena: AI-Generated FPS Game（Hacker News）</li>
-        <li>AI Agent Safety Is Still Thinking Like Permissions（Hacker News）</li>
-        <li>Why Chinese Citizens Are More Optimistic About AI Than Americans（Hacker News）</li>
-        <li>Show HN: Continuum – Financial simulations for DIY multimillionaires（Hacker News）</li>
-        <li>GitHub Trending: xai-org /
 
-      grok-1（GitHub Trending）</li>
-        <li>GitHub Trending: jundot /
-
-      omlx（GitHub Trending）</li>
-        <li>GitHub Trending: 0xSero /
-
-      ai-data-extraction（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+（TechCrunch）</li>
-        <li>Why people aren&#8217;t buying Mark Zuckerberg’s AI future（TechCrunch）</li>
-        <li>Anthropic CEO says AI backlash is ‘fundamentally a crisis of trust’（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>刚刚，Qwen3.8-27B 开源了！家用显卡也能跑（量子位）</li>
-        <li>至知研究院提出大模型可解释性新路线：拆权重，数据成本不到1%（量子位）</li>
-        <li>源神启动！一张消费级显卡跑“Opus级”Agent，Qwen3.8-27B多项榜单反超Claude（量子位）</li>
-        <li>DeepSeek Harness插件一夜燃爆GitHub：长期记忆、电子宠物、4399小游戏全来了（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
