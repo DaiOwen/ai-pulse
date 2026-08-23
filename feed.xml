@@ -5,10 +5,42 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 23 Aug 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                    <item>
+                                                                                                                                                                        <item>
+      <title>☀️ 午间版 — 2026-08-23（雷鸟iO发布：两天续航、全天候主动式AI + 伽利略机器人首发“陆行具身系统”，打通轮 + Harvard’s $699 start）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-23-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-23-noon.html</guid>
+      <pubDate>Sun, 23 Aug 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>雷鸟iO发布：两天续航、全天候主动式AI，轻至34g（量子位）</li>
+        <li>从模型到生产力：星海图与产业朋友圈共探具身智能的下一站（量子位）</li>
+        <li>雷军正式官宣：小米新一代玄戒芯片即将发布，微博小尾巴已更换为神秘新机（IT之家）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>【数智周报】阿里再调业务架构：电商合并、云芯片整合、千问分拆为独立子公司；宇树科技登陆科创板；传Anthropic年化营收突破650亿美元……（钛媒体）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>In 2000, Ted Kaczynski advised against math career due to future AI progress（Hacker News）</li>
+        <li>Show HN: LayoutLens: AI-Powered Visual UI Testing（Hacker News）</li>
+        <li>Edify – Windows NLE: OpenFX, proxy editing, AI subs, vtuber tools ($29.99 once)（Hacker News）</li>
+        <li>GitHub Trending: Tencent /
+
+      AI-Infra-Guard（GitHub Trending）</li>
+        <li>GitHub Trending: karpathy /
+
+      nanoGPT（GitHub Trending）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>伽利略机器人首发“陆行具身系统”，打通轮车足底层技术壁垒（量子位）</li>
+        <li>机器人的GPT-3时刻真·来了！卡卡西上身，看3秒就学会新动作（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-08-23（雷鸟iO发布：两天续航、全天候主动式AI + 伽利略机器人首发“陆行具身系统”，打通轮 + Harvard’s $699 start）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-23-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-23-evening.html</guid>
@@ -339,30 +371,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-08-18（终于！世界模型进入“有声时代”：24FP + 共生知行发布人形机器人赛车Demo：以卡 + Anthropic&#8217;s an）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-18-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-18-noon.html</guid>
-      <pubDate>Tue, 18 Aug 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>终于！世界模型进入“有声时代”：24FPS画面+48kHz立体声实时生成（量子位）</li>
-        <li>阿里巴巴开放权重模型下载量过去半年突破 30 亿（Solidot）</li>
-        <li>YC 开源自家 Harness，3 天斩获 3.9k Star，QM 如何划清 Agent 的权限边界（雷锋网）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>What If I Told You Humans Are Moving Faster Than AI?（Hacker News）</li>
-        <li>Why It Hasn't Happened Yet: Capable AI and Malicious Intent（Hacker News）</li>
-        <li>San Diego 150 Years Ago: Rare AI Reconstruction Visuals [video]（Hacker News）</li>
-        <li>A candy brand discovered TikTok made an AI clone of its founder to run ads [video]（Hacker News）</li>
-        <li>Three different papers pushed to ArXiv proving same 1986 conjecture; all use AI（Hacker News）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>共生知行发布人形机器人赛车Demo：以卡丁车测试双足机器人的“全身智能”（量子位）</li>
-        <li>菲尔兹奖得主：AI现在主要靠「抬杠」突破重大数学猜想（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
+
 
 
 
