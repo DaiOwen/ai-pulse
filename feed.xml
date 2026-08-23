@@ -5,10 +5,55 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 22 Aug 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                <item>
+                                                                                                                                                                    <item>
+      <title>🌙 晚间版 — 2026-08-23（雷鸟iO发布：两天续航、全天候主动式AI + 伽利略机器人首发“陆行具身系统”，打通轮 + Harvard’s $699 start）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-23-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-23-evening.html</guid>
+      <pubDate>Sun, 23 Aug 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>雷鸟iO发布：两天续航、全天候主动式AI，轻至34g（量子位）</li>
+        <li>从模型到生产力：星海图与产业朋友圈共探具身智能的下一站（量子位）</li>
+        <li>雷军正式官宣：小米新一代玄戒芯片即将发布，微博小尾巴已更换为神秘新机（IT之家）</li>
+        <li>Google TurboQuant AI 压缩算法大幅减少大模型内存使用（Solidot）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>【数智周报】阿里再调业务架构：电商合并、云芯片整合、千问分拆为独立子公司；宇树科技登陆科创板；传Anthropic年化营收突破650亿美元……（钛媒体）</li>
+        <li>荣耀机器人闪电百米跑出 9 秒 32（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Why can AI generate Super Mario but not a wedge ramp for my robot vacuum?（Hacker News）</li>
+        <li>Treat AI Like an Intern, Not Software: A Stanford Professor's Guide（Hacker News）</li>
+        <li>Show HN: Agent2Creator – a video social network whose members are AI agents（Hacker News）</li>
+        <li>Active Inference as Context Acquisition for AI Agents（Hacker News）</li>
+        <li>GitHub Trending: Tencent /
+
+      AI-Infra-Guard（GitHub Trending）</li>
+        <li>GitHub Trending: karpathy /
+
+      nanoGPT（GitHub Trending）</li>
+        <li>GitHub Trending: vllm-project /
+
+      vllm（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Harvard’s $699 startup bootcamp offers AI avatars of its instructors（TechCrunch）</li>
+        <li>OpenAI says California should strengthen its AI safety bill（TechCrunch）</li>
+        <li>Frontier AI labs still won&#8217;t say how they&#8217;d contain a rogue model（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>伽利略机器人首发“陆行具身系统”，打通轮车足底层技术壁垒（量子位）</li>
+        <li>机器人的GPT-3时刻真·来了！卡卡西上身，看3秒就学会新动作（量子位）</li>
+        <li>不是Demo！优必选把客户产线1:1搬进WRC，解锁具身智能真落地路径（量子位）</li>
+        <li>当机器人大脑飞上天！替人奔赴危险作业现场，对话硅羽科技（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-08-22（雷鸟iO发布：两天续航、全天候主动式AI + 机器人的GPT-3时刻真·来了！卡卡西上 + Anthropic’s Opus 4.6）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-22-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-22-noon.html</guid>
@@ -319,48 +364,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-18（终于！世界模型进入“有声时代”：24FP + 共生知行发布人形机器人赛车Demo：以卡 + Anthropic&#8217;s an）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-18-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-18-evening.html</guid>
-      <pubDate>Tue, 18 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>终于！世界模型进入“有声时代”：24FPS画面+48kHz立体声实时生成（量子位）</li>
-        <li>根治AI音乐通病！这家国产音乐模型正面挑战SUNO（量子位）</li>
-        <li>YC 开源自家 Harness，3 天斩获 3.9k Star，QM 如何划清 Agent 的权限边界（雷锋网）</li>
-        <li>阿里巴巴开放权重模型下载量过去半年突破 30 亿（Solidot）</li>
-        <li>Mate 90 系列 + 韬定律芯片首秀？文旅部透露华为终端 Haco 发布会定档 9 月 23 日（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Follow-Up Thoughts on Watermarking Schemes for AI-Generated Text（Hacker News）</li>
-        <li>Consumers Prefer AI Music Until They're Told It's AI（Hacker News）</li>
-        <li>GitHub Trending: jundot /
 
-      omlx（GitHub Trending）</li>
-        <li>GitHub Trending: 0x4m4 /
-
-      hexstrike-ai（GitHub Trending）</li>
-        <li>GitHub Trending: unslothai /
-
-      unsloth（GitHub Trending）</li>
-        <li>GitHub Trending: Blaizzy /
-
-      mlx-audio（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Anthropic&#8217;s annualized revenue surges to $65B（TechCrunch）</li>
-        <li>AI automation startup Relay shuts down, staff joins Google&#8217;s Chrome team（TechCrunch）</li>
-        <li>Amazon, which started off selling books, is destroying rare texts to train AI（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>共生知行发布人形机器人赛车Demo：以卡丁车测试双足机器人的“全身智能”（量子位）</li>
-        <li>菲尔兹奖得主：AI现在主要靠「抬杠」突破重大数学猜想（量子位）</li>
-        <li>至知研究院提出大模型可解释性新路线：拆权重，数据成本不到1%（量子位）</li>
-        <li>源神启动！一张消费级显卡跑“Opus级”Agent，Qwen3.8-27B多项榜单反超Claude（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
