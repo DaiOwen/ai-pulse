@@ -5,10 +5,52 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 23 Aug 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                        <item>
+                                                                                                                                                                            <item>
+      <title>🌙 晚间版 — 2026-08-24（凯度发布幂境套系与AI智能体“小紫”，厨 + 全球「AI学术顶会」精华汇聚地 + Who&#8217;s behind t）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-24-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-24-evening.html</guid>
+      <pubDate>Mon, 24 Aug 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>凯度发布幂境套系与AI智能体“小紫”，厨电竞争从参数转向体验（雷锋网）</li>
+        <li>雷军正式官宣：小米新一代玄戒芯片即将发布，微博小尾巴已更换为神秘新机（IT之家）</li>
+        <li>Google TurboQuant AI 压缩算法大幅减少大模型内存使用（Solidot）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>机器人首秀网球场，银河通用突破具身智能「AstraTennis时刻」（雷锋网）</li>
+        <li>机器人短跑超越人类，但刹住是问题（Solidot）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Flock camera backlash adds fuel to midterm anti-AI frenzy（Hacker News）</li>
+        <li>Oneiric, AI-generated, open source [video]（Hacker News）</li>
+        <li>Woe Is Em: The Sad Lifecycle of an AI Tell（Hacker News）</li>
+        <li>Show HN: Writing-eval, local deterministic style checks for AI-written drafts（Hacker News）</li>
+        <li>Aim-424 Lraam – Malice（Hacker News）</li>
+        <li>GitHub Trending: NousResearch /
+
+      hermes-agent（GitHub Trending）</li>
+        <li>GitHub Trending: unclecode /
+
+      crawl4ai（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Who&#8217;s behind the new ‘stealth model’ Ox Alpha?（TechCrunch）</li>
+        <li>Is it legal to train AI models on copyrighted books? It’s complicated（TechCrunch）</li>
+        <li>Harvard’s $699 startup bootcamp offers AI avatars of its instructors（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>全球「AI学术顶会」精华汇聚地（雷锋网）</li>
+        <li>阿里拟配售800亿港元新股，全部投入AI建设；网友造谣「小红书因遭举报上市失败」被行拘；李斌：中国汽车行业三五年后玩家基本确定（雷锋网）</li>
+        <li>万兴科技全新推出AI画布工作台（雷锋网）</li>
+        <li>莎士比亚智能戒指入场，智能珠宝能跑通吗？（雷锋网）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-08-23（雷鸟iO发布：两天续航、全天候主动式AI + 伽利略机器人首发“陆行具身系统”，打通轮 + Harvard’s $699 start）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-23-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-23-noon.html</guid>
@@ -329,47 +371,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-19（人人都能写好听的歌，阿里发布AI音乐模型 + 网易传媒发布&#8221;蜜蜂AI” ： + OpenAI institutes ne）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-19-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-19-evening.html</guid>
-      <pubDate>Wed, 19 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>人人都能写好听的歌，阿里发布AI音乐模型HappyShrimp（量子位）</li>
-        <li>阿里巴巴开放权重模型下载量过去半年突破 30 亿（Solidot）</li>
-        <li>雷军正式官宣：小米新一代玄戒芯片即将发布，微博小尾巴已更换为神秘新机（IT之家）</li>
-        <li>小米卢伟冰：新一代玄戒芯片即将发布，系列旗舰产品会密集上市（IT之家）</li>
-        <li>Mate 90 系列 + 韬定律芯片首秀？文旅部透露华为终端 Haco 发布会定档 9 月 23 日（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Do All Your Agents Need Models Like Claude 5 or GPT-5.6?（Hacker News）</li>
-        <li>OpenAI announces slowing pace of development after hack by rogue agent（Hacker News）</li>
-        <li>Follow-Up Thoughts on Watermarking Schemes for AI-Generated Text（Hacker News）</li>
-        <li>Show HN: Monity.ai – Get notified when any website changes（Hacker News）</li>
-        <li>GitHub Trending: jundot /
 
-      omlx（GitHub Trending）</li>
-        <li>GitHub Trending: pipeshub-ai /
-
-      pipeshub-ai（GitHub Trending）</li>
-        <li>GitHub Trending: unslothai /
-
-      unsloth（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>OpenAI institutes new safeguards after Hugging Face breach（TechCrunch）</li>
-        <li>Why Apple&#8217;s camera-equipped AirPods may not be the &#8216;pervert pods&#8217; consumers fear（TechCrunch）</li>
-        <li>OpenAI launches a safer ChatGPT for teens — years after teens started using it（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>网易传媒发布&#8221;蜜蜂AI” ：从工具到伙伴，让AI更懂人（量子位）</li>
-        <li>共生知行发布人形机器人赛车Demo：以卡丁车测试双足机器人的“全身智能”（量子位）</li>
-        <li>650亿美元！IPO前夕，Anthropic营收底牌曝光（量子位）</li>
-        <li>菲尔兹奖得主：AI现在主要靠「抬杠」突破重大数学猜想（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
