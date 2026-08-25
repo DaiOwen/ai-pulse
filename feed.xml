@@ -5,10 +5,56 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 24 Aug 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 25 Aug 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                <item>
+                                                                                                                                                                                    <item>
+      <title>🌙 晚间版 — 2026-08-25（单芯片到万卡集群体系化突破 中诚华隆HL + 匿名牛来大模型被扒出智谱血缘，也有人怀疑 + Situational Awarenes）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-25-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-25-evening.html</guid>
+      <pubDate>Tue, 25 Aug 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>单芯片到万卡集群体系化突破 中诚华隆HL200推理芯片及超节点集群重磅发布（量子位）</li>
+        <li>阿里达摩院推出肝癌AI模型，精准识别1厘米微小肿瘤（量子位）</li>
+        <li>WRC 2026｜原生全模态世界模型：从模拟世界到交互世界（量子位）</li>
+        <li>小米首款 AI 旗舰 SoC 玄戒 O3 发布（IT之家）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>小米玄戒三芯齐发，央视新闻报道称“中国芯片产业再突破”（IT之家）</li>
+        <li>小米 18 Fold 折叠屏手机首发玄戒 O3 芯片，9 月正式上市（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Enterprise AI Operating System（Hacker News）</li>
+        <li>Russian drone guided by AI kills civilians in Ukraine（Hacker News）</li>
+        <li>Flex: Let the Model Write the Code（Hacker News）</li>
+        <li>Who will decide that level AI you have access to?（Hacker News）</li>
+        <li>Alabama Investigates OpenAI on HuggingFace Hacking Incident（Hacker News）</li>
+        <li>GitHub Trending: MadsLorentzen /
+
+      ai-job-search（GitHub Trending）</li>
+        <li>GitHub Trending: rohitg00 /
+
+      ai-engineering-from-scratch（GitHub Trending）</li>
+        <li>GitHub Trending: Panniantong /
+
+      Agent-Reach（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Situational Awareness, star AI hedge fund that nearly imploded, now being probed by the SEC（TechCrunch）</li>
+        <li>Instinct’s powerful AI assistant is raising privacy and security concerns（TechCrunch）</li>
+        <li>Valor, Point72 back General Intuition at $6B valuation as AI startup pushes into robotics（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>匿名牛来大模型被扒出智谱血缘，也有人怀疑Cursor拿开源GLM训的（量子位）</li>
+        <li>阿里视频大模型Wan3.0正式上线，行业评价“稳定、真实、有质感”（量子位）</li>
+        <li>ResNet作者任少卿机器人创业！公司注册就独角兽了（量子位）</li>
+        <li>AI重塑商业，信任决定未来商业能走多远丨Visa大中华区总裁张文翊（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-08-24（从世界模型到现实生产力，无界动力深度参与 + 匿名牛来大模型被扒出智谱血缘，也有人怀疑 + Who&#8217;s behind t）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-24-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-24-noon.html</guid>
@@ -330,47 +376,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-20（IDC发布2026中国AI50强：360 + 网易传媒发布&#8221;蜜蜂AI” ： + OpenAI seeks to one-）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-20-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-20-evening.html</guid>
-      <pubDate>Thu, 20 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>IDC发布2026中国AI50强：360以“智能体+安全”双轮驱动入选（量子位）</li>
-        <li>人人都能写好听的歌，阿里发布AI音乐模型HappyShrimp（量子位）</li>
-        <li>奕境X9发布会送假Labubu？品牌方回应；宇树科技IPO名场面：王兴兴表情极为平静像「打工人」；豆包大模型，正式上车特斯拉丨雷峰早报（雷锋网）</li>
-        <li>事关每个人看病报销，全民医保“十五五”规划发布；宇树科技上市首日收涨460%，京东也发布机器人战略；三星据悉上调芯片代工价格，SK海力士抛出40万亿韩元回购。（钛媒体）</li>
-        <li>小米新一代玄戒芯片即将发布，消息称 2025 年底回片、当天一次点亮成功（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Credentialism is coming for AI agents（Hacker News）</li>
-        <li>How to use AI for your next job interview（Hacker News）</li>
-        <li>Round Hill Music Sues Suno and Anthropic for $1B over AI Training Data（Hacker News）</li>
-        <li>US warns of AI-powered attacks on Siemens PLCs in critical infrastructure（Hacker News）</li>
-        <li>GitHub Trending: jundot /
 
-      omlx（GitHub Trending）</li>
-        <li>GitHub Trending: K-Dense-AI /
-
-      scientific-agent-skills（GitHub Trending）</li>
-        <li>GitHub Trending: NousResearch /
-
-      hermes-agent（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>OpenAI seeks to one-up Anthropic with new customer privacy protections（TechCrunch）</li>
-        <li>AI was supposed to win people over by now &#8212; it hasn&#8217;t（TechCrunch）</li>
-        <li>Google packs Search and Gemini with new AI study tools（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>网易传媒发布&#8221;蜜蜂AI” ：从工具到伙伴，让AI更懂人（量子位）</li>
-        <li>具身数据底座开卖，首发5100元：机器人训练数据有了新解法（量子位）</li>
-        <li>全球首个人形机器人自主乒乓球完整对局亮相2026世界机器人大会（量子位）</li>
-        <li>AI for Science开始“动手”了：机器人正式走进国家级实验室（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
