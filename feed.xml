@@ -5,10 +5,46 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 26 Aug 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                            <item>
+                                                                                                                                                                                                <item>
+      <title>☀️ 午间版 — 2026-08-26（WRC 2026｜生数科技发布最新研究成 + 从开源走向共建：范式联合优必选等十余家具 + 人民教育音像数字出版社与小猿达成合作 “ + India&#8217;s Ringg ）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-26-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-26-noon.html</guid>
+      <pubDate>Wed, 26 Aug 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>WRC 2026｜生数科技发布最新研究成果，提出通用世界模型五级发展路线（量子位）</li>
+        <li>苹果全新 Mac mini 发布，6999 元起（IT之家）</li>
+        <li>苹果全新 Mac mini 发布：可选 M6 或 M5 Pro 芯片，6999 元起售（IT之家）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>人民教育音像数字出版社与小猿达成合作 “中小学课本学习智能体”首落小猿AI学习机（量子位）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>What platform has the best AI CMO?（Hacker News）</li>
+        <li>GitHub Trending: MadsLorentzen /
+
+      ai-job-search（GitHub Trending）</li>
+        <li>GitHub Trending: TauricResearch /
+
+      TradingAgents（GitHub Trending）</li>
+        <li>GitHub Trending: rohitg00 /
+
+      ai-engineering-from-scratch（GitHub Trending）</li>
+        <li>GitHub Trending: Shubhamsaboo /
+
+      awesome-llm-apps（GitHub Trending）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>从开源走向共建：范式联合优必选等十余家具身巨头发布PhanthyMotus新计划（量子位）</li>
+        <li>开源国产8B模型，比肩闭源Image 2了！（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-08-26（WRC 2026｜生数科技发布最新研究成 + 从开源走向共建：范式联合优必选等十余家具 + 人民教育音像数字出版社与小猿达成合作 “ + Robotics startup Gen）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-26-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-26-evening.html</guid>
@@ -362,33 +398,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-08-21（雷军正式官宣：小米新一代玄戒芯片即将发布 + 光帆AI技术正式落地韶音OpenFit  + AI data startup Micr）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-21-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-21-noon.html</guid>
-      <pubDate>Fri, 21 Aug 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>雷军正式官宣：小米新一代玄戒芯片即将发布，微博小尾巴已更换为神秘新机（IT之家）</li>
-        <li>智谱正式发布 GLM-5.3：编程能力最强开源模型，较 GLM-5.2 提升 50%（IT之家）</li>
-        <li>原生支持 4K 图像输出，商汤开源 8B 参数量多模态大模型&#160;SenseNova U1.5 Lite（IT之家）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>国产“预制算力”来了：工厂预制率超90% 24小时内投运 交付效率提升70%（量子位）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>The Sloppiest Thing About AI（Hacker News）</li>
-        <li>Meta's app for creating generative AI minigames is now available in the US（Hacker News）</li>
-        <li>Apple Music to Label AI-Generated Songs（Hacker News）</li>
-        <li>Show HN: I built a permission layer for AI agents, then spent a day breaking it（Hacker News）</li>
-        <li>Can Reddit survive in the AI era?（Hacker News）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>光帆AI技术正式落地韶音OpenFit 2 AI耳机，携手突破AI边界（量子位）</li>
-        <li>首批！优必选行者具身智能大模型完成生成式人工智能服务备案（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
+
 
 
 
