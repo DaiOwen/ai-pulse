@@ -5,10 +5,49 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 28 Aug 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                        <item>
+                                                                                                                                                                                                            <item>
+      <title>🌙 晚间版 — 2026-08-29（高德发布首个无长程依赖的万帧级流式3D重 + HuggingFace被曝卖身英伟达：1 + Will TikTok and YouT）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-29-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-29-evening.html</guid>
+      <pubDate>Sat, 29 Aug 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>高德发布首个无长程依赖的万帧级流式3D重建模型ABot-Recon，以12帧重建万帧3D场景（量子位）</li>
+        <li>全球首款专为iPhone用户打造的Agent耳机正式发布，有道AI耳机让声音变成生产力（量子位）</li>
+        <li>孙宇晨怎么不算是开源爱情的第一人呢？（钛媒体）</li>
+        <li>特努斯首秀开启 iPhone 18 Pro / Ultra 系列新篇章，苹果发布会官宣定档 9 月 10 日（IT之家）</li>
+        <li>苹果全新 Mac mini 发布：可选 M6 或 M5 Pro 芯片，6999 元起售（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>I tried vibe-coding a memory tool for AI and stared into the abyss of philosophy（Hacker News）</li>
+        <li>LaneGate – Git-native worktree orchestrator for AI agents（Hacker News）</li>
+        <li>Yes, We're in an AI Bubble. Just Look to 1980s Japan（Hacker News）</li>
+        <li>AI Stock Research Assistant · Streamlit（Hacker News）</li>
+        <li>GitHub Trending: rohitg00 /
+
+      ai-engineering-from-scratch（GitHub Trending）</li>
+        <li>GitHub Trending: livekit /
+
+      agents（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Will TikTok and YouTube follow Meta’s new rules for teens?（TechCrunch）</li>
+        <li>An Anthropic researcher just gave us a peek at self-improving AI（TechCrunch）</li>
+        <li>Open-weight AI companies are the Valley&#8217;s hottest acquisition targets（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>HuggingFace被曝卖身英伟达：129亿美元！全球最大AI开源平台改姓黄（量子位）</li>
+        <li>基元律动累计融资数千万美元，推出“中国版OpenRouter”（量子位）</li>
+        <li>Claude开始接管物理世界！能用机械臂阻拦5000万美元打款了（量子位）</li>
+        <li>工业Agent不是“套壳”大模型！西门子百年经验灌进工业AI（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-08-28（高德发布首个无长程依赖的万帧级流式3D重 + HuggingFace被曝卖身英伟达：1 + Anthropic and OpenAI）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-08-28-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-28-evening.html</guid>
@@ -367,50 +406,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-23（雷鸟iO发布：两天续航、全天候主动式AI + 伽利略机器人首发“陆行具身系统”，打通轮 + Harvard’s $699 start）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-23-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-23-evening.html</guid>
-      <pubDate>Sun, 23 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>雷鸟iO发布：两天续航、全天候主动式AI，轻至34g（量子位）</li>
-        <li>从模型到生产力：星海图与产业朋友圈共探具身智能的下一站（量子位）</li>
-        <li>雷军正式官宣：小米新一代玄戒芯片即将发布，微博小尾巴已更换为神秘新机（IT之家）</li>
-        <li>Google TurboQuant AI 压缩算法大幅减少大模型内存使用（Solidot）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>【数智周报】阿里再调业务架构：电商合并、云芯片整合、千问分拆为独立子公司；宇树科技登陆科创板；传Anthropic年化营收突破650亿美元……（钛媒体）</li>
-        <li>荣耀机器人闪电百米跑出 9 秒 32（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Why can AI generate Super Mario but not a wedge ramp for my robot vacuum?（Hacker News）</li>
-        <li>Treat AI Like an Intern, Not Software: A Stanford Professor's Guide（Hacker News）</li>
-        <li>Show HN: Agent2Creator – a video social network whose members are AI agents（Hacker News）</li>
-        <li>Active Inference as Context Acquisition for AI Agents（Hacker News）</li>
-        <li>GitHub Trending: Tencent /
 
-      AI-Infra-Guard（GitHub Trending）</li>
-        <li>GitHub Trending: karpathy /
-
-      nanoGPT（GitHub Trending）</li>
-        <li>GitHub Trending: vllm-project /
-
-      vllm（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Harvard’s $699 startup bootcamp offers AI avatars of its instructors（TechCrunch）</li>
-        <li>OpenAI says California should strengthen its AI safety bill（TechCrunch）</li>
-        <li>Frontier AI labs still won&#8217;t say how they&#8217;d contain a rogue model（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>伽利略机器人首发“陆行具身系统”，打通轮车足底层技术壁垒（量子位）</li>
-        <li>机器人的GPT-3时刻真·来了！卡卡西上身，看3秒就学会新动作（量子位）</li>
-        <li>不是Demo！优必选把客户产线1:1搬进WRC，解锁具身智能真落地路径（量子位）</li>
-        <li>当机器人大脑飞上天！替人奔赴危险作业现场，对话硅羽科技（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
