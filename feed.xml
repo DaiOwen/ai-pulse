@@ -5,10 +5,53 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 01 Sep 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                        <item>
+                                                                                                                                                                                                                            <item>
+      <title>🌙 晚间版 — 2026-09-01（万字长文拆解DeepSeek V4 Pr + 「GPT-6」灰测demo刷屏！周四发布 + The Pentagon now has）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-01-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-01-evening.html</guid>
+      <pubDate>Tue, 01 Sep 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>万字长文拆解DeepSeek V4 Pro与Harness：从后训练到「代理自进化」，更大的变化在开源框架里（雷锋网）</li>
+        <li>阿里开源 Qwen3.8-27B 本地实测：性能很强，但 Agent 适配仍待补课（雷锋网）</li>
+        <li>苹果今秋 iPhone 18 Pro / Max 发布会预估下架 11 款设备，iPhone 16 去留存悬念（IT之家）</li>
+        <li>DeepSeek-V4-Flash-Vision-Exp 模型已开源，多模态 Agent 能力接近 Opus-4.8（IT之家）</li>
+        <li>特努斯首秀开启 iPhone 18 Pro / Ultra 系列新篇章，苹果发布会官宣定档 9 月 10 日（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Fal.live – AI television directed by everyone（Hacker News）</li>
+        <li>Show HN: ChooseCompute – Clean NAS and hard drive database for AI（Hacker News）</li>
+        <li>Reducing Java memory usage by 43% with joint JVM and container tuning（Hacker News）</li>
+        <li>Atlassian's own AI assistant doesn't know Jira renamed "Projects" to "Spaces"（Hacker News）</li>
+        <li>Show HN: Edify – a Windows NLE with local AI subtitles/dubbing and OpenFX（Hacker News）</li>
+        <li>GitHub Trending: kaifcodec /
+
+      user-scanner（GitHub Trending）</li>
+        <li>GitHub Trending: unclecode /
+
+      crawl4ai（GitHub Trending）</li>
+        <li>GitHub Trending: Open-LLM-VTuber /
+
+      Open-LLM-VTuber（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>The Pentagon now has its own version of ChatGPT and Grok（TechCrunch）</li>
+        <li>Instagram puts new limits on undisclosed AI profiles（TechCrunch）</li>
+        <li>Harvard Law dropout raises $6M for Blue Voice to build a &#8216;Harvey for police officers&#8217;（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>「GPT-6」灰测demo刷屏！周四发布在即（量子位）</li>
+        <li>范式与华为达成重磅算力战略合作，成为首批拥抱国产最高端算力底座的AI企业（量子位）</li>
+        <li>A社化身A割！Claude官宣永久提额25%，结果到手反而少17%（量子位）</li>
+        <li>GitHub最热架构图Agent，开发者故事看哭了（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-09-01（我国 L3 / L4 自动驾驶强制国标正 + 「GPT-6」灰测demo刷屏！周四发布 + The Pentagon now has）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-01-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-01-noon.html</guid>
@@ -369,51 +412,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-25（单芯片到万卡集群体系化突破 中诚华隆HL + 匿名牛来大模型被扒出智谱血缘，也有人怀疑 + Situational Awarenes）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-25-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-25-evening.html</guid>
-      <pubDate>Tue, 25 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>单芯片到万卡集群体系化突破 中诚华隆HL200推理芯片及超节点集群重磅发布（量子位）</li>
-        <li>阿里达摩院推出肝癌AI模型，精准识别1厘米微小肿瘤（量子位）</li>
-        <li>WRC 2026｜原生全模态世界模型：从模拟世界到交互世界（量子位）</li>
-        <li>小米首款 AI 旗舰 SoC 玄戒 O3 发布（IT之家）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>小米玄戒三芯齐发，央视新闻报道称“中国芯片产业再突破”（IT之家）</li>
-        <li>小米 18 Fold 折叠屏手机首发玄戒 O3 芯片，9 月正式上市（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Enterprise AI Operating System（Hacker News）</li>
-        <li>Russian drone guided by AI kills civilians in Ukraine（Hacker News）</li>
-        <li>Flex: Let the Model Write the Code（Hacker News）</li>
-        <li>Who will decide that level AI you have access to?（Hacker News）</li>
-        <li>Alabama Investigates OpenAI on HuggingFace Hacking Incident（Hacker News）</li>
-        <li>GitHub Trending: MadsLorentzen /
 
-      ai-job-search（GitHub Trending）</li>
-        <li>GitHub Trending: rohitg00 /
-
-      ai-engineering-from-scratch（GitHub Trending）</li>
-        <li>GitHub Trending: Panniantong /
-
-      Agent-Reach（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Situational Awareness, star AI hedge fund that nearly imploded, now being probed by the SEC（TechCrunch）</li>
-        <li>Instinct’s powerful AI assistant is raising privacy and security concerns（TechCrunch）</li>
-        <li>Valor, Point72 back General Intuition at $6B valuation as AI startup pushes into robotics（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>匿名牛来大模型被扒出智谱血缘，也有人怀疑Cursor拿开源GLM训的（量子位）</li>
-        <li>阿里视频大模型Wan3.0正式上线，行业评价“稳定、真实、有质感”（量子位）</li>
-        <li>ResNet作者任少卿机器人创业！公司注册就独角兽了（量子位）</li>
-        <li>AI重塑商业，信任决定未来商业能走多远丨Visa大中华区总裁张文翊（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
