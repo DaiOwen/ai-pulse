@@ -5,10 +5,35 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 01 Sep 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                            <item>
+                                                                                                                                                                                                                                <item>
+      <title>☀️ 午间版 — 2026-09-02（巨简单，更懂家！海信JUOS正式发布：行 + Claude最强Fable 5.1发布！ + OpenAI&#8217;s Astra）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-02-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-02-noon.html</guid>
+      <pubDate>Wed, 02 Sep 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>巨简单，更懂家！海信JUOS正式发布：行业首个家庭智能伴侣级AIOS（量子位）</li>
+        <li>李飞飞发布：全球首个多模态世界模型（量子位）</li>
+        <li>DeepSeek V4 多模态开源，我们把它的视觉链路拆了一遍（雷锋网）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>AI Made Writing Code Free. It Made Reading Code Expensive（Hacker News）</li>
+        <li>One in three AI scribe notes carries a verified clinical error（Hacker News）</li>
+        <li>Piloting the first double-blind AI evaluations（Hacker News）</li>
+        <li>Show HN: Markdown Gatekeeper – one current source per topic for AI agents（Hacker News）</li>
+        <li>EngineRed: Asymmetric AI Warfare（Hacker News）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>Claude最强Fable 5.1发布！8项屠榜，最高降价45%，反蒸馏机制上线（量子位）</li>
+        <li>A社化身A割！Claude官宣永久提额25%，结果到手反而少17%（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-09-01（万字长文拆解DeepSeek V4 Pr + 「GPT-6」灰测demo刷屏！周四发布 + The Pentagon now has）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-01-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-01-evening.html</guid>
@@ -377,40 +402,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-08-25（WRC 2026｜生数科技发布最新研究成 + 具身大满贯还全开源！原力灵机DM0.5登 + 人民教育音像数字出版社与小猿达成合作 “ + Situational Awarenes）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-25-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-25-noon.html</guid>
-      <pubDate>Tue, 25 Aug 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>WRC 2026｜生数科技发布最新研究成果，提出通用世界模型五级发展路线（量子位）</li>
-        <li>单芯片到万卡集群体系化突破 中诚华隆HL200推理芯片及超节点集群重磅发布（量子位）</li>
-        <li>阿里达摩院推出肝癌AI模型，精准识别1厘米微小肿瘤（量子位）</li>
-        </ul>
-        <h3>🛠️ 工具 & 部署</h3><ul>
-        <li>人民教育音像数字出版社与小猿达成合作 “中小学课本学习智能体”首落小猿AI学习机（量子位）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>小米玄戒三芯齐发，央视新闻报道称“中国芯片产业再突破”（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Supermicro Super AI Station (GB300, 20 Pflops FP4, 748GB Coherent Memory)（Hacker News）</li>
-        <li>Nvidia Is Spending $6B to Build a Powerful U.S. Alternative to Chinese AI（Hacker News）</li>
-        <li>Thomson Reuters Standard for High Stakes AI（Hacker News）</li>
-        <li>GitHub Trending: MadsLorentzen /
 
-      ai-job-search（GitHub Trending）</li>
-        <li>GitHub Trending: rohitg00 /
-
-      ai-engineering-from-scratch（GitHub Trending）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>具身大满贯还全开源！原力灵机DM0.5登顶RoboDojo，且clone且珍惜（量子位）</li>
-        <li>ResNet作者任少卿机器人创业！公司注册就独角兽了（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
