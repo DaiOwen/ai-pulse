@@ -5,10 +5,55 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 02 Sep 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                <item>
+                                                                                                                                                                                                                                    <item>
+      <title>🌙 晚间版 — 2026-09-02（巨简单，更懂家！海信JUOS正式发布：行 + Claude最强Fable 5.1发布！ + OpenAI&#8217;s Astra）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-02-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-02-evening.html</guid>
+      <pubDate>Wed, 02 Sep 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>巨简单，更懂家！海信JUOS正式发布：行业首个家庭智能伴侣级AIOS（量子位）</li>
+        <li>李飞飞发布：全球首个多模态世界模型（量子位）</li>
+        <li>阿里更新旗舰模型Qwen3.8-Max，前端编程能力跃居全球第一（量子位）</li>
+        <li>DeepSeek V4 多模态开源，我们把它的视觉链路拆了一遍（雷锋网）</li>
+        <li>万字长文拆解DeepSeek V4 Pro与Harness：从后训练到「代理自进化」，更大的变化在开源框架里（雷锋网）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Farmanix – An AI agent that can use your Mac like a human（Hacker News）</li>
+        <li>Show HN: Photo manager that finds and organizes photos with private, local AI（Hacker News）</li>
+        <li>Show HN: IP/fal – An IP checker that reimagines your location with AI（Hacker News）</li>
+        <li>AI loss of control incidents are worsening, shows CLTR analysis（Hacker News）</li>
+        <li>GitHub Trending: K-Dense-AI /
+
+      scientific-agent-skills（GitHub Trending）</li>
+        <li>GitHub Trending: unclecode /
+
+      crawl4ai（GitHub Trending）</li>
+        <li>GitHub Trending: HKUDS /
+
+      DeepTutor（GitHub Trending）</li>
+        <li>GitHub Trending: VectifyAI /
+
+      PageIndex（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>OpenAI&#8217;s Astra model is on the way — and very good at breaking into computer systems（TechCrunch）</li>
+        <li>Anthropic&#8217;s new Fable release is cheaper, less restrictive（TechCrunch）</li>
+        <li>ChatGPT Health adds Epic integration for clinicians to import patient data（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>Claude最强Fable 5.1发布！8项屠榜，最高降价45%，反蒸馏机制上线（量子位）</li>
+        <li>还在为大模型洗数据熬夜？蚂蚁拿下VLDB工业最佳论文，一套宽表搞定35PB语料，效率狂飙5.6倍（量子位）</li>
+        <li>A社化身A割！Claude官宣永久提额25%，结果到手反而少17%（量子位）</li>
+        <li>GitHub最热架构图Agent，开发者故事看哭了（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-09-02（巨简单，更懂家！海信JUOS正式发布：行 + Claude最强Fable 5.1发布！ + OpenAI&#8217;s Astra）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-02-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-02-noon.html</guid>
@@ -356,51 +401,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-26（WRC 2026｜生数科技发布最新研究成 + 从开源走向共建：范式联合优必选等十余家具 + 人民教育音像数字出版社与小猿达成合作 “ + Robotics startup Gen）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-26-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-26-evening.html</guid>
-      <pubDate>Wed, 26 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>WRC 2026｜生数科技发布最新研究成果，提出通用世界模型五级发展路线（量子位）</li>
-        <li>苹果全新 Mac mini 发布，6999 元起（IT之家）</li>
-        <li>苹果全新 Mac mini 发布：可选 M6 或 M5 Pro 芯片，6999 元起售（IT之家）</li>
-        </ul>
-        <h3>🛠️ 工具 & 部署</h3><ul>
-        <li>人民教育音像数字出版社与小猿达成合作 “中小学课本学习智能体”首落小猿AI学习机（量子位）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Ora benchmarks every major AI agent on Vercel – Customers（Hacker News）</li>
-        <li>Microsoft's Maia 200 AI Accelerator at Hot Chips 2026（Hacker News）</li>
-        <li>AI Realist Radar:GPT‑5.6 Sol Pricing, Stripe's OpenRouter Deal（Hacker News）</li>
-        <li>The AI Health Agent That Will Know Me for Life（Hacker News）</li>
-        <li>GitHub Trending: MadsLorentzen /
 
-      ai-job-search（GitHub Trending）</li>
-        <li>GitHub Trending: TauricResearch /
-
-      TradingAgents（GitHub Trending）</li>
-        <li>GitHub Trending: rohitg00 /
-
-      ai-engineering-from-scratch（GitHub Trending）</li>
-        <li>GitHub Trending: Shubhamsaboo /
-
-      awesome-llm-apps（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Robotics startup Generalist reaches $3B valuation, sources say（TechCrunch）</li>
-        <li>OpenAI loses a top data center exec, as stream of high-profile departures continues（TechCrunch）</li>
-        <li>Stability AI, maker of image generator Stable Diffusion, raises $76 million in fresh funding（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>从开源走向共建：范式联合优必选等十余家具身巨头发布PhanthyMotus新计划（量子位）</li>
-        <li>开源国产8B模型，比肩闭源Image 2了！（量子位）</li>
-        <li>具身大满贯还全开源！原力灵机DM0.5登顶RoboDojo，且clone且珍惜（量子位）</li>
-        <li>ResNet作者任少卿机器人创业！公司注册就独角兽了（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
