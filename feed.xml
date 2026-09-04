@@ -5,10 +5,52 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 04 Sep 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                <item>
+                                                                                                                                                                                                                                                    <item>
+      <title>🌙 晚间版 — 2026-09-04（一个模型场景通吃！它石智航AWE3.7的 + 新版GPT Image 2.5已经能伪造 + The sameness problem）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-04-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-04-evening.html</guid>
+      <pubDate>Fri, 04 Sep 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>一个模型场景通吃！它石智航AWE3.7的泛化能力有点狠（量子位）</li>
+        <li>神秘具身团队又放出一连串很炸的Demo视频…自进化模型，技术路线曝光（量子位）</li>
+        <li>英伟达发布开源工具将闲置算力连成个人数据中心（Solidot）</li>
+        <li>和苹果比肯定物超所值！卢伟冰确认小米18 Fold起售价过万；GPT-6 震撼发布！能自主操作电脑；字节跳动将获得约296亿美元银团贷款（雷锋网）</li>
+        <li>三大AI巨头同日宕机，GPT-6发布日的“最黑暗一天”（钛媒体）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>小米迄今最高端手机：雷军晒 18 Fold 阔折叠真机，红色外壳、首发玄戒 O3 芯片（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Show HN: Aurict – An open-source Terminal AI（Hacker News）</li>
+        <li>Beyond Wukong: an AI generated animated drama series [video]（Hacker News）</li>
+        <li>Execution gating and micro-rollbacks for AI agents（Hacker News）</li>
+        <li>My GPT-6 Astra Review（Hacker News）</li>
+        <li>GitHub Trending: sngyai /
+
+      Sequoia-X（GitHub Trending）</li>
+        <li>GitHub Trending: datacurve-ai /
+
+      deep-swe（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>The sameness problem behind those unappetizing AI-generated menus（TechCrunch）</li>
+        <li>Crusoe reportedly raises $3B at a  $30B valuation（TechCrunch）</li>
+        <li>Abliteration.ai is making a business out of removing AI guardrails（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>新版GPT Image 2.5已经能伪造GPT-6发布会了（量子位）</li>
+        <li>刚刚，GPT-6正式发布！OpenAI：欢迎来到AGI时代（量子位）</li>
+        <li>李飞飞刚发Atlas，中国开源“同款”已抢跑半年？（量子位）</li>
+        <li>常州女首富机器人转型才开始，先因裁应届生上了热搜（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-09-04（一个模型场景通吃！它石智航AWE3.7的 + 新版GPT Image 2.5已经能伪造 + Crusoe reportedly ra）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-04-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-04-noon.html</guid>
@@ -340,44 +382,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-29（高德发布首个无长程依赖的万帧级流式3D重 + HuggingFace被曝卖身英伟达：1 + Will TikTok and YouT）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-29-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-29-evening.html</guid>
-      <pubDate>Sat, 29 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>高德发布首个无长程依赖的万帧级流式3D重建模型ABot-Recon，以12帧重建万帧3D场景（量子位）</li>
-        <li>全球首款专为iPhone用户打造的Agent耳机正式发布，有道AI耳机让声音变成生产力（量子位）</li>
-        <li>孙宇晨怎么不算是开源爱情的第一人呢？（钛媒体）</li>
-        <li>特努斯首秀开启 iPhone 18 Pro / Ultra 系列新篇章，苹果发布会官宣定档 9 月 10 日（IT之家）</li>
-        <li>苹果全新 Mac mini 发布：可选 M6 或 M5 Pro 芯片，6999 元起售（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>I tried vibe-coding a memory tool for AI and stared into the abyss of philosophy（Hacker News）</li>
-        <li>LaneGate – Git-native worktree orchestrator for AI agents（Hacker News）</li>
-        <li>Yes, We're in an AI Bubble. Just Look to 1980s Japan（Hacker News）</li>
-        <li>AI Stock Research Assistant · Streamlit（Hacker News）</li>
-        <li>GitHub Trending: rohitg00 /
 
-      ai-engineering-from-scratch（GitHub Trending）</li>
-        <li>GitHub Trending: livekit /
-
-      agents（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Will TikTok and YouTube follow Meta’s new rules for teens?（TechCrunch）</li>
-        <li>An Anthropic researcher just gave us a peek at self-improving AI（TechCrunch）</li>
-        <li>Open-weight AI companies are the Valley&#8217;s hottest acquisition targets（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>HuggingFace被曝卖身英伟达：129亿美元！全球最大AI开源平台改姓黄（量子位）</li>
-        <li>基元律动累计融资数千万美元，推出“中国版OpenRouter”（量子位）</li>
-        <li>Claude开始接管物理世界！能用机械臂阻拦5000万美元打款了（量子位）</li>
-        <li>工业Agent不是“套壳”大模型！西门子百年经验灌进工业AI（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
