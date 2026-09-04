@@ -5,10 +5,38 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 03 Sep 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                            <item>
+                                                                                                                                                                                                                                                <item>
+      <title>☀️ 午间版 — 2026-09-04（一个模型场景通吃！它石智航AWE3.7的 + 新版GPT Image 2.5已经能伪造 + Crusoe reportedly ra）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-04-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-04-noon.html</guid>
+      <pubDate>Fri, 04 Sep 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>一个模型场景通吃！它石智航AWE3.7的泛化能力有点狠（量子位）</li>
+        <li>神秘具身团队又放出一连串很炸的Demo视频…自进化模型，技术路线曝光（量子位）</li>
+        <li>阿里更新旗舰模型Qwen3.8-Max，前端编程能力跃居全球第一（量子位）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>小米迄今最高端手机：雷军晒 18 Fold 阔折叠真机，红色外壳、首发玄戒 O3 芯片（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Why Air Batteries Are Finally Beating Lithium [video]（Hacker News）</li>
+        <li>MauroPello/stop-the-slop: Spot AI-generated YouTube scripts（Hacker News）</li>
+        <li>The 1990s Web vs. today's AI（Hacker News）</li>
+        <li>The Impact of AI-Generated Text on the Internet（Hacker News）</li>
+        <li>How Much of the Internet Is Written with AI?（Hacker News）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>新版GPT Image 2.5已经能伪造GPT-6发布会了（量子位）</li>
+        <li>刚刚，GPT-6正式发布！OpenAI：欢迎来到AGI时代（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-09-03（巨简单，更懂家！海信JUOS正式发布：行 + Claude最强Fable 5.1发布！ + Palo Alto Networks p）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-03-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-03-evening.html</guid>
@@ -351,53 +379,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-28（高德发布首个无长程依赖的万帧级流式3D重 + HuggingFace被曝卖身英伟达：1 + Anthropic and OpenAI）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-28-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-28-evening.html</guid>
-      <pubDate>Fri, 28 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>高德发布首个无长程依赖的万帧级流式3D重建模型ABot-Recon，以12帧重建万帧3D场景（量子位）</li>
-        <li>全球首款专为iPhone用户打造的Agent耳机正式发布，有道AI耳机让声音变成生产力（量子位）</li>
-        <li>特努斯首秀开启 iPhone 18 Pro / Ultra 系列新篇章，苹果发布会官宣定档 9 月 10 日（IT之家）</li>
-        <li>苹果全新 Mac mini 发布：可选 M6 或 M5 Pro 芯片，6999 元起售（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Are we just a couple steps away from a runaway AI?（Hacker News）</li>
-        <li>How Much of the Internet Is Written with AI?（Hacker News）</li>
-        <li>Scanning 170M lines of code: 44% of AI-found critical vulnerabilities were FP（Hacker News）</li>
-        <li>Making Your Data Ready for Agentic AI（Hacker News）</li>
-        <li>AI and Cognitive Science Redefine Knowledge Retention（Hacker News）</li>
-        <li>GitHub Trending: K-Dense-AI /
 
-      scientific-agent-skills（GitHub Trending）</li>
-        <li>GitHub Trending: rohitg00 /
-
-      ai-engineering-from-scratch（GitHub Trending）</li>
-        <li>GitHub Trending: andrewyng /
-
-      aisuite（GitHub Trending）</li>
-        <li>GitHub Trending: ZhuLinsen /
-
-      daily_stock_analysis（GitHub Trending）</li>
-        <li>GitHub Trending: RVC-Boss /
-
-      GPT-SoVITS（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Anthropic and OpenAI are joining the AI stage at TechCrunch Disrupt 2026（TechCrunch）</li>
-        <li>Barret Zoph, the Thinking Machines co-founder ousted before joining OpenAI, is now at Google（TechCrunch）</li>
-        <li>OpenAI, Anthropic, Google, and 100 other companies call for action to defend against rogue AI（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>HuggingFace被曝卖身英伟达：129亿美元！全球最大AI开源平台改姓黄（量子位）</li>
-        <li>基元律动累计融资数千万美元，推出“中国版OpenRouter”（量子位）</li>
-        <li>Claude开始接管物理世界！能用机械臂阻拦5000万美元打款了（量子位）</li>
-        <li>工业Agent不是“套壳”大模型！西门子百年经验灌进工业AI（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
