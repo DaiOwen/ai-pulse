@@ -5,10 +5,56 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 05 Sep 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                        <item>
+                                                                                                                                                                                                                                                            <item>
+      <title>🌙 晚间版 — 2026-09-05（打穿 AI 智商测试！GPT-6 Ast + 陶哲轩吐槽GPT-6孪生素数新突破：令人 + AI compute provider ）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-05-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-05-evening.html</guid>
+      <pubDate>Sat, 05 Sep 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>打穿 AI 智商测试！GPT-6 Astra 的符号世界模型，是突破还是钞能力刷分？（雷锋网）</li>
+        <li>谁在为人形机器人铺「全开源生态」？（雷锋网）</li>
+        <li>和苹果比肯定物超所值！卢伟冰确认小米18 Fold起售价过万；GPT-6 震撼发布！能自主操作电脑；字节跳动将获得约296亿美元银团贷款（雷锋网）</li>
+        <li>英伟达发布开源工具将闲置算力连成个人数据中心（Solidot）</li>
+        <li>Google TurboQuant AI 压缩算法大幅减少大模型内存使用（Solidot）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Show HN: ForgeGuardian – Open-source software supply-chain security scanner（Hacker News）</li>
+        <li>'coarse – AI peer review, of course (MIT license)（Hacker News）</li>
+        <li>ASCII smuggling isn't just an AI security risk（Hacker News）</li>
+        <li>Show HN: Mu, two-minute visualized lessons on modern AI（Hacker News）</li>
+        <li>Show HN: RagLeap Core – 46 AI Employees, open-source LangChain alt（Hacker News）</li>
+        <li>GitHub Trending: NousResearch /
+
+      hermes-agent（GitHub Trending）</li>
+        <li>GitHub Trending: sngyai /
+
+      Sequoia-X（GitHub Trending）</li>
+        <li>GitHub Trending: google-deepmind /
+
+      weathernext（GitHub Trending）</li>
+        <li>GitHub Trending: jihe520 /
+
+      MathModelAgent（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>AI compute provider Nscale is looking for $3.5B in pre-IPO financing（TechCrunch）</li>
+        <li>OpenAI&#8217;s rogue agents keep escaping, with no formal process to investigate them（TechCrunch）</li>
+        <li>The sameness problem behind those unappetizing AI-generated menus（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>陶哲轩吐槽GPT-6孪生素数新突破：令人无语的一幕（量子位）</li>
+        <li>机器人不能停下来等模型：星尘发布 SmoothRL，让在线强化学习跟上大模型的异步推理（量子位）</li>
+        <li>新版GPT Image 2.5已经能伪造GPT-6发布会了（量子位）</li>
+        <li>刚刚，GPT-6正式发布！OpenAI：欢迎来到AGI时代（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-09-05（一个模型场景通吃！它石智航AWE3.7的 + 机器人不能停下来等模型：星尘发布 Smo + AI compute provider ）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-05-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-05-noon.html</guid>
@@ -321,52 +367,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-31（真香！特斯拉在港澳推出更便宜的Model + 「GPT-6」灰测demo刷屏！周四发布 + The U.S. is building）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-31-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-31-evening.html</guid>
-      <pubDate>Mon, 31 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>真香！特斯拉在港澳推出更便宜的Model 3，起售价不足18万元；字节豆包大模型2.2将推迟发布，原计划8月推出；官方回应「网友呼吁取消ETC」（雷锋网）</li>
-        <li>古尔曼：苹果 AirPods 5 耳机最早 9 月发布，OLED 版 iPad mini 平板预计 10 月推出（IT之家）</li>
-        <li>特努斯首秀开启 iPhone 18 Pro / Ultra 系列新篇章，苹果发布会官宣定档 9 月 10 日（IT之家）</li>
-        <li>苹果全新 Mac mini 发布：可选 M6 或 M5 Pro 芯片，6999 元起售（IT之家）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>定义物理 AI 新纪元：昂首 EV1 智能出行机器人落地深圳湾 INNO100，开启中国市场线下首发（雷锋网）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>The Open Air European Museum（Hacker News）</li>
-        <li>Vim Classic debuts with its first release as a Vim fork without AI assistance（Hacker News）</li>
-        <li>Faster than real-time video generation with #1 quality model（Hacker News）</li>
-        <li>Care for a Little More AI?（Hacker News）</li>
-        <li>GitHub Trending: unclecode /
 
-      crawl4ai（GitHub Trending）</li>
-        <li>GitHub Trending: livekit /
-
-      agents（GitHub Trending）</li>
-        <li>GitHub Trending: kaifcodec /
-
-      user-scanner（GitHub Trending）</li>
-        <li>GitHub Trending: agent0ai /
-
-      agent-zero（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>The U.S. is building barriers around drones and robots, but China has scale to get around them（TechCrunch）</li>
-        <li>Caterpillar is bringing to AI deployment what it learned from automating mining（TechCrunch）</li>
-        <li>Nvidia’s AI advantage is moving beyond the GPU（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>「GPT-6」灰测demo刷屏！周四发布在即（量子位）</li>
-        <li>20ms把PDF变成Markdown！开源OCR神器快了近300倍（量子位）</li>
-        <li>Claude开始接管物理世界！能用机械臂阻拦5000万美元打款了（量子位）</li>
-        <li>AI本地部署不如官方版的元凶找到了：734个依赖包，每一个都可能坑（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
