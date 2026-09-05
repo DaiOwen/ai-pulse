@@ -5,10 +5,35 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 04 Sep 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                    <item>
+                                                                                                                                                                                                                                                        <item>
+      <title>☀️ 午间版 — 2026-09-05（一个模型场景通吃！它石智航AWE3.7的 + 机器人不能停下来等模型：星尘发布 Smo + AI compute provider ）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-05-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-05-noon.html</guid>
+      <pubDate>Sat, 05 Sep 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>一个模型场景通吃！它石智航AWE3.7的泛化能力有点狠（量子位）</li>
+        <li>打穿 AI 智商测试！GPT-6 Astra 的符号世界模型，是突破还是钞能力刷分？（雷锋网）</li>
+        <li>谁在为人形机器人铺「全开源生态」？（雷锋网）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>GPT-6 Astra in code review: Gains, privacy, and cost（Hacker News）</li>
+        <li>Show HN: Rubato – Retro-Mac desk device mirrors AI coding state-ESP8266（Hacker News）</li>
+        <li>Lenexus – dependency graph with deterministic risk engine and AI layer（Hacker News）</li>
+        <li>GitSpawn: Untrusted repos can execute code via AI coding agents（Hacker News）</li>
+        <li>Tracking Public Predictions with AI（Hacker News）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>机器人不能停下来等模型：星尘发布 SmoothRL，让在线强化学习跟上大模型的异步推理（量子位）</li>
+        <li>新版GPT Image 2.5已经能伪造GPT-6发布会了（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-09-04（一个模型场景通吃！它石智航AWE3.7的 + 新版GPT Image 2.5已经能伪造 + The sameness problem）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-04-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-04-evening.html</guid>
@@ -343,44 +368,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-08-30（高德发布首个无长程依赖的万帧级流式3D重 + 20ms把PDF变成Markdown！开 + Nvidia’s AI advantag）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-08-30-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-08-30-evening.html</guid>
-      <pubDate>Sun, 30 Aug 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>高德发布首个无长程依赖的万帧级流式3D重建模型ABot-Recon，以12帧重建万帧3D场景（量子位）</li>
-        <li>全球首款专为iPhone用户打造的Agent耳机正式发布，有道AI耳机让声音变成生产力（量子位）</li>
-        <li>孙宇晨怎么不算是开源爱情的第一人呢？（钛媒体）</li>
-        <li>蓝狐 Aura A1 小屏手机发布：联发科 G100 芯片，首发 1399 元起（IT之家）</li>
-        <li>微软 Win11 原生 WinUI 框架现已开源（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Show HN: Claypot – a block-based studio for kids to inspect AI systems（Hacker News）</li>
-        <li>Critical: Persistent back end data retention after deletion in AI Studio（Hacker News）</li>
-        <li>OpenRouter is advertising popular Chinese models as based in Singapore（Hacker News）</li>
-        <li>I ran out of AI tokens in one app while holding unused tokens in another（Hacker News）</li>
-        <li>GitHub Trending: kaifcodec /
 
-      user-scanner（GitHub Trending）</li>
-        <li>GitHub Trending: livekit /
-
-      agents（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Nvidia’s AI advantage is moving beyond the GPU（TechCrunch）</li>
-        <li>Will TikTok and YouTube follow Meta’s new rules for teens?（TechCrunch）</li>
-        <li>An Anthropic researcher just gave us a peek at self-improving AI（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>20ms把PDF变成Markdown！开源OCR神器快了近300倍（量子位）</li>
-        <li>Claude开始接管物理世界！能用机械臂阻拦5000万美元打款了（量子位）</li>
-        <li>AI本地部署不如官方版的元凶找到了：734个依赖包，每一个都可能坑（量子位）</li>
-        <li>32GB大显存加持，英特尔锐炫Pro B70搞定AI漫剧创作（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
