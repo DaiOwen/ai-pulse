@@ -5,10 +5,40 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 05 Sep 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                            <item>
+                                                                                                                                                                                                                                                                <item>
+      <title>☀️ 午间版 — 2026-09-06（押中SpaceX的硅谷老将，把票投给了一 + 陶哲轩吐槽GPT-6孪生素数新突破：令人 + AI compute provider ）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-06-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-06-noon.html</guid>
+      <pubDate>Sun, 06 Sep 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>押中SpaceX的硅谷老将，把票投给了一家中国世界模型公司（量子位）</li>
+        <li>打穿 AI 智商测试！GPT-6 Astra 的符号世界模型，是突破还是钞能力刷分？（雷锋网）</li>
+        <li>谁在为人形机器人铺「全开源生态」？（雷锋网）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>小米迄今最高端手机：雷军晒 18 Fold 阔折叠真机，红色外壳、首发玄戒 O3 芯片（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>The Shape and Feel of the Post-AI Data Stack（Hacker News）</li>
+        <li>VMware Intros Private AI Cloud（Hacker News）</li>
+        <li>I was offered money to scare you of AI [video]（Hacker News）</li>
+        <li>AI Stock Research Assistant · Streamlit（Hacker News）</li>
+        <li>GitHub Trending: sngyai /
+
+      Sequoia-X（GitHub Trending）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>陶哲轩吐槽GPT-6孪生素数新突破：令人无语的一幕（量子位）</li>
+        <li>机器人不能停下来等模型：星尘发布 SmoothRL，让在线强化学习跟上大模型的异步推理（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-09-05（打穿 AI 智商测试！GPT-6 Ast + 陶哲轩吐槽GPT-6孪生素数新突破：令人 + AI compute provider ）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-05-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-05-evening.html</guid>
@@ -342,30 +372,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-09-01（我国 L3 / L4 自动驾驶强制国标正 + 「GPT-6」灰测demo刷屏！周四发布 + The Pentagon now has）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-01-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-01-noon.html</guid>
-      <pubDate>Tue, 01 Sep 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>我国 L3 / L4 自动驾驶强制国标正式文件发布，2027 年 7 月 1 日实施（IT之家）</li>
-        <li>苹果今秋 iPhone 18 Pro / Max 发布会预估下架 11 款设备，iPhone 16 去留存悬念（IT之家）</li>
-        <li>特努斯首秀开启 iPhone 18 Pro / Ultra 系列新篇章，苹果发布会官宣定档 9 月 10 日（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Show HN: Clippy Vision – local AI that remembers your screen across apps（Hacker News）</li>
-        <li>Ask HN: Why do people get mad at AI pastes（Hacker News）</li>
-        <li>ArXiv has almost 600 submissions today and most are AI slop（Hacker News）</li>
-        <li>Show HN: Eatheria – Self-hosted AppSec platform with AI false-positive filtering（Hacker News）</li>
-        <li>I Went on an AI Show. It Made Me Feel Better About Human News（Hacker News）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>「GPT-6」灰测demo刷屏！周四发布在即（量子位）</li>
-        <li>20ms把PDF变成Markdown！开源OCR神器快了近300倍（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
+
 
 
 
