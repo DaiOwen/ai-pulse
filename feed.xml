@@ -5,10 +5,56 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 07 Sep 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                        <item>
+                                                                                                                                                                                                                                                                            <item>
+      <title>🌙 晚间版 — 2026-09-07（国内首份办公Agent用户行为报告发布： + 陶哲轩吐槽GPT-6孪生素数新突破：令人 + Authors push back as）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-07-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-07-evening.html</guid>
+      <pubDate>Mon, 07 Sep 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>国内首份办公Agent用户行为报告发布：北京用户量全国居首，海外用户占比超12%（量子位）</li>
+        <li>原生全模态技术战略闭环，智象（HiDream.ai）发布具身世界模型HiDream-O1-Embodied（量子位）</li>
+        <li>英伟达发布开源工具将闲置算力连成个人数据中心（Solidot）</li>
+        <li>华为继 Mate 40 后时隔六年再次发布高性能芯片，麒麟 9050 Pro 首发逻辑折叠技术（IT之家）</li>
+        <li>古尔曼：库克不会在苹果秋季发布会视频中出现，现在是特努斯时代（IT之家）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>糖吉医疗：九年累亏超4亿元，大额增资后火速递表引热议｜IPO观察（钛媒体）</li>
+        <li>独家丨央企领投，中科类脑完成B+轮融资，布局“Token工厂”（钛媒体）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Chess5.ai – Play Chess, Go, Xiangqi, Gomoku, and Othello Against LLMs（Hacker News）</li>
+        <li>Cory Doctorow on the AI lie [video]（Hacker News）</li>
+        <li>Understanding Inference and the Economics of Enterprise AI（Hacker News）</li>
+        <li>Show HN: Mailward – Open Outlook PST/OST files in the browser, nothing uploaded（Hacker News）</li>
+        <li>GitHub Trending: openai /
+
+      skills（GitHub Trending）</li>
+        <li>GitHub Trending: Sumanth077 /
+
+      Hands-On-AI-Engineering（GitHub Trending）</li>
+        <li>GitHub Trending: eriklindernoren /
+
+      ML-From-Scratch（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Authors push back as publishers and agents make claims on Anthropic settlement（TechCrunch）</li>
+        <li>Travis Kalanick’s Atoms might be getting into the robotaxi business（TechCrunch）</li>
+        <li>Seattle Times and Newsday are the latest publications to sue OpenAI and Microsoft（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>陶哲轩吐槽GPT-6孪生素数新突破：令人无语的一幕（量子位）</li>
+        <li>机器人不能停下来等模型：星尘发布 SmoothRL，让在线强化学习跟上大模型的异步推理（量子位）</li>
+        <li>产业龙头领投！中科类脑完成数亿元B+轮战略融资（量子位）</li>
+        <li>姚班校友主导，Claude攻克费马大定理首个完整形式化证明（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-09-07（打穿 AI 智商测试！GPT-6 Ast + 陶哲轩吐槽GPT-6孪生素数新突破：令人 + Authors push back as）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-07-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-07-noon.html</guid>
@@ -338,50 +384,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-09-02（巨简单，更懂家！海信JUOS正式发布：行 + Claude最强Fable 5.1发布！ + OpenAI&#8217;s Astra）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-02-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-02-evening.html</guid>
-      <pubDate>Wed, 02 Sep 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>巨简单，更懂家！海信JUOS正式发布：行业首个家庭智能伴侣级AIOS（量子位）</li>
-        <li>李飞飞发布：全球首个多模态世界模型（量子位）</li>
-        <li>阿里更新旗舰模型Qwen3.8-Max，前端编程能力跃居全球第一（量子位）</li>
-        <li>DeepSeek V4 多模态开源，我们把它的视觉链路拆了一遍（雷锋网）</li>
-        <li>万字长文拆解DeepSeek V4 Pro与Harness：从后训练到「代理自进化」，更大的变化在开源框架里（雷锋网）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Farmanix – An AI agent that can use your Mac like a human（Hacker News）</li>
-        <li>Show HN: Photo manager that finds and organizes photos with private, local AI（Hacker News）</li>
-        <li>Show HN: IP/fal – An IP checker that reimagines your location with AI（Hacker News）</li>
-        <li>AI loss of control incidents are worsening, shows CLTR analysis（Hacker News）</li>
-        <li>GitHub Trending: K-Dense-AI /
 
-      scientific-agent-skills（GitHub Trending）</li>
-        <li>GitHub Trending: unclecode /
-
-      crawl4ai（GitHub Trending）</li>
-        <li>GitHub Trending: HKUDS /
-
-      DeepTutor（GitHub Trending）</li>
-        <li>GitHub Trending: VectifyAI /
-
-      PageIndex（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>OpenAI&#8217;s Astra model is on the way — and very good at breaking into computer systems（TechCrunch）</li>
-        <li>Anthropic&#8217;s new Fable release is cheaper, less restrictive（TechCrunch）</li>
-        <li>ChatGPT Health adds Epic integration for clinicians to import patient data（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>Claude最强Fable 5.1发布！8项屠榜，最高降价45%，反蒸馏机制上线（量子位）</li>
-        <li>还在为大模型洗数据熬夜？蚂蚁拿下VLDB工业最佳论文，一套宽表搞定35PB语料，效率狂飙5.6倍（量子位）</li>
-        <li>A社化身A割！Claude官宣永久提额25%，结果到手反而少17%（量子位）</li>
-        <li>GitHub最热架构图Agent，开发者故事看哭了（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
