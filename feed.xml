@@ -5,10 +5,37 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 07 Sep 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                            <item>
+                                                                                                                                                                                                                                                                                <item>
+      <title>☀️ 午间版 — 2026-09-08（打穿 AI 智商测试！GPT-6 Ast + 全球「AI学术顶会」精华汇聚地 + Opaque recurrence, a）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-08-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-08-noon.html</guid>
+      <pubDate>Tue, 08 Sep 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>打穿 AI 智商测试！GPT-6 Astra 的符号世界模型，是突破还是钞能力刷分？（雷锋网）</li>
+        <li>一个半年涨到 6800 多星的 A 股选股开源项目 Sequoia-X，把散户最头疼的「收盘后选股」变成一条两分钟跑完、自动推到飞书的流水线。（钛媒体）</li>
+        <li>信息通信行业发展“十五五”规划发布，部署26项重点任务；微信内测“小微AI社交”：AI先聊再带回结果；央行：8月末黄金储备升至7673万盎司，连续22个月增持（钛媒体）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Arm Mali G2-Ultra NX GPU: desktop-class mobile gameplay with AI-native graphics（Hacker News）</li>
+        <li>Sen. Kennedy rails against AI developers as 'high IQ stupid people'（Hacker News）</li>
+        <li>Ask HN: Anyone else feeling uneasy with the latest developments in AI?（Hacker News）</li>
+        <li>Denzel Explains AI "Slop"（Hacker News）</li>
+        <li>GitHub Trending: openai /
+
+      skills（GitHub Trending）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>全球「AI学术顶会」精华汇聚地（雷锋网）</li>
+        <li>IFA观察：智能IoT进入「精耕」时代，萤石的技术储备开始兑现（雷锋网）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-09-07（国内首份办公Agent用户行为报告发布： + 陶哲轩吐槽GPT-6孪生素数新突破：令人 + Authors push back as）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-07-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-07-evening.html</guid>
@@ -350,39 +377,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-09-03（巨简单，更懂家！海信JUOS正式发布：行 + Claude最强Fable 5.1发布！ + Palo Alto Networks p）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-03-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-03-noon.html</guid>
-      <pubDate>Thu, 03 Sep 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>巨简单，更懂家！海信JUOS正式发布：行业首个家庭智能伴侣级AIOS（量子位）</li>
-        <li>李飞飞发布：全球首个多模态世界模型（量子位）</li>
-        <li>一个模型场景通吃！它石智航AWE3.7的泛化能力有点狠（量子位）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>小米迄今最高端手机：雷军晒 18 Fold 阔折叠真机，红色外壳、首发玄戒 O3 芯片（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>We analyzed the code published by 29 frontier AI labs. Here's the data（Hacker News）</li>
-        <li>AI security that assumes the attacker has root（Hacker News）</li>
-        <li>GitHub Trending: sngyai /
 
-      Sequoia-X（GitHub Trending）</li>
-        <li>GitHub Trending: NousResearch /
-
-      hermes-agent（GitHub Trending）</li>
-        <li>GitHub Trending: hacksider /
-
-      Deep-Live-Cam（GitHub Trending）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>Claude最强Fable 5.1发布！8项屠榜，最高降价45%，反蒸馏机制上线（量子位）</li>
-        <li>还在为大模型洗数据熬夜？蚂蚁拿下VLDB工业最佳论文，一套宽表搞定35PB语料，效率狂飙5.6倍（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
