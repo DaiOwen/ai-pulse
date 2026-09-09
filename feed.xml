@@ -5,10 +5,38 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 08 Sep 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                    <item>
+                                                                                                                                                                                                                                                                                        <item>
+      <title>☀️ 午间版 — 2026-09-09（国内首份办公Agent用户行为报告发布： + 深度智控获宁德时代、沙特阿美战投等重磅加 + Hackers are stealing）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-09-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-09-noon.html</guid>
+      <pubDate>Wed, 09 Sep 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>国内首份办公Agent用户行为报告发布：北京用户量全国居首，海外用户占比超12%（量子位）</li>
+        <li>原生全模态技术战略闭环，智象（HiDream.ai）发布具身世界模型HiDream-O1-Embodied（量子位）</li>
+        <li>Runway ARR 突破 2 亿美元：视频热潮转向世界模型押注（钛媒体）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>芯片架构从平面变 3D，专家解读华为麒麟 9050 Pro 新突破（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Show HN: GitHub Actions Aibom Generation（Hacker News）</li>
+        <li>Making your data ready for agentic AI（Hacker News）</li>
+        <li>Robots-check: see what your robots.txt is serving (Cloudflare AI Crawl Control)（Hacker News）</li>
+        <li>Transformer-Like Models for Z1（Hacker News）</li>
+        <li>Meta launches Muse, a personal AI agent（Hacker News）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>深度智控获宁德时代、沙特阿美战投等重磅加码，加速打造物理AI时代算力与能源底座（量子位）</li>
+        <li>产业龙头领投！中科类脑完成数亿元B+轮战略融资（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-09-08（国内首份办公Agent用户行为报告发布： + 深度智控获宁德时代、沙特阿美战投等重磅加 + Opaque recurrence, a）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-08-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-08-evening.html</guid>
@@ -342,33 +370,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-09-04（一个模型场景通吃！它石智航AWE3.7的 + 新版GPT Image 2.5已经能伪造 + Crusoe reportedly ra）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-04-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-04-noon.html</guid>
-      <pubDate>Fri, 04 Sep 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>一个模型场景通吃！它石智航AWE3.7的泛化能力有点狠（量子位）</li>
-        <li>神秘具身团队又放出一连串很炸的Demo视频…自进化模型，技术路线曝光（量子位）</li>
-        <li>阿里更新旗舰模型Qwen3.8-Max，前端编程能力跃居全球第一（量子位）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>小米迄今最高端手机：雷军晒 18 Fold 阔折叠真机，红色外壳、首发玄戒 O3 芯片（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Why Air Batteries Are Finally Beating Lithium [video]（Hacker News）</li>
-        <li>MauroPello/stop-the-slop: Spot AI-generated YouTube scripts（Hacker News）</li>
-        <li>The 1990s Web vs. today's AI（Hacker News）</li>
-        <li>The Impact of AI-Generated Text on the Internet（Hacker News）</li>
-        <li>How Much of the Internet Is Written with AI?（Hacker News）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>新版GPT Image 2.5已经能伪造GPT-6发布会了（量子位）</li>
-        <li>刚刚，GPT-6正式发布！OpenAI：欢迎来到AGI时代（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
+
 
 
 
