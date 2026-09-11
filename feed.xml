@@ -5,10 +5,52 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 11 Sep 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                        <item>
+                                                                                                                                                                                                                                                                                                            <item>
+      <title>🌙 晚间版 — 2026-09-11（全球首个3D原生城市世界模型ABot-E + 这个新开源的世界模型只有1.3B，单卡就 + Jensen Huang explain）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-11-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-11-evening.html</guid>
+      <pubDate>Fri, 11 Sep 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>全球首个3D原生城市世界模型ABot-Earth 0.7发布，构建AI理解真实世界的入口（量子位）</li>
+        <li>打造10万卡国产算力集群推出JoyAI世界模型，京东发布物理AI建设最新成果（量子位）</li>
+        <li>墨芯人工智能亮相2026 Inclusion·外滩大会：以专用稀疏推理芯片提升算力效能，共创AI新经济（量子位）</li>
+        <li>OpenAI 声称解决了 Navier-Stokes 问题，但引发了利用未发布成果的争议（Solidot）</li>
+        <li>DeepSeek V4.1 Flash 模型发布（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Pentagon in Talks to Get into AI Infrastructure Funding with a $5B Loan（Hacker News）</li>
+        <li>Act as a Conversational AI Prompt（Hacker News）</li>
+        <li>How Emmanuel Macron brought France's AI darling to the world stage（Hacker News）</li>
+        <li>Ask HN: Is using AI harmful to human Critical Thinking and Decision making?（Hacker News）</li>
+        <li>GitHub Trending: rohitg00 /
+
+      ai-engineering-from-scratch（GitHub Trending）</li>
+        <li>GitHub Trending: TauricResearch /
+
+      TradingAgents（GitHub Trending）</li>
+        <li>GitHub Trending: openai /
+
+      skills（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Jensen Huang explains why Nvidia will grow an astounding 70% next year（TechCrunch）</li>
+        <li>OpenAI puts Pro subscriptions on hold due to Astra demand（TechCrunch）</li>
+        <li>Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>这个新开源的世界模型只有1.3B，单卡就能实时跑！（量子位）</li>
+        <li>AGI时代的第一个生图模型，ChatGPT Images 2.5上线（量子位）</li>
+        <li>全球首个可仿真的人–场景交互重建框架 HSImul3R：让人类视频真正成为机器人技能来源（量子位）</li>
+        <li>量子位「MEET2027智能未来大会」启动！年度榜单征集进行中（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-09-11（全球首个3D原生城市世界模型ABot-E + 这个新开源的世界模型只有1.3B，单卡就 + Jensen Huang explain）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-11-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-11-noon.html</guid>
@@ -330,50 +372,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-09-06（押中SpaceX的硅谷老将，把票投给了一 + 陶哲轩吐槽GPT-6孪生素数新突破：令人 + AI compute provider ）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-06-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-06-evening.html</guid>
-      <pubDate>Sun, 06 Sep 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>押中SpaceX的硅谷老将，把票投给了一家中国世界模型公司（量子位）</li>
-        <li>打穿 AI 智商测试！GPT-6 Astra 的符号世界模型，是突破还是钞能力刷分？（雷锋网）</li>
-        <li>谁在为人形机器人铺「全开源生态」？（雷锋网）</li>
-        <li>和苹果比肯定物超所值！卢伟冰确认小米18 Fold起售价过万；GPT-6 震撼发布！能自主操作电脑；字节跳动将获得约296亿美元银团贷款（雷锋网）</li>
-        <li>英伟达发布开源工具将闲置算力连成个人数据中心（Solidot）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>小米迄今最高端手机：雷军晒 18 Fold 阔折叠真机，红色外壳、首发玄戒 O3 芯片（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Nimvarya – Let AI coding agents control Chrome without stealing focus（Hacker News）</li>
-        <li>Handoru: AI customer conversation agents for service businesses（Hacker News）</li>
-        <li>AI Programming: A Layered Model（Hacker News）</li>
-        <li>An Open Letter to Bernie Sanders: Regulate AI's Dangers, Don't Ban Its Promise（Hacker News）</li>
-        <li>GitHub Trending: sngyai /
 
-      Sequoia-X（GitHub Trending）</li>
-        <li>GitHub Trending: Significant-Gravitas /
-
-      AutoGPT（GitHub Trending）</li>
-        <li>GitHub Trending: eriklindernoren /
-
-      ML-From-Scratch（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>AI compute provider Nscale is looking for $3.5B in pre-IPO financing（TechCrunch）</li>
-        <li>Seattle Times and Newsday are the latest publications to sue OpenAI and Microsoft（TechCrunch）</li>
-        <li>Hikers rescued after using Google Gemini for planning（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>陶哲轩吐槽GPT-6孪生素数新突破：令人无语的一幕（量子位）</li>
-        <li>机器人不能停下来等模型：星尘发布 SmoothRL，让在线强化学习跟上大模型的异步推理（量子位）</li>
-        <li>李飞飞刚发Atlas，中国开源“同款”已抢跑半年？（量子位）</li>
-        <li>姚班校友主导，Claude攻克费马大定理首个完整形式化证明（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
