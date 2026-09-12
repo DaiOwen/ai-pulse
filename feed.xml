@@ -5,10 +5,54 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 12 Sep 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                <item>
+                                                                                                                                                                                                                                                                                                                    <item>
+      <title>🌙 晚间版 — 2026-09-12（全球首个3D原生城市世界模型ABot-E + AI数学的最后一道高墙，塌了！GPT-6 + 19999 元起华为 Mate XT 2 + Nscale adds former O）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-12-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-12-evening.html</guid>
+      <pubDate>Sat, 12 Sep 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>全球首个3D原生城市世界模型ABot-Earth 0.7发布，构建AI理解真实世界的入口（量子位）</li>
+        <li>墨芯人工智能亮相2026 Inclusion·外滩大会：以专用稀疏推理芯片提升算力效能，共创AI新经济（量子位）</li>
+        <li>OpenAI 声称解决了 Navier-Stokes 问题，但引发了利用未发布成果的争议（Solidot）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>19999 元起华为 Mate XT 2 非凡大师三折叠手机首销：首发麒麟 9050 Pro 芯片、首搭硬件级防窥（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Show HN: RagLeap v0.4.0 – 46 AI roles, 8 connectors, 9 vector DBs（Hacker News）</li>
+        <li>Jot – AI Rewriter（Hacker News）</li>
+        <li>Show HN: Spiteware.ai – A catalog of apps built out of spite at unfair pricing（Hacker News）</li>
+        <li>Ask HN: What is the most overlooked risk in the AI security domain?（Hacker News）</li>
+        <li>Brainstorming novel biological attacks with an LLM（Hacker News）</li>
+        <li>GitHub Trending: jihe520 /
+
+      MathModelAgent（GitHub Trending）</li>
+        <li>GitHub Trending: bojieli /
+
+      ai-agent-book（GitHub Trending）</li>
+        <li>GitHub Trending: rohitg00 /
+
+      ai-engineering-from-scratch（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Nscale adds former OpenAI exec Fidji Simo to its board ahead of potential IPO（TechCrunch）</li>
+        <li>Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training data（TechCrunch）</li>
+        <li>OpenAI&#8217;s feud with mathematicians is only escalating（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>AI数学的最后一道高墙，塌了！GPT-6 Astra刷穿FrontierMath Tier 4（量子位）</li>
+        <li>全球首个可仿真的人–场景交互重建框架 HSImul3R：让人类视频真正成为机器人技能来源（量子位）</li>
+        <li>银行Agent上岗：4200万小微经营者可用，信贷、票据、财税一把梭（量子位）</li>
+        <li>啊？Anthropic最高320万招销售，只为服务Meta（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-09-12（全球首个3D原生城市世界模型ABot-E + 这个新开源的世界模型只有1.3B，单卡就 + Nscale adds former O）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-12-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-12-noon.html</guid>
@@ -317,51 +361,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-09-07（国内首份办公Agent用户行为报告发布： + 陶哲轩吐槽GPT-6孪生素数新突破：令人 + Authors push back as）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-07-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-07-evening.html</guid>
-      <pubDate>Mon, 07 Sep 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>国内首份办公Agent用户行为报告发布：北京用户量全国居首，海外用户占比超12%（量子位）</li>
-        <li>原生全模态技术战略闭环，智象（HiDream.ai）发布具身世界模型HiDream-O1-Embodied（量子位）</li>
-        <li>英伟达发布开源工具将闲置算力连成个人数据中心（Solidot）</li>
-        <li>华为继 Mate 40 后时隔六年再次发布高性能芯片，麒麟 9050 Pro 首发逻辑折叠技术（IT之家）</li>
-        <li>古尔曼：库克不会在苹果秋季发布会视频中出现，现在是特努斯时代（IT之家）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>糖吉医疗：九年累亏超4亿元，大额增资后火速递表引热议｜IPO观察（钛媒体）</li>
-        <li>独家丨央企领投，中科类脑完成B+轮融资，布局“Token工厂”（钛媒体）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Chess5.ai – Play Chess, Go, Xiangqi, Gomoku, and Othello Against LLMs（Hacker News）</li>
-        <li>Cory Doctorow on the AI lie [video]（Hacker News）</li>
-        <li>Understanding Inference and the Economics of Enterprise AI（Hacker News）</li>
-        <li>Show HN: Mailward – Open Outlook PST/OST files in the browser, nothing uploaded（Hacker News）</li>
-        <li>GitHub Trending: openai /
 
-      skills（GitHub Trending）</li>
-        <li>GitHub Trending: Sumanth077 /
-
-      Hands-On-AI-Engineering（GitHub Trending）</li>
-        <li>GitHub Trending: eriklindernoren /
-
-      ML-From-Scratch（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Authors push back as publishers and agents make claims on Anthropic settlement（TechCrunch）</li>
-        <li>Travis Kalanick’s Atoms might be getting into the robotaxi business（TechCrunch）</li>
-        <li>Seattle Times and Newsday are the latest publications to sue OpenAI and Microsoft（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>陶哲轩吐槽GPT-6孪生素数新突破：令人无语的一幕（量子位）</li>
-        <li>机器人不能停下来等模型：星尘发布 SmoothRL，让在线强化学习跟上大模型的异步推理（量子位）</li>
-        <li>产业龙头领投！中科类脑完成数亿元B+轮战略融资（量子位）</li>
-        <li>姚班校友主导，Claude攻克费马大定理首个完整形式化证明（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
