@@ -5,10 +5,38 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 12 Sep 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                    <item>
+                                                                                                                                                                                                                                                                                                                        <item>
+      <title>☀️ 午间版 — 2026-09-13（“算力中国·年度卓越成就”发布 太初元碁 + A社承认Claude安全对齐存在缺陷，但 + OpenAI’s Sam Altman ）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-13-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-13-noon.html</guid>
+      <pubDate>Sun, 13 Sep 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>“算力中国·年度卓越成就”发布 太初元碁超智融合计算系统入选（量子位）</li>
+        <li>百度秒哒再升级！让最懂业务的人，亲手造自己的系统（量子位）</li>
+        <li>墨芯人工智能亮相2026 Inclusion·外滩大会：以专用稀疏推理芯片提升算力效能，共创AI新经济（量子位）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>苹果 iPhone 18 Pro 系列预购开启：新增可变光圈、首发 2 纳米 A20 Pro 芯片，9999 元起（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Apple launches a new way to prove a photo was shot with an iPhone (not AI)（Hacker News）</li>
+        <li>JPMorgan cut off Situational Awareness lending after AI losses（Hacker News）</li>
+        <li>India's First AI Agentic E-Commerce Platform（Hacker News）</li>
+        <li>Anthropic CEO says AI swarm could 'take over the Internet' in 6-12 months（Hacker News）</li>
+        <li>Backflip: Apple now wants to train AI models with user data after all（Hacker News）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>A社承认Claude安全对齐存在缺陷，但“尚无解决方案”（量子位）</li>
+        <li>AI数学的最后一道高墙，塌了！GPT-6 Astra刷穿FrontierMath Tier 4（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-09-12（全球首个3D原生城市世界模型ABot-E + AI数学的最后一道高墙，塌了！GPT-6 + 19999 元起华为 Mate XT 2 + Nscale adds former O）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-12-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-12-evening.html</guid>
@@ -334,32 +362,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-09-08（打穿 AI 智商测试！GPT-6 Ast + 全球「AI学术顶会」精华汇聚地 + Opaque recurrence, a）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-08-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-08-noon.html</guid>
-      <pubDate>Tue, 08 Sep 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>打穿 AI 智商测试！GPT-6 Astra 的符号世界模型，是突破还是钞能力刷分？（雷锋网）</li>
-        <li>一个半年涨到 6800 多星的 A 股选股开源项目 Sequoia-X，把散户最头疼的「收盘后选股」变成一条两分钟跑完、自动推到飞书的流水线。（钛媒体）</li>
-        <li>信息通信行业发展“十五五”规划发布，部署26项重点任务；微信内测“小微AI社交”：AI先聊再带回结果；央行：8月末黄金储备升至7673万盎司，连续22个月增持（钛媒体）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Arm Mali G2-Ultra NX GPU: desktop-class mobile gameplay with AI-native graphics（Hacker News）</li>
-        <li>Sen. Kennedy rails against AI developers as 'high IQ stupid people'（Hacker News）</li>
-        <li>Ask HN: Anyone else feeling uneasy with the latest developments in AI?（Hacker News）</li>
-        <li>Denzel Explains AI "Slop"（Hacker News）</li>
-        <li>GitHub Trending: openai /
 
-      skills（GitHub Trending）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>全球「AI学术顶会」精华汇聚地（雷锋网）</li>
-        <li>IFA观察：智能IoT进入「精耕」时代，萤石的技术储备开始兑现（雷锋网）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
