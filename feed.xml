@@ -5,10 +5,51 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 13 Sep 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                        <item>
+                                                                                                                                                                                                                                                                                                                            <item>
+      <title>🌙 晚间版 — 2026-09-13（“算力中国·年度卓越成就”发布 太初元碁 + A社承认Claude安全对齐存在缺陷，但 + OpenAI’s Sam Altman ）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-13-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-13-evening.html</guid>
+      <pubDate>Sun, 13 Sep 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>“算力中国·年度卓越成就”发布 太初元碁超智融合计算系统入选（量子位）</li>
+        <li>百度秒哒再升级！让最懂业务的人，亲手造自己的系统（量子位）</li>
+        <li>墨芯人工智能亮相2026 Inclusion·外滩大会：以专用稀疏推理芯片提升算力效能，共创AI新经济（量子位）</li>
+        <li>OpenAI 声称解决了 Navier-Stokes 问题，但引发了利用未发布成果的争议（Solidot）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>苹果 iPhone 18 Pro 系列预购开启：新增可变光圈、首发 2 纳米 A20 Pro 芯片，9999 元起（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Ask HN: Should we start airgapping our personal devices?（Hacker News）</li>
+        <li>Show HN: How LLMs work, explained through music, football or cricket analogies（Hacker News）</li>
+        <li>Persimmon v0.1 Model Card（Hacker News）</li>
+        <li>Dramatic insider warnings over AI fall flat with some in Silicon Valley（Hacker News）</li>
+        <li>GitHub Trending: Shubhamsaboo /
+
+      awesome-llm-apps（GitHub Trending）</li>
+        <li>GitHub Trending: jundot /
+
+      omlx（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>OpenAI’s Sam Altman says it would be &#8216;ill-advised&#8217; to go public in 2026（TechCrunch）</li>
+        <li>Anthropic CEO outlines plan to slow AI development（TechCrunch）</li>
+        <li>Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training data（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>A社承认Claude安全对齐存在缺陷，但“尚无解决方案”（量子位）</li>
+        <li>AI数学的最后一道高墙，塌了！GPT-6 Astra刷穿FrontierMath Tier 4（量子位）</li>
+        <li>2000+真实场景搬进仿真！一个导航模型零样本“通吃”四种机器人本体（量子位）</li>
+        <li>陶哲轩邓煜究竟在反对什么：AI暴力解题摧毁人类数学精神（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-09-13（“算力中国·年度卓越成就”发布 太初元碁 + A社承认Claude安全对齐存在缺陷，但 + OpenAI’s Sam Altman ）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-13-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-13-noon.html</guid>
@@ -323,44 +364,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-09-08（国内首份办公Agent用户行为报告发布： + 深度智控获宁德时代、沙特阿美战投等重磅加 + Opaque recurrence, a）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-08-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-08-evening.html</guid>
-      <pubDate>Tue, 08 Sep 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>国内首份办公Agent用户行为报告发布：北京用户量全国居首，海外用户占比超12%（量子位）</li>
-        <li>原生全模态技术战略闭环，智象（HiDream.ai）发布具身世界模型HiDream-O1-Embodied（量子位）</li>
-        <li>打穿 AI 智商测试！GPT-6 Astra 的符号世界模型，是突破还是钞能力刷分？（雷锋网）</li>
-        <li>这原本将是 Claude 开发商规模最大的一笔收购，但 IPO 前的特殊阶段，正在抑制前沿 AI 并购热潮。（钛媒体）</li>
-        <li>一个半年涨到 6800 多星的 A 股选股开源项目 Sequoia-X，把散户最头疼的「收盘后选股」变成一条两分钟跑完、自动推到飞书的流水线。（钛媒体）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Is the UK government the new training ground for AI execs?（Hacker News）</li>
-        <li>How AI based programming could work (2016)（Hacker News）</li>
-        <li>Stable Singularity of the Euler Equations on R^3 without forcing – Anima on AI（Hacker News）</li>
-        <li>Bodhan.ai releases 1.2B ASR model that covers 22 Indian Languages（Hacker News）</li>
-        <li>GitHub Trending: openai /
 
-      skills（GitHub Trending）</li>
-        <li>GitHub Trending: NousResearch /
-
-      hermes-agent（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Opaque recurrence, and other AI terms that you should probably know（TechCrunch）</li>
-        <li>Authors push back as publishers and agents make claims on Anthropic settlement（TechCrunch）</li>
-        <li>Travis Kalanick’s Atoms might be getting into the robotaxi business（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>深度智控获宁德时代、沙特阿美战投等重磅加码，加速打造物理AI时代算力与能源底座（量子位）</li>
-        <li>产业龙头领投！中科类脑完成数亿元B+轮战略融资（量子位）</li>
-        <li>感谢用GPT-6搓3D的！燃烧自己的token换来一次全体重置（量子位）</li>
-        <li>GPT-6不只Astra！Sol内测结果曝光，速度快6倍（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
