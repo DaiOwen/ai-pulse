@@ -5,10 +5,58 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 14 Sep 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 14 Sep 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                <item>
+                                                                                                                                                                                                                                                                                                                                    <item>
+      <title>🌙 晚间版 — 2026-09-14（“算力中国·年度卓越成就”发布 太初元碁 + 中国物理AI大突破：PhysBrain  + What&#8217;s behind ）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-14-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-14-evening.html</guid>
+      <pubDate>Mon, 14 Sep 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>“算力中国·年度卓越成就”发布 太初元碁超智融合计算系统入选（量子位）</li>
+        <li>中国联通：支持国行所有 eSIM 手机业务办理，针对本月新发布的华为和苹果手机推出尝鲜季活动（IT之家）</li>
+        <li>消息称苹果发布 iPhone Duo 后的四天，华为阔折叠手机 Pura X Max 销量环比上周暴涨 76.5%（IT之家）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>博迈医疗：利润过半依赖补助，腾讯创投等突击入股，实控人配偶上市前夕套现4.76亿｜IPO观察（钛媒体）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>OpenAI Pauses IPO Plans Amid AI Safety Worries（Hacker News）</li>
+        <li>Intelligence per Watt: Measuring Intelligence Efficiency of Local AI（Hacker News）</li>
+        <li>AI Myth – College Educate, Benefit from AI – Morgan Stanley（Hacker News）</li>
+        <li>GitHub Trending: SnailSploit /
+
+      Claude-Red（GitHub Trending）</li>
+        <li>GitHub Trending: jihe520 /
+
+      MathModelAgent（GitHub Trending）</li>
+        <li>GitHub Trending: huggingface /
+
+      transformers（GitHub Trending）</li>
+        <li>GitHub Trending: unclecode /
+
+      crawl4ai（GitHub Trending）</li>
+        <li>GitHub Trending: simonlin1212 /
+
+      TradingAgents-astock（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>What&#8217;s behind the AI industry’s latest warnings of doom?（TechCrunch）</li>
+        <li>Obama urges Democrats to have a ‘clear plan’ for AI safeguards（TechCrunch）</li>
+        <li>OpenAI’s Sam Altman says it would be &#8216;ill-advised&#8217; to go public in 2026（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>中国物理AI大突破：PhysBrain 1.5登顶全球开源榜一，空间智能与GPT-6 Astra并驾齐驱（量子位）</li>
+        <li>A社承认Claude安全对齐存在缺陷，但“尚无解决方案”（量子位）</li>
+        <li>2000+真实场景搬进仿真！一个导航模型零样本“通吃”四种机器人本体（量子位）</li>
+        <li>探索RSI，生数新世界模型让机器人开始自我进化（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-09-14（“算力中国·年度卓越成就”发布 太初元碁 + 中国物理AI大突破：PhysBrain  + 事关智能网联新能源汽车产业发展，九部门最 + What&#8217;s behind ）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-14-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-14-noon.html</guid>
@@ -317,51 +365,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-09-09（蚂蚁百灵发布首个金融增强模型，AI开始进 + 深度智控获宁德时代、沙特阿美战投等重磅加 + Hackers are stealing）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-09-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-09-evening.html</guid>
-      <pubDate>Wed, 09 Sep 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>蚂蚁百灵发布首个金融增强模型，AI开始进入真实投研工作流（量子位）</li>
-        <li>国内首份办公Agent用户行为报告发布：北京用户量全国居首，海外用户占比超12%（量子位）</li>
-        <li>原生全模态技术战略闭环，智象（HiDream.ai）发布具身世界模型HiDream-O1-Embodied（量子位）</li>
-        <li>从Demo到1000万次真实作业，万勋发布NOVA2.0柔性具身大脑（雷锋网）</li>
-        <li>苹果 iOS / iPadOS 26.6.2 正式版发布，修复蜂窝网络无法下载更新问题（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>'Gambling with our lives': AI researcher quits Anthropic（Hacker News）</li>
-        <li>Trump gave $45,000 holiday gifts to White House aides（Hacker News）</li>
-        <li>AI Stole My Identity（Hacker News）</li>
-        <li>Aircraft Engine Run-to-Failure Data Set Under Real Flight Conditions（Hacker News）</li>
-        <li>Google research shows when AI agents communicate, some cheat while others tattle（Hacker News）</li>
-        <li>GitHub Trending: openai /
 
-      skills（GitHub Trending）</li>
-        <li>GitHub Trending: TauricResearch /
-
-      TradingAgents（GitHub Trending）</li>
-        <li>GitHub Trending: 0x4m4 /
-
-      hexstrike-ai（GitHub Trending）</li>
-        <li>GitHub Trending: rohitg00 /
-
-      ai-engineering-from-scratch（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Hackers are stealing Claude tokens from subscribers（TechCrunch）</li>
-        <li>Meta debuts its Muse AI agent. Will consumers trust it?（TechCrunch）</li>
-        <li>Google Cloud races to catch up in the AI deployment wars with Accenture deal（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>深度智控获宁德时代、沙特阿美战投等重磅加码，加速打造物理AI时代算力与能源底座（量子位）</li>
-        <li>感谢用GPT-6搓3D的！燃烧自己的token换来一次全体重置（量子位）</li>
-        <li>GPT-6不只Astra！Sol内测结果曝光，速度快6倍（量子位）</li>
-        <li>宜宾，一场机器人“招聘会”的产业雄心（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
