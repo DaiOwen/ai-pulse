@@ -5,10 +5,37 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 13 Sep 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 14 Sep 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                            <item>
+                                                                                                                                                                                                                                                                                                                                <item>
+      <title>☀️ 午间版 — 2026-09-14（“算力中国·年度卓越成就”发布 太初元碁 + 中国物理AI大突破：PhysBrain  + 事关智能网联新能源汽车产业发展，九部门最 + What&#8217;s behind ）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-14-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-14-noon.html</guid>
+      <pubDate>Mon, 14 Sep 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>“算力中国·年度卓越成就”发布 太初元碁超智融合计算系统入选（量子位）</li>
+        <li>中国联通：支持国行所有 eSIM 手机业务办理，针对本月新发布的华为和苹果手机推出尝鲜季活动（IT之家）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>事关智能网联新能源汽车产业发展，九部门最新部署；奥尔特曼：OpenAI不会在2026年上市；智谱完成50亿美元融资用于扩大算力供给等用途（钛媒体）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Does AI Assistance Enhance or Erode Expertise?（Hacker News）</li>
+        <li>Sam Altman: Frontier AI labs need shared safety rules and responsible pacing（Hacker News）</li>
+        <li>Show HN: 3dbae is changing the game of Real Time AI Renddering（Hacker News）</li>
+        <li>Can Your Team Name the Work It Runs with AI?（Hacker News）</li>
+        <li>AI versus Throughput（Hacker News）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>中国物理AI大突破：PhysBrain 1.5登顶全球开源榜一，空间智能与GPT-6 Astra并驾齐驱（量子位）</li>
+        <li>A社承认Claude安全对齐存在缺陷，但“尚无解决方案”（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-09-13（“算力中国·年度卓越成就”发布 太初元碁 + A社承认Claude安全对齐存在缺陷，但 + OpenAI’s Sam Altman ）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-13-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-13-evening.html</guid>
@@ -336,33 +363,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-09-09（国内首份办公Agent用户行为报告发布： + 深度智控获宁德时代、沙特阿美战投等重磅加 + Hackers are stealing）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-09-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-09-noon.html</guid>
-      <pubDate>Wed, 09 Sep 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>国内首份办公Agent用户行为报告发布：北京用户量全国居首，海外用户占比超12%（量子位）</li>
-        <li>原生全模态技术战略闭环，智象（HiDream.ai）发布具身世界模型HiDream-O1-Embodied（量子位）</li>
-        <li>Runway ARR 突破 2 亿美元：视频热潮转向世界模型押注（钛媒体）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>芯片架构从平面变 3D，专家解读华为麒麟 9050 Pro 新突破（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Show HN: GitHub Actions Aibom Generation（Hacker News）</li>
-        <li>Making your data ready for agentic AI（Hacker News）</li>
-        <li>Robots-check: see what your robots.txt is serving (Cloudflare AI Crawl Control)（Hacker News）</li>
-        <li>Transformer-Like Models for Z1（Hacker News）</li>
-        <li>Meta launches Muse, a personal AI agent（Hacker News）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>深度智控获宁德时代、沙特阿美战投等重磅加码，加速打造物理AI时代算力与能源底座（量子位）</li>
-        <li>产业龙头领投！中科类脑完成数亿元B+轮战略融资（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
+
 
 
 
