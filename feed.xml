@@ -5,10 +5,50 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 15 Sep 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                        <item>
+                                                                                                                                                                                                                                                                                                                                            <item>
+      <title>🌙 晚间版 — 2026-09-15（Meta新研究：字节模型蒸馏后，天花板破 + 7名博士生仅用3个月从零训练7B大模型： + OpenAI buys smartpho）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-15-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-15-evening.html</guid>
+      <pubDate>Tue, 15 Sep 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>Meta新研究：字节模型蒸馏后，天花板破了（量子位）</li>
+        <li>工作流可以自我进化了，英伟达开源 SoL-Pi，每小时省13.5刀！（雷锋网）</li>
+        <li>具脑磐石发布业界首个类脑认知世界模型 Cog-WM 1.0（雷锋网）</li>
+        <li>联发科天玑 9600 Pro 旗舰芯片发布（IT之家）</li>
+        <li>苹果 iOS / iPadOS 27.0 正式版发布：性能优化、升级 Siri AI，增强家长管控...（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Google DeepMind Staffer Says AI May 'Kill Us All' in Exit Post（Hacker News）</li>
+        <li>NATO jets shoot down drone violating Lithuania's airspace（Hacker News）</li>
+        <li>GitHub Trending: Panniantong /
+
+      Agent-Reach（GitHub Trending）</li>
+        <li>GitHub Trending: TauricResearch /
+
+      TradingAgents（GitHub Trending）</li>
+        <li>GitHub Trending: MadsLorentzen /
+
+      ai-job-search（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>OpenAI buys smartphone camera maker Glass Imaging for $300 million, report says（TechCrunch）</li>
+        <li>With iOS 27, I&#8217;m actually using Siri again（TechCrunch）</li>
+        <li>Only at TechCrunch Disrupt 2026: What happens when OpenAI ships your roadmap?（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>7名博士生仅用3个月从零训练7B大模型：代码+数据+训练日志全公开（量子位）</li>
+        <li>首届蚂蚁灵波具身大模型挑战赛正式启动（量子位）</li>
+        <li>探索RSI，生数新世界模型让机器人开始自我进化（量子位）</li>
+        <li>前OpenAI后训练VP回应陶哲轩：说AI毁了数学，可能还是太小瞧AI了（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-09-15（工作流可以自我进化了，英伟达开源 SoL + 中国物理AI大突破：PhysBrain  + OpenAI buys smartpho）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-15-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-15-noon.html</guid>
@@ -317,51 +357,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-09-10（打造10万卡国产算力集群推出JoyAI世 + 这个新开源的世界模型只有1.3B，单卡就 + AI research startup ）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-10-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-10-evening.html</guid>
-      <pubDate>Thu, 10 Sep 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>打造10万卡国产算力集群推出JoyAI世界模型，京东发布物理AI建设最新成果（量子位）</li>
-        <li>刚刚，苹果首款折叠屏发布！15999元起，AI参与设计（量子位）</li>
-        <li>蚂蚁百灵发布首个金融增强模型，AI开始进入真实投研工作流（量子位）</li>
-        <li>从Demo到1000万次真实作业，万勋发布NOVA2.0柔性具身大脑（雷锋网）</li>
-        <li>免费的代价：中国开源大模型出海为什么开始收费（钛媒体）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>I Was Offered Money to Tell You AI Will Kill Us [video]（Hacker News）</li>
-        <li>Resource for AI Safety and Ethics（Hacker News）</li>
-        <li>In this era of AI, it is important to remember what it is like to be a child（Hacker News）</li>
-        <li>Anthropic Researcher Quits over 'Out-of-Control' AI Fears（Hacker News）</li>
-        <li>Nvidia Personal-AI-Router（Hacker News）</li>
-        <li>GitHub Trending: TauricResearch /
 
-      TradingAgents（GitHub Trending）</li>
-        <li>GitHub Trending: rohitg00 /
-
-      ai-engineering-from-scratch（GitHub Trending）</li>
-        <li>GitHub Trending: openai /
-
-      skills（GitHub Trending）</li>
-        <li>GitHub Trending: OpenDCAI /
-
-      GameFactory-3A（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks（TechCrunch）</li>
-        <li>OpenAI adds a prominent AI doomer to its board of directors（TechCrunch）</li>
-        <li>Apple Watch&#8217;s new AI features are normalizing the idea that technology is always listening（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>这个新开源的世界模型只有1.3B，单卡就能实时跑！（量子位）</li>
-        <li>AGI时代的第一个生图模型，ChatGPT Images 2.5上线（量子位）</li>
-        <li>感谢用GPT-6搓3D的！燃烧自己的token换来一次全体重置（量子位）</li>
-        <li>全球首个可仿真的人–场景交互重建框架 HSImul3R：让人类视频真正成为机器人技能来源（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
