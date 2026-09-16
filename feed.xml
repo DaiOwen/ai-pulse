@@ -5,10 +5,40 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 15 Sep 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                            <item>
+                                                                                                                                                                                                                                                                                                                                                <item>
+      <title>☀️ 午间版 — 2026-09-16（全球AI视频榜单第一梯队再添中国力量：智 + 无问芯穹联合清华、上交正式开源具身端侧推 + We don&#8217;t need ）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-16-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-16-noon.html</guid>
+      <pubDate>Wed, 16 Sep 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>全球AI视频榜单第一梯队再添中国力量：智象发布首款物理规律导向视频模型（量子位）</li>
+        <li>英伟达开源 IMO 金牌配方：不仅是「人海战术」，1.5TB 显存做实 AI「 推恩令」？（雷锋网）</li>
+        <li>工作流可以自我进化了，英伟达开源 SoL-Pi，每小时省13.5刀！（雷锋网）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>地平线第1500万颗征程芯片搭载大众 ID. AURA T6，HSD V2.1 即将推出（量子位）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Effectively Does a Model Use Its Memory (2025)（Hacker News）</li>
+        <li>AI models in 'surreal' dialect mixing poetic language and tech bro jargon（Hacker News）</li>
+        <li>Anthropic CEO renews call for AI slowdown as Nvidia's urges acceleration（Hacker News）</li>
+        <li>Paying for frontier AI models buys 4-month head start at 5x the cost（Hacker News）</li>
+        <li>GitHub Trending: Panniantong /
+
+      Agent-Reach（GitHub Trending）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>无问芯穹联合清华、上交正式开源具身端侧推理引擎APXInf，Pi 0.5性能SOTA（量子位）</li>
+        <li>7名博士生仅用3个月从零训练7B大模型：代码+数据+训练日志全公开（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-09-15（Meta新研究：字节模型蒸馏后，天花板破 + 7名博士生仅用3个月从零训练7B大模型： + OpenAI buys smartpho）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-15-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-15-evening.html</guid>
@@ -330,32 +360,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-09-11（全球首个3D原生城市世界模型ABot-E + 这个新开源的世界模型只有1.3B，单卡就 + Jensen Huang explain）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-11-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-11-noon.html</guid>
-      <pubDate>Fri, 11 Sep 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>全球首个3D原生城市世界模型ABot-Earth 0.7发布，构建AI理解真实世界的入口（量子位）</li>
-        <li>打造10万卡国产算力集群推出JoyAI世界模型，京东发布物理AI建设最新成果（量子位）</li>
-        <li>刚刚，苹果首款折叠屏发布！15999元起，AI参与设计（量子位）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>FinOps for LLM – Leanroute Team wrote a blog（Hacker News）</li>
-        <li>To Thine Own AI Be Truthful: emergent misalignment in alignment research（Hacker News）</li>
-        <li>BasedAgents: Give your idle AI agent a paying job（Hacker News）</li>
-        <li>DoD cyber strategy aims for 'something big, something muscular' in offensive ops（Hacker News）</li>
-        <li>GitHub Trending: rohitg00 /
 
-      ai-engineering-from-scratch（GitHub Trending）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>这个新开源的世界模型只有1.3B，单卡就能实时跑！（量子位）</li>
-        <li>AGI时代的第一个生图模型，ChatGPT Images 2.5上线（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
