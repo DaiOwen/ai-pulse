@@ -5,10 +5,55 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 16 Sep 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                <item>
+                                                                                                                                                                                                                                                                                                                                                    <item>
+      <title>🌙 晚间版 — 2026-09-16（清华稳准智能联合发布LimiX-2，结构 + 无问芯穹联合清华、上交正式开源具身端侧推 + We don&#8217;t need ）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-16-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-16-evening.html</guid>
+      <pubDate>Wed, 16 Sep 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>清华稳准智能联合发布LimiX-2，结构化数据基础模型登顶国际评测榜单（量子位）</li>
+        <li>全球AI视频榜单第一梯队再添中国力量：智象发布首款物理规律导向视频模型（量子位）</li>
+        <li>英伟达开源 IMO 金牌配方：不仅是「人海战术」，1.5TB 显存做实 AI「 推恩令」？（雷锋网）</li>
+        <li>工作流可以自我进化了，英伟达开源 SoL-Pi，每小时省13.5刀！（雷锋网）</li>
+        <li>钛媒体旗下AI词元服务平台TiToken，发布算力优化产品BackBy（钛媒体）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Google released Artemis for AI-driven Android automation（Hacker News）</li>
+        <li>Anthropic's proposed AI watchdog METR has deep ties to Effective Altruism（Hacker News）</li>
+        <li>Mistral X Mozilla: Private, Multilingual AI Browsing（Hacker News）</li>
+        <li>Never-again – so your AI agent stops repeating mistakes you fixed（Hacker News）</li>
+        <li>GitHub Trending: Panniantong /
+
+      Agent-Reach（GitHub Trending）</li>
+        <li>GitHub Trending: unclecode /
+
+      crawl4ai（GitHub Trending）</li>
+        <li>GitHub Trending: bojieli /
+
+      ai-agent-book（GitHub Trending）</li>
+        <li>GitHub Trending: TauricResearch /
+
+      TradingAgents（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>We don&#8217;t need AI regulation — leave safety to us, Nvidia&#8217;s Jensen Huang says（TechCrunch）</li>
+        <li>The AI data center boom is colliding with cities scarred by big industry（TechCrunch）</li>
+        <li>The AI graveyard: a running list of projects and startups that didn&#8217;t make it（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>无问芯穹联合清华、上交正式开源具身端侧推理引擎APXInf，Pi 0.5性能SOTA（量子位）</li>
+        <li>B站AI无限竞技场今日上线！全球百大AI模型同场竞技，GPT-6高居榜首（量子位）</li>
+        <li>西门子不造机器人，为什么机器人进厂的故事里总有它？（量子位）</li>
+        <li>高通技术公司携手中兴努比亚和豆包手机助手，共同推动智能手机迈入个人AI新时代（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-09-16（全球AI视频榜单第一梯队再添中国力量：智 + 无问芯穹联合清华、上交正式开源具身端侧推 + We don&#8217;t need ）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-16-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-16-noon.html</guid>
@@ -318,47 +363,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-09-11（全球首个3D原生城市世界模型ABot-E + 这个新开源的世界模型只有1.3B，单卡就 + Jensen Huang explain）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-11-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-11-evening.html</guid>
-      <pubDate>Fri, 11 Sep 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>全球首个3D原生城市世界模型ABot-Earth 0.7发布，构建AI理解真实世界的入口（量子位）</li>
-        <li>打造10万卡国产算力集群推出JoyAI世界模型，京东发布物理AI建设最新成果（量子位）</li>
-        <li>墨芯人工智能亮相2026 Inclusion·外滩大会：以专用稀疏推理芯片提升算力效能，共创AI新经济（量子位）</li>
-        <li>OpenAI 声称解决了 Navier-Stokes 问题，但引发了利用未发布成果的争议（Solidot）</li>
-        <li>DeepSeek V4.1 Flash 模型发布（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Pentagon in Talks to Get into AI Infrastructure Funding with a $5B Loan（Hacker News）</li>
-        <li>Act as a Conversational AI Prompt（Hacker News）</li>
-        <li>How Emmanuel Macron brought France's AI darling to the world stage（Hacker News）</li>
-        <li>Ask HN: Is using AI harmful to human Critical Thinking and Decision making?（Hacker News）</li>
-        <li>GitHub Trending: rohitg00 /
 
-      ai-engineering-from-scratch（GitHub Trending）</li>
-        <li>GitHub Trending: TauricResearch /
-
-      TradingAgents（GitHub Trending）</li>
-        <li>GitHub Trending: openai /
-
-      skills（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Jensen Huang explains why Nvidia will grow an astounding 70% next year（TechCrunch）</li>
-        <li>OpenAI puts Pro subscriptions on hold due to Astra demand（TechCrunch）</li>
-        <li>Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>这个新开源的世界模型只有1.3B，单卡就能实时跑！（量子位）</li>
-        <li>AGI时代的第一个生图模型，ChatGPT Images 2.5上线（量子位）</li>
-        <li>全球首个可仿真的人–场景交互重建框架 HSImul3R：让人类视频真正成为机器人技能来源（量子位）</li>
-        <li>量子位「MEET2027智能未来大会」启动！年度榜单征集进行中（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
