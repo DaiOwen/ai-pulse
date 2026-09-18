@@ -5,10 +5,40 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 17 Sep 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 18 Sep 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                            <item>
+                                                                                                                                                                                                                                                                                                                                                                <item>
+      <title>☀️ 午间版 — 2026-09-18（罗福莉沉寂半年官宣小米强化学习！直播新模 + 刚刚，Claude Code大重构！内部 + 周鸿祎：不会再投资新能源汽车，已经吃过一 + Crusoe raises $3.9B ）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-18-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-18-noon.html</guid>
+      <pubDate>Fri, 18 Sep 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>罗福莉沉寂半年官宣小米强化学习！直播新模型训练过程，一小时烧3万美元（量子位）</li>
+        <li>消息称苹果发布 iPhone Duo 后的四天，华为阔折叠手机 Pura X Max 销量环比上周暴涨 76.5%（IT之家）</li>
+        <li>苹果 iOS / iPadOS 27.0 正式版发布：性能优化、升级 Siri AI，增强家长管控...（IT之家）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>周鸿祎：不会再投资新能源汽车，已经吃过一次亏；OpenAI洽谈新融资，估值或超1.2万亿美元；花呗、抖音月付等将退出支付选项？多平台回应（雷锋网）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Reflections on Trusting Trust, Revisited: Poisoning Self-Modifying AI Coding（Hacker News）</li>
+        <li>Show HN: Continuity – project state your AI sessions can't silently contradict（Hacker News）</li>
+        <li>macOS 27 is a lifesaver for killing leftover AI Agent processes（Hacker News）</li>
+        <li>The Provenance Tax: How LLM Watermarking Changes AI Agent Behavior（Hacker News）</li>
+        <li>GitHub Trending: SnailSploit /
+
+      Claude-Red（GitHub Trending）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>刚刚，Claude Code大重构！内部3万Agent管理技术免费开放（量子位）</li>
+        <li>Claude Code团队讲究啊，这都往外说（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-09-17（清华稳准智能联合发布LimiX-2，结构 + AI大模型工场2026 AI产业生态大会 + 周鸿祎：不会再投资新能源汽车，已经吃过一 + Iceland-based Treble）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-17-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-17-evening.html</guid>
@@ -339,33 +369,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-09-13（“算力中国·年度卓越成就”发布 太初元碁 + A社承认Claude安全对齐存在缺陷，但 + OpenAI’s Sam Altman ）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-13-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-13-noon.html</guid>
-      <pubDate>Sun, 13 Sep 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>“算力中国·年度卓越成就”发布 太初元碁超智融合计算系统入选（量子位）</li>
-        <li>百度秒哒再升级！让最懂业务的人，亲手造自己的系统（量子位）</li>
-        <li>墨芯人工智能亮相2026 Inclusion·外滩大会：以专用稀疏推理芯片提升算力效能，共创AI新经济（量子位）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>苹果 iPhone 18 Pro 系列预购开启：新增可变光圈、首发 2 纳米 A20 Pro 芯片，9999 元起（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Apple launches a new way to prove a photo was shot with an iPhone (not AI)（Hacker News）</li>
-        <li>JPMorgan cut off Situational Awareness lending after AI losses（Hacker News）</li>
-        <li>India's First AI Agentic E-Commerce Platform（Hacker News）</li>
-        <li>Anthropic CEO says AI swarm could 'take over the Internet' in 6-12 months（Hacker News）</li>
-        <li>Backflip: Apple now wants to train AI models with user data after all（Hacker News）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>A社承认Claude安全对齐存在缺陷，但“尚无解决方案”（量子位）</li>
-        <li>AI数学的最后一道高墙，塌了！GPT-6 Astra刷穿FrontierMath Tier 4（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
+
 
 
 
