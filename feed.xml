@@ -5,10 +5,37 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 18 Sep 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                    <item>
+                                                                                                                                                                                                                                                                                                                                                                        <item>
+      <title>☀️ 午间版 — 2026-09-19（英伟达开源 IMO 金牌配方：不仅是「人 + 刚刚，Claude Code大重构！内部 + Tilly Norwood&#8217;）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-19-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-19-noon.html</guid>
+      <pubDate>Sat, 19 Sep 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>英伟达开源 IMO 金牌配方：不仅是「人海战术」，1.5TB 显存做实 AI「 推恩令」？（雷锋网）</li>
+        <li>NASA 和 IBM 开源月球模型（Solidot）</li>
+        <li>美国人形机器人公司Figure发布Helix 2.5，将其称为最先进的神经网络。（钛媒体）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Inventor of ChatGPT and RLHF Launches Typesafe.ai（Hacker News）</li>
+        <li>AI Regulation and the China Question（Hacker News）</li>
+        <li>Show HN: GGG – A local-first, zero-telemetry sovereign proxy daemon for AI tools（Hacker News）</li>
+        <li>Kev – A Jev-Compatible API on top of DiffusionGemma running on Workers AI（Hacker News）</li>
+        <li>GitHub Trending: fastino-ai /
+
+      GLiNER2（GitHub Trending）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>刚刚，Claude Code大重构！内部3万Agent管理技术免费开放（量子位）</li>
+        <li>Claude Code团队讲究啊，这都往外说（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-09-18（罗福莉沉寂半年官宣小米强化学习！直播新模 + 刚刚，Claude Code大重构！内部 + Crusoe raises $3.9B ）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-18-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-18-evening.html</guid>
@@ -342,32 +369,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-09-14（“算力中国·年度卓越成就”发布 太初元碁 + 中国物理AI大突破：PhysBrain  + 事关智能网联新能源汽车产业发展，九部门最 + What&#8217;s behind ）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-14-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-14-noon.html</guid>
-      <pubDate>Mon, 14 Sep 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>“算力中国·年度卓越成就”发布 太初元碁超智融合计算系统入选（量子位）</li>
-        <li>中国联通：支持国行所有 eSIM 手机业务办理，针对本月新发布的华为和苹果手机推出尝鲜季活动（IT之家）</li>
-        </ul>
-        <h3>🛠️ 工具 & 部署</h3><ul>
-        <li>事关智能网联新能源汽车产业发展，九部门最新部署；奥尔特曼：OpenAI不会在2026年上市；智谱完成50亿美元融资用于扩大算力供给等用途（钛媒体）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Does AI Assistance Enhance or Erode Expertise?（Hacker News）</li>
-        <li>Sam Altman: Frontier AI labs need shared safety rules and responsible pacing（Hacker News）</li>
-        <li>Show HN: 3dbae is changing the game of Real Time AI Renddering（Hacker News）</li>
-        <li>Can Your Team Name the Work It Runs with AI?（Hacker News）</li>
-        <li>AI versus Throughput（Hacker News）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>中国物理AI大突破：PhysBrain 1.5登顶全球开源榜一，空间智能与GPT-6 Astra并驾齐驱（量子位）</li>
-        <li>A社承认Claude安全对齐存在缺陷，但“尚无解决方案”（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
+
 
 
 
