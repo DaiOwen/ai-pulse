@@ -5,10 +5,45 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 19 Sep 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                        <item>
+                                                                                                                                                                                                                                                                                                                                                                            <item>
+      <title>🌙 晚间版 — 2026-09-19（陶哲轩代表SAIR Foundation + 刚刚，Claude Code大重构！内部 + Tilly Norwood&#8217;）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-19-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-19-evening.html</guid>
+      <pubDate>Sat, 19 Sep 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>陶哲轩代表SAIR Foundation宣布正式启动“开放数学模型计划”（量子位）</li>
+        <li>英伟达开源 IMO 金牌配方：不仅是「人海战术」，1.5TB 显存做实 AI「 推恩令」？（雷锋网）</li>
+        <li>NASA 和 IBM 开源月球模型（Solidot）</li>
+        <li>美国人形机器人公司Figure发布Helix 2.5，将其称为最先进的神经网络。（钛媒体）</li>
+        <li>智谱 ZCode 被质疑“偷传代码”：官方回应称问题已修复，将开源代码库、引入第三方审查（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>How universities are affected by AI moving knowledge outside their walls（Hacker News）</li>
+        <li>Chinese AI Radicalizes（Hacker News）</li>
+        <li>Alex Karp: AI Models Are Stealing Your Data and the AI Safety Truth [video]（Hacker News）</li>
+        <li>GitHub Trending: fastino-ai /
+
+      GLiNER2（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Tilly Norwood&#8217;s press tour is going about as well as you&#8217;d expect for an AI（TechCrunch）</li>
+        <li>A startup that builds other startups raised $100M and is all-in on physical AI（TechCrunch）</li>
+        <li>Anthropic is operating a lab that conducts biology experiments（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>刚刚，Claude Code大重构！内部3万Agent管理技术免费开放（量子位）</li>
+        <li>Claude Code团队讲究啊，这都往外说（量子位）</li>
+        <li>Claude双入口合并，原生Office上线！硅谷AI办公大战也开始了（量子位）</li>
+        <li>SAIR AI Foundation（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-09-19（英伟达开源 IMO 金牌配方：不仅是「人 + 刚刚，Claude Code大重构！内部 + Tilly Norwood&#8217;）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-19-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-19-noon.html</guid>
@@ -321,53 +356,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-09-14（“算力中国·年度卓越成就”发布 太初元碁 + 中国物理AI大突破：PhysBrain  + What&#8217;s behind ）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-14-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-14-evening.html</guid>
-      <pubDate>Mon, 14 Sep 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>“算力中国·年度卓越成就”发布 太初元碁超智融合计算系统入选（量子位）</li>
-        <li>中国联通：支持国行所有 eSIM 手机业务办理，针对本月新发布的华为和苹果手机推出尝鲜季活动（IT之家）</li>
-        <li>消息称苹果发布 iPhone Duo 后的四天，华为阔折叠手机 Pura X Max 销量环比上周暴涨 76.5%（IT之家）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>博迈医疗：利润过半依赖补助，腾讯创投等突击入股，实控人配偶上市前夕套现4.76亿｜IPO观察（钛媒体）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>OpenAI Pauses IPO Plans Amid AI Safety Worries（Hacker News）</li>
-        <li>Intelligence per Watt: Measuring Intelligence Efficiency of Local AI（Hacker News）</li>
-        <li>AI Myth – College Educate, Benefit from AI – Morgan Stanley（Hacker News）</li>
-        <li>GitHub Trending: SnailSploit /
 
-      Claude-Red（GitHub Trending）</li>
-        <li>GitHub Trending: jihe520 /
-
-      MathModelAgent（GitHub Trending）</li>
-        <li>GitHub Trending: huggingface /
-
-      transformers（GitHub Trending）</li>
-        <li>GitHub Trending: unclecode /
-
-      crawl4ai（GitHub Trending）</li>
-        <li>GitHub Trending: simonlin1212 /
-
-      TradingAgents-astock（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>What&#8217;s behind the AI industry’s latest warnings of doom?（TechCrunch）</li>
-        <li>Obama urges Democrats to have a ‘clear plan’ for AI safeguards（TechCrunch）</li>
-        <li>OpenAI’s Sam Altman says it would be &#8216;ill-advised&#8217; to go public in 2026（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>中国物理AI大突破：PhysBrain 1.5登顶全球开源榜一，空间智能与GPT-6 Astra并驾齐驱（量子位）</li>
-        <li>A社承认Claude安全对齐存在缺陷，但“尚无解决方案”（量子位）</li>
-        <li>2000+真实场景搬进仿真！一个导航模型零样本“通吃”四种机器人本体（量子位）</li>
-        <li>探索RSI，生数新世界模型让机器人开始自我进化（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
