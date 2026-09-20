@@ -5,10 +5,38 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 19 Sep 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 20 Sep 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                            <item>
+                                                                                                                                                                                                                                                                                                                                                                                <item>
+      <title>☀️ 午间版 — 2026-09-20（《网络安全人才实战能力报告-AI赋能篇》 + “留给人类阻止AI的时间不多了” + Trump says it&#8217;）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-20-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-20-noon.html</guid>
+      <pubDate>Sun, 20 Sep 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>《网络安全人才实战能力报告-AI赋能篇》正式发布，当AI进入业务深水区安全如何跟上（量子位）</li>
+        <li>27B模型分分钟交付网页，Qwen 3.8还是太能了（量子位）</li>
+        <li>陶哲轩代表SAIR Foundation宣布正式启动“开放数学模型计划”（量子位）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>华为汪涛：华为要打造AI算力底座，只做好一颗芯片远远不够（量子位）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Adapting Fossil-scm as a platform for AI agentic workflow（Hacker News）</li>
+        <li>Show HN: Architectural Guardrails for AI native development（Hacker News）</li>
+        <li>Integrating Volt Active Data with AI Agents and Chatbots（Hacker News）</li>
+        <li>OpenAI researcher on AI communicating across air-gaps via thermal side-channels [video]（Hacker News）</li>
+        <li>Another terminal/shell AI assistant (shell native)（Hacker News）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>“留给人类阻止AI的时间不多了”（量子位）</li>
+        <li>Nature：AI重生到1900，这一世抢先爱因斯坦提出光量子（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-09-19（陶哲轩代表SAIR Foundation + 刚刚，Claude Code大重构！内部 + Tilly Norwood&#8217;）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-19-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-19-evening.html</guid>
@@ -329,32 +357,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-09-15（工作流可以自我进化了，英伟达开源 SoL + 中国物理AI大突破：PhysBrain  + OpenAI buys smartpho）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-15-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-15-noon.html</guid>
-      <pubDate>Tue, 15 Sep 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>工作流可以自我进化了，英伟达开源 SoL-Pi，每小时省13.5刀！（雷锋网）</li>
-        <li>具脑磐石发布业界首个类脑认知世界模型 Cog-WM 1.0（雷锋网）</li>
-        <li>消息称苹果发布 iPhone Duo 后的四天，华为阔折叠手机 Pura X Max 销量环比上周暴涨 76.5%（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Ask HN: How to Protect Your Brand Before AI Copies It?（Hacker News）</li>
-        <li>Europe must build own AI, says ECB's Lagarde（Hacker News）</li>
-        <li>China hit back at Anthropic CEO's call to curb China's AI development（Hacker News）</li>
-        <li>Why the best AI startups write bad prompts (& how to fix this)（Hacker News）</li>
-        <li>GitHub Trending: Panniantong /
 
-      Agent-Reach（GitHub Trending）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>中国物理AI大突破：PhysBrain 1.5登顶全球开源榜一，空间智能与GPT-6 Astra并驾齐驱（量子位）</li>
-        <li>7名博士生仅用3个月从零训练7B大模型：代码+数据+训练日志全公开（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
