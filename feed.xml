@@ -5,10 +5,39 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 20 Sep 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                    <item>
+                                                                                                                                                                                                                                                                                                                                                                                        <item>
+      <title>☀️ 午间版 — 2026-09-21（《网络安全人才实战能力报告-AI赋能篇》 + 开源Top2！实测阶跃Step 5 Pr + IDC评估中国AI算力管理平台：范式综合 + World model companie）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-21-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-21-noon.html</guid>
+      <pubDate>Mon, 21 Sep 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>《网络安全人才实战能力报告-AI赋能篇》正式发布，当AI进入业务深水区安全如何跟上（量子位）</li>
+        <li>一张3090就能跑！全栈国产模型，把AI办公搬到企业本地（量子位）</li>
+        <li>消息称苹果发布 iPhone Duo 后的四天，华为阔折叠手机 Pura X Max 销量环比上周暴涨 76.5%（IT之家）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>IDC评估中国AI算力管理平台：范式综合评分位列第一，四项关键维度获满分（量子位）</li>
+        <li>汽车行业首个AI超级智能体「迪迪虾」来了！腾势多款车型即将OTA（量子位）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>AI chatbots give wrong answers to financial queries 'most of the time'（Hacker News）</li>
+        <li>The president wanted to unleash AI. Then came Anthropic（Hacker News）</li>
+        <li>A Silicon Valley radical: Trump's AI whisperer pushing for limited regulation（Hacker News）</li>
+        <li>AI Weekly Warns Firms on Google AI Studio Data Retention Fraud（Hacker News）</li>
+        <li>Art of the Problem Launches $99 AI bot（Hacker News）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>开源Top2！实测阶跃Step 5 Preview，真有点猛啊…（量子位）</li>
+        <li>APUS 开源国内首批Jev跨平台复现：国产模型实现秒级决策（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-09-20（《网络安全人才实战能力报告-AI赋能篇》 + APUS 开源国内首批Jev跨平台复现： + Trump says it&#8217;）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-20-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-20-evening.html</guid>
@@ -337,35 +366,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-09-16（全球AI视频榜单第一梯队再添中国力量：智 + 无问芯穹联合清华、上交正式开源具身端侧推 + We don&#8217;t need ）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-16-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-16-noon.html</guid>
-      <pubDate>Wed, 16 Sep 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>全球AI视频榜单第一梯队再添中国力量：智象发布首款物理规律导向视频模型（量子位）</li>
-        <li>英伟达开源 IMO 金牌配方：不仅是「人海战术」，1.5TB 显存做实 AI「 推恩令」？（雷锋网）</li>
-        <li>工作流可以自我进化了，英伟达开源 SoL-Pi，每小时省13.5刀！（雷锋网）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>地平线第1500万颗征程芯片搭载大众 ID. AURA T6，HSD V2.1 即将推出（量子位）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Effectively Does a Model Use Its Memory (2025)（Hacker News）</li>
-        <li>AI models in 'surreal' dialect mixing poetic language and tech bro jargon（Hacker News）</li>
-        <li>Anthropic CEO renews call for AI slowdown as Nvidia's urges acceleration（Hacker News）</li>
-        <li>Paying for frontier AI models buys 4-month head start at 5x the cost（Hacker News）</li>
-        <li>GitHub Trending: Panniantong /
 
-      Agent-Reach（GitHub Trending）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>无问芯穹联合清华、上交正式开源具身端侧推理引擎APXInf，Pi 0.5性能SOTA（量子位）</li>
-        <li>7名博士生仅用3个月从零训练7B大模型：代码+数据+训练日志全公开（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
