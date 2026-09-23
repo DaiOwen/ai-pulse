@@ -5,10 +5,40 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 22 Sep 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+                                                                                                                                                                                                                                                                                                                                                                                                        <item>
+      <title>☀️ 午间版 — 2026-09-23（基元律动韩凯：从多模型调度到反馈闭环，探 + 滴滴自动驾驶连获全国工商联及北京市荣誉榜 + 虎鲸文娱推出“鲸锐AI”影视制作与管理平 + Snorkel AI triples v）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-23-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-23-noon.html</guid>
+      <pubDate>Wed, 23 Sep 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>基元律动韩凯：从多模型调度到反馈闭环，探索Agent持续进化（量子位）</li>
+        <li>小米 18 Pro 系列手机官宣首发「传奇一瞬」大模型影像，号称成像质感媲美专业相机（IT之家）</li>
+        <li>5499 元起：OPPO Find X10 标准版手机发布，天玑 9600M 芯片、双 2 亿镜头群（IT之家）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>虎鲸文娱推出“鲸锐AI”影视制作与管理平台，打造文娱产业新基建（量子位）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Big Banks Say They're Uneasy About People Shopping via AI Agents（Hacker News）</li>
+        <li>United Nations: AI Agents, Misalignment and the Risk of Losing Human Control [pdf]（Hacker News）</li>
+        <li>A Machine Beat Me at Chess. I'm Still Rooting for AI（Hacker News）</li>
+        <li>Specs cut defects in AI-generated code from 148 to 23 across five models（Hacker News）</li>
+        <li>GitHub Trending: FareedKhan-dev /
+
+      train-llm-from-scratch（GitHub Trending）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>滴滴自动驾驶连获全国工商联及北京市荣誉榜单认可（量子位）</li>
+        <li>Agent时代，CPU的价值该重估了（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-09-22（长三角安全人工智能安徽省实验室发布星界、 + GPT-6 Astra开进机器人身体！清 + 虎鲸文娱推出“鲸锐AI”影视制作与管理平 + The man who built Ap）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-22-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-22-evening.html</guid>
@@ -339,35 +369,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-09-18（罗福莉沉寂半年官宣小米强化学习！直播新模 + 刚刚，Claude Code大重构！内部 + 周鸿祎：不会再投资新能源汽车，已经吃过一 + Crusoe raises $3.9B ）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-18-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-18-noon.html</guid>
-      <pubDate>Fri, 18 Sep 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>罗福莉沉寂半年官宣小米强化学习！直播新模型训练过程，一小时烧3万美元（量子位）</li>
-        <li>消息称苹果发布 iPhone Duo 后的四天，华为阔折叠手机 Pura X Max 销量环比上周暴涨 76.5%（IT之家）</li>
-        <li>苹果 iOS / iPadOS 27.0 正式版发布：性能优化、升级 Siri AI，增强家长管控...（IT之家）</li>
-        </ul>
-        <h3>🛠️ 工具 & 部署</h3><ul>
-        <li>周鸿祎：不会再投资新能源汽车，已经吃过一次亏；OpenAI洽谈新融资，估值或超1.2万亿美元；花呗、抖音月付等将退出支付选项？多平台回应（雷锋网）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Reflections on Trusting Trust, Revisited: Poisoning Self-Modifying AI Coding（Hacker News）</li>
-        <li>Show HN: Continuity – project state your AI sessions can't silently contradict（Hacker News）</li>
-        <li>macOS 27 is a lifesaver for killing leftover AI Agent processes（Hacker News）</li>
-        <li>The Provenance Tax: How LLM Watermarking Changes AI Agent Behavior（Hacker News）</li>
-        <li>GitHub Trending: SnailSploit /
 
-      Claude-Red（GitHub Trending）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>刚刚，Claude Code大重构！内部3万Agent管理技术免费开放（量子位）</li>
-        <li>Claude Code团队讲究啊，这都往外说（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
