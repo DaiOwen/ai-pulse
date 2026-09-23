@@ -5,10 +5,47 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 23 Sep 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                        <item>
+                                                                                                                                                                                                                                                                                                                                                                                                            <item>
+      <title>🌙 晚间版 — 2026-09-23（斑马智能发布端模型AutoOmni2.0 + DeepSeek新论文公开Agent训练 + Snorkel AI triples v）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-23-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-23-evening.html</guid>
+      <pubDate>Wed, 23 Sep 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>斑马智能发布端模型AutoOmni2.0，让元神AI更懂“我的世界”（量子位）</li>
+        <li>实时世界模型进入“全科生”阶段，PixVerse R2先交卷！（量子位）</li>
+        <li>5499 元起：OPPO Find X10 标准版手机发布，天玑 9600M 芯片、双 2 亿镜头群（IT之家）</li>
+        <li>全球最快移动 CPU：高通发布第六代骁龙 8 超级至尊版芯片，CPU 行业首超 5GHz、GPU 性能提升 44%（IT之家）</li>
+        <li>4999 元起：OPPO Find X10 E 手机发布，天玑 9500s 芯片（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Meta's New Muse AI Agent Read My Private Messages. I Never Asked It To（Hacker News）</li>
+        <li>Show HN: ReWeaver AI DriftDetector – score a GitHub repo's production readiness（Hacker News）</li>
+        <li>Shut up and calculate: Jev's new AI primitives for coders（Hacker News）</li>
+        <li>Show HN: Gwae – infinite-scroll terminal multiplexer for AI agent fleets（Hacker News）</li>
+        <li>Ask HN: How do you cope with AI being used to target and bomb children?（Hacker News）</li>
+        <li>GitHub Trending: FareedKhan-dev /
+
+      train-llm-from-scratch（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Snorkel AI triples valuation to $3.5B as demand for AI training data booms（TechCrunch）</li>
+        <li>Qualcomm launches two new smartphone chips with emphasis on AI（TechCrunch）</li>
+        <li>Meta admits Muse&#8217;s likeness to OpenClaw isn&#8217;t a coincidence（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>DeepSeek新论文公开Agent训练！梁文锋署名（量子位）</li>
+        <li>Claude Opus 5.5突袭！68万行代码一天迁完，API价格打8折（量子位）</li>
+        <li>稚晖君把机器人卖到2万元一台，可人可狗可开发！（量子位）</li>
+        <li>阿里千问AI平台全面升级模型服务、Agent服务、AI应用（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-09-23（基元律动韩凯：从多模型调度到反馈闭环，探 + 滴滴自动驾驶连获全国工商联及北京市荣誉榜 + 虎鲸文娱推出“鲸锐AI”影视制作与管理平 + Snorkel AI triples v）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-23-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-23-noon.html</guid>
@@ -328,46 +365,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-09-18（罗福莉沉寂半年官宣小米强化学习！直播新模 + 刚刚，Claude Code大重构！内部 + Crusoe raises $3.9B ）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-18-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-18-evening.html</guid>
-      <pubDate>Fri, 18 Sep 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>罗福莉沉寂半年官宣小米强化学习！直播新模型训练过程，一小时烧3万美元（量子位）</li>
-        <li>英伟达开源 IMO 金牌配方：不仅是「人海战术」，1.5TB 显存做实 AI「 推恩令」？（雷锋网）</li>
-        <li>美国人形机器人公司Figure发布Helix 2.5，将其称为最先进的神经网络。（钛媒体）</li>
-        <li>消息称苹果发布 iPhone Duo 后的四天，华为阔折叠手机 Pura X Max 销量环比上周暴涨 76.5%（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>What to Read to Stay Grounded Amidst AI Doomerism（Hacker News）</li>
-        <li>The Cost of AI Is Now My Main Blocker（Hacker News）</li>
-        <li>Altman, Huang: "trust me; gonna b fine"; Sanders: "AI more dangerous than nukes"（Hacker News）</li>
-        <li>Jev vs. Luna for AI Observability（Hacker News）</li>
-        <li>GitHub Trending: SnailSploit /
 
-      Claude-Red（GitHub Trending）</li>
-        <li>GitHub Trending: strands-agents /
-
-      harness-sdk（GitHub Trending）</li>
-        <li>GitHub Trending: LLMQuant /
-
-      quant-mind（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Crusoe raises $3.9B to build massive data centers and small modular &#8216;AI factories&#8217;（TechCrunch）</li>
-        <li>The FAA&#8217;s plan to fix air traffic? $875M worth of AI（TechCrunch）</li>
-        <li>The fix for rogue AI agents could be more AI（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>刚刚，Claude Code大重构！内部3万Agent管理技术免费开放（量子位）</li>
-        <li>Claude Code团队讲究啊，这都往外说（量子位）</li>
-        <li>Claude双入口合并，原生Office上线！硅谷AI办公大战也开始了（量子位）</li>
-        <li>AI大模型工场2026 AI产业生态大会今日举办，大咖同台共探智能生长与产业共生（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
