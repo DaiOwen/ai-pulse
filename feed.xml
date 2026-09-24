@@ -5,10 +5,47 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 24 Sep 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+      <title>🌙 晚间版 — 2026-09-24（汇智智能发布Hellome：国内首个FD + GPT-6之后，具身智能走向何方？诺因发 + Everything new comin）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-24-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-24-evening.html</guid>
+      <pubDate>Thu, 24 Sep 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>汇智智能发布Hellome：国内首个FDE直连智能体服务平台，把AI交付周期压进“周”（量子位）</li>
+        <li>斑马智能发布端模型AutoOmni2.0，让元神AI更懂“我的世界”（量子位）</li>
+        <li>Google TurboQuant AI 压缩算法大幅减少大模型内存使用（Solidot）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>丰田命令员工训练人形机器人，否认会替代人类员工（Solidot）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Phyll, a UX review for apps built with AI that keeps the design（Hacker News）</li>
+        <li>Show HN: CastTake – turn one product photo into a short AI UGC ad video（Hacker News）</li>
+        <li>Show HN: CubeLV – AI that designs your automation before building it（Hacker News）</li>
+        <li>When AI Acts, Who Remembers What Happened?(cogextai.com)（Hacker News）</li>
+        <li>GitHub Trending: strands-agents /
+
+      harness-sdk（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Everything new coming to Meta&#8217;s AI agent Muse（TechCrunch）</li>
+        <li>Meta made a Tamagotchi-like wearable for its Muse AI agent（TechCrunch）</li>
+        <li>Anthropic says its biology lab has already found something big（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>GPT-6之后，具身智能走向何方？诺因发布GLOW技术报告，给出机器人“一教就会”的答案（量子位）</li>
+        <li>5分钟完成机器人纳管、10秒启动跨集群任务，清华大学联合无问芯穹开源具身智能云原生平台RLark（量子位）</li>
+        <li>达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”（量子位）</li>
+        <li>Meta靠自研Manus翻身！股价一夜暴涨11%，登顶苹果商店，增速反超ChatGPT（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-09-24（汇智智能发布Hellome：国内首个FD + 达卯科技完成新一轮融资，算电协同核心软件 + 为了智能体AI，高通「新造」了第六代骁龙 + Everything new comin）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-24-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-24-noon.html</guid>
@@ -333,40 +370,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-09-19（陶哲轩代表SAIR Foundation + 刚刚，Claude Code大重构！内部 + Tilly Norwood&#8217;）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-19-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-19-evening.html</guid>
-      <pubDate>Sat, 19 Sep 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>陶哲轩代表SAIR Foundation宣布正式启动“开放数学模型计划”（量子位）</li>
-        <li>英伟达开源 IMO 金牌配方：不仅是「人海战术」，1.5TB 显存做实 AI「 推恩令」？（雷锋网）</li>
-        <li>NASA 和 IBM 开源月球模型（Solidot）</li>
-        <li>美国人形机器人公司Figure发布Helix 2.5，将其称为最先进的神经网络。（钛媒体）</li>
-        <li>智谱 ZCode 被质疑“偷传代码”：官方回应称问题已修复，将开源代码库、引入第三方审查（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>How universities are affected by AI moving knowledge outside their walls（Hacker News）</li>
-        <li>Chinese AI Radicalizes（Hacker News）</li>
-        <li>Alex Karp: AI Models Are Stealing Your Data and the AI Safety Truth [video]（Hacker News）</li>
-        <li>GitHub Trending: fastino-ai /
 
-      GLiNER2（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Tilly Norwood&#8217;s press tour is going about as well as you&#8217;d expect for an AI（TechCrunch）</li>
-        <li>A startup that builds other startups raised $100M and is all-in on physical AI（TechCrunch）</li>
-        <li>Anthropic is operating a lab that conducts biology experiments（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>刚刚，Claude Code大重构！内部3万Agent管理技术免费开放（量子位）</li>
-        <li>Claude Code团队讲究啊，这都往外说（量子位）</li>
-        <li>Claude双入口合并，原生Office上线！硅谷AI办公大战也开始了（量子位）</li>
-        <li>SAIR AI Foundation（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
