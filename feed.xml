@@ -5,10 +5,35 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 24 Sep 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                        <item>
+      <title>☀️ 午间版 — 2026-09-25（汇智智能发布Hellome：国内首个FD + GPT-6之后，具身智能走向何方？诺因发 + PrismML brings its t）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-25-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-25-noon.html</guid>
+      <pubDate>Fri, 25 Sep 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>汇智智能发布Hellome：国内首个FDE直连智能体服务平台，把AI交付周期压进“周”（量子位）</li>
+        <li>苹果 iPhone 4“天线门”发布会完整问答视频流出，乔布斯、库克现场答记者问（IT之家）</li>
+        <li>独家丨AWS、微软中国迎来「Claude封号潮」（雷锋网）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Power your agents: Gemini 3.8 Live with Live Avatar is now generally available（Hacker News）</li>
+        <li>We Built a City of 10k AI Researchers（Hacker News）</li>
+        <li>AICore: Exploring an adaptive control layer for heterogeneous PCs（Hacker News）</li>
+        <li>Search and Recommender Engines AI（Hacker News）</li>
+        <li>Using AI to Contribute to Open Source（Hacker News）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>GPT-6之后，具身智能走向何方？诺因发布GLOW技术报告，给出机器人“一教就会”的答案（量子位）</li>
+        <li>5分钟完成机器人纳管、10秒启动跨集群任务，清华大学联合无问芯穹开源具身智能云原生平台RLark（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-09-24（汇智智能发布Hellome：国内首个FD + GPT-6之后，具身智能走向何方？诺因发 + Everything new comin）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-24-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-24-evening.html</guid>
@@ -342,33 +367,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-09-20（《网络安全人才实战能力报告-AI赋能篇》 + “留给人类阻止AI的时间不多了” + Trump says it&#8217;）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-20-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-20-noon.html</guid>
-      <pubDate>Sun, 20 Sep 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>《网络安全人才实战能力报告-AI赋能篇》正式发布，当AI进入业务深水区安全如何跟上（量子位）</li>
-        <li>27B模型分分钟交付网页，Qwen 3.8还是太能了（量子位）</li>
-        <li>陶哲轩代表SAIR Foundation宣布正式启动“开放数学模型计划”（量子位）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>华为汪涛：华为要打造AI算力底座，只做好一颗芯片远远不够（量子位）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Adapting Fossil-scm as a platform for AI agentic workflow（Hacker News）</li>
-        <li>Show HN: Architectural Guardrails for AI native development（Hacker News）</li>
-        <li>Integrating Volt Active Data with AI Agents and Chatbots（Hacker News）</li>
-        <li>OpenAI researcher on AI communicating across air-gaps via thermal side-channels [video]（Hacker News）</li>
-        <li>Another terminal/shell AI assistant (shell native)（Hacker News）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>“留给人类阻止AI的时间不多了”（量子位）</li>
-        <li>Nature：AI重生到1900，这一世抢先爱因斯坦提出光量子（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
+
 
 
 
