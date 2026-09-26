@@ -5,10 +5,53 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 26 Sep 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+      <title>🌙 晚间版 — 2026-09-26（（9月21日~9月26日）亚马逊官宣接入 + GPT-6之后，具身智能走向何方？诺因发 + Ahead of US IPO, Bri）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-26-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-26-evening.html</guid>
+      <pubDate>Sat, 26 Sep 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>（9月21日~9月26日）亚马逊官宣接入Kimi K3；超聚变发布FusionServer“无极”架构；《AI原生组织转型指南》发布（钛媒体）</li>
+        <li>独家丨AWS、微软中国迎来「Claude封号潮」（雷锋网）</li>
+        <li>部分三星智能冰箱在升级固件之后停止工作（Solidot）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>智元第20000台具身机器人交付长隆，首期超300台机器人常驻乐园。（雷锋网）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Linux Kernel Developers Consider Adding Agents.md to Help Guide AI/LLM Agents（Hacker News）</li>
+        <li>Nobody wanted an "AI PC," so Microsoft stopped calling it that（Hacker News）</li>
+        <li>Who is behind the AI safety backlash?（Hacker News）</li>
+        <li>Thought on how to deal with AI crawlers（Hacker News）</li>
+        <li>GitHub Trending: rohitg00 /
+
+      ai-engineering-from-scratch（GitHub Trending）</li>
+        <li>GitHub Trending: NVIDIA /
+
+      Model-Optimizer（GitHub Trending）</li>
+        <li>GitHub Trending: strands-agents /
+
+      harness-sdk（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Ahead of US IPO, British AI neocloud Nscale secures $3.36B in convertible financing（TechCrunch）</li>
+        <li>At Meta Connect, the company&#8217;s smart glasses were everywhere（TechCrunch）</li>
+        <li>Crusoe abandons $1.25B plan to use Boom turbines at AI data centers（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>GPT-6之后，具身智能走向何方？诺因发布GLOW技术报告，给出机器人“一教就会”的答案（量子位）</li>
+        <li>亮出“中国最强AI芯片”还不够，平头哥又甩出一手开源（量子位）</li>
+        <li>谷歌TPU跑Kimi比英伟达GPU快57%！用的还是DeepSeek推理框架（量子位）</li>
+        <li>OpenAI闯大祸！GPT竟黑进医保系统，黄仁勋：管不住就关掉（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-09-26（独家丨AWS、微软中国迎来「Claude + GPT-6之后，具身智能走向何方？诺因发 + Ahead of US IPO, Bri）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-26-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-26-noon.html</guid>
@@ -306,54 +349,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-09-21（长三角安全人工智能安徽省实验室发布星界、 + GPT-6 Astra开进机器人身体！清 + IDC评估中国AI算力管理平台:范式智能 + World model companie）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-21-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-21-evening.html</guid>
-      <pubDate>Mon, 21 Sep 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>长三角安全人工智能安徽省实验室发布星界、星驭、星鉴三大AI安全解决方案（量子位）</li>
-        <li>苹果 iOS / iPadOS 27.0 正式版发布：性能优化、升级 Siri AI，增强家长管控...（IT之家）</li>
-        <li>国产大模型企业半月「连签三单」，中国 AI 出海正在加速（雷锋网）</li>
-        </ul>
-        <h3>🛠️ 工具 & 部署</h3><ul>
-        <li>IDC评估中国AI算力管理平台:范式智能四项维度获满分，综合评分第一（量子位）</li>
-        <li>汽车行业首个AI超级智能体「迪迪虾」来了！腾势多款车型即将OTA（量子位）</li>
-        <li>上市遇故障！iPhone 18 Pro曝出死机问题，苹果启动调查；国产突围！长鑫科技宣布第五代技术平台正式量产；特斯拉Roadster开启预定（雷锋网）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>华为汪涛：华为要打造AI算力底座，只做好一颗芯片远远不够（量子位）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Show HN: Bitcoin-rs – An AI-assisted Bitcoin full node in Rust（Hacker News）</li>
-        <li>I'm afraid of spiders. So I made AI look at 2k of them（Hacker News）</li>
-        <li>Thomson-1.0-Small LLM Developed by Thomson Reuters（Hacker News）</li>
-        <li>WhatsApp Business Paid Support Is a Scam（Hacker News）</li>
-        <li>AI Data Center Basics: What Is Linear Pluggable Optics (LPO)?（Hacker News）</li>
-        <li>GitHub Trending: mihail911 /
 
-      modern-software-dev-assignments（GitHub Trending）</li>
-        <li>GitHub Trending: Significant-Gravitas /
-
-      AutoGPT（GitHub Trending）</li>
-        <li>GitHub Trending: openai /
-
-      openai-python（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>World model companies are keeping a lot of secrets（TechCrunch）</li>
-        <li>Is the AI industry really ready to slow down?（TechCrunch）</li>
-        <li>Trump says it&#8217;s time to rebrand AI with a new name — and he&#8217;s also creating an AI Force（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>GPT-6 Astra开进机器人身体！清华联手无问芯穹等开源RPent（量子位）</li>
-        <li>开源Top2！实测阶跃Step 5 Preview，真有点猛啊…（量子位）</li>
-        <li>百曜科技发起，《AI虚拟细胞（AIVC）技术趋势、产业生态与应用前景研究报告》正式发布（量子位）</li>
-        <li>啊啊啊GPT-6 Astra这么不安全！这次马斯克都瘫坐了（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
