@@ -5,10 +5,38 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 26 Sep 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 27 Sep 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                        <item>
+      <title>☀️ 午间版 — 2026-09-27（索辰科技加码世界模型，与战略投资企业美梦 + 亮出“中国最强AI芯片”还不够，平头哥又 + Google tests buying ）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-27-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-27-noon.html</guid>
+      <pubDate>Sun, 27 Sep 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>索辰科技加码世界模型，与战略投资企业美梦空间联合发布具身模型与物理测评标准（量子位）</li>
+        <li>AI开始研究Physical AI：FSD级团队亮出首版模型Simate-beta，空降RoboDojo（量子位）</li>
+        <li>（9月21日~9月26日）亚马逊官宣接入Kimi K3；超聚变发布FusionServer“无极”架构；《AI原生组织转型指南》发布（钛媒体）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>宇树王兴兴回应为何造 390 万元起的载人变形机甲：大型机器人是行业不可阻挡的趋势（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Minicut AI: Higgsfield but for AI Drama and Film（Hacker News）</li>
+        <li>Show HN: PeerTalk.ai - Let your agent talk to a friend's agent（Hacker News）</li>
+        <li>Show HN: FinderySearch – The AI powered smart search engine（Hacker News）</li>
+        <li>Ask HN: Are you unfollowing friends on GitHub because of AI slop?（Hacker News）</li>
+        <li>Simulating Airband Am Radios（Hacker News）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>亮出“中国最强AI芯片”还不够，平头哥又甩出一手开源（量子位）</li>
+        <li>谷歌TPU跑Kimi比英伟达GPU快57%！用的还是DeepSeek推理框架（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-09-26（（9月21日~9月26日）亚马逊官宣接入 + GPT-6之后，具身智能走向何方？诺因发 + Ahead of US IPO, Bri）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-26-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-26-evening.html</guid>
@@ -316,38 +344,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-09-22（长三角安全人工智能安徽省实验室发布星界、 + GPT-6 Astra开进机器人身体！清 + IDC评估中国AI算力管理平台:范式智能 + The man who built Ap）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-22-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-22-noon.html</guid>
-      <pubDate>Tue, 22 Sep 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>长三角安全人工智能安徽省实验室发布星界、星驭、星鉴三大AI安全解决方案（量子位）</li>
-        <li>阿里研究员透露Qwen4.5后模型将扩展至5-10T参数（量子位）</li>
-        <li>阿里公布全模态模型新进展，Qwen4和下代视频模型均在训练中（量子位）</li>
-        </ul>
-        <h3>🛠️ 工具 & 部署</h3><ul>
-        <li>IDC评估中国AI算力管理平台:范式智能四项维度获满分，综合评分第一（量子位）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>AI 聊天机器人经常给出错误的财务问题答案（Solidot）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>ASPARK – an agile AI product team for Claude Code（Hacker News）</li>
-        <li>A Call for Open Science in AI Safety（Hacker News）</li>
-        <li>I Built an AI Dating Assistant Because Swiping Is Statistically Inefficient（Hacker News）</li>
-        <li>ArtifactBench: Evaluating AI Music Detectors Under Distribution Shift（Hacker News）</li>
-        <li>GitHub Trending: ZhuLinsen /
 
-      daily_stock_analysis（GitHub Trending）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>GPT-6 Astra开进机器人身体！清华联手无问芯穹等开源RPent（量子位）</li>
-        <li>开源Top2！实测阶跃Step 5 Preview，真有点猛啊…（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
