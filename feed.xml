@@ -5,10 +5,58 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 28 Sep 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        <item>
+      <title>🌙 晚间版 — 2026-09-29（索辰科技加码世界模型，与战略投资企业美梦 + 亮出“中国最强AI芯片”还不够，平头哥又 + 高通All in 智能体！CEO安蒙：我 + Shopify opens checko）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-29-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-29-evening.html</guid>
+      <pubDate>Tue, 29 Sep 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>索辰科技加码世界模型，与战略投资企业美梦空间联合发布具身模型与物理测评标准（量子位）</li>
+        <li>李飞飞创业公司被苏姿丰550亿收购！世界模型最大交易落地（量子位）</li>
+        <li>啥题啊能干崩OpenAI最强模型训练…（量子位）</li>
+        <li>AI开始研究Physical AI：FSD级团队亮出首版模型Simate-beta，空降RoboDojo（量子位）</li>
+        <li>华为余承东发布会 PPT 鸿蒙智行“五界”品牌顺序重排，AITO 问界被移至最右（IT之家）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>高通All in 智能体！CEO安蒙：我们已处在智能体时代的开端（量子位）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Anthropic warns AI may pose 'existential risks to humanity' in IPO filing（Hacker News）</li>
+        <li>The Macroeconomic Effect of AI: Sizing the Software Engineering Channel (NBER)（Hacker News）</li>
+        <li>Can AI self-improvement overcome diminishing returns?（Hacker News）</li>
+        <li>AI risk is not sentience by computers, it is negligence by humans（Hacker News）</li>
+        <li>GitHub Trending: 0x4m4 /
+
+      hexstrike-ai（GitHub Trending）</li>
+        <li>GitHub Trending: rohitg00 /
+
+      ai-engineering-from-scratch（GitHub Trending）</li>
+        <li>GitHub Trending: agent0ai /
+
+      agent-zero（GitHub Trending）</li>
+        <li>GitHub Trending: Rizzo-AI-Academy /
+
+      rizzo-pii（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Shopify opens checkout to browser-based AI agents（TechCrunch）</li>
+        <li>The AI boom took over Climate Week and not everyone is happy about it（TechCrunch）</li>
+        <li>Anthropic releases Sonnet 5.5, which it calls a significantly cheaper, faster work partner（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>亮出“中国最强AI芯片”还不够，平头哥又甩出一手开源（量子位）</li>
+        <li>谷歌TPU跑Kimi比英伟达GPU快57%！用的还是DeepSeek推理框架（量子位）</li>
+        <li>OpenAI闯大祸！GPT竟黑进医保系统，黄仁勋：管不住就关掉（量子位）</li>
+        <li>“AlphaGo”杀进足球场！自我对弈140年，机器人成“梅西终结者”（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-09-28（索辰科技加码世界模型，与战略投资企业美梦 + 亮出“中国最强AI芯片”还不够，平头哥又 + Anthropic’s CEO is a）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-28-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-28-evening.html</guid>
@@ -328,35 +376,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-09-24（汇智智能发布Hellome：国内首个FD + 达卯科技完成新一轮融资，算电协同核心软件 + 为了智能体AI，高通「新造」了第六代骁龙 + Everything new comin）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-24-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-24-noon.html</guid>
-      <pubDate>Thu, 24 Sep 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>汇智智能发布Hellome：国内首个FDE直连智能体服务平台，把AI交付周期压进“周”（量子位）</li>
-        <li>斑马智能发布端模型AutoOmni2.0，让元神AI更懂“我的世界”（量子位）</li>
-        <li>实时世界模型进入“全科生”阶段，PixVerse R2先交卷！（量子位）</li>
-        </ul>
-        <h3>🛠️ 工具 & 部署</h3><ul>
-        <li>为了智能体AI，高通「新造」了第六代骁龙8超级至尊版（雷锋网）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>China's Approach to AI（Hacker News）</li>
-        <li>Ask HN: I just talked to an AI-obsessed client, and I need a shower afterwards（Hacker News）</li>
-        <li>Show HN: Built-in APM for vibe-coded apps so your AI can fix them（Hacker News）</li>
-        <li>We Run Kaizen on AI（Hacker News）</li>
-        <li>GitHub Trending: strands-agents /
 
-      harness-sdk（GitHub Trending）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”（量子位）</li>
-        <li>Meta靠自研Manus翻身！股价一夜暴涨11%，登顶苹果商店，增速反超ChatGPT（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
