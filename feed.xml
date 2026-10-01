@@ -5,10 +5,58 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 30 Sep 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                <item>
+      <title>🌙 晚间版 — 2026-10-01（OpenAI因新模型太强叫停发布 + DeepSeek官方开源昇腾基础组件，与 + Google releases Gemi）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-01-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-01-evening.html</guid>
+      <pubDate>Thu, 01 Oct 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>OpenAI因新模型太强叫停发布（量子位）</li>
+        <li>OpenAI推理之父最新访谈！数学只是多智能体时代的开胃菜（量子位）</li>
+        <li>DeepSeek 开源算子工具大礼包，联手华为昇腾，手撕 CUDA 绑定！（雷锋网）</li>
+        <li>从 Codex Harness 开源，看 AI 公司的护城河是什么？（雷锋网）</li>
+        <li>NVIDIA 中国开发者日｜直击物理 AI、开源大模型与智能体前沿，重磅演讲内容上线（Solidot）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>华为 Mate 90 Pro 手机首发麒麟 9035 旗舰 τ 芯片，对比麒麟 9030 处理器 NPU 提升 51%（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Show HN: Vietnam Tender Intelligence – gov procurement data, AI-agent ready（Hacker News）</li>
+        <li>AI research is dead, long live AI（Hacker News）</li>
+        <li>Google Grapples with Employee Skepticism About New Gemini Model（Hacker News）</li>
+        <li>Ask HN: If AI took your job tomorrow, what is your plan?（Hacker News）</li>
+        <li>GitHub Trending: VectifyAI /
+
+      PageIndex（GitHub Trending）</li>
+        <li>GitHub Trending: ifixai-ai /
+
+      iFixAi（GitHub Trending）</li>
+        <li>GitHub Trending: rohitg00 /
+
+      ai-engineering-from-scratch（GitHub Trending）</li>
+        <li>GitHub Trending: aws /
+
+      agent-toolkit-for-aws（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Google releases Gemini 4 Argon, called its most powerful model yet（TechCrunch）</li>
+        <li>The AI race won’t wait, and neither will this TechCrunch Disrupt 25% discount（TechCrunch）</li>
+        <li>Valor, Atreides, and Sequoia back AI startup Flow Engineering at $750M valuation（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>DeepSeek官方开源昇腾基础组件，与昇腾共建高效易用的AI芯片软件生态（量子位）</li>
+        <li>刚刚，GPT-6 Astra接上宇树G1，把厨房收拾了！（量子位）</li>
+        <li>DeepSeek知乎独家发文，首次公开V4.1 Agent训练“大本营”DSec（量子位）</li>
+        <li>36家敲钟的机器人公司：赚钱能力差距巨大，商业化也不玩花架子了（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-09-30（OpenAI因新模型太强叫停发布 + DeepSeek官方开源昇腾基础组件，与 + The internet is conv）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-09-30-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-30-evening.html</guid>
@@ -361,30 +409,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-09-25（汇智智能发布Hellome：国内首个FD + GPT-6之后，具身智能走向何方？诺因发 + PrismML brings its t）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-25-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-25-noon.html</guid>
-      <pubDate>Fri, 25 Sep 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>汇智智能发布Hellome：国内首个FDE直连智能体服务平台，把AI交付周期压进“周”（量子位）</li>
-        <li>苹果 iPhone 4“天线门”发布会完整问答视频流出，乔布斯、库克现场答记者问（IT之家）</li>
-        <li>独家丨AWS、微软中国迎来「Claude封号潮」（雷锋网）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Power your agents: Gemini 3.8 Live with Live Avatar is now generally available（Hacker News）</li>
-        <li>We Built a City of 10k AI Researchers（Hacker News）</li>
-        <li>AICore: Exploring an adaptive control layer for heterogeneous PCs（Hacker News）</li>
-        <li>Search and Recommender Engines AI（Hacker News）</li>
-        <li>Using AI to Contribute to Open Source（Hacker News）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>GPT-6之后，具身智能走向何方？诺因发布GLOW技术报告，给出机器人“一教就会”的答案（量子位）</li>
-        <li>5分钟完成机器人纳管、10秒启动跨集群任务，清华大学联合无问芯穹开源具身智能云原生平台RLark（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
+
 
 
 
