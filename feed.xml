@@ -5,10 +5,49 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 04 Oct 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+      <title>🌙 晚间版 — 2026-10-05（openJiuwen X-Router自 + 谷歌Gemini 4突然发布！RSI加持 + Can ‘super intellige）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-05-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-05-evening.html</guid>
+      <pubDate>Mon, 05 Oct 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>openJiuwen X-Router自演进模型路由技术首发，昇腾亲和，Agent越跑越省，实测减少50+%Token消耗（量子位）</li>
+        <li>DeepSeek 开源算子工具大礼包，联手华为昇腾，手撕 CUDA 绑定！（雷锋网）</li>
+        <li>从 Codex Harness 开源，看 AI 公司的护城河是什么？（雷锋网）</li>
+        <li>NVIDIA 中国开发者日｜直击物理 AI、开源大模型与智能体前沿，重磅演讲内容上线（Solidot）</li>
+        <li>RSI再创奇迹！StartLux推出开源决策模型StartLux-Decision，38项基准中31项高于Jev（钛媒体）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Wikipedia: AI or Not Quiz（Hacker News）</li>
+        <li>Paid.Expert – discover paid expert gigs for training AI（Hacker News）</li>
+        <li>Show HN: Recursant, the agent-aware model router built for hybrid workloads（Hacker News）</li>
+        <li>The AI Safety community is unfortunately doing more harm than good（Hacker News）</li>
+        <li>GitHub Trending: Panniantong /
+
+      Agent-Reach（GitHub Trending）</li>
+        <li>GitHub Trending: ifixai-ai /
+
+      iFixAi（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Can ‘super intelligence’ and a non-binding safety pact solve AI’s image problem?（TechCrunch）</li>
+        <li>OpenAI safety employee resigns, claiming the company’s ‘culture is broken’（TechCrunch）</li>
+        <li>All the AI agents that can live in your text messages（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>谷歌Gemini 4突然发布！RSI加持，GPT和Opus都让让（量子位）</li>
+        <li>GPT-6要“吃掉”3D公司？这家公司不到2年ARR翻百倍，破1亿美元（量子位）</li>
+        <li>DeepSeek扩招！弹性计算团队大量HC，尤其需要资深工程师（量子位）</li>
+        <li>丘成桐新论文致谢了GPT和Claude（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-10-04（openJiuwen X-Router自 + 谷歌Gemini 4突然发布！RSI加持 + OpenAI safety employ）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-10-04-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-04-evening.html</guid>
@@ -378,51 +417,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-09-27（索辰科技加码世界模型，与战略投资企业美梦 + 亮出“中国最强AI芯片”还不够，平头哥又 + Google tests buying ）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-27-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-27-evening.html</guid>
-      <pubDate>Sun, 27 Sep 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>索辰科技加码世界模型，与战略投资企业美梦空间联合发布具身模型与物理测评标准（量子位）</li>
-        <li>AI开始研究Physical AI：FSD级团队亮出首版模型Simate-beta，空降RoboDojo（量子位）</li>
-        <li>独家丨AWS、微软中国迎来「Claude封号潮」（雷锋网）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>智元第20000台具身机器人交付长隆，首期超300台机器人常驻乐园。（雷锋网）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Scoop: Top AI companies probing security incidents（Hacker News）</li>
-        <li>What is an AI sandbox, and why do AI agents keep escaping them?（Hacker News）</li>
-        <li>Ask HN: Is answering GitHub issues with AI without declaring it a big deal?（Hacker News）</li>
-        <li>Majority of YouTube comments seem AI generated to me now（Hacker News）</li>
-        <li>GitHub Trending: NVIDIA /
 
-      Model-Optimizer（GitHub Trending）</li>
-        <li>GitHub Trending: rohitg00 /
-
-      ai-engineering-from-scratch（GitHub Trending）</li>
-        <li>GitHub Trending: wshobson /
-
-      agents（GitHub Trending）</li>
-        <li>GitHub Trending: strands-agents /
-
-      harness-sdk（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Google tests buying from Walmart-owned Flipkart through Gemini and AI Mode in India（TechCrunch）</li>
-        <li>Insurers claim AI is already increasing healthcare costs（TechCrunch）</li>
-        <li>At Meta Connect, the company&#8217;s smart glasses were everywhere（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>亮出“中国最强AI芯片”还不够，平头哥又甩出一手开源（量子位）</li>
-        <li>谷歌TPU跑Kimi比英伟达GPU快57%！用的还是DeepSeek推理框架（量子位）</li>
-        <li>OpenAI闯大祸！GPT竟黑进医保系统，黄仁勋：管不住就关掉（量子位）</li>
-        <li>华为大模型双子星联手创业，要找物理世界的Scaling Law（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
