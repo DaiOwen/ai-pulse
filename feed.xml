@@ -5,10 +5,53 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 06 Oct 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <item>
+      <title>🌙 晚间版 — 2026-10-07（openJiuwen X-Router自 + GPT-6要“吃掉”3D公司？这家公司不 + AI computing startup）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-07-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-07-evening.html</guid>
+      <pubDate>Wed, 07 Oct 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>openJiuwen X-Router自演进模型路由技术首发，昇腾亲和，Agent越跑越省，实测减少50+%Token消耗（量子位）</li>
+        <li>DeepSeek 开源算子工具大礼包，联手华为昇腾，手撕 CUDA 绑定！（雷锋网）</li>
+        <li>从 Codex Harness 开源，看 AI 公司的护城河是什么？（雷锋网）</li>
+        <li>NVIDIA 中国开发者日｜直击物理 AI、开源大模型与智能体前沿，重磅演讲内容上线（Solidot）</li>
+        <li>华为 Mate 90 Pro Max 典藏版旗舰手机发布：麒麟 9050 Pro 逻辑折叠 τ 芯片、6800mAh 电池，10999 元起（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Toketer – See what every AI prompt costs you, live in your editor（Hacker News）</li>
+        <li>Crunchbase Data Shows AI's Most Active Startups Are Becoming Serial Acquirers（Hacker News）</li>
+        <li>AI-powered time tracking for freelancers and agencies（Hacker News）</li>
+        <li>Research;Open Sourcing Health Research with AI – Accelerating Evidence Synthesis（Hacker News）</li>
+        <li>Guide to Using Generative AI in Programming – Textbook by Antti Laaksonen（Hacker News）</li>
+        <li>GitHub Trending: 0x4m4 /
+
+      hexstrike-ai（GitHub Trending）</li>
+        <li>GitHub Trending: rohitg00 /
+
+      ai-engineering-from-scratch（GitHub Trending）</li>
+        <li>GitHub Trending: raullenchai /
+
+      Rapid-MLX（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>AI computing startup Lambda to raise $4B ahead of planned IPO（TechCrunch）</li>
+        <li>Ex-Ramp engineers raise $20M for platform Melius after scrapping their first product（TechCrunch）</li>
+        <li>How AI decision models could change content moderation（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>GPT-6要“吃掉”3D公司？这家公司不到2年ARR翻百倍，破1亿美元（量子位）</li>
+        <li>DeepSeek扩招！弹性计算团队大量HC，尤其需要资深工程师（量子位）</li>
+        <li>丘成桐新论文致谢了GPT和Claude（量子位）</li>
+        <li>不er，咋陶哲轩也成AI减速派了？？（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-10-06（openJiuwen X-Router自 + 谷歌Gemini 4突然发布！RSI加持 + OpenAI will start wa）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-10-06-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-06-evening.html</guid>
@@ -380,48 +423,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-09-28（索辰科技加码世界模型，与战略投资企业美梦 + 亮出“中国最强AI芯片”还不够，平头哥又 + Anthropic’s CEO is a）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-28-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-28-evening.html</guid>
-      <pubDate>Mon, 28 Sep 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>索辰科技加码世界模型，与战略投资企业美梦空间联合发布具身模型与物理测评标准（量子位）</li>
-        <li>啥题啊能干崩OpenAI最强模型训练…（量子位）</li>
-        <li>AI开始研究Physical AI：FSD级团队亮出首版模型Simate-beta，空降RoboDojo（量子位）</li>
-        <li>苹果 2026 秋季新品发布会一文汇总：iPhone Duo 出世、iPhone 18 Pro / Max 登场、新 CEO 首秀（IT之家）</li>
-        <li>小米 18 Fold 中折叠手机发布：首发玄戒 O3 芯片，10999 元起（IT之家）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>苹果 2026 款 Mac mini 发售：全新 M6 / M5 Pro 芯片，6999 元起（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>AI-written speeches are taking over politics（Hacker News）</li>
-        <li>Domyn's CEO says OpenAI, Anthropic are lying about safety（Hacker News）</li>
-        <li>A Mac crypto bot that asks a local 9B model about the news before each trade（Hacker News）</li>
-        <li>Show HN: WorkContext – Open-Source AI Context Layer for Dev Teams（Hacker News）</li>
-        <li>Nvidia Debuts System Designed to Stop AI Agents from Going Awry（Hacker News）</li>
-        <li>GitHub Trending: rohitg00 /
 
-      ai-engineering-from-scratch（GitHub Trending）</li>
-        <li>GitHub Trending: NVIDIA /
-
-      Model-Optimizer（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Anthropic’s CEO is about to have dinner with President Trump（TechCrunch）</li>
-        <li>Can Muse overcome Meta’s trust issues?（TechCrunch）</li>
-        <li>Anthropic&#8217;s Dario Amodei gets the SNL treatment（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>亮出“中国最强AI芯片”还不够，平头哥又甩出一手开源（量子位）</li>
-        <li>谷歌TPU跑Kimi比英伟达GPU快57%！用的还是DeepSeek推理框架（量子位）</li>
-        <li>OpenAI闯大祸！GPT竟黑进医保系统，黄仁勋：管不住就关掉（量子位）</li>
-        <li>华为大模型双子星联手创业，要找物理世界的Scaling Law（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
