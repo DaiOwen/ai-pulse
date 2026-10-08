@@ -5,10 +5,54 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 07 Oct 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <item>
+      <title>🌙 晚间版 — 2026-10-08（《怪物史莱克》编剧也来了！这家AI影视公 + 大模型原生智能体手机STEPX Neo将 + Nous Research confir）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-08-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-08-evening.html</guid>
+      <pubDate>Thu, 08 Oct 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>《怪物史莱克》编剧也来了！这家AI影视公司，视频模型全球第二！（量子位）</li>
+        <li>从「工具」到「智能体」：CARES 4.0在港发布，刘宏斌谈医疗AI如何走进临床（雷锋网）</li>
+        <li>NVIDIA 中国开发者日｜直击物理 AI、开源大模型与智能体前沿，重磅演讲内容上线（Solidot）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>IROS 2026大奖揭晓：长期记忆拿下最佳论文，人形机器人打网球、端托盘双双获奖（雷锋网）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Prime Inference: Fast, Reliable Serving for Frontier Open Models（Hacker News）</li>
+        <li>Microsoft event debuts new AI-friendly hardware and Windows changes（Hacker News）</li>
+        <li>Show HN: Pacer – will your AI coding subscription last until the reset?（Hacker News）</li>
+        <li>AI Changed the Team, Not the Process（Hacker News）</li>
+        <li>The AI Pascal's Wager（Hacker News）</li>
+        <li>GitHub Trending: allenai /
+
+      olmocr（GitHub Trending）</li>
+        <li>GitHub Trending: MDX-Tom /
+
+      gpt-instruct（GitHub Trending）</li>
+        <li>GitHub Trending: vllm-project /
+
+      vllm（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Nous Research confirms it hit $1.5B valuation, launches AI agents for business users（TechCrunch）</li>
+        <li>Microsoft releases new Nvidia-chip AI PCs with revamped Windows 11（TechCrunch）</li>
+        <li>Meta&#8217;s Muse launches on iPad just a month after its mobile debut（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>大模型原生智能体手机STEPX Neo将于10月13日正式发布（量子位）</li>
+        <li>Claude新模型发布！跑分暴击GPT-6 Luna，价格比梁文谷还便宜，OpenAI只能送重置卡挽尊（量子位）</li>
+        <li>GPT-6今起免费用！拒答变少，话变多了（量子位）</li>
+        <li>Meshy 跻身 a16z 消费级 AI 应用月收入 Top 50，为榜单唯一 AI 3D 公司（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-10-07（openJiuwen X-Router自 + GPT-6要“吃掉”3D公司？这家公司不 + AI computing startup）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-10-07-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-07-evening.html</guid>
@@ -375,53 +419,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-09-29（索辰科技加码世界模型，与战略投资企业美梦 + 亮出“中国最强AI芯片”还不够，平头哥又 + 高通All in 智能体！CEO安蒙：我 + Shopify opens checko）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-29-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-29-evening.html</guid>
-      <pubDate>Tue, 29 Sep 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>索辰科技加码世界模型，与战略投资企业美梦空间联合发布具身模型与物理测评标准（量子位）</li>
-        <li>李飞飞创业公司被苏姿丰550亿收购！世界模型最大交易落地（量子位）</li>
-        <li>啥题啊能干崩OpenAI最强模型训练…（量子位）</li>
-        <li>AI开始研究Physical AI：FSD级团队亮出首版模型Simate-beta，空降RoboDojo（量子位）</li>
-        <li>华为余承东发布会 PPT 鸿蒙智行“五界”品牌顺序重排，AITO 问界被移至最右（IT之家）</li>
-        </ul>
-        <h3>🛠️ 工具 & 部署</h3><ul>
-        <li>高通All in 智能体！CEO安蒙：我们已处在智能体时代的开端（量子位）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Anthropic warns AI may pose 'existential risks to humanity' in IPO filing（Hacker News）</li>
-        <li>The Macroeconomic Effect of AI: Sizing the Software Engineering Channel (NBER)（Hacker News）</li>
-        <li>Can AI self-improvement overcome diminishing returns?（Hacker News）</li>
-        <li>AI risk is not sentience by computers, it is negligence by humans（Hacker News）</li>
-        <li>GitHub Trending: 0x4m4 /
 
-      hexstrike-ai（GitHub Trending）</li>
-        <li>GitHub Trending: rohitg00 /
-
-      ai-engineering-from-scratch（GitHub Trending）</li>
-        <li>GitHub Trending: agent0ai /
-
-      agent-zero（GitHub Trending）</li>
-        <li>GitHub Trending: Rizzo-AI-Academy /
-
-      rizzo-pii（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Shopify opens checkout to browser-based AI agents（TechCrunch）</li>
-        <li>The AI boom took over Climate Week and not everyone is happy about it（TechCrunch）</li>
-        <li>Anthropic releases Sonnet 5.5, which it calls a significantly cheaper, faster work partner（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>亮出“中国最强AI芯片”还不够，平头哥又甩出一手开源（量子位）</li>
-        <li>谷歌TPU跑Kimi比英伟达GPU快57%！用的还是DeepSeek推理框架（量子位）</li>
-        <li>OpenAI闯大祸！GPT竟黑进医保系统，黄仁勋：管不住就关掉（量子位）</li>
-        <li>“AlphaGo”杀进足球场！自我对弈140年，机器人成“梅西终结者”（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
