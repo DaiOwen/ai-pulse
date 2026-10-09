@@ -5,10 +5,49 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 08 Oct 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+      <title>🌙 晚间版 — 2026-10-09（正行创新亮相APRCE 2026，发布全 + 不等Gemini 4了！谷歌发布办公Ag + 代码造世界，扩散绘现实：AgentGar + Pretend you&#8217;re）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-09-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-09-evening.html</guid>
+      <pubDate>Fri, 09 Oct 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>正行创新亮相APRCE 2026，发布全球首个零售物理智能24/7服务解决方案（量子位）</li>
+        <li>独家｜深圳DiffuSpace5亿元融资刷新全球扩散语言模型融资纪录，华为、地平线押注其中（钛媒体）</li>
+        <li>苹果官宣“欢迎回家”发布会定档 10 月 13 日，暗示首款智能家居中枢产品（IT之家）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>代码造世界，扩散绘现实：AgentGarten让智能体在实时试炼场中边玩边进化（量子位）</li>
+        <li>华为余承东：极紫外光刻（EUV）设备是制造先进芯片的关键，国内目前正在研发（IT之家）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>搭载NVIDIA RTX Spark™ N1X超级芯片：联想YOGA Pro 15开启盲约，重塑个人生产力边界（量子位）</li>
+        <li>高通与华为达成逻辑折叠芯片技术相关专利授权，韬定律加速出海（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Show HN: Wy – a Rust terminal tool for understanding AI-generated code（Hacker News）</li>
+        <li>OpenAI cannot make AI safe on its own [pdf]（Hacker News）</li>
+        <li>AI model can reconstruct images from your brain（Hacker News）</li>
+        <li>Cybernetics of AI Companies（Hacker News）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Pretend you&#8217;re sitting at Elizabeth Holmes&#8217; desk on this weirdly detailed website（TechCrunch）</li>
+        <li>Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect（TechCrunch）</li>
+        <li>Ben Affleck is an AI nerd, and the internet is impressed（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>不等Gemini 4了！谷歌发布办公Agent，支持调用Claude（量子位）</li>
+        <li>大模型原生智能体手机STEPX Neo将于10月13日正式发布（量子位）</li>
+        <li>Claude新模型发布！跑分暴击GPT-6 Luna，价格比梁文谷还便宜，OpenAI只能送重置卡挽尊（量子位）</li>
+        <li>openJiuwen发布并开源企业级AgentOS，加速智能体规模落地企业（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-10-08（《怪物史莱克》编剧也来了！这家AI影视公 + 大模型原生智能体手机STEPX Neo将 + Nous Research confir）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-10-08-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-08-evening.html</guid>
@@ -372,52 +411,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-09-30（OpenAI因新模型太强叫停发布 + DeepSeek官方开源昇腾基础组件，与 + The internet is conv）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-09-30-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-09-30-evening.html</guid>
-      <pubDate>Wed, 30 Sep 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>OpenAI因新模型太强叫停发布（量子位）</li>
-        <li>索辰科技加码世界模型，与战略投资企业美梦空间联合发布具身模型与物理测评标准（量子位）</li>
-        <li>李飞飞创业公司被苏姿丰550亿收购！世界模型最大交易落地（量子位）</li>
-        <li>啥题啊能干崩OpenAI最强模型训练…（量子位）</li>
-        <li>AI开始研究Physical AI：FSD级团队亮出首版模型Simate-beta，空降RoboDojo（量子位）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Studlark AI Group Study SaaS Application（Hacker News）</li>
-        <li>McDonalds has AI estimate "customer willingness to pay" at each restaurant（Hacker News）</li>
-        <li>The open-source AI platforms vying to become China's Hugging Face（Hacker News）</li>
-        <li>GitHub Trending: rohitg00 /
 
-      ai-engineering-from-scratch（GitHub Trending）</li>
-        <li>GitHub Trending: VectifyAI /
-
-      PageIndex（GitHub Trending）</li>
-        <li>GitHub Trending: SemiAnalysisAI /
-
-      InferenceX（GitHub Trending）</li>
-        <li>GitHub Trending: MadsLorentzen /
-
-      ai-job-search（GitHub Trending）</li>
-        <li>GitHub Trending: mem0ai /
-
-      mem0（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>The internet is convinced Elon Musk&#8217;s xAI trolled OpenAI&#8217;s &#8216;Dots&#8217; launch（TechCrunch）</li>
-        <li>OpenAI reportedly in talks to raise $30B round at $1.4T valuation（TechCrunch）</li>
-        <li>Here&#8217;s why OpenAI is absent from Nvidia&#8217;s industry-wide effort to end rogue AI agents（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>DeepSeek官方开源昇腾基础组件，与昇腾共建高效易用的AI芯片软件生态（量子位）</li>
-        <li>成立一年完成5轮融资，诺因智能再获数亿元，累计超10亿元（量子位）</li>
-        <li>36家敲钟的机器人公司：赚钱能力差距巨大，商业化也不玩花架子了（量子位）</li>
-        <li>精准揪出RL训练数据Bug，Prompt直出小游戏，IQuest-Q1夯爆了！（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
