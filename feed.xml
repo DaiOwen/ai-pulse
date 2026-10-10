@@ -5,10 +5,58 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 09 Oct 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <item>
+      <title>🌙 晚间版 — 2026-10-10（正行创新亮相APRCE 2026，发布全 + 不等Gemini 4了！谷歌发布办公Ag + 联想天禧自研代码智能体TianxiCod + The maker of non-tex）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-10-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-10-evening.html</guid>
+      <pubDate>Sat, 10 Oct 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>正行创新亮相APRCE 2026，发布全球首个零售物理智能24/7服务解决方案（量子位）</li>
+        <li>人人皆可为师：全球首个物理AI数据众包服务平台“觅蜂派”正式发布（雷锋网）</li>
+        <li>让触觉像视觉一样可规模化，哥大李昀烛团队 FlexiTac 的开源实践 | IROS 2026（雷锋网）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>联想天禧自研代码智能体TianxiCode斩获SWE-bench-Live全球第一（量子位）</li>
+        <li>代码造世界，扩散绘现实：AgentGarten让智能体在实时试炼场中边玩边进化（量子位）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>搭载NVIDIA RTX Spark™ N1X超级芯片：联想YOGA Pro 15开启盲约，重塑个人生产力边界（量子位）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Show HN: Rutter – shared decision memory across AI tools（Hacker News）</li>
+        <li>Show HN: Iimos – an AI app that ships as one chat box and rewrites itself（Hacker News）</li>
+        <li>If AI is conscient, then we are making slaves（Hacker News）</li>
+        <li>Zombie AI Video Generator – a zombie love story from two photos（Hacker News）</li>
+        <li>Oracle, Broadcom and SpaceX Seek Blockbuster Debt Deals to Pay for AI Chips（Hacker News）</li>
+        <li>GitHub Trending: BerriAI /
+
+      litellm（GitHub Trending）</li>
+        <li>GitHub Trending: datawhalechina /
+
+      hello-agents（GitHub Trending）</li>
+        <li>GitHub Trending: bojieli /
+
+      ai-agent-book（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>The maker of non-text AI model Jev valued at $7.5B just weeks after launch（TechCrunch）</li>
+        <li>An Anthropic AI model sent a false homicide tip to Philadelphia police（TechCrunch）</li>
+        <li>Amazon drops data center NDAs, and AI agents want your credit card（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>不等Gemini 4了！谷歌发布办公Agent，支持调用Claude（量子位）</li>
+        <li>openJiuwen发布并开源企业级AgentOS，加速智能体规模落地企业（量子位）</li>
+        <li>清华具身模型登顶全球第一！突围GPT-6、英伟达，不靠外挂和额外数据（量子位）</li>
+        <li>0.2秒急停、秒级重规划！因果智能走进真实世界（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-10-09（正行创新亮相APRCE 2026，发布全 + 不等Gemini 4了！谷歌发布办公Ag + 代码造世界，扩散绘现实：AgentGar + Pretend you&#8217;re）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-10-09-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-09-evening.html</guid>
@@ -363,53 +411,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-10-01（OpenAI因新模型太强叫停发布 + DeepSeek官方开源昇腾基础组件，与 + Google releases Gemi）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-01-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-01-evening.html</guid>
-      <pubDate>Thu, 01 Oct 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>OpenAI因新模型太强叫停发布（量子位）</li>
-        <li>OpenAI推理之父最新访谈！数学只是多智能体时代的开胃菜（量子位）</li>
-        <li>DeepSeek 开源算子工具大礼包，联手华为昇腾，手撕 CUDA 绑定！（雷锋网）</li>
-        <li>从 Codex Harness 开源，看 AI 公司的护城河是什么？（雷锋网）</li>
-        <li>NVIDIA 中国开发者日｜直击物理 AI、开源大模型与智能体前沿，重磅演讲内容上线（Solidot）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>华为 Mate 90 Pro 手机首发麒麟 9035 旗舰 τ 芯片，对比麒麟 9030 处理器 NPU 提升 51%（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Show HN: Vietnam Tender Intelligence – gov procurement data, AI-agent ready（Hacker News）</li>
-        <li>AI research is dead, long live AI（Hacker News）</li>
-        <li>Google Grapples with Employee Skepticism About New Gemini Model（Hacker News）</li>
-        <li>Ask HN: If AI took your job tomorrow, what is your plan?（Hacker News）</li>
-        <li>GitHub Trending: VectifyAI /
 
-      PageIndex（GitHub Trending）</li>
-        <li>GitHub Trending: ifixai-ai /
-
-      iFixAi（GitHub Trending）</li>
-        <li>GitHub Trending: rohitg00 /
-
-      ai-engineering-from-scratch（GitHub Trending）</li>
-        <li>GitHub Trending: aws /
-
-      agent-toolkit-for-aws（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Google releases Gemini 4 Argon, called its most powerful model yet（TechCrunch）</li>
-        <li>The AI race won’t wait, and neither will this TechCrunch Disrupt 25% discount（TechCrunch）</li>
-        <li>Valor, Atreides, and Sequoia back AI startup Flow Engineering at $750M valuation（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>DeepSeek官方开源昇腾基础组件，与昇腾共建高效易用的AI芯片软件生态（量子位）</li>
-        <li>刚刚，GPT-6 Astra接上宇树G1，把厨房收拾了！（量子位）</li>
-        <li>DeepSeek知乎独家发文，首次公开V4.1 Agent训练“大本营”DSec（量子位）</li>
-        <li>36家敲钟的机器人公司：赚钱能力差距巨大，商业化也不玩花架子了（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
