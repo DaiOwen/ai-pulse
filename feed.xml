@@ -5,10 +5,52 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 10 Oct 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <item>
+      <title>🌙 晚间版 — 2026-10-11（字节发现 DeepSeek 隐藏 Bug + 不等Gemini 4了！谷歌发布办公Ag + 联想天禧自研代码智能体TianxiCod + Microsoft’s Satya Na）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-11-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-11-evening.html</guid>
+      <pubDate>Sun, 11 Oct 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>字节发现 DeepSeek 隐藏 Bug，加点空格，模型翻车（雷锋网）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>联想天禧自研代码智能体TianxiCode斩获SWE-bench-Live全球第一（量子位）</li>
+        <li>代码造世界，扩散绘现实：AgentGarten让智能体在实时试炼场中边玩边进化（量子位）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>JEPA、空间智能路线正面交锋：WorldArena 2.0 挑战赛开考「能不能被机器人真正用起来」| IROS 2026（雷锋网）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>CortextAI – A private, offline AI workspace for email, notes, tasks, and files（Hacker News）</li>
+        <li>Europe confident its rules can thwart rogue AI（Hacker News）</li>
+        <li>Show HN: GSD Task Manager – an MCP server that gives your AI agent a task list（Hacker News）</li>
+        <li>AI agents in a stand-up call（Hacker News）</li>
+        <li>GitHub Trending: huggingface /
+
+      transformers（GitHub Trending）</li>
+        <li>GitHub Trending: datawhalechina /
+
+      hello-agents（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Microsoft’s Satya Nadella says AI models need an ‘emergency brake’（TechCrunch）</li>
+        <li>3 days to TechCrunch Disrupt 2026: Meet the startups before they hit mainstream（TechCrunch）</li>
+        <li>Here are the top AI agents that can live in your text messages（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>不等Gemini 4了！谷歌发布办公Agent，支持调用Claude（量子位）</li>
+        <li>openJiuwen发布并开源企业级AgentOS，加速智能体规模落地企业（量子位）</li>
+        <li>DeepSeek Bot来了！民间版，DSH装个插件就能用（量子位）</li>
+        <li>清华具身模型登顶全球第一！突围GPT-6、英伟达，不靠外挂和额外数据（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-10-10（正行创新亮相APRCE 2026，发布全 + 不等Gemini 4了！谷歌发布办公Ag + 联想天禧自研代码智能体TianxiCod + The maker of non-tex）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-10-10-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-10-evening.html</guid>
@@ -368,48 +410,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-10-02（OpenAI推理之父最新访谈！数学只是多 + 谷歌Gemini 4突然发布！RSI加持 + Musk&#8217;s AI chat）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-02-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-02-evening.html</guid>
-      <pubDate>Fri, 02 Oct 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>OpenAI推理之父最新访谈！数学只是多智能体时代的开胃菜（量子位）</li>
-        <li>NVIDIA 中国开发者日｜直击物理 AI、开源大模型与智能体前沿，重磅演讲内容上线（Solidot）</li>
-        <li>DeepSeek 开源算子工具大礼包，联手华为昇腾，手撕 CUDA 绑定！（雷锋网）</li>
-        <li>从 Codex Harness 开源，看 AI 公司的护城河是什么？（雷锋网）</li>
-        <li>Sharpa最新发布的三大新品，把机器人进场景的门槛打了下来（钛媒体）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>I Keep an AI Agent's Mistakes Off My Live Site（Hacker News）</li>
-        <li>Prelulu: A Tavus Griffin alternative for live AI avatar calls（Hacker News）</li>
-        <li>Can AI Run in Space? Google Is About to Find Out（Hacker News）</li>
-        <li>Show HN: A substantially expanded terminal for AI CLIs – I can't work without it（Hacker News）</li>
-        <li>AI datacentres pose growing threat to electricity systems worldwide（Hacker News）</li>
-        <li>GitHub Trending: VectifyAI /
 
-      PageIndex（GitHub Trending）</li>
-        <li>GitHub Trending: ifixai-ai /
-
-      iFixAi（GitHub Trending）</li>
-        <li>GitHub Trending: Shubhamsaboo /
-
-      awesome-llm-apps（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Musk&#8217;s AI chatbot Grok reportedly encouraged Trump to capture  Venezuela&#8217;s president（TechCrunch）</li>
-        <li>ChatGPT can now virtually try on clothes for you（TechCrunch）</li>
-        <li>OpenAI cuts ties with 3 safety researchers, WSJ reports（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>谷歌Gemini 4突然发布！RSI加持，GPT和Opus都让让（量子位）</li>
-        <li>DeepSeek官方开源昇腾基础组件，与昇腾共建高效易用的AI芯片软件生态（量子位）</li>
-        <li>刚刚，GPT-6 Astra接上宇树G1，把厨房收拾了！（量子位）</li>
-        <li>DeepSeek知乎独家发文，首次公开V4.1 Agent训练“大本营”DSec（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
