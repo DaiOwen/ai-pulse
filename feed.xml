@@ -5,10 +5,48 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 14 Oct 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <item>
+      <title>🌙 晚间版 — 2026-10-14（阶跃终端首款「Agent手机」STEPX + STEPX首款大模型原生智能体手机STE + 告别资料散落，让知识持续积累：openJ + Cerebras CEO says we）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-14-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-14-evening.html</guid>
+      <pubDate>Wed, 14 Oct 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>阶跃终端首款「Agent手机」STEPX Neo正式发布，创客先行（量子位）</li>
+        <li>NetBSD 成为反 AI 开发者青睐的开源操作系统（Solidot）</li>
+        <li>苹果新款 Apple TV 4K 发布：2399 港元，A19 芯片、Siri AI、内置麦克风（IT之家）</li>
+        <li>苹果首款智能家庭中枢 HomeView 发布：售价 299 美元，11 月 13 日开售（IT之家）</li>
+        <li>苹果 HomePod mini 2 智能音箱发布：五种配色可选，海外支持 Siri AI，1099 元（IT之家）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>告别资料散落，让知识持续积累：openJiuwen首发个人知识空间，重塑个人办公智能体新体验！（量子位）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>What breaks if I change this? across SQL,dbt and Airflow（Hacker News）</li>
+        <li>Infosys boss describes AI job fears as 'hogwash'（Hacker News）</li>
+        <li>In the AI era, coding means thinking like a systems architect（Hacker News）</li>
+        <li>GitHub Trending: baidu /
+
+      Unlimited-OCR（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Cerebras CEO says we&#8217;re nearing a future where everyone has a personal AI assistant at home（TechCrunch）</li>
+        <li>Industrial Next wants factory robots to switch tasks in minutes, not weeks（TechCrunch）</li>
+        <li>Cerebras CEO pushes back on AI doomsday warnings（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>STEPX首款大模型原生智能体手机STEPX Neo正式发布（量子位）</li>
+        <li>响应速度比Claude Code快3倍，实现真正无限上下文！APUS AI开源Reflex Agent（量子位）</li>
+        <li>魔法原子具身Agent框架拿下MolmoSpaces全球第一（量子位）</li>
+        <li>调度效率提升80%！商汤大装置助力上海量子城市首批智能体落地（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-10-14（“求索”4.0上线！国内首个人工智能全产 + 美国核反应堆开始整合 AI 助手 + AI 编程智能体生成了更多代码，但并没有 + Cerebras CEO says we）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-10-14-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-14-noon.html</guid>
@@ -374,44 +412,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-10-05（openJiuwen X-Router自 + 谷歌Gemini 4突然发布！RSI加持 + Can ‘super intellige）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-05-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-05-evening.html</guid>
-      <pubDate>Mon, 05 Oct 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>openJiuwen X-Router自演进模型路由技术首发，昇腾亲和，Agent越跑越省，实测减少50+%Token消耗（量子位）</li>
-        <li>DeepSeek 开源算子工具大礼包，联手华为昇腾，手撕 CUDA 绑定！（雷锋网）</li>
-        <li>从 Codex Harness 开源，看 AI 公司的护城河是什么？（雷锋网）</li>
-        <li>NVIDIA 中国开发者日｜直击物理 AI、开源大模型与智能体前沿，重磅演讲内容上线（Solidot）</li>
-        <li>RSI再创奇迹！StartLux推出开源决策模型StartLux-Decision，38项基准中31项高于Jev（钛媒体）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Wikipedia: AI or Not Quiz（Hacker News）</li>
-        <li>Paid.Expert – discover paid expert gigs for training AI（Hacker News）</li>
-        <li>Show HN: Recursant, the agent-aware model router built for hybrid workloads（Hacker News）</li>
-        <li>The AI Safety community is unfortunately doing more harm than good（Hacker News）</li>
-        <li>GitHub Trending: Panniantong /
 
-      Agent-Reach（GitHub Trending）</li>
-        <li>GitHub Trending: ifixai-ai /
-
-      iFixAi（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Can ‘super intelligence’ and a non-binding safety pact solve AI’s image problem?（TechCrunch）</li>
-        <li>OpenAI safety employee resigns, claiming the company’s ‘culture is broken’（TechCrunch）</li>
-        <li>All the AI agents that can live in your text messages（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>谷歌Gemini 4突然发布！RSI加持，GPT和Opus都让让（量子位）</li>
-        <li>GPT-6要“吃掉”3D公司？这家公司不到2年ARR翻百倍，破1亿美元（量子位）</li>
-        <li>DeepSeek扩招！弹性计算团队大量HC，尤其需要资深工程师（量子位）</li>
-        <li>丘成桐新论文致谢了GPT和Claude（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
