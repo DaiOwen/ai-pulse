@@ -5,10 +5,38 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 13 Oct 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <item>
+      <title>☀️ 午间版 — 2026-10-14（“求索”4.0上线！国内首个人工智能全产 + 美国核反应堆开始整合 AI 助手 + AI 编程智能体生成了更多代码，但并没有 + Cerebras CEO says we）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-14-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-14-noon.html</guid>
+      <pubDate>Wed, 14 Oct 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>“求索”4.0上线！国内首个人工智能全产业链评测基准发布；重庆市委原副书记、市政府原市长黄奇帆被查；DeepSeek据称将完成1000亿元融资（钛媒体）</li>
+        <li>苹果新款 Apple TV 4K 发布：2399 港元，A19 芯片、Siri AI、内置麦克风（IT之家）</li>
+        <li>苹果首款智能家庭中枢 HomeView 发布：售价 299 美元，11 月 13 日开售（IT之家）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>AI 编程智能体生成了更多代码，但并没有生成更多软件（Solidot）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Show HN: AgentGate – Fast authorization gateway for AI agent tools（Hacker News）</li>
+        <li>Full list of uncensored AI chatbots（Hacker News）</li>
+        <li>Show HN: GenClass, A 10 MB in-browser model that catches bugs that never throw（Hacker News）</li>
+        <li>To Keep Human Judgment, We Need AI Courts（Hacker News）</li>
+        <li>OCP 2026: Agentic AI Pushes the Data Center from Chip to Grid（Hacker News）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>美国核反应堆开始整合 AI 助手（Solidot）</li>
+        <li>全球「AI学术顶会」精华汇聚地（雷锋网）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-10-13（智谱新模型，490 tokens/s！ + 单轮23亿，累计43亿，无问芯穹刷新国产 + “模态进化”：第八届亿邦产业互联网年会暨 + Meta releases its fi）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-10-13-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-13-evening.html</guid>
@@ -385,51 +413,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-10-04（openJiuwen X-Router自 + 谷歌Gemini 4突然发布！RSI加持 + OpenAI safety employ）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-04-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-04-evening.html</guid>
-      <pubDate>Sun, 04 Oct 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>openJiuwen X-Router自演进模型路由技术首发，昇腾亲和，Agent越跑越省，实测减少50+%Token消耗（量子位）</li>
-        <li>OpenAI推理之父最新访谈！数学只是多智能体时代的开胃菜（量子位）</li>
-        <li>DeepSeek 开源算子工具大礼包，联手华为昇腾，手撕 CUDA 绑定！（雷锋网）</li>
-        <li>从 Codex Harness 开源，看 AI 公司的护城河是什么？（雷锋网）</li>
-        <li>NVIDIA 中国开发者日｜直击物理 AI、开源大模型与智能体前沿，重磅演讲内容上线（Solidot）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>VersionStory: Comparison and Redlining for AI native legal teams（Hacker News）</li>
-        <li>Why AI task-level productivity doesn't translate to organizational throughput（Hacker News）</li>
-        <li>Changelog to README: testing LLM update strategies（Hacker News）</li>
-        <li>Gentle AI: AI Coding Ecosystem（Hacker News）</li>
-        <li>What's the Future for Pure Math Research in the Age of AI? [Wolfram]（Hacker News）</li>
-        <li>GitHub Trending: jamwithai /
 
-      production-agentic-rag-course（GitHub Trending）</li>
-        <li>GitHub Trending: kaifcodec /
-
-      user-scanner（GitHub Trending）</li>
-        <li>GitHub Trending: modelcontextprotocol /
-
-      python-sdk（GitHub Trending）</li>
-        <li>GitHub Trending: arc53 /
-
-      DocsGPT（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>OpenAI safety employee resigns, claiming the company’s ‘culture is broken’（TechCrunch）</li>
-        <li>All the AI agents that can live in your text messages（TechCrunch）</li>
-        <li>Meta wants your next gadget to be Muse-infused（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>谷歌Gemini 4突然发布！RSI加持，GPT和Opus都让让（量子位）</li>
-        <li>GPT-6要“吃掉”3D公司？这家公司不到2年ARR翻百倍，破1亿美元（量子位）</li>
-        <li>DeepSeek扩招！弹性计算团队大量HC，尤其需要资深工程师（量子位）</li>
-        <li>丘成桐新论文致谢了GPT和Claude（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
