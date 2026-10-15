@@ -5,10 +5,42 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 14 Oct 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <item>
+      <title>☀️ 午间版 — 2026-10-15（阶跃终端首款「Agent手机」STEPX + STEPX首款大模型原生智能体手机STE + Ricursive Intelligen）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-15-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-15-noon.html</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>阶跃终端首款「Agent手机」STEPX Neo正式发布，创客先行（量子位）</li>
+        <li>国内最年轻AI教授创业：要让世界模型走向全身全模态（量子位）</li>
+        <li>茶百道涉IPO欺诈，被暂停交易；字节Seed单独设立大模型安全与对齐部门；华为披露下一代麒麟芯片进展，已进入测试阶段丨雷峰早报（雷锋网）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>MemSilicon完成国际首款高密度、大容量1T4R 1Gb RRAM芯片流片（量子位）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Meta AI creates campaign material for Flávio Bolsonaro and blocks Lula content（Hacker News）</li>
+        <li>Will big software companies (like Adobe) come together to curb AI?（Hacker News）</li>
+        <li>Why Andrew Ng believes AI won't destroy humanity（Hacker News）</li>
+        <li>GitHub Trending: K-Dense-AI /
+
+      scientific-agent-skills（GitHub Trending）</li>
+        <li>GitHub Trending: ifixai-ai /
+
+      iFixAi（GitHub Trending）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>STEPX首款大模型原生智能体手机STEPX Neo正式发布（量子位）</li>
+        <li>有预言家！A社研究蓝图曝光，Claude Code来自5年前（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-10-14（阶跃终端首款「Agent手机」STEPX + STEPX首款大模型原生智能体手机STE + 告别资料散落，让知识持续积累：openJ + Cerebras CEO says we）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-10-14-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-14-evening.html</guid>
@@ -375,42 +407,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-10-06（openJiuwen X-Router自 + 谷歌Gemini 4突然发布！RSI加持 + OpenAI will start wa）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-06-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-06-evening.html</guid>
-      <pubDate>Tue, 06 Oct 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>openJiuwen X-Router自演进模型路由技术首发，昇腾亲和，Agent越跑越省，实测减少50+%Token消耗（量子位）</li>
-        <li>DeepSeek 开源算子工具大礼包，联手华为昇腾，手撕 CUDA 绑定！（雷锋网）</li>
-        <li>从 Codex Harness 开源，看 AI 公司的护城河是什么？（雷锋网）</li>
-        <li>NVIDIA 中国开发者日｜直击物理 AI、开源大模型与智能体前沿，重磅演讲内容上线（Solidot）</li>
-        <li>华为 Mate 90 Pro Max 典藏版旗舰手机发布：麒麟 9050 Pro 逻辑折叠 τ 芯片、6800mAh 电池，10999 元起（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Japan's entertainment robots diversify with AI, offer comfort（Hacker News）</li>
-        <li>Plainserp – Google search API for AI agents at $0.30 per 1k（Hacker News）</li>
-        <li>Wattle AI – an AI receptionist that answers and books calls for small businesses（Hacker News）</li>
-        <li>Ask HN: What brings you back to personal AI agents like Instinct and Muse?（Hacker News）</li>
-        <li>Coyote vs. ACME pro AI rights?（Hacker News）</li>
-        <li>GitHub Trending: Panniantong /
 
-      Agent-Reach（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>OpenAI will start watermarking ChatGPT&#8217;s text in the EU（TechCrunch）</li>
-        <li>Reflection debuts Beam, an open-weight AI model to rival Chinese models at lower compute cost（TechCrunch）</li>
-        <li>TikTok rolls out an AI shopping assistant and one-click checkout（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>谷歌Gemini 4突然发布！RSI加持，GPT和Opus都让让（量子位）</li>
-        <li>GPT-6要“吃掉”3D公司？这家公司不到2年ARR翻百倍，破1亿美元（量子位）</li>
-        <li>DeepSeek扩招！弹性计算团队大量HC，尤其需要资深工程师（量子位）</li>
-        <li>丘成桐新论文致谢了GPT和Claude（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
