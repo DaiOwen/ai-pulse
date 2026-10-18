@@ -5,10 +5,37 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 17 Oct 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <item>
+      <title>☀️ 午间版 — 2026-10-18（智谱新模型，懂法方面全球第一了 + 清华开源！智能体操作系统任务成本降83% + Meta removes languag）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-18-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-18-noon.html</guid>
+      <pubDate>Sun, 18 Oct 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>智谱新模型，懂法方面全球第一了（量子位）</li>
+        <li>清华特奖得主AI创业再+1：GeoPT一作入局物理世界模型（量子位）</li>
+        <li>霸榜三大基准！优必选 Thinker-WM：多模态统一表征，单模型实现六大能力（量子位）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Phishing emails are baiting your AI assistant（Hacker News）</li>
+        <li>Best Free GPU Cloud Options for AI Startups and Researchers（Hacker News）</li>
+        <li>What will AI do to our jobs and our wages? [video]（Hacker News）</li>
+        <li>What 500 MiniMax Code Tests Revealed About AI Saying "Done"（Hacker News）</li>
+        <li>GitHub Trending: MadsLorentzen /
+
+      ai-job-search（GitHub Trending）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>清华开源！智能体操作系统任务成本降83%，AI记忆可查可改（量子位）</li>
+        <li>范式智能联合睿思智联推出开源一站式  生产级 AI 部署平台 “模域ModelSphere”（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-10-17（清华特奖得主AI创业再+1：GeoPT一 + 范式智能联合睿思智联推出开源一站式  生 + Replit is no longer ）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-10-17-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-17-evening.html</guid>
@@ -344,50 +371,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-10-12（智谱新模型，490 tokens/s！ + 何恺明团队发布多模态Harness框架 + 联想天禧自研代码智能体TianxiCod + Can the AI industry ）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-12-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-12-evening.html</guid>
-      <pubDate>Mon, 12 Oct 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>智谱新模型，490 tokens/s！（量子位）</li>
-        <li>字节发现 DeepSeek 隐藏 Bug，加点空格，模型翻车（雷锋网）</li>
-        </ul>
-        <h3>🛠️ 工具 & 部署</h3><ul>
-        <li>联想天禧自研代码智能体TianxiCode斩获SWE-bench-Live全球第一（量子位）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>费莫一刘念邱：智驾无图的经验，也能迁移到机器人 | 物理AI 50人（雷锋网）</li>
-        <li>JEPA、空间智能路线正面交锋：WorldArena 2.0 挑战赛开考「能不能被机器人真正用起来」| IROS 2026（雷锋网）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>What's Dragging Down AI Efficiency? The 'Verification Tax.'（Hacker News）</li>
-        <li>As AI Closed in on 'Unique Games' Proof, Researchers Raced to Beat the Machines（Hacker News）</li>
-        <li>Show HN: Skills Hub, a desktop app for managing AI agent skills（Hacker News）</li>
-        <li>GitHub Trending: huggingface /
 
-      transformers（GitHub Trending）</li>
-        <li>GitHub Trending: MadsLorentzen /
-
-      ai-job-search（GitHub Trending）</li>
-        <li>GitHub Trending: Shubhamsaboo /
-
-      awesome-llm-apps（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Can the AI industry persuade data center opponents by getting rid of NDAs?（TechCrunch）</li>
-        <li>These execs think voice AI hasn&#8217;t reached its ChatGPT moment yet（TechCrunch）</li>
-        <li>Microsoft’s Satya Nadella says AI models need an ‘emergency brake’（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>何恺明团队发布多模态Harness框架（量子位）</li>
-        <li>openJiuwen发布并开源企业级AgentOS，加速智能体规模落地企业（量子位）</li>
-        <li>DeepSeek Bot来了！民间版，DSH装个插件就能用（量子位）</li>
-        <li>清华具身模型登顶全球第一！突围GPT-6、英伟达，不靠外挂和额外数据（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
