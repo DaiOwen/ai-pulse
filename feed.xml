@@ -5,10 +5,44 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 19 Oct 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <item>
+      <title>☀️ 午间版 — 2026-10-20（2026物理AI与世界模型大会医疗健康世 + 谷歌开源RSI新成果！华人浓度爆表 + AI硬件出海，别当“背景板”，GTC20 + Mamdani says feds ha）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-20-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-20-noon.html</guid>
+      <pubDate>Tue, 20 Oct 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>2026物理AI与世界模型大会医疗健康世界模型分会场在南京举行（量子位）</li>
+        <li>SonicBoom发布：AI框架告别手工调优（Solidot）</li>
+        <li>非主题 / 模拟器！网友成功让小米 Redmi Note 12 手机刷入 iOS 16 系统，项目同步开源（IT之家）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>AI硬件出海，别当“背景板”，GTC2026 Shanghai「AI硬件专区」邀你占位（量子位）</li>
+        </ul>
+        <h3>📜 政策 & 合规</h3><ul>
+        <li>金融监管总局：前三季度银行业对实体经济新增融资支持超20万亿元（钛媒体）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>从百比特芯片到整机交付，这家量子计算公司正将量子算力推向可调用服务（量子位）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>SKY‑001 ] the First Engineering World Model（Hacker News）</li>
+        <li>A Forgotten 1980 Reversible Computer, and the AI That Just Cut Quantum Costs 17x（Hacker News）</li>
+        <li>AWS CFO joked about the financial toll of AI. An internal recording reveals why（Hacker News）</li>
+        <li>Show HN: An Open Source Aircraft（Hacker News）</li>
+        <li>Textideo Director – an AI video creation tool for scenes, shots（Hacker News）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>谷歌开源RSI新成果！华人浓度爆表（量子位）</li>
+        <li>Claude新模型曝光！能跳出思维定势，修Bug治标又治本（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-10-19（日均6万亿Token服务背后，商汤大装置 + 谷歌开源RSI新成果！华人浓度爆表 + Anthropic says it’s ）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-10-19-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-19-evening.html</guid>
@@ -342,37 +376,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-10-15（阶跃终端首款「Agent手机」STEPX + STEPX首款大模型原生智能体手机STE + Ricursive Intelligen）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-15-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-15-noon.html</guid>
-      <pubDate>Thu, 15 Oct 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>阶跃终端首款「Agent手机」STEPX Neo正式发布，创客先行（量子位）</li>
-        <li>国内最年轻AI教授创业：要让世界模型走向全身全模态（量子位）</li>
-        <li>茶百道涉IPO欺诈，被暂停交易；字节Seed单独设立大模型安全与对齐部门；华为披露下一代麒麟芯片进展，已进入测试阶段丨雷峰早报（雷锋网）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>MemSilicon完成国际首款高密度、大容量1T4R 1Gb RRAM芯片流片（量子位）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Meta AI creates campaign material for Flávio Bolsonaro and blocks Lula content（Hacker News）</li>
-        <li>Will big software companies (like Adobe) come together to curb AI?（Hacker News）</li>
-        <li>Why Andrew Ng believes AI won't destroy humanity（Hacker News）</li>
-        <li>GitHub Trending: K-Dense-AI /
 
-      scientific-agent-skills（GitHub Trending）</li>
-        <li>GitHub Trending: ifixai-ai /
-
-      iFixAi（GitHub Trending）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>STEPX首款大模型原生智能体手机STEPX Neo正式发布（量子位）</li>
-        <li>有预言家！A社研究蓝图曝光，Claude Code来自5年前（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
