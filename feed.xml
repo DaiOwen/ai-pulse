@@ -5,10 +5,54 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 20 Oct 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <item>
+      <title>🌙 晚间版 — 2026-10-20（首Token延迟降低32.4%！是石科技 + Claude新模型曝光！能跳出思维定势， + AI硬件出海，别当“背景板”，GTC20 + Mamdani says feds ha）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-20-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-20-evening.html</guid>
+      <pubDate>Tue, 20 Oct 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>首Token延迟降低32.4%！是石科技集群调度大招，国产推理再提效（量子位）</li>
+        <li>Meshy推出Meshy Edit：基于全新自研AI模型，一句指令实现3D模型局部编辑（量子位）</li>
+        <li>2026物理AI与世界模型大会医疗健康世界模型分会场在南京举行（量子位）</li>
+        <li>SonicBoom发布：AI框架告别手工调优（Solidot）</li>
+        <li>苹果 iOS / iPadOS 27.2 RC 发布：Siri AI 再添 5 种语言、Apple Music 启用新视觉（IT之家）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>AI硬件出海，别当“背景板”，GTC2026 Shanghai「AI硬件专区」邀你占位（量子位）</li>
+        </ul>
+        <h3>📜 政策 & 合规</h3><ul>
+        <li>金融监管总局：前三季度银行业对实体经济新增融资支持超20万亿元（钛媒体）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>从百比特芯片到整机交付，这家量子计算公司正将量子算力推向可调用服务（量子位）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Show HN: AIExportHub – bulk export AI chats to Notion, Markdown, and PDF（Hacker News）</li>
+        <li>Reducing the cognitive load of AI changes（Hacker News）</li>
+        <li>I Talked to Workers at Amazon, Meta, & Microsoft About the AI Watching Them [video]（Hacker News）</li>
+        <li>GitHub Trending: headroomlabs-ai /
+
+      headroom（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Mamdani says feds have abdicated on AI, urges New Yorkers to push back（TechCrunch）</li>
+        <li>Nscale and Anthropic are reportedly in talks for yet another $45B compute deal（TechCrunch）</li>
+        <li>Embedded AI evaluators won&#8217;t be an easy solution, Hugging Face&#8217;s policy chief says（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>Claude新模型曝光！能跳出思维定势，修Bug治标又治本（量子位）</li>
+        <li>赛场交卷 未来已来——首届全球具身智能应用创新挑战赛暨2026中国机器人大赛闭幕（量子位）</li>
+        <li>赛豆首款AI汽车公告图公示，价格被按零件猜到了20万以上（量子位）</li>
+        <li>2028 款 iPhone 有望首发：消息称苹果重金锁定台积电 1.4 纳米首批产能（IT之家）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-10-20（2026物理AI与世界模型大会医疗健康世 + 谷歌开源RSI新成果！华人浓度爆表 + AI硬件出海，别当“背景板”，GTC20 + Mamdani says feds ha）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-10-20-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-20-noon.html</guid>
@@ -327,54 +371,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-10-15（阶跃终端首款「Agent手机」STEPX + STEPX首款大模型原生智能体手机STE + 2026 TMOT首个AI智能体走进电音 + Ricursive Intelligen）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-15-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-15-evening.html</guid>
-      <pubDate>Thu, 15 Oct 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>阶跃终端首款「Agent手机」STEPX Neo正式发布，创客先行（量子位）</li>
-        <li>破晓智能联合天珑移动发布 SeePhys Hub，推进全身全模态人类数据采集（雷锋网）</li>
-        <li>茶百道涉IPO欺诈，被暂停交易；字节Seed单独设立大模型安全与对齐部门；华为披露下一代麒麟芯片进展，已进入测试阶段丨雷峰早报（雷锋网）</li>
-        <li>NetBSD 成为反 AI 开发者青睐的开源操作系统（Solidot）</li>
-        <li>男子发布 AI 视频造谣问界，赛力斯起诉索赔百万元（IT之家）</li>
-        </ul>
-        <h3>🛠️ 工具 & 部署</h3><ul>
-        <li>2026 TMOT首个AI智能体走进电音现场，让听众成为音乐共创者（量子位）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Kerno 1.0 – AI Back End Runtime QA Engineer（Hacker News）</li>
-        <li>REA – I tested AI agent reverse engineering（Hacker News）</li>
-        <li>AI was great until it was not（Hacker News）</li>
-        <li>Step 5 Preview: Architecture and Training for Agentic Work（Hacker News）</li>
-        <li>Forensic Analysis of RL/RLHF-Induced Privilege Escalation in AI Agents（Hacker News）</li>
-        <li>GitHub Trending: K-Dense-AI /
 
-      scientific-agent-skills（GitHub Trending）</li>
-        <li>GitHub Trending: ifixai-ai /
-
-      iFixAi（GitHub Trending）</li>
-        <li>GitHub Trending: wshobson /
-
-      agents（GitHub Trending）</li>
-        <li>GitHub Trending: isair /
-
-      jarvis（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Ricursive Intelligence is betting on AI-designed chips to help solve the compute crisis（TechCrunch）</li>
-        <li>Deezer will soon let you filter out AI-generated music（TechCrunch）</li>
-        <li>Zenzap raises $44M for its AI chat app that aims to replace WhatsApp in the workplace（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>STEPX首款大模型原生智能体手机STEPX Neo正式发布（量子位）</li>
-        <li>有预言家！A社研究蓝图曝光，Claude Code来自5年前（量子位）</li>
-        <li>DeepSeek服务器全球宕机！神秘Harness账号同时现身（量子位）</li>
-        <li>AI时代，商学院这样培养未来商业领袖（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
