@@ -5,10 +5,56 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 21 Oct 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+      <title>🌙 晚间版 — 2026-10-21（首Token延迟降低32.4%！是石科技 + Claude新模型曝光！能跳出思维定势， + AI硬件出海，别当“背景板”，GTC20 + Anthropic pitches AI）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-21-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-21-evening.html</guid>
+      <pubDate>Wed, 21 Oct 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>首Token延迟降低32.4%！是石科技集群调度大招，国产推理再提效（量子位）</li>
+        <li>Meshy推出Meshy Edit：基于全新自研AI模型，一句指令实现3D模型局部编辑（量子位）</li>
+        <li>停止加薪！大众计划冻结全球大量员工薪酬至2030年；突发！美国发布DeepSeek禁令；马斯克：明年向全美儿童赠送SpaceX股票（雷锋网）</li>
+        <li>DeepSeek 宣布将内部推理框架 DeepInfer 全面开源，目标实现大模型普惠（IT之家）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>AI硬件出海，别当“背景板”，GTC2026 Shanghai「AI硬件专区」邀你占位（量子位）</li>
+        </ul>
+        <h3>📜 政策 & 合规</h3><ul>
+        <li>金融监管总局：前三季度银行业对实体经济新增融资支持超20万亿元（钛媒体）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Did Satoshi Get Bitcoin Wrong? Claude's NSA Discovery Sparks Debate（Hacker News）</li>
+        <li>PolicyWatcher – Independent monitor of privacy, ToS and AI policy changes（Hacker News）</li>
+        <li>Poketrade.ai: I got tired of using five Pokémon apps, so I built one（Hacker News）</li>
+        <li>GitHub Trending: headroomlabs-ai /
+
+      headroom（GitHub Trending）</li>
+        <li>GitHub Trending: vllm-project /
+
+      vllm（GitHub Trending）</li>
+        <li>GitHub Trending: abus-aikorea /
+
+      voice-pro（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Anthropic pitches AI safety bill that may block a model if 50+ people could be killed（TechCrunch）</li>
+        <li>Hugging Face CEO warns that Netflix&#8217;s OpenAI hack documentary isn&#8217;t accurate（TechCrunch）</li>
+        <li>Anthropic’s cloud partnerships are getting messy（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>Claude新模型曝光！能跳出思维定势，修Bug治标又治本（量子位）</li>
+        <li>LeCun押注的世界模型，中国一家清华系公司已经做进了机器人（量子位）</li>
+        <li>飞书豆包工作AI先锋未来人才大赛：企业正在争抢会用AI做成事的人（量子位）</li>
+        <li>国模Agent第一！MiniMax爆改Flash战力，全时段大肥鱼谷价（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-10-21（首Token延迟降低32.4%！是石科技 + Claude新模型曝光！能跳出思维定势， + AI硬件出海，别当“背景板”，GTC20 + Hugging Face CEO war）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-10-21-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-21-noon.html</guid>
@@ -337,47 +383,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-10-16（霸榜三大基准！优必选 Thinker-W + 范式智能联合睿思智联推出开源一站式  生 + When it came to Cal ）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-16-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-16-evening.html</guid>
-      <pubDate>Fri, 16 Oct 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>霸榜三大基准！优必选 Thinker-WM：多模态统一表征，单模型实现六大能力（量子位）</li>
-        <li>刚刚，Gemini 4终于来了：谷歌重回御三家，API限时半价（量子位）</li>
-        <li>破晓智能联合天珑移动发布 SeePhys Hub，推进全身全模态人类数据采集（雷锋网）</li>
-        <li>库克：苹果智能 Apple Intelligence 月底在华发布测试版本，但不包括 Siri AI（IT之家）</li>
-        <li>5999 元起：一加 16 手机正式发布，第六代骁龙 8 超级至尊版芯片、全球首发 185Hz 极速高刷（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>AI will lose to Human when it comes to gambling（Hacker News）</li>
-        <li>Show HN: WP Replai – AI chatbot built right into WordPress（Hacker News）</li>
-        <li>Mistral announces Timestral: SOTA time-series foundation models（Hacker News）</li>
-        <li>Kern – a zero-trust verification gateway for AI-generated code（Hacker News）</li>
-        <li>GitHub Trending: K-Dense-AI /
 
-      scientific-agent-skills（GitHub Trending）</li>
-        <li>GitHub Trending: ifixai-ai /
-
-      iFixAi（GitHub Trending）</li>
-        <li>GitHub Trending: bojieli /
-
-      ai-agent-book（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>When it came to Cal AI&#8217;s viral success, a small army of influencers paid off（TechCrunch）</li>
-        <li>Amazon devices chief Panos Panay sees a future where AI devices replace the need to use apps（TechCrunch）</li>
-        <li>Anthropic is letting METR researchers look under the hood with employee-level access（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>范式智能联合睿思智联推出开源一站式  生产级 AI 部署平台 “模域ModelSphere”（量子位）</li>
-        <li>超1亿元融资砸向四川具身科技！要把「情绪价值」卖进千家万户（量子位）</li>
-        <li>GPT证千禧年难题成果大反转！OpenAI自己没看懂就发…（量子位）</li>
-        <li>从“看懂世界”到“预演下一步”：世界模型与 VLA，如何让机器人拥有真正的“具身大脑”？（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
