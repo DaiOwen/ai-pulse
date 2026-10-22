@@ -5,10 +5,44 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 21 Oct 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <item>
+      <title>☀️ 午间版 — 2026-10-22（首Token延迟降低32.4%！是石科技 + Claude新模型曝光！能跳出思维定势， + AI硬件出海，别当“背景板”，GTC20 + Blackstone&#8217;s J）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-22-noon.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-22-noon.html</guid>
+      <pubDate>Thu, 22 Oct 2026 12:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>首Token延迟降低32.4%！是石科技集群调度大招，国产推理再提效（量子位）</li>
+        <li>Meshy推出Meshy Edit：基于全新自研AI模型，一句指令实现3D模型局部编辑（量子位）</li>
+        <li>停止加薪！大众计划冻结全球大量员工薪酬至2030年；突发！美国发布DeepSeek禁令；马斯克：明年向全美儿童赠送SpaceX股票（雷锋网）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>AI硬件出海，别当“背景板”，GTC2026 Shanghai「AI硬件专区」邀你占位（量子位）</li>
+        </ul>
+        <h3>📜 政策 & 合规</h3><ul>
+        <li>金融监管总局：前三季度银行业对实体经济新增融资支持超20万亿元（钛媒体）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>从百比特芯片到整机交付，这家量子计算公司正将量子算力推向可调用服务（量子位）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Ask HN: How has your company adapted interviews in the AI world?（Hacker News）</li>
+        <li>ML Drift: Next-Gen GPU AI/ML Inference at the Edge（Hacker News）</li>
+        <li>AI agent on your notch, equipped with his own computer（Hacker News）</li>
+        <li>Flapping Airplanes（Hacker News）</li>
+        <li>Nokia, T-Mobile and Nvidia complete first AI-RAN call（Hacker News）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>Claude新模型曝光！能跳出思维定势，修Bug治标又治本（量子位）</li>
+        <li>LeCun押注的世界模型，中国一家清华系公司已经做进了机器人（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-10-21（首Token延迟降低32.4%！是石科技 + Claude新模型曝光！能跳出思维定势， + AI硬件出海，别当“背景板”，GTC20 + Anthropic pitches AI）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-10-21-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-21-evening.html</guid>
@@ -346,42 +380,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-10-17（Meta 发布其开放权重模型 Muse  + 溢价上万元、首发秒售罄，AI也抢不到iP + 为了查“公园哪个门人最多”，一批腾讯AI + Replit is no longer ）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-17-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-17-noon.html</guid>
-      <pubDate>Sat, 17 Oct 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>Meta 发布其开放权重模型 Muse Spark Open（Solidot）</li>
-        <li>Google TurboQuant AI 压缩算法大幅减少大模型内存使用（Solidot）</li>
-        </ul>
-        <h3>🛠️ 工具 & 部署</h3><ul>
-        <li>为了查“公园哪个门人最多”，一批腾讯AI智能体，在高德上折腾了11天（钛媒体）</li>
-        <li>在智能体时代，谁的AI能调用更多真实世界的服务和信息，谁的入口就更有价值。（钛媒体）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>【数智周报】   英伟达CEO黄仁勋称会对开发不安全AI软件的客户断供芯片；字节跳动Seed单设安全与对齐部门;微软在AI改革中重组Azure云部门（钛媒体）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>AI engineers became hot property. Now they're targets for seduction（Hacker News）</li>
-        <li>Why Is Tech Billionaire Marc Andreessen So Mad?（Hacker News）</li>
-        <li>GitHub Trending: K-Dense-AI /
 
-      scientific-agent-skills（GitHub Trending）</li>
-        <li>GitHub Trending: MadsLorentzen /
-
-      ai-job-search（GitHub Trending）</li>
-        <li>GitHub Trending: ifixai-ai /
-
-      iFixAi（GitHub Trending）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>溢价上万元、首发秒售罄，AI也抢不到iPhone Duo（钛媒体）</li>
-        <li>14.8% 的 AI 商品，撑起全球贸易近半增量：买家集中在几家云厂商（钛媒体）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
