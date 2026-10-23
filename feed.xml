@@ -5,10 +5,45 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 23 Oct 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+      <title>🌙 晚间版 — 2026-10-23（又一国产决策模型发布！准确率超过微软和J + 高德发布首个基于开放世界行为的全身基座模 + OpenAI working on ne）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-23-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-23-evening.html</guid>
+      <pubDate>Fri, 23 Oct 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>又一国产决策模型发布！准确率超过微软和Jev等决策模型（量子位）</li>
+        <li>既能“做选择题”，也能“做填空题”——星辰意图理解模型Xing4.0-29B-Intent发布（量子位）</li>
+        </ul>
+        <h3>📜 政策 & 合规</h3><ul>
+        <li>金融监管总局：前三季度银行业对实体经济新增融资支持超20万亿元（钛媒体）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>GitHub Trending: vllm-project /
+
+      vllm（GitHub Trending）</li>
+        <li>GitHub Trending: headroomlabs-ai /
+
+      headroom（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>OpenAI working on new $30B raise at $1.25T valuation ahead of IPO（TechCrunch）</li>
+        <li>Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony.ai and Nvidia（TechCrunch）</li>
+        <li>Left alone with nothing to do, AI agents started playing（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>高德发布首个基于开放世界行为的全身基座模型λ0，推动机器人从“局部学习”迈向“全身动作对齐”（量子位）</li>
+        <li>百度世界2026前瞻：10+重磅分论坛，全面解码AI时代的智能组织进化路径（量子位）</li>
+        <li>LeCun押注的世界模型，中国一家清华系公司已经做进了机器人（量子位）</li>
+        <li>谁在给OpenAI供应具身数据？（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-10-23（又一国产决策模型发布！准确率超过微软和J + LeCun押注的世界模型，中国一家清华系 + OpenAI working on ne）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-10-23-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-23-noon.html</guid>
@@ -345,45 +380,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-10-18（智谱新模型，懂法方面全球第一了 + 清华开源！智能体操作系统任务成本降83% + Meta removes languag）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-18-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-18-evening.html</guid>
-      <pubDate>Sun, 18 Oct 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>智谱新模型，懂法方面全球第一了（量子位）</li>
-        <li>清华特奖得主AI创业再+1：GeoPT一作入局物理世界模型（量子位）</li>
-        <li>霸榜三大基准！优必选 Thinker-WM：多模态统一表征，单模型实现六大能力（量子位）</li>
-        <li>Meta 发布其开放权重模型 Muse Spark Open（Solidot）</li>
-        <li>5999 元起：一加 16 手机正式发布，第六代骁龙 8 超级至尊版芯片、全球首发 185Hz 极速高刷（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Abolish AI Manifesto (under construction)（Hacker News）</li>
-        <li>Show HN: Connecting Captions Local Private AI Interpreter（Hacker News）</li>
-        <li>AgentBlackBox – a policy gate and tamper-evident audit log for AI agents（Hacker News）</li>
-        <li>ArXiv versus AI slop: will capping preprint submissions work?（Hacker News）</li>
-        <li>Weights AI – AI Song Cover Generator（Hacker News）</li>
-        <li>GitHub Trending: MadsLorentzen /
 
-      ai-job-search（GitHub Trending）</li>
-        <li>GitHub Trending: K-Dense-AI /
-
-      scientific-agent-skills（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Meta removes language that raised scraping and AI training concerns（TechCrunch）</li>
-        <li>Anthropic says its workforce has become less junior and is spending more time in meetings（TechCrunch）</li>
-        <li>Replit makes OpenAI its default over Anthropic, CEO says（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>清华开源！智能体操作系统任务成本降83%，AI记忆可查可改（量子位）</li>
-        <li>范式智能联合睿思智联推出开源一站式  生产级 AI 部署平台 “模域ModelSphere”（量子位）</li>
-        <li>超1亿元融资砸向四川具身科技！要把「情绪价值」卖进千家万户（量子位）</li>
-        <li>端侧跑通超千亿大模型！联想YOGA Pro 15 RTX Spark超级AIPC今日正式发售（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
