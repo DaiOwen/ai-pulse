@@ -5,10 +5,55 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 25 Oct 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+      <title>🌙 晚间版 — 2026-10-25（又一国产决策模型发布！准确率超过微软和J + 高德发布首个基于开放世界行为的全身基座模 + The AI graveyard: a ）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-25-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-25-evening.html</guid>
+      <pubDate>Sun, 25 Oct 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>又一国产决策模型发布！准确率超过微软和Jev等决策模型（量子位）</li>
+        <li>既能“做选择题”，也能“做填空题”——星辰意图理解模型Xing4.0-29B-Intent发布（量子位）</li>
+        <li>一张5090跑起34B实时世界模型，国产玩家拿下英伟达大奖！（量子位）</li>
+        <li>国产5B生图模型海外突然爆火，4天超百万下载（量子位）</li>
+        <li>宁德时代董秘被打？知情人士回应；怕担责先跑路？娃哈哈集团董事长许思敏离职；DeepSeek完成近1000亿元融资，宁德时代、腾讯参投（雷锋网）</li>
+        </ul>
+        <h3>📜 政策 & 合规</h3><ul>
+        <li>金融监管总局：前三季度银行业对实体经济新增融资支持超20万亿元（钛媒体）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>AI: Predict, Retrieve, Generate, Recommend, Decide, Act, and Orchestrate（Hacker News）</li>
+        <li>The Surprising Popularity of AI（Hacker News）</li>
+        <li>Exploring Apple's On-Device Model: Twenty Billion Parameters in Flash（Hacker News）</li>
+        <li>The curious case of Nebius, publicly traded AI infrastructure 'startup' (2024)（Hacker News）</li>
+        <li>GitHub Trending: SnailSploit /
+
+      Claude-Red（GitHub Trending）</li>
+        <li>GitHub Trending: agentskills /
+
+      agentskills（GitHub Trending）</li>
+        <li>GitHub Trending: crewAIInc /
+
+      crewAI（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>The AI graveyard: a running list of projects and startups that didn&#8217;t make it（TechCrunch）</li>
+        <li>Block&#8217;s new voice model sounds eerily human（TechCrunch）</li>
+        <li>Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>高德发布首个基于开放世界行为的全身基座模型λ0，推动机器人从“局部学习”迈向“全身动作对齐”（量子位）</li>
+        <li>百度世界2026前瞻：10+重磅分论坛，全面解码AI时代的智能组织进化路径（量子位）</li>
+        <li>南京物理AI上大分！三位图灵奖得主发声，50个应用场景亮相（量子位）</li>
+        <li>LeCun押注的世界模型，中国一家清华系公司已经做进了机器人（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-10-25（又一国产决策模型发布！准确率超过微软和J + 高德发布首个基于开放世界行为的全身基座模 + The AI graveyard: a ）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-10-25-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-25-noon.html</guid>
@@ -336,49 +381,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-10-20（首Token延迟降低32.4%！是石科技 + Claude新模型曝光！能跳出思维定势， + AI硬件出海，别当“背景板”，GTC20 + Mamdani says feds ha）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-20-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-20-evening.html</guid>
-      <pubDate>Tue, 20 Oct 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>首Token延迟降低32.4%！是石科技集群调度大招，国产推理再提效（量子位）</li>
-        <li>Meshy推出Meshy Edit：基于全新自研AI模型，一句指令实现3D模型局部编辑（量子位）</li>
-        <li>2026物理AI与世界模型大会医疗健康世界模型分会场在南京举行（量子位）</li>
-        <li>SonicBoom发布：AI框架告别手工调优（Solidot）</li>
-        <li>苹果 iOS / iPadOS 27.2 RC 发布：Siri AI 再添 5 种语言、Apple Music 启用新视觉（IT之家）</li>
-        </ul>
-        <h3>🛠️ 工具 & 部署</h3><ul>
-        <li>AI硬件出海，别当“背景板”，GTC2026 Shanghai「AI硬件专区」邀你占位（量子位）</li>
-        </ul>
-        <h3>📜 政策 & 合规</h3><ul>
-        <li>金融监管总局：前三季度银行业对实体经济新增融资支持超20万亿元（钛媒体）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>从百比特芯片到整机交付，这家量子计算公司正将量子算力推向可调用服务（量子位）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Show HN: AIExportHub – bulk export AI chats to Notion, Markdown, and PDF（Hacker News）</li>
-        <li>Reducing the cognitive load of AI changes（Hacker News）</li>
-        <li>I Talked to Workers at Amazon, Meta, & Microsoft About the AI Watching Them [video]（Hacker News）</li>
-        <li>GitHub Trending: headroomlabs-ai /
 
-      headroom（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Mamdani says feds have abdicated on AI, urges New Yorkers to push back（TechCrunch）</li>
-        <li>Nscale and Anthropic are reportedly in talks for yet another $45B compute deal（TechCrunch）</li>
-        <li>Embedded AI evaluators won&#8217;t be an easy solution, Hugging Face&#8217;s policy chief says（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>Claude新模型曝光！能跳出思维定势，修Bug治标又治本（量子位）</li>
-        <li>赛场交卷 未来已来——首届全球具身智能应用创新挑战赛暨2026中国机器人大赛闭幕（量子位）</li>
-        <li>赛豆首款AI汽车公告图公示，价格被按零件猜到了20万以上（量子位）</li>
-        <li>2028 款 iPhone 有望首发：消息称苹果重金锁定台积电 1.4 纳米首批产能（IT之家）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
