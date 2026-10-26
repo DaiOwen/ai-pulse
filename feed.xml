@@ -5,10 +5,56 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 26 Oct 2026 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <item>
+      <title>🌙 晚间版 — 2026-10-26（无问芯穹与三体宇宙联合发布智子Agent + 长安汽车赵非：汽车将成为端侧物理AI规模 + Grok releases the fi）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-26-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-26-evening.html</guid>
+      <pubDate>Mon, 26 Oct 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>无问芯穹与三体宇宙联合发布智子Agent 1.0（量子位）</li>
+        <li>一张5090跑起34B实时世界模型，国产玩家拿下英伟达大奖！（量子位）</li>
+        <li>国产5B生图模型海外突然爆火，4天超百万下载（量子位）</li>
+        <li>宁德时代董秘被打？知情人士回应；怕担责先跑路？娃哈哈集团董事长许思敏离职；DeepSeek完成近1000亿元融资，宁德时代、腾讯参投（雷锋网）</li>
+        <li>覆盖存、拣、运全场景，海康机器人2026移动机器人新品发布会举行（雷锋网）</li>
+        </ul>
+        <h3>📜 政策 & 合规</h3><ul>
+        <li>金融监管总局：前三季度银行业对实体经济新增融资支持超20万亿元（钛媒体）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Two AI Chipmakers Make Up 34% of America's Earnings Boom（Hacker News）</li>
+        <li>SpaceX closed $40B in GPU debt, debt markets shut off credit for AI datacenters（Hacker News）</li>
+        <li>Show HN: Load-lock, a machine-wide semaphore for parallel AI coding agents（Hacker News）</li>
+        <li>What happens to old AI GPUs?（Hacker News）</li>
+        <li>AI Testing: How to Build Reliable Production AI Systems（Hacker News）</li>
+        <li>GitHub Trending: TauricResearch /
+
+      TradingAgents（GitHub Trending）</li>
+        <li>GitHub Trending: Shubhamsaboo /
+
+      awesome-llm-apps（GitHub Trending）</li>
+        <li>GitHub Trending: HKUDS /
+
+      DeepTutor（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Grok releases the first seven minutes of its AI-generated ‘Odyssey’（TechCrunch）</li>
+        <li>AI delivers ‘zero financial payoff’ to most companies, Apollo economist says（TechCrunch）</li>
+        <li>The hottest AI wearables and gadgets you should know about（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>长安汽车赵非：汽车将成为端侧物理AI规模最大的应用载体 | 2026世界智能网联汽车大会（量子位）</li>
+        <li>马斯克给机器人建了个学校！腾出百万车型产线来量产（量子位）</li>
+        <li>物理AI怎么“击穿”场景落地？宇树生态大会上的钢铁答案（量子位）</li>
+        <li>从“言传身教”到“触类旁通”：AI既需要“名师指引”，也需要“自我修行”（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>☀️ 午间版 — 2026-10-26（又一国产决策模型发布！准确率超过微软和J + 高德发布首个基于开放世界行为的全身基座模 + Grok releases the fi）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-10-26-noon.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-26-noon.html</guid>
@@ -333,51 +379,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-10-21（首Token延迟降低32.4%！是石科技 + Claude新模型曝光！能跳出思维定势， + AI硬件出海，别当“背景板”，GTC20 + Anthropic pitches AI）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-21-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-21-evening.html</guid>
-      <pubDate>Wed, 21 Oct 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>首Token延迟降低32.4%！是石科技集群调度大招，国产推理再提效（量子位）</li>
-        <li>Meshy推出Meshy Edit：基于全新自研AI模型，一句指令实现3D模型局部编辑（量子位）</li>
-        <li>停止加薪！大众计划冻结全球大量员工薪酬至2030年；突发！美国发布DeepSeek禁令；马斯克：明年向全美儿童赠送SpaceX股票（雷锋网）</li>
-        <li>DeepSeek 宣布将内部推理框架 DeepInfer 全面开源，目标实现大模型普惠（IT之家）</li>
-        </ul>
-        <h3>🛠️ 工具 & 部署</h3><ul>
-        <li>AI硬件出海，别当“背景板”，GTC2026 Shanghai「AI硬件专区」邀你占位（量子位）</li>
-        </ul>
-        <h3>📜 政策 & 合规</h3><ul>
-        <li>金融监管总局：前三季度银行业对实体经济新增融资支持超20万亿元（钛媒体）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Did Satoshi Get Bitcoin Wrong? Claude's NSA Discovery Sparks Debate（Hacker News）</li>
-        <li>PolicyWatcher – Independent monitor of privacy, ToS and AI policy changes（Hacker News）</li>
-        <li>Poketrade.ai: I got tired of using five Pokémon apps, so I built one（Hacker News）</li>
-        <li>GitHub Trending: headroomlabs-ai /
 
-      headroom（GitHub Trending）</li>
-        <li>GitHub Trending: vllm-project /
-
-      vllm（GitHub Trending）</li>
-        <li>GitHub Trending: abus-aikorea /
-
-      voice-pro（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Anthropic pitches AI safety bill that may block a model if 50+ people could be killed（TechCrunch）</li>
-        <li>Hugging Face CEO warns that Netflix&#8217;s OpenAI hack documentary isn&#8217;t accurate（TechCrunch）</li>
-        <li>Anthropic’s cloud partnerships are getting messy（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>Claude新模型曝光！能跳出思维定势，修Bug治标又治本（量子位）</li>
-        <li>LeCun押注的世界模型，中国一家清华系公司已经做进了机器人（量子位）</li>
-        <li>飞书豆包工作AI先锋未来人才大赛：企业正在争抢会用AI做成事的人（量子位）</li>
-        <li>国模Agent第一！MiniMax爆改Flash战力，全时段大肥鱼谷价（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
