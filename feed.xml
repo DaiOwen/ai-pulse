@@ -5,10 +5,56 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 27 Oct 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <item>
+      <title>🌙 晚间版 — 2026-10-28（钛动科技发布行业首个Pro-Agent, + 国产AI 3D大模型Hi3D来了！开源可 + VCs will make billio）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-28-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-28-evening.html</guid>
+      <pubDate>Wed, 28 Oct 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>钛动科技发布行业首个Pro-Agent, Navos Pro定义结果导向的AI for Work | TGC 2026科技增长大会（量子位）</li>
+        <li>Reddit 开源社区争议是否禁止 AI（Solidot）</li>
+        <li>苹果 iPad mini 8 发布（IT之家）</li>
+        </ul>
+        <h3>📜 政策 & 合规</h3><ul>
+        <li>金融监管总局：前三季度银行业对实体经济新增融资支持超20万亿元（钛媒体）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>长鑫拒绝苹果等海外订单，优先保障国内存储芯片需求；Anthropic公开上市申请，最快11月中旬上市；周畅被曝离职？接近字节人士回应（雷锋网）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Fashion Week's Response to AI Fatigue? A Distinctly Human Sloppiness（Hacker News）</li>
+        <li>Show HN: SelfClaw – Self-hosted multi-model AI chat with OpenAI-compatible API（Hacker News）</li>
+        <li>AICC: Free AI certifications, technical courses, and learning resources（Hacker News）</li>
+        <li>I ran each AI coding-agent sandbox's own tests against the others（Hacker News）</li>
+        <li>GitHub Trending: Panniantong /
+
+      Agent-Reach（GitHub Trending）</li>
+        <li>GitHub Trending: TauricResearch /
+
+      TradingAgents（GitHub Trending）</li>
+        <li>GitHub Trending: rohitg00 /
+
+      ai-engineering-from-scratch（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>VCs will make billions on Anthropic&#8217;s IPO, but Amazon is set to make much (much) more（TechCrunch）</li>
+        <li>Who&#8217;s really in charge at Anthropic after the IPO?（TechCrunch）</li>
+        <li>Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>国产AI 3D大模型Hi3D来了！开源可商用，PK干掉GPT-6（量子位）</li>
+        <li>Personal Agent走向真实任务，蚂蚁百灵开源 Ling-3.1-flash-1019（量子位）</li>
+        <li>不藏了！人形机器人全开源动真格，从机械结构一路拆到运动算法（量子位）</li>
+        <li>KV Cache被压成常数！OCR开源新王：页数没上限，缓存砍96%（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-10-27（钛动科技发布行业首个Pro-Agent, + 国产AI 3D大模型Hi3D来了！开源可 + Anthropic’s IPO fili）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-10-27-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-27-evening.html</guid>
@@ -347,37 +393,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>☀️ 午间版 — 2026-10-23（又一国产决策模型发布！准确率超过微软和J + LeCun押注的世界模型，中国一家清华系 + OpenAI working on ne）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-23-noon.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-23-noon.html</guid>
-      <pubDate>Fri, 23 Oct 2026 12:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>又一国产决策模型发布！准确率超过微软和Jev等决策模型（量子位）</li>
-        <li>既能“做选择题”，也能“做填空题”——星辰意图理解模型Xing4.0-29B-Intent发布（量子位）</li>
-        <li>首Token延迟降低32.4%！是石科技集群调度大招，国产推理再提效（量子位）</li>
-        </ul>
-        <h3>📜 政策 & 合规</h3><ul>
-        <li>金融监管总局：前三季度银行业对实体经济新增融资支持超20万亿元（钛媒体）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>AI Agents Kinda Broke the Internet（Hacker News）</li>
-        <li>The Signal Chats That Cost OpenAI Researchers Their Jobs（Hacker News）</li>
-        <li>AI RSS reader with summaries – Brew beta（Hacker News）</li>
-        <li>GitHub Trending: vllm-project /
 
-      vllm（GitHub Trending）</li>
-        <li>GitHub Trending: headroomlabs-ai /
-
-      headroom（GitHub Trending）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>LeCun押注的世界模型，中国一家清华系公司已经做进了机器人（量子位）</li>
-        <li>谁在给OpenAI供应具身数据？（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
