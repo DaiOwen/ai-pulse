@@ -5,10 +5,51 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 03 Nov 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+      <title>🌙 晚间版 — 2026-11-04（模型谁都买得到，拉开差距的是AI生产力系 + 小米开源了个150元的AI小玩意，火到配 + AI数据平台OceanBase获世界互联 + Anthropic is working）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-11-04-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-04-evening.html</guid>
+      <pubDate>Wed, 04 Nov 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>模型谁都买得到，拉开差距的是AI生产力系统（量子位）</li>
+        <li>小米斩获乌镇峰会双料大奖：小米集团获“杰出贡献奖”，小米具身基座模型获“领先科技奖”（量子位）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>AI数据平台OceanBase获世界互联网大会杰出贡献奖（量子位）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>GPT-Synopsys Combines IC Design EDA with Agentic AI（Hacker News）</li>
+        <li>Engraphis – Local-first, bi-temporal memory for AI coding agents（Hacker News）</li>
+        <li>I built a free local AI co-processor in Rust. AXON Developer Edition（Hacker News）</li>
+        <li>GitHub Trending: Usagi-org /
+
+      ai-goofish-monitor（GitHub Trending）</li>
+        <li>GitHub Trending: karpathy /
+
+      nanochat（GitHub Trending）</li>
+        <li>GitHub Trending: agent0ai /
+
+      agent-zero（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Anthropic is working on a system to prove AI models&#8217; identity（TechCrunch）</li>
+        <li>Data centers are turning to old jet engines as the wait for power grows（TechCrunch）</li>
+        <li>Ted Schlein&#8217;s Ballistic Ventures seeks $490M for new funds amid AI-driven cybersecurity boom（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>小米开源了个150元的AI小玩意，火到配件都涨价了（量子位）</li>
+        <li>OpenAI重写大模型法则，第一条：忠于人类！！（量子位）</li>
+        <li>GPT-6.2 Astra开启灰测！Claude Mythos 5.5同日曝光（量子位）</li>
+        <li>让Agent首次拥有“视听双流记忆”：openJiuwen Agent-Memory看懂长视频，关键事件一个不落（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-11-03（小米斩获乌镇峰会双料大奖：小米集团获“杰 + 刚刚，DeepSeek重磅开源：Agen + AI数据平台OceanBase获世界互联 + Google takes Dreambe）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-11-03-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-03-evening.html</guid>
@@ -386,51 +427,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-10-26（无问芯穹与三体宇宙联合发布智子Agent + 长安汽车赵非：汽车将成为端侧物理AI规模 + Grok releases the fi）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-26-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-26-evening.html</guid>
-      <pubDate>Mon, 26 Oct 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>无问芯穹与三体宇宙联合发布智子Agent 1.0（量子位）</li>
-        <li>一张5090跑起34B实时世界模型，国产玩家拿下英伟达大奖！（量子位）</li>
-        <li>国产5B生图模型海外突然爆火，4天超百万下载（量子位）</li>
-        <li>宁德时代董秘被打？知情人士回应；怕担责先跑路？娃哈哈集团董事长许思敏离职；DeepSeek完成近1000亿元融资，宁德时代、腾讯参投（雷锋网）</li>
-        <li>覆盖存、拣、运全场景，海康机器人2026移动机器人新品发布会举行（雷锋网）</li>
-        </ul>
-        <h3>📜 政策 & 合规</h3><ul>
-        <li>金融监管总局：前三季度银行业对实体经济新增融资支持超20万亿元（钛媒体）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Two AI Chipmakers Make Up 34% of America's Earnings Boom（Hacker News）</li>
-        <li>SpaceX closed $40B in GPU debt, debt markets shut off credit for AI datacenters（Hacker News）</li>
-        <li>Show HN: Load-lock, a machine-wide semaphore for parallel AI coding agents（Hacker News）</li>
-        <li>What happens to old AI GPUs?（Hacker News）</li>
-        <li>AI Testing: How to Build Reliable Production AI Systems（Hacker News）</li>
-        <li>GitHub Trending: TauricResearch /
 
-      TradingAgents（GitHub Trending）</li>
-        <li>GitHub Trending: Shubhamsaboo /
-
-      awesome-llm-apps（GitHub Trending）</li>
-        <li>GitHub Trending: HKUDS /
-
-      DeepTutor（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Grok releases the first seven minutes of its AI-generated ‘Odyssey’（TechCrunch）</li>
-        <li>AI delivers ‘zero financial payoff’ to most companies, Apollo economist says（TechCrunch）</li>
-        <li>The hottest AI wearables and gadgets you should know about（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>长安汽车赵非：汽车将成为端侧物理AI规模最大的应用载体 | 2026世界智能网联汽车大会（量子位）</li>
-        <li>马斯克给机器人建了个学校！腾出百万车型产线来量产（量子位）</li>
-        <li>物理AI怎么“击穿”场景落地？宇树生态大会上的钢铁答案（量子位）</li>
-        <li>从“言传身教”到“触类旁通”：AI既需要“名师指引”，也需要“自我修行”（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
