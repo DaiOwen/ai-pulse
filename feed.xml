@@ -5,10 +5,60 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 06 Nov 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <item>
+      <title>🌙 晚间版 — 2026-11-07（阿里巴巴发布《2026 AI向善行动报告 + 腾讯 Hy4 调用激增已十倍扩容，Age + 阶跃终端 STEPX Neo 智能体手机 + Crusoe sells trouble）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-11-07-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-07-evening.html</guid>
+      <pubDate>Sat, 07 Nov 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>阿里巴巴发布《2026 AI向善行动报告》 AI数据中心可持续发展成年度亮点（量子位）</li>
+        <li>A\三大内部模型曝光！领先Opus5.5三个月，RSI缩短80%实验时间（量子位）</li>
+        </ul>
+        <h3>🛠️ 工具 & 部署</h3><ul>
+        <li>阶跃终端 STEPX Neo 智能体手机亮相进博会高通展台，软硬模一体打造智能体新体验（量子位）</li>
+        <li>在守好文化规则、合规底线的基础上，企业要善用大湾区“科技+金融”的超级协同网络，在金融资本搭台，AI技术与智能体助力下，直接跃向更广阔的全球化市场。（钛媒体）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>美股过山车式暴跌，芯片股遭“血洗”（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Show HN: Help me pick a logo animation for my in-browser AI creature game（Hacker News）</li>
+        <li>Quantum Computers Are Poised to Crack Encryption. AI Could Beat Them to It（Hacker News）</li>
+        <li>The AI Business Model Just Collapsed（Hacker News）</li>
+        <li>Show HN: Backwords – Let AI teach you how to speak in reverse（Hacker News）</li>
+        <li>YC Backed Bron AI Accused of Using LeBron's Name and Likeness（Hacker News）</li>
+        <li>GitHub Trending: NVIDIA /
+
+      TensorRT-LLM（GitHub Trending）</li>
+        <li>GitHub Trending: apache /
+
+      airflow（GitHub Trending）</li>
+        <li>GitHub Trending: airbytehq /
+
+      airbyte（GitHub Trending）</li>
+        <li>GitHub Trending: pipeshub-ai /
+
+      pipeshub-ai（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Crusoe sells troubled Wyoming data center project to Google（TechCrunch）</li>
+        <li>OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation（TechCrunch）</li>
+        <li>Hundreds of Artex AI hacking tools found publicly exposed to the web（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>腾讯 Hy4 调用激增已十倍扩容，Agent 能力开源模型第一（量子位）</li>
+        <li>抢跑DeepSeek！硅谷华人把下一代Agent Harness造出来了！？（量子位）</li>
+        <li>DeepSeek带火稀疏计算，国产芯片公司加速突围：这家公司又融近10亿（量子位）</li>
+        <li>为什么每个 Personal Agent 背后，都必须配备一台“云电脑”？（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-11-06（三条AI技术路线终将合流？智象创始人梅涛 + 腾讯 Hy4 调用激增已十倍扩容，Age + OpenAI president Gre）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-11-06-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-06-evening.html</guid>
@@ -390,51 +440,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-10-28（钛动科技发布行业首个Pro-Agent, + 国产AI 3D大模型Hi3D来了！开源可 + VCs will make billio）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-10-28-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-10-28-evening.html</guid>
-      <pubDate>Wed, 28 Oct 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>钛动科技发布行业首个Pro-Agent, Navos Pro定义结果导向的AI for Work | TGC 2026科技增长大会（量子位）</li>
-        <li>Reddit 开源社区争议是否禁止 AI（Solidot）</li>
-        <li>苹果 iPad mini 8 发布（IT之家）</li>
-        </ul>
-        <h3>📜 政策 & 合规</h3><ul>
-        <li>金融监管总局：前三季度银行业对实体经济新增融资支持超20万亿元（钛媒体）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>长鑫拒绝苹果等海外订单，优先保障国内存储芯片需求；Anthropic公开上市申请，最快11月中旬上市；周畅被曝离职？接近字节人士回应（雷锋网）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Fashion Week's Response to AI Fatigue? A Distinctly Human Sloppiness（Hacker News）</li>
-        <li>Show HN: SelfClaw – Self-hosted multi-model AI chat with OpenAI-compatible API（Hacker News）</li>
-        <li>AICC: Free AI certifications, technical courses, and learning resources（Hacker News）</li>
-        <li>I ran each AI coding-agent sandbox's own tests against the others（Hacker News）</li>
-        <li>GitHub Trending: Panniantong /
 
-      Agent-Reach（GitHub Trending）</li>
-        <li>GitHub Trending: TauricResearch /
-
-      TradingAgents（GitHub Trending）</li>
-        <li>GitHub Trending: rohitg00 /
-
-      ai-engineering-from-scratch（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>VCs will make billions on Anthropic&#8217;s IPO, but Amazon is set to make much (much) more（TechCrunch）</li>
-        <li>Who&#8217;s really in charge at Anthropic after the IPO?（TechCrunch）</li>
-        <li>Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>国产AI 3D大模型Hi3D来了！开源可商用，PK干掉GPT-6（量子位）</li>
-        <li>Personal Agent走向真实任务，蚂蚁百灵开源 Ling-3.1-flash-1019（量子位）</li>
-        <li>不藏了！人形机器人全开源动真格，从机械结构一路拆到运动算法（量子位）</li>
-        <li>KV Cache被压成常数！OCR开源新王：页数没上限，缓存砍96%（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
