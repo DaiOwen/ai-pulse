@@ -5,10 +5,54 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 10 Nov 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <item>
+      <title>🌙 晚间版 — 2026-11-11（百度文心首次披露RSI进展：ERNIE  + 英伟达机器人开源撞上Fable 5.2发 + All 7 Anthropic foun）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-11-11-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-11-evening.html</guid>
+      <pubDate>Wed, 11 Nov 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>百度文心首次披露RSI进展：ERNIE Evolve已用于最新模型研发，文心5.5 Flash 或将近期发布（量子位）</li>
+        <li>云深处发布全新四足机器人  实现50Kg大负载、复杂地形作业（雷锋网）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>从芯片到千比特整机，超导量子计算还有一场硬仗（量子位）</li>
+        <li>升腾资讯 &#215; 华为全球首发“双旗舰新品”：鸿蒙 HarmonyOS 台式机 + 笔记本，均搭载麒麟 X90 芯片（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>The Unexpected AI Stack: C# + .NET（Hacker News）</li>
+        <li>Cognizant dedicates more than 25000 professionals to Claude delivery（Hacker News）</li>
+        <li>The AI Arms Race Is Not Inevitable. It's Just Profitable（Hacker News）</li>
+        <li>My AI Agents Found an Unmapped Maya Site in Mexico（Hacker News）</li>
+        <li>AI Coding CLI Tools to Try Beyond Claude Code and Codex（Hacker News）</li>
+        <li>GitHub Trending: homeassistant-ai /
+
+      ha-mcp（GitHub Trending）</li>
+        <li>GitHub Trending: ashishpatel26 /
+
+      500-AI-Agents-Projects（GitHub Trending）</li>
+        <li>GitHub Trending: ZhuLinsen /
+
+      daily_stock_analysis（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>All 7 Anthropic founders will each cash out about $250M in IPO（TechCrunch）</li>
+        <li>OpenAI acquires Odessia, travel startup created by Sonder founder（TechCrunch）</li>
+        <li>OpenAI, Anthropic face new oversight as New York’s AI safety law takes effect（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>英伟达机器人开源撞上Fable 5.2发布！Jim Fan：不是寒冬是夏天（量子位）</li>
+        <li>从“一脑多机”到“一脑多手”，蚂蚁灵波开源LingBot-Touch触觉基础模型（量子位）</li>
+        <li>Agent自演进驶入“双轨时代”！openJiuwen首发TTSE经验学习框架（量子位）</li>
+        <li>成立四个月，融资过亿美金：TensorWorld物原科技要跑通“物理真实”路线（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-11-10（百度文心首次披露RSI进展：ERNIE  + 腾讯混元跻身最强开源模型！一手实测Hy4 + Anthropic reportedly）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-11-10-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-10-evening.html</guid>
@@ -393,53 +437,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-11-01（“超能模式”重磅登场！联想天禧AI 4. + 刚刚，DeepSeek重磅开源：Agen + Apple CEO says the c）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-11-01-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-01-evening.html</guid>
-      <pubDate>Sun, 01 Nov 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>“超能模式”重磅登场！联想天禧AI 4.5全端升级，三大场景打造“职场超能搭档”（量子位）</li>
-        <li>百度 APP 发布四大 AI 升级，搜索已实现递归自我进化（量子位）</li>
-        <li>世界模型首次指导设计芯片！超大核NPU700TOPS，99%算力可用（量子位）</li>
-        <li>让触觉像视觉一样可规模化，哥大李昀烛团队 FlexiTac 的开源实践 | IROS 2026（雷锋网）</li>
-        <li>5499 元起：苹果发布 iPad mini 8 平板，8.5 寸 60Hz OLED 屏、A20 Pro 芯片、支持 IP67 防尘防水（IT之家）</li>
-        </ul>
-        <h3>📜 政策 & 合规</h3><ul>
-        <li>金融监管总局：前三季度银行业对实体经济新增融资支持超20万亿元（钛媒体）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Computerized clairvoyance: psychics push back against AI-generated readings（Hacker News）</li>
-        <li>Meridian: A peer-to-peer browser game world built by an AI agent（Hacker News）</li>
-        <li>The AI boom spawns job market for data-center liaisons（Hacker News）</li>
-        <li>I recreated subvocal in 9 minutes with one prompt for AirPods Pro 3（Hacker News）</li>
-        <li>GitHub Trending: 0x0funky /
 
-      agent-sprite-forge（GitHub Trending）</li>
-        <li>GitHub Trending: The-PR-Agent /
-
-      pr-agent（GitHub Trending）</li>
-        <li>GitHub Trending: ethanplusai /
-
-      harvey（GitHub Trending）</li>
-        <li>GitHub Trending: sngyai /
-
-      Sequoia-X（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’（TechCrunch）</li>
-        <li>Judge allows NAACP lawsuit over xAI data center pollution to move forward（TechCrunch）</li>
-        <li>OpenAI reportedly lowers funding target for new round（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>刚刚，DeepSeek重磅开源：Agent底座架构！（量子位）</li>
-        <li>英伟达团队基于 MiniMax H3 开源视频增强方案，最高支持 4K 重生成（量子位）</li>
-        <li>RSI立大功！国产开源登顶全球第一，1.3B OXR重塑OCR（量子位）</li>
-        <li>刚刚，Claude宣布取消5小时限制！首批Ultra用户已「解封」（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
