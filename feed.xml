@@ -5,10 +5,50 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 11 Nov 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+      <title>🌙 晚间版 — 2026-11-12（低调追赶的文心，一口气打出了快、省、开源 + 英伟达机器人开源撞上Fable 5.2发 + Jensen Huang accused）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-11-12-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-12-evening.html</guid>
+      <pubDate>Thu, 12 Nov 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>低调追赶的文心，一口气打出了快、省、开源三张牌（雷锋网）</li>
+        <li>突发！黄仁勋被曝与高管有新婚外情，英伟达启动罢免，猎头已物色其接班人；百度发布文心全新开源模型；余承东官宣华为子品牌「星芒」（雷锋网）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>从芯片到千比特整机，超导量子计算还有一场硬仗（量子位）</li>
+        <li>和大疆抢食，这家公司做了台桌面摄影机器人（雷锋网）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>AI is getting smarter. Are we thinking better?（Hacker News）</li>
+        <li>What benefit does a San Francisco HQ offer if you are not a frontier AI lab?（Hacker News）</li>
+        <li>Job Finding and Unemployment in the Age of AI（Hacker News）</li>
+        <li>Why AI Coding Agents Lose Context After the PR, and How to Keep It（Hacker News）</li>
+        <li>GitHub Trending: homeassistant-ai /
+
+      ha-mcp（GitHub Trending）</li>
+        <li>GitHub Trending: soxoj /
+
+      maigret（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Jensen Huang accused of having another affair — with an Nvidia exec（TechCrunch）</li>
+        <li>Meta is losing its longtime head of  infrastructure（TechCrunch）</li>
+        <li>CoreWeave turns to customer prepayments, shorter contracts to fund AI growth（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>英伟达机器人开源撞上Fable 5.2发布！Jim Fan：不是寒冬是夏天（量子位）</li>
+        <li>从“一脑多机”到“一脑多手”，蚂蚁灵波开源LingBot-Touch触觉基础模型（量子位）</li>
+        <li>Agent自演进驶入“双轨时代”！openJiuwen首发TTSE经验学习框架（量子位）</li>
+        <li>成立四个月，融资过亿美金：TensorWorld物原科技要跑通“物理真实”路线（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-11-11（百度文心首次披露RSI进展：ERNIE  + 英伟达机器人开源撞上Fable 5.2发 + All 7 Anthropic foun）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-11-11-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-11-evening.html</guid>
@@ -388,54 +428,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-11-02（“超能模式”重磅登场！联想天禧AI 4. + 刚刚，DeepSeek重磅开源：Agen + OpenAI might rebrand）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-11-02-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-02-evening.html</guid>
-      <pubDate>Mon, 02 Nov 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>“超能模式”重磅登场！联想天禧AI 4.5全端升级，三大场景打造“职场超能搭档”（量子位）</li>
-        <li>百度 APP 发布四大 AI 升级，搜索已实现递归自我进化（量子位）</li>
-        <li>清华姚期智团队新作：代数世界模型，让AI像牛顿一样思考（量子位）</li>
-        <li>世界模型首次指导设计芯片！超大核NPU700TOPS，99%算力可用（量子位）</li>
-        <li>让触觉像视觉一样可规模化，哥大李昀烛团队 FlexiTac 的开源实践 | IROS 2026（雷锋网）</li>
-        </ul>
-        <h3>📜 政策 & 合规</h3><ul>
-        <li>金融监管总局：前三季度银行业对实体经济新增融资支持超20万亿元（钛媒体）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Midgarth Quest. Browser-Playable Mmorpg Written by AI（Hacker News）</li>
-        <li>Asking my AI teacher how to spell seventeen（Hacker News）</li>
-        <li>What happens when the AI money loop breaks?（Hacker News）</li>
-        <li>Show HN: Arken – cryptographic identity for AI agents calling MCP servers/APIs（Hacker News）</li>
-        <li>The Economic Paradox of AI-Generated Software（Hacker News）</li>
-        <li>GitHub Trending: beenuar /
 
-      AiSOC（GitHub Trending）</li>
-        <li>GitHub Trending: FlashML-org /
-
-      FreeToken（GitHub Trending）</li>
-        <li>GitHub Trending: ifixai-ai /
-
-      iFixAi（GitHub Trending）</li>
-        <li>GitHub Trending: ethanplusai /
-
-      harvey（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>OpenAI might rebrand its data centers as ‘AI compute campuses’（TechCrunch）</li>
-        <li>AI can make tech CEOs’ lives easier. What about everyone else?（TechCrunch）</li>
-        <li>Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>刚刚，DeepSeek重磅开源：Agent底座架构！（量子位）</li>
-        <li>GPT-6.2 Astra开启灰测！Claude Mythos 5.5同日曝光（量子位）</li>
-        <li>Claude紧急叫停！暗改Harness禁止逆向游戏（量子位）</li>
-        <li>刚刚，Claude宣布取消5小时限制！首批Ultra用户已「解封」（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
