@@ -5,10 +5,49 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 12 Nov 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <item>
+      <title>🌙 晚间版 — 2026-11-13（VLM 在预测性空间推理上的缺口还有多大 + 多模态“源神”！MiniMax开源SOT + Jensen Huang was hav）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-11-13-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-13-evening.html</guid>
+      <pubDate>Fri, 13 Nov 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>VLM 在预测性空间推理上的缺口还有多大？21 个模型，最高准确率仅 58.0%（雷锋网）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Skills I'm Willing to Let AI Have（Hacker News）</li>
+        <li>Aircraft Defects（Hacker News）</li>
+        <li>Post-AI Computer Science – Volume 5（Hacker News）</li>
+        <li>Show HN: I built a tool to check website access for 14 AI crawlers（Hacker News）</li>
+        <li>Michelangelo AI（Hacker News）</li>
+        <li>GitHub Trending: openai /
+
+      whisper（GitHub Trending）</li>
+        <li>GitHub Trending: ZhuLinsen /
+
+      daily_stock_analysis（GitHub Trending）</li>
+        <li>GitHub Trending: huggingface /
+
+      transformers（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Jensen Huang was having a third affair, Reuters reports（TechCrunch）</li>
+        <li>Google&#8217;s latest Search upgrade promises better answers to your most complicated questions（TechCrunch）</li>
+        <li>Nectar launches an AI agent to automate creator discovery and outreach for brands（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>多模态“源神”！MiniMax开源SOTA生图模型，原生4K，一张两毛（量子位）</li>
+        <li>Anthropic启动IPO路演，估值已缩水6000亿美元（量子位）</li>
+        <li>国产大模型又杀出一匹黑马，引发硅谷关注！（量子位）</li>
+        <li>大模型都能控机器人，Human Data还得怎么卷？（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-11-12（低调追赶的文心，一口气打出了快、省、开源 + 英伟达机器人开源撞上Fable 5.2发 + Jensen Huang accused）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-11-12-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-12-evening.html</guid>
@@ -386,47 +425,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-11-03（小米斩获乌镇峰会双料大奖：小米集团获“杰 + 刚刚，DeepSeek重磅开源：Agen + AI数据平台OceanBase获世界互联 + Google takes Dreambe）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-11-03-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-03-evening.html</guid>
-      <pubDate>Tue, 03 Nov 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>小米斩获乌镇峰会双料大奖：小米集团获“杰出贡献奖”，小米具身基座模型获“领先科技奖”（量子位）</li>
-        <li>清华姚期智团队新作：代数世界模型，让AI像牛顿一样思考（量子位）</li>
-        <li>独家丨元环智能获数亿元融资：用「元模型」让 AI长出「直觉」（雷锋网）</li>
-        <li>苹果首款触控屏 MacBook Pro 正式发布：双层串联 OLED、低至 1.38 千克重量，22,999 元起（IT之家）</li>
-        <li>Google TurboQuant AI 压缩算法大幅减少大模型内存使用（Solidot）</li>
-        </ul>
-        <h3>🛠️ 工具 & 部署</h3><ul>
-        <li>AI数据平台OceanBase获世界互联网大会杰出贡献奖（量子位）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Ask HN: Any tool to remove AI Watermark from image?（Hacker News）</li>
-        <li>Y Combinator's Garry Tan uses AI agents so much（Hacker News）</li>
-        <li>Mav AI | FULL MATCH. FULL INSIGHT. UNDER 30 MIN.（Hacker News）</li>
-        <li>"This Is Fine": How Clean Rooms Train Agents to Close the Books on Fire（Hacker News）</li>
-        <li>GitHub Trending: FlashML-org /
 
-      FreeToken（GitHub Trending）</li>
-        <li>GitHub Trending: karpathy /
-
-      nanochat（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Google takes Dreambeans to India in bid to bring AI-generated personal stories to the masses（TechCrunch）</li>
-        <li>Apple may try to increase revenue by doing&#8230;something with third-party AI apps（TechCrunch）</li>
-        <li>Y Combinator&#8217;s Garry Tan uses AI agents so much, he spends up to $200K a year on tokens（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>刚刚，DeepSeek重磅开源：Agent底座架构！（量子位）</li>
-        <li>小米开源了个150元的AI小玩意，火到配件都涨价了（量子位）</li>
-        <li>OpenAI重写大模型法则，第一条：忠于人类！！（量子位）</li>
-        <li>GPT-6.2 Astra开启灰测！Claude Mythos 5.5同日曝光（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
