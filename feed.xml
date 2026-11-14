@@ -5,10 +5,49 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 13 Nov 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <item>
+      <title>🌙 晚间版 — 2026-11-14（openJiuwen发布RSI原生Age + 高难盲测超越GPT-6-Astra与Op + Jensen Huang’s depar）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-11-14-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-14-evening.html</guid>
+      <pubDate>Sat, 14 Nov 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>openJiuwen发布RSI原生AgentOS，让Agent自由变身，持续迭代！（量子位）</li>
+        <li>5499 元起：苹果发布 iPad mini 8 平板，8.5 寸 60Hz OLED 屏、A20 Pro 芯片、支持 IP67 防尘防水（IT之家）</li>
+        <li>浙大彭思达：从元宇宙到具身智能，一个三维视觉研究者的八年 | 世界模型50人（雷锋网）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Israeli airstrike on Nasser hospital in Gaza killed surgeon and others（Hacker News）</li>
+        <li>Air traffic control modernization effort needs (Sep 14, 2026)（Hacker News）</li>
+        <li>Show HN: EDNA – 100% on-device human sensing so AI can perceive the user（Hacker News）</li>
+        <li>GitHub Trending: avenoxai /
+
+      avenoxbeyin（GitHub Trending）</li>
+        <li>GitHub Trending: headroomlabs-ai /
+
+      headroom（GitHub Trending）</li>
+        <li>GitHub Trending: langchain-ai /
+
+      langgraph（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say（TechCrunch）</li>
+        <li>AI agent startup LangChain hits $3B valuation（TechCrunch）</li>
+        <li>Export-banned Nvidia chips are behind China&#8217;s most powerful AI models — uh-oh, Jensen!（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>高难盲测超越GPT-6-Astra与Opus-5！无界前沿开源Fx-Bio-1031，把RSI带进生命科学（量子位）</li>
+        <li>多模态“源神”！MiniMax开源SOTA生图模型，原生4K，一张两毛（量子位）</li>
+        <li>突发！DeepSeek开放全家桶API（量子位）</li>
+        <li>国产大模型又杀出一匹黑马，引发硅谷关注！（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-11-13（VLM 在预测性空间推理上的缺口还有多大 + 多模态“源神”！MiniMax开源SOT + Jensen Huang was hav）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-11-13-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-13-evening.html</guid>
@@ -384,46 +423,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-11-04（模型谁都买得到，拉开差距的是AI生产力系 + 小米开源了个150元的AI小玩意，火到配 + AI数据平台OceanBase获世界互联 + Anthropic is working）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-11-04-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-04-evening.html</guid>
-      <pubDate>Wed, 04 Nov 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>模型谁都买得到，拉开差距的是AI生产力系统（量子位）</li>
-        <li>小米斩获乌镇峰会双料大奖：小米集团获“杰出贡献奖”，小米具身基座模型获“领先科技奖”（量子位）</li>
-        </ul>
-        <h3>🛠️ 工具 & 部署</h3><ul>
-        <li>AI数据平台OceanBase获世界互联网大会杰出贡献奖（量子位）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>GPT-Synopsys Combines IC Design EDA with Agentic AI（Hacker News）</li>
-        <li>Engraphis – Local-first, bi-temporal memory for AI coding agents（Hacker News）</li>
-        <li>I built a free local AI co-processor in Rust. AXON Developer Edition（Hacker News）</li>
-        <li>GitHub Trending: Usagi-org /
 
-      ai-goofish-monitor（GitHub Trending）</li>
-        <li>GitHub Trending: karpathy /
-
-      nanochat（GitHub Trending）</li>
-        <li>GitHub Trending: agent0ai /
-
-      agent-zero（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Anthropic is working on a system to prove AI models&#8217; identity（TechCrunch）</li>
-        <li>Data centers are turning to old jet engines as the wait for power grows（TechCrunch）</li>
-        <li>Ted Schlein&#8217;s Ballistic Ventures seeks $490M for new funds amid AI-driven cybersecurity boom（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>小米开源了个150元的AI小玩意，火到配件都涨价了（量子位）</li>
-        <li>OpenAI重写大模型法则，第一条：忠于人类！！（量子位）</li>
-        <li>GPT-6.2 Astra开启灰测！Claude Mythos 5.5同日曝光（量子位）</li>
-        <li>让Agent首次拥有“视听双流记忆”：openJiuwen Agent-Memory看懂长视频，关键事件一个不落（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
