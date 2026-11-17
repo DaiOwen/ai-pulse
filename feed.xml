@@ -5,10 +5,57 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 16 Nov 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <item>
+      <title>🌙 晚间版 — 2026-11-17（阿里正式发布Qwen4，智能体及编程能力 + 材料科学智能体MatOS正式开源！大幅提 + Cybersecurity AI sta）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-11-17-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-17-evening.html</guid>
+      <pubDate>Tue, 17 Nov 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>阿里正式发布Qwen4，智能体及编程能力进阶，迈向真实全场景（量子位）</li>
+        <li>苹果 iOS / iPadOS 27.3 开发者预览版 Beta 2 发布：为 iPhone Duo 加入外屏面部解锁功能（IT之家）</li>
+        </ul>
+        <h3>💼 应用落地</h3><ul>
+        <li>龙芯、海光老兵集结，通研院孵化的AGI芯片公司浮出水面！半年连融数亿元（量子位）</li>
+        <li>思灵人形机器人完成 5 亿美元融资背后，真正产生收入的业务却是产线自动化？（钛媒体）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Show HN: Harness for building/cloning SaaS using open-weight models（Hacker News）</li>
+        <li>Adopting AI inside an organization that has to pass a compliance audit（Hacker News）</li>
+        <li>40-domain study: 80% of Shopify stores expose /API/ucp/MCP, 0% /agents.md（Hacker News）</li>
+        <li>Mizan bias benchmark: testing AI models（Hacker News）</li>
+        <li>TokenEconomizer: Learning from Experience to Make AI Coding Agents Efficient（Hacker News）</li>
+        <li>GitHub Trending: isair /
+
+      jarvis（GitHub Trending）</li>
+        <li>GitHub Trending: openai /
+
+      whisper（GitHub Trending）</li>
+        <li>GitHub Trending: huggingface /
+
+      transformers（GitHub Trending）</li>
+        <li>GitHub Trending: ifixai-ai /
+
+      iFixAi（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Cybersecurity AI startup Corma reaches $1B valuation in about 3 months（TechCrunch）</li>
+        <li>California state AG sues OpenAI over rogue agent incidents（TechCrunch）</li>
+        <li>OpenAI will embed safety researchers to investigate AI subversion（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>材料科学智能体MatOS正式开源！大幅提高材料研发任务成功率（量子位）</li>
+        <li>睿尔曼智能郑随兵：质量、经济性、稳定性是机器人落地三大标准（量子位）</li>
+        <li>奥特曼共情黄仁勋，“英雄也有缺陷”，但支持他重返英伟达CEO嘛&#8230;（量子位）</li>
+        <li>物理AI的强化学习仿真环境来了，光轮智能推出RoboFinals RL Envs（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-11-16（谷歌奇袭英伟达：整柜TPU外售加速交付， + 高难盲测超越GPT-6-Astra与Op + Apple launches new a）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-11-16-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-16-evening.html</guid>
@@ -369,55 +416,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-11-07（阿里巴巴发布《2026 AI向善行动报告 + 腾讯 Hy4 调用激增已十倍扩容，Age + 阶跃终端 STEPX Neo 智能体手机 + Crusoe sells trouble）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-11-07-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-07-evening.html</guid>
-      <pubDate>Sat, 07 Nov 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>阿里巴巴发布《2026 AI向善行动报告》 AI数据中心可持续发展成年度亮点（量子位）</li>
-        <li>A\三大内部模型曝光！领先Opus5.5三个月，RSI缩短80%实验时间（量子位）</li>
-        </ul>
-        <h3>🛠️ 工具 & 部署</h3><ul>
-        <li>阶跃终端 STEPX Neo 智能体手机亮相进博会高通展台，软硬模一体打造智能体新体验（量子位）</li>
-        <li>在守好文化规则、合规底线的基础上，企业要善用大湾区“科技+金融”的超级协同网络，在金融资本搭台，AI技术与智能体助力下，直接跃向更广阔的全球化市场。（钛媒体）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>美股过山车式暴跌，芯片股遭“血洗”（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>Show HN: Help me pick a logo animation for my in-browser AI creature game（Hacker News）</li>
-        <li>Quantum Computers Are Poised to Crack Encryption. AI Could Beat Them to It（Hacker News）</li>
-        <li>The AI Business Model Just Collapsed（Hacker News）</li>
-        <li>Show HN: Backwords – Let AI teach you how to speak in reverse（Hacker News）</li>
-        <li>YC Backed Bron AI Accused of Using LeBron's Name and Likeness（Hacker News）</li>
-        <li>GitHub Trending: NVIDIA /
 
-      TensorRT-LLM（GitHub Trending）</li>
-        <li>GitHub Trending: apache /
-
-      airflow（GitHub Trending）</li>
-        <li>GitHub Trending: airbytehq /
-
-      airbyte（GitHub Trending）</li>
-        <li>GitHub Trending: pipeshub-ai /
-
-      pipeshub-ai（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>Crusoe sells troubled Wyoming data center project to Google（TechCrunch）</li>
-        <li>OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation（TechCrunch）</li>
-        <li>Hundreds of Artex AI hacking tools found publicly exposed to the web（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>腾讯 Hy4 调用激增已十倍扩容，Agent 能力开源模型第一（量子位）</li>
-        <li>抢跑DeepSeek！硅谷华人把下一代Agent Harness造出来了！？（量子位）</li>
-        <li>DeepSeek带火稀疏计算，国产芯片公司加速突围：这家公司又融近10亿（量子位）</li>
-        <li>为什么每个 Personal Agent 背后，都必须配备一台“云电脑”？（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
