@@ -5,10 +5,52 @@
     <link>https://daiowen.github.io/ai-pulse/</link>
     <description>面向中国 AI 开发工程师的每日 AI 新闻智能聚合。每天 08:00 / 12:00 / 20:00 三次自动更新，覆盖大模型动态、工具部署、政策合规、应用落地、开源热度。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 20 Nov 2026 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 20:00:00 +0800</lastBuildDate>
     <atom:link href="https://daiowen.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <item>
+      <title>🌙 晚间版 — 2026-11-21（安谋科技深度解析Arm Cortex-M + 刚刚，DeepSeek V1作者创业项目 + Anthropic&#8217;s 7 ）</title>
+      <link>https://daiowen.github.io/ai-pulse/archive/2026-11-21-evening.html</link>
+      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-21-evening.html</guid>
+      <pubDate>Sat, 21 Nov 2026 20:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <h3>🤖 大模型动态</h3><ul>
+        <li>安谋科技深度解析Arm Cortex-M42，发布“星辰100e”AIoT原型平台，助力打造AI性能更强的嵌入式设计（量子位）</li>
+        <li>美国AI音乐巨头进军视频生成，底层模型来自中国MiniMax（量子位）</li>
+        <li>昇腾算力训出了双榜SOTA的具身世界模型，华为云这次想把整套底座开放出来（量子位）</li>
+        <li>5499 元起，“首款为 AI 而生的鸿蒙手机”华为星芒 OSTA O1 Pro 阔直板正式发布（IT之家）</li>
+        </ul>
+        <h3>🔥 开源热度</h3><ul>
+        <li>Aletheia Aegis: Deterministic sub-millisecond output guard for AI agents（Hacker News）</li>
+        <li>I'm building GURU, a framework for a personal AI that lives alongside you（Hacker News）</li>
+        <li>Federal Revenue When AI Replaces Labor（Hacker News）</li>
+        <li>Show HN: Sniffy – a free AI detector and Chrome extension（Hacker News）</li>
+        <li>Show HN: Musset, open-source Scrivener alternative with an AI that never writes（Hacker News）</li>
+        <li>GitHub Trending: wshobson /
+
+      agents（GitHub Trending）</li>
+        <li>GitHub Trending: apache /
+
+      airflow（GitHub Trending）</li>
+        <li>GitHub Trending: vllm-project /
+
+      vllm-ascend（GitHub Trending）</li>
+        </ul>
+        <h3>🌍 海外参考</h3><ul>
+        <li>Anthropic&#8217;s 7 founders cashed out nearly $2B in record-breaking IPO（TechCrunch）</li>
+        <li>AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too（TechCrunch）</li>
+        <li>Six AI-powered gadgets that could make your home office smarter（TechCrunch）</li>
+        </ul>
+        <h3>💰 产业动态</h3><ul>
+        <li>刚刚，DeepSeek V1作者创业项目曝光：开源Agent（量子位）</li>
+        <li>范式下场做基模了！国产算力全链路训练，双模型同步亮相（量子位）</li>
+        <li>具身机器人进入真机时代，华为云CloudRobo开始组队发力了（量子位）</li>
+        <li>新浪新闻·2026探索大会在京举行 虚实交融共探智能时代共生新图景（量子位）</li>
+        </ul>
+      ]]></description>
+    </item>
+
+<item>
       <title>🌙 晚间版 — 2026-11-20（安谋科技深度解析Arm Cortex-M + 范式下场做基模了！国产算力全链路训练，双 + 全球首个医疗健康AI独立评测与分析平台I + Anthropic&#8217;s 7 ）</title>
       <link>https://daiowen.github.io/ai-pulse/archive/2026-11-20-evening.html</link>
       <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-20-evening.html</guid>
@@ -374,49 +416,7 @@
       ]]></description>
     </item>
 
-<item>
-      <title>🌙 晚间版 — 2026-11-11（百度文心首次披露RSI进展：ERNIE  + 英伟达机器人开源撞上Fable 5.2发 + All 7 Anthropic foun）</title>
-      <link>https://daiowen.github.io/ai-pulse/archive/2026-11-11-evening.html</link>
-      <guid isPermaLink="true">https://daiowen.github.io/ai-pulse/archive/2026-11-11-evening.html</guid>
-      <pubDate>Wed, 11 Nov 2026 20:00:00 +0800</pubDate>
-      <description><![CDATA[
-        <h3>🤖 大模型动态</h3><ul>
-        <li>百度文心首次披露RSI进展：ERNIE Evolve已用于最新模型研发，文心5.5 Flash 或将近期发布（量子位）</li>
-        <li>云深处发布全新四足机器人  实现50Kg大负载、复杂地形作业（雷锋网）</li>
-        </ul>
-        <h3>💼 应用落地</h3><ul>
-        <li>从芯片到千比特整机，超导量子计算还有一场硬仗（量子位）</li>
-        <li>升腾资讯 &#215; 华为全球首发“双旗舰新品”：鸿蒙 HarmonyOS 台式机 + 笔记本，均搭载麒麟 X90 芯片（IT之家）</li>
-        </ul>
-        <h3>🔥 开源热度</h3><ul>
-        <li>The Unexpected AI Stack: C# + .NET（Hacker News）</li>
-        <li>Cognizant dedicates more than 25000 professionals to Claude delivery（Hacker News）</li>
-        <li>The AI Arms Race Is Not Inevitable. It's Just Profitable（Hacker News）</li>
-        <li>My AI Agents Found an Unmapped Maya Site in Mexico（Hacker News）</li>
-        <li>AI Coding CLI Tools to Try Beyond Claude Code and Codex（Hacker News）</li>
-        <li>GitHub Trending: homeassistant-ai /
 
-      ha-mcp（GitHub Trending）</li>
-        <li>GitHub Trending: ashishpatel26 /
-
-      500-AI-Agents-Projects（GitHub Trending）</li>
-        <li>GitHub Trending: ZhuLinsen /
-
-      daily_stock_analysis（GitHub Trending）</li>
-        </ul>
-        <h3>🌍 海外参考</h3><ul>
-        <li>All 7 Anthropic founders will each cash out about $250M in IPO（TechCrunch）</li>
-        <li>OpenAI acquires Odessia, travel startup created by Sonder founder（TechCrunch）</li>
-        <li>OpenAI, Anthropic face new oversight as New York’s AI safety law takes effect（TechCrunch）</li>
-        </ul>
-        <h3>💰 产业动态</h3><ul>
-        <li>英伟达机器人开源撞上Fable 5.2发布！Jim Fan：不是寒冬是夏天（量子位）</li>
-        <li>从“一脑多机”到“一脑多手”，蚂蚁灵波开源LingBot-Touch触觉基础模型（量子位）</li>
-        <li>Agent自演进驶入“双轨时代”！openJiuwen首发TTSE经验学习框架（量子位）</li>
-        <li>成立四个月，融资过亿美金：TensorWorld物原科技要跑通“物理真实”路线（量子位）</li>
-        </ul>
-      ]]></description>
-    </item>
 
 
 
